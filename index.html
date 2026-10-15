@@ -185,10 +185,30 @@ nav.tabs .plus svg{width:28px;height:28px}
 .mrow span{font-size:12px;font-weight:700}
 .note{font-size:12px;color:var(--muted)}
 
+/* barcode scanner */
+.cam{position:relative;border-radius:16px;overflow:hidden;background:#0B0F0D;aspect-ratio:4/3;max-width:100%}
+.cam video{width:100%;height:100%;object-fit:cover;display:block}
+.cam .frame{position:absolute;inset:28% 12%;border:3px solid rgba(255,255,255,.9);border-radius:12px;box-shadow:0 0 0 999px rgba(0,0,0,.35)}
+.cam .frame::after{content:"";position:absolute;left:6%;right:6%;top:50%;height:2px;background:#FF5A4E;box-shadow:0 0 8px #FF5A4E;animation:scan 1.6s ease-in-out infinite alternate}
+@keyframes scan{from{transform:translateY(-34px)}to{transform:translateY(34px)}}
+.cam .msg{position:absolute;inset:auto 0 10px 0;text-align:center;color:#fff;font-size:14px;font-weight:700;text-shadow:0 1px 3px rgba(0,0,0,.7)}
+.scanbtn{display:flex;align-items:center;gap:12px;background:var(--surface);box-shadow:var(--shadow);border-radius:14px;padding:12px 14px;text-align:start;width:100%}
+.scanbtn svg{width:30px;height:30px;color:var(--accent);flex:none}
+.scanbtn b{display:block}
+.scanbtn small{color:var(--muted);font-size:13px}
+.filebtn{position:relative;overflow:hidden}
+.filebtn input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.status{background:var(--accent-soft);border-radius:12px;padding:10px 14px;font-size:14px}
+.status.err{background:var(--sunk);border-inline-start:4px solid var(--warn)}
+.spin{width:28px;height:28px;border-radius:50%;border:3px solid var(--sunk);border-top-color:var(--accent);animation:sp 0.8s linear infinite;margin:6px auto}
+@keyframes sp{to{transform:rotate(360deg)}}
+.quick{grid-template-columns:repeat(4,1fr)}
+.quick button{font-size:13px}
+
 #toast{position:fixed;left:50%;bottom:calc(92px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);z-index:30;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-weight:700;font-size:14px;opacity:0;transition:.2s;pointer-events:none;white-space:nowrap}
 #toast.on{opacity:1;transform:translate(-50%,0)}
 
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 @media (max-width:360px){.cal{grid-template-columns:1fr;justify-items:center}.eq{width:100%}}
 </style>
 
@@ -371,6 +391,7 @@ const ic={
   scale:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 9a5 5 0 0 1 8 0l-3 3"/></svg>',
   search:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>',
   prev:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>',
+  barcode:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 8v8M10 8v8M13 8v8M17 8v8"/></svg>',
   next:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>'
 };
 
@@ -409,7 +430,7 @@ function vHome(){
   let streak=0;for(let d=k;getDay(d).food.length;d=shift(d,-1))streak++;
   return (S.sample?`<div class="banner"><span>מוצגים נתוני דוגמה כדי להראות איך זה נראה.</span><button class="link" data-act="clear">התחלה נקייה</button></div>`:"")+
   calCard(k)+macroCard(k)+
-  `<div class="quick"><button data-act="add">${ic.food}הוספת מזון</button><button data-act="exercise">${ic.run}פעילות</button><button data-act="weigh">${ic.scale}שקילה</button></div>`+
+  `<div class="quick"><button data-act="add">${ic.food}הוספת מזון</button><button data-act="scan">${ic.barcode}סריקת ברקוד</button><button data-act="exercise">${ic.run}פעילות</button><button data-act="weigh">${ic.scale}שקילה</button></div>`+
   waterCard(k)+
   `<section class="card"><div class="stats"><div><b>${w}</b><span>משקל נוכחי (ק"ג)</span></div><div><b style="color:${diff<=0?"var(--accent)":"var(--warn)"}">${diff>0?"+":""}${diff}</b><span>מאז ההתחלה</span></div><div><b>${streak}</b><span>ימי רישום ברצף</span></div></div></section>`;
 }
@@ -420,7 +441,7 @@ function vDiary(){
   MEALS.forEach(([m,name])=>{
     const items=d.food.filter(i=>i.meal===m), sum=items.reduce((a,i)=>a+i.kcal*i.sv,0);
     h+=`<section class="card meal"><div class="mh"><h2>${name}</h2><b>${fmt(sum)}</b></div>`+
-      (items.length?items.map(i=>`<button class="item" data-act="edit" data-id="${i.id}"><span class="n"><div>${esc(i.name)}</div><small>${r1(i.sv)} × ${esc(i.unit)}</small></span><span class="k">${fmt(i.kcal*i.sv)}</span></button>`).join(""):`<div class="empty">עדיין לא נרשם כלום.</div>`)+
+      (items.length?items.map(i=>`<button class="item" data-act="edit" data-id="${i.id}"><span class="n"><div>${esc(i.name)}</div><small>${i.g?Math.round(i.sv*i.g)+" ג'":r1(i.sv)+" × "+esc(i.unit)}</small></span><span class="k">${fmt(i.kcal*i.sv)}</span></button>`).join(""):`<div class="empty">עדיין לא נרשם כלום.</div>`)+
       `<button class="addrow" data-act="add" data-meal="${m}">+ הוספת מזון</button></section>`;
   });
   h+=`<section class="card meal"><div class="mh"><h2>פעילות גופנית</h2><b style="color:var(--ex)">${fmt(t.ex)}</b></div>`+
@@ -504,11 +525,12 @@ function commit(msg){save();render();if(msg)toast(msg)}
 
 /* ---------- sheet ---------- */
 function openSheet(title,html,mount){
+  stopScan();
   $("#shTitle").textContent=title;$("#shBody").innerHTML=html;$("#shBody").scrollTop=0;
   $("#scrim").classList.add("on");$("#sheet").classList.add("on");
   if(mount)mount($("#shBody"));
 }
-function closeSheet(){$("#scrim").classList.remove("on");$("#sheet").classList.remove("on");pending=null}
+function closeSheet(){stopScan();$("#scrim").classList.remove("on");$("#sheet").classList.remove("on");pending=null}
 
 function foodRows(q){
   q=(q||"").trim();
@@ -516,37 +538,42 @@ function foodRows(q){
   if(addTab==="recent")list=S.recent.map(id=>allFoods().find(f=>f.id===id)).filter(Boolean);
   else if(addTab==="mine")list=S.custom;
   else list=allFoods();
+  if(q&&/^\d{8,14}$/.test(q))return `<button class="item" data-act="lookup" data-code="${q}"><span class="n"><div>חיפוש לפי ברקוד ${q}</div><small>במאגר המוצרים</small></span><span class="k">${ic.search.replace("<svg ",'<svg width="20" height="20" ')}</span></button>`;
   if(q)list=list.filter(f=>f.name.includes(q));
-  if(!list.length)return `<div class="empty" style="padding:14px 16px">${addTab==="mine"&&!q?"עוד לא יצרת מזונות משלך.":"לא נמצא. אפשר ליצור מזון חדש או להוסיף קלוריות ישירות."}</div>`;
-  return list.slice(0,60).map(f=>`<button class="item" data-act="pick" data-id="${esc(f.id)}"><span class="n"><div>${esc(f.name)}</div><small>${esc(f.unit)}</small></span><span class="k">${fmt(f.kcal)}<small>קל'</small></span></button>`).join("");
+  return !list.length?`<div class="empty" style="padding:14px 16px">${addTab==="mine"&&!q?"עוד לא יצרת מזונות משלך. מוצרים שסורקים נשמרים כאן.":"לא נמצא. אפשר לסרוק ברקוד, ליצור מזון חדש או להוסיף קלוריות ישירות."}</div>`:
+  list.slice(0,60).map(f=>`<button class="item" data-act="pick" data-id="${esc(f.id)}"><span class="n"><div>${esc(f.name)}</div><small>${esc(f.unit)}${f.barcode?" · ברקוד":""}</small></span><span class="k">${fmt(f.kcal)}<small>קל'</small></span></button>`).join("");
 }
 function openAdd(meal){
   if(meal)addMeal=meal;
   const html=`<div class="seg" id="mealSeg">${MEALS.map(([m,n])=>`<button data-act="meal" data-v="${m}" class="${m===addMeal?"on":""}">${n.replace("ארוחת ","")}</button>`).join("")}</div>
-  <div class="search">${ic.search}<input id="q" type="search" placeholder="חיפוש מזון, למשל חומוס" autocomplete="off" aria-label="חיפוש מזון"></div>
+  <button class="scanbtn" data-act="scan">${ic.barcode}<span><b>סריקת ברקוד</b><small>הנתונים התזונתיים של המוצר נטענים אוטומטית</small></span></button>
+  <div class="search">${ic.search}<input id="q" type="search" placeholder="חיפוש מזון או מספר ברקוד" autocomplete="off" aria-label="חיפוש מזון"></div>
   <div class="seg" id="srcSeg"><button data-act="src" data-v="all" class="${addTab==="all"?"on":""}">הכל</button><button data-act="src" data-v="recent" class="${addTab==="recent"?"on":""}">אחרונים</button><button data-act="src" data-v="mine" class="${addTab==="mine"?"on":""}">המזונות שלי</button></div>
   <div class="list" id="results">${foodRows("")}</div>
   <div class="row" style="gap:8px"><button class="btn plain" style="flex:1" data-act="quickadd">הוספה מהירה</button><button class="btn plain" style="flex:1" data-act="newfood">מזון חדש</button></div>`;
   openSheet("הוספת מזון",html,b=>{const q=b.querySelector("#q");q.addEventListener("input",()=>{b.querySelector("#results").innerHTML=foodRows(q.value)})});
 }
-function openFood(f,editItem){
+function openFood(f,editItem,note){
   let sv=editItem?editItem.sv:1;
   const meal=editItem?editItem.meal:addMeal;
-  const html=`<div><div style="font-weight:800;font-size:18px">${esc(f.name)}</div><div class="muted" style="font-size:14px">מנה: ${esc(f.unit)}</div></div>
+  const html=`${note?`<div class="status">${note}</div>`:""}<div><div style="font-weight:800;font-size:18px">${esc(f.name)}</div><div class="muted" style="font-size:14px">מנה: ${esc(f.unit)}${f.barcode?` · ברקוד <span class="num">${esc(f.barcode)}</span>`:""}</div></div>
   <div class="big num" id="fk"></div><div class="muted" style="text-align:center;margin-top:-8px;font-size:14px">קלוריות</div>
-  <div class="stepper"><button data-act="sv" data-n="-0.5" aria-label="פחות">−</button><input id="sv" type="number" inputmode="decimal" step="0.5" min="0.25" value="${sv}" aria-label="מספר מנות"><button data-act="sv" data-n="0.5" aria-label="יותר">+</button></div>
+  ${f.g?`<div class="seg" id="unitSeg"><button data-act="unit" data-v="sv" class="on">מנות</button><button data-act="unit" data-v="g">גרם</button></div>`:""}
+  <div class="stepper"><button data-act="sv" data-n="-1" aria-label="פחות">−</button><input id="sv" type="number" inputmode="decimal" step="0.5" min="0.25" value="${sv}" aria-label="כמות"><button data-act="sv" data-n="1" aria-label="יותר">+</button></div>
   <div class="mrow" id="fm"></div>
   <div class="field"><label for="fmeal">ארוחה</label><select id="fmeal">${MEALS.map(([m,n])=>`<option value="${m}" ${m===meal?"selected":""}>${n}</option>`).join("")}</select></div>
   <button class="btn block" data-act="${editItem?"saveitem":"confirm"}">${editItem?"שמירה":"הוספה ליומן"}</button>
   ${editItem?`<button class="btn danger block" data-act="delitem">הסרה מהיומן</button>`:""}`;
-  pending={f,edit:editItem||null};
+  pending={f,edit:editItem||null,mode:"sv"};
   openSheet(editItem?"עריכת פריט":"פרטי מזון",html,b=>{
-    const upd=()=>{const s=parseFloat(b.querySelector("#sv").value)||0;
+    const upd=()=>{const s=amount();
       b.querySelector("#fk").textContent=fmt(f.kcal*s);
       b.querySelector("#fm").innerHTML=`<div><b>${fmt(f.kcal*s)}</b><span class="muted">קל'</span></div><div><b>${r1(f.c*s)}</b><span style="color:var(--carb)">פחמ' ג'</span></div><div><b>${r1(f.p*s)}</b><span style="color:var(--prot)">חלבון ג'</span></div><div><b>${r1(f.f*s)}</b><span style="color:var(--fat)">שומן ג'</span></div>`};
     b.querySelector("#sv").addEventListener("input",upd);upd();
   });
 }
+/* servings from the stepper, whether it shows servings or grams */
+function amount(){const v=parseFloat($("#sv").value)||0;return pending&&pending.mode==="g"?v/pending.f.g:v}
 function openQuick(){
   openSheet("הוספה מהירה",`<p class="note" style="margin:0">כשאין מזון מתאים במאגר: רושמים רק את המספרים.</p>
   <div class="form"><div class="field full"><label for="qa-name">תיאור (לא חובה)</label><input id="qa-name" type="text" placeholder="למשל: ארוחה במסעדה"></div>
@@ -557,16 +584,101 @@ function openQuick(){
   <div class="field"><label for="qa-meal">ארוחה</label><select id="qa-meal">${MEALS.map(([m,n])=>`<option value="${m}" ${m===addMeal?"selected":""}>${n}</option>`).join("")}</select></div></div>
   <button class="btn block" data-act="quicksave">הוספה ליומן</button>`,b=>b.querySelector("#qa-k").focus());
 }
-function openNewFood(){
-  openSheet("מזון חדש",`<p class="note" style="margin:0">הערכים מופיעים על תווית המוצר. המזון יישמר תחת "המזונות שלי".</p>
-  <div class="form"><div class="field full"><label for="nf-name">שם</label><input id="nf-name" type="text" placeholder="למשל: עוגיית שיבולת שועל של סבתא"></div>
-  <div class="field full"><label for="nf-unit">גודל מנה</label><input id="nf-unit" type="text" placeholder="למשל: יחידה (40 ג')"></div>
+function openNewFood(pre){
+  pre=pre||{};
+  openSheet("מזון חדש",`${pre.msg?`<div class="status err">${pre.msg}</div>`:`<p class="note" style="margin:0">הערכים מופיעים על תווית המוצר. המזון יישמר תחת "המזונות שלי".</p>`}
+  <div class="form"><div class="field full"><label for="nf-name">שם</label><input id="nf-name" type="text" value="${esc(pre.name||"")}" placeholder="למשל: עוגיית שיבולת שועל של סבתא"></div>
+  ${pre.barcode?`<div class="field full"><label for="nf-bc">ברקוד</label><input id="nf-bc" type="text" inputmode="numeric" value="${esc(pre.barcode)}"></div>`:""}
+  <div class="field"><label for="nf-unit">גודל מנה</label><input id="nf-unit" type="text" value="${pre.barcode?"100 ג'":""}" placeholder="למשל: יחידה"></div>
+  <div class="field"><label for="nf-g">משקל מנה (ג')</label><input id="nf-g" type="number" inputmode="decimal" value="${pre.barcode?100:""}" placeholder="לא חובה"></div>
   <div class="field"><label for="nf-k">קלוריות</label><input id="nf-k" type="number" inputmode="numeric"></div>
   <div class="field"><label for="nf-c">פחמימות (ג')</label><input id="nf-c" type="number" inputmode="decimal"></div>
   <div class="field"><label for="nf-p">חלבון (ג')</label><input id="nf-p" type="number" inputmode="decimal"></div>
   <div class="field"><label for="nf-f">שומן (ג')</label><input id="nf-f" type="number" inputmode="decimal"></div></div>
   <p class="note" id="nf-err" style="color:var(--warn);margin:0" hidden>צריך למלא שם ומספר קלוריות.</p>
-  <button class="btn block" data-act="newfoodsave">שמירה והמשך</button>`,b=>b.querySelector("#nf-name").focus());
+  <button class="btn block" data-act="newfoodsave">שמירה והמשך</button>`,b=>b.querySelector(pre.name?"#nf-k":"#nf-name").focus());
+}
+
+/* ---------- barcode scanning ---------- */
+const ZX_SRC="https://unpkg.com/@zxing/library@0.21.3/umd/index.min.js";
+let zxLoad=null, reader=null, scanning=false;
+function loadZX(){
+  if(window.ZXing)return Promise.resolve(window.ZXing);
+  return zxLoad||(zxLoad=new Promise((ok,no)=>{const s=document.createElement("script");s.src=ZX_SRC;s.onload=()=>ok(window.ZXing);s.onerror=()=>{zxLoad=null;no(new Error("load"))};document.head.appendChild(s)}));
+}
+function makeReader(ZX){
+  const h=new Map();
+  h.set(ZX.DecodeHintType.POSSIBLE_FORMATS,[ZX.BarcodeFormat.EAN_13,ZX.BarcodeFormat.EAN_8,ZX.BarcodeFormat.UPC_A,ZX.BarcodeFormat.UPC_E,ZX.BarcodeFormat.CODE_128]);
+  h.set(ZX.DecodeHintType.TRY_HARDER,true);
+  return new ZX.BrowserMultiFormatReader(h,300);
+}
+function stopScan(){scanning=false;if(reader){try{reader.reset()}catch(e){}reader=null}}
+function scanStatus(msg,err){const s=$("#scanSt");if(s){s.innerHTML=msg;s.className="status"+(err?" err":"");s.hidden=!msg}}
+function openScan(){
+  openSheet("סריקת ברקוד",`<div class="cam" id="cam"><video id="camv" playsinline muted autoplay></video><div class="frame"></div><div class="msg">מכוונים את הברקוד למסגרת</div></div>
+  <div class="status" id="scanSt" hidden></div>
+  <label class="btn ghost block filebtn" for="snap">צילום תמונה של הברקוד<input id="snap" type="file" accept="image/*" capture="environment"></label>
+  <div class="row" style="gap:8px"><div class="field" style="flex:1"><label for="bc-in">או הקלדת מספר הברקוד</label><input id="bc-in" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="7290000066318" autocomplete="off"></div><button class="btn" style="align-self:flex-end" data-act="bcgo">חיפוש</button></div>
+  <p class="note" style="margin:0">הנתונים מגיעים ממאגר Open Food Facts. מוצר שנסרק נשמר ב"המזונות שלי", כך שבפעם הבאה הוא נמצא מיד.</p>`,b=>{
+    b.querySelector("#snap").addEventListener("change",e=>{const f=e.target.files&&e.target.files[0];if(f)scanPhoto(f);e.target.value=""});
+    b.querySelector("#bc-in").addEventListener("keydown",e=>{if(e.key==="Enter")lookupInput()});
+    startLive();
+  });
+}
+async function startLive(){
+  const cam=$("#cam");
+  const noLive=()=>{if(cam)cam.hidden=true;scanStatus("המצלמה החיה לא זמינה כאן. צלמו את הברקוד עם הכפתור למטה, האייפון יפתח את המצלמה.")};
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia)return noLive();
+  let ZX;try{ZX=await loadZX()}catch(e){return noLive()}
+  if(!$("#camv"))return;
+  stopScan();reader=makeReader(ZX);scanning=true;
+  try{
+    await reader.decodeFromConstraints({video:{facingMode:"environment"}},$("#camv"),(res)=>{
+      if(res&&scanning){stopScan();found(res.getText())}
+    });
+  }catch(e){stopScan();noLive()}
+}
+async function scanPhoto(file){
+  scanStatus('<div class="spin"></div><div style="text-align:center">מזהה ברקוד בתמונה…</div>');
+  let ZX;try{ZX=await loadZX()}catch(e){return scanStatus("לא הצלחתי לטעון את רכיב הסריקה. בדקו את החיבור לאינטרנט, או הקלידו את המספר.",true)}
+  const url=URL.createObjectURL(file);
+  try{const res=await makeReader(ZX).decodeFromImageUrl(url);found(res.getText())}
+  catch(e){scanStatus("לא זוהה ברקוד בתמונה. צלמו שוב מקרוב, ישר ובתאורה טובה, או הקלידו את המספר.",true)}
+  finally{URL.revokeObjectURL(url)}
+}
+function lookupInput(){const v=($("#bc-in").value||"").replace(/\D/g,"");if(v.length<6){scanStatus("ברקוד צריך להכיל לפחות 8 ספרות.",true);return}found(v)}
+function found(code){try{navigator.vibrate&&navigator.vibrate(60)}catch(e){}lookup(code)}
+
+async function lookup(code){
+  stopScan();
+  const mine=S.custom.find(f=>f.barcode===code);
+  if(mine){pushRecent(mine.id);openFood(mine,null,"המוצר נמצא ב\"המזונות שלי\".");return}
+  openSheet("מחפש מוצר",`<div class="spin"></div><p style="text-align:center;margin:0">מחפש את ברקוד <span class="num">${esc(code)}</span>…</p>`);
+  let data=null, net=true;
+  try{
+    const ctl=new AbortController(), t=setTimeout(()=>ctl.abort(),9000);
+    const r=await fetch("https://world.openfoodfacts.org/api/v2/product/"+encodeURIComponent(code)+".json?fields=product_name,product_name_he,generic_name,brands,quantity,serving_size,serving_quantity,nutriments",{signal:ctl.signal});
+    clearTimeout(t);
+    data=await r.json();
+  }catch(e){net=false}
+  if(!$("#sheet").classList.contains("on"))return;
+  const p=data&&data.status===1&&data.product, f=p&&offFood(code,p);
+  if(f){S.custom.unshift(f);pushRecent(f.id);save();openFood(f,null,"המוצר נמצא. הערכים נלקחו מהמאגר, כדאי להשוות לתווית.");return}
+  openNewFood({barcode:code,name:p?offName(p):"",
+    msg:!net?"אין כרגע גישה למאגר המוצרים. מלאו את הערכים מהתווית פעם אחת, והמוצר יזוהה בסריקה הבאה."
+      :p?"המוצר נמצא, אבל בלי ערכים תזונתיים. מלאו אותם מהתווית פעם אחת והם יישמרו."
+      :"המוצר לא נמצא במאגר. מלאו את הערכים מהתווית פעם אחת והם יישמרו לסריקה הבאה."});
+}
+function offName(p){const n=(p.product_name_he||p.product_name||p.generic_name||"").trim(),b=(p.brands||"").split(",")[0].trim();return n&&b&&!n.includes(b)?n+" · "+b:(n||b)}
+function offFood(code,p){
+  const n=p.nutriments||{}, v=k=>{const x=parseFloat(n[k]);return isNaN(x)?null:x};
+  let k100=v("energy-kcal_100g"); if(k100==null&&v("energy-kj_100g")!=null)k100=v("energy-kj_100g")/4.184;
+  if(k100==null)return null;
+  const per={kcal:k100,p:v("proteins_100g")||0,c:v("carbohydrates_100g")||0,f:v("fat_100g")||0};
+  const sq=parseFloat(p.serving_quantity), g=sq>0&&sq<2000?sq:100, m=g/100;
+  return {id:"c_"+uid(),barcode:code,name:offName(p)||"מוצר "+code,
+    unit:g===100?"100 ג'":"מנה ("+(p.serving_size&&!/[a-z]/i.test(p.serving_size)?p.serving_size:r1(g)+" ג'")+")",g,
+    kcal:Math.round(per.kcal*m),p:r1(per.p*m),c:r1(per.c*m),f:r1(per.f*m)};
 }
 function openExercise(){
   openSheet("הוספת פעילות",`<div class="field"><label for="ex-type">סוג פעילות</label><select id="ex-type">${ACTS.map((a,i)=>`<option value="${i}">${a[0]}</option>`).join("")}</select></div>
@@ -601,12 +713,18 @@ document.addEventListener("click",e=>{
     case "meal":addMeal=el.dataset.v;document.querySelectorAll("#mealSeg button").forEach(b=>b.classList.toggle("on",b===el));break;
     case "src":addTab=el.dataset.v;document.querySelectorAll("#srcSeg button").forEach(b=>b.classList.toggle("on",b===el));$("#results").innerHTML=foodRows($("#q").value);break;
     case "pick":{const f=allFoods().find(x=>x.id===el.dataset.id);if(f)openFood(f);break}
-    case "sv":{const i=$("#sv");i.value=Math.max(0.5,r1(num(i.value)+num(el.dataset.n)));i.dispatchEvent(new Event("input"));break}
-    case "confirm":{const sv=num($("#sv").value);if(sv<=0)return;const f=pending.f;
-      day(cur).food.push({id:uid(),fid:f.id,name:f.name,unit:f.unit,kcal:f.kcal,p:f.p,c:f.c,f:f.f,sv,meal:$("#fmeal").value});
+    case "sv":{const i=$("#sv"),g=pending.mode==="g";i.value=Math.max(g?5:0.5,r1(num(i.value)+num(el.dataset.n)*(g?10:0.5)));i.dispatchEvent(new Event("input"));break}
+    case "unit":{if(pending.mode===el.dataset.v)break;const i=$("#sv"),s=amount();pending.mode=el.dataset.v;
+      i.value=pending.mode==="g"?Math.round(s*pending.f.g):r1(s);i.step=pending.mode==="g"?"10":"0.5";
+      document.querySelectorAll("#unitSeg button").forEach(b=>b.classList.toggle("on",b===el));i.dispatchEvent(new Event("input"));break}
+    case "scan":if(view!=="diary")cur=today();if(!el.closest("#sheet"))addMeal=view==="diary"?addMeal:guessMeal();openScan();break;
+    case "bcgo":lookupInput();break;
+    case "lookup":lookup(el.dataset.code);break;
+    case "confirm":{const sv=Math.round(amount()*1000)/1000;if(sv<=0)return;const f=pending.f;
+      day(cur).food.push({id:uid(),fid:f.id,name:f.name,unit:f.unit,g:f.g,kcal:f.kcal,p:f.p,c:f.c,f:f.f,sv,meal:$("#fmeal").value});
       pushRecent(f.id);closeSheet();commit(`${f.name} נוסף ליומן`);break}
-    case "edit":{const it=getDay(cur).food.find(i=>i.id===el.dataset.id);if(it)openFood({name:it.name,unit:it.unit,kcal:it.kcal,p:it.p,c:it.c,f:it.f},it);break}
-    case "saveitem":{const sv=num($("#sv").value);if(sv<=0)return;pending.edit.sv=sv;pending.edit.meal=$("#fmeal").value;closeSheet();commit("עודכן");break}
+    case "edit":{const it=getDay(cur).food.find(i=>i.id===el.dataset.id);if(it)openFood({name:it.name,unit:it.unit,g:it.g,kcal:it.kcal,p:it.p,c:it.c,f:it.f},it);break}
+    case "saveitem":{const sv=Math.round(amount()*1000)/1000;if(sv<=0)return;pending.edit.sv=sv;pending.edit.meal=$("#fmeal").value;closeSheet();commit("עודכן");break}
     case "delitem":{const d=day(cur);d.food=d.food.filter(i=>i!==pending.edit);closeSheet();commit("הוסר מהיומן");break}
     case "quickadd":openQuick();break;
     case "quicksave":{const k=num($("#qa-k").value);if(k<=0){$("#qa-k").focus();return}
@@ -614,8 +732,10 @@ document.addEventListener("click",e=>{
       closeSheet();commit("נוסף ליומן");break}
     case "newfood":openNewFood();break;
     case "newfoodsave":{const n=$("#nf-name").value.trim(),k=num($("#nf-k").value);if(!n||k<=0){$("#nf-err").hidden=false;return}
+      const bc=$("#nf-bc")?$("#nf-bc").value.replace(/\D/g,""):"", g=num($("#nf-g").value);
       const f={id:"c_"+uid(),name:n,unit:$("#nf-unit").value.trim()||"מנה",kcal:k,p:num($("#nf-p").value),c:num($("#nf-c").value),f:num($("#nf-f").value)};
-      S.custom.unshift(f);save();openFood(f);break}
+      if(g>0)f.g=g;if(bc){f.barcode=bc;S.custom=S.custom.filter(x=>x.barcode!==bc)}
+      S.custom.unshift(f);pushRecent(f.id);save();openFood(f);break}
     case "exercise":if(view!=="diary")cur=today();openExercise();break;
     case "exsave":{const m=num($("#ex-min").value);if(m<=0)return;day(cur).ex.push({id:uid(),name:ACTS[+$("#ex-type").value][0],min:m,kcal:exKcal()});closeSheet();commit("הפעילות נרשמה");break}
     case "exdel":{const d=day(cur);d.ex=d.ex.filter(x=>x.id!==el.dataset.id);commit("הפעילות נמחקה");break}
