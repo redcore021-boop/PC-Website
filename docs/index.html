@@ -207,6 +207,9 @@ nav.tabs .plus svg{width:28px;height:28px}
 .cam .frame::after{content:"";position:absolute;left:6%;right:6%;top:50%;height:2px;background:#FF5A4E;box-shadow:0 0 8px #FF5A4E;animation:scan 1.6s ease-in-out infinite alternate}
 @keyframes scan{from{transform:translateY(-34px)}to{transform:translateY(34px)}}
 .cam .msg{position:absolute;inset:auto 0 10px 0;text-align:center;color:#fff;font-size:14px;font-weight:700;text-shadow:0 1px 3px rgba(0,0,0,.7)}
+.camctl{position:absolute;top:10px;inset-inline-start:10px;display:flex;gap:8px}
+.camctl button{min-width:44px;height:36px;padding:0 12px;border-radius:18px;background:rgba(0,0,0,.55);color:#fff;font-weight:800;font-size:13px}
+.camctl button.on{background:#fff;color:#111}
 .scanbtn{display:flex;align-items:center;gap:12px;background:var(--surface);box-shadow:var(--shadow);border-radius:14px;padding:12px 14px;text-align:start;width:100%}
 .scanbtn svg{width:30px;height:30px;color:var(--accent);flex:none}
 .scanbtn b{display:block}
@@ -616,21 +619,52 @@ function openNewFood(pre){
 
 /* ---------- barcode scanning ---------- */
 const ZX_SRC="https://unpkg.com/@zxing/library@0.21.3/umd/index.min.js";
-let zxLoad=null, reader=null, scanning=false;
+let zxLoad=null, scanning=false, stream=null, scanTimer=0, zx=null, lastRead="", torchOn=false;
 function loadZX(){
   if(window.ZXing)return Promise.resolve(window.ZXing);
   return zxLoad||(zxLoad=new Promise((ok,no)=>{const s=document.createElement("script");s.src=ZX_SRC;s.onload=()=>ok(window.ZXing);s.onerror=()=>{zxLoad=null;no(new Error("load"))};document.head.appendChild(s)}));
 }
-function makeReader(ZX){
+/* one decoder, reused for every frame */
+function decoder(ZX){
+  if(zx)return zx;
   const h=new Map();
   h.set(ZX.DecodeHintType.POSSIBLE_FORMATS,[ZX.BarcodeFormat.EAN_13,ZX.BarcodeFormat.EAN_8,ZX.BarcodeFormat.UPC_A,ZX.BarcodeFormat.UPC_E,ZX.BarcodeFormat.CODE_128]);
   h.set(ZX.DecodeHintType.TRY_HARDER,true);
-  return new ZX.BrowserMultiFormatReader(h,300);
+  const r=new ZX.MultiFormatReader();r.setHints(h);
+  return zx={ZX,r};
 }
-function stopScan(){scanning=false;if(reader){try{reader.reset()}catch(e){}reader=null}}
+/* try to read a barcode from a canvas: both binarizers, then inverted */
+function decodeCanvas(cv){
+  const {ZX,r}=zx;
+  const src=new ZX.HTMLCanvasElementLuminanceSource(cv);
+  const tries=[()=>new ZX.BinaryBitmap(new ZX.HybridBinarizer(src)),()=>new ZX.BinaryBitmap(new ZX.GlobalHistogramBinarizer(src)),()=>new ZX.BinaryBitmap(new ZX.HybridBinarizer(new ZX.InvertedLuminanceSource(src)))];
+  for(const t of tries){try{return r.decodeWithState(t()).getText()}catch(e){}finally{r.reset()}}
+  return null;
+}
+/* draw a region of an image/video onto a canvas, optionally rotated 90° */
+function drawRegion(cv,src,sx,sy,sw,sh,maxW,rot){
+  const k=Math.min(1,maxW/sw), w=Math.round(sw*k), h=Math.round(sh*k);
+  cv.width=rot?h:w;cv.height=rot?w:h;
+  const c=cv.getContext("2d",{willReadFrequently:true});
+  c.save();if(rot){c.translate(h,0);c.rotate(Math.PI/2)}
+  c.drawImage(src,sx,sy,sw,sh,0,0,w,h);c.restore();
+}
+/* EAN/UPC check digit, so a misread never reaches the lookup */
+function validCode(s){
+  if(!/^\d+$/.test(s))return false;
+  if(![8,12,13].includes(s.length))return s.length>=6;
+  const d=s.split("").map(Number),chk=d.pop();
+  const sum=d.reverse().reduce((a,x,i)=>a+x*(i%2?1:3),0);
+  return (10-sum%10)%10===chk;
+}
+function stopScan(){
+  scanning=false;clearTimeout(scanTimer);torchOn=false;
+  if(stream){stream.getTracks().forEach(t=>t.stop());stream=null}
+}
 function scanStatus(msg,err){const s=$("#scanSt");if(s){s.innerHTML=msg;s.className="status"+(err?" err":"");s.hidden=!msg}}
 function openScan(){
-  openSheet("סריקת ברקוד",`<div class="cam" id="cam"><video id="camv" playsinline muted autoplay></video><div class="frame"></div><div class="msg">מכוונים את הברקוד למסגרת</div></div>
+  openSheet("סריקת ברקוד",`<div class="cam" id="cam"><video id="camv" playsinline muted autoplay></video><div class="frame"></div><div class="msg" id="camMsg">מכוונים את הברקוד למסגרת, במרחק של כ-15 ס"מ</div>
+    <div class="camctl"><button id="torch" data-act="torch" hidden aria-label="פנס">פנס</button><button id="zoom" data-act="zoom" hidden aria-label="זום">2×</button></div></div>
   <div class="status" id="scanSt" hidden></div>
   <label class="btn ghost block filebtn" for="snap">צילום תמונה של הברקוד<input id="snap" type="file" accept="image/*" capture="environment"></label>
   <div class="row" style="gap:8px"><div class="field" style="flex:1"><label for="bc-in">או הקלדת מספר הברקוד</label><input id="bc-in" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="7290000066318" autocomplete="off"></div><button class="btn" style="align-self:flex-end" data-act="bcgo">חיפוש</button></div>
@@ -642,40 +676,82 @@ function openScan(){
 }
 async function startLive(){
   const cam=$("#cam");
-  const noLive=()=>{if(cam)cam.hidden=true;scanStatus("המצלמה החיה לא זמינה כאן. צלמו את הברקוד עם הכפתור למטה, האייפון יפתח את המצלמה.")};
+  const noLive=()=>{stopScan();if(cam)cam.hidden=true;scanStatus("המצלמה החיה לא זמינה כאן. צלמו את הברקוד עם הכפתור למטה, האייפון יפתח את המצלמה.")};
   if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia)return noLive();
   let ZX;try{ZX=await loadZX()}catch(e){return noLive()}
-  if(!$("#camv"))return;
-  stopScan();reader=makeReader(ZX);scanning=true;
+  decoder(ZX);
+  const v=$("#camv");if(!v)return;
+  stopScan();
   try{
-    await reader.decodeFromConstraints({video:{facingMode:"environment"}},$("#camv"),(res)=>{
-      if(res&&scanning){stopScan();found(res.getText())}
-    });
-  }catch(e){stopScan();noLive()}
+    stream=await navigator.mediaDevices.getUserMedia({audio:false,video:{facingMode:{ideal:"environment"},width:{ideal:1920},height:{ideal:1080}}});
+  }catch(e){return noLive()}
+  if(!$("#camv")){stopScan();return}
+  v.srcObject=stream;try{await v.play()}catch(e){}
+  const track=stream.getVideoTracks()[0], caps=track.getCapabilities?track.getCapabilities():{};
+  try{if(caps.focusMode&&caps.focusMode.includes("continuous"))await track.applyConstraints({advanced:[{focusMode:"continuous"}]})}catch(e){}
+  if(caps.torch)$("#torch").hidden=false;
+  if(caps.zoom&&caps.zoom.max>=2)$("#zoom").hidden=false;
+  scanning=true;lastRead="";
+  const cv=document.createElement("canvas");let n=0;
+  const tick=()=>{
+    if(!scanning)return;
+    if(v.readyState>=2&&v.videoWidth){
+      const W=v.videoWidth,H=v.videoHeight;n++;
+      // centre band where the on-screen frame is; every third pass, the whole frame rotated for vertical barcodes
+      const code=n%3===0?(drawRegion(cv,v,0,0,W,H,900,true),decodeCanvas(cv)):(drawRegion(cv,v,W*0.08,H*0.25,W*0.84,H*0.5,1000,false),decodeCanvas(cv));
+      if(code){
+        // a valid check digit is enough; anything else must be read twice in a row
+        if(validCode(code)&&([8,12,13].includes(code.length)||code===lastRead)){stopScan();found(code);return}
+        lastRead=code;
+      }
+    }
+    scanTimer=setTimeout(tick,90);
+  };
+  tick();
+  setTimeout(()=>{if(scanning&&$("#camMsg"))$("#camMsg").textContent="לא מזהה? נסו להתרחק מעט, להדליק פנס או לצלם תמונה"},9000);
 }
 async function scanPhoto(file){
+  stopScan();
   scanStatus('<div class="spin"></div><div style="text-align:center">מזהה ברקוד בתמונה…</div>');
   let ZX;try{ZX=await loadZX()}catch(e){return scanStatus("לא הצלחתי לטעון את רכיב הסריקה. בדקו את החיבור לאינטרנט, או הקלידו את המספר.",true)}
-  const url=URL.createObjectURL(file);
-  try{const res=await makeReader(ZX).decodeFromImageUrl(url);found(res.getText())}
-  catch(e){scanStatus("לא זוהה ברקוד בתמונה. צלמו שוב מקרוב, ישר ובתאורה טובה, או הקלידו את המספר.",true)}
-  finally{URL.revokeObjectURL(url)}
+  decoder(ZX);
+  const url=URL.createObjectURL(file), img=new Image();
+  try{await new Promise((ok,no)=>{img.onload=ok;img.onerror=no;img.src=url})}catch(e){URL.revokeObjectURL(url);return scanStatus("לא הצלחתי לפתוח את התמונה.",true)}
+  await new Promise(r=>setTimeout(r,30));
+  const W=img.naturalWidth,H=img.naturalHeight,cv=document.createElement("canvas");
+  // several sizes and crops: phone photos are large and the barcode is often small or sideways
+  const plans=[[0,0,1,1,1400],[0,0,1,1,900],[.15,.2,.7,.6,1200],[.25,.3,.5,.4,1000],[0,0,1,1,2000]];
+  let code=null;
+  outer:for(const rot of [false,true])for(const [x,y,w,h,m] of plans){
+    drawRegion(cv,img,W*x,H*y,W*w,H*h,m,rot);
+    code=decodeCanvas(cv);if(code)break outer;
+  }
+  URL.revokeObjectURL(url);
+  if(code)found(code);
+  else scanStatus("לא זוהה ברקוד בתמונה. צלמו שוב כשהברקוד ממלא את רוב התמונה, ישר, חד ובלי השתקפות אור. אפשר גם להקליד את המספר.",true);
 }
-function lookupInput(){const v=($("#bc-in").value||"").replace(/\D/g,"");if(v.length<6){scanStatus("ברקוד צריך להכיל לפחות 8 ספרות.",true);return}found(v)}
+function lookupInput(){const v=($("#bc-in").value||"").replace(/\D/g,"");if(v.length<8){scanStatus("ברקוד צריך להכיל לפחות 8 ספרות.",true);return}found(v)}
 function found(code){try{navigator.vibrate&&navigator.vibrate(60)}catch(e){}lookup(code)}
+/* the same product can be stored as UPC-A (12 digits) or EAN-13 with a leading 0 */
+function codeVariants(c){const v=[c];if(c.length===12)v.push("0"+c);if(c.length===13&&c[0]==="0")v.push(c.slice(1));if(c.length===8)v.push("00000"+c);return v}
+async function offFetch(code){
+  const ctl=new AbortController(), t=setTimeout(()=>ctl.abort(),9000);
+  try{const r=await fetch("https://world.openfoodfacts.org/api/v2/product/"+encodeURIComponent(code)+".json?fields=product_name,product_name_he,generic_name,brands,quantity,serving_size,serving_quantity,nutriments",{signal:ctl.signal});return await r.json()}
+  finally{clearTimeout(t)}
+}
 
 async function lookup(code){
   stopScan();
-  const mine=S.custom.find(f=>f.barcode===code);
+  const vars=codeVariants(code), mine=S.custom.find(f=>vars.includes(f.barcode));
   if(mine){pushRecent(mine.id);openFood(mine,null,"המוצר נמצא ב\"המזונות שלי\".");return}
   openSheet("מחפש מוצר",`<div class="spin"></div><p style="text-align:center;margin:0">מחפש את ברקוד <span class="num">${esc(code)}</span>…</p>`);
-  let data=null, net=true;
-  try{
-    const ctl=new AbortController(), t=setTimeout(()=>ctl.abort(),9000);
-    const r=await fetch("https://world.openfoodfacts.org/api/v2/product/"+encodeURIComponent(code)+".json?fields=product_name,product_name_he,generic_name,brands,quantity,serving_size,serving_quantity,nutriments",{signal:ctl.signal});
-    clearTimeout(t);
-    data=await r.json();
-  }catch(e){net=false}
+  let data=null, net=false, partial=null;
+  for(const c of vars){
+    try{const d=await offFetch(c);net=true;
+      if(d&&d.status===1){const n=d.product.nutriments||{};if(n["energy-kcal_100g"]!=null||n["energy-kj_100g"]!=null){data=d;break}partial=partial||d}
+    }catch(e){}
+  }
+  data=data||partial;
   if(!$("#sheet").classList.contains("on"))return;
   const p=data&&data.status===1&&data.product, f=p&&offFood(code,p);
   if(f){S.custom.unshift(f);pushRecent(f.id);save();openFood(f,null,"המוצר נמצא. הערכים נלקחו מהמאגר, כדאי להשוות לתווית.");return}
@@ -734,6 +810,8 @@ document.addEventListener("click",e=>{
       document.querySelectorAll("#unitSeg button").forEach(b=>b.classList.toggle("on",b===el));i.dispatchEvent(new Event("input"));break}
     case "scan":if(view!=="diary")cur=today();if(!el.closest("#sheet"))addMeal=view==="diary"?addMeal:guessMeal();openScan();break;
     case "bcgo":lookupInput();break;
+    case "torch":{if(!stream)break;torchOn=!torchOn;stream.getVideoTracks()[0].applyConstraints({advanced:[{torch:torchOn}]}).catch(()=>{});el.classList.toggle("on",torchOn);break}
+    case "zoom":{if(!stream)break;const t=stream.getVideoTracks()[0],z=el.classList.toggle("on")?2:1;t.applyConstraints({advanced:[{zoom:z}]}).catch(()=>{});el.textContent=z===2?"1×":"2×";break}
     case "lookup":lookup(el.dataset.code);break;
     case "confirm":{const sv=Math.round(amount()*1000)/1000;if(sv<=0)return;const f=pending.f;
       day(cur).food.push({id:uid(),fid:f.id,name:f.name,unit:f.unit,g:f.g,kcal:f.kcal,p:f.p,c:f.c,f:f.f,sv,meal:$("#fmeal").value});
