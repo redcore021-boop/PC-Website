@@ -566,7 +566,8 @@ function openFood(f,editItem,note){
   <div class="mrow" id="fm"></div>
   <div class="field"><label for="fmeal">ארוחה</label><select id="fmeal">${MEALS.map(([m,n])=>`<option value="${m}" ${m===meal?"selected":""}>${n}</option>`).join("")}</select></div>
   <button class="btn block" data-act="${editItem?"saveitem":"confirm"}">${editItem?"שמירה":"הוספה ליומן"}</button>
-  ${editItem?`<button class="btn danger block" data-act="delitem">הסרה מהיומן</button>`:""}`;
+  ${editItem?`<button class="btn danger block" data-act="delitem">הסרה מהיומן</button>`:""}
+  ${S.custom.some(x=>x.id===f.id)?`<button class="btn plain block" data-act="fixfood">הערכים לא נכונים? תיקון המוצר</button>`:""}`;
   pending={f,edit:editItem||null,mode:"sv"};
   openSheet(editItem?"עריכת פריט":"פרטי מזון",html,b=>{
     const upd=()=>{const s=amount();
@@ -587,19 +588,30 @@ function openQuick(){
   <div class="field"><label for="qa-meal">ארוחה</label><select id="qa-meal">${MEALS.map(([m,n])=>`<option value="${m}" ${m===addMeal?"selected":""}>${n}</option>`).join("")}</select></div></div>
   <button class="btn block" data-act="quicksave">הוספה ליומן</button>`,b=>b.querySelector("#qa-k").focus());
 }
+/* create a food, or fix one saved earlier (pre.edit); values are typed per 100 g when a serving weight is given */
 function openNewFood(pre){
   pre=pre||{};
-  openSheet("מזון חדש",`${pre.msg?`<div class="status err">${pre.msg}</div>`:`<p class="note" style="margin:0">הערכים מופיעים על תווית המוצר. המזון יישמר תחת "המזונות שלי".</p>`}
-  <div class="form"><div class="field full"><label for="nf-name">שם</label><input id="nf-name" type="text" value="${esc(pre.name||"")}" placeholder="למשל: עוגיית שיבולת שועל של סבתא"></div>
-  ${pre.barcode?`<div class="field full"><label for="nf-bc">ברקוד</label><input id="nf-bc" type="text" inputmode="numeric" value="${esc(pre.barcode)}"></div>`:""}
-  <div class="field"><label for="nf-unit">גודל מנה</label><input id="nf-unit" type="text" value="${pre.barcode?"100 ג'":""}" placeholder="למשל: יחידה"></div>
-  <div class="field"><label for="nf-g">משקל מנה (ג')</label><input id="nf-g" type="number" inputmode="decimal" value="${pre.barcode?100:""}" placeholder="לא חובה"></div>
-  <div class="field"><label for="nf-k">קלוריות</label><input id="nf-k" type="number" inputmode="numeric"></div>
-  <div class="field"><label for="nf-c">פחמימות (ג')</label><input id="nf-c" type="number" inputmode="decimal"></div>
-  <div class="field"><label for="nf-p">חלבון (ג')</label><input id="nf-p" type="number" inputmode="decimal"></div>
-  <div class="field"><label for="nf-f">שומן (ג')</label><input id="nf-f" type="number" inputmode="decimal"></div></div>
+  const e=pre.edit, g0=e?(e.g||""):(pre.barcode?100:""), per=v=>e?r1(e.g?v*100/e.g:v):"";
+  const bc=e?e.barcode:pre.barcode;
+  openSheet(e?"תיקון מוצר":"מזון חדש",`${pre.msg?`<div class="status err">${pre.msg}</div>`:`<p class="note" style="margin:0">${e?"מעתיקים את הערכים מהטבלה התזונתית שעל האריזה. התיקון יישמר, וישמש בכל סריקה הבאה של המוצר.":"הערכים מופיעים על תווית המוצר. המזון יישמר תחת \"המזונות שלי\"."}</p>`}
+  <div class="form"><div class="field full"><label for="nf-name">שם</label><input id="nf-name" type="text" value="${esc(e?e.name:pre.name||"")}" placeholder="למשל: עוגיית שיבולת שועל של סבתא"></div>
+  ${bc?`<div class="field full"><label for="nf-bc">ברקוד</label><input id="nf-bc" type="text" inputmode="numeric" value="${esc(bc)}"></div>`:""}
+  <div class="field"><label for="nf-unit">שם המנה</label><input id="nf-unit" type="text" value="${esc(e?e.unit:pre.barcode?"100 ג'":"")}" placeholder="למשל: יחידה, פרוסה"></div>
+  <div class="field"><label for="nf-g">משקל מנה (ג')</label><input id="nf-g" type="number" inputmode="decimal" value="${g0}" placeholder="לא חובה"></div>
+  <div class="field full"><div class="lbl" id="nf-basis"></div></div>
+  <div class="field"><label for="nf-k">קלוריות</label><input id="nf-k" type="number" inputmode="decimal" value="${e?per(e.kcal):""}"></div>
+  <div class="field"><label for="nf-c">פחמימות (ג')</label><input id="nf-c" type="number" inputmode="decimal" value="${e?per(e.c):""}"></div>
+  <div class="field"><label for="nf-p">חלבון (ג')</label><input id="nf-p" type="number" inputmode="decimal" value="${e?per(e.p):""}"></div>
+  <div class="field"><label for="nf-f">שומן (ג')</label><input id="nf-f" type="number" inputmode="decimal" value="${e?per(e.f):""}"></div></div>
   <p class="note" id="nf-err" style="color:var(--warn);margin:0" hidden>צריך למלא שם ומספר קלוריות.</p>
-  <button class="btn block" data-act="newfoodsave">שמירה והמשך</button>`,b=>b.querySelector(pre.name?"#nf-k":"#nf-name").focus());
+  <button class="btn block" data-act="newfoodsave">${e?"שמירת התיקון":"שמירה והמשך"}</button>
+  ${e?`<button class="btn danger block" data-act="fooddel">מחיקת המוצר מ"המזונות שלי"</button>`:""}
+  ${bc?`<p class="note" style="margin:0">הנתונים במאגר Open Food Facts נכתבים בידי משתמשים. אפשר לתקן גם שם, כדי שיהיו נכונים לכולם: <a class="link" href="https://world.openfoodfacts.org/product/${esc(bc)}" target="_blank" rel="noopener">פתיחת המוצר במאגר</a></p>`:""}`,b=>{
+    const g=b.querySelector("#nf-g"),upd=()=>{b.querySelector("#nf-basis").textContent=parseFloat(g.value)>0?"ערכים תזונתיים ל-100 ג' (כמו בטבלה על האריזה)":"ערכים תזונתיים למנה אחת"};
+    g.addEventListener("input",upd);upd();
+    b.querySelector(e||pre.name?"#nf-k":"#nf-name").focus();
+  });
+  pending={fix:e||null};
 }
 
 /* ---------- barcode scanning ---------- */
@@ -743,7 +755,7 @@ async function lookup(code){
   data=data||partial;
   if(!$("#sheet").classList.contains("on"))return;
   const p=data&&data.status===1&&data.product, f=p&&offFood(code,p);
-  if(f){S.custom.unshift(f);pushRecent(f.id);save();openFood(f,null,"המוצר נמצא. הערכים נלקחו מהמאגר, כדאי להשוות לתווית.");return}
+  if(f){S.custom.unshift(f);pushRecent(f.id);save();openFood(f,null,"המוצר נמצא. כדאי להשוות לתווית; אם משהו לא תואם, לחצו למטה על \"תיקון המוצר\".");return}
   openNewFood({barcode:code,name:p?offName(p):"",
     msg:!net?"אין כרגע גישה למאגר המוצרים. מלאו את הערכים מהתווית פעם אחת, והמוצר יזוהה בסריקה הבאה."
       :p?"המוצר נמצא, אבל בלי ערכים תזונתיים. מלאו אותם מהתווית פעם אחת והם יישמרו."
@@ -805,7 +817,7 @@ document.addEventListener("click",e=>{
     case "confirm":{const sv=Math.round(amount()*1000)/1000;if(sv<=0)return;const f=pending.f;
       day(cur).food.push({id:uid(),fid:f.id,name:f.name,unit:f.unit,g:f.g,kcal:f.kcal,p:f.p,c:f.c,f:f.f,sv,meal:$("#fmeal").value});
       pushRecent(f.id);closeSheet();commit(`${f.name} נוסף ליומן`);break}
-    case "edit":{const it=getDay(cur).food.find(i=>i.id===el.dataset.id);if(it)openFood({name:it.name,unit:it.unit,g:it.g,kcal:it.kcal,p:it.p,c:it.c,f:it.f},it);break}
+    case "edit":{const it=getDay(cur).food.find(i=>i.id===el.dataset.id);if(it)openFood({id:it.fid,name:it.name,unit:it.unit,g:it.g,kcal:it.kcal,p:it.p,c:it.c,f:it.f},it);break}
     case "saveitem":{const sv=Math.round(amount()*1000)/1000;if(sv<=0)return;pending.edit.sv=sv;pending.edit.meal=$("#fmeal").value;closeSheet();commit("עודכן");break}
     case "delitem":{const d=day(cur);d.food=d.food.filter(i=>i!==pending.edit);closeSheet();commit("הוסר מהיומן");break}
     case "quickadd":openQuick();break;
@@ -814,10 +826,18 @@ document.addEventListener("click",e=>{
       closeSheet();commit("נוסף ליומן");break}
     case "newfood":openNewFood();break;
     case "newfoodsave":{const n=$("#nf-name").value.trim(),k=num($("#nf-k").value);if(!n||k<=0){$("#nf-err").hidden=false;return}
-      const bc=$("#nf-bc")?$("#nf-bc").value.replace(/\D/g,""):"", g=num($("#nf-g").value);
-      const f={id:"c_"+uid(),name:n,unit:$("#nf-unit").value.trim()||"מנה",kcal:k,p:num($("#nf-p").value),c:num($("#nf-c").value),f:num($("#nf-f").value)};
-      if(g>0)f.g=g;if(bc){f.barcode=bc;S.custom=S.custom.filter(x=>x.barcode!==bc)}
-      S.custom.unshift(f);pushRecent(f.id);save();openFood(f);break}
+      const bc=$("#nf-bc")?$("#nf-bc").value.replace(/\D/g,""):"", g=num($("#nf-g").value), m=g>0?g/100:1, old=pending&&pending.fix;
+      const f={id:old?old.id:"c_"+uid(),name:n,unit:$("#nf-unit").value.trim()||(g>0?g+" ג'":"מנה"),
+        kcal:Math.round(k*m),p:r1(num($("#nf-p").value)*m),c:r1(num($("#nf-c").value)*m),f:r1(num($("#nf-f").value)*m)};
+      if(g>0)f.g=g;if(bc)f.barcode=bc;
+      S.custom=S.custom.filter(x=>x.id!==f.id&&!(bc&&x.barcode===bc));S.custom.unshift(f);pushRecent(f.id);
+      if(old){
+        // fix the entries already in the diary too
+        let cnt=0;Object.values(S.days).forEach(d=>d.food.forEach(i=>{if(i.fid===f.id){Object.assign(i,{name:f.name,unit:f.unit,g:f.g,kcal:f.kcal,p:f.p,c:f.c,f:f.f});cnt++}}));
+        closeSheet();commit(cnt?`התיקון נשמר ועודכן ב-${cnt} רישומים ביומן`:"התיקון נשמר");break}
+      save();openFood(f);break}
+    case "fixfood":{const own=S.custom.find(x=>x.id===pending.f.id);if(own)openNewFood({edit:own});break}
+    case "fooddel":{const id=pending.fix.id;S.custom=S.custom.filter(x=>x.id!==id);S.recent=S.recent.filter(x=>x!==id);closeSheet();commit("המוצר נמחק מהרשימה");break}
     case "exercise":if(view!=="diary")cur=today();openExercise();break;
     case "exsave":{const m=num($("#ex-min").value);if(m<=0)return;day(cur).ex.push({id:uid(),name:ACTS[+$("#ex-type").value][0],min:m,kcal:exKcal()});closeSheet();commit("הפעילות נרשמה");break}
     case "exdel":{const d=day(cur);d.ex=d.ex.filter(x=>x.id!==el.dataset.id);commit("הפעילות נמחקה");break}
