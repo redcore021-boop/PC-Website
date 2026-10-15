@@ -192,6 +192,12 @@ nav.tabs .plus svg{width:28px;height:28px}
 .cam .frame::after{content:"";position:absolute;left:6%;right:6%;top:50%;height:2px;background:#FF5A4E;box-shadow:0 0 8px #FF5A4E;animation:scan 1.6s ease-in-out infinite alternate}
 @keyframes scan{from{transform:translateY(-34px)}to{transform:translateY(34px)}}
 .cam .msg{position:absolute;inset:auto 0 10px 0;text-align:center;color:#fff;font-size:14px;font-weight:700;text-shadow:0 1px 3px rgba(0,0,0,.7)}
+.kfix{display:block;margin:0 auto;padding:2px 14px;border-radius:12px;border:1.5px dashed transparent}
+.kfix:hover,.kfix:focus-visible{border-color:var(--accent)}
+.qfix{display:flex;flex-direction:column;gap:10px;background:var(--surface);border:1.5px solid var(--accent);border-radius:14px;padding:12px}
+.qgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.qgrid input{padding:9px 6px;text-align:center}
+.qgrid label{font-size:12px}
 .camctl{position:absolute;top:10px;inset-inline-start:10px;display:flex;gap:8px}
 .camctl button{min-width:44px;height:36px;padding:0 12px;border-radius:18px;background:rgba(0,0,0,.55);color:#fff;font-weight:800;font-size:13px}
 .camctl button.on{background:#fff;color:#111}
@@ -561,11 +567,22 @@ function openFood(f,editItem,note){
   const meal=editItem?editItem.meal:addMeal;
   const own=S.custom.some(x=>x.id===f.id);
   const html=`${note?`<div class="status">${note}</div>`:""}<div class="row between" style="align-items:flex-start"><div style="min-width:0"><div style="font-weight:800;font-size:18px">${esc(f.name)}</div><div class="muted" style="font-size:14px">מנה: ${esc(f.unit)}${f.barcode?` · ברקוד <span class="num">${esc(f.barcode)}</span>`:""}</div></div>
-  ${own?`<button class="btn ghost" data-act="fixfood" style="flex:none;padding:8px 14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M14 6l4 4"/></svg>עריכה</button>`:""}</div>
-  <div class="big num" id="fk"></div><div class="muted" style="text-align:center;margin-top:-8px;font-size:14px">קלוריות</div>
+  ${`<button class="btn ghost" data-act="qfix" style="flex:none;padding:8px 14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M14 6l4 4"/></svg>עריכה</button>`}</div>
+  <button class="big num kfix" id="fk" data-act="qfix" aria-label="תיקון הקלוריות"></button><div class="muted" style="text-align:center;margin-top:-8px;font-size:14px">קלוריות · נגיעה במספר לתיקון</div>
+  <div class="qfix" id="qfix" hidden>
+    <div class="lbl">תיקון הערכים ל-<span id="qfAmt"></span></div>
+    <div class="qgrid">
+      <div class="field"><label for="qf-k">קלוריות</label><input id="qf-k" type="number" inputmode="decimal"></div>
+      <div class="field"><label for="qf-c">פחמ' (ג')</label><input id="qf-c" type="number" inputmode="decimal"></div>
+      <div class="field"><label for="qf-p">חלבון (ג')</label><input id="qf-p" type="number" inputmode="decimal"></div>
+      <div class="field"><label for="qf-f">שומן (ג')</label><input id="qf-f" type="number" inputmode="decimal"></div>
+    </div>
+    <div class="row" style="gap:8px"><button class="btn" style="flex:1" data-act="qfixsave">שמירת התיקון</button><button class="btn plain" data-act="qfixcancel">ביטול</button></div>
+    ${own?`<button class="link" style="font-size:14px;text-align:start" data-act="fixfood">עריכה מלאה: שם, גודל מנה, ערכים ל-100 ג'</button>`:""}
+  </div>
   ${f.g?`<div class="seg" id="unitSeg"><button data-act="unit" data-v="sv" class="on">מנות</button><button data-act="unit" data-v="g">גרם</button></div>`:""}
   <div class="stepper"><button data-act="sv" data-n="-1" aria-label="פחות">−</button><input id="sv" type="number" inputmode="decimal" step="0.5" min="0.25" value="${sv}" aria-label="כמות"><button data-act="sv" data-n="1" aria-label="יותר">+</button></div>
-  <div class="mrow" id="fm" ${own?'data-act="fixfood" role="button" aria-label="עריכת הערכים" style="cursor:pointer"':""}></div>
+  <div class="mrow" id="fm" data-act="qfix" role="button" aria-label="תיקון הערכים" style="cursor:pointer"></div>
   <div class="field"><label for="fmeal">ארוחה</label><select id="fmeal">${MEALS.map(([m,n])=>`<option value="${m}" ${m===meal?"selected":""}>${n}</option>`).join("")}</select></div>
   <button class="btn block" data-act="${editItem?"saveitem":"confirm"}">${editItem?"שמירה":"הוספה ליומן"}</button>
   ${editItem?`<button class="btn danger block" data-act="delitem">הסרה מהיומן</button>`:""}
@@ -573,7 +590,7 @@ function openFood(f,editItem,note){
   pending={f,edit:editItem||null,mode:"sv"};
   openSheet(editItem?"עריכת פריט":"פרטי מזון",html,b=>{
     const upd=()=>{const s=amount();
-      b.querySelector("#fk").textContent=fmt(f.kcal*s);
+      const f=pending.f;b.querySelector("#fk").textContent=fmt(f.kcal*s);
       b.querySelector("#fm").innerHTML=`<div><b>${fmt(f.kcal*s)}</b><span class="muted">קל'</span></div><div><b>${r1(f.c*s)}</b><span style="color:var(--carb)">פחמ' ג'</span></div><div><b>${r1(f.p*s)}</b><span style="color:var(--prot)">חלבון ג'</span></div><div><b>${r1(f.f*s)}</b><span style="color:var(--fat)">שומן ג'</span></div>`};
     b.querySelector("#sv").addEventListener("input",upd);upd();
   });
@@ -843,6 +860,22 @@ document.addEventListener("click",e=>{
         else{closeSheet();toast(msg)}
         break}
       save();openFood(f);break}
+    case "qfix":{const q=$("#qfix");if(!q)break;const a=amount(),f=pending.f;if(a<=0)break;
+      $("#qfAmt").textContent=pending.mode==="g"?Math.round(a*f.g)+" ג'":(r1(a)===1?f.unit:r1(a)+" × "+f.unit);
+      $("#qf-k").value=Math.round(f.kcal*a);$("#qf-c").value=r1(f.c*a);$("#qf-p").value=r1(f.p*a);$("#qf-f").value=r1(f.f*a);
+      q.hidden=false;$("#qf-k").focus();$("#qf-k").select();q.scrollIntoView({block:"nearest",behavior:"smooth"});break}
+    case "qfixcancel":$("#qfix").hidden=true;break;
+    case "qfixsave":{const a=amount(),k=num($("#qf-k").value);if(a<=0||k<=0){$("#qf-k").focus();return}
+      const o=pending.f, v={kcal:Math.round(k/a*10)/10,c:r1(num($("#qf-c").value)/a),p:r1(num($("#qf-p").value)/a),f:r1(num($("#qf-f").value)/a)};
+      let nf=S.custom.find(x=>x.id===o.id);
+      if(nf)Object.assign(nf,v);
+      else{nf=Object.assign({id:"c_"+uid(),name:o.name,unit:o.unit},o.g?{g:o.g}:{},o.barcode?{barcode:o.barcode}:{},v);S.custom.unshift(nf);pushRecent(nf.id)}
+      // entries already logged with this food get the corrected values too
+      let cnt=0;Object.values(S.days).forEach(d=>d.food.forEach(i=>{if(i.fid&&i.fid===o.id){Object.assign(i,v,{fid:nf.id});cnt++}}));
+      if(pending.edit&&!pending.edit.fid){Object.assign(pending.edit,v,{fid:nf.id});cnt++}
+      pending.f=nf;save();render();
+      $("#qfix").hidden=true;$("#sv").dispatchEvent(new Event("input"));
+      toast(cnt?"התיקון נשמר, גם ביומן":"התיקון נשמר לסריקות הבאות");break}
     case "fixfood":{const own=S.custom.find(x=>x.id===pending.f.id);if(own)openNewFood({edit:own,back:{item:pending.edit&&pending.edit.id,meal:$("#fmeal")?$("#fmeal").value:addMeal}});break}
     case "fooddel":{const id=pending.fix.id;S.custom=S.custom.filter(x=>x.id!==id);S.recent=S.recent.filter(x=>x!==id);closeSheet();commit("המוצר נמחק מהרשימה");break}
     case "exercise":if(view!=="diary")cur=today();openExercise();break;
