@@ -574,15 +574,17 @@ function openAdd(meal){
 function openFood(f,editItem,note){
   let sv=editItem?editItem.sv:1;
   const meal=editItem?editItem.meal:addMeal;
-  const html=`${note?`<div class="status">${note}</div>`:""}<div><div style="font-weight:800;font-size:18px">${esc(f.name)}</div><div class="muted" style="font-size:14px">מנה: ${esc(f.unit)}${f.barcode?` · ברקוד <span class="num">${esc(f.barcode)}</span>`:""}</div></div>
+  const own=S.custom.some(x=>x.id===f.id);
+  const html=`${note?`<div class="status">${note}</div>`:""}<div class="row between" style="align-items:flex-start"><div style="min-width:0"><div style="font-weight:800;font-size:18px">${esc(f.name)}</div><div class="muted" style="font-size:14px">מנה: ${esc(f.unit)}${f.barcode?` · ברקוד <span class="num">${esc(f.barcode)}</span>`:""}</div></div>
+  ${own?`<button class="btn ghost" data-act="fixfood" style="flex:none;padding:8px 14px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M14 6l4 4"/></svg>עריכה</button>`:""}</div>
   <div class="big num" id="fk"></div><div class="muted" style="text-align:center;margin-top:-8px;font-size:14px">קלוריות</div>
   ${f.g?`<div class="seg" id="unitSeg"><button data-act="unit" data-v="sv" class="on">מנות</button><button data-act="unit" data-v="g">גרם</button></div>`:""}
   <div class="stepper"><button data-act="sv" data-n="-1" aria-label="פחות">−</button><input id="sv" type="number" inputmode="decimal" step="0.5" min="0.25" value="${sv}" aria-label="כמות"><button data-act="sv" data-n="1" aria-label="יותר">+</button></div>
-  <div class="mrow" id="fm"></div>
+  <div class="mrow" id="fm" ${own?'data-act="fixfood" role="button" aria-label="עריכת הערכים" style="cursor:pointer"':""}></div>
   <div class="field"><label for="fmeal">ארוחה</label><select id="fmeal">${MEALS.map(([m,n])=>`<option value="${m}" ${m===meal?"selected":""}>${n}</option>`).join("")}</select></div>
   <button class="btn block" data-act="${editItem?"saveitem":"confirm"}">${editItem?"שמירה":"הוספה ליומן"}</button>
   ${editItem?`<button class="btn danger block" data-act="delitem">הסרה מהיומן</button>`:""}
-  ${S.custom.some(x=>x.id===f.id)?`<button class="btn plain block" data-act="fixfood">הערכים לא נכונים? תיקון המוצר</button>`:""}`;
+`;
   pending={f,edit:editItem||null,mode:"sv"};
   openSheet(editItem?"עריכת פריט":"פרטי מזון",html,b=>{
     const upd=()=>{const s=amount();
@@ -626,7 +628,7 @@ function openNewFood(pre){
     g.addEventListener("input",upd);upd();
     b.querySelector(e||pre.name?"#nf-k":"#nf-name").focus();
   });
-  pending={fix:e||null};
+  pending={fix:e||null,back:pre.back||null};
 }
 
 /* ---------- barcode scanning ---------- */
@@ -770,7 +772,7 @@ async function lookup(code){
   data=data||partial;
   if(!$("#sheet").classList.contains("on"))return;
   const p=data&&data.status===1&&data.product, f=p&&offFood(code,p);
-  if(f){S.custom.unshift(f);pushRecent(f.id);save();openFood(f,null,"המוצר נמצא. כדאי להשוות לתווית; אם משהו לא תואם, לחצו למטה על \"תיקון המוצר\".");return}
+  if(f){S.custom.unshift(f);pushRecent(f.id);save();openFood(f,null,"המוצר נמצא. כדאי להשוות לתווית; אם משהו לא תואם, לחצו \"עריכה\".");return}
   openNewFood({barcode:code,name:p?offName(p):"",
     msg:!net?"אין כרגע גישה למאגר המוצרים. מלאו את הערכים מהתווית פעם אחת, והמוצר יזוהה בסריקה הבאה."
       :p?"המוצר נמצא, אבל בלי ערכים תזונתיים. מלאו אותם מהתווית פעם אחת והם יישמרו."
@@ -849,9 +851,14 @@ document.addEventListener("click",e=>{
       if(old){
         // fix the entries already in the diary too
         let cnt=0;Object.values(S.days).forEach(d=>d.food.forEach(i=>{if(i.fid===f.id){Object.assign(i,{name:f.name,unit:f.unit,g:f.g,kcal:f.kcal,p:f.p,c:f.c,f:f.f});cnt++}}));
-        closeSheet();commit(cnt?`התיקון נשמר ועודכן ב-${cnt} רישומים ביומן`:"התיקון נשמר");break}
+        const back=pending.back, msg=cnt?`התיקון נשמר ועודכן גם ב-${cnt} רישומים ביומן.`:"התיקון נשמר. כך יופיע המוצר גם בסריקות הבאות.";
+        save();render();
+        if(back){const it=back.item&&getDay(cur).food.find(i=>i.id===back.item);addMeal=back.meal||addMeal;
+          if(it)openFood({id:it.fid,name:it.name,unit:it.unit,g:it.g,kcal:it.kcal,p:it.p,c:it.c,f:it.f},it,msg);else openFood(f,null,msg)}
+        else{closeSheet();toast(msg)}
+        break}
       save();openFood(f);break}
-    case "fixfood":{const own=S.custom.find(x=>x.id===pending.f.id);if(own)openNewFood({edit:own});break}
+    case "fixfood":{const own=S.custom.find(x=>x.id===pending.f.id);if(own)openNewFood({edit:own,back:{item:pending.edit&&pending.edit.id,meal:$("#fmeal")?$("#fmeal").value:addMeal}});break}
     case "fooddel":{const id=pending.fix.id;S.custom=S.custom.filter(x=>x.id!==id);S.recent=S.recent.filter(x=>x!==id);closeSheet();commit("המוצר נמחק מהרשימה");break}
     case "exercise":if(view!=="diary")cur=today();openExercise();break;
     case "exsave":{const m=num($("#ex-min").value);if(m<=0)return;day(cur).ex.push({id:uid(),name:ACTS[+$("#ex-type").value][0],min:m,kcal:exKcal()});closeSheet();commit("הפעילות נרשמה");break}
