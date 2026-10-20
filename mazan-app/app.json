@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Mazan",
+    "slug": "mazan",
+    "scheme": "mazan",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.personal.mazan"
+    },
+    "android": {
+      "package": "com.personal.mazan",
+      "adaptiveIcon": {
+        "backgroundColor": "#1D7A54",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-localization",
+        {
+          "supportsRTL": false
+        }
+      ]
+    ]
+  }
+}
