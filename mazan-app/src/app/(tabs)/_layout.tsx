@@ -1,7 +1,6 @@
 /** Bottom tabs with a raised centre button that opens the food logger. */
 import * as Haptics from 'expo-haptics';
-import { router } from 'expo-router';
-import { Tabs } from 'expo-router/js-tabs';
+import { router, Tabs } from 'expo-router';
 import { Pressable, View } from 'react-native';
 
 import { Icon } from '@/components/Icon';

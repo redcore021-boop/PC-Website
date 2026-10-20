@@ -1,8 +1,11 @@
 # Mazan
 
-A private calorie and macro tracker for iPhone, built with Expo (React Native + TypeScript).
+A private calorie and macro tracker for iPhone, built with Expo SDK 54 (React Native + TypeScript).
 All data lives in a local SQLite database on the phone. No account, no backend, no ads.
 Hebrew and English with right-to-left layout.
+
+The project stays on **Expo SDK 54** on purpose: it is the newest SDK the App Store build of Expo Go
+runs. Newer SDKs need a custom Expo Go via TestFlight (paid Apple Developer account).
 
 ## Run it on your iPhone
 
@@ -16,7 +19,7 @@ Expo Go and the Expo CLI on your computer are signed in to the **same** Expo acc
    git clone https://github.com/redcore021-boop/PC-Website.git
    cd PC-Website/mazan-app
    npm install
-   npx expo login        # same account as in Expo Go
+   npx expo login -u <your-username>   # same account as in Expo Go
    npx expo start
    ```
 3. Keep the phone on the same Wi-Fi as the computer and scan the QR code in the terminal with the
