@@ -43,7 +43,7 @@ interface AppContextValue {
 }
 
 const AppContext = createContext<AppContextValue | null>(null);
-const DEFAULT_PREFS: Prefs = { netCarbs: false };
+const DEFAULT_PREFS: Prefs = { netCarbs: false, usdaKey: '' };
 const STRINGS = { en, he };
 
 function deviceLang(): Lang {
@@ -162,6 +162,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
             DELETE FROM diary_entries;
             DELETE FROM water_log;
             DELETE FROM weights;
+            DELETE FROM api_cache;
             DELETE FROM foods WHERE source <> 'seed';
             UPDATE foods SET favorite = 0;
             DELETE FROM settings WHERE key NOT IN ('seedVersion', 'lang', 'theme');

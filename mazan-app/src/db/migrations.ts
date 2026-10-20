@@ -4,6 +4,8 @@
  */
 import type { SQLiteDatabase } from 'expo-sqlite';
 
+import { pruneCache } from '@/api/cache';
+
 import { seedFoods } from './seed';
 
 const MIGRATIONS: string[] = [
@@ -63,6 +65,15 @@ const MIGRATIONS: string[] = [
     kg   REAL NOT NULL
   );
   `,
+
+  // v2 — cached responses from Open Food Facts and USDA, so searches and lookups also work offline
+  `
+  CREATE TABLE api_cache (
+    key        TEXT PRIMARY KEY NOT NULL,
+    body       TEXT NOT NULL,           -- JSON
+    fetched_at INTEGER NOT NULL         -- epoch ms
+  );
+  `,
 ];
 
 export const SCHEMA_VERSION = MIGRATIONS.length;
@@ -84,4 +95,5 @@ export async function migrate(db: SQLiteDatabase): Promise<void> {
   }
 
   await seedFoods(db);
+  await pruneCache(db);
 }

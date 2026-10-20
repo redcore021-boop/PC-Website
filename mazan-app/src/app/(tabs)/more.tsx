@@ -1,17 +1,28 @@
 /** Settings: profile and goals, language, appearance, preferences and data. */
 import Constants from 'expo-constants';
 import { router } from 'expo-router';
-import { Alert, Switch, View } from 'react-native';
+import { useSQLiteContext } from 'expo-sqlite';
+import { useState } from 'react';
+import { Alert, Linking, Switch, View } from 'react-native';
+
+import { USDA_SIGNUP_URL } from '@/api/usda';
+import { useToast } from '@/components/overlays';
 
 import { Txt } from '@/components/Txt';
-import { Card, Header, ListRow, Screen, SectionLabel, Segmented } from '@/components/ui';
+import { Button, Card, Field, Header, ListRow, Screen, SectionLabel, Segmented } from '@/components/ui';
 import { fmtInt } from '@/domain/format';
 import type { LangSetting, ThemeSetting } from '@/domain/types';
 import { useApp } from '@/state/AppProvider';
 
 export default function MoreScreen() {
+  const db = useSQLiteContext();
   const app = useApp();
   const { t, colors } = app;
+  const toast = useToast();
+  const [usdaKey, setUsdaKey] = useState(app.prefs.usdaKey);
+  const saveKey = () => {
+    if (usdaKey.trim() !== app.prefs.usdaKey) app.setPrefs({ usdaKey: usdaKey.trim() });
+  };
 
   const eraseAll = () =>
     Alert.alert(t('more.reset'), t('more.resetConfirm'), [
@@ -67,6 +78,38 @@ export default function MoreScreen() {
               trackColor={{ true: colors.accent, false: colors.sunk }}
             />
           }
+        />
+      </Card>
+
+      <SectionLabel>{t('more.online')}</SectionLabel>
+      <Card style={{ gap: 10 }}>
+        <Txt variant="small" muted>
+          {t('more.offInfo')}
+        </Txt>
+        <Field
+          label={t('more.usdaKey')}
+          value={usdaKey}
+          onChangeText={setUsdaKey}
+          onEndEditing={saveKey}
+          onSubmitEditing={saveKey}
+          placeholder="DEMO_KEY"
+          autoCapitalize="none"
+          autoCorrect={false}
+          returnKeyType="done"
+        />
+        <Txt variant="small" muted>
+          {t('more.usdaKeyHint')}
+        </Txt>
+        <Button title={t('more.usdaGetKey')} kind="ghost" icon="globe" onPress={() => Linking.openURL(USDA_SIGNUP_URL)} />
+      </Card>
+      <Card style={{ padding: 0, overflow: 'hidden' }}>
+        <ListRow
+          icon="trash"
+          title={t('more.clearCache')}
+          onPress={async () => {
+            await db.runAsync('DELETE FROM api_cache');
+            toast(t('more.cacheCleared'));
+          }}
         />
       </Card>
 

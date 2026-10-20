@@ -50,6 +50,7 @@ function Root() {
                 <Stack.Screen name="quick-add" />
                 <Stack.Screen name="custom-food" />
                 <Stack.Screen name="profile" />
+              <Stack.Screen name="scan" options={{ animation: 'fade' }} />
               </Stack.Protected>
               <Stack.Protected guard={!profile}>
                 <Stack.Screen name="onboarding" options={{ gestureEnabled: false }} />

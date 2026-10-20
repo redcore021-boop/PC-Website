@@ -181,6 +181,33 @@ export async function updateEntryPortion(
   emit('diary');
 }
 
+/**
+ * After a food's values are corrected, recompute every diary entry that used it, keeping each
+ * entry's portion. Returns how many entries changed.
+ */
+export async function recomputeEntriesForFood(db: SQLiteDatabase, food: Food): Promise<number> {
+  const rows = await db.getAllAsync<{ id: number; serving_amount: number; quantity: number }>(
+    'SELECT id, serving_amount, quantity FROM diary_entries WHERE food_id = ?',
+    food.id,
+  );
+  if (!rows.length) return 0;
+  await db.withExclusiveTransactionAsync(async (tx) => {
+    for (const r of rows) {
+      await tx.runAsync(
+        'UPDATE diary_entries SET name = ?, name_he = ?, brand = ?, base_unit = ?, nutrients = ? WHERE id = ?',
+        food.name,
+        food.nameHe,
+        food.brand,
+        food.baseUnit,
+        JSON.stringify(cleanNutrients(portionNutrients(food, r.serving_amount, r.quantity))),
+        r.id,
+      );
+    }
+  });
+  emit('diary');
+  return rows.length;
+}
+
 export async function deleteEntry(db: SQLiteDatabase, id: number): Promise<void> {
   await db.runAsync('DELETE FROM diary_entries WHERE id = ?', id);
   emit('diary');

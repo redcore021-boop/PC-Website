@@ -159,9 +159,26 @@ export async function upsertFood(db: SQLiteDatabase, f: NewFood): Promise<number
   return id;
 }
 
+/** Foods matching any of the barcode spellings; the user's own version first. */
+export async function foodByBarcode(db: SQLiteDatabase, variants: string[]): Promise<Food | null> {
+  if (!variants.length) return null;
+  const marks = variants.map(() => '?').join(', ');
+  const r = await db.getFirstAsync<FoodRow>(
+    `SELECT * FROM foods WHERE archived = 0 AND barcode IN (${marks})
+      ORDER BY CASE source WHEN 'custom' THEN 0 ELSE 1 END, updated_at DESC LIMIT 1`,
+    ...variants,
+  );
+  return r ? rowToFood(r) : null;
+}
+
+/**
+ * Overwrite a food's details. The row becomes the user's own ('custom', no source id), so a later
+ * Open Food Facts refresh can never undo the correction.
+ */
 export async function updateFood(db: SQLiteDatabase, id: number, f: Omit<NewFood, 'source'>): Promise<void> {
   await db.runAsync(
-    `UPDATE foods SET barcode = ?, name = ?, name_he = ?, brand = ?, base_unit = ?, nutrients = ?, servings = ?, updated_at = ?
+    `UPDATE foods SET source = 'custom', source_id = NULL,
+            barcode = ?, name = ?, name_he = ?, brand = ?, base_unit = ?, nutrients = ?, servings = ?, updated_at = ?
       WHERE id = ?`,
     f.barcode ?? null,
     f.name.trim(),

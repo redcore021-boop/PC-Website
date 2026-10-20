@@ -41,7 +41,8 @@ npm run check:bundle  # full iOS production bundle, catches import/resolution er
 
 ```
 src/
-  app/          Expo Router screens: (tabs)/, onboarding, add, food/[id], entry/[id], quick-add, custom-food, profile
+  api/          Open Food Facts + USDA clients, response cache (SQLite), barcode lookup, error kinds for offline/timeouts
+  app/          Expo Router screens: (tabs)/, onboarding, add, scan, food/[id], entry/[id], quick-add, custom-food, profile
   components/   UI kit: Txt (direction-aware text), ui (Screen, Header, Button, Field…), nutrition (Ring, bars, table), Icon, overlays
   db/           migrations (PRAGMA user_version), seed foods, change events, repo/* (settings, foods, diary, body)
   domain/       types, nutrients, BMR/TDEE/goals, portions, dates, formatting — no React, no SQLite
@@ -58,6 +59,16 @@ Expo Go resets the native RTL flag, so Mazan does not use it (`supportsRTL: fals
 `direction: 'rtl' | 'ltr'` on its root view and `Txt`/`Field` set the writing direction, which lets the
 language switch instantly without restarting the app.
 
+### Online food data
+
+- **Open Food Facts** (no key): barcode lookup and product search, Israeli products first.
+- **USDA FoodData Central**: generic foods with full nutrients. The shared `DEMO_KEY` runs out after a few
+  searches an hour; paste a free personal key in More → Online food data.
+- Results are cached in the `api_cache` table (searches 3–7 days, unknown barcodes 1 day) and every food you
+  open or log is saved to `foods`, so scanning and searching saved products works offline.
+- Crowd-sourced values can be wrong: Edit on the food screen corrects a product in place, turns it into your
+  own food (so a refresh never overwrites it) and recalculates the diary entries that used it.
+
 ### Data model
 
 Foods store nutrients per 100 g/ml (or per 1 serving for count-only foods) plus a list of servings.
@@ -67,7 +78,7 @@ never rewrites history. Schema changes go in a new entry at the end of `src/db/m
 ## Build stages
 
 1. ✅ Data layer, onboarding, diary
-2. Food search (Open Food Facts + USDA) and barcode scanner
+2. ✅ Food search (Open Food Facts + USDA) and barcode scanner
 3. Dashboard, exercise, weight, measurements, photos
 4. Premium features: custom/weekday/per-meal goals, full nutrients, analysis, fasting, meal planner, recipes, saved meals, export/backup, reminders
 5. Polish

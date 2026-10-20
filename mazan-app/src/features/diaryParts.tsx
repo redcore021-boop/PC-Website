@@ -93,8 +93,11 @@ export function MealCard({ date, meal, entries, showTimes }: { date: string; mea
   );
 }
 
+/** Anything that can be listed in the picker: a saved food or an online search result. */
+export type FoodLike = Pick<Food, 'name' | 'nameHe' | 'brand' | 'servings' | 'baseUnit' | 'nutrients'> & { favorite?: boolean };
+
 /** A food in the picker: tap for details, or the + to log the default portion right away. */
-export function FoodRow({ food, onOpen, onQuickLog }: { food: Food; onOpen: () => void; onQuickLog: () => void }) {
+export function FoodRow({ food, onOpen, onQuickLog }: { food: FoodLike; onOpen: () => void; onQuickLog: () => void }) {
   const { colors, lang, t } = useApp();
   const s = food.servings[0];
   const kcal = portionNutrients(food, s.amount, 1).kcal ?? 0;

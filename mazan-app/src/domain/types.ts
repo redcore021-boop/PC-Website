@@ -47,6 +47,8 @@ export interface Goals {
 
 export interface Prefs {
   netCarbs: boolean;
+  /** Personal api.data.gov key for USDA FoodData Central; empty means the shared DEMO_KEY. */
+  usdaKey: string;
 }
 
 /** What the amounts of a food are measured in. Nutrients are stored per 100 g/ml, or per 1 serving. */
