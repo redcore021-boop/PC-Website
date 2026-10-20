@@ -28,7 +28,8 @@
         {
           "supportsRTL": false
         }
-      ]
+      ],
+      "expo-status-bar"
     ]
   }
 }

@@ -2,11 +2,11 @@
  * Root layout: opens the database (running migrations), loads app state, applies theme and
  * text direction, and shows onboarding until a profile exists.
  *
- * Mazan targets Expo SDK 54 because that is the newest SDK the App Store build of Expo Go supports.
- * Layout direction comes from the `direction` style on the root view (see components/Txt.tsx).
+ * Mazan targets Expo SDK 57 to match the Expo Go build on the App Store.
+ * Layout direction comes from the `direction` style on the root view (see components/Txt.tsx);
+ * LocaleProvider tells the navigators (gestures, transitions) about it.
  */
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
+import { DarkTheme, DefaultTheme, LocaleProvider, Stack, ThemeProvider } from 'expo-router';
 import { SQLiteProvider } from 'expo-sqlite';
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
@@ -36,26 +36,28 @@ function Root() {
   };
 
   return (
-    <ThemeProvider value={navTheme}>
-      <View style={{ flex: 1, backgroundColor: colors.bg, direction: isRTL ? 'rtl' : 'ltr' }}>
-        <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
-        <ToastProvider>
-          <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bg } }}>
-            <Stack.Protected guard={!!profile}>
-              <Stack.Screen name="(tabs)" />
-              <Stack.Screen name="add" />
-              <Stack.Screen name="food/[id]" />
-              <Stack.Screen name="entry/[id]" />
-              <Stack.Screen name="quick-add" />
-              <Stack.Screen name="custom-food" />
-              <Stack.Screen name="profile" />
-            </Stack.Protected>
-            <Stack.Protected guard={!profile}>
-              <Stack.Screen name="onboarding" options={{ gestureEnabled: false }} />
-            </Stack.Protected>
-          </Stack>
-        </ToastProvider>
-      </View>
-    </ThemeProvider>
+    <LocaleProvider direction={isRTL ? 'rtl' : 'ltr'}>
+      <ThemeProvider value={navTheme}>
+        <View style={{ flex: 1, backgroundColor: colors.bg, direction: isRTL ? 'rtl' : 'ltr' }}>
+          <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
+          <ToastProvider>
+            <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bg } }}>
+              <Stack.Protected guard={!!profile}>
+                <Stack.Screen name="(tabs)" />
+                <Stack.Screen name="add" />
+                <Stack.Screen name="food/[id]" />
+                <Stack.Screen name="entry/[id]" />
+                <Stack.Screen name="quick-add" />
+                <Stack.Screen name="custom-food" />
+                <Stack.Screen name="profile" />
+              </Stack.Protected>
+              <Stack.Protected guard={!profile}>
+                <Stack.Screen name="onboarding" options={{ gestureEnabled: false }} />
+              </Stack.Protected>
+            </Stack>
+          </ToastProvider>
+        </View>
+      </ThemeProvider>
+    </LocaleProvider>
   );
 }
