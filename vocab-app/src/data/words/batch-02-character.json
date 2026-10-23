@@ -1,0 +1,2240 @@
+{
+  "batch": "batch-02",
+  "title": "Character & Behaviour",
+  "words": [
+    {
+      "word": "frugal",
+      "ipa": "ˈfruːɡl",
+      "pos": "adjective",
+      "def": "Careful to spend little money and avoid waste; (of a meal) simple and cheap.",
+      "he": "חסכן, צנוע",
+      "family": [
+        "frugality (n.)",
+        "frugally (adv.)"
+      ],
+      "ex": [
+        "My grandparents lived [frugal] lives, but they were never unhappy.",
+        "By being [frugal] for two years, they saved enough for a deposit.",
+        "We had a [frugal] supper of bread, cheese and soup."
+      ],
+      "col": [
+        "frugal lifestyle",
+        "live frugally",
+        "a frugal meal",
+        "out of frugality"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "thrifty",
+        "economical",
+        "sparing",
+        "stingy",
+        "parsimonious"
+      ],
+      "nuance": "Frugal and thrifty are positive: sensible, avoiding waste. Stingy, tight-fisted and miserly are negative: unwilling to spend or give even when you should. Parsimonious is formal and usually critical — extreme reluctance to spend.",
+      "ety": "Latin frugalis 'economical', from frux 'fruit, value'.",
+      "tier": 1,
+      "themes": [
+        "money",
+        "character"
+      ],
+      "prec": {
+        "s": "My grandmother was ___ rather than mean: she reused every jar but never let a guest leave hungry.",
+        "opts": [
+          "stingy",
+          "miserly",
+          "tight-fisted"
+        ],
+        "why": "Frugal is a virtue — careful spending without meanness — which the second half of the sentence shows. Stingy, miserly and tight-fisted all criticise reluctance to give."
+      }
+    },
+    {
+      "word": "parsimonious",
+      "ipa": "ˌpɑːrsɪˈmoʊniəs",
+      "pos": "adjective",
+      "def": "Extremely unwilling to spend money or use resources; (in science) using as few assumptions as possible.",
+      "he": "קמצן, חסכני עד קיצוניות",
+      "family": [
+        "parsimony (n.)",
+        "parsimoniously (adv.)"
+      ],
+      "ex": [
+        "The [parsimonious] landlord refused to fix the heating.",
+        "Critics attacked the government's [parsimonious] funding of the arts.",
+        "Scientists prefer the most [parsimonious] explanation that fits the data."
+      ],
+      "col": [
+        "parsimonious with",
+        "the principle of parsimony",
+        "a parsimonious explanation",
+        "parsimonious funding"
+      ],
+      "reg": "formal",
+      "syn": [
+        "stingy",
+        "miserly",
+        "mean",
+        "tight-fisted",
+        "frugal"
+      ],
+      "nuance": "Parsimonious is a formal, critical word for meanness with money. Its scientific sense (the simplest explanation, as in Occam's razor) is neutral and positive.",
+      "ety": "Latin parsimonia, from parcere 'to spare'.",
+      "tier": 3,
+      "themes": [
+        "money",
+        "character"
+      ],
+      "prec": {
+        "s": "Faced with two theories that fit the data, scientists usually prefer the more ___ one.",
+        "opts": [
+          "frugal",
+          "economical",
+          "austere"
+        ],
+        "why": "In science, 'parsimonious' (principle of parsimony) means requiring the fewest assumptions. Frugal and economical are about money; austere means severe and plain."
+      }
+    },
+    {
+      "word": "magnanimous",
+      "ipa": "mæɡˈnænɪməs",
+      "pos": "adjective",
+      "def": "Generous and forgiving, especially towards a rival or someone less powerful.",
+      "he": "רחב לב, נדיב",
+      "family": [
+        "magnanimity (n.)",
+        "magnanimously (adv.)"
+      ],
+      "ex": [
+        "She was [magnanimous] in victory, praising her opponent's campaign.",
+        "It was [magnanimous] of him to forgive the people who had betrayed him.",
+        "The team showed great [magnanimity] after the controversial result."
+      ],
+      "col": [
+        "magnanimous in victory",
+        "a magnanimous gesture",
+        "show magnanimity",
+        "magnanimous enough to"
+      ],
+      "reg": "formal",
+      "syn": [
+        "generous",
+        "big-hearted",
+        "noble",
+        "forgiving"
+      ],
+      "nuance": "Magnanimous is about generosity of spirit, especially from a position of strength (after winning, when wronged). Generous is broader and often about money; benevolent is about kindly wishing others well.",
+      "ety": "Latin magnus 'great' + animus 'soul'.",
+      "root": "magn",
+      "tier": 2,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "After winning the election by a landslide, she was ___ towards her defeated rival.",
+        "opts": [
+          "benevolent",
+          "lavish",
+          "charitable"
+        ],
+        "why": "Magnanimous is the word for generosity of spirit towards a defeated rival or offender. Benevolent means kindly in general; lavish means extravagant; charitable relates to giving to the needy or judging kindly."
+      }
+    },
+    {
+      "word": "benevolent",
+      "ipa": "bəˈnevələnt",
+      "pos": "adjective",
+      "def": "Kind and well-meaning; wanting to help others.",
+      "he": "נדיב, מיטיב, רב חסד",
+      "family": [
+        "benevolence (n.)",
+        "benevolently (adv.)"
+      ],
+      "ex": [
+        "The old man smiled at the children in a [benevolent] way.",
+        "Some argue that a [benevolent] dictatorship is still a dictatorship.",
+        "The hospital was funded by a [benevolent] society in the 1890s."
+      ],
+      "col": [
+        "benevolent smile",
+        "benevolent dictator",
+        "benevolent fund/society",
+        "act of benevolence"
+      ],
+      "reg": "formal",
+      "syn": [
+        "kind",
+        "kindly",
+        "charitable",
+        "magnanimous",
+        "benign"
+      ],
+      "nuance": "Benevolent describes goodwill, often from someone in a position of power (a benevolent ruler). Benign is gentle and harmless (also medical: not cancerous). Opposite: malevolent.",
+      "ety": "Latin bene 'well' + volens 'wishing'.",
+      "root": "bene",
+      "tier": 1,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "The factory owner saw himself as a ___ father figure, providing housing and schools for his workers.",
+        "opts": [
+          "benign",
+          "beneficial",
+          "benefactor"
+        ],
+        "why": "Benevolent describes a well-meaning person, especially one with power. Benign means harmless; beneficial describes things that have good effects; benefactor is a noun (a person who gives money)."
+      }
+    },
+    {
+      "word": "malevolent",
+      "ipa": "məˈlevələnt",
+      "pos": "adjective",
+      "def": "Having or showing a wish to do evil or harm to others.",
+      "he": "זדוני, רוצה ברע",
+      "family": [
+        "malevolence (n.)",
+        "malevolently (adv.)"
+      ],
+      "ex": [
+        "The villain stared at her with [malevolent] eyes.",
+        "Some hackers are merely curious; others are truly [malevolent].",
+        "There was a [malevolent] silence in the room after the accusation."
+      ],
+      "col": [
+        "malevolent force",
+        "malevolent intent",
+        "a malevolent glance",
+        "pure malevolence"
+      ],
+      "reg": "literary",
+      "syn": [
+        "malicious",
+        "malign",
+        "hostile",
+        "spiteful"
+      ],
+      "nuance": "Malevolent means actively wishing harm — an inner disposition, often with a sinister feel. Malicious describes actions or intent meant to hurt (malicious gossip, malicious software).",
+      "ety": "Latin male 'badly' + volens 'wishing'.",
+      "root": "mal",
+      "tier": 2,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "In the horror film, the house seems to be inhabited by some ___ presence.",
+        "opts": [
+          "malicious",
+          "malignant",
+          "malcontent"
+        ],
+        "why": "Malevolent describes a sinister, evil-wishing force or being. Malicious is for intentional harmful acts (malicious damage); malignant is medical or about spreading evil; malcontent is a noun for a dissatisfied person."
+      }
+    },
+    {
+      "word": "gregarious",
+      "ipa": "ɡrɪˈɡeriəs",
+      "pos": "adjective",
+      "def": "Fond of company; sociable. (Of animals) living in groups.",
+      "he": "חברותי",
+      "family": [
+        "gregariousness (n.)",
+        "gregariously (adv.)"
+      ],
+      "ex": [
+        "My brother is [gregarious] and loves big parties; I prefer small dinners.",
+        "She's a warm, [gregarious] woman who knows everyone in the village.",
+        "Sheep are [gregarious] animals and get stressed when alone."
+      ],
+      "col": [
+        "gregarious nature",
+        "outgoing and gregarious",
+        "gregarious animals"
+      ],
+      "reg": "formal",
+      "syn": [
+        "sociable",
+        "outgoing",
+        "convivial",
+        "extroverted"
+      ],
+      "nuance": "Gregarious means actively enjoying the company of others. Convivial describes a cheerful atmosphere or event; affable means pleasant and easy to talk to, even one-to-one.",
+      "ety": "Latin gregarius, from grex 'flock'.",
+      "root": "greg",
+      "tier": 2,
+      "themes": [
+        "character",
+        "relationships"
+      ],
+      "prec": {
+        "s": "Being naturally ___, he found working from home alone for months almost unbearable.",
+        "opts": [
+          "convivial",
+          "garrulous",
+          "affable"
+        ],
+        "why": "Gregarious means needing and enjoying company — so isolation is painful. Convivial describes atmospheres; garrulous means over-talkative; affable means friendly and easy to talk to."
+      }
+    },
+    {
+      "word": "reticent",
+      "ipa": "ˈretɪsnt",
+      "pos": "adjective",
+      "def": "Not revealing one's thoughts or feelings readily; reluctant to speak.",
+      "he": "מאופק, שתקן, נמנע מלשתף",
+      "family": [
+        "reticence (n.)"
+      ],
+      "ex": [
+        "He is [reticent] about his time in the army.",
+        "The normally [reticent] actress spoke openly about her illness.",
+        "Her [reticence] was often mistaken for arrogance."
+      ],
+      "col": [
+        "reticent about",
+        "naturally reticent",
+        "unusually reticent",
+        "a certain reticence"
+      ],
+      "reg": "formal",
+      "syn": [
+        "reserved",
+        "taciturn",
+        "tight-lipped",
+        "uncommunicative"
+      ],
+      "nuance": "Reticent means holding back information or feelings, usually about a specific topic ('reticent about her past'). Taciturn describes a person who habitually says very little. Careful: many people misuse reticent to mean 'reluctant' in general.",
+      "ety": "Latin reticere 'to keep silent', from tacere 'to be silent'.",
+      "root": "tac",
+      "tier": 2,
+      "themes": [
+        "character",
+        "speech"
+      ],
+      "prec": {
+        "s": "She talks freely about her career but is ___ about her private life.",
+        "opts": [
+          "taciturn",
+          "laconic",
+          "mute"
+        ],
+        "why": "'Reticent about' a topic is the precise use: unwilling to share on that subject. Taciturn is a general trait (saying little about anything); laconic means using few words; mute means unable or refusing to speak at all."
+      }
+    },
+    {
+      "word": "taciturn",
+      "ipa": "ˈtæsɪtɜːrn",
+      "pos": "adjective",
+      "def": "Habitually saying very little; uncommunicative.",
+      "he": "שתקן, ממעט בדיבור",
+      "family": [
+        "taciturnity (n.)"
+      ],
+      "ex": [
+        "Her [taciturn] father rarely spoke at dinner.",
+        "The [taciturn] farmer answered every question with a nod or a shrug.",
+        "Despite his [taciturn] manner, he was deeply kind."
+      ],
+      "col": [
+        "taciturn manner",
+        "a taciturn man",
+        "famously taciturn"
+      ],
+      "reg": "literary",
+      "syn": [
+        "reticent",
+        "laconic",
+        "quiet",
+        "reserved"
+      ],
+      "nuance": "Taciturn is a permanent trait of saying little, often seeming unfriendly. Laconic means using very few words, often with dry wit — it can be admiring.",
+      "ety": "Latin taciturnus, from tacitus 'silent'.",
+      "root": "tac",
+      "tier": 2,
+      "themes": [
+        "character",
+        "speech"
+      ],
+      "prec": {
+        "s": "My ___ uncle could go a whole family holiday saying little more than 'yes' and 'no'.",
+        "opts": [
+          "reticent",
+          "introverted",
+          "diffident"
+        ],
+        "why": "Taciturn describes a habit of hardly speaking at all. Reticent means reluctant to reveal something specific; introverted describes inward focus, not word count; diffident means lacking confidence."
+      }
+    },
+    {
+      "word": "diffident",
+      "ipa": "ˈdɪfɪdənt",
+      "pos": "adjective",
+      "def": "Shy and lacking confidence in oneself.",
+      "he": "ביישן, חסר ביטחון",
+      "family": [
+        "diffidence (n.)",
+        "diffidently (adv.)"
+      ],
+      "ex": [
+        "He was a [diffident] young man who hated speaking in public.",
+        "She offered her suggestion in a [diffident] tone, as if expecting rejection.",
+        "Behind his [diffidence] lay a brilliant mind."
+      ],
+      "col": [
+        "diffident manner",
+        "diffident about",
+        "shy and diffident",
+        "with diffidence"
+      ],
+      "reg": "formal",
+      "syn": [
+        "shy",
+        "timid",
+        "self-effacing",
+        "insecure"
+      ],
+      "nuance": "Diffident specifically means lacking self-confidence, so hesitant to assert oneself. Timid adds fear; self-effacing means deliberately keeping a low profile; modest is about not boasting.",
+      "ety": "Latin diffidere 'to mistrust', from dis- + fidere 'to trust' — not trusting oneself.",
+      "root": "fid",
+      "tier": 3,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "Though highly talented, she was too ___ to put herself forward for promotion.",
+        "opts": [
+          "indifferent",
+          "reluctant",
+          "aloof"
+        ],
+        "why": "Diffident means lacking confidence in oneself — exactly what stops her. Indifferent means not caring; reluctant means unwilling (for any reason); aloof means cool and distant."
+      }
+    },
+    {
+      "word": "obsequious",
+      "ipa": "əbˈsiːkwiəs",
+      "pos": "adjective",
+      "def": "Too eager to please or obey people in authority.",
+      "he": "מתרפס, חנפן",
+      "family": [
+        "obsequiousness (n.)",
+        "obsequiously (adv.)"
+      ],
+      "ex": [
+        "The [obsequious] waiter kept bowing and calling him 'sir'.",
+        "Politicians were [obsequious] in their praise of the new leader.",
+        "I find his [obsequiousness] towards the boss embarrassing."
+      ],
+      "col": [
+        "obsequious manner",
+        "obsequious praise",
+        "obsequious towards",
+        "almost obsequious"
+      ],
+      "reg": "formal",
+      "syn": [
+        "servile",
+        "sycophantic",
+        "fawning",
+        "ingratiating"
+      ],
+      "nuance": "Obsequious focuses on excessive eagerness to serve and obey. Sycophantic focuses on flattery for personal gain. Servile suggests a slave-like lack of self-respect.",
+      "ety": "Latin obsequi 'to comply with', from sequi 'to follow'.",
+      "root": "sequ",
+      "tier": 2,
+      "themes": [
+        "character",
+        "relationships"
+      ],
+      "prec": {
+        "s": "The hotel staff were almost ___, rushing to open doors and bowing at every request.",
+        "opts": [
+          "deferential",
+          "courteous",
+          "attentive"
+        ],
+        "why": "Obsequious criticises an excessive, embarrassing eagerness to serve. Deferential (showing respect), courteous and attentive are all positive or neutral."
+      }
+    },
+    {
+      "word": "sycophant",
+      "ipa": "ˈsɪkəfænt",
+      "pos": "noun",
+      "def": "A person who flatters powerful people to gain advantage.",
+      "he": "חנפן, מתחנף",
+      "family": [
+        "sycophantic (adj.)",
+        "sycophancy (n.)"
+      ],
+      "ex": [
+        "The dictator surrounded himself with [sycophants] who never told him the truth.",
+        "Nobody likes a [sycophant], least of all the people he flatters.",
+        "The interview was embarrassingly [sycophantic]."
+      ],
+      "col": [
+        "surrounded by sycophants",
+        "sycophantic praise",
+        "a sycophantic interview"
+      ],
+      "reg": "formal",
+      "syn": [
+        "flatterer",
+        "toady",
+        "yes-man",
+        "bootlicker"
+      ],
+      "nuance": "A sycophant flatters to gain something. Yes-man is informal (someone who always agrees with the boss); toady is old-fashioned and contemptuous.",
+      "ety": "Greek sukophantēs 'informer', of disputed origin.",
+      "tier": 2,
+      "themes": [
+        "character",
+        "society"
+      ],
+      "prec": {
+        "s": "Instead of honest advisers, the king was surrounded by ___ who praised every decision.",
+        "opts": [
+          "allies",
+          "acolytes",
+          "confidants"
+        ],
+        "why": "Sycophants flatter the powerful for advantage, which the sentence describes. Allies support you; acolytes are devoted followers; confidants are people you trust with secrets.",
+        "ans": "sycophants"
+      }
+    },
+    {
+      "word": "supercilious",
+      "ipa": "ˌsuːpərˈsɪliəs",
+      "pos": "adjective",
+      "def": "Behaving as if one is superior to others; scornfully arrogant.",
+      "he": "מתנשא, יהיר",
+      "family": [
+        "superciliously (adv.)",
+        "superciliousness (n.)"
+      ],
+      "ex": [
+        "The [supercilious] shop assistant looked at my trainers and raised an eyebrow.",
+        "He gave a [supercilious] smile when I mispronounced the wine.",
+        "Critics found the film's tone [supercilious] towards ordinary people."
+      ],
+      "col": [
+        "supercilious smile",
+        "supercilious manner",
+        "a supercilious look"
+      ],
+      "reg": "literary",
+      "syn": [
+        "haughty",
+        "condescending",
+        "disdainful",
+        "snooty"
+      ],
+      "nuance": "Supercilious is arrogance shown through facial expression and manner — the raised eyebrow. Condescending is treating someone as less intelligent; haughty is proud and cold.",
+      "ety": "Latin supercilium 'eyebrow' — literally raising one's eyebrows at others.",
+      "tier": 3,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "The sommelier raised one eyebrow with a ___ look when I asked for ice in my wine.",
+        "opts": [
+          "condescending",
+          "pompous",
+          "imperious"
+        ],
+        "why": "Supercilious literally comes from 'eyebrow' and suits scornful looks. Condescending suits how someone talks down to you; pompous means self-important; imperious means domineering."
+      }
+    },
+    {
+      "word": "fastidious",
+      "ipa": "fæˈstɪdiəs",
+      "pos": "adjective",
+      "def": "Very attentive to detail and accuracy; very concerned about cleanliness, sometimes excessively.",
+      "he": "קפדן, איסטניס",
+      "family": [
+        "fastidiously (adv.)",
+        "fastidiousness (n.)"
+      ],
+      "ex": [
+        "He's [fastidious] about his appearance and irons even his T-shirts.",
+        "The restoration was carried out with [fastidious] attention to detail.",
+        "Cats are [fastidious] animals that spend hours cleaning themselves."
+      ],
+      "col": [
+        "fastidious about",
+        "fastidious attention to detail",
+        "fastidiously clean"
+      ],
+      "reg": "formal",
+      "syn": [
+        "meticulous",
+        "fussy",
+        "particular",
+        "punctilious"
+      ],
+      "nuance": "Fastidious can be praise (careful) or mild criticism (fussy, hard to please, especially about cleanliness and taste). Meticulous is always praise for careful work.",
+      "ety": "Latin fastidiosus 'disdainful, squeamish', from fastidium 'loathing'.",
+      "tier": 2,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "My ___ flatmate wipes down every surface twice and won't touch food others have handled.",
+        "opts": [
+          "meticulous",
+          "diligent",
+          "thorough"
+        ],
+        "why": "Fastidious includes the squeamish, hard-to-please concern with cleanliness. Meticulous, diligent and thorough describe careful work, not squeamishness."
+      }
+    },
+    {
+      "word": "meticulous",
+      "ipa": "məˈtɪkjələs",
+      "pos": "adjective",
+      "def": "Showing great attention to detail; very careful and precise.",
+      "he": "קפדני, מדוקדק",
+      "family": [
+        "meticulously (adv.)",
+        "meticulousness (n.)"
+      ],
+      "ex": [
+        "The report is the result of [meticulous] research.",
+        "She kept [meticulous] records of every expense.",
+        "The crime was [meticulously] planned."
+      ],
+      "col": [
+        "meticulous attention to detail",
+        "meticulous research",
+        "meticulous records",
+        "meticulously planned"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "thorough",
+        "painstaking",
+        "scrupulous",
+        "fastidious"
+      ],
+      "nuance": "Meticulous is the all-purpose word for careful, precise work. Painstaking stresses the effort involved; scrupulous adds honesty and moral care.",
+      "ety": "Latin meticulosus 'fearful', from metus 'fear' — originally 'timid', later 'careful'.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "work"
+      ],
+      "prec": {
+        "s": "Thanks to her ___ records, the accountant found the error in minutes.",
+        "opts": [
+          "pedantic",
+          "fastidious",
+          "painstaking"
+        ],
+        "why": "'Meticulous records' are kept with precise attention to every detail. Pedantic criticises showing off minor knowledge; fastidious implies fussiness about cleanliness or taste; painstaking stresses the labour and collocates with effort or work, not records."
+      }
+    },
+    {
+      "word": "punctilious",
+      "ipa": "pʌŋkˈtɪliəs",
+      "pos": "adjective",
+      "def": "Showing great attention to details of correct behaviour, etiquette or procedure.",
+      "he": "מקפיד על כללים ונימוסים",
+      "family": [
+        "punctiliously (adv.)",
+        "punctilio (n.)"
+      ],
+      "ex": [
+        "He was [punctilious] about answering every letter within a day.",
+        "The ambassador was [punctilious] in observing diplomatic protocol.",
+        "She is [punctilious] about giving credit to her sources."
+      ],
+      "col": [
+        "punctilious about",
+        "punctilious in observing",
+        "punctiliously polite"
+      ],
+      "reg": "formal",
+      "syn": [
+        "scrupulous",
+        "conscientious",
+        "meticulous",
+        "correct"
+      ],
+      "nuance": "Punctilious is about rules of conduct, manners and duty — doing every 'point' correctly. Meticulous is about precise work; punctual (a related word) only means on time.",
+      "ety": "Italian puntiglio 'small point', from Latin punctum 'point'.",
+      "tier": 3,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "The old diplomat was ___ about etiquette, always addressing everyone by their proper title.",
+        "opts": [
+          "punctual",
+          "pedantic",
+          "prudish"
+        ],
+        "why": "Punctilious means careful about correct behaviour and protocol. Punctual means on time; pedantic means obsessed with minor rules of knowledge, showing off; prudish means easily shocked by sex."
+      }
+    },
+    {
+      "word": "capricious",
+      "ipa": "kəˈprɪʃəs",
+      "pos": "adjective",
+      "def": "Changing mood or behaviour suddenly and without reason; unpredictable.",
+      "he": "הפכפך, גחמני",
+      "family": [
+        "caprice (n.)",
+        "capriciously (adv.)",
+        "capriciousness (n.)"
+      ],
+      "ex": [
+        "The [capricious] boss would praise you one day and fire you the next.",
+        "Farmers are at the mercy of [capricious] weather.",
+        "The decision seemed [capricious], with no clear reasoning behind it."
+      ],
+      "col": [
+        "capricious weather",
+        "capricious decision",
+        "the capricious nature of",
+        "a capricious ruler"
+      ],
+      "reg": "formal",
+      "syn": [
+        "fickle",
+        "mercurial",
+        "erratic",
+        "whimsical",
+        "arbitrary"
+      ],
+      "nuance": "Capricious stresses impulsive changes driven by whim, not reason — decisions, rulers, weather. Fickle is used for changing loyalty or affection; mercurial for rapidly changing moods and temperament.",
+      "ety": "French capricieux, from Italian capriccio 'sudden start', possibly from capra 'goat'.",
+      "tier": 2,
+      "themes": [
+        "character",
+        "change"
+      ],
+      "prec": {
+        "s": "Employees lived in fear of the director's ___ decisions, which seemed to depend on her mood that morning.",
+        "opts": [
+          "fickle",
+          "volatile",
+          "erratic"
+        ],
+        "why": "Capricious best describes decisions made on a whim, without reasoning. Fickle is about loyalty or affection; volatile about explosive moods or markets; erratic about irregular performance or movement."
+      }
+    },
+    {
+      "word": "mercurial",
+      "ipa": "mɜːrˈkjʊriəl",
+      "pos": "adjective",
+      "def": "Subject to sudden, unpredictable changes of mood; lively and quick.",
+      "he": "הפכפך במצב רוחו, תזזיתי",
+      "family": [
+        "mercurially (adv.)"
+      ],
+      "ex": [
+        "The [mercurial] striker could win a match alone or disappear for ninety minutes.",
+        "Working for such a [mercurial] director was exhausting.",
+        "Her [mercurial] temperament made her a brilliant but difficult actor."
+      ],
+      "col": [
+        "mercurial temperament",
+        "mercurial genius",
+        "mercurial character"
+      ],
+      "reg": "literary",
+      "syn": [
+        "volatile",
+        "temperamental",
+        "capricious",
+        "unpredictable"
+      ],
+      "nuance": "Mercurial describes a person whose moods change quickly — often brilliant, charismatic and difficult at once. It can carry a hint of admiration that volatile lacks.",
+      "ety": "From Mercury, the quick-witted Roman messenger god, and the liquid metal mercury.",
+      "tier": 3,
+      "themes": [
+        "character",
+        "emotion"
+      ],
+      "prec": {
+        "s": "The band's ___ lead singer could be charming one minute and furious the next.",
+        "opts": [
+          "fickle",
+          "arbitrary",
+          "inconsistent"
+        ],
+        "why": "Mercurial describes a lively personality with rapid mood swings. Fickle is about changing affections; arbitrary about decisions without reason; inconsistent about uneven quality."
+      }
+    },
+    {
+      "word": "obstinate",
+      "ipa": "ˈɑːbstɪnət",
+      "pos": "adjective",
+      "def": "Stubbornly refusing to change one's opinion or behaviour; (of a problem) hard to deal with.",
+      "he": "עקשן",
+      "family": [
+        "obstinacy (n.)",
+        "obstinately (adv.)"
+      ],
+      "ex": [
+        "He's too [obstinate] to admit he was wrong.",
+        "The children remained [obstinately] silent.",
+        "We finally removed the [obstinate] stain with vinegar."
+      ],
+      "col": [
+        "obstinate refusal",
+        "obstinately refuse",
+        "an obstinate problem/stain",
+        "sheer obstinacy"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "stubborn",
+        "headstrong",
+        "intransigent",
+        "pig-headed"
+      ],
+      "nuance": "Obstinate is close to stubborn but more critical and formal: refusing to change despite good reasons. Tenacious (positive) means persistent in pursuing a goal.",
+      "ety": "Latin obstinare 'to persist', related to tenere 'to hold'.",
+      "tier": 1,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "Despite all the evidence, he was too ___ to admit his mistake.",
+        "opts": [
+          "tenacious",
+          "resolute",
+          "steadfast"
+        ],
+        "why": "Obstinate is the critical word for refusing to change despite good reason. Tenacious, resolute and steadfast are all positive — persistence and loyalty you'd admire."
+      }
+    },
+    {
+      "word": "intransigent",
+      "ipa": "ɪnˈtrænzɪdʒənt",
+      "pos": "adjective",
+      "def": "Refusing to change one's views or to agree or compromise.",
+      "he": "בלתי מתפשר, נוקשה",
+      "family": [
+        "intransigence (n.)"
+      ],
+      "ex": [
+        "Talks broke down because both sides remained [intransigent].",
+        "The union accused management of [intransigence].",
+        "His [intransigent] stance on immigration alienated moderate voters."
+      ],
+      "col": [
+        "remain intransigent",
+        "intransigent stance",
+        "intransigent position",
+        "political intransigence"
+      ],
+      "reg": "formal",
+      "syn": [
+        "uncompromising",
+        "obstinate",
+        "inflexible",
+        "unyielding"
+      ],
+      "nuance": "Intransigent is the classic word for negotiations and politics: refusing any compromise. Obstinate is more personal and everyday.",
+      "ety": "Spanish los intransigentes, extreme republicans in the 1870s; from Latin transigere 'to come to an understanding'.",
+      "tier": 2,
+      "themes": [
+        "character",
+        "conflict"
+      ],
+      "prec": {
+        "s": "The peace talks collapsed after both governments remained ___ on the question of borders.",
+        "opts": [
+          "obstinate",
+          "adamant",
+          "determined"
+        ],
+        "why": "Intransigent is the standard word for parties in negotiations refusing to compromise. Obstinate is more personal; adamant means firmly insisting on a statement; determined is about pursuing a goal."
+      }
+    },
+    {
+      "word": "amenable",
+      "ipa": "əˈmiːnəbl",
+      "pos": "adjective",
+      "def": "Willing to accept or be influenced by a suggestion; (of a thing) able to be treated in a particular way.",
+      "he": "פתוח, נענה, ניתן ל־",
+      "family": [
+        "amenability (n.)"
+      ],
+      "ex": [
+        "The landlord seemed [amenable] to lowering the rent.",
+        "Most children are [amenable] to reason if you explain things calmly.",
+        "Some kinds of cancer are more [amenable] to treatment than others."
+      ],
+      "col": [
+        "amenable to suggestion",
+        "amenable to treatment",
+        "amenable to reason",
+        "more amenable"
+      ],
+      "reg": "formal",
+      "syn": [
+        "agreeable",
+        "receptive",
+        "open",
+        "compliant"
+      ],
+      "nuance": "Amenable (to) means open to being persuaded — a positive, cooperative attitude. Compliant suggests obedience; receptive suggests willingness to consider ideas.",
+      "ety": "Old French amener 'to bring to', from Latin minare 'to drive (animals)'.",
+      "tier": 2,
+      "themes": [
+        "character",
+        "work"
+      ],
+      "prec": {
+        "s": "My boss is usually ___ to suggestions, as long as you bring data to support them.",
+        "opts": [
+          "submissive",
+          "obedient",
+          "docile"
+        ],
+        "why": "Amenable means open to being persuaded — cooperative but not weak. Submissive, obedient and docile all suggest yielding to authority without thought."
+      }
+    },
+    {
+      "word": "affable",
+      "ipa": "ˈæfəbl",
+      "pos": "adjective",
+      "def": "Friendly, good-natured and easy to talk to.",
+      "he": "נעים הליכות, חביב",
+      "family": [
+        "affability (n.)",
+        "affably (adv.)"
+      ],
+      "ex": [
+        "The new manager is [affable] and approachable.",
+        "Behind his [affable] manner was a ruthless negotiator.",
+        "She chatted [affably] with the staff before the meeting."
+      ],
+      "col": [
+        "affable manner",
+        "affable host",
+        "warm and affable",
+        "chat affably"
+      ],
+      "reg": "formal",
+      "syn": [
+        "amiable",
+        "genial",
+        "cordial",
+        "approachable"
+      ],
+      "nuance": "Affable means pleasant and easy to approach, especially of someone in a higher position. Gregarious means loving company; amiable means friendly and likeable.",
+      "ety": "Latin affabilis 'easy to speak to', from fari 'to speak'.",
+      "tier": 2,
+      "themes": [
+        "character",
+        "relationships"
+      ],
+      "prec": {
+        "s": "Despite being the company's founder, he was ___ and happy to chat with interns in the lift.",
+        "opts": [
+          "gregarious",
+          "garrulous",
+          "flamboyant"
+        ],
+        "why": "Affable describes someone easy to approach, notably someone senior. Gregarious means loving crowds; garrulous means talking too much; flamboyant means showy."
+      }
+    },
+    {
+      "word": "candid",
+      "ipa": "ˈkændɪd",
+      "pos": "adjective",
+      "def": "Truthful and straightforward, even when the truth is uncomfortable; (of photos) unposed.",
+      "he": "כן, גלוי לב",
+      "family": [
+        "candour (n.)",
+        "candidly (adv.)"
+      ],
+      "ex": [
+        "To be [candid], I don't think the plan will work.",
+        "She gave a [candid] interview about her struggle with depression.",
+        "The wedding album includes some lovely [candid] shots."
+      ],
+      "col": [
+        "to be candid",
+        "candid interview",
+        "candid about",
+        "candid photo",
+        "with remarkable candour"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "frank",
+        "forthright",
+        "open",
+        "blunt"
+      ],
+      "nuance": "Candid suggests honesty that is welcome and sincere. Blunt adds a lack of tact; frank is close to candid but slightly more forceful; forthright means direct and outspoken.",
+      "ety": "Latin candidus 'white, pure'.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "speech"
+      ],
+      "prec": {
+        "s": "In a rare, ___ interview, the actor spoke openly about his addiction.",
+        "opts": [
+          "blunt",
+          "brusque",
+          "tactless"
+        ],
+        "why": "Candid means honestly open about yourself — appreciated by the listener. Blunt and tactless imply hurting others; brusque means curt and abrupt."
+      }
+    },
+    {
+      "word": "disingenuous",
+      "ipa": "ˌdɪsɪnˈdʒenjuəs",
+      "pos": "adjective",
+      "def": "Not sincere; pretending to know less or be more innocent than one really is.",
+      "he": "לא כן, מעמיד פני תמים",
+      "family": [
+        "disingenuously (adv.)",
+        "disingenuousness (n.)"
+      ],
+      "ex": [
+        "It's [disingenuous] of him to claim he didn't know about the deal.",
+        "Her surprise at the result was slightly [disingenuous].",
+        "The company's apology struck many customers as [disingenuous]."
+      ],
+      "col": [
+        "it is disingenuous to",
+        "slightly disingenuous",
+        "disingenuous argument",
+        "deeply disingenuous"
+      ],
+      "reg": "formal",
+      "syn": [
+        "insincere",
+        "dishonest",
+        "hypocritical",
+        "duplicitous"
+      ],
+      "nuance": "Disingenuous is subtler than lying: pretending ignorance or innocence, or making a misleading point while appearing fair. Duplicitous suggests active double-dealing.",
+      "ety": "dis- + ingenuous 'innocent, frank', from Latin ingenuus 'native, freeborn'.",
+      "tier": 2,
+      "themes": [
+        "character",
+        "speech"
+      ],
+      "prec": {
+        "s": "It's ___ for the CEO to say he was shocked by the layoffs he personally approved.",
+        "opts": [
+          "naive",
+          "deceitful",
+          "fraudulent"
+        ],
+        "why": "Disingenuous names exactly this: feigned innocence or surprise. Naive would mean he genuinely didn't know; deceitful and fraudulent imply active lying or criminal deception."
+      }
+    },
+    {
+      "word": "duplicitous",
+      "ipa": "duːˈplɪsɪtəs",
+      "pos": "adjective",
+      "def": "Deliberately deceitful; saying one thing and doing another.",
+      "he": "דו־פרצופי, רמאי",
+      "family": [
+        "duplicity (n.)"
+      ],
+      "ex": [
+        "The [duplicitous] spy worked for both governments.",
+        "She felt betrayed by her [duplicitous] business partner.",
+        "The scandal exposed years of [duplicity] at the bank."
+      ],
+      "col": [
+        "duplicitous behaviour",
+        "act of duplicity",
+        "accuse someone of duplicity"
+      ],
+      "reg": "formal",
+      "syn": [
+        "two-faced",
+        "deceitful",
+        "double-dealing",
+        "treacherous"
+      ],
+      "nuance": "Duplicitous stresses doubleness — two faces, two loyalties. Treacherous adds betrayal of trust; two-faced is the informal equivalent.",
+      "ety": "Latin duplex 'twofold'.",
+      "root": "plic",
+      "tier": 2,
+      "themes": [
+        "character",
+        "relationships"
+      ],
+      "prec": {
+        "s": "The ___ agent had been passing secrets to both sides for a decade.",
+        "opts": [
+          "disingenuous",
+          "hypocritical",
+          "devious"
+        ],
+        "why": "Duplicitous fits a double game — working for two sides. Disingenuous is feigned innocence; hypocritical is preaching what you don't practise; devious is cunning in general."
+      }
+    },
+    {
+      "word": "sanctimonious",
+      "ipa": "ˌsæŋktɪˈmoʊniəs",
+      "pos": "adjective",
+      "def": "Behaving as if one is morally superior to others.",
+      "he": "צדקני, מתחסד",
+      "family": [
+        "sanctimony (n.)",
+        "sanctimoniously (adv.)"
+      ],
+      "ex": [
+        "I'm tired of his [sanctimonious] lectures about recycling.",
+        "The article's [sanctimonious] tone put many readers off.",
+        "She hates [sanctimonious] people who judge others' parenting."
+      ],
+      "col": [
+        "sanctimonious lecture",
+        "sanctimonious tone",
+        "sanctimonious hypocrite"
+      ],
+      "reg": "formal",
+      "syn": [
+        "self-righteous",
+        "holier-than-thou",
+        "preachy",
+        "pious"
+      ],
+      "nuance": "Sanctimonious is always negative: showy moral superiority. Self-righteous means convinced of one's own rightness; pious can be sincere religious devotion.",
+      "ety": "Latin sanctimonia 'sanctity', from sanctus 'holy'.",
+      "root": "sanct",
+      "tier": 2,
+      "themes": [
+        "character",
+        "speech"
+      ],
+      "prec": {
+        "s": "He drives a huge car, yet gives everyone ___ lectures about their carbon footprint.",
+        "opts": [
+          "pious",
+          "devout",
+          "earnest"
+        ],
+        "why": "Sanctimonious mocks moralising from someone acting superior. Pious and devout can be sincere religious devotion; earnest means serious and sincere."
+      }
+    },
+    {
+      "word": "self-effacing",
+      "ipa": "ˌself ɪˈfeɪsɪŋ",
+      "pos": "adjective",
+      "def": "Not wanting to draw attention to oneself or one's achievements; modest.",
+      "he": "צנוע, מצניע את עצמו",
+      "family": [
+        "self-effacement (n.)"
+      ],
+      "ex": [
+        "The [self-effacing] scientist gave all the credit to her team.",
+        "His [self-effacing] humour made him popular with audiences.",
+        "Despite her fame, she remained shy and [self-effacing]."
+      ],
+      "col": [
+        "self-effacing humour",
+        "modest and self-effacing",
+        "self-effacing manner"
+      ],
+      "reg": "formal",
+      "syn": [
+        "modest",
+        "humble",
+        "unassuming",
+        "diffident"
+      ],
+      "nuance": "Self-effacing means actively keeping oneself in the background, often charmingly. Modest means not boasting; diffident implies lack of confidence; unassuming means not pretentious.",
+      "ety": "efface 'rub out', from French effacer, from face — to erase oneself.",
+      "tier": 2,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "Despite leading the project, she was ___, crediting her team in every interview and avoiding the cameras.",
+        "opts": [
+          "self-conscious",
+          "self-absorbed",
+          "self-assured"
+        ],
+        "why": "Self-effacing means keeping oneself modestly in the background. Self-conscious means awkwardly aware of being watched; self-absorbed means preoccupied with oneself; self-assured means confident."
+      }
+    },
+    {
+      "word": "complacent",
+      "ipa": "kəmˈpleɪsnt",
+      "pos": "adjective",
+      "def": "Too satisfied with oneself or a situation, and therefore not careful enough about possible dangers.",
+      "he": "שאנן, שבע רצון מעצמו",
+      "family": [
+        "complacency (n.)",
+        "complacently (adv.)"
+      ],
+      "ex": [
+        "After three easy wins, the team became [complacent] and lost.",
+        "We can't afford to be [complacent] about cybersecurity.",
+        "Success had bred [complacency] in the company."
+      ],
+      "col": [
+        "become complacent",
+        "complacent about",
+        "no room for complacency",
+        "breed complacency"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "smug",
+        "self-satisfied",
+        "overconfident",
+        "lax"
+      ],
+      "nuance": "Complacent stresses the danger of relaxing too much. Smug stresses an annoying, self-satisfied attitude. Don't confuse with complaisant (eager to please).",
+      "ety": "Latin complacere 'to please greatly', from placere 'to please'.",
+      "root": "pac",
+      "tier": 1,
+      "themes": [
+        "character",
+        "emotion"
+      ],
+      "prec": {
+        "s": "Two years without a security breach made the IT team ___, and they stopped installing updates.",
+        "opts": [
+          "smug",
+          "content",
+          "conceited"
+        ],
+        "why": "Complacent is the word for relaxing your guard because things are going well. Smug is about annoying self-satisfaction; content is simply happy; conceited means vain."
+      }
+    },
+    {
+      "word": "indolent",
+      "ipa": "ˈɪndələnt",
+      "pos": "adjective",
+      "def": "Wanting to avoid activity or effort; lazy.",
+      "he": "עצלן",
+      "family": [
+        "indolence (n.)",
+        "indolently (adv.)"
+      ],
+      "ex": [
+        "They spent an [indolent] summer lying by the pool.",
+        "Critics described the [indolent] aristocrats who never worked a day.",
+        "His teachers blamed his poor grades on [indolence], not lack of ability."
+      ],
+      "col": [
+        "indolent summer",
+        "indolent lifestyle",
+        "sheer indolence"
+      ],
+      "reg": "literary",
+      "syn": [
+        "lazy",
+        "idle",
+        "slothful",
+        "lethargic"
+      ],
+      "nuance": "Indolent is a literary word for habitual laziness, sometimes describing a pleasant, relaxed mood. Lethargic means lacking energy (often from illness or tiredness), not unwillingness.",
+      "ety": "Late Latin indolens 'not feeling pain', from dolere 'to suffer'.",
+      "tier": 3,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "The novel portrays the ___ rich, who spend their days lounging on yachts doing nothing at all.",
+        "opts": [
+          "lethargic",
+          "sluggish",
+          "listless"
+        ],
+        "why": "Indolent means habitually lazy by preference. Lethargic, sluggish and listless suggest low energy or illness, not a lifestyle choice."
+      }
+    },
+    {
+      "word": "assiduous",
+      "ipa": "əˈsɪdʒuəs",
+      "pos": "adjective",
+      "def": "Showing great care, attention and persistent effort.",
+      "he": "שקדן, חרוץ",
+      "family": [
+        "assiduously (adv.)",
+        "assiduity (n.)"
+      ],
+      "ex": [
+        "Thanks to her [assiduous] research, the case was reopened.",
+        "He [assiduously] avoided any mention of the scandal.",
+        "The garden was the result of years of [assiduous] care."
+      ],
+      "col": [
+        "assiduous research",
+        "assiduously avoid",
+        "assiduous attention"
+      ],
+      "reg": "formal",
+      "syn": [
+        "diligent",
+        "industrious",
+        "sedulous",
+        "painstaking"
+      ],
+      "nuance": "Assiduous emphasises constant, persevering attention. Diligent is the more common word for careful hard work. 'Assiduously avoid' is a useful ironic collocation.",
+      "ety": "Latin assiduus 'constantly present', from assidere 'to sit beside', from sedere.",
+      "root": "sid",
+      "tier": 3,
+      "themes": [
+        "character",
+        "work"
+      ],
+      "prec": {
+        "s": "For a year, the minister ___ avoided giving any interviews about the scandal.",
+        "opts": [
+          "diligently",
+          "industriously",
+          "zealously"
+        ],
+        "why": "'Assiduously avoid' is a fixed collocation for persistent, deliberate avoidance. Diligently and industriously suggest productive work; zealously suggests passionate enthusiasm.",
+        "ans": "assiduously"
+      }
+    },
+    {
+      "word": "tenacious",
+      "ipa": "təˈneɪʃəs",
+      "pos": "adjective",
+      "def": "Holding firmly to something; very determined and persistent.",
+      "he": "עיקש, נחוש",
+      "family": [
+        "tenacity (n.)",
+        "tenaciously (adv.)"
+      ],
+      "ex": [
+        "A [tenacious] journalist spent five years uncovering the scandal.",
+        "The team showed great [tenacity] in coming back from 2–0 down.",
+        "Old habits are [tenacious]."
+      ],
+      "col": [
+        "tenacious defender",
+        "tenacious grip",
+        "show tenacity",
+        "cling tenaciously to"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "persistent",
+        "determined",
+        "dogged",
+        "resolute"
+      ],
+      "nuance": "Tenacious is admiring: refusing to give up or let go. Dogged stresses stubborn, unglamorous persistence; obstinate is negative.",
+      "ety": "Latin tenax 'holding fast', from tenere 'to hold'.",
+      "root": "ten",
+      "tier": 1,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "A ___ reporter, she followed the story for six years until the truth came out.",
+        "opts": [
+          "obstinate",
+          "stubborn",
+          "headstrong"
+        ],
+        "why": "Tenacious is admiring persistence towards a goal. Obstinate, stubborn and headstrong criticise refusing to change your mind."
+      }
+    },
+    {
+      "word": "audacious",
+      "ipa": "ɔːˈdeɪʃəs",
+      "pos": "adjective",
+      "def": "Showing a willingness to take surprisingly bold risks; (negatively) shamelessly bold.",
+      "he": "נועז, חצוף",
+      "family": [
+        "audacity (n.)",
+        "audaciously (adv.)"
+      ],
+      "ex": [
+        "It was an [audacious] plan to rob the bank in broad daylight.",
+        "The architect's [audacious] design divided critics.",
+        "He had the [audacity] to ask for a pay rise after missing the deadline."
+      ],
+      "col": [
+        "audacious plan",
+        "audacious move",
+        "have the audacity to",
+        "audacious goal"
+      ],
+      "reg": "formal",
+      "syn": [
+        "bold",
+        "daring",
+        "brazen",
+        "intrepid"
+      ],
+      "nuance": "Audacious can be admiring (daring, original) or critical (cheeky). 'Have the audacity to' is always critical. Intrepid means fearless in facing danger, especially explorers.",
+      "ety": "Latin audax 'bold', from audere 'to dare'.",
+      "tier": 1,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "The startup announced an ___ plan to put a hotel on the Moon within a decade.",
+        "opts": [
+          "intrepid",
+          "valiant",
+          "foolhardy"
+        ],
+        "why": "Audacious suits a surprisingly bold plan or goal. Intrepid and valiant describe people facing danger; foolhardy means recklessly stupid, a harsher judgement."
+      }
+    },
+    {
+      "word": "brazen",
+      "ipa": "ˈbreɪzn",
+      "pos": "adjective / verb",
+      "def": "Bold and without shame; (v. brazen it out) to face trouble shamelessly.",
+      "he": "חצוף, חסר בושה",
+      "family": [
+        "brazenly (adv.)",
+        "brazenness (n.)"
+      ],
+      "ex": [
+        "It was a [brazen] lie, told in front of witnesses.",
+        "Thieves [brazenly] stole the statue during a public event.",
+        "Caught red-handed, he decided to [brazen] it out."
+      ],
+      "col": [
+        "brazen lie",
+        "brazen attempt",
+        "brazenly ignore",
+        "brazen it out"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "shameless",
+        "barefaced",
+        "flagrant",
+        "audacious"
+      ],
+      "nuance": "Brazen is always negative: bold without shame or embarrassment. Flagrant describes the offence (obvious and serious), brazen the attitude of the offender.",
+      "ety": "Old English bræsen 'made of brass' — hard and shameless.",
+      "tier": 2,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "In a ___ act of theft, the gang drove a truck through the shop window at midday.",
+        "opts": [
+          "audacious",
+          "covert",
+          "furtive"
+        ],
+        "why": "Brazen means shamelessly bold, unconcerned about being seen. Audacious can be admiring; covert and furtive mean secret — the opposite."
+      }
+    },
+    {
+      "word": "impetuous",
+      "ipa": "ɪmˈpetʃuəs",
+      "pos": "adjective",
+      "def": "Acting quickly and without thinking about the consequences.",
+      "he": "פזיז, נמהר",
+      "family": [
+        "impetuously (adv.)",
+        "impetuosity (n.)",
+        "impetus (n., related)"
+      ],
+      "ex": [
+        "In an [impetuous] moment, he quit his job and booked a flight to Bali.",
+        "Her [impetuous] decision to marry after two weeks shocked everyone.",
+        "Young and [impetuous], he often regretted what he said in anger."
+      ],
+      "col": [
+        "impetuous decision",
+        "young and impetuous",
+        "an impetuous moment"
+      ],
+      "reg": "formal",
+      "syn": [
+        "impulsive",
+        "rash",
+        "hasty",
+        "reckless"
+      ],
+      "nuance": "Impetuous suggests energy and emotion carrying someone away — often young people. Rash stresses lack of judgement; impulsive means acting on sudden urges.",
+      "ety": "Latin impetus 'attack, force', from petere 'to seek, attack'.",
+      "tier": 2,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "Young and ___, Romeo marries Juliet within a day of meeting her.",
+        "opts": [
+          "impervious",
+          "impertinent",
+          "imperious"
+        ],
+        "why": "Impetuous means acting on passion without thought. Impervious means unaffected; impertinent means rude; imperious means arrogantly commanding."
+      }
+    },
+    {
+      "word": "prudent",
+      "ipa": "ˈpruːdnt",
+      "pos": "adjective",
+      "def": "Acting with care and thought for the future.",
+      "he": "נבון, זהיר",
+      "family": [
+        "prudence (n.)",
+        "prudently (adv.)",
+        "imprudent (adj.)"
+      ],
+      "ex": [
+        "It would be [prudent] to get a second opinion before surgery.",
+        "[Prudent] investors spread their money across different assets.",
+        "Financial [prudence] means saving for a rainy day."
+      ],
+      "col": [
+        "it would be prudent to",
+        "prudent investment",
+        "financial prudence",
+        "prudent approach"
+      ],
+      "reg": "formal",
+      "syn": [
+        "wise",
+        "sensible",
+        "judicious",
+        "cautious"
+      ],
+      "nuance": "Prudent focuses on caution and avoiding future risk, especially with money. Judicious focuses on good judgement in a specific choice. Careful: 'prudish' is a different word (easily shocked by sex).",
+      "ety": "Latin prudens, contraction of providens 'foreseeing'.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "money",
+        "work"
+      ],
+      "prec": {
+        "s": "With a recession expected, it would be ___ to build up some savings now.",
+        "opts": [
+          "prudish",
+          "impudent",
+          "judicial"
+        ],
+        "why": "Prudent means wisely cautious about the future. Prudish means easily shocked by sexual matters; impudent means cheeky and disrespectful; judicial relates to courts and judges."
+      }
+    },
+    {
+      "word": "judicious",
+      "ipa": "dʒuˈdɪʃəs",
+      "pos": "adjective",
+      "def": "Having or showing good judgement, especially in choosing or using something.",
+      "he": "שקול, נבון",
+      "family": [
+        "judiciously (adv.)",
+        "injudicious (adj.)"
+      ],
+      "ex": [
+        "A [judicious] use of colour can transform a small room.",
+        "With some [judicious] editing, the report could be half the length.",
+        "She used her influence [judiciously]."
+      ],
+      "col": [
+        "judicious use of",
+        "judicious choice",
+        "judicious editing",
+        "use judiciously"
+      ],
+      "reg": "formal",
+      "syn": [
+        "wise",
+        "prudent",
+        "sensible",
+        "shrewd"
+      ],
+      "nuance": "Judicious is ideal for wise, measured use of something ('judicious use of humour'). Don't confuse with judicial (relating to courts and judges).",
+      "ety": "French judicieux, from Latin iudicium 'judgement'.",
+      "root": "jur",
+      "tier": 2,
+      "themes": [
+        "work",
+        "thinking"
+      ],
+      "prec": {
+        "s": "A ___ use of humour can make even a technical presentation enjoyable.",
+        "opts": [
+          "judicial",
+          "prudent",
+          "shrewd"
+        ],
+        "why": "'Judicious use of' is the natural collocation: wise, well-measured use. Judicial relates to courts; prudent is about caution and risk; shrewd is about clever, self-interested judgement."
+      }
+    },
+    {
+      "word": "shrewd",
+      "ipa": "ʃruːd",
+      "pos": "adjective",
+      "def": "Having or showing sharp practical judgement, especially to gain an advantage.",
+      "he": "ממולח, פיקח",
+      "family": [
+        "shrewdly (adv.)",
+        "shrewdness (n.)"
+      ],
+      "ex": [
+        "She's a [shrewd] businesswoman who never overpays.",
+        "It was a [shrewd] move to buy property before the area became popular.",
+        "I have a [shrewd] idea who sent the anonymous letter."
+      ],
+      "col": [
+        "shrewd businessman",
+        "shrewd move",
+        "shrewd judge of character",
+        "have a shrewd idea"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "astute",
+        "canny",
+        "sharp",
+        "savvy"
+      ],
+      "nuance": "Shrewd mixes intelligence with practical, sometimes self-interested cunning. Astute is more neutral and intellectual; canny is informal; savvy is informal and modern.",
+      "ety": "Middle English shrewe 'evil person' — originally 'malicious', later 'cunning', then 'clever'.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "work",
+        "money"
+      ],
+      "prec": {
+        "s": "A ___ negotiator, he always got the other side to name a price first.",
+        "opts": [
+          "wise",
+          "learned",
+          "erudite"
+        ],
+        "why": "Shrewd describes practical, tactical cleverness used for advantage. Wise is about deep good judgement; learned and erudite are about book knowledge."
+      }
+    },
+    {
+      "word": "astute",
+      "ipa": "əˈstuːt",
+      "pos": "adjective",
+      "def": "Able to assess situations or people accurately and turn this to one's advantage.",
+      "he": "חריף, נבון",
+      "family": [
+        "astutely (adv.)",
+        "astuteness (n.)"
+      ],
+      "ex": [
+        "That's a very [astute] observation.",
+        "An [astute] politician, she knew exactly when to stay silent.",
+        "He [astutely] predicted the collapse of the housing market."
+      ],
+      "col": [
+        "astute observation",
+        "astute politician",
+        "politically astute",
+        "astute investor"
+      ],
+      "reg": "formal",
+      "syn": [
+        "shrewd",
+        "perceptive",
+        "sharp",
+        "perspicacious"
+      ],
+      "nuance": "Astute is praise for sharp perception and judgement. 'An astute observation' is a typical compliment in discussions. Shrewd is more about cunning in practical dealings.",
+      "ety": "Latin astutus 'cunning', from astus 'craft'.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "thinking"
+      ],
+      "prec": {
+        "s": "'That's a very ___ observation,' said the professor, impressed by the student's point.",
+        "opts": [
+          "cunning",
+          "crafty",
+          "wily"
+        ],
+        "why": "Astute is the natural compliment for an insightful remark. Cunning, crafty and wily suggest tricks and deceit."
+      }
+    },
+    {
+      "word": "credulous",
+      "ipa": "ˈkredʒələs",
+      "pos": "adjective",
+      "def": "Too ready to believe things; easily deceived.",
+      "he": "פתי, מאמין לכל דבר",
+      "family": [
+        "credulity (n.)",
+        "incredulous (adj.)"
+      ],
+      "ex": [
+        "Scammers target [credulous] people with promises of easy money.",
+        "The documentary was criticised for its [credulous] treatment of conspiracy theories.",
+        "The story strains [credulity]."
+      ],
+      "col": [
+        "credulous public",
+        "credulous audience",
+        "strain credulity"
+      ],
+      "reg": "formal",
+      "syn": [
+        "gullible",
+        "naive",
+        "trusting",
+        "unsuspecting"
+      ],
+      "nuance": "Credulous is the formal word for gullible. Incredulous is the opposite feeling (unable to believe). Credible means believable — a frequent confusion.",
+      "ety": "Latin credulus 'trusting', from credere 'to believe'.",
+      "root": "cred",
+      "tier": 2,
+      "themes": [
+        "character",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Only the most ___ readers believed the article about aliens building the pyramids.",
+        "opts": [
+          "credible",
+          "incredulous",
+          "creditable"
+        ],
+        "why": "Credulous means believing too easily. Credible means believable; incredulous means unable to believe; creditable means deserving praise."
+      }
+    },
+    {
+      "word": "jaded",
+      "ipa": "ˈdʒeɪdɪd",
+      "pos": "adjective",
+      "def": "Bored, tired or cynical after having too much of something.",
+      "he": "מיצה, משועמם, מפוכח־ציני",
+      "family": [],
+      "ex": [
+        "After twenty years in politics, she had become [jaded] and cynical.",
+        "This dish will impress even the most [jaded] palate.",
+        "[Jaded] by endless meetings, he stopped paying attention."
+      ],
+      "col": [
+        "jaded palate",
+        "jaded and cynical",
+        "become jaded",
+        "jaded by"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "weary",
+        "world-weary",
+        "blasé",
+        "cynical"
+      ],
+      "nuance": "Jaded implies that too much experience has dulled enthusiasm. Blasé implies unimpressed indifference (sometimes a pose); cynical implies distrust of people's motives.",
+      "ety": "From jade 'a worn-out horse'.",
+      "tier": 1,
+      "themes": [
+        "emotion",
+        "character"
+      ],
+      "prec": {
+        "s": "Having reviewed restaurants for thirty years, the critic had a ___ palate that few chefs could impress.",
+        "opts": [
+          "sceptical",
+          "apathetic",
+          "disillusioned"
+        ],
+        "why": "Jaded means dulled by too much experience — 'a jaded palate' is a set phrase. Sceptical means doubtful; apathetic means not caring at all; disillusioned means disappointed after losing an ideal."
+      }
+    },
+    {
+      "word": "petulant",
+      "ipa": "ˈpetʃələnt",
+      "pos": "adjective",
+      "def": "Childishly sulky or bad-tempered.",
+      "he": "נרגן, מתנהג כילד מפונק",
+      "family": [
+        "petulance (n.)",
+        "petulantly (adv.)"
+      ],
+      "ex": [
+        "The player kicked the ball away in a [petulant] display after the red card.",
+        "Stop being so [petulant] — you can't always get what you want.",
+        "She closed the laptop with a [petulant] sigh."
+      ],
+      "col": [
+        "petulant child",
+        "petulant outburst",
+        "a fit of petulance"
+      ],
+      "reg": "formal",
+      "syn": [
+        "sulky",
+        "peevish",
+        "huffy",
+        "irritable"
+      ],
+      "nuance": "Petulant suggests a childish, sulky reaction to not getting one's way. Irascible means easily angered (a trait); peevish means irritable over small things.",
+      "ety": "Latin petulans 'impudent', from petere 'to seek, attack'.",
+      "tier": 2,
+      "themes": [
+        "character",
+        "emotion"
+      ],
+      "prec": {
+        "s": "When his idea was rejected, the CEO stormed out like a ___ toddler.",
+        "opts": [
+          "irascible",
+          "belligerent",
+          "querulous"
+        ],
+        "why": "Petulant is the word for childish sulking. Irascible describes someone with a quick temper generally; belligerent means aggressive and hostile; querulous means complaining in a whining way."
+      }
+    },
+    {
+      "word": "irascible",
+      "ipa": "ɪˈræsəbl",
+      "pos": "adjective",
+      "def": "Having a tendency to be easily angered.",
+      "he": "רגזן, חם מזג",
+      "family": [
+        "irascibility (n.)"
+      ],
+      "ex": [
+        "The [irascible] old professor shouted at anyone who arrived late.",
+        "He was famously [irascible] but deeply loyal.",
+        "Lack of sleep made her [irascible]."
+      ],
+      "col": [
+        "irascible old man",
+        "famously irascible",
+        "irascible temper"
+      ],
+      "reg": "literary",
+      "syn": [
+        "short-tempered",
+        "irritable",
+        "cantankerous",
+        "testy"
+      ],
+      "nuance": "Irascible is a permanent tendency to anger quickly — often used affectionately for grumpy elderly characters. Cantankerous adds argumentativeness.",
+      "ety": "Latin irasci 'to grow angry', from ira 'anger'.",
+      "tier": 3,
+      "themes": [
+        "character",
+        "emotion"
+      ],
+      "prec": {
+        "s": "The ___ chef was known for throwing pans whenever anything went wrong in the kitchen.",
+        "opts": [
+          "petulant",
+          "pugnacious",
+          "sullen"
+        ],
+        "why": "Irascible describes a personality quick to explode in anger. Petulant is childish sulking; pugnacious is eager to fight or argue; sullen is silent and resentful."
+      }
+    },
+    {
+      "word": "stoic",
+      "ipa": "ˈstoʊɪk",
+      "pos": "adjective / noun",
+      "def": "Enduring pain or hardship calmly, without showing feelings or complaining.",
+      "he": "סטואי, מאופק בסבל",
+      "family": [
+        "stoical (adj.)",
+        "stoicism (n.)",
+        "stoically (adv.)"
+      ],
+      "ex": [
+        "She remained [stoic] throughout her long illness.",
+        "He accepted the news with [stoic] calm.",
+        "Fans have shown remarkable [stoicism] through years of defeats."
+      ],
+      "col": [
+        "stoic acceptance",
+        "remain stoic",
+        "with stoic calm",
+        "quiet stoicism"
+      ],
+      "reg": "formal",
+      "syn": [
+        "uncomplaining",
+        "long-suffering",
+        "resigned",
+        "phlegmatic"
+      ],
+      "nuance": "Stoic implies strength in enduring suffering without complaint. Resigned implies giving up; phlegmatic is a calm temperament generally, not necessarily under suffering.",
+      "ety": "From the Stoics, Greek philosophers who taught at the Stoa (porch) in Athens.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "emotion"
+      ],
+      "prec": {
+        "s": "Through months of painful treatment, he remained ___, never once complaining.",
+        "opts": [
+          "apathetic",
+          "indifferent",
+          "phlegmatic"
+        ],
+        "why": "Stoic is about enduring pain without complaint. Apathetic and indifferent mean not caring; phlegmatic is a calm temperament in general, not specifically endurance of suffering."
+      }
+    },
+    {
+      "word": "altruistic",
+      "ipa": "ˌæltruˈɪstɪk",
+      "pos": "adjective",
+      "def": "Showing selfless concern for the well-being of others.",
+      "he": "אלטרואיסטי, לא אנוכי",
+      "family": [
+        "altruism (n.)",
+        "altruist (n.)",
+        "altruistically (adv.)"
+      ],
+      "ex": [
+        "Was his donation purely [altruistic], or did he want publicity?",
+        "Some animals show surprisingly [altruistic] behaviour.",
+        "She became a nurse out of [altruism], not for the money."
+      ],
+      "col": [
+        "altruistic motives",
+        "purely altruistic",
+        "acts of altruism",
+        "altruistic behaviour"
+      ],
+      "reg": "formal",
+      "syn": [
+        "selfless",
+        "unselfish",
+        "philanthropic",
+        "benevolent"
+      ],
+      "nuance": "Altruistic emphasises motive: helping others with no benefit to yourself. Philanthropic refers to giving money to good causes, often on a large scale.",
+      "ety": "French altruisme, from Italian altrui 'somebody else'.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "society"
+      ],
+      "prec": {
+        "s": "Critics doubted that the billionaire's motives were truly ___; the donation came with a tax break and his name on a building.",
+        "opts": [
+          "philanthropic",
+          "charitable",
+          "generous"
+        ],
+        "why": "Altruistic is specifically about selfless motives — the point under question. Philanthropic and charitable describe the act of giving; generous describes the size of the gift."
+      }
+    },
+    {
+      "word": "venal",
+      "ipa": "ˈviːnl",
+      "pos": "adjective",
+      "def": "Willing to act dishonestly in return for money; corrupt.",
+      "he": "מושחת, מקבל שוחד",
+      "family": [
+        "venality (n.)"
+      ],
+      "ex": [
+        "[Venal] officials were paid to ignore safety violations.",
+        "The novel satirises a [venal] press that prints anything for money.",
+        "The regime was notorious for its [venality]."
+      ],
+      "col": [
+        "venal officials",
+        "venal politicians",
+        "venal regime"
+      ],
+      "reg": "formal",
+      "syn": [
+        "corrupt",
+        "bribable",
+        "mercenary",
+        "crooked"
+      ],
+      "nuance": "Venal specifically means open to bribery. Don't confuse with venial (a venial sin is a minor, forgivable one). Mercenary means motivated only by money.",
+      "ety": "Latin venalis 'for sale', from venum 'sale'.",
+      "tier": 3,
+      "themes": [
+        "society",
+        "character",
+        "money"
+      ],
+      "prec": {
+        "s": "The inspector was so ___ that a few hundred dollars was enough to get any building approved.",
+        "opts": [
+          "venial",
+          "venerable",
+          "vengeful"
+        ],
+        "why": "Venal means open to bribery. Venial means minor and forgivable; venerable means respected because of age; vengeful means seeking revenge."
+      }
+    },
+    {
+      "word": "pompous",
+      "ipa": "ˈpɑːmpəs",
+      "pos": "adjective",
+      "def": "Self-important and solemn; trying to seem grand.",
+      "he": "מתנפח, יומרני",
+      "family": [
+        "pomposity (n.)",
+        "pompously (adv.)"
+      ],
+      "ex": [
+        "The [pompous] speaker went on for an hour about his own achievements.",
+        "Her writing is clear, never [pompous].",
+        "He was mocked for his [pomposity]."
+      ],
+      "col": [
+        "pompous ass",
+        "pompous language",
+        "pompous speech",
+        "puncture someone's pomposity"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "self-important",
+        "pretentious",
+        "grandiose",
+        "bombastic"
+      ],
+      "nuance": "Pompous mocks someone who takes himself too seriously. Pretentious is pretending to be more important or cultured than you are; bombastic is about inflated language.",
+      "ety": "Latin pompa 'procession, pomp'.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "speech"
+      ],
+      "prec": {
+        "s": "The ___ mayor insisted on being called 'Your Worship' and gave hour-long speeches about himself.",
+        "opts": [
+          "haughty",
+          "bombastic",
+          "arrogant"
+        ],
+        "why": "Pompous captures solemn self-importance — titles, long speeches. Haughty is cold pride; bombastic describes inflated language specifically; arrogant is broader overconfidence."
+      }
+    },
+    {
+      "word": "erudite",
+      "ipa": "ˈerədaɪt",
+      "pos": "adjective",
+      "def": "Having or showing great knowledge gained from study.",
+      "he": "למדן, בעל השכלה רחבה",
+      "family": [
+        "erudition (n.)",
+        "eruditely (adv.)"
+      ],
+      "ex": [
+        "She gave an [erudite] lecture on medieval music.",
+        "The book is [erudite] but surprisingly easy to read.",
+        "His [erudition] was matched only by his kindness."
+      ],
+      "col": [
+        "erudite scholar",
+        "erudite lecture",
+        "wear one's erudition lightly"
+      ],
+      "reg": "formal",
+      "syn": [
+        "learned",
+        "scholarly",
+        "well-read",
+        "knowledgeable"
+      ],
+      "nuance": "Erudite is praise for deep, wide learning, especially in the humanities. Pedantic is the negative side: showing off knowledge or obsessing over minor details.",
+      "ety": "Latin eruditus 'instructed', from erudire 'to train', literally 'to bring out of roughness'.",
+      "tier": 2,
+      "themes": [
+        "knowledge",
+        "character"
+      ],
+      "prec": {
+        "s": "An ___ scholar, she could quote Latin poets and Arabic philosophers with equal ease.",
+        "opts": [
+          "pedantic",
+          "intelligent",
+          "literate"
+        ],
+        "why": "Erudite means deeply learned through study. Pedantic is a criticism; intelligent is about ability, not knowledge; literate merely means able to read and write."
+      }
+    },
+    {
+      "word": "pedantic",
+      "ipa": "pɪˈdæntɪk",
+      "pos": "adjective",
+      "def": "Too concerned with minor details or rules, especially in showing off knowledge.",
+      "he": "קטנוני, נוקדן",
+      "family": [
+        "pedant (n.)",
+        "pedantry (n.)",
+        "pedantically (adv.)"
+      ],
+      "ex": [
+        "I don't want to be [pedantic], but 'less' should be 'fewer' here.",
+        "His [pedantic] corrections annoyed everyone at the meeting.",
+        "The review is full of [pedantry] about footnotes."
+      ],
+      "col": [
+        "at the risk of being pedantic",
+        "pedantic about",
+        "a stickler and a pedant"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "nit-picking",
+        "hair-splitting",
+        "fussy",
+        "punctilious"
+      ],
+      "nuance": "Pedantic criticises showing off knowledge through trivial corrections. Punctilious is about correct behaviour and duty, often neutral or positive.",
+      "ety": "Italian pedante 'teacher', possibly from Greek paideuein 'to teach'.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "speech"
+      ],
+      "prec": {
+        "s": "At the risk of sounding ___, the war ended in 1945, not 1946.",
+        "opts": [
+          "meticulous",
+          "punctilious",
+          "scrupulous"
+        ],
+        "why": "'At the risk of sounding pedantic' is the stock phrase before correcting a minor factual detail. The others describe careful conduct or work, not annoying corrections."
+      }
+    },
+    {
+      "word": "idiosyncratic",
+      "ipa": "ˌɪdiəsɪŋˈkrætɪk",
+      "pos": "adjective",
+      "def": "Peculiar to an individual; distinctive and unusual.",
+      "he": "ייחודי, אופייני לאדם מסוים",
+      "family": [
+        "idiosyncrasy (n.)",
+        "idiosyncratically (adv.)"
+      ],
+      "ex": [
+        "He has an [idiosyncratic] way of spelling, but his ideas are brilliant.",
+        "The museum reflects the founder's [idiosyncratic] taste.",
+        "Every writer has their [idiosyncrasies]."
+      ],
+      "col": [
+        "idiosyncratic style",
+        "highly idiosyncratic",
+        "personal idiosyncrasies"
+      ],
+      "reg": "formal",
+      "syn": [
+        "distinctive",
+        "quirky",
+        "eccentric",
+        "peculiar"
+      ],
+      "nuance": "Idiosyncratic describes something personal and unusual, without the judgement of eccentric (odd behaviour) or quirky (charmingly odd, informal).",
+      "ety": "Greek idiosunkrasia, from idios 'own' + sunkrasis 'mixture'.",
+      "tier": 2,
+      "themes": [
+        "character",
+        "quality"
+      ],
+      "prec": {
+        "s": "The film critic's rankings are ___: she loves obscure 1970s horror and hates most Oscar winners.",
+        "opts": [
+          "erratic",
+          "arbitrary",
+          "eclectic"
+        ],
+        "why": "Idiosyncratic means reflecting one person's distinctive, unusual tastes. Erratic means irregular and unpredictable; arbitrary means without reason; eclectic means drawn from many sources."
+      }
+    },
+    {
+      "word": "aloof",
+      "ipa": "əˈluːf",
+      "pos": "adjective",
+      "def": "Not friendly or forthcoming; cool and distant.",
+      "he": "מרוחק, מסתגר",
+      "family": [
+        "aloofness (n.)"
+      ],
+      "ex": [
+        "Some colleagues find her [aloof], but she's just shy.",
+        "The president remained [aloof] from the debate.",
+        "His [aloofness] made it hard to get to know him."
+      ],
+      "col": [
+        "remain aloof",
+        "stand aloof from",
+        "cold and aloof",
+        "seem aloof"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "distant",
+        "detached",
+        "reserved",
+        "standoffish"
+      ],
+      "nuance": "Aloof is about keeping emotional distance, which others may read as coldness or superiority. Reserved is milder (slow to reveal feelings); standoffish is informal and critical.",
+      "ety": "From a- 'on' + luff (sailing) — keeping a ship's head to the wind, away from the shore.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "relationships"
+      ],
+      "prec": {
+        "s": "The new director stayed ___ from the staff, eating lunch alone in her office and rarely chatting.",
+        "opts": [
+          "detached",
+          "secluded",
+          "isolated"
+        ],
+        "why": "'Remain aloof from' people describes a cool, unapproachable manner. Detached suggests emotional uninvolvement or objectivity; secluded and isolated describe physical separation."
+      }
+    },
+    {
+      "word": "ingratiating",
+      "ipa": "ɪnˈɡreɪʃieɪtɪŋ",
+      "pos": "adjective",
+      "def": "Trying too hard to make people like you, especially by flattery.",
+      "he": "מתחנף, מחניף",
+      "family": [
+        "ingratiate oneself (v.)",
+        "ingratiatingly (adv.)"
+      ],
+      "ex": [
+        "He gave the manager an [ingratiating] smile.",
+        "She tried to [ingratiate] herself with the new boss by bringing him coffee every morning.",
+        "His tone was polite, almost [ingratiating]."
+      ],
+      "col": [
+        "ingratiating smile",
+        "ingratiate oneself with",
+        "ingratiating manner"
+      ],
+      "reg": "formal",
+      "syn": [
+        "sycophantic",
+        "obsequious",
+        "fawning",
+        "unctuous"
+      ],
+      "nuance": "Ingratiating is about trying to win favour — the manner, the smile. Obsequious stresses servility; sycophantic stresses flattery of the powerful; unctuous adds oily, insincere charm.",
+      "ety": "Latin in gratiam 'into favour', from gratia 'grace'.",
+      "root": "grat",
+      "tier": 2,
+      "themes": [
+        "character",
+        "relationships"
+      ],
+      "prec": {
+        "s": "On his first day he gave the boss an ___ smile and laughed a little too loudly at her jokes.",
+        "opts": [
+          "endearing",
+          "engaging",
+          "winning"
+        ],
+        "why": "Ingratiating describes behaviour designed to win favour, and it is critical — 'a little too loudly' signals that. Endearing, engaging and winning are positive: genuinely charming."
+      }
+    }
+  ]
+}

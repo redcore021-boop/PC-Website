@@ -1,0 +1,2229 @@
+{
+  "batch": "batch-01",
+  "title": "Thought & Argument",
+  "words": [
+    {
+      "word": "mitigate",
+      "ipa": "ˈmɪtɪɡeɪt",
+      "pos": "verb",
+      "def": "To make something bad less severe, serious or painful.",
+      "he": "למתן, להקל",
+      "family": [
+        "mitigation (n.)",
+        "mitigating (adj.)",
+        "unmitigated (adj.)"
+      ],
+      "ex": [
+        "Planting trees along the river helped [mitigate] the effects of flooding.",
+        "The company took several steps to [mitigate] the risk of a data breach.",
+        "Her lawyer argued that his age was a [mitigating] factor."
+      ],
+      "col": [
+        "mitigate risk",
+        "mitigate the impact of",
+        "mitigating circumstances",
+        "an unmitigated disaster"
+      ],
+      "reg": "formal",
+      "syn": [
+        "alleviate",
+        "lessen",
+        "reduce",
+        "temper"
+      ],
+      "nuance": "Mitigate targets the severity of a harm or risk (often before it fully hits); alleviate is about relieving suffering that is already felt. Don't confuse with 'militate (against)', which means 'to make something less likely'.",
+      "ety": "Latin mitigare 'to soften', from mitis 'mild, gentle'.",
+      "tier": 1,
+      "themes": [
+        "work",
+        "change"
+      ],
+      "prec": {
+        "s": "Engineers redesigned the levees to ___ the risk of future flooding.",
+        "opts": [
+          "alleviate",
+          "soothe",
+          "abate"
+        ],
+        "why": "You mitigate a risk or impact (reduce how bad it could be). Alleviate and soothe apply to pain or suffering already felt; abate is intransitive in modern use ('the storm abated')."
+      }
+    },
+    {
+      "word": "ubiquitous",
+      "ipa": "juːˈbɪkwɪtəs",
+      "pos": "adjective",
+      "def": "Seeming to be everywhere at the same time; very common.",
+      "he": "נמצא בכל מקום",
+      "family": [
+        "ubiquity (n.)",
+        "ubiquitously (adv.)"
+      ],
+      "ex": [
+        "Smartphones have become [ubiquitous] in just over a decade.",
+        "The [ubiquitous] coffee chains make every city centre look the same.",
+        "Plastic is so [ubiquitous] that researchers now find it in deep-sea sediment."
+      ],
+      "col": [
+        "become ubiquitous",
+        "the ubiquitous smartphone",
+        "almost ubiquitous",
+        "the ubiquity of"
+      ],
+      "reg": "formal",
+      "syn": [
+        "omnipresent",
+        "pervasive",
+        "widespread"
+      ],
+      "nuance": "Ubiquitous stresses that you see the thing everywhere you look (often with mild irony). Pervasive suggests something spreading through and affecting every part, often unwelcome (a pervasive smell, pervasive corruption). Omnipresent is stronger, almost literal 'present everywhere at once'.",
+      "ety": "Latin ubique 'everywhere', from ubi 'where'.",
+      "root": "ubi",
+      "tier": 1,
+      "themes": [
+        "degree",
+        "society"
+      ],
+      "prec": {
+        "s": "Twenty years ago few people owned one; now the smartphone is ___.",
+        "opts": [
+          "pervasive",
+          "rampant",
+          "prevalent"
+        ],
+        "why": "Ubiquitous describes an object you see literally everywhere. Pervasive fits influences or feelings spreading through something; rampant implies something bad spreading out of control; prevalent describes how common a condition or practice is."
+      }
+    },
+    {
+      "word": "cursory",
+      "ipa": "ˈkɜːrsəri",
+      "pos": "adjective",
+      "def": "Done quickly and without attention to detail.",
+      "he": "שטחי, חטוף",
+      "family": [
+        "cursorily (adv.)"
+      ],
+      "ex": [
+        "Even a [cursory] glance at the figures shows the plan won't work.",
+        "The inspector gave the building only a [cursory] examination.",
+        "After a [cursory] apology, he went straight back to his phone."
+      ],
+      "col": [
+        "a cursory glance",
+        "a cursory look",
+        "a cursory examination",
+        "even a cursory reading"
+      ],
+      "reg": "formal",
+      "syn": [
+        "perfunctory",
+        "superficial",
+        "hasty"
+      ],
+      "nuance": "Cursory means quick and shallow, not necessarily careless in spirit. Perfunctory adds that something is done only out of duty, with no real interest or feeling (a perfunctory smile). Superficial means lacking depth in general, about people and analysis too.",
+      "ety": "Late Latin cursorius 'of a runner', from currere 'to run' — done on the run.",
+      "root": "cur",
+      "tier": 1,
+      "themes": [
+        "work",
+        "quality"
+      ],
+      "prec": {
+        "s": "A ___ glance at the contract was enough to see that page four was missing.",
+        "opts": [
+          "perfunctory",
+          "superficial",
+          "negligent"
+        ],
+        "why": "'A cursory glance' is the fixed collocation for a quick look. Perfunctory implies duty without interest (a perfunctory handshake); superficial suggests lack of depth; negligent implies a failure of duty."
+      }
+    },
+    {
+      "word": "salient",
+      "ipa": "ˈseɪliənt",
+      "pos": "adjective",
+      "def": "Most noticeable or important.",
+      "he": "בולט, עיקרי",
+      "family": [
+        "salience (n.)"
+      ],
+      "ex": [
+        "She summarised the [salient] points of the report in two minutes.",
+        "The most [salient] feature of the design is its simplicity.",
+        "Let me remind you of the [salient] facts before you decide."
+      ],
+      "col": [
+        "the salient points",
+        "salient features",
+        "salient facts",
+        "highly salient"
+      ],
+      "reg": "formal",
+      "syn": [
+        "prominent",
+        "striking",
+        "key",
+        "pertinent"
+      ],
+      "nuance": "Salient means 'standing out, and therefore important' — it is about what deserves attention. Pertinent means relevant to the matter at hand; prominent means physically or socially visible.",
+      "ety": "Latin salire 'to leap' — the point that leaps out at you.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "quality"
+      ],
+      "prec": {
+        "s": "In your summary, include only the ___ points; the committee won't read details.",
+        "opts": [
+          "prominent",
+          "conspicuous",
+          "eminent"
+        ],
+        "why": "Salient points are the ones that matter most in an argument. Prominent and conspicuous describe visibility; eminent describes distinguished people."
+      }
+    },
+    {
+      "word": "tenuous",
+      "ipa": "ˈtenjuəs",
+      "pos": "adjective",
+      "def": "Very weak, slight or uncertain (of a connection, argument or position).",
+      "he": "קלוש, רופף",
+      "family": [
+        "tenuously (adv.)",
+        "tenuousness (n.)"
+      ],
+      "ex": [
+        "The link between the two crimes is [tenuous] at best.",
+        "The government held a [tenuous] majority of just two seats.",
+        "His grip on reality seemed increasingly [tenuous]."
+      ],
+      "col": [
+        "a tenuous link",
+        "a tenuous connection",
+        "a tenuous grip on",
+        "tenuous at best"
+      ],
+      "reg": "formal",
+      "syn": [
+        "flimsy",
+        "shaky",
+        "slender",
+        "weak"
+      ],
+      "nuance": "Tenuous is the precise word for a thin, fragile connection or hold. Flimsy suggests something poorly made, including excuses and evidence; shaky suggests instability that could collapse.",
+      "ety": "Latin tenuis 'thin'.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "quality"
+      ],
+      "prec": {
+        "s": "The documentary drew a rather ___ connection between diet and the town's crime rate.",
+        "opts": [
+          "flimsy",
+          "brittle",
+          "fragile"
+        ],
+        "why": "'A tenuous connection/link' is the standard collocation: thin and barely established. Flimsy is better for excuses or evidence; brittle and fragile for objects or states that break easily."
+      }
+    },
+    {
+      "word": "corroborate",
+      "ipa": "kəˈrɑːbəreɪt",
+      "pos": "verb",
+      "def": "To confirm or support a statement, theory or finding with additional evidence.",
+      "he": "לאשש, לחזק (בראיות)",
+      "family": [
+        "corroboration (n.)",
+        "corroborating (adj.)",
+        "corroborative (adj.)"
+      ],
+      "ex": [
+        "Two independent witnesses [corroborated] her account of the accident.",
+        "The data from the second study [corroborate] the original findings.",
+        "Without [corroborating] evidence, the police could not press charges."
+      ],
+      "col": [
+        "corroborate a story",
+        "corroborate the findings",
+        "corroborating evidence",
+        "independently corroborated"
+      ],
+      "reg": "formal",
+      "syn": [
+        "confirm",
+        "substantiate",
+        "verify",
+        "bear out"
+      ],
+      "nuance": "Corroborate means a second source agrees with the first. Substantiate means providing evidence for your own claim; verify means checking that something is true.",
+      "ety": "Latin corroborare 'to strengthen', from robur 'strength, oak'.",
+      "tier": 1,
+      "themes": [
+        "knowledge",
+        "thinking"
+      ],
+      "prec": {
+        "s": "A second eyewitness came forward to ___ the driver's version of events.",
+        "opts": [
+          "substantiate",
+          "authenticate",
+          "validate"
+        ],
+        "why": "Corroborate is used when another independent source backs up an account. You substantiate your own claim; authenticate a document or signature; validate a method, ticket or feeling."
+      }
+    },
+    {
+      "word": "substantiate",
+      "ipa": "səbˈstænʃieɪt",
+      "pos": "verb",
+      "def": "To provide evidence that proves a claim or accusation is true.",
+      "he": "לבסס, להוכיח",
+      "family": [
+        "substantiation (n.)",
+        "unsubstantiated (adj.)"
+      ],
+      "ex": [
+        "The journalist could not [substantiate] her claims, so the story was dropped.",
+        "These are serious allegations, and they must be [substantiated].",
+        "The report repeats several [unsubstantiated] rumours."
+      ],
+      "col": [
+        "substantiate a claim",
+        "substantiate allegations",
+        "unsubstantiated rumours",
+        "fail to substantiate"
+      ],
+      "reg": "formal",
+      "syn": [
+        "prove",
+        "corroborate",
+        "back up",
+        "support"
+      ],
+      "nuance": "Substantiate is what the person making a claim must do: give it substance. Its negative 'unsubstantiated' (claims, rumours) is extremely common.",
+      "ety": "Latin substantia 'substance' — to give substance to.",
+      "tier": 1,
+      "themes": [
+        "knowledge",
+        "thinking"
+      ],
+      "prec": {
+        "s": "If you accuse a colleague of fraud, you must be able to ___ the allegation.",
+        "opts": [
+          "corroborate",
+          "authenticate",
+          "ascertain"
+        ],
+        "why": "The accuser substantiates an allegation by supplying evidence. Corroborate means a second source confirms someone else's account; authenticate proves something is genuine; ascertain means to find out."
+      }
+    },
+    {
+      "word": "cogent",
+      "ipa": "ˈkoʊdʒənt",
+      "pos": "adjective",
+      "def": "Clear, logical and convincing (of an argument or case).",
+      "he": "משכנע, מבוסס",
+      "family": [
+        "cogency (n.)",
+        "cogently (adv.)"
+      ],
+      "ex": [
+        "She made a [cogent] case for raising the minimum wage.",
+        "The essay is well written but its central argument is not very [cogent].",
+        "He argued [cogently] that the policy would backfire."
+      ],
+      "col": [
+        "a cogent argument",
+        "a cogent case",
+        "cogent reasons",
+        "argue cogently"
+      ],
+      "reg": "formal",
+      "syn": [
+        "compelling",
+        "persuasive",
+        "convincing",
+        "sound"
+      ],
+      "nuance": "Cogent emphasises clear logic that is hard to resist. Compelling can be emotional or dramatic as well as logical; persuasive focuses on the effect on the listener.",
+      "ety": "Latin cogere 'to drive together, compel'.",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "speech"
+      ],
+      "prec": {
+        "s": "The appeal succeeded because her lawyers presented a tightly reasoned, ___ argument.",
+        "opts": [
+          "eloquent",
+          "impassioned",
+          "plausible"
+        ],
+        "why": "Cogent highlights logical force. Eloquent is about fine expression, impassioned about strong emotion, and plausible only means 'seems possibly true'."
+      }
+    },
+    {
+      "word": "spurious",
+      "ipa": "ˈspjʊriəs",
+      "pos": "adjective",
+      "def": "False or fake, though made to look genuine; based on faulty reasoning.",
+      "he": "מופרך, מזויף",
+      "family": [
+        "spuriously (adv.)"
+      ],
+      "ex": [
+        "The study found a [spurious] correlation between ice-cream sales and drowning.",
+        "He was dismissed on entirely [spurious] grounds.",
+        "Ignore the [spurious] claims made in the advertisement."
+      ],
+      "col": [
+        "a spurious correlation",
+        "on spurious grounds",
+        "spurious claims",
+        "spurious accuracy"
+      ],
+      "reg": "formal",
+      "syn": [
+        "specious",
+        "bogus",
+        "false",
+        "fallacious"
+      ],
+      "nuance": "Spurious means not genuine or not valid. Specious means superficially plausible but actually wrong — the stress is on the attractive appearance. 'A spurious correlation' is a fixed term in statistics.",
+      "ety": "Latin spurius 'illegitimate, false'.",
+      "tier": 2,
+      "themes": [
+        "knowledge",
+        "thinking"
+      ],
+      "prec": {
+        "s": "Statisticians warn that two trends rising together may produce a ___ correlation.",
+        "opts": [
+          "specious",
+          "counterfeit",
+          "erroneous"
+        ],
+        "why": "'Spurious correlation' is the technical term for an apparent link with no real causal connection. Specious describes arguments that sound right; counterfeit describes fake money or goods; erroneous simply means mistaken."
+      }
+    },
+    {
+      "word": "specious",
+      "ipa": "ˈspiːʃəs",
+      "pos": "adjective",
+      "def": "Seeming reasonable or true at first, but actually wrong or misleading.",
+      "he": "נראה נכון אך מטעה",
+      "family": [
+        "speciously (adv.)",
+        "speciousness (n.)"
+      ],
+      "ex": [
+        "The minister's argument was [specious]: it sounded logical but ignored the facts.",
+        "Don't be taken in by [specious] reasoning dressed up in statistics.",
+        "He offered a [specious] excuse for missing the deadline."
+      ],
+      "col": [
+        "specious argument",
+        "specious reasoning",
+        "specious logic",
+        "a specious claim"
+      ],
+      "reg": "formal",
+      "syn": [
+        "spurious",
+        "misleading",
+        "plausible-sounding",
+        "fallacious"
+      ],
+      "nuance": "The core of specious is deceptive attractiveness: it looks right. Fallacious means logically invalid; spurious means fake or not genuine.",
+      "ety": "Latin speciosus 'fair to look at', from species 'appearance'.",
+      "root": "spec",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "At first the argument seemed airtight, but on closer inspection it proved ___.",
+        "opts": [
+          "spurious",
+          "fictitious",
+          "dubious"
+        ],
+        "why": "The sentence stresses the gap between first impression and reality — exactly what specious means. Spurious means fake or invalid; fictitious means invented; dubious means doubtful."
+      }
+    },
+    {
+      "word": "conjecture",
+      "ipa": "kənˈdʒektʃər",
+      "pos": "noun / verb",
+      "def": "An opinion or conclusion formed from incomplete information; to guess in this way.",
+      "he": "השערה, ניחוש",
+      "family": [
+        "conjectural (adj.)",
+        "conjecture (v.)"
+      ],
+      "ex": [
+        "Without the original letters, the poet's motives remain a matter of [conjecture].",
+        "Scientists [conjectured] that the comet had come from beyond the solar system.",
+        "That's pure [conjecture] — we have no evidence either way."
+      ],
+      "col": [
+        "pure conjecture",
+        "a matter of conjecture",
+        "open to conjecture",
+        "idle conjecture"
+      ],
+      "reg": "formal",
+      "syn": [
+        "speculation",
+        "guesswork",
+        "hypothesis",
+        "surmise"
+      ],
+      "nuance": "Conjecture stresses the lack of solid evidence. A hypothesis is a testable proposal; speculation is broader and often casual, including about the future and money.",
+      "ety": "Latin conicere 'to throw together, infer', from iacere 'to throw'.",
+      "root": "ject",
+      "tier": 2,
+      "themes": [
+        "knowledge",
+        "thinking"
+      ],
+      "prec": {
+        "s": "Why the ancient city was abandoned remains a matter of ___; no records survive.",
+        "opts": [
+          "hypothesis",
+          "assumption",
+          "premise"
+        ],
+        "why": "'A matter of conjecture' is the set phrase for something we can only guess at. A hypothesis is formulated to be tested; an assumption is taken for granted; a premise is the basis of an argument."
+      }
+    },
+    {
+      "word": "extrapolate",
+      "ipa": "ɪkˈstræpəleɪt",
+      "pos": "verb",
+      "def": "To estimate or conclude something unknown by extending known facts or trends.",
+      "he": "להסיק בהרחבה, לחזות על סמך מגמה",
+      "family": [
+        "extrapolation (n.)"
+      ],
+      "ex": [
+        "It's risky to [extrapolate] from such a small sample.",
+        "If we [extrapolate] current trends, the city will run out of water by 2040.",
+        "The forecast is an [extrapolation] of last year's figures."
+      ],
+      "col": [
+        "extrapolate from",
+        "extrapolate current trends",
+        "a simple extrapolation",
+        "extrapolate to the general population"
+      ],
+      "reg": "academic",
+      "syn": [
+        "infer",
+        "project",
+        "deduce",
+        "generalize"
+      ],
+      "nuance": "Extrapolate means extending a pattern beyond the data you actually have. Infer is drawing any reasonable conclusion; deduce is reaching a necessary logical conclusion.",
+      "ety": "extra- 'outside' + (inter)polate — a 19th-century mathematical coinage.",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Researchers tested only twenty students, so we can't ___ the results to all teenagers.",
+        "opts": [
+          "deduce",
+          "surmise",
+          "derive"
+        ],
+        "why": "Extrapolating extends findings beyond the range of the data. Deduce means reasoning to a necessary conclusion; surmise means guess; derive means obtain from a source."
+      }
+    },
+    {
+      "word": "discern",
+      "ipa": "dɪˈsɜːrn",
+      "pos": "verb",
+      "def": "To notice, recognise or understand something that is not obvious.",
+      "he": "להבחין, לזהות",
+      "family": [
+        "discerning (adj.)",
+        "discernible (adj.)",
+        "discernment (n.)"
+      ],
+      "ex": [
+        "It was hard to [discern] any pattern in the results.",
+        "In the fog we could just [discern] the outline of the ship.",
+        "She has a [discerning] eye for good design."
+      ],
+      "col": [
+        "discern a pattern",
+        "barely discernible",
+        "a discerning eye",
+        "discerning customers"
+      ],
+      "reg": "formal",
+      "syn": [
+        "perceive",
+        "detect",
+        "make out",
+        "distinguish"
+      ],
+      "nuance": "Discern implies effort and judgement to see what is hidden or subtle. 'Discerning' as an adjective praises good taste and judgement.",
+      "ety": "Latin discernere 'to separate, distinguish'.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Even experienced critics found it hard to ___ any coherent message in the film.",
+        "opts": [
+          "detect",
+          "witness",
+          "glimpse"
+        ],
+        "why": "Discern means perceiving something subtle through judgement — a message or pattern. Detect suits signals, traces or errors; witness means see an event happen; glimpse means see briefly."
+      }
+    },
+    {
+      "word": "nuanced",
+      "ipa": "ˈnuːɑːnst",
+      "pos": "adjective",
+      "def": "Showing an awareness of subtle differences in meaning, feeling or value.",
+      "he": "מורכב, רב־גוני, מעודן",
+      "family": [
+        "nuance (n.)",
+        "nuance (v.)"
+      ],
+      "ex": [
+        "The novel offers a [nuanced] portrait of life under occupation.",
+        "We need a more [nuanced] debate than 'for' or 'against'.",
+        "Her performance was subtle and beautifully [nuanced]."
+      ],
+      "col": [
+        "a nuanced view",
+        "a nuanced approach",
+        "a more nuanced understanding",
+        "subtly nuanced"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "subtle",
+        "sophisticated",
+        "complex"
+      ],
+      "nuance": "Nuanced praises thinking that recognises shades of grey. Subtle can describe flavour, colour and hints; complex means having many parts, not necessarily sensitive ones.",
+      "ety": "French nuance 'shade (of colour)', from nuer 'to shade', from nue 'cloud'.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "quality"
+      ],
+      "prec": {
+        "s": "Rather than calling him a villain, the biography offers a ___ portrait of a flawed man.",
+        "opts": [
+          "complicated",
+          "intricate",
+          "elaborate"
+        ],
+        "why": "Nuanced praises sensitivity to subtle distinctions. Complicated is often negative; intricate and elaborate describe detailed design or structure."
+      }
+    },
+    {
+      "word": "paradigm",
+      "ipa": "ˈpærədaɪm",
+      "pos": "noun",
+      "def": "A typical model or pattern; a set of assumptions and ideas that shape how a field thinks.",
+      "he": "פרדיגמה, מודל",
+      "family": [
+        "paradigmatic (adj.)"
+      ],
+      "ex": [
+        "Quantum mechanics required a complete [paradigm] shift in physics.",
+        "The company is a [paradigm] of good corporate governance.",
+        "The old economic [paradigm] no longer explains what we see."
+      ],
+      "col": [
+        "a paradigm shift",
+        "the dominant paradigm",
+        "a new paradigm",
+        "a paradigm case"
+      ],
+      "reg": "academic",
+      "syn": [
+        "model",
+        "framework",
+        "archetype",
+        "exemplar"
+      ],
+      "nuance": "In academic use, paradigm means a whole worldview or framework. 'Paradigm shift' is a strong phrase; in business talk it is a cliché, so use it sparingly.",
+      "ety": "Greek paradeigma 'pattern, example'.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Darwin's theory forced biology to abandon its prevailing ___ entirely.",
+        "opts": [
+          "template",
+          "prototype",
+          "blueprint"
+        ],
+        "why": "A paradigm is the whole framework of assumptions in a field. A template is a pattern to copy; a prototype is a first working model; a blueprint is a detailed plan."
+      }
+    },
+    {
+      "word": "premise",
+      "ipa": "ˈpremɪs",
+      "pos": "noun",
+      "def": "A statement or idea taken as true and used as the basis of an argument or theory.",
+      "he": "הנחת יסוד",
+      "family": [
+        "premised on (v.)"
+      ],
+      "ex": [
+        "The whole plan rests on the [premise] that interest rates will stay low.",
+        "If the [premise] is false, the conclusion collapses.",
+        "The film's [premise] is simple: a man wakes up with no memory."
+      ],
+      "col": [
+        "the basic premise",
+        "a false premise",
+        "on the premise that",
+        "be premised on"
+      ],
+      "reg": "formal",
+      "syn": [
+        "assumption",
+        "presupposition",
+        "basis",
+        "proposition"
+      ],
+      "nuance": "A premise is a starting point of reasoning, stated or accepted openly. An assumption may be unexamined or hidden. Don't confuse with 'premises' (a building and its land).",
+      "ety": "Medieval Latin praemissa (propositio) 'put before', from mittere 'to send'.",
+      "root": "mit",
+      "tier": 1,
+      "themes": [
+        "thinking"
+      ],
+      "prec": {
+        "s": "The novel's ___ is intriguing: what if nobody could lie?",
+        "opts": [
+          "assumption",
+          "hypothesis",
+          "notion"
+        ],
+        "why": "The premise of a story or film is its basic idea. Assumption and hypothesis belong to reasoning and science; notion is a vague idea."
+      }
+    },
+    {
+      "word": "dichotomy",
+      "ipa": "daɪˈkɑːtəmi",
+      "pos": "noun",
+      "def": "A sharp division or contrast between two things that are opposed or entirely different.",
+      "he": "דיכוטומיה, חלוקה לשני ניגודים",
+      "family": [
+        "dichotomous (adj.)"
+      ],
+      "ex": [
+        "The supposed [dichotomy] between science and art is largely false.",
+        "There is a growing [dichotomy] between rich and poor regions.",
+        "He rejects the simple [dichotomy] of good versus evil."
+      ],
+      "col": [
+        "a false dichotomy",
+        "the dichotomy between X and Y",
+        "a sharp dichotomy",
+        "a rigid dichotomy"
+      ],
+      "reg": "academic",
+      "syn": [
+        "division",
+        "split",
+        "contrast",
+        "polarity"
+      ],
+      "nuance": "Dichotomy means exactly two opposing parts. 'A false dichotomy' is a logical fallacy: presenting two options when more exist. A contradiction is when two statements cannot both be true.",
+      "ety": "Greek dikha 'in two' + tomia 'cutting'.",
+      "tier": 2,
+      "themes": [
+        "thinking"
+      ],
+      "prec": {
+        "s": "Insisting that you're either with us or against us is a false ___.",
+        "opts": [
+          "paradox",
+          "contradiction",
+          "discrepancy"
+        ],
+        "why": "'A false dichotomy' names the fallacy of offering only two options. A paradox is a seemingly self-contradictory truth; a contradiction is logical inconsistency; a discrepancy is a mismatch between figures or accounts."
+      }
+    },
+    {
+      "word": "caveat",
+      "ipa": "ˈkæviæt",
+      "pos": "noun",
+      "def": "A warning or condition that limits what has just been said.",
+      "he": "הסתייגות, אזהרה",
+      "family": [],
+      "ex": [
+        "The results are promising, with one [caveat]: the sample was very small.",
+        "I agree, with the [caveat] that we review the plan in six months.",
+        "The report comes with several important [caveats]."
+      ],
+      "col": [
+        "with one caveat",
+        "an important caveat",
+        "add a caveat",
+        "caveat emptor"
+      ],
+      "reg": "formal",
+      "syn": [
+        "proviso",
+        "qualification",
+        "warning",
+        "reservation"
+      ],
+      "nuance": "A caveat qualifies a statement ('true, but…'). A proviso is a formal condition in an agreement; a reservation is a personal doubt.",
+      "ety": "Latin caveat 'let him beware', from cavere 'to beware'.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "speech"
+      ],
+      "prec": {
+        "s": "The drug looks effective, but the authors add a ___: it was tested on only forty patients.",
+        "opts": [
+          "proviso",
+          "stipulation",
+          "loophole"
+        ],
+        "why": "A caveat is a cautionary note attached to a claim. A proviso or stipulation is a condition written into an agreement; a loophole is a gap in a rule."
+      }
+    },
+    {
+      "word": "empirical",
+      "ipa": "ɪmˈpɪrɪkl",
+      "pos": "adjective",
+      "def": "Based on observation or experiment rather than theory or pure logic.",
+      "he": "אמפירי, מבוסס תצפית",
+      "family": [
+        "empirically (adv.)",
+        "empiricism (n.)",
+        "empiricist (n.)"
+      ],
+      "ex": [
+        "There is little [empirical] evidence that the policy works.",
+        "The theory is elegant but has never been tested [empirically].",
+        "We need [empirical] data, not opinions."
+      ],
+      "col": [
+        "empirical evidence",
+        "empirical data",
+        "empirical research",
+        "empirically tested"
+      ],
+      "reg": "academic",
+      "syn": [
+        "observational",
+        "experimental",
+        "evidence-based"
+      ],
+      "nuance": "Empirical contrasts with theoretical: knowledge from the senses and experiments. Pragmatic means practical rather than idealistic — a different contrast.",
+      "ety": "Greek empeiria 'experience'.",
+      "tier": 1,
+      "themes": [
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Philosophers can debate free will, but psychologists want ___ evidence from experiments.",
+        "opts": [
+          "pragmatic",
+          "factual",
+          "practical"
+        ],
+        "why": "Empirical evidence comes from observation and experiment. Pragmatic and practical are about usefulness; factual means consisting of facts but is not the term for experimental evidence."
+      }
+    },
+    {
+      "word": "tacit",
+      "ipa": "ˈtæsɪt",
+      "pos": "adjective",
+      "def": "Understood or implied without being stated directly.",
+      "he": "שבשתיקה, משתמע",
+      "family": [
+        "tacitly (adv.)",
+        "taciturn (adj., related)"
+      ],
+      "ex": [
+        "There was a [tacit] agreement that nobody would mention the divorce.",
+        "By saying nothing, the board gave its [tacit] approval.",
+        "Much of an expert's skill is [tacit] knowledge that is hard to put into words."
+      ],
+      "col": [
+        "tacit agreement",
+        "tacit approval",
+        "tacit consent",
+        "tacit knowledge"
+      ],
+      "reg": "formal",
+      "syn": [
+        "implicit",
+        "unspoken",
+        "understood",
+        "implied"
+      ],
+      "nuance": "Tacit specifically means 'expressed through silence or behaviour' — often about agreement or approval. Implicit is broader: contained in something without being stated (an implicit criticism, implicit trust).",
+      "ety": "Latin tacitus 'silent', from tacere 'to be silent'.",
+      "root": "tac",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "relationships"
+      ],
+      "prec": {
+        "s": "Nobody objected when the manager announced the change; their silence was ___ approval.",
+        "opts": [
+          "implicit",
+          "latent",
+          "covert"
+        ],
+        "why": "Tacit approval is given through silence — exactly the situation. Implicit means contained but unstated in a wider sense; latent means hidden and undeveloped; covert means secret and deliberate."
+      }
+    },
+    {
+      "word": "inherent",
+      "ipa": "ɪnˈhɪrənt",
+      "pos": "adjective",
+      "def": "Existing as a natural, permanent and inseparable part of something.",
+      "he": "מובנה, טבוע",
+      "family": [
+        "inherently (adv.)",
+        "inhere (v.)"
+      ],
+      "ex": [
+        "Every investment carries some [inherent] risk.",
+        "There's nothing [inherently] wrong with wanting to be rich.",
+        "The problems are [inherent] in the design of the system."
+      ],
+      "col": [
+        "inherent risk",
+        "inherent in",
+        "inherently flawed",
+        "inherent contradiction"
+      ],
+      "reg": "formal",
+      "syn": [
+        "intrinsic",
+        "innate",
+        "built-in",
+        "essential"
+      ],
+      "nuance": "Inherent stresses that something cannot be separated from what it is part of (risk in investment). Intrinsic stresses value or nature belonging to the thing itself. Innate is for qualities people or animals are born with.",
+      "ety": "Latin inhaerere 'to stick in'.",
+      "tier": 1,
+      "themes": [
+        "quality",
+        "thinking"
+      ],
+      "prec": {
+        "s": "Some danger is ___ in any extreme sport; you can reduce it, not remove it.",
+        "opts": [
+          "innate",
+          "endemic",
+          "congenital"
+        ],
+        "why": "'Inherent in' describes something inseparable from an activity or system. Innate and congenital describe what a person is born with; endemic describes something regularly found in a place or group."
+      }
+    },
+    {
+      "word": "intrinsic",
+      "ipa": "ɪnˈtrɪnzɪk",
+      "pos": "adjective",
+      "def": "Belonging to the basic nature of something, rather than coming from outside it.",
+      "he": "מהותי, פנימי",
+      "family": [
+        "intrinsically (adv.)"
+      ],
+      "ex": [
+        "The ring has little [intrinsic] value, but it meant everything to her.",
+        "Children who read for [intrinsic] enjoyment read more widely.",
+        "Is human life [intrinsically] valuable, or valuable for what it achieves?"
+      ],
+      "col": [
+        "intrinsic value",
+        "intrinsic motivation",
+        "intrinsically linked",
+        "intrinsic to"
+      ],
+      "reg": "formal",
+      "syn": [
+        "inherent",
+        "fundamental",
+        "innate",
+        "essential"
+      ],
+      "nuance": "Intrinsic contrasts with extrinsic: what something is in itself versus what is added or comes from outside. 'Intrinsic motivation' (doing something for its own sake) is a common phrase in psychology.",
+      "ety": "Latin intrinsecus 'inwardly'.",
+      "tier": 2,
+      "themes": [
+        "quality",
+        "thinking"
+      ],
+      "prec": {
+        "s": "The coin is made of cheap metal; its ___ value is almost nothing, but collectors pay thousands.",
+        "opts": [
+          "inherent",
+          "innate",
+          "nominal"
+        ],
+        "why": "'Intrinsic value' is the fixed phrase for what something is worth in itself, in contrast to market or sentimental value. Inherent pairs with risk or flaws; innate is for born traits; nominal value is the face value printed on it."
+      }
+    },
+    {
+      "word": "contingent",
+      "ipa": "kənˈtɪndʒənt",
+      "pos": "adjective / noun",
+      "def": "Depending on something that may or may not happen; (n.) a group of people forming part of a larger group.",
+      "he": "מותנה; משלחת, קבוצה",
+      "family": [
+        "contingency (n.)",
+        "contingently (adv.)"
+      ],
+      "ex": [
+        "The job offer is [contingent] on passing a background check.",
+        "A large [contingent] of fans travelled from Liverpool.",
+        "We need a [contingency] plan in case the supplier fails."
+      ],
+      "col": [
+        "contingent on/upon",
+        "a contingency plan",
+        "a large contingent of",
+        "contingency fund"
+      ],
+      "reg": "formal",
+      "syn": [
+        "dependent",
+        "conditional",
+        "subject to"
+      ],
+      "nuance": "'Contingent on' is a formal equivalent of 'depends on', common in contracts and offers. Conditional is used for approval, offers and sentences in grammar.",
+      "ety": "Latin contingere 'to touch, befall', from tangere 'to touch'.",
+      "tier": 2,
+      "themes": [
+        "work",
+        "thinking"
+      ],
+      "prec": {
+        "s": "The sale of the house is ___ on the buyers getting a mortgage.",
+        "opts": [
+          "reliant",
+          "subordinate",
+          "consequent"
+        ],
+        "why": "'Contingent on' means it will only happen if the condition is met. Reliant on means needing support; subordinate to means lower in rank; consequent on means resulting from."
+      }
+    },
+    {
+      "word": "albeit",
+      "ipa": "ɔːlˈbiːɪt",
+      "pos": "conjunction",
+      "def": "Although; even though (used to add a limiting fact).",
+      "he": "אם כי",
+      "family": [],
+      "ex": [
+        "The economy is growing, [albeit] slowly.",
+        "He accepted the offer, [albeit] with some reluctance.",
+        "It was a victory, [albeit] a narrow one."
+      ],
+      "col": [
+        "albeit slowly",
+        "albeit briefly",
+        "albeit with reservations",
+        "albeit a small one"
+      ],
+      "reg": "formal",
+      "syn": [
+        "although",
+        "though",
+        "even if"
+      ],
+      "nuance": "Albeit is followed by a word or phrase, not a full clause: 'albeit slowly', not 'albeit it was slow'. It sounds polished in writing and formal speech.",
+      "ety": "Middle English al be it 'although it be'.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "speech"
+      ],
+      "prec": {
+        "s": "Prices are rising again, ___ more slowly than last year.",
+        "opts": [
+          "whereas",
+          "notwithstanding",
+          "despite"
+        ],
+        "why": "Albeit introduces a concessive phrase ('albeit more slowly'). Whereas contrasts two full clauses; notwithstanding and despite need a noun phrase ('despite the slowdown')."
+      }
+    },
+    {
+      "word": "notwithstanding",
+      "ipa": "ˌnɑːtwɪθˈstændɪŋ",
+      "pos": "preposition / adverb",
+      "def": "In spite of; nevertheless.",
+      "he": "למרות, על אף",
+      "family": [],
+      "ex": [
+        "[Notwithstanding] the bad weather, the festival was a success.",
+        "Recent setbacks [notwithstanding], the project is on schedule.",
+        "The law, [notwithstanding] its good intentions, has caused real harm."
+      ],
+      "col": [
+        "notwithstanding the fact that",
+        "X notwithstanding",
+        "notwithstanding any other provision"
+      ],
+      "reg": "formal",
+      "syn": [
+        "despite",
+        "in spite of",
+        "regardless of",
+        "nevertheless"
+      ],
+      "nuance": "Notwithstanding is more formal than despite and can follow its noun ('these problems notwithstanding'). It is typical of legal and official writing.",
+      "ety": "Middle English: not + withstanding — 'not standing in the way'.",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "speech"
+      ],
+      "prec": {
+        "s": "These minor flaws ___, the report is an excellent piece of work.",
+        "opts": [
+          "despite",
+          "although",
+          "nonetheless"
+        ],
+        "why": "Only notwithstanding can come after the noun it governs ('these flaws notwithstanding'). Despite and although must come before; nonetheless is an adverb linking sentences."
+      }
+    },
+    {
+      "word": "ostensibly",
+      "ipa": "ɑːˈstensəbli",
+      "pos": "adverb",
+      "def": "Apparently or according to what is claimed, but perhaps not actually.",
+      "he": "לכאורה, כביכול",
+      "family": [
+        "ostensible (adj.)"
+      ],
+      "ex": [
+        "He came to the office, [ostensibly] to collect his mail, but really to see her.",
+        "The law was passed, [ostensibly] to protect consumers.",
+        "The [ostensible] reason for the trip was business."
+      ],
+      "col": [
+        "ostensibly to",
+        "the ostensible reason",
+        "ostensibly independent",
+        "ostensible purpose"
+      ],
+      "reg": "formal",
+      "syn": [
+        "supposedly",
+        "seemingly",
+        "apparently",
+        "purportedly"
+      ],
+      "nuance": "Ostensibly hints that the stated reason hides the real one. Seemingly is about appearance only; supposedly is about what people say; purportedly is about claims, often in reporting.",
+      "ety": "Latin ostendere 'to show', from tendere 'to stretch'.",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "She visited the factory, ___ to inspect safety standards, though everyone knew she was scouting for a buyer.",
+        "opts": [
+          "evidently",
+          "admittedly",
+          "allegedly"
+        ],
+        "why": "Ostensibly fits a stated purpose that masks the real one. Evidently means clearly; admittedly concedes a point; allegedly reports an unproven accusation."
+      }
+    },
+    {
+      "word": "inexorable",
+      "ipa": "ɪnˈeksərəbl",
+      "pos": "adjective",
+      "def": "Impossible to stop or prevent; continuing relentlessly.",
+      "he": "בלתי נמנע, בלתי ניתן לעצירה",
+      "family": [
+        "inexorably (adv.)",
+        "inexorability (n.)"
+      ],
+      "ex": [
+        "The [inexorable] rise of sea levels threatens coastal cities.",
+        "The story moves [inexorably] towards its tragic ending.",
+        "Nothing seemed able to halt the company's [inexorable] decline."
+      ],
+      "col": [
+        "inexorable rise",
+        "inexorable decline",
+        "move inexorably towards",
+        "the inexorable logic of"
+      ],
+      "reg": "formal",
+      "syn": [
+        "relentless",
+        "unstoppable",
+        "inevitable",
+        "unrelenting"
+      ],
+      "nuance": "Inexorable describes a process that moves steadily forward and cannot be stopped. Inevitable says an outcome will certainly happen; relentless suggests harsh, persistent pressure.",
+      "ety": "Latin inexorabilis 'not to be moved by entreaty', from exorare 'to plead successfully'.",
+      "tier": 2,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "Over three centuries, the glacier made its slow, ___ advance down the valley.",
+        "opts": [
+          "inevitable",
+          "incessant",
+          "inadvertent"
+        ],
+        "why": "Inexorable describes steady, unstoppable movement. Inevitable describes an outcome that must happen, not a moving process; incessant means non-stop and annoying; inadvertent means unintentional."
+      }
+    },
+    {
+      "word": "elucidate",
+      "ipa": "ɪˈluːsɪdeɪt",
+      "pos": "verb",
+      "def": "To make something clear by explaining it in more detail.",
+      "he": "להבהיר, לפרש",
+      "family": [
+        "elucidation (n.)"
+      ],
+      "ex": [
+        "Could you [elucidate] what you mean by 'restructuring'?",
+        "The second chapter [elucidates] the theory with real examples.",
+        "Researchers hope to [elucidate] how the virus enters cells."
+      ],
+      "col": [
+        "elucidate the meaning",
+        "elucidate the mechanism",
+        "help to elucidate",
+        "further elucidation"
+      ],
+      "reg": "formal",
+      "syn": [
+        "clarify",
+        "explain",
+        "illuminate",
+        "spell out"
+      ],
+      "nuance": "Elucidate is a formal word for clarifying something complex, often in scholarship. Clarify is neutral; illuminate adds a sense of insight.",
+      "ety": "Latin lucidus 'clear, bright', from lux 'light'.",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "The professor was asked to ___ the obscure passage for students new to the subject.",
+        "opts": [
+          "elaborate",
+          "articulate",
+          "enunciate"
+        ],
+        "why": "To elucidate is to make something obscure clear. Elaborate (on) means add more detail; articulate means express clearly in words; enunciate means pronounce clearly."
+      }
+    },
+    {
+      "word": "obfuscate",
+      "ipa": "ˈɑːbfʌskeɪt",
+      "pos": "verb",
+      "def": "To deliberately make something unclear or harder to understand.",
+      "he": "לטשטש, לערפל",
+      "family": [
+        "obfuscation (n.)"
+      ],
+      "ex": [
+        "The report uses jargon to [obfuscate] a very simple failure.",
+        "Rather than answer the question, the minister tried to [obfuscate].",
+        "Legal language is often accused of deliberate [obfuscation]."
+      ],
+      "col": [
+        "obfuscate the issue",
+        "obfuscate the truth",
+        "deliberate obfuscation",
+        "jargon and obfuscation"
+      ],
+      "reg": "formal",
+      "syn": [
+        "obscure",
+        "cloud",
+        "muddy",
+        "confuse"
+      ],
+      "nuance": "Obfuscate usually implies intention — hiding the truth behind complexity. Obscure can be accidental; 'muddy the waters' is the informal idiom.",
+      "ety": "Latin obfuscare 'to darken', from fuscus 'dark'.",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "The company's statement seemed designed to ___ rather than explain what had gone wrong.",
+        "opts": [
+          "blur",
+          "conceal",
+          "dilute"
+        ],
+        "why": "Obfuscate means deliberately making something confusing — the opposite of explaining. Blur is about outlines and distinctions; conceal means hide completely; dilute means weaken."
+      }
+    },
+    {
+      "word": "juxtapose",
+      "ipa": "ˈdʒʌkstəpoʊz",
+      "pos": "verb",
+      "def": "To place two things side by side, especially to highlight the contrast.",
+      "he": "להציב זה לצד זה (לשם ניגוד)",
+      "family": [
+        "juxtaposition (n.)"
+      ],
+      "ex": [
+        "The exhibition [juxtaposes] luxury fashion with photos of the factories that make it.",
+        "The film's power comes from the [juxtaposition] of beauty and violence.",
+        "Old stone houses are [juxtaposed] with glass towers."
+      ],
+      "col": [
+        "juxtapose X with Y",
+        "a striking juxtaposition",
+        "the juxtaposition of",
+        "sharply juxtaposed"
+      ],
+      "reg": "formal",
+      "syn": [
+        "contrast",
+        "set side by side",
+        "compare"
+      ],
+      "nuance": "Juxtapose is about physical or artistic placement next to each other, which creates a contrast. Compare examines similarities and differences analytically.",
+      "ety": "French juxtaposer, from Latin iuxta 'next to' + poser 'to place'.",
+      "root": "pon",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "quality"
+      ],
+      "prec": {
+        "s": "The museum ___ a Renaissance portrait and a teenager's selfie on the same wall, inviting visitors to compare them.",
+        "opts": [
+          "contrasts",
+          "combines",
+          "merges"
+        ],
+        "why": "Juxtapose means physically placing two things side by side so the viewer sees the contrast. Contrast is the analysis, not the placing; combine and merge mean make into one.",
+        "ans": "juxtaposes"
+      }
+    },
+    {
+      "word": "conflate",
+      "ipa": "kənˈfleɪt",
+      "pos": "verb",
+      "def": "To combine two or more separate ideas or things into one, often wrongly.",
+      "he": "לערבב, לבלבל בין (שני מושגים)",
+      "family": [
+        "conflation (n.)"
+      ],
+      "ex": [
+        "Critics accuse the article of [conflating] immigration with crime.",
+        "We shouldn't [conflate] popularity with quality.",
+        "The film is a [conflation] of two different historical events."
+      ],
+      "col": [
+        "conflate X with Y",
+        "conflate two issues",
+        "a conflation of"
+      ],
+      "reg": "formal",
+      "syn": [
+        "confuse",
+        "merge",
+        "lump together",
+        "mix up"
+      ],
+      "nuance": "Conflate is used in arguments to say someone is treating two distinct things as one. Confuse can be accidental and general; merge is neutral.",
+      "ety": "Latin conflare 'to blow together, fuse', from flare 'to blow'.",
+      "tier": 2,
+      "themes": [
+        "thinking"
+      ],
+      "prec": {
+        "s": "Many people ___ being busy with being productive, but they are not the same thing.",
+        "opts": [
+          "merge",
+          "equate",
+          "fuse"
+        ],
+        "why": "Conflate highlights the error of treating two distinct concepts as one. Equate means consider equal, often deliberately; merge and fuse describe physical or organisational combining."
+      }
+    },
+    {
+      "word": "delineate",
+      "ipa": "dɪˈlɪnieɪt",
+      "pos": "verb",
+      "def": "To describe, mark or explain something precisely, especially its boundaries.",
+      "he": "לתחום, לשרטט במדויק",
+      "family": [
+        "delineation (n.)"
+      ],
+      "ex": [
+        "The contract clearly [delineates] each partner's responsibilities.",
+        "The border was [delineated] by a line of white stones.",
+        "Her essay [delineates] the differences between the two theories."
+      ],
+      "col": [
+        "clearly delineated",
+        "delineate responsibilities",
+        "delineate boundaries",
+        "sharply delineated"
+      ],
+      "reg": "formal",
+      "syn": [
+        "outline",
+        "define",
+        "describe",
+        "demarcate"
+      ],
+      "nuance": "Delineate implies exactness: drawing precise lines. Outline gives only the main points; demarcate is about marking a physical or official boundary.",
+      "ety": "Latin delineare 'to sketch out', from linea 'line'.",
+      "tier": 2,
+      "themes": [
+        "work",
+        "speech"
+      ],
+      "prec": {
+        "s": "Before the merger, the lawyers wanted to ___ exactly which department owned which product.",
+        "opts": [
+          "sketch",
+          "summarize",
+          "allude to"
+        ],
+        "why": "Delineate means set out precise boundaries. Sketch and summarize give a rough or brief version; allude to means mention indirectly."
+      }
+    },
+    {
+      "word": "posit",
+      "ipa": "ˈpɑːzɪt",
+      "pos": "verb",
+      "def": "To put forward something as a fact or basis for argument.",
+      "he": "להניח, להציע (כהנחה)",
+      "family": [
+        "position (n., related)"
+      ],
+      "ex": [
+        "Some scientists [posit] that life on Earth began near deep-sea vents.",
+        "The theory [posits] a hidden variable that nobody has observed.",
+        "Economists once [posited] that markets always correct themselves."
+      ],
+      "col": [
+        "posit that",
+        "posit the existence of",
+        "theories posit"
+      ],
+      "reg": "academic",
+      "syn": [
+        "propose",
+        "postulate",
+        "hypothesize",
+        "suggest"
+      ],
+      "nuance": "Posit means to put an idea in place as a starting point, typically in academic argument. Postulate is very similar but more technical (maths, science).",
+      "ety": "Latin ponere, past participle positus, 'to place'.",
+      "root": "pon",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "To explain the planet's odd orbit, astronomers ___ the existence of an unseen ninth planet.",
+        "opts": [
+          "assert",
+          "allege",
+          "presume"
+        ],
+        "why": "To posit is to propose something as a basis for explanation. Assert means state firmly; allege means accuse without proof; presume means take for granted."
+      }
+    },
+    {
+      "word": "refute",
+      "ipa": "rɪˈfjuːt",
+      "pos": "verb",
+      "def": "To prove that a statement, theory or accusation is wrong.",
+      "he": "להפריך",
+      "family": [
+        "refutation (n.)",
+        "irrefutable (adj.)"
+      ],
+      "ex": [
+        "The new data appear to [refute] the theory completely.",
+        "She produced documents that [refuted] every allegation.",
+        "The evidence against him is [irrefutable]."
+      ],
+      "col": [
+        "refute a claim",
+        "refute the allegation",
+        "irrefutable evidence",
+        "conclusively refuted"
+      ],
+      "reg": "formal",
+      "syn": [
+        "disprove",
+        "rebut",
+        "debunk",
+        "deny"
+      ],
+      "nuance": "Strictly, refute means prove wrong; deny or reject only means say it's wrong. Careful writers keep this distinction. 'Irrefutable' (impossible to disprove) is very common.",
+      "ety": "Latin refutare 'to repel, rebut'.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "conflict"
+      ],
+      "prec": {
+        "s": "The defence ___ the charge by showing CCTV footage of the accused in another city.",
+        "opts": [
+          "denied",
+          "rejected",
+          "disputed"
+        ],
+        "why": "Refute means disproving with evidence, which the CCTV footage does. Deny, reject and dispute only express disagreement without proof.",
+        "ans": "refuted"
+      }
+    },
+    {
+      "word": "untenable",
+      "ipa": "ʌnˈtenəbl",
+      "pos": "adjective",
+      "def": "(Of a position or argument) impossible to defend or maintain.",
+      "he": "בלתי סביר, שאין להחזיק בו",
+      "family": [
+        "tenable (adj.)"
+      ],
+      "ex": [
+        "After the scandal, the minister's position became [untenable].",
+        "The idea that the Earth is only 6,000 years old is scientifically [untenable].",
+        "Living with three flatmates in one room was an [untenable] situation."
+      ],
+      "col": [
+        "an untenable position",
+        "become untenable",
+        "an untenable situation",
+        "scientifically untenable"
+      ],
+      "reg": "formal",
+      "syn": [
+        "indefensible",
+        "unsustainable",
+        "unjustifiable",
+        "insupportable"
+      ],
+      "nuance": "Untenable means no longer possible to hold or defend — a position, a theory, a situation. It's a classic word in reports of resignations.",
+      "ety": "un- + Latin tenere 'to hold'.",
+      "root": "ten",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "society"
+      ],
+      "prec": {
+        "s": "Once the leaked emails were published, the CEO's position became ___ and she resigned.",
+        "opts": [
+          "unsustainable",
+          "inexcusable",
+          "unacceptable"
+        ],
+        "why": "'Her position became untenable' is the set phrase for when someone can no longer stay in a role. Unsustainable fits finances and practices; inexcusable judges actions; unacceptable is a general verdict."
+      }
+    },
+    {
+      "word": "axiomatic",
+      "ipa": "ˌæksiəˈmætɪk",
+      "pos": "adjective",
+      "def": "Self-evident; accepted as true without needing proof.",
+      "he": "מובן מאליו, אקסיומטי",
+      "family": [
+        "axiom (n.)",
+        "axiomatically (adv.)"
+      ],
+      "ex": [
+        "It is [axiomatic] that a business must make a profit to survive.",
+        "In medicine, 'first do no harm' is almost [axiomatic].",
+        "His followers treat his ideas as [axiomatic] truths."
+      ],
+      "col": [
+        "it is axiomatic that",
+        "an axiomatic truth",
+        "almost axiomatic"
+      ],
+      "reg": "academic",
+      "syn": [
+        "self-evident",
+        "unquestionable",
+        "given",
+        "taken for granted"
+      ],
+      "nuance": "Axiomatic means so widely accepted that it needs no proof. Self-evident is plainer; a truism is a statement so obvious it is not worth saying.",
+      "ety": "Greek axioma 'what is thought worthy', from axios 'worthy'.",
+      "tier": 3,
+      "themes": [
+        "thinking",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Among economists it is ___ that prices rise when supply falls and demand stays the same.",
+        "opts": [
+          "dogmatic",
+          "categorical",
+          "evident"
+        ],
+        "why": "Axiomatic: accepted as a basic truth needing no proof. Dogmatic describes a closed-minded person; categorical means unconditional; evident means clear from the evidence."
+      }
+    },
+    {
+      "word": "esoteric",
+      "ipa": "ˌesəˈterɪk",
+      "pos": "adjective",
+      "def": "Understood by or meant for only a small number of people with special knowledge.",
+      "he": "אזוטרי, מובן ליודעי ח\"ן",
+      "family": [
+        "esoterically (adv.)",
+        "esoterica (n.)"
+      ],
+      "ex": [
+        "The lecture was full of [esoteric] references to medieval philosophy.",
+        "He has some rather [esoteric] hobbies, like collecting antique locks.",
+        "The debate seemed [esoteric], but it affects millions of taxpayers."
+      ],
+      "col": [
+        "esoteric knowledge",
+        "esoteric references",
+        "rather esoteric",
+        "esoteric subject"
+      ],
+      "reg": "formal",
+      "syn": [
+        "obscure",
+        "arcane",
+        "abstruse",
+        "recondite"
+      ],
+      "nuance": "Esoteric means 'for insiders'. Arcane adds a sense of mystery or secrecy; abstruse means hard to understand because it's complex; obscure means little known.",
+      "ety": "Greek esōterikos 'inner', from esō 'within'.",
+      "tier": 2,
+      "themes": [
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Their in-jokes about 1970s chess tournaments were too ___ for the rest of us.",
+        "opts": [
+          "abstruse",
+          "ambiguous",
+          "elusive"
+        ],
+        "why": "Esoteric fits knowledge meant for a small circle of insiders. Abstruse means intellectually difficult; ambiguous means having two meanings; elusive means hard to catch or define."
+      }
+    },
+    {
+      "word": "pragmatic",
+      "ipa": "præɡˈmætɪk",
+      "pos": "adjective",
+      "def": "Dealing with problems in a practical, realistic way rather than following theory or ideals.",
+      "he": "פרגמטי, מעשי",
+      "family": [
+        "pragmatism (n.)",
+        "pragmatist (n.)",
+        "pragmatically (adv.)"
+      ],
+      "ex": [
+        "We need a [pragmatic] solution, not a perfect one.",
+        "She took a [pragmatic] approach to the negotiations.",
+        "His decision was driven by [pragmatism] rather than principle."
+      ],
+      "col": [
+        "a pragmatic approach",
+        "pragmatic solution",
+        "pragmatic reasons",
+        "purely pragmatic"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "practical",
+        "realistic",
+        "sensible",
+        "hard-headed"
+      ],
+      "nuance": "Pragmatic is about judging ideas by their practical results, sometimes at the expense of principle. Practical is broader (practical shoes); realistic means accepting things as they are.",
+      "ety": "Greek pragmatikos 'businesslike', from pragma 'deed, act'.",
+      "tier": 1,
+      "themes": [
+        "work",
+        "character"
+      ],
+      "prec": {
+        "s": "Rather than insisting on his ideal design, the architect took a ___ approach and worked with the budget.",
+        "opts": [
+          "practicable",
+          "utilitarian",
+          "functional"
+        ],
+        "why": "A pragmatic approach accepts real-world constraints over ideals. Practicable means feasible; utilitarian means designed to be useful rather than attractive; functional means working."
+      }
+    },
+    {
+      "word": "dogmatic",
+      "ipa": "dɔːɡˈmætɪk",
+      "pos": "adjective",
+      "def": "Insisting that one's beliefs are certainly right, without considering evidence or other opinions.",
+      "he": "דוגמטי, נוקשה בדעותיו",
+      "family": [
+        "dogma (n.)",
+        "dogmatism (n.)",
+        "dogmatically (adv.)"
+      ],
+      "ex": [
+        "Don't be so [dogmatic] — there's more than one way to raise a child.",
+        "His [dogmatic] approach to economics ignores real-world data.",
+        "The party became increasingly [dogmatic] and lost moderate voters."
+      ],
+      "col": [
+        "dogmatic approach",
+        "dogmatic about",
+        "religious dogma",
+        "rigid dogmatism"
+      ],
+      "reg": "formal",
+      "syn": [
+        "opinionated",
+        "doctrinaire",
+        "rigid",
+        "inflexible"
+      ],
+      "nuance": "Dogmatic means asserting beliefs as unquestionable truths. Opinionated is more informal and personal; doctrinaire means applying a theory rigidly regardless of practicality.",
+      "ety": "Greek dogma 'opinion, decree', from dokein 'to seem good'.",
+      "root": "dox",
+      "tier": 1,
+      "themes": [
+        "character",
+        "thinking"
+      ],
+      "prec": {
+        "s": "She refuses to even look at the new research; she's completely ___ about her theory.",
+        "opts": [
+          "stubborn",
+          "assertive",
+          "decisive"
+        ],
+        "why": "Dogmatic specifically means treating beliefs as beyond question. Stubborn is general refusal to change; assertive means confident in expressing views; decisive means making decisions quickly."
+      }
+    },
+    {
+      "word": "heuristic",
+      "ipa": "hjʊˈrɪstɪk",
+      "pos": "noun / adjective",
+      "def": "A simple rule of thumb or method that helps you solve problems or make decisions quickly.",
+      "he": "כלל אצבע, היוריסטיקה",
+      "family": [
+        "heuristically (adv.)",
+        "heuristics (n.)"
+      ],
+      "ex": [
+        "A useful [heuristic]: if you can't explain it simply, you don't understand it.",
+        "People rely on mental [heuristics] that can lead to biased judgements.",
+        "The model is a [heuristic] device, not a precise prediction."
+      ],
+      "col": [
+        "a useful heuristic",
+        "mental heuristics",
+        "a simple heuristic",
+        "heuristic approach"
+      ],
+      "reg": "academic",
+      "syn": [
+        "rule of thumb",
+        "shortcut",
+        "guideline"
+      ],
+      "nuance": "Heuristic is the technical term (psychology, computing) for a rule of thumb: fast, usually good enough, not guaranteed. An algorithm, by contrast, guarantees a result.",
+      "ety": "Greek heuriskein 'to find' (as in 'eureka').",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "work"
+      ],
+      "prec": {
+        "s": "Psychologists study the mental ___ people use to make quick decisions, such as 'familiar means safe'.",
+        "opts": [
+          "algorithms",
+          "axioms",
+          "paradigms"
+        ],
+        "why": "Heuristics are rough mental shortcuts. Algorithms are exact step-by-step procedures; axioms are basic truths; paradigms are whole frameworks of thought.",
+        "ans": "heuristics"
+      }
+    },
+    {
+      "word": "anomaly",
+      "ipa": "əˈnɑːməli",
+      "pos": "noun",
+      "def": "Something that differs from what is normal, expected or standard.",
+      "he": "חריגה, אנומליה",
+      "family": [
+        "anomalous (adj.)"
+      ],
+      "ex": [
+        "The cold summer was an [anomaly] in a decade of record heat.",
+        "Auditors found several [anomalies] in the accounts.",
+        "It's an [anomaly] that the richest region has the worst schools."
+      ],
+      "col": [
+        "a statistical anomaly",
+        "an apparent anomaly",
+        "anomalies in the data",
+        "an anomalous result"
+      ],
+      "reg": "formal",
+      "syn": [
+        "irregularity",
+        "aberration",
+        "oddity",
+        "exception"
+      ],
+      "nuance": "Anomaly is neutral and technical: a deviation from a pattern. Aberration suggests a departure from what is right or normal that is temporary or regrettable (a moment of madness).",
+      "ety": "Greek anōmalia 'unevenness', from an- 'not' + homalos 'even'.",
+      "tier": 1,
+      "themes": [
+        "knowledge",
+        "quality"
+      ],
+      "prec": {
+        "s": "One reading was far higher than all the others; researchers dismissed it as a statistical ___.",
+        "opts": [
+          "aberration",
+          "deviation",
+          "flaw"
+        ],
+        "why": "'A statistical anomaly' is the standard phrase for an unexpected data point. Aberration suggests a moral or behavioural lapse; deviation is the amount something differs; flaw is a defect."
+      }
+    },
+    {
+      "word": "corollary",
+      "ipa": "ˈkɔːrəleri",
+      "pos": "noun",
+      "def": "A natural result or consequence that follows from something else.",
+      "he": "תוצאה ישירה, מסקנה נגזרת",
+      "family": [],
+      "ex": [
+        "Higher prices are an inevitable [corollary] of the new tax.",
+        "Freedom of speech has a [corollary]: the duty to tolerate speech you dislike.",
+        "As a [corollary], smaller firms will struggle to compete."
+      ],
+      "col": [
+        "a natural corollary",
+        "an inevitable corollary",
+        "the corollary of",
+        "as a corollary"
+      ],
+      "reg": "formal",
+      "syn": [
+        "consequence",
+        "result",
+        "upshot",
+        "implication"
+      ],
+      "nuance": "A corollary follows logically or naturally from a proposition or situation, as if it were part of the same idea. A consequence is any result; an implication is something suggested.",
+      "ety": "Latin corollarium 'a gift, a deduction', originally 'money paid for a garland'.",
+      "tier": 3,
+      "themes": [
+        "thinking"
+      ],
+      "prec": {
+        "s": "If everyone has the right to vote, a logical ___ is that the state must make voting accessible.",
+        "opts": [
+          "aftermath",
+          "by-product",
+          "repercussion"
+        ],
+        "why": "A corollary is a proposition that follows logically from another. Aftermath is the period after a disaster; a by-product is an incidental result; a repercussion is an unwelcome consequence."
+      }
+    },
+    {
+      "word": "tangential",
+      "ipa": "tænˈdʒenʃl",
+      "pos": "adjective",
+      "def": "Only slightly connected to the main subject; going off topic.",
+      "he": "שולי, צדדי, סוטה מהנושא",
+      "family": [
+        "tangent (n.)",
+        "tangentially (adv.)"
+      ],
+      "ex": [
+        "His comments were only [tangential] to the issue we were discussing.",
+        "The book spends too long on [tangential] stories about the author's childhood.",
+        "Sorry, I've gone off on a [tangent]."
+      ],
+      "col": [
+        "tangential to",
+        "only tangentially related",
+        "go off on a tangent",
+        "tangential issue"
+      ],
+      "reg": "formal",
+      "syn": [
+        "peripheral",
+        "incidental",
+        "irrelevant",
+        "digressive"
+      ],
+      "nuance": "Tangential means touching the main topic only lightly. Irrelevant means unrelated altogether; peripheral means at the edge of importance.",
+      "ety": "Latin tangere 'to touch' — like a line touching a circle at one point.",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "speech"
+      ],
+      "prec": {
+        "s": "The chair asked speakers to stay on topic and avoid ___ remarks about past projects.",
+        "opts": [
+          "extraneous",
+          "marginal",
+          "trivial"
+        ],
+        "why": "Tangential remarks start from the topic and drift away from it. Extraneous means irrelevant and coming from outside; marginal means small in effect; trivial means unimportant."
+      }
+    },
+    {
+      "word": "equivocal",
+      "ipa": "ɪˈkwɪvəkl",
+      "pos": "adjective",
+      "def": "Open to more than one interpretation; deliberately vague or uncertain.",
+      "he": "דו־משמעי, מתחמק",
+      "family": [
+        "equivocate (v.)",
+        "equivocation (n.)",
+        "unequivocal (adj.)"
+      ],
+      "ex": [
+        "The evidence from the trial was [equivocal]: some patients improved, others didn't.",
+        "Her answer was carefully [equivocal].",
+        "The president gave an [unequivocal] denial."
+      ],
+      "col": [
+        "equivocal evidence",
+        "an equivocal answer",
+        "an unequivocal no",
+        "equivocate about"
+      ],
+      "reg": "formal",
+      "syn": [
+        "ambiguous",
+        "vague",
+        "noncommittal",
+        "evasive"
+      ],
+      "nuance": "Equivocal often implies an intention to avoid commitment (equivocate = dodge). Ambiguous is neutral: having two possible meanings. 'Unequivocal' (absolutely clear) is very common.",
+      "ety": "Late Latin aequivocus 'of identical sound', from aequus 'equal' + vox 'voice'.",
+      "root": "equ",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Asked whether she'd run for office, the senator gave a careful, ___ reply.",
+        "opts": [
+          "ambiguous",
+          "unclear",
+          "obscure"
+        ],
+        "why": "Equivocal suggests deliberate vagueness to avoid commitment — the senator's strategy. Ambiguous can be accidental; unclear and obscure just mean hard to understand."
+      }
+    },
+    {
+      "word": "circumspect",
+      "ipa": "ˈsɜːrkəmspekt",
+      "pos": "adjective",
+      "def": "Careful to consider all possible risks before acting or speaking.",
+      "he": "זהיר, שוקל צעדיו",
+      "family": [
+        "circumspection (n.)",
+        "circumspectly (adv.)"
+      ],
+      "ex": [
+        "Diplomats tend to be [circumspect] in what they say to the press.",
+        "Be more [circumspect] about posting personal details online.",
+        "The bank was [circumspect] about lending money after the crisis."
+      ],
+      "col": [
+        "be circumspect about",
+        "more circumspect",
+        "with circumspection"
+      ],
+      "reg": "formal",
+      "syn": [
+        "cautious",
+        "prudent",
+        "wary",
+        "guarded"
+      ],
+      "nuance": "Circumspect means looking around at all the consequences — especially in speech and behaviour. Wary implies suspicion; guarded implies holding back information.",
+      "ety": "Latin circum 'around' + specere 'to look'.",
+      "root": "spec",
+      "tier": 2,
+      "themes": [
+        "character",
+        "speech"
+      ],
+      "prec": {
+        "s": "Given the ongoing investigation, the spokesperson was ___ in her comments to reporters.",
+        "opts": [
+          "timid",
+          "suspicious",
+          "furtive"
+        ],
+        "why": "Circumspect describes careful, risk-aware speech. Timid implies fear or lack of confidence; suspicious implies distrust; furtive means secretive and guilty."
+      }
+    },
+    {
+      "word": "perspicacious",
+      "ipa": "ˌpɜːrspɪˈkeɪʃəs",
+      "pos": "adjective",
+      "def": "Having a quick, sharp ability to notice and understand things.",
+      "he": "חד־אבחנה, נבון",
+      "family": [
+        "perspicacity (n.)"
+      ],
+      "ex": [
+        "A [perspicacious] reader will notice the clue in the first chapter.",
+        "She was [perspicacious] enough to sell before the market crashed.",
+        "Her [perspicacity] made her an excellent judge of character."
+      ],
+      "col": [
+        "perspicacious observer",
+        "perspicacious enough to",
+        "remarkable perspicacity"
+      ],
+      "reg": "literary",
+      "syn": [
+        "perceptive",
+        "astute",
+        "shrewd",
+        "discerning"
+      ],
+      "nuance": "Perspicacious is a rare, elevated word for keen insight. Perceptive is the everyday word; astute and shrewd add practical cleverness, often for one's own advantage. Don't confuse with 'perspicuous' (clearly expressed).",
+      "ety": "Latin perspicax 'sharp-sighted', from perspicere 'to look through'.",
+      "root": "spec",
+      "tier": 3,
+      "themes": [
+        "character",
+        "thinking"
+      ],
+      "prec": {
+        "s": "The ___ critic saw through the novel's twist before anyone else had noticed the clues.",
+        "opts": [
+          "perspicuous",
+          "conspicuous",
+          "suspicious"
+        ],
+        "why": "Perspicacious means sharp-sighted, perceptive. Perspicuous means clearly expressed; conspicuous means easily seen; suspicious means distrustful. A classic trio of look-alikes."
+      }
+    },
+    {
+      "word": "veracity",
+      "ipa": "vəˈræsəti",
+      "pos": "noun",
+      "def": "Truthfulness; conformity to facts.",
+      "he": "אמיתות, מהימנות",
+      "family": [
+        "veracious (adj.)",
+        "verify (v., related)"
+      ],
+      "ex": [
+        "Journalists questioned the [veracity] of the minister's statement.",
+        "There is no reason to doubt the [veracity] of her account.",
+        "The court will test the [veracity] of each witness."
+      ],
+      "col": [
+        "question the veracity of",
+        "doubt the veracity of",
+        "check the veracity",
+        "veracity of a claim"
+      ],
+      "reg": "formal",
+      "syn": [
+        "truthfulness",
+        "accuracy",
+        "credibility",
+        "honesty"
+      ],
+      "nuance": "Veracity is a formal word for truthfulness of a statement or person. Credibility is about whether people believe it; accuracy is about exact correctness.",
+      "ety": "Latin verax 'truthful', from verus 'true'.",
+      "root": "ver",
+      "tier": 2,
+      "themes": [
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Fact-checkers raised serious doubts about the ___ of the viral story.",
+        "opts": [
+          "validity",
+          "verity",
+          "voracity"
+        ],
+        "why": "Veracity is the truthfulness of a statement or report. Validity is about logical or legal soundness; verity is a literary word for a fundamental truth; voracity means greed for food — a frequent confusion."
+      }
+    },
+    {
+      "word": "credence",
+      "ipa": "ˈkriːdns",
+      "pos": "noun",
+      "def": "Belief in or acceptance of something as true.",
+      "he": "אמון, אמינות",
+      "family": [
+        "credible (adj., related)",
+        "credulous (adj., related)"
+      ],
+      "ex": [
+        "The new evidence lends [credence] to the theory.",
+        "I don't give much [credence] to rumours on social media.",
+        "The scandal gave [credence] to critics who had warned about corruption."
+      ],
+      "col": [
+        "lend credence to",
+        "give credence to",
+        "gain credence",
+        "little credence"
+      ],
+      "reg": "formal",
+      "syn": [
+        "credibility",
+        "belief",
+        "acceptance",
+        "faith"
+      ],
+      "nuance": "Credence is about belief people give to something: you 'give' or 'lend' credence. Credibility is the quality of deserving belief. 'The findings lend credence to…' is a typical academic phrase.",
+      "ety": "Latin credentia, from credere 'to believe'.",
+      "root": "cred",
+      "tier": 2,
+      "themes": [
+        "knowledge"
+      ],
+      "prec": {
+        "s": "The discovery of ancient seeds lends ___ to the theory that the area was once farmed.",
+        "opts": [
+          "credibility",
+          "credit",
+          "credentials"
+        ],
+        "why": "'Lend credence to' is the fixed collocation. Credibility is something a person or source has; credit is praise or a loan; credentials are qualifications."
+      }
+    },
+    {
+      "word": "dubious",
+      "ipa": "ˈduːbiəs",
+      "pos": "adjective",
+      "def": "Not to be relied on; probably dishonest or false; (of a person) doubtful.",
+      "he": "מפוקפק; מסופק",
+      "family": [
+        "dubiously (adv.)",
+        "dubiety (n.)"
+      ],
+      "ex": [
+        "The company has a [dubious] record on workers' rights.",
+        "I'm [dubious] about the benefits of this diet.",
+        "He has the [dubious] honour of being the worst-dressed politician in parliament."
+      ],
+      "col": [
+        "dubious about",
+        "of dubious quality",
+        "dubious distinction/honour",
+        "highly dubious"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "questionable",
+        "suspect",
+        "doubtful",
+        "shady"
+      ],
+      "nuance": "Dubious can describe both a thing (of doubtful value or honesty) and a person's feeling (doubtful about). 'The dubious honour of' is an ironic phrase for an unwanted distinction. Shady is informal and implies dishonesty.",
+      "ety": "Latin dubius 'doubtful', related to duo 'two' — wavering between two.",
+      "tier": 1,
+      "themes": [
+        "quality",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "The town has the ___ distinction of having the most potholes in the country.",
+        "opts": [
+          "questionable",
+          "doubtful",
+          "suspicious"
+        ],
+        "why": "'The dubious distinction/honour of' is the fixed ironic phrase. The other words don't form this collocation."
+      }
+    },
+    {
+      "word": "facile",
+      "ipa": "ˈfæsl",
+      "pos": "adjective",
+      "def": "Too simple; achieved or said easily without careful thought.",
+      "he": "שטחי, פשטני",
+      "family": [
+        "facilely (adv.)",
+        "facility (n., related)"
+      ],
+      "ex": [
+        "It would be [facile] to blame the defeat on one player.",
+        "The film offers [facile] answers to complex questions.",
+        "She dismissed his argument as [facile] and poorly researched."
+      ],
+      "col": [
+        "a facile answer",
+        "facile comparison",
+        "it would be facile to",
+        "facile generalisation"
+      ],
+      "reg": "formal",
+      "syn": [
+        "simplistic",
+        "glib",
+        "superficial",
+        "shallow"
+      ],
+      "nuance": "Facile criticises an idea for being too easy — ignoring complexity. Glib adds a sense of smooth, insincere talk; simplistic is the neutral word for over-simplified.",
+      "ety": "Latin facilis 'easy', from facere 'to do'.",
+      "root": "fac",
+      "tier": 2,
+      "themes": [
+        "thinking",
+        "quality"
+      ],
+      "prec": {
+        "s": "Blaming the whole recession on one bank is a ___ explanation of a complex crisis.",
+        "opts": [
+          "effortless",
+          "simple",
+          "elementary"
+        ],
+        "why": "Facile is a criticism: too easy and therefore wrong. Effortless is praise; simple and elementary are neutral descriptions."
+      }
+    }
+  ]
+}

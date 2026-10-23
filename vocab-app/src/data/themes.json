@@ -1,0 +1,15 @@
+[
+  { "key": "thinking", "label": "Thought & Argument" },
+  { "key": "knowledge", "label": "Knowledge & Truth" },
+  { "key": "speech", "label": "Speech & Rhetoric" },
+  { "key": "character", "label": "Character & Behaviour" },
+  { "key": "emotion", "label": "Feelings & Attitudes" },
+  { "key": "relationships", "label": "Relationships" },
+  { "key": "society", "label": "Society & Power" },
+  { "key": "conflict", "label": "Conflict & Criticism" },
+  { "key": "change", "label": "Change & Time" },
+  { "key": "degree", "label": "Amount & Degree" },
+  { "key": "quality", "label": "Judging Quality" },
+  { "key": "work", "label": "Work & Decisions" },
+  { "key": "money", "label": "Money" }
+]
