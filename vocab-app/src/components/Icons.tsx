@@ -47,3 +47,6 @@ export const BellIcon = (p: SVGProps<SVGSVGElement>) => (
 export const TrophyIcon = (p: SVGProps<SVGSVGElement>) => (
   <svg {...base(p)}><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z" /><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3" /></svg>
 );
+export const MicIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base(p)}><rect x="9" y="2" width="6" height="12" rx="3" /><path d="M5 11a7 7 0 0 0 14 0M12 18v4" /></svg>
+);

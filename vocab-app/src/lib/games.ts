@@ -129,7 +129,7 @@ export function quizVerdict(pct: number): string {
   return 'המילים האלה עוד חדשות — זה בדיוק הזמן לתרגל.';
 }
 
-export type GameKey = 'quiz' | 'match' | 'speed' | 'listen';
+export type GameKey = 'quiz' | 'match' | 'speed' | 'listen' | 'speak';
 
 export const BEST_KEY = 'gameBest';
 export type BestScores = Partial<Record<GameKey, number>>;
