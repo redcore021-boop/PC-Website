@@ -11,6 +11,7 @@ mkdirSync(out, { recursive: true });
 const words = readdirSync('src/data/words').flatMap((f) => JSON.parse(readFileSync('src/data/words/' + f, 'utf8')).words);
 const plain = (s) => s.replace(/\[([^\]]+)\]/g, '$1');
 const byDef = new Map(words.map((w) => [w.def, w]));
+const norm = (x) => x.replace(/\s+/g, ' ').trim();
 const fail = (m) => { console.error('FAIL:', m); process.exitCode = 1; };
 const ok = (m) => console.log('ok -', m);
 
@@ -53,8 +54,28 @@ async function runSession(tag) {
     sawTypes.add(kind);
     if (isRetry) retries++;
     const promptText = (await page.locator('.prompt-text, .gap-sentence').first().textContent())?.trim() ?? '';
-    const norm = (x) => x.replace(/\s+/g, ' ').trim();
     let target = byDef.get(promptText);
+    let answerText;
+    if (kind === 'Precision') {
+      const shown = norm(promptText.replace(/\u00a0/g, ''));
+      target = words.find((w) => w.prec && norm(w.prec.s.replace(/_{3,}/, '')) === shown);
+      answerText = target && (target.prec.ans ?? target.word);
+    }
+    if (kind === 'Use it') {
+      const head = (await page.locator('.headword').first().textContent()).trim();
+      target = words.find((w) => w.word === head);
+      await page.locator('textarea').fill(`Honestly, "${target.word}" sums up my week at work rather well.`);
+      if (!sawTypes.has('use-shot')) { sawTypes.add('use-shot'); await page.screenshot({ path: `${out}/11-use-it.png`, fullPage: true }); }
+      await page.getByRole('button', { name: 'Compare' }).click();
+      await page.getByRole('button', { name: /^Good/ }).waitFor();
+      if (!sawTypes.has('use-shot2')) { sawTypes.add('use-shot2'); await page.screenshot({ path: `${out}/12-use-it-compare.png`, fullPage: true }); }
+      await page.getByRole('button', { name: /^Good/ }).click();
+      answered++;
+      await page.locator('.feedback').waitFor();
+      await page.getByRole('button', { name: 'Continue' }).click();
+      await page.waitForTimeout(120);
+      continue;
+    }
     if (!target) {
       const shown = norm(promptText.replace(/\u00a0/g, ''));
       target = words.find((w) => w.ex.some((e) => norm(plain(e.replace(/\[[^\]]+\]/, ''))) === shown));
@@ -75,11 +96,13 @@ async function runSession(tag) {
     } else {
       const goWrong = wrongOnPurpose === 0 && answered >= 2 && !isRetry;
       const texts = await page.locator('.option').allTextContents();
-      if (!texts.includes(target.word)) { fail(`answer ${target.word} not among ${texts}`); break; }
+      const correctText = answerText ?? target.word;
+      if (!texts.includes(correctText)) { fail(`answer ${correctText} not among ${texts}`); break; }
+      if (kind === 'Precision' && !sawTypes.has('prec-shot')) { sawTypes.add('prec-shot'); await page.screenshot({ path: `${out}/10-precision.png`, fullPage: true }); }
       if (kind === 'Fill the gap' && !sawTypes.has('gap-shot')) { sawTypes.add('gap-shot'); await page.screenshot({ path: `${out}/03b-gap.png`, fullPage: true }); }
       if (answered === 0 && tag === 'day1') await page.screenshot({ path: `${out}/03-choice.png`, fullPage: true });
       if (await page.locator('.option.correct').count()) fail('answer shown before committing');
-      const pick = goWrong ? texts.find((t) => t !== target.word) : target.word;
+      const pick = goWrong ? texts.find((t) => t !== correctText) : correctText;
       await page.locator('.option').nth(texts.indexOf(pick)).click();
       if (goWrong) { wrongOnPurpose++; await page.screenshot({ path: `${out}/05-wrong.png`, fullPage: true }); }
     }
@@ -108,9 +131,12 @@ await page.reload();
 await page.getByText('words started').waitFor();
 (await page.locator('.stat .num').first().textContent()) === '10' ? ok('progress persists after reload') : fail('progress lost on reload');
 
-// later days: reviews climb to gap-fill and typed cards
+// later days: reviews climb through all card types. Fewer new words keeps sessions short.
+await page.getByRole('button', { name: 'Settings', exact: true }).click();
+for (let i = 0; i < 8; i++) await page.getByRole('button', { name: 'Fewer new words' }).click();
+await page.getByRole('button', { name: 'Today', exact: true }).click();
 const DAY = 864e5;
-for (let d = 1; d <= 30; d++) {
+for (let d = 1; d <= 90; d++) {
   // move every stored date one day into the past, as if a day had gone by
   await page.evaluate((DAY) => new Promise((res) => {
     const r = indexedDB.open('lexicon');
@@ -136,11 +162,39 @@ for (let d = 1; d <= 30; d++) {
     throw e;
   }
   if (await page.getByRole('button', { name: /today's session/ }).isVisible()) await runSession('day' + (d + 1));
-  if (sawTypes.has('Type the word') && sawTypes.has('Fill the gap') && d > 8) break;
+  if (['Fill the gap', 'Type the word', 'Precision', 'Use it'].every((t) => sawTypes.has(t)) && d > 20) break;
 }
-for (const t of ['Choose the word', 'Fill the gap', 'Type the word']) sawTypes.has(t) ? ok(`card type seen: ${t}`) : fail(`never saw card type: ${t}`);
+for (const t of ['Choose the word', 'Fill the gap', 'Type the word', 'Precision', 'Use it']) sawTypes.has(t) ? ok(`card type seen: ${t}`) : fail(`never saw card type: ${t}`);
 const mastered = await page.evaluate(() => new Promise((res) => { const r = indexedDB.open('lexicon'); r.onsuccess = () => { const q = r.result.transaction('progress').objectStore('progress').getAll(); q.onsuccess = () => res(q.result.filter((p) => p.mastered).length); }; }));
 console.log(`info - mastered after simulated weeks: ${mastered}`);
+
+// stats, themes, roots, weak-word practice
+await page.getByRole('button', { name: 'Stats', exact: true }).click();
+await page.getByText('Upcoming reviews', { exact: false }).waitFor();
+(await page.locator('.fc-bar').count()) === 14 ? ok('forecast chart shows 14 days') : fail('forecast chart missing');
+await page.locator('.fc-col').nth(1).click();
+await page.screenshot({ path: `${out}/13-stats.png`, fullPage: true });
+const retention = await page.locator('text=/\\d+%/').first().textContent();
+ok('stats render, retention ' + retention);
+if (await page.getByRole('button', { name: 'Practise these now' }).isVisible()) {
+  await page.getByRole('button', { name: 'Practise these now' }).click();
+  await page.locator('.prompt-kind').first().waitFor();
+  ok('weak-word practice starts');
+  await page.getByRole('button', { name: 'End session' }).click();
+}
+await page.getByRole('button', { name: 'Words', exact: true }).click();
+await page.getByRole('button', { name: 'Roots' }).click();
+await page.getByText('-loqu-, -locu-').click();
+await page.getByText('loquacious').waitFor();
+await page.screenshot({ path: `${out}/14-root.png`, fullPage: true });
+ok('root page lists its words: ' + (await page.locator('.list-item .w').allTextContents()).join(', '));
+await page.goto(URL + '#/browse/themes');
+await page.getByText('Feelings & Attitudes').click();
+await page.getByText('equanimity').waitFor();
+ok('theme page works');
+await page.getByText('equanimity').click();
+(await page.getByRole('button', { name: /Play British pronunciation/ }).count()) ? ok('US/UK audio buttons present') : fail('audio buttons missing');
+await page.getByRole('button', { name: /Play American/ }).click();
 
 // browse + word page
 await page.getByRole('button', { name: 'Words', exact: true }).click();

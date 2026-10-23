@@ -82,8 +82,11 @@ export function WordEntryView({ word, brief = false }: { word: WordEntry; brief?
           <div className="field-label">Examples</div>
           <ul className="examples">
             {word.ex.map((e, i) => (
-              <li key={i}>
-                <Example text={e} />
+              <li key={i} className="with-audio">
+                <span>
+                  <Example text={e} />
+                </span>
+                <AudioButton small text={e.replace(/[[\]]/g, '')} label="Play example" />
               </li>
             ))}
           </ul>

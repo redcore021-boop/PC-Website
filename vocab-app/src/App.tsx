@@ -35,7 +35,7 @@ function Shell() {
   if (page === 'session') {
     return (
       <div className="app fullscreen">
-        <Session mode={param === 'quick' ? 'quick' : 'daily'} />
+        <Session mode={param === 'quick' || param === 'extra' || param === 'weak' ? param : 'daily'} />
       </div>
     );
   }

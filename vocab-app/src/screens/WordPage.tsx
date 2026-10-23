@@ -7,11 +7,13 @@ import { retrievability } from '../lib/srs';
 import { back } from '../lib/router';
 import { BackIcon } from '../components/Icons';
 import { WordEntryView } from '../components/WordBits';
+import { AccentButtons } from '../components/AudioButton';
 
 export function WordPage({ id }: { id?: string }) {
   const { wordById, toast } = useApp();
   const word = id ? wordById.get(id) : undefined;
   const progress = useLiveQuery(() => (id ? db.progress.get(id) : undefined), [id]);
+  const sentences = useLiveQuery(() => (id ? db.sentences.where('wordId').equals(id).reverse().sortBy('at') : []), [id], []);
   const [editing, setEditing] = useState(false);
   const [he, setHe] = useState('');
 
@@ -46,7 +48,25 @@ export function WordPage({ id }: { id?: string }) {
 
       <section className="card">
         <WordEntryView word={word} />
+        <div style={{ marginTop: 14 }}>
+          <AccentButtons text={word.word} />
+        </div>
       </section>
+
+      {sentences.length > 0 && (
+        <>
+          <h3 className="section-title">Your sentences</h3>
+          <section className="card">
+            <ul className="examples">
+              {sentences.map((s) => (
+                <li key={s.id}>
+                  {s.text} <span className="tiny faint">· {new Date(s.at).toLocaleDateString()}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </>
+      )}
 
       <h3 className="section-title">Your progress</h3>
       <section className="card small">

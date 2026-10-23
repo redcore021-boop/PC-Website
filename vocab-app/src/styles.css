@@ -418,3 +418,19 @@ textarea.answer-input { font-family: var(--f-body); font-size: 17px; min-height:
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+/* ---------- forecast chart ---------- */
+.fc { position: relative; padding-left: 28px; }
+.fc-grid { position: absolute; left: 0; right: 0; top: 0; height: 140px; }
+.fc-tick { position: absolute; left: 28px; right: 0; border-top: 1px solid var(--line); }
+.fc-tick span { position: absolute; left: -28px; top: -8px; width: 22px; text-align: right; font-size: 11px; color: var(--faint); font-variant-numeric: tabular-nums; }
+.fc-cols { position: relative; height: 140px; display: flex; align-items: flex-end; gap: 2px; }
+.fc-col { flex: 1; height: 100%; display: flex; align-items: flex-end; justify-content: center; border: 0; background: none; padding: 0; border-radius: 6px; }
+.fc-col.on { background: var(--accent-soft); }
+.fc-bar { display: block; width: 100%; max-width: 18px; background: var(--accent); border-radius: 4px 4px 0 0; }
+.fc-labels { display: flex; gap: 2px; margin-top: 6px; }
+.fc-labels span { flex: 1; text-align: center; font-size: 11px; color: var(--faint); white-space: nowrap; overflow: visible; }
+.icon-btn.sm { width: 34px; height: 34px; border-radius: 10px; border: 0; background: transparent; }
+.icon-btn.sm svg { width: 18px; height: 18px; }
+.examples li.with-audio { display: flex; gap: 6px; align-items: flex-start; }
+.examples li.with-audio > span { flex: 1; }

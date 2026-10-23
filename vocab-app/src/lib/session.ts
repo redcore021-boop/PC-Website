@@ -121,3 +121,33 @@ export function requeueAfterMistake(queue: QueueItem[], index: number, rnd = Mat
   const copy: QueueItem = { ...item, key: key(), graded: false, repeat: item.repeat + 1 };
   return [...queue.slice(0, at), copy, ...queue.slice(at)];
 }
+
+/** Words that are hardest for the learner: most mistakes first, then lowest recall probability. */
+export function weakestProgress(progress: Progress[], now = new Date(), n = 10): Progress[] {
+  return progress
+    .filter((p) => !p.suspended && p.card.reps > 0)
+    .map((p) => ({ p, r: retrievability(p.card, now) }))
+    .filter(({ p, r }) => p.mistakes > 0 || r < 0.85)
+    .sort((a, b) => b.p.mistakes - a.p.mistakes || a.r - b.r)
+    .slice(0, n)
+    .map(({ p }) => p);
+}
+
+/**
+ * Extra practice on weak words. Ungraded, so it never distorts the FSRS schedule;
+ * mistakes still count and still come back within the session.
+ */
+export function buildWeakQueue(words: WordEntry[], progress: Progress[], enabled: CardType[], now = new Date(), rnd = Math.random): QueueItem[] {
+  const byId = new Map(words.map((w) => [w.id, w]));
+  return weakestProgress(progress, now)
+    .filter((p) => byId.has(p.wordId))
+    .map((p) => ({
+      key: key(),
+      wordId: p.wordId,
+      kind: 'quiz' as const,
+      cardType: chooseCardType(p, availableTypes(enabled, !!byId.get(p.wordId)!.prec), rnd()),
+      graded: false,
+      isNew: false,
+      repeat: 0,
+    }));
+}

@@ -2,19 +2,20 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { WordEntry } from '../types';
 import { useApp } from '../state';
 import { db } from '../lib/db';
-import { buildQueue, QUICK_SESSION_MS, requeueAfterMistake, type QueueItem, type SessionMode } from '../lib/session';
+import { buildQueue, buildWeakQueue, QUICK_SESSION_MS, requeueAfterMistake, type QueueItem, type SessionMode } from '../lib/session';
+import { speak } from '../lib/speech';
 import { buildQuestion, CARD_TYPE_NAMES, type Question } from '../lib/cards';
 import { introduceWord, markGoalMet, recordAnswer, todayCounts } from '../lib/store';
 import type { AnswerOutcome } from '../lib/srs';
 import { matchAnswer } from '../lib/fuzzy';
 import { alternativeSpellings } from '../lib/spelling';
 import { go } from '../lib/router';
-import { ENABLED_CARD_TYPES } from '../features';
+import { ENABLED_CARD_TYPES, ENABLED_FEATURES } from '../features';
 import { CloseIcon } from '../components/Icons';
 import { WordEntryView } from '../components/WordBits';
 import { WriteSentence } from '../components/WriteSentence';
 
-type Mode = SessionMode | 'extra';
+export type Mode = SessionMode | 'extra' | 'weak';
 
 interface Result {
   outcome: AnswerOutcome;
@@ -30,6 +31,7 @@ export function Session({ mode }: { mode: Mode }) {
   const [finished, setFinished] = useState(false);
   const [tally, setTally] = useState({ answered: 0, correct: 0, introduced: 0 });
   const startedAt = useRef(Date.now());
+  const autoplay = ENABLED_FEATURES.audio && settings.autoplayAudio;
   const [now, setNow] = useState(Date.now());
 
   // Build the queue once, from the state of the database when the session opens.
@@ -37,6 +39,10 @@ export function Session({ mode }: { mode: Mode }) {
     let alive = true;
     (async () => {
       const [progress, today] = await Promise.all([db.progress.toArray(), todayCounts()]);
+      if (mode === 'weak') {
+        if (alive) setQueue(buildWeakQueue(words, progress, ENABLED_CARD_TYPES));
+        return;
+      }
       const s = mode === 'extra' ? { ...settings, newPerDay: today.newWords + 5 } : settings;
       const q = buildQueue({
         words,
@@ -73,7 +79,7 @@ export function Session({ mode }: { mode: Mode }) {
     setFinished(true);
     const quickDone = mode === 'quick' && Date.now() - startedAt.current >= QUICK_SESSION_MS * 0.9;
     const queueDone = queue !== null && index >= queue.length - 1;
-    if ((queueDone || quickDone) && (queue?.length ?? 0) > 0) await markGoalMet();
+    if (mode !== 'weak' && (queueDone || quickDone) && (queue?.length ?? 0) > 0) await markGoalMet();
   }, [mode, queue, index]);
 
   const next = useCallback(() => {
@@ -85,17 +91,21 @@ export function Session({ mode }: { mode: Mode }) {
       return;
     }
     setIndex(index + 1);
-  }, [queue, index, mode, finish]);
+    // speak inside the tap handler: iOS only allows speech that starts from a user gesture
+    const upcoming = queue[index + 1];
+    if (autoplay && upcoming.kind === 'intro') speak(wordById.get(upcoming.wordId)?.word ?? '', settings.accent);
+  }, [queue, index, mode, finish, autoplay, wordById, settings.accent]);
 
   const answer = useCallback(
     (outcome: AnswerOutcome, given?: string) => {
       if (!item || result) return;
       setResult({ outcome, given });
+      if (autoplay && item.cardType !== 5 && word) speak(word.word, settings.accent);
       setTally((t) => ({ ...t, answered: t.answered + 1, correct: t.correct + (outcome.correct ? 1 : 0) }));
       void recordAnswer(item.wordId, item.cardType, outcome, item.graded, ENABLED_CARD_TYPES);
       if (!outcome.correct && queue) setQueue(requeueAfterMistake(queue, index));
     },
-    [item, result, queue, index],
+    [item, result, queue, index, autoplay, word, settings.accent],
   );
 
   // Enter continues after an answer (handy on a keyboard)
@@ -145,7 +155,7 @@ export function Session({ mode }: { mode: Mode }) {
     return (
       <>
         {header}
-        <Summary empty={queue.length === 0} tally={tally} />
+        <Summary empty={queue.length === 0} tally={tally} weak={mode === 'weak'} />
       </>
     );
   }
@@ -400,20 +410,22 @@ function Feedback({ q, word, result }: { q: Question; word: WordEntry; result: R
           <strong>{chosen.word}</strong> means: {chosen.def}
         </p>
       )}
-      <div className="card" style={{ marginTop: 12 }}>
-        <WordEntryView word={word} brief />
-      </div>
+      {q.type !== 5 && (
+        <div className="card" style={{ marginTop: 12 }}>
+          <WordEntryView word={word} brief />
+        </div>
+      )}
     </section>
   );
 }
 
-function Summary({ empty, tally }: { empty: boolean; tally: { answered: number; correct: number; introduced: number } }) {
+function Summary({ empty, tally, weak }: { empty: boolean; tally: { answered: number; correct: number; introduced: number }; weak: boolean }) {
   if (empty) {
     return (
       <div className="empty">
         <div className="big-emoji">✓</div>
         <h2>Nothing to study right now</h2>
-        <p>No reviews are due and today's new words are done.</p>
+        <p>{weak ? 'You have no weak words yet — keep going!' : "No reviews are due and today's new words are done."}</p>
         <button className="btn primary" onClick={() => go('')}>
           Back to today
         </button>
