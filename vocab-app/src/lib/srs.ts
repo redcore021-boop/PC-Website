@@ -51,14 +51,15 @@ export const PRODUCTION_LEVEL = 3;
 
 /**
  * Pick the card type for a scheduled review. Words climb from recognition (1) to
- * the gap-fill (2) to the production stage, where successive reviews rotate through
- * typing (3), precision (4) and writing a sentence (5).
+ * the gap-fill (2) to the production stage, which works through typing (3),
+ * precision (4) and writing a sentence (5) in that order, then keeps rotating.
  */
 export function chooseCardType(p: Progress, available: CardType[]): CardType {
   const sorted = [...available].sort((a, b) => a - b);
   const production = sorted.filter((t) => t >= PRODUCTION_LEVEL);
   if (p.level >= PRODUCTION_LEVEL && production.length) {
-    return production[p.card.reps % production.length];
+    // easiest first: typing, then precision, then writing; a type repeats until it's answered correctly
+    return production[p.production % production.length];
   }
   const atOrBelow = sorted.filter((t) => t <= p.level);
   return atOrBelow[atOrBelow.length - 1] ?? sorted[0];

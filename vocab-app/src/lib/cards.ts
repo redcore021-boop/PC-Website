@@ -9,14 +9,6 @@ export type Question =
   | { type: 4; word: WordEntry; before: string; after: string; options: string[]; answer: string; why: string }
   | { type: 5; word: WordEntry };
 
-export const CARD_TYPE_NAMES: Record<CardType, string> = {
-  1: 'Choose the word',
-  2: 'Fill the gap',
-  3: 'Type the word',
-  4: 'Precision',
-  5: 'Use it',
-};
-
 export function posGroup(pos: string): string {
   const p = pos.toLowerCase();
   if (p.includes('phrasal')) return 'phrasal';
@@ -39,7 +31,7 @@ export function pickDistractors(
   all: WordEntry[],
   n = 3,
   rnd = Math.random,
-  opts: { themeBonus?: boolean } = { themeBonus: true },
+  opts: { themeBonus?: boolean; easy?: boolean } = { themeBonus: true },
 ): WordEntry[] {
   const group = posGroup(target.pos);
   const scored = all
@@ -47,9 +39,16 @@ export function pickDistractors(
     .map((w) => {
       let score = rnd() * 1.5;
       if (posGroup(w.pos) === group) score += 4;
-      if (opts.themeBonus && w.themes.some((t) => target.themes.includes(t))) score += 1.5;
-      if (w.root && w.root === target.root) score += 1;
-      if (w.tier === target.tier) score += 0.5;
+      const sharesTheme = w.themes.some((t) => target.themes.includes(t));
+      if (opts.easy) {
+        // first encounters: same part of speech, but from a different area of meaning
+        if (!sharesTheme) score += 1.5;
+        if (w.custom) score -= 2;
+      } else {
+        if (opts.themeBonus && sharesTheme) score += 1.5;
+        if (w.root && w.root === target.root) score += 1;
+        if (w.tier === target.tier) score += 0.5;
+      }
       return { w, score };
     })
     .sort((a, b) => b.score - a.score);
@@ -57,25 +56,52 @@ export function pickDistractors(
   return shuffle(pool, rnd).slice(0, n);
 }
 
-/** "k___ s______ a_ a___'s l_____" style hint: first letter of each word, the rest as blanks. */
-export function typingHint(word: string): string {
+/**
+ * "k___ s______ a_ a___'s l_____" style hint: the first letter of each word, plus
+ * `extra` more letters revealed from the start when the learner asks for help.
+ */
+export function typingHint(word: string, extra = 0): string {
+  let budget = extra;
   return word
     .split(' ')
-    .map((part) => part.replace(/(?<=^[^a-z]*[a-z])([a-z]+)/i, (rest) => '_'.repeat(rest.length)))
+    .map((part) => {
+      let firstShown = false;
+      return [...part]
+        .map((ch) => {
+          if (!/[a-z]/i.test(ch)) return ch;
+          if (!firstShown) {
+            firstShown = true;
+            return ch;
+          }
+          if (budget > 0) {
+            budget--;
+            return ch;
+          }
+          return '_';
+        })
+        .join('');
+    })
     .join('  ');
 }
 
-export function buildQuestion(word: WordEntry, type: CardType, all: WordEntry[], rnd = Math.random): Question {
+/** How many extra letters can be revealed before the hint gives the whole word away. */
+export function maxHints(word: string): number {
+  const letters = word.replace(/[^a-z]/gi, '').length;
+  const words = word.split(' ').length;
+  return Math.max(0, letters - words - 1);
+}
+
+export function buildQuestion(word: WordEntry, type: CardType, all: WordEntry[], rnd = Math.random, easy = false): Question {
   switch (type) {
     case 1: {
-      const options = shuffle([word.word, ...pickDistractors(word, all, 3, rnd).map((w) => w.word)], rnd);
+      const options = shuffle([word.word, ...pickDistractors(word, all, 3, rnd, { themeBonus: true, easy }).map((w) => w.word)], rnd);
       return { type, word, options };
     }
     case 2: {
       const examples = word.ex.map(splitGap).filter((x): x is [string, string, string] => !!x);
-      if (!examples.length) return buildQuestion(word, 1, all, rnd);
+      if (!examples.length) return buildQuestion(word, 1, all, rnd, easy);
       const [before, form, after] = examples[Math.floor(rnd() * examples.length)];
-      const distractors = pickDistractors(word, all, 3, rnd, { themeBonus: false });
+      const distractors = pickDistractors(word, all, 3, rnd, { themeBonus: false, easy });
       const options = shuffle([word.word, ...distractors.map((w) => w.word)], rnd);
       return { type, word, before, after, form, options };
     }

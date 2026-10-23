@@ -6,10 +6,10 @@ import { usesWord } from '../lib/usage';
 import { Example, HebrewHint, WordHeader } from './WordBits';
 
 const RATINGS = [
-  { r: Rating.Again, label: 'Again', sub: 'couldn’t' },
-  { r: Rating.Hard, label: 'Hard', sub: 'awkward' },
-  { r: Rating.Good, label: 'Good', sub: 'natural' },
-  { r: Rating.Easy, label: 'Easy', sub: 'effortless' },
+  { r: Rating.Again, label: 'לא הצלחתי', sub: 'שוב' },
+  { r: Rating.Hard, label: 'בקושי', sub: 'מסורבל' },
+  { r: Rating.Good, label: 'טוב', sub: 'טבעי' },
+  { r: Rating.Easy, label: 'קל', sub: 'בלי מאמץ' },
 ] as const;
 
 /**
@@ -37,26 +37,28 @@ export function WriteSentence({
   };
 
   return (
-    <div style={{ marginTop: 16 }}>
-      <section className="card prompt-card">
-        {kind}
+    <div>
+      {kind}
+      <section className="card prompt-card" dir="ltr" lang="en">
         <WordHeader word={word} size="sm" />
         <p className="def" style={{ fontSize: 16 }}>
           {word.def}
         </p>
         <HebrewHint text={word.he} resetKey={word.id} />
-        <p className="small muted" style={{ marginBottom: 0 }}>
-          Write a sentence of your own that uses <strong>{word.word}</strong> naturally — ideally about your life or work.
-        </p>
       </section>
+      <p className="small muted" style={{ margin: '12px 2px 0' }}>
+        כתבו משפט משלכם באנגלית שמשתמש במילה באופן טבעי — הכי טוב על החיים או העבודה שלכם.
+      </p>
       <textarea
         className="answer-input"
-        style={{ marginTop: 14 }}
+        dir="ltr"
+        lang="en"
+        style={{ marginTop: 10 }}
         value={text}
         onChange={(e) => setText(e.target.value)}
         readOnly={submitted}
         placeholder="Your sentence…"
-        aria-label="Your sentence"
+        aria-label="המשפט שלך"
         autoCapitalize="sentences"
         spellCheck
         autoFocus
@@ -64,10 +66,10 @@ export function WriteSentence({
       {!submitted ? (
         <div className="bottom-actions" style={{ gridTemplateColumns: '1fr 2fr' }}>
           <button type="button" className="btn" onClick={() => setSubmitted(true)}>
-            Skip to examples
+            לדלג לדוגמאות
           </button>
           <button type="button" className="btn primary" disabled={text.trim().split(/\s+/).length < 3} onClick={() => setSubmitted(true)}>
-            Compare
+            להשוות
           </button>
         </div>
       ) : (
@@ -75,13 +77,11 @@ export function WriteSentence({
           <>
             {missing && (
               <p className="feedback typo small" style={{ margin: '12px 0 0' }}>
-                Your sentence doesn’t seem to contain “{word.word}” or one of its forms.
+                נראה שהמשפט לא כולל את <bdi lang="en">{word.word}</bdi> או צורה שלה.
               </p>
             )}
-            <section className="card" style={{ marginTop: 12 }}>
-              <div className="field-label" style={{ marginTop: 0 }}>
-                How native speakers use it
-              </div>
+            <div className="field-label">ככה דוברי אנגלית משתמשים בה</div>
+            <section className="card" dir="ltr" lang="en">
               <ul className="examples">
                 {word.ex.map((e, i) => (
                   <li key={i}>
@@ -89,7 +89,9 @@ export function WriteSentence({
                   </li>
                 ))}
               </ul>
-              <div className="field-label">Collocations</div>
+              <div className="field-label" dir="rtl" style={{ textAlign: 'left' }}>
+                צירופים נפוצים
+              </div>
               <div className="colls">
                 {word.col.map((c) => (
                   <span key={c} className="chip">
@@ -102,7 +104,7 @@ export function WriteSentence({
               </p>
             </section>
             <div className="bottom-actions">
-              <div className="small muted center">How well did you use it?</div>
+              <div className="small muted center">עד כמה הצלחת להשתמש בה?</div>
               <div className="rate-grid">
                 {RATINGS.map(({ r, label, sub }) => (
                   <button key={r} type="button" className={'btn' + (r === Rating.Good ? ' primary' : '')} onClick={() => rate(r)}>

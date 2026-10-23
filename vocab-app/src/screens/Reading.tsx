@@ -92,47 +92,51 @@ export function Reading() {
   return (
     <>
       <header className="topbar">
-        <h1>Add from reading</h1>
+        <h1>הוספה מקריאה</h1>
       </header>
 
       {!analysed ? (
         <>
           <p className="muted small" style={{ marginTop: 0 }}>
-            Paste an article, an email or a page from a book. Words that aren’t in your list get highlighted — tap one to add it.
+            הדביקו כתבה, מייל או עמוד מספר באנגלית. מילים שעוד לא ברשימה שלכם יסומנו — הקישו על מילה כדי להוסיף אותה.
           </p>
           <textarea
             className="answer-input"
+            dir="ltr"
+            lang="en"
             style={{ minHeight: 220 }}
             placeholder="Paste English text here…"
             value={text}
             onChange={(e) => setText(e.target.value)}
-            aria-label="Text to read"
+            aria-label="הטקסט לקריאה"
           />
           <div className="bottom-actions" style={{ gridTemplateColumns: text ? '1fr 2fr' : '1fr' }}>
             {text && (
               <button className="btn" onClick={() => setText('')}>
-                Clear
+                ניקוי
               </button>
             )}
             <button className="btn primary" disabled={!text.trim()} onClick={() => setAnalysed(true)}>
-              Highlight new words
+              לסמן מילים חדשות
             </button>
           </div>
         </>
       ) : (
         <>
           <div className="row wrap small" style={{ gap: 8, marginBottom: 10 }}>
-            <span className="tok new legend">new to you</span>
-            <span className="tok known legend">in your list</span>
+            <span className="tok new legend">חדשה בשבילך</span>
+            <span className="tok known legend">כבר ברשימה</span>
             <span className="spacer" />
             <button className="btn small" onClick={() => setAnalysed(false)}>
-              Edit text
+              עריכת הטקסט
             </button>
           </div>
           <p className="small muted" style={{ marginTop: 0 }}>
-            {newCount ? `${newCount} word${newCount === 1 ? '' : 's'} you may not know. Tap any word to look it up.` : 'No unfamiliar words found — tap any word to look it up anyway.'}
+            {newCount
+              ? `${newCount === 1 ? 'מילה אחת שאולי' : `${newCount} מילים שאולי`} לא מוכרות לך. הקישו על כל מילה כדי לחפש אותה.`
+              : 'לא נמצאו מילים לא מוכרות — אפשר להקיש על כל מילה כדי לחפש אותה.'}
           </p>
-          <article className="card reading" lang="en">
+          <article className="card reading" lang="en" dir="ltr">
             {tokens.map((t, i) =>
               t.kind ? (
                 <button key={i} type="button" className={'tok ' + t.kind} onClick={() => setPicked(t)}>
@@ -148,14 +152,14 @@ export function Reading() {
 
       {custom.length > 0 && (
         <>
-          <h3 className="section-title">Words you added · {custom.length}</h3>
+          <h3 className="section-title">מילים שהוספת · {custom.length}</h3>
           <div className="list">
             {custom
               .slice()
               .reverse()
               .map((w) => (
                 <div key={w.id} className="list-item">
-                  <button className="main" style={{ background: 'none', border: 0, textAlign: 'left', padding: 0 }} onClick={() => go('word', w.id)}>
+                  <button className="main" dir="ltr" lang="en" style={{ background: 'none', border: 0, textAlign: 'left', padding: 0 }} onClick={() => go('word', w.id)}>
                     <span className="w">{w.word}</span>
                     <span className="d" style={{ display: 'block' }}>
                       {w.def}
@@ -163,9 +167,9 @@ export function Reading() {
                   </button>
                   <button
                     className="icon-btn"
-                    aria-label={`Remove ${w.word}`}
+                    aria-label={`הסרת ${w.word}`}
                     onClick={async () => {
-                      if (!confirm(`Remove “${w.word}” and its progress?`)) return;
+                      if (!confirm(`להסיר את „${w.word}” ואת ההתקדמות שלה?`)) return;
                       await db.transaction('rw', db.customWords, db.progress, async () => {
                         await db.customWords.delete(w.id);
                         await db.progress.delete(w.id);
@@ -200,7 +204,7 @@ function WordSheet({ token, sentence, onClose }: { token: Token; sentence: strin
     setState({ status: 'loading' });
     lookupWord(token.text)
       .then((data) => alive && setState({ status: 'ok', data }))
-      .catch((e) => alive && setState({ status: 'error', error: e instanceof LookupError ? e.message : 'Lookup failed.' }));
+      .catch((e) => alive && setState({ status: 'error', error: e instanceof LookupError ? e.message : 'החיפוש נכשל.' }));
     return () => {
       alive = false;
     };
@@ -225,49 +229,53 @@ function WordSheet({ token, sentence, onClose }: { token: Token; sentence: strin
     });
     await db.customWords.put(entry);
     if (he.trim()) await db.edits.put({ id: entry.id, he: he.trim() });
-    toast(`“${entry.word}” added — it will come up among your new words`);
+    toast(`„${entry.word}” נוספה — היא תופיע בין המילים החדשות`);
     onClose();
   };
 
   return (
     <div className="sheet-backdrop" onClick={onClose}>
-      <section className="sheet" role="dialog" aria-label={`Look up ${token.text}`} onClick={(e) => e.stopPropagation()}>
+      <section className="sheet" role="dialog" aria-label={`חיפוש ${token.text}`} onClick={(e) => e.stopPropagation()}>
         <div className="row">
-          <h2 className="headword sm" style={{ flex: 1 }}>
+          <h2 className="headword sm" style={{ flex: 1 }} lang="en">
             {knownWord?.word ?? headword}
           </h2>
-          <button className="icon-btn" aria-label="Close" onClick={onClose}>
+          <button className="icon-btn" aria-label="סגירה" onClick={onClose}>
             <CloseIcon />
           </button>
         </div>
 
         {knownWord ? (
           <>
-            <p className="def">{knownWord.def}</p>
+            <p className="def" dir="ltr" lang="en">
+              {knownWord.def}
+            </p>
             <HebrewHint text={knownWord.he} resetKey={knownWord.id} />
-            <p className="small muted">Already in your list.</p>
+            <p className="small muted">המילה כבר ברשימה שלך.</p>
             <button className="btn block" onClick={() => go('word', knownWord.id)}>
-              Open full entry
+              לכל הפרטים
             </button>
           </>
         ) : already ? (
           <>
-            <p className="def">{already.def}</p>
-            <p className="small muted">Already in your list.</p>
+            <p className="def" dir="ltr" lang="en">
+              {already.def}
+            </p>
+            <p className="small muted">המילה כבר ברשימה שלך.</p>
             <button className="btn block" onClick={() => go('word', already.id)}>
-              Open full entry
+              לכל הפרטים
             </button>
           </>
         ) : (
           <>
-            {state.status === 'loading' && <p className="muted">Looking up…</p>}
+            {state.status === 'loading' && <p className="muted">מחפשים במילון…</p>}
             {state.status === 'ok' && (
               <>
-                {state.data.ipa && <div className="ipa">/{state.data.ipa}/</div>}
-                <div className="field-label">Choose the meaning used in your text</div>
+                {state.data.ipa && <div className="ipa" dir="ltr">/{state.data.ipa}/</div>}
+                <div className="field-label">בחרו את המשמעות שמתאימה לטקסט שלכם</div>
                 <div className="stack">
                   {state.data.senses.map((s, i) => (
-                    <label key={i} className={'sense' + (i === sense ? ' on' : '')}>
+                    <label key={i} className={'sense' + (i === sense ? ' on' : '')} dir="ltr" lang="en">
                       <input type="radio" name="sense" checked={i === sense} onChange={() => setSense(i)} />
                       <span>
                         <span className="pos">{s.pos}</span> {s.def}
@@ -283,25 +291,27 @@ function WordSheet({ token, sentence, onClose }: { token: Token; sentence: strin
                 <p className="feedback typo small" style={{ marginTop: 8 }}>
                   {state.error}
                 </p>
-                <div className="field-label">Definition</div>
-                <textarea className="answer-input" style={{ minHeight: 80 }} value={manualDef} onChange={(e) => setManualDef(e.target.value)} placeholder="What does it mean?" />
+                <div className="field-label">פירוש</div>
+                <textarea className="answer-input" dir="auto" style={{ minHeight: 80 }} value={manualDef} onChange={(e) => setManualDef(e.target.value)} placeholder="מה פירוש המילה? (באנגלית או בעברית)" />
               </>
             )}
             {state.status !== 'loading' && (
               <>
-                <div className="field-label">Hebrew (optional)</div>
+                <div className="field-label">תרגום לעברית (לא חובה)</div>
                 <input className="answer-input he" dir="rtl" lang="he" style={{ minHeight: 48, fontSize: 17 }} value={he} onChange={(e) => setHe(e.target.value)} placeholder="תרגום" />
                 {sentence && (
                   <label className="sense" style={{ marginTop: 12 }}>
                     <input type="checkbox" checked={useSentence} onChange={(e) => setUseSentence(e.target.checked)} />
                     <span className="small">
-                      Keep this sentence as an example:
-                      <span className="faint" style={{ display: 'block' }}>{bracketWord(sentence, token.text).replace(/\[|\]/g, '')}</span>
+                      לשמור את המשפט מהטקסט כדוגמה:
+                      <span className="faint" style={{ display: 'block' }} dir="ltr" lang="en">
+                        {bracketWord(sentence, token.text).replace(/\[|\]/g, '')}
+                      </span>
                     </span>
                   </label>
                 )}
                 <button className="btn primary block" style={{ marginTop: 14 }} disabled={state.status === 'error' && !manualDef.trim()} onClick={save}>
-                  Add to my words
+                  להוסיף למילים שלי
                 </button>
               </>
             )}

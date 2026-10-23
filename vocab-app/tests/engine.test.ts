@@ -3,7 +3,7 @@ import { levenshtein, matchAnswer, normalize } from '../src/lib/fuzzy';
 import { alternativeSpellings } from '../src/lib/spelling';
 import { applyAnswer, chooseCardType, newProgress, Rating, State } from '../src/lib/srs';
 import { buildQueue, requeueAfterMistake } from '../src/lib/session';
-import { buildQuestion, pickDistractors, typingHint } from '../src/lib/cards';
+import { buildQuestion, maxHints, pickDistractors, typingHint } from '../src/lib/cards';
 import { builtInWords, splitGap, plain } from '../src/lib/words';
 import { computeStreak, DEFAULT_SETTINGS } from '../src/lib/store';
 import { addDays, dayKey } from '../src/lib/dates';
@@ -92,9 +92,10 @@ describe('scheduling and levels', () => {
     const p = { ...newProgress('x'), level: 3 as CardType };
     expect(chooseCardType({ ...p, level: 1 }, [1, 2, 3, 4, 5])).toBe(1);
     expect(chooseCardType({ ...p, level: 2 }, [1, 2, 3, 4, 5])).toBe(2);
-    const seen = [0, 1, 2, 3].map((reps) => chooseCardType({ ...p, card: { ...p.card, reps } }, [1, 2, 3, 4, 5]));
+    // production cards go easiest first: typing, precision, then writing
+    const seen = [0, 1, 2, 3].map((production) => chooseCardType({ ...p, production }, [1, 2, 3, 4, 5]));
     expect(seen).toEqual([3, 4, 5, 3]);
-    expect(chooseCardType({ ...p, card: { ...p.card, reps: 1 } }, [1, 2, 3, 5])).toBe(5); // no precision data
+    expect(chooseCardType({ ...p, production: 1 }, [1, 2, 3, 5])).toBe(5); // no precision data
     expect(chooseCardType(p, [1, 2, 3])).toBe(3);
   });
   it('a production mistake drops the word back to the gap-fill', () => {
@@ -199,7 +200,10 @@ describe('cards', () => {
   });
   it('typing hint shows only first letters', () => {
     expect(typingHint('mitigate')).toBe('m_______');
-    expect(typingHint("keep someone at arm's length")).toBe("k___  s______  a_  a__'s  l_____");
+    expect(typingHint("keep someone at arm's length")).toBe("k___  s______  a_  a__'_  l_____");
+    expect(typingHint('mitigate', 2)).toBe('mit_____');
+    expect(typingHint('play down', 3)).toBe('play  d___');
+    expect(maxHints('mitigate')).toBe(6);
   });
 });
 

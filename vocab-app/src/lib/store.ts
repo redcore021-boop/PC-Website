@@ -52,7 +52,7 @@ export async function recordAnswer(
   graded: boolean,
   enabled: CardType[],
   now = new Date(),
-): Promise<Progress> {
+): Promise<{ progress: Progress; levelUp: boolean }> {
   return db.transaction('rw', db.progress, db.reviews, db.days, async () => {
     const before = (await db.progress.get(wordId)) ?? newProgress(wordId, now);
     const wasReview = before.card.reps > 0;
@@ -76,8 +76,14 @@ export async function recordAnswer(
     const day = entry.day;
     const log = (await db.days.get(day)) ?? { day, answered: 0, newWords: 0, goalMet: false };
     await db.days.put({ ...log, answered: log.answered + 1 });
-    return after;
+    return { progress: after, levelUp: after.level > before.level };
   });
+}
+
+/** Number of earlier days with any study — drives the warm-up of new words. */
+export async function daysStudiedBefore(now = new Date()): Promise<number> {
+  const today = dayKey(now);
+  return db.days.filter((d) => d.day < today && d.answered > 0).count();
 }
 
 export async function markGoalMet(now = new Date()) {

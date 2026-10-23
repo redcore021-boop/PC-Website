@@ -41,7 +41,7 @@ describe('store', () => {
   });
 
   it('rejects files that are not backups', () => {
-    expect(() => parseBackup('not json')).toThrow(/not valid JSON/);
-    expect(() => parseBackup('{"hello":1}')).toThrow(/not a Lexicon backup/);
+    expect(() => parseBackup('not json')).toThrow(/JSON תקין/);
+    expect(() => parseBackup('{"hello":1}')).toThrow(/לא קובץ גיבוי/);
   });
 });
