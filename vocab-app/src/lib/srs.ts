@@ -46,25 +46,21 @@ export function availableTypes(enabled: CardType[], hasPrecision: boolean): Card
   return enabled.filter((t) => t !== 4 || hasPrecision);
 }
 
-/**
- * Pick the card type for a scheduled review. Words climb one type per success.
- * Once in production, most reviews ask the frontier type (so words keep climbing
- * towards writing a sentence); the rest rotate among the production types already reached.
- */
-export const FRONTIER_SHARE = 0.6;
+/** Level 3 is the production stage: every card type from 3 up. */
+export const PRODUCTION_LEVEL = 3;
 
-export function chooseCardType(p: Progress, available: CardType[], seed = Math.random()): CardType {
+/**
+ * Pick the card type for a scheduled review. Words climb from recognition (1) to
+ * the gap-fill (2) to the production stage, where successive reviews rotate through
+ * typing (3), precision (4) and writing a sentence (5).
+ */
+export function chooseCardType(p: Progress, available: CardType[]): CardType {
   const sorted = [...available].sort((a, b) => a - b);
-  const top = sorted[sorted.length - 1];
-  const level = Math.min(p.level, top) as CardType;
-  const production = sorted.filter((t) => t >= 3 && t <= level);
-  if (level >= 3 && production.length > 1) {
-    if (seed < FRONTIER_SHARE) return production[production.length - 1];
-    const rest = (seed - FRONTIER_SHARE) / (1 - FRONTIER_SHARE);
-    return production[Math.floor(rest * production.length) % production.length];
+  const production = sorted.filter((t) => t >= PRODUCTION_LEVEL);
+  if (p.level >= PRODUCTION_LEVEL && production.length) {
+    return production[p.card.reps % production.length];
   }
-  // fall back to the nearest available type at or below the level
-  const atOrBelow = sorted.filter((t) => t <= level);
+  const atOrBelow = sorted.filter((t) => t <= p.level);
   return atOrBelow[atOrBelow.length - 1] ?? sorted[0];
 }
 
@@ -79,13 +75,15 @@ export function applyAnswer(
   const grade = gradeFor(outcome);
   const { card } = scheduler.next(p.card, now, grade);
   const good = grade !== Rating.Again;
-  const maxLevel = Math.max(...enabled) as CardType;
-  let level = p.level;
+  const top = Math.min(PRODUCTION_LEVEL, Math.max(...enabled)) as CardType;
+  const stage = Math.min(cardType, PRODUCTION_LEVEL);
+  let level = Math.min(p.level, PRODUCTION_LEVEL) as CardType;
   if (good) {
-    // level only climbs when the word was asked at its current level
-    if (cardType >= p.level) level = Math.min(maxLevel, cardType + 1) as CardType;
+    // climbs only when the word was asked at its current stage
+    if (stage >= level) level = Math.min(top, stage + 1) as CardType;
   } else {
-    level = Math.max(1, Math.min(p.level, cardType) - 1) as CardType;
+    // a production mistake sends the word back to the gap-fill
+    level = Math.max(1, Math.min(level, stage) - 1) as CardType;
   }
   const production = p.production + (good && PRODUCTION_TYPES.includes(cardType) ? 1 : 0);
   const next: Progress = {

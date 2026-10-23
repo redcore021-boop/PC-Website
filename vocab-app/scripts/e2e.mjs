@@ -267,5 +267,7 @@ await page.reload();
 await page.getByText('words started').waitFor({ timeout: 5000 }).then(() => ok('works offline'), () => fail('offline reload failed'));
 await ctx.setOffline(false);
 
-errors.length ? fail('page errors: ' + errors.join(' | ')) : ok('no console errors');
+// the deliberately aborted dictionary request logs one ERR_FAILED; anything else is a real error
+const real = errors.filter((e) => !/ERR_FAILED/.test(e));
+real.length ? fail('page errors: ' + real.join(' | ')) : ok('no console errors');
 await browser.close();

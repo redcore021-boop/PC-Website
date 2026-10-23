@@ -28,15 +28,15 @@ describe('card availability', () => {
     expect(availableTypes(ALL, false)).toEqual([1, 2, 3, 5]);
     expect(availableTypes(ALL, true)).toEqual(ALL);
   });
-  it('words reach production types 4 and 5 once enabled', () => {
+  it('production successes on any of types 3–5 count towards mastery', () => {
     let p = newProgress('x');
     let t = new Date('2026-01-01T10:00:00');
-    for (const type of [1, 2, 3, 4] as CardType[]) {
+    for (const type of [1, 2, 3, 4, 5] as CardType[]) {
       p = applyAnswer(p, type, { correct: true }, ALL, t);
       t = new Date(p.card.due);
     }
-    expect(p.level).toBe(5);
-    expect(p.production).toBe(2);
+    expect(p.level).toBe(3);
+    expect(p.production).toBe(3);
   });
 });
 

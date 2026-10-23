@@ -88,14 +88,19 @@ describe('scheduling and levels', () => {
     expect(hard.card.stability).toBeLessThan(good.card.stability);
     expect(Rating.Hard).toBe(2);
   });
-  it('picks card types up to the word level, rotating production types', () => {
-    const p = { ...newProgress('x'), level: 5 as CardType };
-    expect(chooseCardType({ ...p, level: 2 }, [1, 2, 3])).toBe(2);
+  it('picks card types by stage, rotating through production types', () => {
+    const p = { ...newProgress('x'), level: 3 as CardType };
+    expect(chooseCardType({ ...p, level: 1 }, [1, 2, 3, 4, 5])).toBe(1);
+    expect(chooseCardType({ ...p, level: 2 }, [1, 2, 3, 4, 5])).toBe(2);
+    const seen = [0, 1, 2, 3].map((reps) => chooseCardType({ ...p, card: { ...p.card, reps } }, [1, 2, 3, 4, 5]));
+    expect(seen).toEqual([3, 4, 5, 3]);
+    expect(chooseCardType({ ...p, card: { ...p.card, reps: 1 } }, [1, 2, 3, 5])).toBe(5); // no precision data
     expect(chooseCardType(p, [1, 2, 3])).toBe(3);
-    expect(chooseCardType(p, [1, 2, 3, 4, 5], 0.1)).toBe(5); // the frontier most of the time
-    const seen = new Set([0.65, 0.8, 0.95].map((s) => chooseCardType(p, [1, 2, 3, 4, 5], s)));
-    expect(seen).toEqual(new Set([3, 4, 5]));
-    expect(chooseCardType({ ...p, level: 4 }, [1, 2, 3, 4, 5], 0.3)).toBe(4);
+  });
+  it('a production mistake drops the word back to the gap-fill', () => {
+    const p = { ...newProgress('x'), level: 3 as CardType };
+    expect(applyAnswer(p, 5, { correct: false }, [1, 2, 3, 4, 5]).level).toBe(2);
+    expect(applyAnswer(p, 4, { correct: true }, [1, 2, 3, 4, 5]).level).toBe(3);
   });
 });
 
@@ -111,7 +116,7 @@ describe('session queue', () => {
     const progress = [reviewed(words[0].id, -1), reviewed(words[1].id, -2), reviewed(words[2].id, 5)];
     const q = buildQueue({
       words, progress, now, settings: { ...DEFAULT_SETTINGS, newPerDay: 4 }, today: { newWords: 1, reviews: 0 },
-      enabled: ENABLED, mode: 'daily', rnd: seeded(1),
+      enabled: ENABLED, mode: 'daily',
     });
     const intros = q.filter((i) => i.kind === 'intro');
     const reviews = q.filter((i) => i.kind === 'quiz' && !i.isNew);

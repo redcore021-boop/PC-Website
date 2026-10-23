@@ -47,14 +47,13 @@ export interface BuildArgs {
   enabled: CardType[];
   mode: SessionMode;
   now?: Date;
-  rnd?: () => number;
 }
 
 /**
  * Today's queue: due reviews first (weakest first), with new words woven in.
  * Each new word gets an intro card and, a few cards later, its first quiz.
  */
-export function buildQueue({ words, progress, settings, today, enabled, mode, now = new Date(), rnd = Math.random }: BuildArgs): QueueItem[] {
+export function buildQueue({ words, progress, settings, today, enabled, mode, now = new Date() }: BuildArgs): QueueItem[] {
   const byId = new Map(words.map((w) => [w.id, w]));
   const progressById = new Map(progress.map((p) => [p.wordId, p]));
   const reviewsLeft = Math.max(0, settings.reviewsPerDay - today.reviews);
@@ -70,7 +69,7 @@ export function buildQueue({ words, progress, settings, today, enabled, mode, no
         key: key(),
         wordId: p.wordId,
         kind: 'quiz',
-        cardType: chooseCardType(p, availableTypes(enabled, !!w.prec), rnd()),
+        cardType: chooseCardType(p, availableTypes(enabled, !!w.prec)),
         graded: true,
         isNew: false,
         repeat: 0,
@@ -137,7 +136,7 @@ export function weakestProgress(progress: Progress[], now = new Date(), n = 10):
  * Extra practice on weak words. Ungraded, so it never distorts the FSRS schedule;
  * mistakes still count and still come back within the session.
  */
-export function buildWeakQueue(words: WordEntry[], progress: Progress[], enabled: CardType[], now = new Date(), rnd = Math.random): QueueItem[] {
+export function buildWeakQueue(words: WordEntry[], progress: Progress[], enabled: CardType[], now = new Date()): QueueItem[] {
   const byId = new Map(words.map((w) => [w.id, w]));
   return weakestProgress(progress, now)
     .filter((p) => byId.has(p.wordId))
@@ -145,7 +144,7 @@ export function buildWeakQueue(words: WordEntry[], progress: Progress[], enabled
       key: key(),
       wordId: p.wordId,
       kind: 'quiz' as const,
-      cardType: chooseCardType(p, availableTypes(enabled, !!byId.get(p.wordId)!.prec), rnd()),
+      cardType: chooseCardType(p, availableTypes(enabled, !!byId.get(p.wordId)!.prec)),
       graded: false,
       isNew: false,
       repeat: 0,
