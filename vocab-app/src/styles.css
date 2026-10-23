@@ -336,7 +336,8 @@ textarea.answer-input { font-family: var(--f-body); font-size: 17px; min-height:
   position: sticky;
   bottom: 0;
   padding: 14px 0 calc(var(--safe-bottom) + 6px);
-  background: linear-gradient(to bottom, transparent, var(--bg) 30%);
+  background: var(--bg);
+  box-shadow: 0 -20px 16px -4px var(--bg);
   margin-top: 8px;
   display: grid;
   gap: 10px;

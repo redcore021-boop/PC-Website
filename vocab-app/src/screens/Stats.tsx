@@ -108,7 +108,7 @@ export function Stats() {
             </span>
             <span className="small muted">{pct === null ? '—' : `${pct}%`}</span>
             <span className="tiny faint" style={{ minWidth: 48, textAlign: 'right' }}>
-              {n} answers
+              {n} {n === 1 ? 'answer' : 'answers'}
             </span>
           </div>
         ))}
