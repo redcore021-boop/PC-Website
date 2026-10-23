@@ -1,0 +1,2267 @@
+{
+  "batch": "batch-04",
+  "title": "Change, Time & Degree",
+  "words": [
+    {
+      "word": "ephemeral",
+      "ipa": "ɪˈfemərəl",
+      "pos": "adjective",
+      "def": "Lasting for a very short time.",
+      "he": "חולף, בן חלוף",
+      "family": [
+        "ephemerality (n.)",
+        "ephemera (n.)"
+      ],
+      "ex": [
+        "Fame on social media is often [ephemeral].",
+        "The beauty of cherry blossom is [ephemeral], which is part of its charm.",
+        "Most of the apps we download are [ephemeral] — used once, then forgotten."
+      ],
+      "col": [
+        "ephemeral nature",
+        "ephemeral fame",
+        "ephemeral pleasures"
+      ],
+      "reg": "formal",
+      "syn": [
+        "fleeting",
+        "transient",
+        "short-lived",
+        "transitory"
+      ],
+      "nuance": "Ephemeral often has a poetic or philosophical tone — beauty, fame, pleasure. Fleeting is used for brief moments (a fleeting glance); transient is more neutral and technical (transient population).",
+      "ety": "Greek ephēmeros 'lasting only a day', from hēmera 'day'.",
+      "root": "hemer",
+      "tier": 1,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "Viral fame is ___: today's internet star is forgotten by next month.",
+        "opts": [
+          "transient",
+          "intermittent",
+          "sporadic"
+        ],
+        "why": "Ephemeral suits fame and beauty that vanish quickly. Transient is more technical (transient workers, transient pain); intermittent and sporadic mean happening irregularly."
+      }
+    },
+    {
+      "word": "transient",
+      "ipa": "ˈtrænziənt",
+      "pos": "adjective / noun",
+      "def": "Lasting only for a short time; staying in a place only briefly. (n.) A person who stays only briefly.",
+      "he": "ארעי, חולף, זמני",
+      "family": [
+        "transience (n.)",
+        "transiently (adv.)"
+      ],
+      "ex": [
+        "The side effects are usually mild and [transient].",
+        "The city has a large [transient] population of students and seasonal workers.",
+        "She reflected on the [transience] of life."
+      ],
+      "col": [
+        "transient population",
+        "transient effect",
+        "the transience of life",
+        "transient workers"
+      ],
+      "reg": "formal",
+      "syn": [
+        "temporary",
+        "ephemeral",
+        "fleeting",
+        "passing"
+      ],
+      "nuance": "Transient is common in technical contexts (medicine, population, physics) as well as reflective writing. Temporary is the everyday word for things intended to last a short time.",
+      "ety": "Latin transire 'to go across', from trans- 'across' + ire 'to go'.",
+      "root": "trans",
+      "tier": 2,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The drug can cause ___ dizziness that usually disappears within an hour.",
+        "opts": [
+          "ephemeral",
+          "provisional",
+          "makeshift"
+        ],
+        "why": "Transient is the standard medical word for a short-lasting symptom. Ephemeral is poetic; provisional means arranged for now but likely to change; makeshift means temporary and improvised (a makeshift shelter)."
+      }
+    },
+    {
+      "word": "perennial",
+      "ipa": "pəˈreniəl",
+      "pos": "adjective / noun",
+      "def": "Lasting or recurring for a very long time or forever; (of plants) living for several years.",
+      "he": "נצחי, חוזר שוב ושוב; רב־שנתי",
+      "family": [
+        "perennially (adv.)"
+      ],
+      "ex": [
+        "Traffic is a [perennial] problem in this city.",
+        "The film is a [perennial] Christmas favourite.",
+        "Lavender is a hardy [perennial] that flowers every summer."
+      ],
+      "col": [
+        "perennial problem",
+        "perennial favourite",
+        "perennial question",
+        "hardy perennial"
+      ],
+      "reg": "formal",
+      "syn": [
+        "enduring",
+        "recurring",
+        "constant",
+        "abiding"
+      ],
+      "nuance": "Perennial means coming back year after year. Chronic is about a persistent bad condition (chronic pain); enduring is about lasting without fading.",
+      "ety": "Latin perennis 'lasting the year through', from per 'through' + annus 'year'.",
+      "tier": 2,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "'Home Alone' is a ___ favourite, shown on TV every December for over thirty years.",
+        "opts": [
+          "chronic",
+          "permanent",
+          "incessant"
+        ],
+        "why": "A perennial favourite returns year after year. Chronic is for ongoing bad conditions; permanent means unchanging; incessant means non-stop and annoying."
+      }
+    },
+    {
+      "word": "anachronism",
+      "ipa": "əˈnækrənɪzəm",
+      "pos": "noun",
+      "def": "Something that belongs to a different period of time, especially one that seems old-fashioned now; a chronological error.",
+      "he": "אנכרוניזם, דבר שאבד עליו הכלח",
+      "family": [
+        "anachronistic (adj.)"
+      ],
+      "ex": [
+        "In a world of email, the fax machine is an [anachronism].",
+        "The film has several [anachronisms], like a wristwatch in ancient Rome.",
+        "Some see the monarchy as an expensive [anachronism]."
+      ],
+      "col": [
+        "an expensive anachronism",
+        "a glaring anachronism",
+        "anachronistic attitudes"
+      ],
+      "reg": "formal",
+      "syn": [
+        "relic",
+        "throwback",
+        "holdover"
+      ],
+      "nuance": "An anachronism is out of its proper time — either outdated or misplaced in a story. A relic is something surviving from the past; a throwback revives older style deliberately.",
+      "ety": "Greek anakhronismos, from ana- 'backwards' + khronos 'time'.",
+      "root": "chron",
+      "tier": 2,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The historical drama was mocked online for an obvious ___: a plastic water bottle in a medieval castle.",
+        "opts": [
+          "relic",
+          "artefact",
+          "antique"
+        ],
+        "why": "An anachronism is something placed in the wrong time period. A relic and an artefact are genuine objects from the past; an antique is an old valuable object."
+      }
+    },
+    {
+      "word": "chronic",
+      "ipa": "ˈkrɑːnɪk",
+      "pos": "adjective",
+      "def": "(Of an illness or problem) lasting for a long time or constantly recurring; (of a person) having a habit that is hard to break.",
+      "he": "כרוני, מתמשך",
+      "family": [
+        "chronically (adv.)"
+      ],
+      "ex": [
+        "She suffers from [chronic] back pain.",
+        "The hospital has a [chronic] shortage of nurses.",
+        "He's a [chronic] liar — don't believe a word."
+      ],
+      "col": [
+        "chronic illness",
+        "chronic pain",
+        "chronic shortage",
+        "chronically underfunded",
+        "chronic liar"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "persistent",
+        "long-term",
+        "lingering",
+        "habitual"
+      ],
+      "nuance": "Chronic is the opposite of acute (sudden, severe, short). In British informal speech, 'chronic' can mean 'very bad' — avoid this in formal writing.",
+      "ety": "Greek khronikos 'of time', from khronos.",
+      "root": "chron",
+      "tier": 1,
+      "themes": [
+        "change",
+        "degree"
+      ],
+      "prec": {
+        "s": "Rural hospitals have suffered a ___ shortage of doctors for over a decade.",
+        "opts": [
+          "acute",
+          "perennial",
+          "temporal"
+        ],
+        "why": "Chronic describes a long-lasting problem. Acute means sudden and severe; perennial suits recurring favourites or seasonal problems rather than ongoing shortages; temporal means relating to time."
+      }
+    },
+    {
+      "word": "incipient",
+      "ipa": "ɪnˈsɪpiənt",
+      "pos": "adjective",
+      "def": "In an early stage; beginning to happen or develop.",
+      "he": "מתחיל, בראשיתו",
+      "family": [
+        "incipience (n.)"
+      ],
+      "ex": [
+        "He noticed signs of [incipient] baldness.",
+        "The doctor treated the [incipient] infection before it spread.",
+        "Investors ignored the [incipient] signs of a crisis."
+      ],
+      "col": [
+        "incipient signs",
+        "incipient crisis",
+        "incipient baldness",
+        "incipient stage"
+      ],
+      "reg": "formal",
+      "syn": [
+        "emerging",
+        "budding",
+        "nascent",
+        "developing"
+      ],
+      "nuance": "Incipient is often used for something unwelcome just beginning (a crisis, a disease). Nascent is used for something new and growing, often positive (a nascent industry).",
+      "ety": "Latin incipere 'to begin', from capere 'to take'.",
+      "tier": 3,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The doctor spotted signs of ___ arthritis and recommended exercise to slow it down.",
+        "opts": [
+          "nascent",
+          "budding",
+          "fledgling"
+        ],
+        "why": "Incipient fits the early stage of something unwelcome, like a disease. Nascent, budding and fledgling describe promising things just starting (a budding artist, a fledgling company)."
+      }
+    },
+    {
+      "word": "nascent",
+      "ipa": "ˈnæsnt",
+      "pos": "adjective",
+      "def": "Just coming into existence and beginning to show signs of future potential.",
+      "he": "מתהווה, בחיתוליו",
+      "family": [
+        "nascency (n.)"
+      ],
+      "ex": [
+        "The country's [nascent] democracy faces many challenges.",
+        "Investors are pouring money into the [nascent] space-tourism industry.",
+        "She nurtured his [nascent] interest in science."
+      ],
+      "col": [
+        "nascent industry",
+        "nascent democracy",
+        "nascent movement",
+        "still nascent"
+      ],
+      "reg": "formal",
+      "syn": [
+        "emerging",
+        "budding",
+        "fledgling",
+        "embryonic"
+      ],
+      "nuance": "Nascent is a formal word for something newly born with potential to grow. Fledgling stresses inexperience; embryonic stresses being undeveloped.",
+      "ety": "Latin nasci 'to be born'.",
+      "root": "nasc",
+      "tier": 2,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The country's ___ electric-car industry received huge government support.",
+        "opts": [
+          "incipient",
+          "infantile",
+          "rudimentary"
+        ],
+        "why": "Nascent describes a new, promising enterprise. Incipient is usually used for unwelcome developments; infantile means childish; rudimentary means basic and undeveloped."
+      }
+    },
+    {
+      "word": "burgeoning",
+      "ipa": "ˈbɜːrdʒənɪŋ",
+      "pos": "adjective",
+      "def": "Growing or developing quickly.",
+      "he": "מתפתח במהירות, משגשג",
+      "family": [
+        "burgeon (v.)"
+      ],
+      "ex": [
+        "The city has a [burgeoning] tech scene.",
+        "Their [burgeoning] friendship surprised everyone.",
+        "Demand for online courses has [burgeoned]."
+      ],
+      "col": [
+        "burgeoning industry",
+        "burgeoning market",
+        "burgeoning population",
+        "burgeoning career"
+      ],
+      "reg": "formal",
+      "syn": [
+        "flourishing",
+        "booming",
+        "thriving",
+        "mushrooming"
+      ],
+      "nuance": "Burgeoning stresses rapid growth or expansion. Flourishing and thriving stress health and success; booming is informal and economic.",
+      "ety": "Old French bourjon 'a bud'.",
+      "tier": 2,
+      "themes": [
+        "change",
+        "degree"
+      ],
+      "prec": {
+        "s": "Lisbon's ___ startup scene has grown from a handful of companies to over a thousand in five years.",
+        "opts": [
+          "nascent",
+          "incipient",
+          "vibrant"
+        ],
+        "why": "Burgeoning highlights rapid growth — from a handful to a thousand. Nascent and incipient mean just beginning; vibrant means lively, not growing."
+      }
+    },
+    {
+      "word": "moribund",
+      "ipa": "ˈmɔːrɪbʌnd",
+      "pos": "adjective",
+      "def": "(Of an organisation, industry or custom) in decline and no longer active or effective; (of a person) near death.",
+      "he": "גוסס, בדעיכה",
+      "family": [],
+      "ex": [
+        "The new owner revived the [moribund] newspaper.",
+        "Coal mining towns struggled as the industry became [moribund].",
+        "Peace talks have been [moribund] for years."
+      ],
+      "col": [
+        "moribund economy",
+        "moribund industry",
+        "revive a moribund",
+        "moribund talks"
+      ],
+      "reg": "formal",
+      "syn": [
+        "declining",
+        "dying",
+        "stagnant",
+        "waning"
+      ],
+      "nuance": "Moribund means close to death, used mostly for institutions and economies. Stagnant means not moving or developing, but not necessarily dying.",
+      "ety": "Latin moribundus, from mori 'to die'.",
+      "tier": 3,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "Once the town's pride, the shipyard is now ___, with only a handful of workers left.",
+        "opts": [
+          "stagnant",
+          "dormant",
+          "obsolete"
+        ],
+        "why": "Moribund means dying, in terminal decline. Stagnant means not developing; dormant means temporarily inactive but able to revive; obsolete means no longer used because something better exists."
+      }
+    },
+    {
+      "word": "languish",
+      "ipa": "ˈlæŋɡwɪʃ",
+      "pos": "verb",
+      "def": "To be forced to stay in an unpleasant situation for a long time; to fail to make progress.",
+      "he": "לנמק, לדשדש",
+      "family": [
+        "languid (adj., related)",
+        "languor (n., related)"
+      ],
+      "ex": [
+        "He [languished] in prison for ten years before his release.",
+        "The bill has [languished] in committee since spring.",
+        "The team is [languishing] at the bottom of the league."
+      ],
+      "col": [
+        "languish in prison",
+        "languish in obscurity",
+        "languish at the bottom"
+      ],
+      "reg": "formal",
+      "syn": [
+        "waste away",
+        "stagnate",
+        "rot",
+        "deteriorate"
+      ],
+      "nuance": "Languish suggests being stuck and neglected, often unjustly. Stagnate means fail to develop, usually of economies or careers.",
+      "ety": "Old French languir, from Latin languere 'to be faint'.",
+      "tier": 2,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The proposal has ___ in a parliamentary committee for two years without a vote.",
+        "opts": [
+          "lingered",
+          "lapsed",
+          "wilted"
+        ],
+        "why": "Languish means remain neglected and stuck. Linger means stay longer than expected (by choice); lapse means expire; wilt means droop (plants)."
+      }
+    },
+    {
+      "word": "wane",
+      "ipa": "weɪn",
+      "pos": "verb / noun",
+      "def": "To decrease gradually in size, strength or importance.",
+      "he": "לדעוך, להיחלש",
+      "family": [
+        "waning (adj.)",
+        "on the wane (phr.)"
+      ],
+      "ex": [
+        "Public interest in the scandal began to [wane].",
+        "The moon [waxes] and [wanes] every month.",
+        "His influence is on the [wane]."
+      ],
+      "col": [
+        "interest wanes",
+        "on the wane",
+        "wax and wane",
+        "waning popularity"
+      ],
+      "reg": "formal",
+      "syn": [
+        "decline",
+        "fade",
+        "diminish",
+        "ebb"
+      ],
+      "nuance": "Wane suggests a gradual, natural decline — like the moon. Dwindle stresses numbers getting smaller; ebb stresses a slow flow away.",
+      "ety": "Old English wanian 'to lessen'.",
+      "tier": 1,
+      "themes": [
+        "change",
+        "degree"
+      ],
+      "prec": {
+        "s": "As the novelty wore off, enthusiasm for the new app began to ___.",
+        "opts": [
+          "dwindle",
+          "shrink",
+          "subside"
+        ],
+        "why": "Interest and enthusiasm wane — they gradually lose strength. Dwindle is best for numbers or supplies; shrink is about physical size; subside is about storms, noise or swelling."
+      }
+    },
+    {
+      "word": "dwindle",
+      "ipa": "ˈdwɪndl",
+      "pos": "verb",
+      "def": "To become gradually smaller in number or amount until little remains.",
+      "he": "להצטמק, להתמעט",
+      "family": [
+        "dwindling (adj.)"
+      ],
+      "ex": [
+        "Our savings [dwindled] during the months without work.",
+        "The village population has [dwindled] to a few hundred.",
+        "[Dwindling] fish stocks threaten the local economy."
+      ],
+      "col": [
+        "dwindling resources",
+        "dwindle away",
+        "dwindle to nothing",
+        "dwindling numbers"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "diminish",
+        "decrease",
+        "shrink",
+        "wane"
+      ],
+      "nuance": "Dwindle is about quantities shrinking, often worryingly (savings, numbers, supplies). Wane is about strength or intensity fading.",
+      "ety": "Diminutive of dwine 'to waste away', from Old English dwinan.",
+      "tier": 1,
+      "themes": [
+        "change",
+        "degree"
+      ],
+      "prec": {
+        "s": "With no new members joining, the club's numbers ___ from fifty to just six.",
+        "opts": [
+          "waned",
+          "abated",
+          "subsided"
+        ],
+        "why": "Dwindle is ideal for numbers and supplies getting smaller. Wane is for strength, influence or interest; abate and subside are for storms, pain or anger."
+      }
+    },
+    {
+      "word": "proliferate",
+      "ipa": "prəˈlɪfəreɪt",
+      "pos": "verb",
+      "def": "To increase rapidly in number; to spread.",
+      "he": "להתרבות במהירות, להתפשט",
+      "family": [
+        "proliferation (n.)"
+      ],
+      "ex": [
+        "Fake news sites [proliferated] before the election.",
+        "Cancer cells [proliferate] uncontrollably.",
+        "The treaty aims to stop the [proliferation] of nuclear weapons."
+      ],
+      "col": [
+        "proliferate rapidly",
+        "nuclear proliferation",
+        "the proliferation of"
+      ],
+      "reg": "formal",
+      "syn": [
+        "multiply",
+        "mushroom",
+        "spread",
+        "burgeon"
+      ],
+      "nuance": "Proliferate suggests rapid multiplication, often of something unwelcome. 'Non-proliferation' is the fixed term in arms control.",
+      "ety": "From proliferation, French prolifère 'producing offspring', from Latin proles 'offspring'.",
+      "tier": 2,
+      "themes": [
+        "change",
+        "degree"
+      ],
+      "prec": {
+        "s": "As phone cameras improved, photo-sharing apps ___ — dozens launched every year.",
+        "opts": [
+          "prospered",
+          "accumulated",
+          "escalated"
+        ],
+        "why": "Proliferate means multiply rapidly in number. Prosper means succeed financially; accumulate means pile up gradually; escalate means become more intense or serious."
+      }
+    },
+    {
+      "word": "exacerbate",
+      "ipa": "ɪɡˈzæsərbeɪt",
+      "pos": "verb",
+      "def": "To make a problem, bad situation or negative feeling worse.",
+      "he": "להחמיר",
+      "family": [
+        "exacerbation (n.)"
+      ],
+      "ex": [
+        "The drought [exacerbated] the food shortage.",
+        "Scratching will only [exacerbate] the rash.",
+        "His comments [exacerbated] tensions between the two communities."
+      ],
+      "col": [
+        "exacerbate the problem",
+        "exacerbate tensions",
+        "further exacerbate",
+        "exacerbate symptoms"
+      ],
+      "reg": "formal",
+      "syn": [
+        "aggravate",
+        "worsen",
+        "compound",
+        "intensify"
+      ],
+      "nuance": "Exacerbate always makes something already bad worse. Aggravate means the same in formal use, but informally means 'annoy'. Compound means add to a problem.",
+      "ety": "Latin exacerbare 'to irritate', from acerbus 'harsh, bitter'.",
+      "tier": 1,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "Cutting interest rates now could ___ inflation, which is already too high.",
+        "opts": [
+          "instigate",
+          "accentuate",
+          "provoke"
+        ],
+        "why": "Exacerbate means make an existing problem worse — inflation is 'already too high'. Instigate means start something (an inquiry, a riot); accentuate means emphasise; provoke means cause a reaction."
+      }
+    },
+    {
+      "word": "ameliorate",
+      "ipa": "əˈmiːliəreɪt",
+      "pos": "verb",
+      "def": "To make something bad or unsatisfactory better.",
+      "he": "לשפר, להיטיב",
+      "family": [
+        "amelioration (n.)"
+      ],
+      "ex": [
+        "The new law aims to [ameliorate] conditions for factory workers.",
+        "Nothing could [ameliorate] the pain of her loss.",
+        "Steps were taken to [ameliorate] the effects of the cuts."
+      ],
+      "col": [
+        "ameliorate conditions",
+        "ameliorate the situation",
+        "ameliorate the effects of"
+      ],
+      "reg": "formal",
+      "syn": [
+        "improve",
+        "mitigate",
+        "alleviate",
+        "remedy"
+      ],
+      "nuance": "Ameliorate means actually improve a bad state. Mitigate and alleviate mean reduce the harm or pain, not necessarily improve the whole situation.",
+      "ety": "French améliorer, from Latin melior 'better'.",
+      "tier": 3,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The charity works to ___ living conditions in refugee camps by building schools and clinics.",
+        "opts": [
+          "alleviate",
+          "mollify",
+          "allay"
+        ],
+        "why": "Ameliorate means improve conditions. Alleviate is for pain or suffering; mollify is for angry people; allay is for fears and suspicions."
+      }
+    },
+    {
+      "word": "alleviate",
+      "ipa": "əˈliːvieɪt",
+      "pos": "verb",
+      "def": "To make suffering, pain or a problem less severe.",
+      "he": "להקל, לשכך",
+      "family": [
+        "alleviation (n.)"
+      ],
+      "ex": [
+        "The medicine [alleviates] pain but doesn't cure the illness.",
+        "Building more homes could help [alleviate] the housing crisis.",
+        "Volunteers worked to [alleviate] suffering after the earthquake."
+      ],
+      "col": [
+        "alleviate pain",
+        "alleviate suffering",
+        "alleviate poverty",
+        "alleviate symptoms"
+      ],
+      "reg": "formal",
+      "syn": [
+        "ease",
+        "relieve",
+        "mitigate",
+        "lessen"
+      ],
+      "nuance": "Alleviate is for pain, suffering and pressure already felt. Mitigate is about reducing the severity of a harm or risk. Relieve is the everyday word.",
+      "ety": "Late Latin alleviare 'to lighten', from levis 'light'.",
+      "tier": 1,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "A hot bath and some rest helped ___ the pain in her back.",
+        "opts": [
+          "mitigate",
+          "ameliorate",
+          "abate"
+        ],
+        "why": "Alleviate is the natural verb for relieving pain. Mitigate collocates with risks and impacts; ameliorate with conditions; abate is mostly intransitive (the pain abated)."
+      }
+    },
+    {
+      "word": "precipitate",
+      "ipa": "prɪˈsɪpɪteɪt",
+      "pos": "verb / adjective",
+      "def": "(v.) To cause something bad to happen suddenly or sooner than expected. (adj.) Done too quickly, without enough thought.",
+      "he": "לזרז, להחיש (משהו רע); נמהר",
+      "family": [
+        "precipitation (n.)",
+        "precipitous (adj.)",
+        "precipitately (adv.)"
+      ],
+      "ex": [
+        "The scandal [precipitated] the collapse of the government.",
+        "Her death [precipitated] a family crisis.",
+        "Let's not take any [precipitate] action."
+      ],
+      "col": [
+        "precipitate a crisis",
+        "precipitate the collapse",
+        "precipitate action"
+      ],
+      "reg": "formal",
+      "syn": [
+        "trigger",
+        "spark",
+        "hasten",
+        "bring on"
+      ],
+      "nuance": "Precipitate means cause something to happen suddenly, often a crisis. Trigger is the everyday word. As an adjective, precipitate means hasty; precipitous means very steep or sudden.",
+      "ety": "Latin praecipitare 'to throw headlong', from caput 'head'.",
+      "tier": 2,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The CEO's sudden resignation ___ a crisis that brought the company close to bankruptcy.",
+        "opts": [
+          "precluded",
+          "preceded",
+          "presaged"
+        ],
+        "why": "Precipitate means cause something to happen suddenly. Preclude means make impossible; precede means come before; presage means be a warning sign of."
+      }
+    },
+    {
+      "word": "catalyst",
+      "ipa": "ˈkætəlɪst",
+      "pos": "noun",
+      "def": "A person or event that causes an important change; (chemistry) a substance that speeds up a reaction.",
+      "he": "זרז, גורם מאיץ",
+      "family": [
+        "catalyse / catalyze (v.)",
+        "catalytic (adj.)"
+      ],
+      "ex": [
+        "The protest was the [catalyst] for political reform.",
+        "The pandemic acted as a [catalyst] for remote working.",
+        "Enzymes are biological [catalysts]."
+      ],
+      "col": [
+        "act as a catalyst",
+        "a catalyst for change",
+        "the catalyst for",
+        "a key catalyst"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "trigger",
+        "spur",
+        "impetus",
+        "stimulus"
+      ],
+      "nuance": "A catalyst speeds up or sparks change. An impetus is a driving force; a trigger is the immediate cause of something (often negative).",
+      "ety": "Greek katalusis 'dissolving'.",
+      "tier": 1,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The pandemic acted as a ___ for remote work, accelerating a change that was already under way.",
+        "opts": [
+          "pretext",
+          "precedent",
+          "prerequisite"
+        ],
+        "why": "A catalyst speeds up change — the sentence says 'accelerating'. A pretext is a false reason; a precedent is an earlier example; a prerequisite is a necessary condition."
+      }
+    },
+    {
+      "word": "watershed",
+      "ipa": "ˈwɔːtərʃed",
+      "pos": "noun",
+      "def": "An event or period marking a turning point; (geography) a ridge dividing two river systems.",
+      "he": "נקודת מפנה, קו פרשת מים",
+      "family": [],
+      "ex": [
+        "The election was a [watershed] in the nation's history.",
+        "2007 — the year of the iPhone — was a [watershed] moment for technology.",
+        "Her illness marked a [watershed] in her life."
+      ],
+      "col": [
+        "a watershed moment",
+        "a watershed in",
+        "mark a watershed",
+        "watershed year"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "turning point",
+        "milestone",
+        "landmark",
+        "crossroads"
+      ],
+      "nuance": "A watershed divides history into before and after. A milestone marks progress along the way; a crossroads is a point where a decision must be made.",
+      "ety": "water + shed 'ridge of high ground', like German Wasserscheide.",
+      "tier": 1,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "Historians see 1989 as a ___: after it, Europe would never be the same.",
+        "opts": [
+          "milestone",
+          "crossroads",
+          "landmark"
+        ],
+        "why": "A watershed separates history into a clear before and after. A milestone marks progress; a crossroads is a moment of choice; a landmark is an important event or object, but without the 'divide'."
+      }
+    },
+    {
+      "word": "vicissitudes",
+      "ipa": "vɪˈsɪsɪtuːdz",
+      "pos": "noun (plural)",
+      "def": "Unwelcome changes of circumstance or fortune; ups and downs.",
+      "he": "תהפוכות, תמורות הגורל",
+      "family": [],
+      "ex": [
+        "Their marriage survived the [vicissitudes] of war and exile.",
+        "Small farmers are exposed to the [vicissitudes] of the market.",
+        "Her diary records the [vicissitudes] of a long life."
+      ],
+      "col": [
+        "the vicissitudes of life",
+        "the vicissitudes of fortune",
+        "the vicissitudes of the market"
+      ],
+      "reg": "literary",
+      "syn": [
+        "ups and downs",
+        "fluctuations",
+        "changes of fortune"
+      ],
+      "nuance": "Vicissitudes is almost always plural and literary, especially in 'the vicissitudes of life'. Fluctuations is neutral and technical.",
+      "ety": "Latin vicissitudo, from vicis 'change, turn'.",
+      "tier": 3,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The memoir describes the ___ of a life that took her from poverty to fame and back again.",
+        "opts": [
+          "fluctuations",
+          "oscillations",
+          "variations"
+        ],
+        "why": "Vicissitudes are the ups and downs of fortune in a life. Fluctuations and oscillations are technical (prices, physics); variations are differences."
+      }
+    },
+    {
+      "word": "upheaval",
+      "ipa": "ʌpˈhiːvl",
+      "pos": "noun",
+      "def": "A violent or sudden change or disruption.",
+      "he": "טלטלה, מהפך",
+      "family": [
+        "upheave (v.)"
+      ],
+      "ex": [
+        "Moving to a new country is a major [upheaval] for children.",
+        "The 1960s were a period of social [upheaval].",
+        "The merger caused enormous [upheaval] in the company."
+      ],
+      "col": [
+        "social upheaval",
+        "political upheaval",
+        "emotional upheaval",
+        "major upheaval"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "disruption",
+        "turmoil",
+        "disturbance",
+        "cataclysm"
+      ],
+      "nuance": "Upheaval is change that turns things upside down — in society, a company or a life. Turmoil stresses confusion and disorder; cataclysm stresses disaster.",
+      "ety": "up + heave 'to lift'.",
+      "tier": 1,
+      "themes": [
+        "change",
+        "society"
+      ],
+      "prec": {
+        "s": "Divorce and moving house in the same year caused great emotional ___ for the children.",
+        "opts": [
+          "revolution",
+          "cataclysm",
+          "mutation"
+        ],
+        "why": "'Emotional upheaval' is a natural collocation for disruption in a life. Revolution is political; cataclysm is a huge disaster; mutation is genetic change."
+      }
+    },
+    {
+      "word": "entrenched",
+      "ipa": "ɪnˈtrentʃt",
+      "pos": "adjective",
+      "def": "(Of an attitude, habit or belief) so firmly established that it is difficult to change.",
+      "he": "מושרש, מבוצר",
+      "family": [
+        "entrench (v.)",
+        "entrenchment (n.)"
+      ],
+      "ex": [
+        "Racism is deeply [entrenched] in some institutions.",
+        "It's hard to change [entrenched] habits.",
+        "Both sides have [entrenched] themselves in their positions."
+      ],
+      "col": [
+        "deeply entrenched",
+        "entrenched attitudes",
+        "entrenched interests",
+        "become entrenched"
+      ],
+      "reg": "formal",
+      "syn": [
+        "ingrained",
+        "established",
+        "rooted",
+        "deep-seated"
+      ],
+      "nuance": "Entrenched suggests something defended against change, like soldiers in trenches. Ingrained suggests habits absorbed deep inside a person.",
+      "ety": "en- + trench, from Old French trenche 'ditch'.",
+      "tier": 1,
+      "themes": [
+        "change",
+        "society"
+      ],
+      "prec": {
+        "s": "Reformers struggled against the ___ interests of powerful families who controlled the industry.",
+        "opts": [
+          "innate",
+          "inherent",
+          "inveterate"
+        ],
+        "why": "'Entrenched interests' are firmly established and defended. Innate means inborn; inherent means built into the nature of something; inveterate describes a person with a long habit (an inveterate liar)."
+      }
+    },
+    {
+      "word": "immutable",
+      "ipa": "ɪˈmjuːtəbl",
+      "pos": "adjective",
+      "def": "Unchanging over time; unable to be changed.",
+      "he": "בלתי משתנה, קבוע",
+      "family": [
+        "immutability (n.)",
+        "mutable (adj.)"
+      ],
+      "ex": [
+        "The laws of physics are [immutable].",
+        "Traditions are not [immutable]; they evolve over time.",
+        "He treats his opinions as [immutable] facts."
+      ],
+      "col": [
+        "immutable laws",
+        "immutable truth",
+        "fixed and immutable"
+      ],
+      "reg": "formal",
+      "syn": [
+        "unchangeable",
+        "fixed",
+        "permanent",
+        "invariable"
+      ],
+      "nuance": "Immutable means fundamentally unable to change — laws, truths, principles. Permanent means lasting indefinitely, but could in principle be changed.",
+      "ety": "Latin immutabilis, from mutare 'to change'.",
+      "root": "mut",
+      "tier": 2,
+      "themes": [
+        "change",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Many believe human nature is ___, but history suggests our values shift dramatically.",
+        "opts": [
+          "immortal",
+          "imminent",
+          "impervious"
+        ],
+        "why": "Immutable means unchangeable. Immortal means never dying; imminent means about to happen; impervious means not affected by something."
+      }
+    },
+    {
+      "word": "volatile",
+      "ipa": "ˈvɑːlətl",
+      "pos": "adjective",
+      "def": "Liable to change rapidly and unpredictably, especially for the worse; (of a person) quick to become angry.",
+      "he": "הפכפך, נפיץ, תנודתי",
+      "family": [
+        "volatility (n.)"
+      ],
+      "ex": [
+        "Oil prices have been extremely [volatile] this year.",
+        "The situation on the border remains [volatile].",
+        "He has a [volatile] temper."
+      ],
+      "col": [
+        "volatile market",
+        "volatile situation",
+        "volatile temper",
+        "highly volatile",
+        "market volatility"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "unstable",
+        "unpredictable",
+        "explosive",
+        "erratic"
+      ],
+      "nuance": "Volatile suggests sudden, explosive change — prices, situations, tempers. Erratic suggests irregular, unpredictable behaviour; capricious suggests whim.",
+      "ety": "Latin volatilis 'flying', from volare 'to fly'.",
+      "root": "vol",
+      "tier": 1,
+      "themes": [
+        "change",
+        "money"
+      ],
+      "prec": {
+        "s": "Cryptocurrency prices are notoriously ___, sometimes rising or falling 20% in a day.",
+        "opts": [
+          "capricious",
+          "fickle",
+          "ephemeral"
+        ],
+        "why": "Volatile is the standard financial word for rapid price swings. Capricious and fickle describe people's whims and loyalties; ephemeral means short-lived."
+      }
+    },
+    {
+      "word": "arbitrary",
+      "ipa": "ˈɑːrbɪtreri",
+      "pos": "adjective",
+      "def": "Based on random choice or personal whim rather than reason or a system.",
+      "he": "שרירותי",
+      "family": [
+        "arbitrarily (adv.)",
+        "arbitrariness (n.)"
+      ],
+      "ex": [
+        "The deadline seems completely [arbitrary].",
+        "Citizens were protected from [arbitrary] arrest.",
+        "The order of the list is [arbitrary]."
+      ],
+      "col": [
+        "arbitrary decision",
+        "arbitrary arrest",
+        "somewhat arbitrary",
+        "arbitrarily chosen"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "random",
+        "capricious",
+        "unreasoned",
+        "discretionary"
+      ],
+      "nuance": "Arbitrary means without principled reasons — it can be neutral (an arbitrary starting point) or critical of unfair power (arbitrary arrest). Random means by chance.",
+      "ety": "Latin arbitrarius, from arbiter 'judge' — originally 'at the judge's discretion'.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "society"
+      ],
+      "prec": {
+        "s": "Human rights law protects citizens against ___ detention by the state.",
+        "opts": [
+          "random",
+          "haphazard",
+          "erratic"
+        ],
+        "why": "'Arbitrary detention/arrest' is the legal phrase: detention without lawful reason. Random means by chance; haphazard means disorganised; erratic means irregular."
+      }
+    },
+    {
+      "word": "commensurate",
+      "ipa": "kəˈmenʃərət",
+      "pos": "adjective",
+      "def": "Corresponding in size, amount or degree; in proportion.",
+      "he": "תואם, הולם, ביחס ל־",
+      "family": [
+        "commensurately (adv.)",
+        "incommensurate (adj.)"
+      ],
+      "ex": [
+        "Salary will be [commensurate] with experience.",
+        "The punishment should be [commensurate] with the crime.",
+        "She wants a role [commensurate] with her abilities."
+      ],
+      "col": [
+        "commensurate with",
+        "salary commensurate with experience",
+        "commensurate increase"
+      ],
+      "reg": "formal",
+      "syn": [
+        "proportionate",
+        "corresponding",
+        "equivalent",
+        "appropriate"
+      ],
+      "nuance": "Commensurate (with) is formal, typical in job ads and legal writing. Proportionate (to) is the common equivalent.",
+      "ety": "Late Latin commensuratus, from mensurare 'to measure'.",
+      "tier": 2,
+      "themes": [
+        "degree",
+        "work"
+      ],
+      "prec": {
+        "s": "Salary: ___ with experience. Please send your CV by Friday.",
+        "opts": [
+          "comparable",
+          "concurrent",
+          "consistent"
+        ],
+        "why": "'Commensurate with experience' is the standard phrase in job ads: in proportion to. Comparable means similar; concurrent means happening at the same time; consistent means unchanging or in agreement."
+      }
+    },
+    {
+      "word": "disparate",
+      "ipa": "ˈdɪspərət",
+      "pos": "adjective",
+      "def": "Essentially different in kind; not able to be compared.",
+      "he": "שונה, נבדל, משולל קשר",
+      "family": [
+        "disparity (n.)",
+        "disparately (adv.)"
+      ],
+      "ex": [
+        "The festival brings together [disparate] groups of people.",
+        "The museum managed to connect such [disparate] subjects as music and maths.",
+        "There is a huge [disparity] between rich and poor."
+      ],
+      "col": [
+        "disparate groups",
+        "disparate elements",
+        "wage disparity",
+        "disparity between"
+      ],
+      "reg": "formal",
+      "syn": [
+        "different",
+        "dissimilar",
+        "diverse",
+        "contrasting"
+      ],
+      "nuance": "Disparate stresses deep difference, often with the idea of things being brought together. Diverse is positive and inclusive. Disparity (gap, inequality) is very common.",
+      "ety": "Latin disparare 'to separate', from dis- + parare 'to prepare'.",
+      "tier": 2,
+      "themes": [
+        "degree",
+        "thinking"
+      ],
+      "prec": {
+        "s": "The novel weaves together ___ stories — a Victorian sailor, a Korean clone, a 1970s journalist — into one design.",
+        "opts": [
+          "desperate",
+          "disparaging",
+          "discrete"
+        ],
+        "why": "Disparate means fundamentally different in kind. Desperate means hopeless; disparaging means belittling; discrete means separate and distinct (individual units), without the stress on difference."
+      }
+    },
+    {
+      "word": "negligible",
+      "ipa": "ˈneɡlɪdʒəbl",
+      "pos": "adjective",
+      "def": "So small or unimportant that it is not worth considering.",
+      "he": "זניח",
+      "family": [
+        "negligibly (adv.)"
+      ],
+      "ex": [
+        "The risk to the public is [negligible].",
+        "The cost of the upgrade is [negligible] compared with the benefits.",
+        "The difference between the two products is [negligible]."
+      ],
+      "col": [
+        "negligible risk",
+        "negligible effect",
+        "negligible amount",
+        "virtually negligible"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "insignificant",
+        "trivial",
+        "minimal",
+        "trifling"
+      ],
+      "nuance": "Negligible means small enough to ignore. Don't confuse with negligent (careless in one's duty).",
+      "ety": "Latin neglegere 'to disregard'.",
+      "tier": 1,
+      "themes": [
+        "degree"
+      ],
+      "prec": {
+        "s": "The extra weight of the camera is ___; you won't notice it in your bag.",
+        "opts": [
+          "negligent",
+          "neglected",
+          "marginal"
+        ],
+        "why": "Negligible means so small it can be ignored. Negligent means careless; neglected means not cared for; marginal means small but still present or relevant (a marginal improvement)."
+      }
+    },
+    {
+      "word": "paramount",
+      "ipa": "ˈpærəmaʊnt",
+      "pos": "adjective",
+      "def": "More important than anything else; supreme.",
+      "he": "עליון, בעל חשיבות עליונה",
+      "family": [],
+      "ex": [
+        "Safety is [paramount] in everything we do.",
+        "The needs of the child are [paramount].",
+        "Trust is of [paramount] importance in a marriage."
+      ],
+      "col": [
+        "of paramount importance",
+        "safety is paramount",
+        "paramount concern"
+      ],
+      "reg": "formal",
+      "syn": [
+        "supreme",
+        "foremost",
+        "overriding",
+        "chief"
+      ],
+      "nuance": "Paramount means the most important above all others. Tantamount (to) means 'equivalent to' — a different word often confused with it.",
+      "ety": "Anglo-Norman paramont 'above', from par 'by' + amont 'above'.",
+      "tier": 1,
+      "themes": [
+        "degree",
+        "quality"
+      ],
+      "prec": {
+        "s": "When designing a children's car seat, safety is ___; everything else comes second.",
+        "opts": [
+          "tantamount",
+          "prominent",
+          "predominant"
+        ],
+        "why": "Paramount means more important than anything else. Tantamount means equivalent to; prominent means noticeable; predominant means most common or strongest in number."
+      }
+    },
+    {
+      "word": "pervasive",
+      "ipa": "pərˈveɪsɪv",
+      "pos": "adjective",
+      "def": "Spreading widely through an area, group or thing, and affecting every part of it.",
+      "he": "חודר לכל מקום, נפוץ",
+      "family": [
+        "pervade (v.)",
+        "pervasiveness (n.)"
+      ],
+      "ex": [
+        "There was a [pervasive] sense of fear in the city.",
+        "The influence of social media is [pervasive].",
+        "The smell of smoke [pervaded] the house."
+      ],
+      "col": [
+        "pervasive influence",
+        "pervasive sense of",
+        "pervasive culture of",
+        "all-pervasive"
+      ],
+      "reg": "formal",
+      "syn": [
+        "widespread",
+        "prevalent",
+        "ubiquitous",
+        "rife"
+      ],
+      "nuance": "Pervasive means spreading through and affecting every part — often an atmosphere, influence or problem. Ubiquitous is about visible things being everywhere.",
+      "ety": "Latin pervadere 'to go through'.",
+      "tier": 1,
+      "themes": [
+        "degree",
+        "society"
+      ],
+      "prec": {
+        "s": "Employees described a ___ culture of fear in which nobody dared to question the boss.",
+        "opts": [
+          "ubiquitous",
+          "invasive",
+          "prolific"
+        ],
+        "why": "Pervasive suits an atmosphere or culture that spreads through everything. Ubiquitous is for visible objects found everywhere; invasive means intruding (invasive species, invasive surgery); prolific means producing a lot."
+      }
+    },
+    {
+      "word": "rife",
+      "ipa": "raɪf",
+      "pos": "adjective",
+      "def": "(Of something bad) widespread; (rife with) full of something bad.",
+      "he": "נפוץ (לרעה), שורץ",
+      "family": [],
+      "ex": [
+        "Corruption is [rife] in the construction industry.",
+        "The report is [rife] with errors.",
+        "Rumours were [rife] that the director would resign."
+      ],
+      "col": [
+        "rife with",
+        "corruption is rife",
+        "speculation is rife",
+        "rumours are rife"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "widespread",
+        "rampant",
+        "endemic",
+        "teeming"
+      ],
+      "nuance": "Rife is used after a verb ('is rife'), not before a noun. It describes negative things. Rampant adds the sense of spreading out of control.",
+      "ety": "Old English rīfe 'abundant', probably from Old Norse rífr 'acceptable'.",
+      "tier": 2,
+      "themes": [
+        "degree"
+      ],
+      "prec": {
+        "s": "The essay is ___ with spelling mistakes; please proofread it before resubmitting.",
+        "opts": [
+          "teeming",
+          "abundant",
+          "replete"
+        ],
+        "why": "'Rife with' is used for unwelcome things like errors or corruption. Teeming suits living things; abundant is positive and doesn't take 'with' here; replete means well-filled, often positively."
+      }
+    },
+    {
+      "word": "myriad",
+      "ipa": "ˈmɪriəd",
+      "pos": "adjective / noun",
+      "def": "A countless or extremely great number; countless.",
+      "he": "אינספור, רבבות",
+      "family": [],
+      "ex": [
+        "The city offers [myriad] opportunities for young people.",
+        "There are a [myriad] of reasons to learn a language.",
+        "[Myriad] stars filled the desert sky."
+      ],
+      "col": [
+        "myriad ways",
+        "a myriad of",
+        "myriad possibilities",
+        "myriad forms"
+      ],
+      "reg": "literary",
+      "syn": [
+        "countless",
+        "innumerable",
+        "multitudinous",
+        "numerous"
+      ],
+      "nuance": "Myriad can be an adjective ('myriad reasons') or a noun ('a myriad of reasons'); both are accepted today, though some purists prefer the adjective. It sounds more elegant than 'lots of'.",
+      "ety": "Greek murias 'ten thousand'.",
+      "tier": 2,
+      "themes": [
+        "degree"
+      ],
+      "prec": {
+        "s": "The app can be customised in ___ ways to suit almost any workflow.",
+        "opts": [
+          "plethora",
+          "multitude",
+          "abundance"
+        ],
+        "why": "Myriad works as an adjective before a plural noun ('myriad ways'). Plethora, multitude and abundance are nouns that need 'a … of'."
+      }
+    },
+    {
+      "word": "plethora",
+      "ipa": "ˈpleθərə",
+      "pos": "noun",
+      "def": "A large or excessive amount of something.",
+      "he": "שפע, עודף",
+      "family": [],
+      "ex": [
+        "There's a [plethora] of streaming services to choose from.",
+        "The report contains a [plethora] of statistics but little analysis.",
+        "A [plethora] of rules makes the system hard to navigate."
+      ],
+      "col": [
+        "a plethora of",
+        "a bewildering plethora",
+        "a plethora of options"
+      ],
+      "reg": "formal",
+      "syn": [
+        "excess",
+        "abundance",
+        "glut",
+        "surfeit"
+      ],
+      "nuance": "Plethora originally meant 'too much' and often still suggests an overwhelming amount. Abundance is positive; glut and surfeit are clearly excessive.",
+      "ety": "Greek plēthōrē 'fullness', from plēthein 'to be full'.",
+      "tier": 1,
+      "themes": [
+        "degree"
+      ],
+      "prec": {
+        "s": "Faced with a ___ of almost identical shampoo brands, I just picked the cheapest.",
+        "opts": [
+          "dearth",
+          "modicum",
+          "myriad"
+        ],
+        "why": "A plethora is an overwhelming amount. Dearth is a shortage (the opposite); a modicum is a small amount; myriad also means many, but the image of being overwhelmed by too much choice is plethora's."
+      }
+    },
+    {
+      "word": "dearth",
+      "ipa": "dɜːrθ",
+      "pos": "noun",
+      "def": "A scarcity or lack of something.",
+      "he": "מחסור",
+      "family": [],
+      "ex": [
+        "There is a [dearth] of affordable housing in the capital.",
+        "The [dearth] of evidence made the case hard to prosecute.",
+        "There's no [dearth] of opinions on the subject."
+      ],
+      "col": [
+        "a dearth of",
+        "no dearth of",
+        "relative dearth"
+      ],
+      "reg": "formal",
+      "syn": [
+        "shortage",
+        "scarcity",
+        "lack",
+        "paucity"
+      ],
+      "nuance": "Dearth is common in formal writing ('a dearth of talent'). Paucity is more formal still. 'There's no dearth of…' is an ironic way to say 'there's plenty of'.",
+      "ety": "Middle English derthe, from dear 'expensive' — scarcity made things dear.",
+      "tier": 2,
+      "themes": [
+        "degree"
+      ],
+      "prec": {
+        "s": "The town's young people leave because of a ___ of jobs and entertainment.",
+        "opts": [
+          "plethora",
+          "deficit",
+          "deprivation"
+        ],
+        "why": "A dearth is a lack of something desirable. Plethora means too much; a deficit is a shortfall in money or a measurable amount; deprivation is a state of hardship."
+      }
+    },
+    {
+      "word": "paucity",
+      "ipa": "ˈpɔːsəti",
+      "pos": "noun",
+      "def": "The presence of something in only small or insufficient quantities.",
+      "he": "מיעוט, דלות",
+      "family": [],
+      "ex": [
+        "The [paucity] of data makes firm conclusions impossible.",
+        "Critics noted the [paucity] of women in senior roles.",
+        "Given the [paucity] of evidence, the case was dropped."
+      ],
+      "col": [
+        "a paucity of data",
+        "a paucity of evidence",
+        "a paucity of information"
+      ],
+      "reg": "academic",
+      "syn": [
+        "scarcity",
+        "dearth",
+        "shortage",
+        "insufficiency"
+      ],
+      "nuance": "Paucity is academic and formal, often used about evidence, data or information. Dearth is slightly more common and general.",
+      "ety": "Latin paucitas, from paucus 'few'.",
+      "tier": 3,
+      "themes": [
+        "degree",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "The authors acknowledge a ___ of long-term data, since the drug is only three years old.",
+        "opts": [
+          "plethora",
+          "parity",
+          "potency"
+        ],
+        "why": "Paucity means scarcity, fitting a drug with little long-term data. Plethora means excess; parity means equality; potency means strength."
+      }
+    },
+    {
+      "word": "copious",
+      "ipa": "ˈkoʊpiəs",
+      "pos": "adjective",
+      "def": "Abundant in supply or quantity.",
+      "he": "שופע, רב",
+      "family": [
+        "copiously (adv.)"
+      ],
+      "ex": [
+        "She took [copious] notes during the lecture.",
+        "The meal was washed down with [copious] amounts of wine.",
+        "He was sweating [copiously] in the heat."
+      ],
+      "col": [
+        "copious notes",
+        "copious amounts of",
+        "copious quantities",
+        "bleed copiously"
+      ],
+      "reg": "formal",
+      "syn": [
+        "abundant",
+        "plentiful",
+        "ample",
+        "profuse"
+      ],
+      "nuance": "Copious describes a large amount being produced or given, often of liquids or notes. Ample means enough or more than enough; profuse is used for apologies, bleeding and thanks.",
+      "ety": "Latin copiosus, from copia 'plenty' (as in 'cornucopia').",
+      "tier": 2,
+      "themes": [
+        "degree"
+      ],
+      "prec": {
+        "s": "During the lecture she took ___ notes, filling twenty pages.",
+        "opts": [
+          "profuse",
+          "ample",
+          "lavish"
+        ],
+        "why": "'Copious notes' is a fixed collocation. Profuse is used for apologies, sweating or bleeding; ample means sufficient; lavish suggests expensive generosity."
+      }
+    },
+    {
+      "word": "exorbitant",
+      "ipa": "ɪɡˈzɔːrbɪtənt",
+      "pos": "adjective",
+      "def": "(Of a price or amount) unreasonably high.",
+      "he": "מופרז, מופקע",
+      "family": [
+        "exorbitantly (adv.)"
+      ],
+      "ex": [
+        "Hotels charge [exorbitant] prices during the festival.",
+        "The bank's fees are [exorbitant].",
+        "Rents in the city centre are [exorbitantly] high."
+      ],
+      "col": [
+        "exorbitant prices",
+        "exorbitant fees",
+        "exorbitant rent",
+        "exorbitant cost"
+      ],
+      "reg": "formal",
+      "syn": [
+        "extortionate",
+        "excessive",
+        "outrageous",
+        "steep"
+      ],
+      "nuance": "Exorbitant is the standard formal word for unreasonably high prices. Extortionate is stronger, implying exploitation; steep is informal.",
+      "ety": "Latin exorbitare 'to go off the track', from orbita 'wheel track'.",
+      "tier": 1,
+      "themes": [
+        "money",
+        "degree"
+      ],
+      "prec": {
+        "s": "Airport cafés charge ___ prices because travellers have no alternative.",
+        "opts": [
+          "exuberant",
+          "extravagant",
+          "exhaustive"
+        ],
+        "why": "Exorbitant describes unreasonably high prices. Exuberant means full of energy; extravagant describes spending (or spenders) beyond reason, not the price itself; exhaustive means complete."
+      }
+    },
+    {
+      "word": "meager",
+      "ipa": "ˈmiːɡər",
+      "pos": "adjective",
+      "def": "Lacking in quantity or quality; too small. (UK spelling: meagre)",
+      "he": "דל, זעום",
+      "family": [
+        "meagerly (adv.)",
+        "meagerness (n.)"
+      ],
+      "ex": [
+        "They survived on a [meager] pension.",
+        "The results of the campaign were [meager].",
+        "Workers were paid a [meager] wage for long hours."
+      ],
+      "col": [
+        "meager income",
+        "meager wage",
+        "meager resources",
+        "meager rations"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "paltry",
+        "scanty",
+        "measly",
+        "insufficient"
+      ],
+      "nuance": "Meager means disappointingly small. Paltry adds contempt (a paltry sum); measly is informal; scanty is used for clothing, evidence and information.",
+      "ety": "Old French maigre 'thin', from Latin macer.",
+      "tier": 1,
+      "themes": [
+        "degree",
+        "money"
+      ],
+      "prec": {
+        "s": "After forty years of work, she now lives on a ___ pension of a few hundred dollars a month.",
+        "opts": [
+          "frugal",
+          "scanty",
+          "sparse"
+        ],
+        "why": "A meager pension is too small. Frugal describes careful people or simple meals; scanty suits clothing or evidence; sparse means thinly scattered (sparse vegetation)."
+      }
+    },
+    {
+      "word": "superfluous",
+      "ipa": "suːˈpɜːrfluəs",
+      "pos": "adjective",
+      "def": "Unnecessary, especially through being more than enough.",
+      "he": "מיותר",
+      "family": [
+        "superfluity (n.)",
+        "superfluously (adv.)"
+      ],
+      "ex": [
+        "Cut any [superfluous] words from your essay.",
+        "With GPS, paper maps became almost [superfluous].",
+        "I felt [superfluous] at the meeting — nobody needed my input."
+      ],
+      "col": [
+        "superfluous detail",
+        "superfluous words",
+        "render superfluous",
+        "feel superfluous"
+      ],
+      "reg": "formal",
+      "syn": [
+        "unnecessary",
+        "redundant",
+        "surplus",
+        "excess"
+      ],
+      "nuance": "Superfluous means beyond what is needed. Redundant also means 'no longer needed' and, in British English, 'dismissed from a job'.",
+      "ety": "Latin superfluus 'overflowing', from super 'over' + fluere 'to flow'.",
+      "root": "flu",
+      "tier": 2,
+      "themes": [
+        "degree",
+        "quality"
+      ],
+      "prec": {
+        "s": "The editor removed every ___ adjective, leaving the prose lean and sharp.",
+        "opts": [
+          "gratuitous",
+          "redundant",
+          "excessive"
+        ],
+        "why": "Superfluous means beyond what's needed — ideal for unnecessary words. Gratuitous suggests unjustified, often offensive (gratuitous violence); redundant usually refers to repeating something already said; excessive describes amounts, not individual items."
+      }
+    },
+    {
+      "word": "gratuitous",
+      "ipa": "ɡrəˈtuːɪtəs",
+      "pos": "adjective",
+      "def": "Done without good reason; unjustified; (formal) free of charge.",
+      "he": "מיותר, ללא הצדקה; חינמי",
+      "family": [
+        "gratuitously (adv.)",
+        "gratuity (n.)"
+      ],
+      "ex": [
+        "Critics complained about the film's [gratuitous] violence.",
+        "His comment was a [gratuitous] insult.",
+        "The service was [gratuitous], provided by volunteers."
+      ],
+      "col": [
+        "gratuitous violence",
+        "gratuitous insult",
+        "gratuitously cruel"
+      ],
+      "reg": "formal",
+      "syn": [
+        "unwarranted",
+        "unnecessary",
+        "uncalled-for",
+        "unjustified"
+      ],
+      "nuance": "Gratuitous criticises something unnecessary and usually offensive (violence, insults, sex scenes). Superfluous is neutral — just more than needed. A gratuity is a tip.",
+      "ety": "Latin gratuitus 'freely given', from gratia 'favour'.",
+      "root": "grat",
+      "tier": 2,
+      "themes": [
+        "quality"
+      ],
+      "prec": {
+        "s": "The film was criticised for its ___ violence, which added nothing to the story.",
+        "opts": [
+          "superfluous",
+          "gratifying",
+          "graphic"
+        ],
+        "why": "'Gratuitous violence' is violence without justification. Superfluous is a neutral 'more than needed'; gratifying means pleasing; graphic means vividly detailed — which says nothing about justification."
+      }
+    },
+    {
+      "word": "egregious",
+      "ipa": "ɪˈɡriːdʒəs",
+      "pos": "adjective",
+      "def": "Outstandingly bad; shocking.",
+      "he": "מחפיר, בוטה, חמור",
+      "family": [
+        "egregiously (adv.)"
+      ],
+      "ex": [
+        "It was an [egregious] error that cost the company millions.",
+        "The judge called it an [egregious] abuse of power.",
+        "The most [egregious] example of waste was a bridge to nowhere."
+      ],
+      "col": [
+        "egregious error",
+        "egregious example",
+        "egregious abuse",
+        "egregious violation"
+      ],
+      "reg": "formal",
+      "syn": [
+        "flagrant",
+        "glaring",
+        "shocking",
+        "appalling"
+      ],
+      "nuance": "Egregious stresses how extremely bad something is. Flagrant stresses that it is done openly, without shame. Glaring stresses that it is obvious.",
+      "ety": "Latin egregius 'standing out from the flock', from grex 'flock' — originally positive.",
+      "root": "greg",
+      "tier": 2,
+      "themes": [
+        "quality"
+      ],
+      "prec": {
+        "s": "Spending public money on a private yacht was the most ___ example of waste in the report.",
+        "opts": [
+          "conspicuous",
+          "prominent",
+          "notable"
+        ],
+        "why": "Egregious means outstandingly bad — a strong condemnation. Conspicuous, prominent and notable describe standing out without saying it's bad."
+      }
+    },
+    {
+      "word": "flagrant",
+      "ipa": "ˈfleɪɡrənt",
+      "pos": "adjective",
+      "def": "(Of a wrong action) conspicuous and shameless.",
+      "he": "בוטה, גלוי",
+      "family": [
+        "flagrantly (adv.)"
+      ],
+      "ex": [
+        "The arrest was a [flagrant] violation of human rights.",
+        "He showed [flagrant] disregard for the rules.",
+        "The company [flagrantly] ignored safety regulations."
+      ],
+      "col": [
+        "flagrant violation",
+        "flagrant breach",
+        "flagrant disregard",
+        "flagrant abuse"
+      ],
+      "reg": "formal",
+      "syn": [
+        "blatant",
+        "glaring",
+        "brazen",
+        "egregious"
+      ],
+      "nuance": "Flagrant describes rule-breaking done openly. Blatant is very close but more everyday. Fragrant (smelling nice) is a common confusion.",
+      "ety": "Latin flagrare 'to blaze' — hence 'in flagrante delicto', caught in the act.",
+      "tier": 2,
+      "themes": [
+        "quality",
+        "conflict"
+      ],
+      "prec": {
+        "s": "Building the hotel on protected land was a ___ breach of planning law.",
+        "opts": [
+          "fragrant",
+          "flagging",
+          "fleeting"
+        ],
+        "why": "A flagrant breach is open and shameless. Fragrant means sweet-smelling; flagging means getting tired; fleeting means brief."
+      }
+    },
+    {
+      "word": "innocuous",
+      "ipa": "ɪˈnɑːkjuəs",
+      "pos": "adjective",
+      "def": "Not harmful or offensive.",
+      "he": "תמים, בלתי מזיק",
+      "family": [
+        "innocuously (adv.)"
+      ],
+      "ex": [
+        "It was an [innocuous] question, but she burst into tears.",
+        "Most spiders are completely [innocuous].",
+        "The message looked [innocuous] but contained a virus."
+      ],
+      "col": [
+        "innocuous question",
+        "innocuous remark",
+        "seemingly innocuous",
+        "perfectly innocuous"
+      ],
+      "reg": "formal",
+      "syn": [
+        "harmless",
+        "inoffensive",
+        "benign",
+        "safe"
+      ],
+      "nuance": "Innocuous is often used for things that seem harmless but turn out not to be ('a seemingly innocuous remark'). Benign suggests gentleness and kindness.",
+      "ety": "Latin innocuus, from in- 'not' + nocuus 'harmful'.",
+      "tier": 2,
+      "themes": [
+        "quality"
+      ],
+      "prec": {
+        "s": "It seemed like an ___ question about holiday plans, but it revealed that he'd been fired.",
+        "opts": [
+          "innocent",
+          "ingenuous",
+          "inane"
+        ],
+        "why": "Innocuous means harmless and inoffensive — the expected reading of the question. Innocent describes people; ingenuous means naive; inane means silly."
+      }
+    },
+    {
+      "word": "benign",
+      "ipa": "bɪˈnaɪn",
+      "pos": "adjective",
+      "def": "Gentle and kind; not harmful; (of a tumour) not cancerous.",
+      "he": "שפיר, נעים, לא מזיק",
+      "family": [
+        "benignly (adv.)",
+        "benignity (n.)"
+      ],
+      "ex": [
+        "Luckily, the tumour turned out to be [benign].",
+        "The climate here is [benign] all year round.",
+        "He's a [benign] presence in the office."
+      ],
+      "col": [
+        "benign tumour",
+        "benign neglect",
+        "benign climate",
+        "relatively benign"
+      ],
+      "reg": "formal",
+      "syn": [
+        "harmless",
+        "innocuous",
+        "kindly",
+        "mild"
+      ],
+      "nuance": "Benign means harmless or gently kind; in medicine it means not cancerous (opposite: malignant). Benevolent is about actively wishing good.",
+      "ety": "Latin benignus 'kind', from bene 'well'.",
+      "root": "bene",
+      "tier": 1,
+      "themes": [
+        "quality"
+      ],
+      "prec": {
+        "s": "The doctors were relieved to find the tumour was ___.",
+        "opts": [
+          "benevolent",
+          "innocuous",
+          "beneficial"
+        ],
+        "why": "Benign is the medical term for a non-cancerous growth. Benevolent describes kind people; innocuous describes harmless remarks or substances; beneficial means having good effects."
+      }
+    },
+    {
+      "word": "auspicious",
+      "ipa": "ɔːˈspɪʃəs",
+      "pos": "adjective",
+      "def": "Showing signs of future success; favourable.",
+      "he": "מבשר טובות",
+      "family": [
+        "inauspicious (adj.)",
+        "auspices (n.)"
+      ],
+      "ex": [
+        "Winning the first game was an [auspicious] start to the season.",
+        "They chose an [auspicious] date for the wedding.",
+        "The project got off to an [inauspicious] start when the server crashed."
+      ],
+      "col": [
+        "auspicious start",
+        "auspicious occasion",
+        "inauspicious beginning",
+        "under the auspices of"
+      ],
+      "reg": "formal",
+      "syn": [
+        "promising",
+        "favourable",
+        "propitious",
+        "encouraging"
+      ],
+      "nuance": "Auspicious suggests good omens; 'an inauspicious start' is a very common ironic phrase. 'Under the auspices of' means with the support of an organisation.",
+      "ety": "Latin auspex 'bird watcher' — Roman priests predicted the future from birds' flight.",
+      "root": "spec",
+      "tier": 2,
+      "themes": [
+        "quality",
+        "change"
+      ],
+      "prec": {
+        "s": "The couple chose an ___ date for the wedding, one that astrologers promised would bring good fortune.",
+        "opts": [
+          "ominous",
+          "portentous",
+          "opportune"
+        ],
+        "why": "Auspicious means promising success or good fortune — what the astrologers are looking for. Ominous signals that something bad is coming; portentous means solemnly significant (or pompous); opportune means convenient or well-timed, with no idea of luck or omens."
+      }
+    },
+    {
+      "word": "ominous",
+      "ipa": "ˈɑːmɪnəs",
+      "pos": "adjective",
+      "def": "Giving the impression that something bad is going to happen.",
+      "he": "מאיים, מבשר רעות",
+      "family": [
+        "ominously (adv.)",
+        "omen (n.)"
+      ],
+      "ex": [
+        "There was an [ominous] silence after the announcement.",
+        "[Ominous] black clouds gathered over the hills.",
+        "The engine made an [ominous] noise."
+      ],
+      "col": [
+        "ominous silence",
+        "ominous sign",
+        "ominous clouds",
+        "ominously quiet"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "threatening",
+        "menacing",
+        "foreboding",
+        "sinister"
+      ],
+      "nuance": "Ominous suggests a warning of trouble to come. Sinister suggests evil intention; menacing suggests a direct threat.",
+      "ety": "Latin omen 'sign, portent'.",
+      "tier": 1,
+      "themes": [
+        "quality",
+        "emotion"
+      ],
+      "prec": {
+        "s": "Just before the crash, the old engine made an ___ grinding noise.",
+        "opts": [
+          "auspicious",
+          "sinister",
+          "malevolent"
+        ],
+        "why": "Ominous means signalling that something bad is coming. Auspicious signals good things; sinister and malevolent suggest evil intent, which an engine can't have."
+      }
+    },
+    {
+      "word": "serendipity",
+      "ipa": "ˌserənˈdɪpəti",
+      "pos": "noun",
+      "def": "The occurrence of happy or useful events by chance.",
+      "he": "צירוף מקרים משמח, מזל מבורך",
+      "family": [
+        "serendipitous (adj.)",
+        "serendipitously (adv.)"
+      ],
+      "ex": [
+        "Penicillin was discovered by [serendipity].",
+        "By pure [serendipity], we sat next to each other on the plane.",
+        "Their meeting was entirely [serendipitous]."
+      ],
+      "col": [
+        "pure serendipity",
+        "a stroke of serendipity",
+        "serendipitous discovery"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "luck",
+        "chance",
+        "fortune",
+        "happy accident"
+      ],
+      "nuance": "Serendipity is finding something good while not looking for it. Luck or chance are general; coincidence is two things happening together by chance, not necessarily good.",
+      "ety": "Coined by Horace Walpole (1754) from 'The Three Princes of Serendip', heroes who kept making lucky discoveries.",
+      "tier": 1,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "The scientist was looking for a heart drug and discovered Viagra by ___.",
+        "opts": [
+          "coincidence",
+          "destiny",
+          "providence"
+        ],
+        "why": "Serendipity is the happy discovery of something you weren't looking for. Coincidence is two events happening together by chance; destiny and providence suggest fate or God's plan."
+      }
+    },
+    {
+      "word": "quintessential",
+      "ipa": "ˌkwɪntɪˈsenʃl",
+      "pos": "adjective",
+      "def": "Representing the most perfect or typical example of something.",
+      "he": "מובהק, טיפוסי ביותר",
+      "family": [
+        "quintessence (n.)",
+        "quintessentially (adv.)"
+      ],
+      "ex": [
+        "Fish and chips by the sea is the [quintessential] British experience.",
+        "She was the [quintessential] New Yorker: fast, funny and impatient.",
+        "The song is [quintessentially] 1980s."
+      ],
+      "col": [
+        "the quintessential example",
+        "quintessentially British",
+        "the quintessence of"
+      ],
+      "reg": "formal",
+      "syn": [
+        "archetypal",
+        "classic",
+        "typical",
+        "definitive"
+      ],
+      "nuance": "Quintessential means the most perfect example of a type. Archetypal is about the original model of a type; stereotypical is negative and oversimplified.",
+      "ety": "Medieval Latin quinta essentia 'fifth essence' — the pure substance of the heavens.",
+      "tier": 2,
+      "themes": [
+        "quality"
+      ],
+      "prec": {
+        "s": "Tea at four o'clock with scones and jam is the ___ English afternoon.",
+        "opts": [
+          "stereotypical",
+          "conventional",
+          "ordinary"
+        ],
+        "why": "Quintessential presents something as the perfect, admirable example. Stereotypical is a negative oversimplification; conventional means following customs; ordinary means unremarkable."
+      }
+    },
+    {
+      "word": "seminal",
+      "ipa": "ˈsemɪnl",
+      "pos": "adjective",
+      "def": "(Of a work, event or idea) strongly influencing later developments.",
+      "he": "פורץ דרך, מכונן",
+      "family": [],
+      "ex": [
+        "Darwin's 'On the Origin of Species' is a [seminal] work.",
+        "The band's first album was [seminal] for punk music.",
+        "She wrote a [seminal] paper on climate modelling."
+      ],
+      "col": [
+        "seminal work",
+        "seminal paper",
+        "seminal figure",
+        "seminal moment"
+      ],
+      "reg": "academic",
+      "syn": [
+        "influential",
+        "groundbreaking",
+        "formative",
+        "pioneering"
+      ],
+      "nuance": "Seminal means it planted the seeds of later work — typically books, papers, albums. Groundbreaking stresses novelty; formative stresses shaping during development.",
+      "ety": "Latin seminalis, from semen 'seed'.",
+      "tier": 2,
+      "themes": [
+        "quality",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Her 1985 paper was ___: almost every study in the field since then has built on it.",
+        "opts": [
+          "formative",
+          "notorious",
+          "prolific"
+        ],
+        "why": "Seminal means hugely influential on later work. Formative describes experiences that shape a person; notorious means famous for something bad; prolific means producing a lot."
+      }
+    },
+    {
+      "word": "consummate",
+      "ipa": "ˈkɑːnsəmət",
+      "pos": "adjective / verb",
+      "def": "(adj.) Showing great skill; complete or perfect. (v., /ˈkɑːnsəmeɪt/) To complete; to make a marriage complete by having sex.",
+      "he": "מושלם, מיומן ביותר",
+      "family": [
+        "consummation (n.)",
+        "consummately (adv.)"
+      ],
+      "ex": [
+        "She's a [consummate] professional who never misses a deadline.",
+        "He played the piece with [consummate] skill.",
+        "The deal was finally [consummated] in March."
+      ],
+      "col": [
+        "consummate professional",
+        "consummate skill",
+        "consummate ease",
+        "consummate the deal"
+      ],
+      "reg": "formal",
+      "syn": [
+        "accomplished",
+        "masterly",
+        "skilled",
+        "perfect"
+      ],
+      "nuance": "As an adjective, consummate praises complete mastery ('a consummate professional'). It can also be ironic: 'a consummate liar'. Note the different stress for the verb.",
+      "ety": "Latin consummare 'to bring to completion', from summa 'total'.",
+      "tier": 3,
+      "themes": [
+        "quality",
+        "work"
+      ],
+      "prec": {
+        "s": "A ___ professional, the actress delivered a flawless performance despite a broken toe.",
+        "opts": [
+          "consumed",
+          "consuming",
+          "conspicuous"
+        ],
+        "why": "A consummate professional is completely skilled. Consumed means used up or obsessed; consuming means taking up all your time; conspicuous means easily seen."
+      }
+    },
+    {
+      "word": "protracted",
+      "ipa": "proʊˈtræktɪd",
+      "pos": "adjective",
+      "def": "Lasting for a long time or longer than expected or usual.",
+      "he": "ממושך, מתמשך",
+      "family": [
+        "protract (v.)"
+      ],
+      "ex": [
+        "After [protracted] negotiations, the two sides reached a deal.",
+        "The war turned into a [protracted] conflict.",
+        "She faced a [protracted] legal battle to win custody."
+      ],
+      "col": [
+        "protracted negotiations",
+        "protracted conflict",
+        "protracted legal battle",
+        "protracted illness"
+      ],
+      "reg": "formal",
+      "syn": [
+        "prolonged",
+        "lengthy",
+        "long-drawn-out",
+        "extended"
+      ],
+      "nuance": "Protracted suggests something dragged out longer than wanted, often painful (negotiations, disputes). Prolonged is more neutral.",
+      "ety": "Latin protrahere 'to prolong', from trahere 'to drag'.",
+      "root": "tract",
+      "tier": 2,
+      "themes": [
+        "change",
+        "conflict"
+      ],
+      "prec": {
+        "s": "After ___ negotiations lasting eighteen months, the union finally accepted the offer.",
+        "opts": [
+          "chronic",
+          "perpetual",
+          "lingering"
+        ],
+        "why": "'Protracted negotiations' is the typical collocation: dragged out over a long time. Chronic is for illnesses and problems; perpetual means never-ending; lingering means slow to disappear."
+      }
+    },
+    {
+      "word": "abate",
+      "ipa": "əˈbeɪt",
+      "pos": "verb",
+      "def": "(Of something unpleasant or intense) to become less strong or widespread.",
+      "he": "לשכוך, להיחלש",
+      "family": [
+        "unabated (adj.)",
+        "abatement (n.)"
+      ],
+      "ex": [
+        "We waited for the storm to [abate] before setting off.",
+        "The fighting continued [unabated] through the night.",
+        "Public anger shows no sign of [abating]."
+      ],
+      "col": [
+        "the storm abated",
+        "show no sign of abating",
+        "continue unabated",
+        "noise abatement"
+      ],
+      "reg": "formal",
+      "syn": [
+        "subside",
+        "ease",
+        "lessen",
+        "die down"
+      ],
+      "nuance": "Abate is used for storms, pain, anger, crises — intense things losing force. Subside is very similar; dwindle is about numbers.",
+      "ety": "Old French abatre 'to beat down'.",
+      "tier": 2,
+      "themes": [
+        "change",
+        "degree"
+      ],
+      "prec": {
+        "s": "We sheltered in a café, waiting for the storm to ___ before walking home.",
+        "opts": [
+          "dwindle",
+          "wane",
+          "diminish"
+        ],
+        "why": "Storms, anger and pain abate: they lose their force. Dwindle is for numbers and supplies; wane is for influence, interest or the moon; diminish is neutral and usually needs a measurable quantity."
+      }
+    }
+  ]
+}

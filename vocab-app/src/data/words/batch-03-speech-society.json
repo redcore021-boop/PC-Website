@@ -1,0 +1,2212 @@
+{
+  "batch": "batch-03",
+  "title": "Speech, Rhetoric & Society",
+  "words": [
+    {
+      "word": "loquacious",
+      "ipa": "loʊˈkweɪʃəs",
+      "pos": "adjective",
+      "def": "Tending to talk a great deal.",
+      "he": "פטפטן, דברן",
+      "family": [
+        "loquacity (n.)",
+        "loquaciously (adv.)"
+      ],
+      "ex": [
+        "After a glass of wine, the normally shy professor became quite [loquacious].",
+        "Our [loquacious] tour guide hardly paused for breath.",
+        "She was [loquacious] on every subject except her own past."
+      ],
+      "col": [
+        "become loquacious",
+        "loquacious host",
+        "unusually loquacious"
+      ],
+      "reg": "formal",
+      "syn": [
+        "talkative",
+        "garrulous",
+        "voluble",
+        "chatty"
+      ],
+      "nuance": "Loquacious is fairly neutral, even affectionate: someone who enjoys talking. Garrulous is more negative (talking too much about trivial things, often rambling); voluble means speaking fluently and at length, often with energy.",
+      "ety": "Latin loquax 'talkative', from loqui 'to speak'.",
+      "root": "loqu",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "character"
+      ],
+      "prec": {
+        "s": "Usually quiet, the professor grew ___ after dinner, telling story after delightful story.",
+        "opts": [
+          "garrulous",
+          "verbose",
+          "eloquent"
+        ],
+        "why": "Loquacious means talkative, neutral to positive — fitting 'delightful'. Garrulous implies tiresome rambling; verbose criticises using too many words; eloquent is about persuasive, beautiful expression, not quantity."
+      }
+    },
+    {
+      "word": "eloquent",
+      "ipa": "ˈeləkwənt",
+      "pos": "adjective",
+      "def": "Fluent and persuasive in speaking or writing; clearly expressing a feeling.",
+      "he": "רהוט, מליצי",
+      "family": [
+        "eloquence (n.)",
+        "eloquently (adv.)"
+      ],
+      "ex": [
+        "She made an [eloquent] plea for the refugees.",
+        "His silence was more [eloquent] than any words.",
+        "The poem speaks [eloquently] of loss."
+      ],
+      "col": [
+        "eloquent speech",
+        "eloquent plea",
+        "eloquent testimony to",
+        "speak eloquently"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "articulate",
+        "persuasive",
+        "expressive",
+        "silver-tongued"
+      ],
+      "nuance": "Eloquent is about beautiful, moving expression. Articulate is about clarity — expressing ideas well. 'Eloquent testimony to' means 'clear evidence of'.",
+      "ety": "Latin eloqui 'to speak out', from loqui 'to speak'.",
+      "root": "loqu",
+      "tier": 1,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "The empty classrooms were ___ testimony to the impact of the war on children.",
+        "opts": [
+          "articulate",
+          "fluent",
+          "verbal"
+        ],
+        "why": "'Eloquent testimony to' is a fixed phrase: powerfully expressive evidence. Articulate and fluent describe people speaking; verbal means expressed in words."
+      }
+    },
+    {
+      "word": "laconic",
+      "ipa": "ləˈkɑːnɪk",
+      "pos": "adjective",
+      "def": "Using very few words.",
+      "he": "לקוני, תמציתי",
+      "family": [
+        "laconically (adv.)"
+      ],
+      "ex": [
+        "His [laconic] reply — 'No.' — ended the discussion.",
+        "The [laconic] cowboy is a classic figure of Western films.",
+        "She has a dry, [laconic] sense of humour."
+      ],
+      "col": [
+        "laconic reply",
+        "laconic humour",
+        "laconic style",
+        "reply laconically"
+      ],
+      "reg": "formal",
+      "syn": [
+        "terse",
+        "concise",
+        "succinct",
+        "taciturn"
+      ],
+      "nuance": "Laconic often carries a sense of cool, dry wit. Terse can be rude or curt; succinct is praise for efficient expression; taciturn describes someone who rarely speaks at all.",
+      "ety": "Greek Lakōnikos 'of Laconia' — the Spartans were famous for their brief speech.",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "character"
+      ],
+      "prec": {
+        "s": "Asked how the expedition had gone, the explorer gave a ___ answer: 'Cold.'",
+        "opts": [
+          "succinct",
+          "terse",
+          "curt"
+        ],
+        "why": "Laconic fits a dryly witty, extremely short reply. Succinct is praise for a clear summary; terse and curt suggest irritation or rudeness."
+      }
+    },
+    {
+      "word": "verbose",
+      "ipa": "vɜːrˈboʊs",
+      "pos": "adjective",
+      "def": "Using more words than are needed.",
+      "he": "מילולי מדי, ארכני",
+      "family": [
+        "verbosity (n.)",
+        "verbosely (adv.)"
+      ],
+      "ex": [
+        "The report is [verbose] and repetitive; cut it by half.",
+        "His [verbose] emails take ten minutes to read.",
+        "Legal documents are notorious for their [verbosity]."
+      ],
+      "col": [
+        "verbose style",
+        "overly verbose",
+        "verbose explanation"
+      ],
+      "reg": "formal",
+      "syn": [
+        "wordy",
+        "long-winded",
+        "prolix",
+        "rambling"
+      ],
+      "nuance": "Verbose criticises writing or speech that uses too many words. Long-winded stresses boring length; prolix is a rare literary synonym.",
+      "ety": "Latin verbosus, from verbum 'word'.",
+      "tier": 1,
+      "themes": [
+        "speech",
+        "quality"
+      ],
+      "prec": {
+        "s": "The editor told him his essay was ___ and that every paragraph could lose a third of its words.",
+        "opts": [
+          "loquacious",
+          "garrulous",
+          "eloquent"
+        ],
+        "why": "Verbose describes text with too many words. Loquacious and garrulous describe talkative people, not texts; eloquent is praise."
+      }
+    },
+    {
+      "word": "circumlocution",
+      "ipa": "ˌsɜːrkəmloʊˈkjuːʃn",
+      "pos": "noun",
+      "def": "Using many words to say something that could be said simply, especially to be vague or evasive.",
+      "he": "דיבור עקיף, גלגול מילים",
+      "family": [
+        "circumlocutory (adj.)"
+      ],
+      "ex": [
+        "'Negative patient outcome' is a hospital [circumlocution] for death.",
+        "After ten minutes of [circumlocution], he finally admitted he'd lost the money.",
+        "Politicians are masters of [circumlocution]."
+      ],
+      "col": [
+        "masters of circumlocution",
+        "without circumlocution",
+        "bureaucratic circumlocution"
+      ],
+      "reg": "formal",
+      "syn": [
+        "evasiveness",
+        "periphrasis",
+        "beating around the bush",
+        "euphemism"
+      ],
+      "nuance": "Circumlocution is talking around a subject. A euphemism is one mild word replacing a harsh one; circumlocution is a longer roundabout way of speaking.",
+      "ety": "Latin circum 'around' + locutio 'speaking'.",
+      "root": "loqu",
+      "tier": 3,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "After a long ___ about 'restructuring' and 'optimising headcount', the manager admitted forty people would lose their jobs.",
+        "opts": [
+          "digression",
+          "tangent",
+          "diatribe"
+        ],
+        "why": "Circumlocution means talking around the point to avoid saying it plainly. A digression or tangent wanders to a different topic; a diatribe is an angry attack."
+      }
+    },
+    {
+      "word": "colloquial",
+      "ipa": "kəˈloʊkwiəl",
+      "pos": "adjective",
+      "def": "(Of language) used in ordinary, informal conversation rather than formal speech or writing.",
+      "he": "מדובר, עממי",
+      "family": [
+        "colloquialism (n.)",
+        "colloquially (adv.)"
+      ],
+      "ex": [
+        "'Gonna' is [colloquial]; avoid it in your essay.",
+        "The novel is written in a lively, [colloquial] style.",
+        "The plant is known [colloquially] as 'mother-in-law's tongue'."
+      ],
+      "col": [
+        "colloquial English",
+        "colloquial expression",
+        "colloquially known as",
+        "a colloquialism"
+      ],
+      "reg": "formal",
+      "syn": [
+        "informal",
+        "conversational",
+        "everyday",
+        "vernacular"
+      ],
+      "nuance": "Colloquial is the neutral linguistic term for conversational language. Slang is more informal and often group-specific; vernacular means the everyday language of a region or group.",
+      "ety": "Latin colloquium 'conversation', from loqui 'to speak'.",
+      "root": "loqu",
+      "tier": 1,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "The ant species is ___ known as the 'crazy ant' because of its erratic movement.",
+        "opts": [
+          "vulgarly",
+          "verbally",
+          "eloquently"
+        ],
+        "why": "'Colloquially known as' is the standard phrase for a popular, everyday name. Vulgarly means coarsely (or, in old usage, 'commonly'); verbally means in spoken words; eloquently means expressively."
+      }
+    },
+    {
+      "word": "hyperbole",
+      "ipa": "haɪˈpɜːrbəli",
+      "pos": "noun",
+      "def": "Deliberate exaggeration, not meant to be taken literally.",
+      "he": "הגזמה, הפרזה",
+      "family": [
+        "hyperbolic (adj.)"
+      ],
+      "ex": [
+        "Calling it 'the greatest film ever made' is pure [hyperbole].",
+        "Advertising is full of [hyperbole].",
+        "Without [hyperbole], this is the most important election in decades."
+      ],
+      "col": [
+        "pure hyperbole",
+        "without hyperbole",
+        "political hyperbole",
+        "hyperbolic claims"
+      ],
+      "reg": "formal",
+      "syn": [
+        "exaggeration",
+        "overstatement",
+        "embellishment"
+      ],
+      "nuance": "Hyperbole is exaggeration used deliberately for effect, a rhetorical device. Exaggeration is the general term; understatement is the opposite device.",
+      "ety": "Greek huperbolē 'excess', from huper 'above' + ballein 'to throw'.",
+      "tier": 1,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "'I've told you a million times' is a classic example of ___.",
+        "opts": [
+          "euphemism",
+          "irony",
+          "metaphor"
+        ],
+        "why": "Hyperbole is deliberate exaggeration for effect. A euphemism softens something unpleasant; irony says the opposite of what is meant; a metaphor describes one thing as another."
+      }
+    },
+    {
+      "word": "euphemism",
+      "ipa": "ˈjuːfəmɪzəm",
+      "pos": "noun",
+      "def": "A mild or indirect word used instead of one that is harsh, blunt or embarrassing.",
+      "he": "לשון נקייה",
+      "family": [
+        "euphemistic (adj.)",
+        "euphemistically (adv.)"
+      ],
+      "ex": [
+        "'Passed away' is a [euphemism] for 'died'.",
+        "'Collateral damage' is a chilling military [euphemism].",
+        "The company used the [euphemism] 'rightsizing' to describe mass layoffs."
+      ],
+      "col": [
+        "a euphemism for",
+        "corporate euphemism",
+        "euphemistically called",
+        "a polite euphemism"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "understatement",
+        "polite term",
+        "softening"
+      ],
+      "nuance": "A euphemism softens. A dysphemism does the opposite (a harsh term for something neutral). Circumlocution is a longer roundabout expression.",
+      "ety": "Greek euphēmismos, from eu 'well' + phēmē 'speaking'.",
+      "tier": 1,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "'Between jobs' is a polite ___ for being unemployed.",
+        "opts": [
+          "hyperbole",
+          "cliché",
+          "metaphor"
+        ],
+        "why": "A euphemism replaces a blunt term with a gentle one. Hyperbole exaggerates; a cliché is an overused phrase; a metaphor is figurative comparison."
+      }
+    },
+    {
+      "word": "platitude",
+      "ipa": "ˈplætɪtuːd",
+      "pos": "noun",
+      "def": "A remark that has been used too often to be interesting, especially one presented as wise.",
+      "he": "קלישאה, אמירה נדושה",
+      "family": [
+        "platitudinous (adj.)"
+      ],
+      "ex": [
+        "His speech was full of [platitudes] about 'working together'.",
+        "Grieving families don't need [platitudes]; they need answers.",
+        "'Everything happens for a reason' is a [platitude] I can't stand."
+      ],
+      "col": [
+        "empty platitudes",
+        "mouth platitudes",
+        "comforting platitudes"
+      ],
+      "reg": "formal",
+      "syn": [
+        "cliché",
+        "truism",
+        "banality",
+        "commonplace"
+      ],
+      "nuance": "A platitude is a dull remark presented as if meaningful, often moral. A cliché is any overused phrase; a truism is a statement so obviously true it says nothing new.",
+      "ety": "French plat 'flat', on the model of 'certitude'.",
+      "tier": 2,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "Instead of concrete plans, the minister offered only empty ___ about 'building a brighter future'.",
+        "opts": [
+          "clichés",
+          "truisms",
+          "slogans"
+        ],
+        "why": "'Empty platitudes' is the classic phrase for hollow, moralising statements. Clichés are overused expressions in general; truisms are obviously true statements; slogans are short campaign phrases."
+      }
+    },
+    {
+      "word": "vociferous",
+      "ipa": "voʊˈsɪfərəs",
+      "pos": "adjective",
+      "def": "Expressing opinions or feelings loudly and forcefully.",
+      "he": "קולני, נמרץ במחאתו",
+      "family": [
+        "vociferously (adv.)"
+      ],
+      "ex": [
+        "She was a [vociferous] critic of the war.",
+        "The plan met [vociferous] opposition from residents.",
+        "Fans protested [vociferously] against the ticket prices."
+      ],
+      "col": [
+        "vociferous critic",
+        "vociferous opposition",
+        "vociferous supporter",
+        "protest vociferously"
+      ],
+      "reg": "formal",
+      "syn": [
+        "outspoken",
+        "vocal",
+        "strident",
+        "clamorous"
+      ],
+      "nuance": "Vociferous stresses loudness and insistence in public opinion. Vocal is milder (expressing opinions openly); strident adds harshness and an unpleasant tone.",
+      "ety": "Latin vociferari 'to shout', from vox 'voice' + ferre 'to carry'.",
+      "root": "voc",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "conflict"
+      ],
+      "prec": {
+        "s": "The new airport faced ___ opposition, with thousands of residents protesting outside city hall.",
+        "opts": [
+          "eloquent",
+          "vigilant",
+          "verbose"
+        ],
+        "why": "Vociferous opposition is loud and forceful. Eloquent is about fine expression; vigilant means watchful; verbose means wordy."
+      }
+    },
+    {
+      "word": "diatribe",
+      "ipa": "ˈdaɪətraɪb",
+      "pos": "noun",
+      "def": "A forceful and bitter verbal attack against someone or something.",
+      "he": "התקפה מילולית חריפה",
+      "family": [],
+      "ex": [
+        "He launched into a long [diatribe] against modern art.",
+        "Her column was less a review than a [diatribe].",
+        "The speech became a [diatribe] against the media."
+      ],
+      "col": [
+        "launch into a diatribe",
+        "a diatribe against",
+        "an angry diatribe"
+      ],
+      "reg": "formal",
+      "syn": [
+        "tirade",
+        "rant",
+        "harangue",
+        "invective"
+      ],
+      "nuance": "A diatribe is a bitter, sustained verbal or written attack. A tirade is a long angry speech, usually spoken; a rant is informal; invective is abusive language itself.",
+      "ety": "Greek diatribē 'spending time, discourse'.",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "conflict"
+      ],
+      "prec": {
+        "s": "Instead of reviewing the book, the critic wrote a 3,000-word ___ against the author's politics.",
+        "opts": [
+          "eulogy",
+          "critique",
+          "satire"
+        ],
+        "why": "A diatribe is a bitter, one-sided attack. A eulogy praises the dead; a critique is a balanced, reasoned assessment; satire mocks through humour."
+      }
+    },
+    {
+      "word": "innuendo",
+      "ipa": "ˌɪnjuˈendoʊ",
+      "pos": "noun",
+      "def": "An indirect remark that suggests something bad or sexual about someone.",
+      "he": "רמז עקיף (לרוב שלילי או מיני)",
+      "family": [],
+      "ex": [
+        "The campaign relied on rumour and [innuendo] rather than facts.",
+        "The comedy is full of sexual [innuendo].",
+        "She was tired of the [innuendo] about how she got her job."
+      ],
+      "col": [
+        "rumour and innuendo",
+        "sexual innuendo",
+        "full of innuendo"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "insinuation",
+        "implication",
+        "hint",
+        "allusion"
+      ],
+      "nuance": "Innuendo is always suggestive and usually unpleasant — damaging hints or sexual double meanings. An allusion is a neutral indirect reference.",
+      "ety": "Latin innuendo 'by nodding at', from innuere 'to nod towards'.",
+      "tier": 1,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "The tabloids never accused her directly; they relied on rumour and ___.",
+        "opts": [
+          "allusion",
+          "inference",
+          "anecdote"
+        ],
+        "why": "'Rumour and innuendo' is a set pairing for damaging indirect suggestion. An allusion is a neutral indirect reference; an inference is a conclusion; an anecdote is a short story."
+      }
+    },
+    {
+      "word": "insinuate",
+      "ipa": "ɪnˈsɪnjueɪt",
+      "pos": "verb",
+      "def": "To suggest something unpleasant indirectly; to work oneself gradually into a position.",
+      "he": "לרמוז (בעקיפין, לרעה)",
+      "family": [
+        "insinuation (n.)"
+      ],
+      "ex": [
+        "Are you [insinuating] that I lied?",
+        "The article [insinuated] that the mayor had taken bribes.",
+        "He gradually [insinuated] himself into the family's affairs."
+      ],
+      "col": [
+        "insinuate that",
+        "what are you insinuating?",
+        "insinuate oneself into"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "imply",
+        "hint",
+        "suggest",
+        "intimate"
+      ],
+      "nuance": "Insinuate implies a hidden, negative accusation. Imply is neutral; hint is light and can be positive.",
+      "ety": "Latin insinuare 'to bring in by winding', from sinus 'curve'.",
+      "tier": 1,
+      "themes": [
+        "speech",
+        "conflict"
+      ],
+      "prec": {
+        "s": "'Are you ___ that I stole the money?' she asked angrily.",
+        "opts": [
+          "inferring",
+          "alluding",
+          "intimating"
+        ],
+        "why": "Insinuate is the natural verb for an indirect accusation, and 'Are you insinuating…?' is a typical angry response. Infer means conclude (the listener infers, not the speaker); allude needs 'to'; intimate is a formal neutral hint."
+      }
+    },
+    {
+      "word": "allude",
+      "ipa": "əˈluːd",
+      "pos": "verb",
+      "def": "To mention something indirectly.",
+      "he": "לרמוז, להתייחס בעקיפין",
+      "family": [
+        "allusion (n.)",
+        "allusive (adj.)"
+      ],
+      "ex": [
+        "She [alluded] to problems in her marriage but gave no details.",
+        "The title [alludes] to a poem by Yeats.",
+        "His speech was full of [allusions] to the Bible."
+      ],
+      "col": [
+        "allude to",
+        "a passing allusion",
+        "literary allusion",
+        "an allusion to"
+      ],
+      "reg": "formal",
+      "syn": [
+        "refer",
+        "hint at",
+        "touch on",
+        "mention"
+      ],
+      "nuance": "Allude means refer indirectly — the listener must catch the reference. Refer is direct. Don't confuse allusion with illusion (false perception) or elusion.",
+      "ety": "Latin alludere 'to play with, refer to', from ludere 'to play'.",
+      "root": "lud",
+      "tier": 1,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "The film's title ___ to a famous Shakespeare sonnet, though few viewers notice.",
+        "opts": [
+          "refers",
+          "elicits",
+          "eludes"
+        ],
+        "why": "Allude means refer indirectly, which is why 'few viewers notice'. Refers is direct; elicit means draw out a response; elude means escape."
+      }
+    },
+    {
+      "word": "aver",
+      "ipa": "əˈvɜːr",
+      "pos": "verb",
+      "def": "To state or assert something firmly as a fact.",
+      "he": "לטעון בתוקף, להצהיר",
+      "family": [],
+      "ex": [
+        "The witness [averred] that she had never seen the defendant before.",
+        "He [avers] that the documents are genuine.",
+        "Experts [aver] that the painting is a forgery."
+      ],
+      "col": [
+        "aver that",
+        "solemnly aver"
+      ],
+      "reg": "formal",
+      "syn": [
+        "assert",
+        "declare",
+        "affirm",
+        "maintain"
+      ],
+      "nuance": "Aver is formal or legal, with a sense of confident declaration of truth. Assert is the common equivalent; allege implies a claim without proof.",
+      "ety": "Old French averer, from Latin verus 'true'.",
+      "root": "ver",
+      "tier": 3,
+      "themes": [
+        "speech",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "Under oath, the witness ___ that she had been at home all evening.",
+        "opts": [
+          "alleged",
+          "conjectured",
+          "implied"
+        ],
+        "why": "Aver means declare firmly as true — suitable for sworn testimony. Allege is to accuse without proof; conjecture is to guess; imply is to suggest indirectly."
+      }
+    },
+    {
+      "word": "concede",
+      "ipa": "kənˈsiːd",
+      "pos": "verb",
+      "def": "To admit that something is true, often reluctantly; to surrender or give up.",
+      "he": "להודות (בעל כורחו); לוותר",
+      "family": [
+        "concession (n.)",
+        "concessionary (adj.)"
+      ],
+      "ex": [
+        "I [concede] that the plan has some weaknesses.",
+        "The candidate [conceded] defeat late on election night.",
+        "The team [conceded] two goals in the first ten minutes."
+      ],
+      "col": [
+        "concede defeat",
+        "concede a point",
+        "reluctantly concede",
+        "concede a goal",
+        "make concessions"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "admit",
+        "acknowledge",
+        "grant",
+        "yield"
+      ],
+      "nuance": "Concede implies reluctance — admitting something against your own interest or argument. Acknowledge is more neutral. In sport, you concede goals or points.",
+      "ety": "Latin concedere 'to yield', from cedere 'to go'.",
+      "root": "cede",
+      "tier": 1,
+      "themes": [
+        "speech",
+        "conflict"
+      ],
+      "prec": {
+        "s": "With 90% of the votes counted, the senator finally ___ defeat.",
+        "opts": [
+          "confessed",
+          "surrendered",
+          "relented"
+        ],
+        "why": "'Concede defeat' is the fixed collocation in elections. Confess suggests guilt; surrender suggests war; relent means soften a harsh position and doesn't take an object."
+      }
+    },
+    {
+      "word": "admonish",
+      "ipa": "ədˈmɑːnɪʃ",
+      "pos": "verb",
+      "def": "To warn or reprimand someone firmly but mildly.",
+      "he": "לנזוף, להתרות",
+      "family": [
+        "admonition (n.)",
+        "admonishment (n.)",
+        "admonitory (adj.)"
+      ],
+      "ex": [
+        "The judge [admonished] the jury not to discuss the case.",
+        "She [admonished] her son for being rude to the waiter.",
+        "Despite repeated [admonitions], he kept arriving late."
+      ],
+      "col": [
+        "admonish someone for",
+        "gently admonish",
+        "be admonished",
+        "a stern admonition"
+      ],
+      "reg": "formal",
+      "syn": [
+        "reprimand",
+        "rebuke",
+        "scold",
+        "caution"
+      ],
+      "nuance": "Admonish is the gentlest of these: a serious warning or mild telling-off. Rebuke is sharper; castigate and lambaste are severe public criticism.",
+      "ety": "Latin admonere 'to remind, warn'.",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "conflict"
+      ],
+      "prec": {
+        "s": "The teacher gently ___ the boy for talking during the exam, then let him continue.",
+        "opts": [
+          "lambasted",
+          "castigated",
+          "berated"
+        ],
+        "why": "Admonish fits a mild, firm warning — 'gently' signals it. Lambaste, castigate and berate all mean harsh, angry criticism."
+      }
+    },
+    {
+      "word": "castigate",
+      "ipa": "ˈkæstɪɡeɪt",
+      "pos": "verb",
+      "def": "To criticise or reprimand someone severely.",
+      "he": "להוקיע, לבקר בחריפות",
+      "family": [
+        "castigation (n.)"
+      ],
+      "ex": [
+        "The report [castigates] the government for its slow response.",
+        "She was [castigated] in the press for her comments.",
+        "Critics [castigated] the film as racist."
+      ],
+      "col": [
+        "castigate someone for",
+        "be castigated",
+        "publicly castigate"
+      ],
+      "reg": "formal",
+      "syn": [
+        "censure",
+        "lambaste",
+        "rebuke",
+        "chastise"
+      ],
+      "nuance": "Castigate is formal, severe criticism, often in official reports or the press. Lambaste is more colourful; chastise can include physical punishment in older use.",
+      "ety": "Latin castigare 'to correct, punish', from castus 'pure'.",
+      "tier": 3,
+      "themes": [
+        "conflict",
+        "speech"
+      ],
+      "prec": {
+        "s": "The official inquiry ___ the hospital management for ignoring repeated safety warnings.",
+        "opts": [
+          "admonished",
+          "teased",
+          "nagged"
+        ],
+        "why": "Castigate means severely criticise, fitting an official inquiry's damning verdict. Admonish is too mild; tease and nag are informal and personal."
+      }
+    },
+    {
+      "word": "lambaste",
+      "ipa": "læmˈbeɪst",
+      "pos": "verb",
+      "def": "To criticise someone or something very harshly.",
+      "he": "לקטול, לתקוף בחריפות",
+      "family": [],
+      "ex": [
+        "Critics [lambasted] the film as boring and overlong.",
+        "The coach [lambasted] his players after the defeat.",
+        "The minister was [lambasted] on social media."
+      ],
+      "col": [
+        "lambaste someone for",
+        "be lambasted by critics",
+        "publicly lambaste"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "slam",
+        "castigate",
+        "pan",
+        "savage"
+      ],
+      "nuance": "Lambaste is vivid and common in journalism. Pan is used for reviews of films and shows; slam is headline-style informal.",
+      "ety": "Probably from lam 'to beat' + baste 'to thrash'.",
+      "tier": 2,
+      "themes": [
+        "conflict",
+        "speech"
+      ],
+      "prec": {
+        "s": "After the 5–0 defeat, the furious manager ___ his players in front of the cameras.",
+        "opts": [
+          "admonished",
+          "chided",
+          "discouraged"
+        ],
+        "why": "Lambaste means attack very harshly — suitable for a furious public outburst. Admonish and chide are mild; discourage means reduce someone's confidence or prevent."
+      }
+    },
+    {
+      "word": "disparage",
+      "ipa": "dɪˈspærɪdʒ",
+      "pos": "verb",
+      "def": "To speak about someone or something as having little value or importance.",
+      "he": "לזלזל, להמעיט בערך",
+      "family": [
+        "disparaging (adj.)",
+        "disparagement (n.)"
+      ],
+      "ex": [
+        "He never [disparaged] his rivals in public.",
+        "She made several [disparaging] remarks about her former employer.",
+        "Critics [disparaged] the novel as 'airport fiction'."
+      ],
+      "col": [
+        "disparaging remarks",
+        "disparaging comments",
+        "disparage rivals"
+      ],
+      "reg": "formal",
+      "syn": [
+        "belittle",
+        "denigrate",
+        "deprecate",
+        "run down"
+      ],
+      "nuance": "Disparage means to belittle — to make something seem unimportant or inferior. Denigrate is stronger, attacking reputation; belittle is the everyday word.",
+      "ety": "Old French desparagier 'to marry someone of unequal rank'.",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "conflict"
+      ],
+      "prec": {
+        "s": "His contract forbids him from making ___ remarks about the company for five years.",
+        "opts": [
+          "disparate",
+          "desperate",
+          "discerning"
+        ],
+        "why": "'Disparaging remarks' are belittling ones — a phrase common in legal agreements. Disparate means very different; desperate means hopeless; discerning means showing good judgement."
+      }
+    },
+    {
+      "word": "extol",
+      "ipa": "ɪkˈstoʊl",
+      "pos": "verb",
+      "def": "To praise someone or something enthusiastically.",
+      "he": "להלל, לשבח",
+      "family": [],
+      "ex": [
+        "Doctors [extol] the virtues of regular exercise.",
+        "The article [extols] the city as a paradise for food lovers.",
+        "She was [extolled] as a hero after the rescue."
+      ],
+      "col": [
+        "extol the virtues of",
+        "extol someone as",
+        "widely extolled"
+      ],
+      "reg": "formal",
+      "syn": [
+        "praise",
+        "laud",
+        "acclaim",
+        "celebrate"
+      ],
+      "nuance": "Extol is enthusiastic praise, often slightly overdone or promotional. 'Extol the virtues of' is a very common collocation, often ironic.",
+      "ety": "Latin extollere 'to raise up'.",
+      "tier": 2,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "Every wellness blogger seems to ___ the virtues of cold showers.",
+        "opts": [
+          "acclaim",
+          "applaud",
+          "endorse"
+        ],
+        "why": "'Extol the virtues of' is the fixed collocation. Acclaim is used for works and achievements; applaud for actions; endorse means officially support."
+      }
+    },
+    {
+      "word": "cajole",
+      "ipa": "kəˈdʒoʊl",
+      "pos": "verb",
+      "def": "To persuade someone to do something by flattery or gentle, persistent urging.",
+      "he": "לשדל, לפתות בחנופה",
+      "family": [
+        "cajolery (n.)"
+      ],
+      "ex": [
+        "She [cajoled] her brother into lending her his car.",
+        "The children [cajoled] their parents into buying a puppy.",
+        "Neither threats nor [cajolery] could change his mind."
+      ],
+      "col": [
+        "cajole someone into",
+        "coax and cajole",
+        "cajole someone to do"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "coax",
+        "wheedle",
+        "sweet-talk",
+        "persuade"
+      ],
+      "nuance": "Cajole uses flattery and persistence. Coax is gentle and patient (also with machines: coax an engine into life); wheedle is whiny and manipulative.",
+      "ety": "French cajoler 'to chatter like a jay, flatter'.",
+      "tier": 2,
+      "themes": [
+        "speech",
+        "relationships"
+      ],
+      "prec": {
+        "s": "With compliments and promises, she ___ her reluctant boss into giving her Friday off.",
+        "opts": [
+          "coerced",
+          "compelled",
+          "forced"
+        ],
+        "why": "Cajole means persuade through flattery and charm. Coerce, compel and force all involve pressure or threats."
+      }
+    },
+    {
+      "word": "placate",
+      "ipa": "ˈpleɪkeɪt",
+      "pos": "verb",
+      "def": "To make someone less angry or hostile, often by giving them something.",
+      "he": "לפייס, להרגיע",
+      "family": [
+        "placatory (adj.)",
+        "implacable (adj.)"
+      ],
+      "ex": [
+        "The airline offered free meals to [placate] angry passengers.",
+        "The concessions were designed to [placate] the unions.",
+        "Nothing could [placate] him once he'd lost his temper."
+      ],
+      "col": [
+        "placate critics",
+        "attempt to placate",
+        "an implacable enemy"
+      ],
+      "reg": "formal",
+      "syn": [
+        "appease",
+        "pacify",
+        "mollify",
+        "soothe"
+      ],
+      "nuance": "Placate means calming anger, often with a concession. Appease has a negative political sense (giving in to aggressors); mollify is softening anger, often with kind words.",
+      "ety": "Latin placare 'to calm, appease'.",
+      "root": "pac",
+      "tier": 2,
+      "themes": [
+        "relationships",
+        "conflict"
+      ],
+      "prec": {
+        "s": "To ___ furious customers, the airline offered everyone a free return flight.",
+        "opts": [
+          "appease",
+          "pacify",
+          "humour"
+        ],
+        "why": "Placate means reduce someone's anger, often with a concession. Appease has a negative ring (giving in to unreasonable demands, especially in politics); pacify is often used for crying babies or violent regions; humour means go along with someone's wishes."
+      }
+    },
+    {
+      "word": "mollify",
+      "ipa": "ˈmɑːlɪfaɪ",
+      "pos": "verb",
+      "def": "To calm someone's anger or anxiety; to soften.",
+      "he": "לרכך, להרגיע",
+      "family": [
+        "mollification (n.)"
+      ],
+      "ex": [
+        "Her apology did little to [mollify] the angry customer.",
+        "He seemed [mollified] by the promise of a refund.",
+        "The minister tried to [mollify] critics with a review of the policy."
+      ],
+      "col": [
+        "seem mollified",
+        "do little to mollify",
+        "mollify critics"
+      ],
+      "reg": "formal",
+      "syn": [
+        "placate",
+        "appease",
+        "soothe",
+        "conciliate"
+      ],
+      "nuance": "Mollify is often used in the passive ('he was not mollified'), emphasising the softening of feelings. It is close to placate, but less about concessions.",
+      "ety": "Latin mollificare, from mollis 'soft'.",
+      "tier": 3,
+      "themes": [
+        "relationships",
+        "emotion"
+      ],
+      "prec": {
+        "s": "She apologised twice, but he did not seem ___ and kept glaring at her.",
+        "opts": [
+          "mitigated",
+          "subsided",
+          "alleviated"
+        ],
+        "why": "Mollified (calmed, less angry) describes a person's feelings. Mitigated and alleviated apply to problems or pain, not people; subside is intransitive and describes things dying down."
+      }
+    },
+    {
+      "word": "exhort",
+      "ipa": "ɪɡˈzɔːrt",
+      "pos": "verb",
+      "def": "To strongly encourage or urge someone to do something.",
+      "he": "להמריץ, לדרבן, להפציר",
+      "family": [
+        "exhortation (n.)"
+      ],
+      "ex": [
+        "The coach [exhorted] his players to give everything in the second half.",
+        "The government [exhorted] citizens to save energy.",
+        "Despite constant [exhortations], few employees changed their habits."
+      ],
+      "col": [
+        "exhort someone to do",
+        "constant exhortation",
+        "exhort the faithful"
+      ],
+      "reg": "formal",
+      "syn": [
+        "urge",
+        "encourage",
+        "implore",
+        "spur"
+      ],
+      "nuance": "Exhort suggests a passionate, public call to action, often from a leader. Implore is begging; urge is the everyday word.",
+      "ety": "Latin exhortari, from hortari 'to encourage'.",
+      "tier": 3,
+      "themes": [
+        "speech",
+        "society"
+      ],
+      "prec": {
+        "s": "From the pulpit, the preacher ___ the congregation to give generously to the poor.",
+        "opts": [
+          "implored",
+          "beseeched",
+          "extorted"
+        ],
+        "why": "Exhort is a leader's strong public encouragement. Implore and beseech mean begging desperately; extort means obtaining money by threats."
+      }
+    },
+    {
+      "word": "interlocutor",
+      "ipa": "ˌɪntərˈlɑːkjətər",
+      "pos": "noun",
+      "def": "A person who takes part in a conversation or dialogue, especially an official one.",
+      "he": "בן שיח",
+      "family": [],
+      "ex": [
+        "She listens carefully to her [interlocutors] before replying.",
+        "Washington sees him as a reliable [interlocutor] with the regime.",
+        "In the dialogue, Socrates' [interlocutor] keeps changing his definition."
+      ],
+      "col": [
+        "a reliable interlocutor",
+        "a credible interlocutor",
+        "one's interlocutor"
+      ],
+      "reg": "formal",
+      "syn": [
+        "conversational partner",
+        "spokesperson",
+        "intermediary"
+      ],
+      "nuance": "Interlocutor is formal; in diplomacy it means someone you can deal with on behalf of a group. In everyday speech, say 'the person you're talking to'.",
+      "ety": "Latin interloqui 'to interrupt, speak between', from loqui 'to speak'.",
+      "root": "loqu",
+      "tier": 3,
+      "themes": [
+        "speech",
+        "society"
+      ],
+      "prec": {
+        "s": "Western diplomats regard the deputy foreign minister as a credible ___ with the government.",
+        "opts": [
+          "interloper",
+          "intercessor",
+          "interpreter"
+        ],
+        "why": "An interlocutor is a dialogue partner, especially in diplomacy. An interloper intrudes where not wanted; an intercessor pleads on someone's behalf; an interpreter translates."
+      }
+    },
+    {
+      "word": "galvanize",
+      "ipa": "ˈɡælvənaɪz",
+      "pos": "verb",
+      "def": "To shock or excite someone into taking action.",
+      "he": "לעורר לפעולה, להמריץ",
+      "family": [
+        "galvanization (n.)",
+        "galvanized (adj.)"
+      ],
+      "ex": [
+        "The disaster [galvanized] the community into action.",
+        "Her speech [galvanized] young voters.",
+        "The goal [galvanized] the team, who scored twice more."
+      ],
+      "col": [
+        "galvanize someone into action",
+        "galvanize support",
+        "galvanize public opinion"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "spur",
+        "rouse",
+        "stir",
+        "mobilize"
+      ],
+      "nuance": "Galvanize suggests a sudden jolt of energy — like an electric shock. Mobilize is about organising people for action; spur is general encouragement.",
+      "ety": "After Luigi Galvani, who made frogs' legs twitch with electricity.",
+      "tier": 1,
+      "themes": [
+        "society",
+        "change"
+      ],
+      "prec": {
+        "s": "The shocking images of the oil spill ___ thousands of people into joining the protest.",
+        "opts": [
+          "persuaded",
+          "induced",
+          "provoked"
+        ],
+        "why": "Galvanize into action describes a sudden surge of energy and motivation. Persuade is reasoned; induce is formal and neutral; provoke suggests anger or a reaction, often negative."
+      }
+    },
+    {
+      "word": "demagogue",
+      "ipa": "ˈdeməɡɑːɡ",
+      "pos": "noun",
+      "def": "A political leader who gains support by exploiting people's emotions and prejudices rather than using reason.",
+      "he": "דמגוג",
+      "family": [
+        "demagogic (adj.)",
+        "demagoguery (n.)"
+      ],
+      "ex": [
+        "History is full of [demagogues] who blamed minorities for every problem.",
+        "Critics called the senator a dangerous [demagogue].",
+        "The campaign descended into [demagoguery]."
+      ],
+      "col": [
+        "a dangerous demagogue",
+        "populist demagogue",
+        "cheap demagoguery"
+      ],
+      "reg": "formal",
+      "syn": [
+        "rabble-rouser",
+        "agitator",
+        "populist",
+        "firebrand"
+      ],
+      "nuance": "A demagogue manipulates emotion and prejudice for power. A populist claims to represent ordinary people against elites (not always negative); a firebrand is a passionate agitator for a cause.",
+      "ety": "Greek dēmagōgos 'leader of the people', from dēmos 'people' + agōgos 'leading'.",
+      "tier": 2,
+      "themes": [
+        "society",
+        "speech"
+      ],
+      "prec": {
+        "s": "The ___ won votes by blaming immigrants for every problem and promising easy solutions.",
+        "opts": [
+          "diplomat",
+          "statesman",
+          "technocrat"
+        ],
+        "why": "A demagogue exploits prejudice and fear. A diplomat negotiates; a statesman is a respected, wise leader; a technocrat governs through technical expertise."
+      }
+    },
+    {
+      "word": "partisan",
+      "ipa": "ˈpɑːrtəzn",
+      "pos": "adjective / noun",
+      "def": "Strongly and often blindly supporting one party or cause; (n.) a committed supporter; a member of an armed resistance group.",
+      "he": "מפלגתי, מוטה; פרטיזן",
+      "family": [
+        "partisanship (n.)",
+        "bipartisan (adj.)",
+        "nonpartisan (adj.)"
+      ],
+      "ex": [
+        "The debate has become bitterly [partisan].",
+        "The newspaper's coverage is openly [partisan].",
+        "The bill passed with [bipartisan] support."
+      ],
+      "col": [
+        "partisan politics",
+        "bitterly partisan",
+        "bipartisan support",
+        "partisan divide"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "biased",
+        "one-sided",
+        "factional",
+        "prejudiced"
+      ],
+      "nuance": "Partisan is about loyalty to a party or side, especially in politics. Biased is more general unfairness; bipartisan means supported by both main parties.",
+      "ety": "Italian partigiano, from parte 'part'.",
+      "tier": 1,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "Healthcare reform has become so ___ that Democrats and Republicans can't agree on any detail.",
+        "opts": [
+          "prejudiced",
+          "discriminatory",
+          "subjective"
+        ],
+        "why": "Partisan describes division along party lines. Prejudiced and discriminatory describe unfair attitudes to groups of people; subjective means based on personal feelings."
+      }
+    },
+    {
+      "word": "hegemony",
+      "ipa": "hɪˈdʒeməni",
+      "pos": "noun",
+      "def": "Leadership or dominance, especially by one state or social group over others.",
+      "he": "הגמוניה, שליטה",
+      "family": [
+        "hegemonic (adj.)",
+        "hegemon (n.)"
+      ],
+      "ex": [
+        "The empire maintained its [hegemony] over the region for two centuries.",
+        "Some analysts predict the end of American [hegemony].",
+        "The tech giants' cultural [hegemony] worries regulators."
+      ],
+      "col": [
+        "global hegemony",
+        "cultural hegemony",
+        "challenge the hegemony of",
+        "regional hegemony"
+      ],
+      "reg": "academic",
+      "syn": [
+        "dominance",
+        "supremacy",
+        "control",
+        "ascendancy"
+      ],
+      "nuance": "Hegemony is often used in political science for dominance that is partly accepted by the dominated (through culture and influence, not just force). Supremacy suggests being the highest; dominance is more general.",
+      "ety": "Greek hēgemonia 'leadership', from hēgemōn 'leader'.",
+      "tier": 2,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "Political scientists debate whether China will challenge the global ___ of the United States.",
+        "opts": [
+          "sovereignty",
+          "jurisdiction",
+          "autonomy"
+        ],
+        "why": "Hegemony is dominance over others. Sovereignty is a state's authority over itself; jurisdiction is legal authority over an area; autonomy is self-government."
+      }
+    },
+    {
+      "word": "disenfranchise",
+      "ipa": "ˌdɪsɪnˈfræntʃaɪz",
+      "pos": "verb",
+      "def": "To deprive someone of the right to vote or of other rights; to make someone feel powerless.",
+      "he": "לשלול זכות הצבעה; לדחוק לשוליים",
+      "family": [
+        "disenfranchisement (n.)",
+        "disenfranchised (adj.)",
+        "enfranchise (v.)"
+      ],
+      "ex": [
+        "The new ID rules could [disenfranchise] thousands of elderly voters.",
+        "Many young people feel [disenfranchised] by mainstream politics.",
+        "The law effectively [disenfranchised] the country's poorest citizens."
+      ],
+      "col": [
+        "disenfranchised voters",
+        "feel disenfranchised",
+        "disenfranchise minorities"
+      ],
+      "reg": "formal",
+      "syn": [
+        "marginalize",
+        "exclude",
+        "deprive of rights",
+        "alienate"
+      ],
+      "nuance": "Literally, disenfranchise means remove voting rights; figuratively it means make a group feel it has no voice. Marginalize means push to the edges of society.",
+      "ety": "dis- + enfranchise, from Old French franc 'free'.",
+      "tier": 2,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "Critics argue the new ID requirement will ___ poorer citizens who lack a passport or driving licence.",
+        "opts": [
+          "disinherit",
+          "dispossess",
+          "displace"
+        ],
+        "why": "Disenfranchise means take away voting rights — exactly what an ID requirement could do. Disinherit is about inheritance; dispossess is about property; displace is about forcing people from their homes."
+      }
+    },
+    {
+      "word": "egalitarian",
+      "ipa": "iˌɡælɪˈteriən",
+      "pos": "adjective / noun",
+      "def": "Believing in or based on the principle that all people are equal and deserve equal rights.",
+      "he": "שוויוני",
+      "family": [
+        "egalitarianism (n.)"
+      ],
+      "ex": [
+        "Scandinavian countries are known for their [egalitarian] societies.",
+        "The company has an [egalitarian] culture with no private offices.",
+        "She is a committed [egalitarian]."
+      ],
+      "col": [
+        "egalitarian society",
+        "egalitarian values",
+        "egalitarian ideals"
+      ],
+      "reg": "formal",
+      "syn": [
+        "equal",
+        "democratic",
+        "fair",
+        "classless"
+      ],
+      "nuance": "Egalitarian is about equality of status and opportunity. Democratic is about government by the people; meritocratic is about rewarding ability.",
+      "ety": "French égalitaire, from égal 'equal', from Latin aequalis.",
+      "root": "equ",
+      "tier": 2,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "In their ___ office, the CEO sits at the same kind of desk as the newest intern.",
+        "opts": [
+          "meritocratic",
+          "democratic",
+          "uniform"
+        ],
+        "why": "Egalitarian is about equal status for everyone. Meritocratic rewards ability; democratic is about voting and participation; uniform means all the same in form."
+      }
+    },
+    {
+      "word": "meritocracy",
+      "ipa": "ˌmerɪˈtɑːkrəsi",
+      "pos": "noun",
+      "def": "A system in which people are chosen and rewarded based on ability and achievement rather than wealth or class.",
+      "he": "מריטוקרטיה, שלטון הכישרון",
+      "family": [
+        "meritocratic (adj.)"
+      ],
+      "ex": [
+        "The firm claims to be a [meritocracy], but most partners went to the same school.",
+        "Critics argue that [meritocracy] can justify inequality.",
+        "Entry to the civil service became more [meritocratic] in the 19th century."
+      ],
+      "col": [
+        "a true meritocracy",
+        "the myth of meritocracy",
+        "meritocratic system"
+      ],
+      "reg": "formal",
+      "syn": [
+        "merit-based system"
+      ],
+      "nuance": "Meritocracy is the ideal of rewarding talent and effort. Coined in 1958 as a satirical warning, it is now usually positive, though critics question whether it really exists.",
+      "ety": "merit + -cracy (Greek kratos 'power').",
+      "tier": 2,
+      "themes": [
+        "society",
+        "work"
+      ],
+      "prec": {
+        "s": "The startup prides itself on being a ___: anyone who delivers results gets promoted, regardless of degree.",
+        "opts": [
+          "bureaucracy",
+          "aristocracy",
+          "plutocracy"
+        ],
+        "why": "A meritocracy rewards ability. A bureaucracy runs on administrative rules; an aristocracy is rule by a hereditary elite; a plutocracy is rule by the rich."
+      }
+    },
+    {
+      "word": "nepotism",
+      "ipa": "ˈnepətɪzəm",
+      "pos": "noun",
+      "def": "The practice of people in power giving jobs or favours to relatives or friends.",
+      "he": "נפוטיזם, פרוטקציה",
+      "family": [
+        "nepotistic (adj.)"
+      ],
+      "ex": [
+        "Appointing his son as finance director was blatant [nepotism].",
+        "The film industry is often accused of [nepotism].",
+        "She got the job on merit, not through [nepotism]."
+      ],
+      "col": [
+        "blatant nepotism",
+        "accusations of nepotism",
+        "nepotism and cronyism"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "favouritism",
+        "cronyism",
+        "patronage",
+        "string-pulling"
+      ],
+      "nuance": "Nepotism is favouritism toward family. Cronyism is favouritism toward friends and associates. In Hebrew, 'protektzia' covers both.",
+      "ety": "Italian nepotismo, from nipote 'nephew' — popes gave posts to their 'nephews' (often their sons).",
+      "tier": 1,
+      "themes": [
+        "society",
+        "work"
+      ],
+      "prec": {
+        "s": "When the president appointed his own daughter as ambassador, critics cried ___.",
+        "opts": [
+          "cronyism",
+          "bribery",
+          "patronage"
+        ],
+        "why": "Nepotism is specifically favouritism toward relatives. Cronyism is toward friends; bribery is paying for favours; patronage is the power to make appointments in general."
+      }
+    },
+    {
+      "word": "clandestine",
+      "ipa": "klænˈdestɪn",
+      "pos": "adjective",
+      "def": "Kept secret or done secretly, especially because it is illegal or not approved.",
+      "he": "חשאי, מחתרתי",
+      "family": [
+        "clandestinely (adv.)"
+      ],
+      "ex": [
+        "They held [clandestine] meetings in a basement.",
+        "The agency ran a [clandestine] operation abroad.",
+        "Their [clandestine] affair lasted for years."
+      ],
+      "col": [
+        "clandestine meeting",
+        "clandestine operation",
+        "clandestine affair",
+        "clandestine network"
+      ],
+      "reg": "formal",
+      "syn": [
+        "secret",
+        "covert",
+        "surreptitious",
+        "underground"
+      ],
+      "nuance": "Clandestine describes organised secret activity, often illicit (meetings, operations, affairs). Surreptitious describes small secret actions done quietly to avoid notice (a surreptitious glance).",
+      "ety": "Latin clandestinus, from clam 'secretly'.",
+      "tier": 2,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "Resistance members held ___ meetings in a church cellar to plan their operations.",
+        "opts": [
+          "surreptitious",
+          "furtive",
+          "stealthy"
+        ],
+        "why": "Clandestine fits organised secret activity like meetings and networks. Surreptitious and furtive describe small, quick actions (a glance, a sip); stealthy describes quiet movement."
+      }
+    },
+    {
+      "word": "surreptitious",
+      "ipa": "ˌsɜːrəpˈtɪʃəs",
+      "pos": "adjective",
+      "def": "Done secretly or quietly so that others won't notice.",
+      "he": "בגנבה, חשאי",
+      "family": [
+        "surreptitiously (adv.)"
+      ],
+      "ex": [
+        "She took a [surreptitious] look at her phone during the meeting.",
+        "He [surreptitiously] slipped the note into her bag.",
+        "The [surreptitious] recording was later used in court."
+      ],
+      "col": [
+        "a surreptitious glance",
+        "surreptitiously record",
+        "surreptitious photos"
+      ],
+      "reg": "formal",
+      "syn": [
+        "furtive",
+        "stealthy",
+        "covert",
+        "secret"
+      ],
+      "nuance": "Surreptitious is about small sneaky actions. Furtive adds guilt or nervousness; covert is used for official secret operations.",
+      "ety": "Latin surrepticius 'obtained secretly', from surripere 'to snatch secretly'.",
+      "tier": 2,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "During the long speech, he took a ___ glance at the football score on his phone.",
+        "opts": [
+          "clandestine",
+          "covert",
+          "conspicuous"
+        ],
+        "why": "Surreptitious suits small, quick secret actions like a glance. Clandestine and covert suit organised operations; conspicuous means easily noticed — the opposite."
+      }
+    },
+    {
+      "word": "subversive",
+      "ipa": "səbˈvɜːrsɪv",
+      "pos": "adjective / noun",
+      "def": "Trying to undermine an established system or authority.",
+      "he": "חתרני",
+      "family": [
+        "subvert (v.)",
+        "subversion (n.)"
+      ],
+      "ex": [
+        "The regime banned books it considered [subversive].",
+        "Her comedy has a quietly [subversive] edge.",
+        "The film [subverts] the usual romantic clichés."
+      ],
+      "col": [
+        "subversive activities",
+        "subversive humour",
+        "subvert expectations",
+        "deemed subversive"
+      ],
+      "reg": "formal",
+      "syn": [
+        "seditious",
+        "insurrectionary",
+        "rebellious",
+        "disruptive"
+      ],
+      "nuance": "Subversive can be political (dangerous to the state) or artistic (cleverly undermining conventions, often praise). Seditious is the legal term for inciting rebellion against the state.",
+      "ety": "Latin subvertere 'to overturn', from vertere 'to turn'.",
+      "root": "vert",
+      "tier": 2,
+      "themes": [
+        "society",
+        "conflict"
+      ],
+      "prec": {
+        "s": "Behind its cheerful songs, the musical has a quietly ___ message about class and power.",
+        "opts": [
+          "seditious",
+          "mutinous",
+          "treasonous"
+        ],
+        "why": "Subversive suits art that cleverly undermines conventions. Seditious and treasonous are legal or political crimes against the state; mutinous describes soldiers or crews rebelling."
+      }
+    },
+    {
+      "word": "insidious",
+      "ipa": "ɪnˈsɪdiəs",
+      "pos": "adjective",
+      "def": "Proceeding gradually and subtly, but with harmful effects.",
+      "he": "ערמומי, חותר בסתר, זוחל",
+      "family": [
+        "insidiously (adv.)"
+      ],
+      "ex": [
+        "High blood pressure is an [insidious] disease with few early symptoms.",
+        "Prejudice can be [insidious], shaping decisions without our awareness.",
+        "The [insidious] spread of misinformation online worries researchers."
+      ],
+      "col": [
+        "insidious disease",
+        "insidious effect",
+        "insidious threat",
+        "subtle and insidious"
+      ],
+      "reg": "formal",
+      "syn": [
+        "stealthy",
+        "creeping",
+        "pernicious",
+        "subtle"
+      ],
+      "nuance": "Insidious stresses the hidden, gradual nature of harm. Pernicious stresses the severity of the harm — often also gradual.",
+      "ety": "Latin insidiosus 'cunning', from insidiae 'ambush'.",
+      "root": "sid",
+      "tier": 2,
+      "themes": [
+        "quality",
+        "society"
+      ],
+      "prec": {
+        "s": "Glaucoma is ___: it slowly damages your sight for years before you notice anything.",
+        "opts": [
+          "virulent",
+          "acute",
+          "malignant"
+        ],
+        "why": "Insidious means harmful while progressing unnoticed. Virulent means highly infectious or hostile; acute means sudden and severe; malignant means cancerous or evil."
+      }
+    },
+    {
+      "word": "pernicious",
+      "ipa": "pərˈnɪʃəs",
+      "pos": "adjective",
+      "def": "Having a harmful effect, especially gradually or in a way that is not obvious.",
+      "he": "מזיק, הרסני",
+      "family": [
+        "perniciously (adv.)"
+      ],
+      "ex": [
+        "The [pernicious] influence of corruption spread through every ministry.",
+        "Debt can have a [pernicious] effect on mental health.",
+        "This is a [pernicious] myth that deserves to die."
+      ],
+      "col": [
+        "pernicious influence",
+        "pernicious effect",
+        "pernicious myth",
+        "pernicious anaemia"
+      ],
+      "reg": "formal",
+      "syn": [
+        "harmful",
+        "destructive",
+        "insidious",
+        "malign"
+      ],
+      "nuance": "Pernicious emphasises deep, destructive harm, especially to morals or society. Insidious emphasises stealth.",
+      "ety": "Latin perniciosus 'destructive', from pernicies 'ruin', from nex 'death'.",
+      "tier": 3,
+      "themes": [
+        "quality",
+        "society"
+      ],
+      "prec": {
+        "s": "The idea that poor people deserve their poverty is a ___ myth that shapes cruel policies.",
+        "opts": [
+          "noxious",
+          "toxic",
+          "deleterious"
+        ],
+        "why": "'Pernicious myth/influence' are strong collocations for ideas that do deep harm. Noxious is used for gases and fumes; toxic for poisons (and informally for relationships); deleterious is technical (deleterious effects on health)."
+      }
+    },
+    {
+      "word": "ostracize",
+      "ipa": "ˈɑːstrəsaɪz",
+      "pos": "verb",
+      "def": "To exclude someone from a group or society.",
+      "he": "להחרים, לנדות",
+      "family": [
+        "ostracism (n.)"
+      ],
+      "ex": [
+        "She was [ostracized] by her colleagues after reporting the fraud.",
+        "Children who are different are often [ostracized] at school.",
+        "He feared social [ostracism] if he came out."
+      ],
+      "col": [
+        "be ostracized by",
+        "socially ostracized",
+        "fear of ostracism"
+      ],
+      "reg": "formal",
+      "syn": [
+        "exclude",
+        "shun",
+        "cold-shoulder",
+        "blacklist"
+      ],
+      "nuance": "Ostracize means exclusion by a group. Shun is avoiding someone; marginalize is pushing to the edges of power or importance, not necessarily social rejection.",
+      "ety": "Greek ostrakizein — Athenians voted to banish citizens by writing names on pottery shards (ostraka).",
+      "tier": 2,
+      "themes": [
+        "society",
+        "relationships"
+      ],
+      "prec": {
+        "s": "After he broke the strike, his neighbours ___ him: nobody spoke to him for years.",
+        "opts": [
+          "marginalized",
+          "persecuted",
+          "banished"
+        ],
+        "why": "Ostracize means social exclusion by a group. Marginalize means reduce someone's importance or influence; persecute means harass or punish; banish means send away officially."
+      }
+    },
+    {
+      "word": "marginalize",
+      "ipa": "ˈmɑːrdʒɪnəlaɪz",
+      "pos": "verb",
+      "def": "To treat a person, group or idea as unimportant or push them to the edge of society.",
+      "he": "לדחוק לשוליים",
+      "family": [
+        "marginalization (n.)",
+        "marginalized (adj.)",
+        "marginal (adj.)"
+      ],
+      "ex": [
+        "The reform aims to help [marginalized] communities.",
+        "Women's contributions to science were long [marginalized].",
+        "The party has been [marginalized] since the election."
+      ],
+      "col": [
+        "marginalized groups",
+        "marginalized communities",
+        "feel marginalized",
+        "increasingly marginalized"
+      ],
+      "reg": "formal",
+      "syn": [
+        "sideline",
+        "exclude",
+        "disenfranchise",
+        "relegate"
+      ],
+      "nuance": "Marginalize is about reducing power or importance. Sideline is more informal, especially at work; ostracize is social rejection.",
+      "ety": "From margin, Latin margo 'edge'.",
+      "tier": 1,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "For decades, history textbooks ___ the role of women in the scientific revolution.",
+        "opts": [
+          "ostracized",
+          "excommunicated",
+          "evicted"
+        ],
+        "why": "Marginalize means treat as unimportant — fitting for contributions or roles. Ostracize is social exclusion of people; excommunicate is expulsion from a church; evict is removal from a home."
+      }
+    },
+    {
+      "word": "scapegoat",
+      "ipa": "ˈskeɪpɡoʊt",
+      "pos": "noun / verb",
+      "def": "A person or group blamed for the faults or failures of others.",
+      "he": "שעיר לעזאזל",
+      "family": [
+        "scapegoating (n.)"
+      ],
+      "ex": [
+        "The junior manager was made a [scapegoat] for the company's failure.",
+        "Immigrants are often [scapegoated] in times of economic crisis.",
+        "The coach became the [scapegoat] for the team's poor season."
+      ],
+      "col": [
+        "make someone a scapegoat",
+        "a convenient scapegoat",
+        "scapegoat minorities"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "fall guy",
+        "whipping boy",
+        "patsy"
+      ],
+      "nuance": "A scapegoat takes the blame for others. Fall guy and patsy (informal) suggest someone set up or tricked into taking the blame.",
+      "ety": "From the Hebrew Bible (Leviticus 16): the goat sent into the wilderness carrying the people's sins — 'Azazel'.",
+      "tier": 1,
+      "themes": [
+        "society",
+        "conflict"
+      ],
+      "prec": {
+        "s": "When the project failed, management made the newest employee the ___ to protect themselves.",
+        "opts": [
+          "martyr",
+          "culprit",
+          "underdog"
+        ],
+        "why": "A scapegoat is blamed unfairly for others' failures. A martyr suffers for a cause; a culprit is actually guilty; an underdog is expected to lose."
+      }
+    },
+    {
+      "word": "hubris",
+      "ipa": "ˈhjuːbrɪs",
+      "pos": "noun",
+      "def": "Excessive pride or self-confidence, often leading to downfall.",
+      "he": "יוהרה, שחצנות (המובילה לנפילה)",
+      "family": [
+        "hubristic (adj.)"
+      ],
+      "ex": [
+        "The CEO's [hubris] led him to ignore every warning.",
+        "Building the 'unsinkable' Titanic was an act of [hubris].",
+        "It would be [hubristic] to declare victory so early."
+      ],
+      "col": [
+        "an act of hubris",
+        "sheer hubris",
+        "hubris and nemesis",
+        "hubristic claims"
+      ],
+      "reg": "formal",
+      "syn": [
+        "arrogance",
+        "overconfidence",
+        "conceit",
+        "pride"
+      ],
+      "nuance": "Hubris is pride that tempts fate and brings punishment — from Greek tragedy. Arrogance is the everyday term without the sense of downfall. Nemesis is the punishment that follows.",
+      "ety": "Greek hubris 'insolence, outrage'.",
+      "tier": 1,
+      "themes": [
+        "character",
+        "society"
+      ],
+      "prec": {
+        "s": "Calling the ship 'unsinkable' was an act of ___ that history would punish.",
+        "opts": [
+          "vanity",
+          "arrogance",
+          "conceit"
+        ],
+        "why": "Hubris is overconfidence that invites disaster — the tragic dimension the sentence describes. Vanity is pride in appearance; arrogance and conceit lack the sense of punishment by fate."
+      }
+    },
+    {
+      "word": "zeitgeist",
+      "ipa": "ˈzaɪtɡaɪst",
+      "pos": "noun",
+      "def": "The general mood, ideas and beliefs typical of a particular period of history.",
+      "he": "רוח התקופה",
+      "family": [],
+      "ex": [
+        "The novel captured the [zeitgeist] of the 1920s.",
+        "Her songs seem to tap into the [zeitgeist].",
+        "Anxiety about technology is part of today's [zeitgeist]."
+      ],
+      "col": [
+        "capture the zeitgeist",
+        "tap into the zeitgeist",
+        "the cultural zeitgeist"
+      ],
+      "reg": "formal",
+      "syn": [
+        "spirit of the age",
+        "mood",
+        "climate",
+        "ethos"
+      ],
+      "nuance": "Zeitgeist is the spirit of a particular time. Ethos is the characteristic spirit of a group or institution; climate is the current state of opinion.",
+      "ety": "German Zeit 'time' + Geist 'spirit'.",
+      "tier": 2,
+      "themes": [
+        "society",
+        "change"
+      ],
+      "prec": {
+        "s": "Few films capture the ___ as well as this one, which perfectly reflects the anxieties of its decade.",
+        "opts": [
+          "ethos",
+          "milieu",
+          "vogue"
+        ],
+        "why": "The zeitgeist is the spirit of a particular time — 'capture the zeitgeist' is the set phrase. Ethos is a group's character; milieu is a social environment; vogue is a passing fashion."
+      }
+    },
+    {
+      "word": "precarious",
+      "ipa": "prɪˈkeriəs",
+      "pos": "adjective",
+      "def": "Not securely held or in position; dangerously uncertain.",
+      "he": "רעוע, לא יציב, מסוכן",
+      "family": [
+        "precariously (adv.)",
+        "precarity (n.)"
+      ],
+      "ex": [
+        "Many freelancers live a [precarious] existence.",
+        "The vase was balanced [precariously] on the edge of the shelf.",
+        "The country's economy is in a [precarious] state."
+      ],
+      "col": [
+        "precarious position",
+        "precarious existence",
+        "precarious balance",
+        "precariously balanced"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "unstable",
+        "insecure",
+        "shaky",
+        "perilous"
+      ],
+      "nuance": "Precarious means in danger of falling or failing at any moment. Perilous means full of danger; tenuous is about weak connections, not instability.",
+      "ety": "Latin precarius 'obtained by asking, uncertain', from prex 'prayer'.",
+      "tier": 1,
+      "themes": [
+        "society",
+        "work",
+        "money"
+      ],
+      "prec": {
+        "s": "Without a contract or savings, gig workers lead a ___ existence from month to month.",
+        "opts": [
+          "tenuous",
+          "perilous",
+          "volatile"
+        ],
+        "why": "'A precarious existence' is the classic phrase for insecure living. Tenuous is used for links and grips; perilous for dangerous journeys or situations; volatile for prices and tempers."
+      }
+    },
+    {
+      "word": "endemic",
+      "ipa": "enˈdemɪk",
+      "pos": "adjective",
+      "def": "Regularly found in a particular place, group or situation; (of plants and animals) native to one area.",
+      "he": "אנדמי, נפוץ באופן קבוע",
+      "family": [],
+      "ex": [
+        "Malaria is [endemic] in parts of Africa.",
+        "Corruption was [endemic] in the old regime.",
+        "The island has dozens of [endemic] bird species."
+      ],
+      "col": [
+        "endemic to",
+        "endemic in",
+        "endemic corruption",
+        "endemic species"
+      ],
+      "reg": "formal",
+      "syn": [
+        "prevalent",
+        "widespread",
+        "rife",
+        "native"
+      ],
+      "nuance": "Endemic means always present in a place or group. An epidemic is a sudden outbreak; pandemic is worldwide. Systemic means built into the whole system.",
+      "ety": "Greek endēmos 'native', from en 'in' + dēmos 'people'.",
+      "tier": 2,
+      "themes": [
+        "society",
+        "degree"
+      ],
+      "prec": {
+        "s": "Bribery was so ___ in the old customs service that nothing moved without a payment.",
+        "opts": [
+          "epidemic",
+          "sporadic",
+          "pandemic"
+        ],
+        "why": "Endemic means permanently present in a place or group. Epidemic and pandemic describe sudden widespread outbreaks; sporadic means occasional."
+      }
+    },
+    {
+      "word": "systemic",
+      "ipa": "sɪˈstemɪk",
+      "pos": "adjective",
+      "def": "Relating to or affecting an entire system rather than just individual parts.",
+      "he": "מערכתי",
+      "family": [
+        "systemically (adv.)"
+      ],
+      "ex": [
+        "The report found [systemic] failures in the child-protection service.",
+        "The crisis exposed [systemic] risk in the banking sector.",
+        "This isn't one bad officer; the problem is [systemic]."
+      ],
+      "col": [
+        "systemic failure",
+        "systemic risk",
+        "systemic racism",
+        "systemic problem"
+      ],
+      "reg": "formal",
+      "syn": [
+        "structural",
+        "institutional",
+        "widespread",
+        "inherent"
+      ],
+      "nuance": "Systemic means built into a whole system. Systematic means methodical, done according to a plan — a common confusion.",
+      "ety": "From system, Greek sustēma 'organised whole'.",
+      "tier": 1,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "The inquiry found that the failures weren't one person's fault but ___, built into how the hospital was run.",
+        "opts": [
+          "systematic",
+          "methodical",
+          "chronic"
+        ],
+        "why": "Systemic means affecting the whole system. Systematic and methodical mean done according to a careful method; chronic means long-lasting."
+      }
+    },
+    {
+      "word": "draconian",
+      "ipa": "drəˈkoʊniən",
+      "pos": "adjective",
+      "def": "(Of laws or measures) excessively harsh and severe.",
+      "he": "דרקוני, חמור ביותר",
+      "family": [],
+      "ex": [
+        "The government introduced [draconian] laws against protest.",
+        "Critics called the spending cuts [draconian].",
+        "The school's [draconian] dress code banned coloured socks."
+      ],
+      "col": [
+        "draconian measures",
+        "draconian laws",
+        "draconian cuts",
+        "draconian penalties"
+      ],
+      "reg": "formal",
+      "syn": [
+        "harsh",
+        "severe",
+        "strict",
+        "punitive"
+      ],
+      "nuance": "Draconian criticises rules or punishments as far too harsh. Strict can be neutral or positive; punitive means intended as punishment.",
+      "ety": "From Draco, a 7th-century BC Athenian lawgiver whose code punished even small crimes with death.",
+      "tier": 1,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "Under the new ___ laws, even minor protest could lead to five years in prison.",
+        "opts": [
+          "stringent",
+          "rigorous",
+          "austere"
+        ],
+        "why": "Draconian criticises laws as excessively harsh, out of proportion. Stringent and rigorous mean strict and thorough, often approvingly; austere means plain and severe in style."
+      }
+    },
+    {
+      "word": "impunity",
+      "ipa": "ɪmˈpjuːnəti",
+      "pos": "noun",
+      "def": "Freedom from punishment or harmful consequences.",
+      "he": "חסינות מעונש, בלי להיענש",
+      "family": [],
+      "ex": [
+        "Gangs operated with [impunity] in the city's poorer districts.",
+        "You can't break the rules with [impunity] forever.",
+        "The report condemned the culture of [impunity] in the police force."
+      ],
+      "col": [
+        "with impunity",
+        "a culture of impunity",
+        "act with impunity"
+      ],
+      "reg": "formal",
+      "syn": [
+        "immunity",
+        "exemption",
+        "freedom from punishment"
+      ],
+      "nuance": "Impunity is almost always used in 'with impunity' and implies injustice. Immunity is an official, often legal, protection (diplomatic immunity).",
+      "ety": "Latin impunitas, from in- 'not' + poena 'penalty'.",
+      "tier": 2,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "For years, the warlords committed crimes with ___, knowing no court would touch them.",
+        "opts": [
+          "immunity",
+          "indemnity",
+          "amnesty"
+        ],
+        "why": "'With impunity' means without being punished, implying injustice. Immunity is formal legal protection; indemnity is insurance-style compensation; amnesty is an official pardon."
+      }
+    },
+    {
+      "word": "complicit",
+      "ipa": "kəmˈplɪsɪt",
+      "pos": "adjective",
+      "def": "Involved with others in wrongdoing, actively or by silence.",
+      "he": "שותף לדבר עבירה",
+      "family": [
+        "complicity (n.)",
+        "accomplice (n., related)"
+      ],
+      "ex": [
+        "By staying silent, the board was [complicit] in the fraud.",
+        "Several officials were [complicit] in the cover-up.",
+        "She denied any [complicity] in the scheme."
+      ],
+      "col": [
+        "complicit in",
+        "complicit silence",
+        "deny complicity"
+      ],
+      "reg": "formal",
+      "syn": [
+        "involved",
+        "implicated",
+        "collusive",
+        "conniving"
+      ],
+      "nuance": "Complicit means sharing moral responsibility — including by doing nothing. Implicated means shown to be involved, especially by evidence; an accomplice actively helps commit a crime.",
+      "ety": "From complicity, French complicité, from Latin complicare 'to fold together'.",
+      "root": "plic",
+      "tier": 1,
+      "themes": [
+        "society",
+        "conflict"
+      ],
+      "prec": {
+        "s": "Those who knew about the abuse and said nothing were, in a sense, ___ in it.",
+        "opts": [
+          "implicated",
+          "accomplice",
+          "culpable"
+        ],
+        "why": "'Complicit in' captures moral participation, even through silence. Implicated means shown by evidence to be involved; accomplice is a noun; culpable means deserving blame and takes 'for', not 'in'."
+      }
+    },
+    {
+      "word": "acquiesce",
+      "ipa": "ˌækwiˈes",
+      "pos": "verb",
+      "def": "To accept something reluctantly but without protest.",
+      "he": "להשלים, להסכים בשתיקה",
+      "family": [
+        "acquiescence (n.)",
+        "acquiescent (adj.)"
+      ],
+      "ex": [
+        "The board reluctantly [acquiesced] to the shareholders' demands.",
+        "She [acquiesced] in the decision, though she thought it was wrong.",
+        "His [acquiescence] was taken as approval."
+      ],
+      "col": [
+        "acquiesce in/to",
+        "reluctantly acquiesce",
+        "silent acquiescence"
+      ],
+      "reg": "formal",
+      "syn": [
+        "consent",
+        "comply",
+        "accede",
+        "give in"
+      ],
+      "nuance": "Acquiesce stresses passive acceptance without enthusiasm. Accede is formal agreement to a request; comply is following rules or orders.",
+      "ety": "Latin acquiescere 'to rest, be at peace', from quies 'quiet'.",
+      "tier": 2,
+      "themes": [
+        "relationships",
+        "work"
+      ],
+      "prec": {
+        "s": "Too tired to argue any longer, he finally ___ to his children's demands for a puppy.",
+        "opts": [
+          "accorded",
+          "conceded",
+          "concurred"
+        ],
+        "why": "Acquiesce means give in quietly and reluctantly, and takes 'to/in'. Accord means give or agree; concede usually takes an object (concede defeat); concur means agree in opinion."
+      }
+    }
+  ]
+}

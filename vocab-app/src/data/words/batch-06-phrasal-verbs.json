@@ -1,0 +1,881 @@
+{
+  "batch": "batch-06",
+  "title": "Phrasal Verbs",
+  "words": [
+    {
+      "word": "come across as",
+      "ipa": "kʌm əˈkrɔːs æz",
+      "pos": "phrasal verb",
+      "def": "To give a particular impression to other people.",
+      "he": "להיראות כ־, ליצור רושם של",
+      "family": [],
+      "ex": [
+        "He can [come across as] arrogant, but he's actually very shy.",
+        "I don't want to [come across as] ungrateful.",
+        "Her email [came across as] rather cold."
+      ],
+      "col": ["come across as arrogant", "come across as rude", "come across well/badly"],
+      "reg": "neutral",
+      "syn": ["seem", "appear", "strike someone as"],
+      "nuance": "'Come across as' focuses on the impression you make, often different from reality. 'Strike someone as' puts the observer first: 'He strikes me as arrogant'.",
+      "ety": "The image of a message 'crossing' from you to other people.",
+      "tier": 1,
+      "themes": ["relationships", "speech"],
+      "prec": {
+        "s": "In interviews he can ___ arrogant, though friends say he's painfully shy.",
+        "opts": ["come off", "come round", "come by"],
+        "why": "'Come across as' + adjective describes the impression you give. 'Come off' needs 'as' too and usually describes how an event went; 'come round' means change your opinion or visit; 'come by' means obtain or visit briefly."
+      }
+    },
+    {
+      "word": "gloss over",
+      "ipa": "ɡlɑːs ˈoʊvər",
+      "pos": "phrasal verb",
+      "def": "To deal with a problem or mistake quickly so that people don't notice it or think about it.",
+      "he": "לטשטש, לעבור על משהו בחטף",
+      "family": [],
+      "ex": [
+        "The report [glosses over] the company's environmental record.",
+        "She [glossed over] the reasons she'd left her last job.",
+        "We can't just [gloss over] these failures."
+      ],
+      "col": ["gloss over the problems", "gloss over the details", "gloss over the fact that"],
+      "reg": "neutral",
+      "syn": ["skate over", "whitewash", "play down", "brush aside"],
+      "nuance": "Gloss over means mention briefly to avoid attention — a smooth, shiny surface hiding flaws. Whitewash is stronger: deliberately covering up wrongdoing.",
+      "ety": "From gloss 'a shiny surface' — making something look smooth and good.",
+      "tier": 1,
+      "themes": ["speech", "work"],
+      "prec": {
+        "s": "The CEO's presentation ___ the factory accident in a single sentence before moving on to profits.",
+        "opts": ["glossed up", "passed out", "looked over"],
+        "why": "'Gloss over' means deal with something too quickly to hide it. 'Gloss up' isn't standard; 'pass out' means faint; 'look over' means examine."
+      }
+    },
+    {
+      "word": "brush off",
+      "ipa": "brʌʃ ˈɔːf",
+      "pos": "phrasal verb",
+      "def": "To refuse to listen to or consider someone or something; to dismiss rudely.",
+      "he": "לבטל, לדחות בזלזול",
+      "family": ["brush-off (n.)"],
+      "ex": [
+        "She [brushed off] questions about her health.",
+        "He tried to apologise, but she [brushed him off].",
+        "I asked for a raise and got the [brush-off]."
+      ],
+      "col": ["brush off criticism", "brush off questions", "give someone the brush-off"],
+      "reg": "informal",
+      "syn": ["dismiss", "rebuff", "shrug off", "wave away"],
+      "nuance": "Brush off is dismissing something or someone as unimportant. Shrug off is more about not letting something affect you (an injury, criticism).",
+      "ety": "Like brushing dust off a coat.",
+      "tier": 1,
+      "themes": ["relationships", "speech"],
+      "prec": {
+        "s": "When reporters asked about the scandal, the senator ___ their questions with a smile.",
+        "opts": ["brushed up", "rubbed off", "wiped out"],
+        "why": "'Brush off' questions = dismiss them. 'Brush up (on)' means refresh a skill; 'rub off (on)' means influence; 'wipe out' means destroy."
+      }
+    },
+    {
+      "word": "bank on",
+      "ipa": "ˈbæŋk ɑːn",
+      "pos": "phrasal verb",
+      "def": "To rely on something happening or someone doing something.",
+      "he": "לסמוך על, להמר על",
+      "family": [],
+      "ex": [
+        "We're [banking on] good weather for the wedding.",
+        "Don't [bank on] getting a bonus this year.",
+        "You can [bank on] her to finish the job."
+      ],
+      "col": ["bank on something", "don't bank on it", "be banking on"],
+      "reg": "informal",
+      "syn": ["count on", "rely on", "depend on", "reckon on"],
+      "nuance": "Bank on suggests you're betting your plans on something. 'Don't bank on it' is a common warning.",
+      "ety": "From banking — trusting something as you trust a bank with money.",
+      "tier": 1,
+      "themes": ["work", "money"],
+      "prec": {
+        "s": "The organisers were ___ sunshine, so they had no plan for rain.",
+        "opts": ["banking up", "cashing in on", "saving up"],
+        "why": "'Bank on' means rely on. 'Bank up' means pile up; 'cash in on' means profit from; 'save up' means put money aside."
+      }
+    },
+    {
+      "word": "iron out",
+      "ipa": "ˈaɪərn aʊt",
+      "pos": "phrasal verb",
+      "def": "To resolve small problems or differences.",
+      "he": "ליישב, להחליק (בעיות)",
+      "family": [],
+      "ex": [
+        "We still need to [iron out] a few details in the contract.",
+        "The two sides met to [iron out] their differences.",
+        "There are some bugs to [iron out] before launch."
+      ],
+      "col": ["iron out the details", "iron out differences", "iron out the kinks/creases"],
+      "reg": "neutral",
+      "syn": ["resolve", "sort out", "smooth out", "settle"],
+      "nuance": "Iron out is for small remaining problems or disagreements, like creases in a shirt. Sort out is more general.",
+      "ety": "Like ironing creases out of clothes.",
+      "tier": 1,
+      "themes": ["work"],
+      "prec": {
+        "s": "The deal is almost done; our lawyers just need to ___ a few minor details.",
+        "opts": ["press on", "smooth over", "straighten up"],
+        "why": "'Iron out details' = resolve small remaining issues. 'Press on' means continue; 'smooth over' means make a conflict seem less serious; 'straighten up' means stand straight or tidy."
+      }
+    },
+    {
+      "word": "play down",
+      "ipa": "pleɪ ˈdaʊn",
+      "pos": "phrasal verb",
+      "def": "To make something seem less important or serious than it really is.",
+      "he": "להמעיט בחשיבות, להצניע",
+      "family": ["downplay (v.)"],
+      "ex": [
+        "The government tried to [play down] the risk of a recession.",
+        "She [played down] her role in the success of the project.",
+        "Doctors [played down] fears of a new epidemic."
+      ],
+      "col": ["play down the risk", "play down the importance of", "play down fears"],
+      "reg": "neutral",
+      "syn": ["downplay", "minimise", "make light of", "understate"],
+      "nuance": "Play down is minimising importance, often for political or modest reasons. The opposite is 'play up'.",
+      "ety": "A theatrical image — playing a part in a lower key.",
+      "tier": 1,
+      "themes": ["speech"],
+      "prec": {
+        "s": "Officials tried to ___ the size of the oil spill, calling it 'a minor leak'.",
+        "opts": ["play up", "play along", "play out"],
+        "why": "'Play down' = make something seem less serious. 'Play up' does the opposite; 'play along' means pretend to cooperate; 'play out' means happen or unfold."
+      }
+    },
+    {
+      "word": "mull over",
+      "ipa": "mʌl ˈoʊvər",
+      "pos": "phrasal verb",
+      "def": "To think carefully about something over a period of time.",
+      "he": "לשקול, להרהר ב־",
+      "family": [],
+      "ex": [
+        "I need a few days to [mull over] the offer.",
+        "She [mulled over] his words all the way home.",
+        "Let me [mull it over] and get back to you."
+      ],
+      "col": ["mull over an offer", "mull it over", "mull over the options"],
+      "reg": "neutral",
+      "syn": ["ponder", "consider", "think over", "deliberate on"],
+      "nuance": "Mull over is slow, relaxed thinking before deciding. Ponder is more formal; deliberate suggests careful discussion of options.",
+      "ety": "Possibly from mull 'to grind' — the mind slowly grinding.",
+      "tier": 1,
+      "themes": ["thinking", "work"],
+      "prec": {
+        "s": "'It's a generous offer. Can I ___ it ___ over the weekend?'",
+        "opts": ["look … into", "turn … down", "figure … out"],
+        "why": "'Mull it over' = think about it carefully for a while. 'Look into' means investigate; 'turn down' means refuse; 'figure out' means solve."
+      }
+    },
+    {
+      "word": "stem from",
+      "ipa": "ˈstem frʌm",
+      "pos": "phrasal verb",
+      "def": "To originate in or be caused by.",
+      "he": "לנבוע מ־",
+      "family": [],
+      "ex": [
+        "Many of her problems [stem from] a difficult childhood.",
+        "The dispute [stems from] a misunderstanding.",
+        "His interest in politics [stemmed from] his father's work."
+      ],
+      "col": ["stem from a fear of", "stem from the fact that", "problems stem from"],
+      "reg": "formal",
+      "syn": ["arise from", "result from", "originate in", "derive from"],
+      "nuance": "Stem from is ideal for explaining causes of problems, feelings and conflicts. It is never used in the passive or continuous form.",
+      "ety": "Like a plant growing from its stem.",
+      "tier": 1,
+      "themes": ["thinking"],
+      "prec": {
+        "s": "Most of the conflict between the departments ___ a simple misunderstanding about budgets.",
+        "opts": ["leads to", "results in", "gives rise to"],
+        "why": "'Stems from' points back to the cause. 'Lead to', 'result in' and 'give rise to' point forward to the effect — they reverse the logic of the sentence."
+      }
+    },
+    {
+      "word": "fall through",
+      "ipa": "fɔːl ˈθruː",
+      "pos": "phrasal verb",
+      "def": "(Of a plan or deal) to fail to happen.",
+      "he": "לא לצאת לפועל, להתבטל",
+      "family": [],
+      "ex": [
+        "The sale of the house [fell through] at the last minute.",
+        "Our holiday plans [fell through] when the airline went bankrupt.",
+        "If the deal [falls through], we'll have to start again."
+      ],
+      "col": ["the deal fell through", "plans fall through", "fall through at the last minute"],
+      "reg": "neutral",
+      "syn": ["collapse", "come to nothing", "founder", "miscarry"],
+      "nuance": "Fall through is used for plans and deals that fail before completion. Fall apart is for things that collapse after existing (a marriage, a team).",
+      "ety": "Like falling through a hole — the plan disappears.",
+      "tier": 1,
+      "themes": ["work", "money"],
+      "prec": {
+        "s": "We'd agreed a price, but the sale ___ when the buyer lost his job.",
+        "opts": ["fell apart", "fell out", "fell behind"],
+        "why": "Plans and deals 'fall through' — fail to happen. 'Fall apart' is for things that collapse after existing; 'fall out' means argue; 'fall behind' means not keep up."
+      }
+    },
+    {
+      "word": "back down",
+      "ipa": "bæk ˈdaʊn",
+      "pos": "phrasal verb",
+      "def": "To withdraw a claim or position; to concede defeat in an argument.",
+      "he": "לסגת, להתקפל",
+      "family": ["climbdown (n., related)"],
+      "ex": [
+        "After the protests, the government [backed down] on the tax increase.",
+        "Neither side is willing to [back down].",
+        "She refused to [back down], even when everyone disagreed."
+      ],
+      "col": ["refuse to back down", "back down on", "be forced to back down"],
+      "reg": "neutral",
+      "syn": ["retreat", "give in", "climb down", "yield"],
+      "nuance": "Back down is giving up a position under pressure, often seen as a loss of face. 'Back off' means stop threatening or bothering someone.",
+      "ety": "Like stepping back down a ladder from a high position.",
+      "tier": 1,
+      "themes": ["conflict"],
+      "prec": {
+        "s": "Facing a nationwide strike, the government ___ and withdrew the pension reform.",
+        "opts": ["backed off", "backed up", "backed out"],
+        "why": "'Back down' = give up a position under pressure. 'Back off' means stop pressuring someone; 'back up' means support; 'back out' means withdraw from a commitment."
+      }
+    },
+    {
+      "word": "butter up",
+      "ipa": "ˈbʌtər ʌp",
+      "pos": "phrasal verb",
+      "def": "To flatter someone in order to get something.",
+      "he": "לחנף, ללקק",
+      "family": [],
+      "ex": [
+        "He's been [buttering up] the boss all week because he wants Friday off.",
+        "Don't try to [butter me up] — the answer is still no.",
+        "She [buttered up] her grandparents before asking for money."
+      ],
+      "col": ["butter someone up", "stop buttering me up"],
+      "reg": "informal",
+      "syn": ["flatter", "sweet-talk", "suck up to", "cajole"],
+      "nuance": "Butter up is light, informal flattery for a specific goal. Suck up to is more contemptuous and about continuous behaviour towards a superior.",
+      "ety": "Possibly from the ancient Indian custom of throwing butter at statues of gods to seek favour.",
+      "tier": 1,
+      "themes": ["relationships"],
+      "prec": {
+        "s": "You're being very nice to me today. Are you trying to ___ me ___?",
+        "opts": ["cheer … up", "chat … up", "make … up"],
+        "why": "'Butter someone up' = flatter them for a favour. 'Cheer up' means make happier; 'chat up' means flirt with; 'make up' means invent or reconcile."
+      }
+    },
+    {
+      "word": "crack down on",
+      "ipa": "kræk ˈdaʊn ɑːn",
+      "pos": "phrasal verb",
+      "def": "To take severe measures against something illegal or undesirable.",
+      "he": "לפעול ביד קשה נגד",
+      "family": ["crackdown (n.)"],
+      "ex": [
+        "Police are [cracking down on] drink-driving this Christmas.",
+        "The school is [cracking down on] phone use in class.",
+        "The government announced a [crackdown] on tax evasion."
+      ],
+      "col": ["crack down on crime", "a crackdown on", "a brutal crackdown", "a government crackdown"],
+      "reg": "neutral",
+      "syn": ["clamp down on", "suppress", "tackle", "come down hard on"],
+      "nuance": "Crack down on is used by authorities taking firm action. 'Crackdown' as a noun often suggests harsh treatment of protesters.",
+      "ety": "Like cracking a whip down.",
+      "tier": 1,
+      "themes": ["society"],
+      "prec": {
+        "s": "The city has promised to ___ illegal parking with heavier fines and more inspectors.",
+        "opts": ["break down", "come down on", "cut down on"],
+        "why": "'Crack down on' = act severely against something. 'Break down' means stop working; 'come down on' means criticise or punish a person; 'cut down on' means reduce your own consumption."
+      }
+    },
+    {
+      "word": "drag on",
+      "ipa": "dræɡ ˈɑːn",
+      "pos": "phrasal verb",
+      "def": "To continue for longer than is necessary or wanted.",
+      "he": "להימשך עוד ועוד, להתמשך",
+      "family": [],
+      "ex": [
+        "The meeting [dragged on] for three hours.",
+        "The court case has [dragged on] for years.",
+        "As the war [dragged on], public support collapsed."
+      ],
+      "col": ["drag on for years", "the meeting dragged on", "as the war dragged on"],
+      "reg": "neutral",
+      "syn": ["go on", "continue", "persist", "be protracted"],
+      "nuance": "Drag on suggests boredom or frustration at the length. Protracted is the formal adjective equivalent.",
+      "ety": "As if time were being dragged along slowly.",
+      "tier": 1,
+      "themes": ["change"],
+      "prec": {
+        "s": "The meeting ___ until eight o'clock, long after everyone had stopped listening.",
+        "opts": ["dragged out", "dragged in", "dragged up"],
+        "why": "'Drag on' (intransitive) = continue boringly. 'Drag out' needs an object (they dragged the meeting out); 'drag in' means involve someone unwillingly; 'drag up' means mention an unpleasant past event."
+      }
+    },
+    {
+      "word": "dwell on",
+      "ipa": "ˈdwel ɑːn",
+      "pos": "phrasal verb",
+      "def": "To think or talk about something, especially something unpleasant, for too long.",
+      "he": "להתעכב על, לשקוע במחשבות על",
+      "family": [],
+      "ex": [
+        "Don't [dwell on] your mistakes — learn from them and move on.",
+        "She tends to [dwell on] the negative.",
+        "Let's not [dwell on] the past."
+      ],
+      "col": ["dwell on the past", "dwell on mistakes", "no point dwelling on it"],
+      "reg": "neutral",
+      "syn": ["brood over", "ruminate on", "linger over", "harp on"],
+      "nuance": "Dwell on is thinking about something too much, often unhealthily. Harp on is talking about it too much, annoying others; brood is sulky, sad thinking.",
+      "ety": "dwell originally meant 'to delay, linger'.",
+      "tier": 1,
+      "themes": ["thinking", "emotion"],
+      "prec": {
+        "s": "It's over — there's no point ___ what might have been.",
+        "opts": ["dwelling in", "looking up", "living on"],
+        "why": "'Dwell on' = keep thinking about something unpleasant. 'Dwell in' means live in (literary); 'look up' means search for; 'live on' means survive on."
+      }
+    },
+    {
+      "word": "egg on",
+      "ipa": "eɡ ˈɑːn",
+      "pos": "phrasal verb",
+      "def": "To urge or encourage someone to do something, usually something foolish or risky.",
+      "he": "לדרבן, להסית",
+      "family": [],
+      "ex": [
+        "His friends [egged him on] to jump into the freezing lake.",
+        "The crowd [egged on] the fighters.",
+        "She didn't want to do it, but the others kept [egging her on]."
+      ],
+      "col": ["egg someone on", "egged on by friends", "egged on by the crowd"],
+      "reg": "informal",
+      "syn": ["urge on", "goad", "incite", "spur on"],
+      "nuance": "Egg on suggests encouraging someone to do something silly or dangerous. Spur on is positive encouragement; incite is formal and about violence or crime.",
+      "ety": "Not from eggs: from Old Norse eggja 'to incite', related to 'edge'.",
+      "tier": 1,
+      "themes": ["relationships"],
+      "prec": {
+        "s": "Drunk and ___ by his friends, he climbed onto the roof of the bus shelter.",
+        "opts": ["cheered up", "picked on", "put off"],
+        "why": "'Egged on' = urged to do something foolish. 'Cheered up' means made happier; 'picked on' means bullied; 'put off' means discouraged — the opposite."
+      }
+    },
+    {
+      "word": "fend off",
+      "ipa": "fend ˈɔːf",
+      "pos": "phrasal verb",
+      "def": "To defend yourself against an attack, criticism or unwanted questions.",
+      "he": "להדוף, לגונן מפני",
+      "family": [],
+      "ex": [
+        "The minister spent the interview [fending off] questions about the scandal.",
+        "She [fended off] her attacker with an umbrella.",
+        "The company [fended off] a takeover bid."
+      ],
+      "col": ["fend off questions", "fend off criticism", "fend off an attack", "fend off a takeover"],
+      "reg": "neutral",
+      "syn": ["ward off", "repel", "parry", "stave off"],
+      "nuance": "Fend off is actively pushing back something that is attacking you. Ward off is preventing something (illness, evil) from reaching you. Stave off is delaying something bad.",
+      "ety": "fend, short for defend.",
+      "tier": 2,
+      "themes": ["conflict"],
+      "prec": {
+        "s": "At the press conference, the coach spent twenty minutes ___ questions about his future.",
+        "opts": ["fending for", "warding off", "holding up"],
+        "why": "'Fend off questions' = deflect them as they come. 'Fend for (yourself)' means look after yourself; 'ward off' is used for illnesses or dangers you keep away; 'hold up' means delay or rob."
+      }
+    },
+    {
+      "word": "hinge on",
+      "ipa": "ˈhɪndʒ ɑːn",
+      "pos": "phrasal verb",
+      "def": "To depend entirely on something.",
+      "he": "להיות תלוי לחלוטין ב־",
+      "family": [],
+      "ex": [
+        "The whole case [hinges on] one witness's evidence.",
+        "Our plans [hinge on] whether we get the loan.",
+        "The election may [hinge on] the economy."
+      ],
+      "col": ["hinge on whether", "the case hinges on", "everything hinges on"],
+      "reg": "neutral",
+      "syn": ["depend on", "rest on", "turn on", "be contingent on"],
+      "nuance": "Hinge on stresses that one single factor decides everything, like a door turning on a hinge.",
+      "ety": "A door swings entirely on its hinges.",
+      "tier": 2,
+      "themes": ["thinking", "work"],
+      "prec": {
+        "s": "The entire trial ___ whether the jury believes the taxi driver's testimony.",
+        "opts": ["hangs up", "holds on", "turns over"],
+        "why": "'Hinges on' = depends entirely on. 'Hang up' means end a call; 'hold on' means wait or grip; 'turn over' means flip or hand over."
+      }
+    },
+    {
+      "word": "home in on",
+      "ipa": "hoʊm ˈɪn ɑːn",
+      "pos": "phrasal verb",
+      "def": "To focus attention on something; to move directly towards a target.",
+      "he": "להתמקד ב־, לכוון אל",
+      "family": [],
+      "ex": [
+        "The interviewer quickly [homed in on] the gaps in his CV.",
+        "Researchers are [homing in on] the cause of the disease.",
+        "The missile [homes in on] heat from the engine."
+      ],
+      "col": ["home in on the problem", "home in on the target", "home in on the key issue"],
+      "reg": "neutral",
+      "syn": ["focus on", "zero in on", "pinpoint", "target"],
+      "nuance": "Home in on means move ever closer to the exact point. Many speakers say 'hone in on' — widely used, but considered an error by careful writers.",
+      "ety": "From homing pigeons and homing missiles that find their way home.",
+      "tier": 2,
+      "themes": ["thinking", "work"],
+      "prec": {
+        "s": "The detective immediately ___ the one detail that didn't fit the suspect's story.",
+        "opts": ["honed", "brought on", "zoomed out"],
+        "why": "'Home in on' = focus precisely on. 'Hone' means sharpen (a skill) — 'hone in on' is a common error; 'bring on' means cause; 'zoom out' means widen the view."
+      }
+    },
+    {
+      "word": "lash out",
+      "ipa": "læʃ ˈaʊt",
+      "pos": "phrasal verb",
+      "def": "To suddenly attack someone physically or verbally.",
+      "he": "להתפרץ, לתקוף לפתע",
+      "family": [],
+      "ex": [
+        "When he's stressed, he [lashes out] at the people closest to him.",
+        "The minister [lashed out] at critics in a furious speech.",
+        "The frightened dog [lashed out] and bit the vet."
+      ],
+      "col": ["lash out at someone", "lash out in anger", "lash out at critics"],
+      "reg": "neutral",
+      "syn": ["hit out", "snap", "attack", "explode"],
+      "nuance": "Lash out suggests a sudden, often uncontrolled attack — sometimes against the wrong person. Hit out at is mostly about verbal attacks in the news.",
+      "ety": "Like a sudden blow of a lash (whip).",
+      "tier": 1,
+      "themes": ["conflict", "emotion"],
+      "prec": {
+        "s": "Exhausted and frustrated, she ___ at her husband for leaving a cup on the table.",
+        "opts": ["lashed down", "broke out", "blew over"],
+        "why": "'Lash out at' someone = suddenly attack them. 'Lash down' means tie firmly; 'break out' means start suddenly (war, fire); 'blow over' means pass without serious effect."
+      }
+    },
+    {
+      "word": "live up to",
+      "ipa": "lɪv ˈʌp tuː",
+      "pos": "phrasal verb",
+      "def": "To be as good as what was expected or promised.",
+      "he": "לעמוד בציפיות",
+      "family": [],
+      "ex": [
+        "The film didn't [live up to] the hype.",
+        "He has always struggled to [live up to] his father's reputation.",
+        "The hotel [lived up to] its five-star rating."
+      ],
+      "col": ["live up to expectations", "live up to the hype", "live up to one's reputation", "live up to one's name"],
+      "reg": "neutral",
+      "syn": ["meet", "match", "fulfil", "measure up to"],
+      "nuance": "Live up to compares reality with expectations or reputation. Measure up to is similar but stresses meeting a required standard.",
+      "ety": "Living one's life up to the level of a standard.",
+      "tier": 1,
+      "themes": ["quality"],
+      "prec": {
+        "s": "After months of advertising, the new phone failed to ___ the hype.",
+        "opts": ["live through", "live down", "live off"],
+        "why": "'Live up to the hype/expectations' = be as good as expected. 'Live through' means survive; 'live down' means make people forget an embarrassment; 'live off' means depend on financially."
+      }
+    },
+    {
+      "word": "pan out",
+      "ipa": "pæn ˈaʊt",
+      "pos": "phrasal verb",
+      "def": "To develop or turn out in a particular way, especially successfully.",
+      "he": "להתפתח, להסתדר",
+      "family": [],
+      "ex": [
+        "Let's see how things [pan out] before we decide.",
+        "The new job didn't [pan out] as she'd hoped.",
+        "If the deal [pans out], we'll all get a bonus."
+      ],
+      "col": ["see how things pan out", "didn't pan out", "pan out well"],
+      "reg": "informal",
+      "syn": ["turn out", "work out", "unfold", "succeed"],
+      "nuance": "Pan out is informal and often used with uncertainty or negatives ('it didn't pan out'). Turn out is neutral.",
+      "ety": "From gold-panning: washing gravel in a pan to see if gold appears.",
+      "tier": 1,
+      "themes": ["change", "work"],
+      "prec": {
+        "s": "I'm not sure the new business will work, but let's see how it ___.",
+        "opts": ["pans in", "pays off", "plays up"],
+        "why": "'See how it pans out' = see how it develops. 'Pan in' isn't standard; 'pay off' means bring good results (implies success, not uncertainty); 'play up' means malfunction or misbehave."
+      }
+    },
+    {
+      "word": "pin down",
+      "ipa": "pɪn ˈdaʊn",
+      "pos": "phrasal verb",
+      "def": "To identify something exactly; to force someone to be specific about a decision or opinion.",
+      "he": "לזהות במדויק; לחייב להתחייב",
+      "family": [],
+      "ex": [
+        "It's hard to [pin down] exactly what makes the song so catchy.",
+        "I tried to [pin him down] to a date, but he kept changing the subject.",
+        "Scientists haven't [pinned down] the cause of the disease."
+      ],
+      "col": ["pin down the cause", "pin someone down to a date", "hard to pin down"],
+      "reg": "neutral",
+      "syn": ["identify", "pinpoint", "determine", "nail down"],
+      "nuance": "Pin down has two uses: precisely identifying something elusive, and forcing someone to commit. Pinpoint is only the first.",
+      "ety": "Like pinning an insect to a board to examine it.",
+      "tier": 1,
+      "themes": ["thinking", "work"],
+      "prec": {
+        "s": "The landlord is impossible to ___; he never gives a straight answer about when he'll fix the heating.",
+        "opts": ["pinpoint", "hold off", "tie in"],
+        "why": "'Pin someone down' = make them commit to something specific. Pinpoint is for locating facts or places, not people; 'hold off' means delay; 'tie in' means connect."
+      }
+    },
+    {
+      "word": "rein in",
+      "ipa": "reɪn ˈɪn",
+      "pos": "phrasal verb",
+      "def": "To restrict or control something or someone more tightly.",
+      "he": "לרסן",
+      "family": [],
+      "ex": [
+        "The government must [rein in] public spending.",
+        "She had to [rein in] her temper during the meeting.",
+        "The new law aims to [rein in] the power of tech giants."
+      ],
+      "col": ["rein in spending", "rein in inflation", "rein in one's temper", "rein in the power of"],
+      "reg": "neutral",
+      "syn": ["curb", "restrain", "check", "control"],
+      "nuance": "Rein in suggests pulling back something that is going too fast or too far. Curb is very similar; note the spelling — rein (as in a horse's reins), not reign.",
+      "ety": "Pulling on a horse's reins to slow it down.",
+      "tier": 1,
+      "themes": ["society", "money"],
+      "prec": {
+        "s": "The central bank raised interest rates to ___ inflation.",
+        "opts": ["reign in", "give in", "set in"],
+        "why": "'Rein in' = bring under control. 'Reign in' is a common misspelling; 'give in' means surrender; 'set in' means begin and seem likely to continue (winter set in)."
+      }
+    },
+    {
+      "word": "rule out",
+      "ipa": "ruːl ˈaʊt",
+      "pos": "phrasal verb",
+      "def": "To exclude a possibility or option.",
+      "he": "לשלול, לפסול",
+      "family": [],
+      "ex": [
+        "Police haven't [ruled out] murder.",
+        "The doctor [ruled out] anything serious.",
+        "I wouldn't [rule out] moving abroad one day."
+      ],
+      "col": ["rule out the possibility", "can't rule out", "rule something out completely"],
+      "reg": "neutral",
+      "syn": ["exclude", "eliminate", "dismiss", "preclude"],
+      "nuance": "Rule out means decide that something is not possible or not an option. Preclude means make something impossible (by circumstances).",
+      "ety": "Like drawing a ruled line through an item on a list.",
+      "tier": 1,
+      "themes": ["thinking", "work"],
+      "prec": {
+        "s": "Detectives have not ___ the possibility that the fire was started deliberately.",
+        "opts": ["ruled over", "pointed out", "left out"],
+        "why": "'Rule out a possibility' = exclude it. 'Rule over' means govern; 'point out' means draw attention to; 'leave out' means omit."
+      }
+    },
+    {
+      "word": "single out",
+      "ipa": "ˈsɪŋɡl aʊt",
+      "pos": "phrasal verb",
+      "def": "To choose one person or thing from a group for special attention, praise or criticism.",
+      "he": "לייחד, לבחור במיוחד",
+      "family": [],
+      "ex": [
+        "The teacher [singled her out] for praise.",
+        "He felt [singled out] for criticism.",
+        "The report [singles out] three hospitals for urgent improvement."
+      ],
+      "col": ["single out for praise", "single out for criticism", "feel singled out"],
+      "reg": "neutral",
+      "syn": ["pick out", "select", "target", "highlight"],
+      "nuance": "Single out stresses that one is chosen from many — often unfairly when it's criticism.",
+      "ety": "To make 'single' (separate) from the group.",
+      "tier": 1,
+      "themes": ["relationships", "work"],
+      "prec": {
+        "s": "Why am I being ___? Everyone else was late too!",
+        "opts": ["sorted out", "left over", "picked up"],
+        "why": "'Singled out' = chosen for (unfair) special treatment. 'Sorted out' means organised or dealt with; 'left over' means remaining; 'picked up' means collected or learned."
+      }
+    },
+    {
+      "word": "sound out",
+      "ipa": "saʊnd ˈaʊt",
+      "pos": "phrasal verb",
+      "def": "To talk to someone informally to find out their opinion before making a decision.",
+      "he": "לגשש, לבדוק את דעתו של",
+      "family": [],
+      "ex": [
+        "I'll [sound out] the manager before we make a formal proposal.",
+        "Can you [sound her out] about joining the project?",
+        "The party is [sounding out] voters on the new policy."
+      ],
+      "col": ["sound someone out about", "sound out opinion", "informally sound out"],
+      "reg": "neutral",
+      "syn": ["canvass", "consult", "test the waters", "feel out"],
+      "nuance": "Sound out is informal, careful consultation — testing reactions before committing. Consult is more formal and official.",
+      "ety": "From nautical 'sounding' — measuring the depth of water.",
+      "tier": 2,
+      "themes": ["work", "speech"],
+      "prec": {
+        "s": "Before proposing the merger publicly, the CEO quietly ___ the major shareholders.",
+        "opts": ["spoke out", "called out", "voiced"],
+        "why": "'Sound out' = informally test someone's opinion. 'Speak out' means publicly protest; 'call out' means publicly criticise; 'voice' means express your own opinion."
+      }
+    },
+    {
+      "word": "stave off",
+      "ipa": "steɪv ˈɔːf",
+      "pos": "phrasal verb",
+      "def": "To prevent something bad from happening, or delay it.",
+      "he": "למנוע, לדחות (סכנה)",
+      "family": [],
+      "ex": [
+        "The government borrowed heavily to [stave off] bankruptcy.",
+        "We ate biscuits to [stave off] hunger until dinner.",
+        "Regular exercise may help [stave off] dementia."
+      ],
+      "col": ["stave off bankruptcy", "stave off defeat", "stave off hunger", "stave off a crisis"],
+      "reg": "formal",
+      "syn": ["avert", "ward off", "forestall", "hold off"],
+      "nuance": "Stave off often implies temporary prevention — delaying the inevitable. Avert means prevent completely.",
+      "ety": "From stave 'a staff, stick' — holding something back with a stick.",
+      "tier": 2,
+      "themes": ["change", "money"],
+      "prec": {
+        "s": "An emergency loan helped the airline ___ bankruptcy, at least for another year.",
+        "opts": ["stand off", "stamp out", "stave in"],
+        "why": "'Stave off' = keep something bad away for a while — 'at least for another year'. A stand-off is a deadlock; 'stamp out' means eliminate completely; 'stave in' means break inwards (a boat's side)."
+      }
+    },
+    {
+      "word": "step down",
+      "ipa": "step ˈdaʊn",
+      "pos": "phrasal verb",
+      "def": "To resign from an important position.",
+      "he": "להתפטר, לפנות את מקומו",
+      "family": [],
+      "ex": [
+        "The chairman will [step down] at the end of the year.",
+        "She [stepped down] as leader after the election defeat.",
+        "Critics called on the minister to [step down]."
+      ],
+      "col": ["step down as", "step down from the board", "call on someone to step down"],
+      "reg": "neutral",
+      "syn": ["resign", "stand down", "quit", "leave office"],
+      "nuance": "Step down is a polite, often voluntary-sounding way to say resign. Step up means take more responsibility or increase.",
+      "ety": "Stepping down from a raised platform.",
+      "tier": 1,
+      "themes": ["work", "society"],
+      "prec": {
+        "s": "After twenty years as CEO, she announced that she would ___ next spring.",
+        "opts": ["step up", "step in", "step aside from"],
+        "why": "'Step down' = resign from a senior role. 'Step up' means take on more responsibility; 'step in' means intervene; 'step aside' also exists but needs no 'from' here and suggests making room temporarily."
+      }
+    },
+    {
+      "word": "wriggle out of",
+      "ipa": "ˈrɪɡl aʊt əv",
+      "pos": "phrasal verb",
+      "def": "To avoid doing something you should do, especially by making clever excuses.",
+      "he": "להתחמק מ־",
+      "family": [],
+      "ex": [
+        "He always manages to [wriggle out of] doing the dishes.",
+        "The company tried to [wriggle out of] paying compensation.",
+        "Don't let her [wriggle out of] her promise."
+      ],
+      "col": ["wriggle out of a promise", "wriggle out of paying", "wriggle out of responsibility"],
+      "reg": "informal",
+      "syn": ["get out of", "evade", "dodge", "weasel out of"],
+      "nuance": "Wriggle out of suggests twisting and turning with excuses. Weasel out of is more contemptuous; get out of is neutral.",
+      "ety": "Like a worm wriggling out of someone's grasp.",
+      "tier": 2,
+      "themes": ["character", "work"],
+      "prec": {
+        "s": "My brother always finds some excuse to ___ helping with the washing-up.",
+        "opts": ["back up", "pull through", "run into"],
+        "why": "'Wriggle out of' = avoid a duty with excuses. 'Back up' means support; 'pull through' means survive an illness; 'run into' means meet by chance."
+      }
+    },
+    {
+      "word": "chip in",
+      "ipa": "tʃɪp ˈɪn",
+      "pos": "phrasal verb",
+      "def": "To contribute money or help to something shared; to interrupt a conversation with a comment.",
+      "he": "להשתתף (בכסף), לתרום; להתערב בשיחה",
+      "family": [],
+      "ex": [
+        "We all [chipped in] for her leaving present.",
+        "If everyone [chips in] ten dollars, we can afford it.",
+        "'That's not true,' she [chipped in]."
+      ],
+      "col": ["chip in for a present", "everyone chipped in", "chip in with a comment"],
+      "reg": "informal",
+      "syn": ["contribute", "club together", "pitch in", "interject"],
+      "nuance": "Chip in is mainly sharing a cost; pitch in is joining in with work. Chip in can also mean add a comment to a conversation.",
+      "ety": "From poker: putting chips into the pot.",
+      "tier": 1,
+      "themes": ["money", "relationships"],
+      "prec": {
+        "s": "Everyone in the office ___ twenty dollars to buy her a farewell gift.",
+        "opts": ["chipped away", "paid off", "cashed in"],
+        "why": "'Chip in' = contribute money to a shared cost. 'Chip away (at)' means gradually reduce; 'pay off' means repay a debt or succeed; 'cash in' means exchange for money or profit from."
+      }
+    },
+    {
+      "word": "bear out",
+      "ipa": "ber ˈaʊt",
+      "pos": "phrasal verb",
+      "def": "To support or confirm that something is true.",
+      "he": "לאשש, לאשר",
+      "family": [],
+      "ex": [
+        "The figures [bear out] what we suspected.",
+        "Her story was [borne out] by the CCTV footage.",
+        "Recent research [bears out] this theory."
+      ],
+      "col": ["bear out a claim", "be borne out by the evidence", "the facts bear this out"],
+      "reg": "formal",
+      "syn": ["corroborate", "confirm", "support", "vindicate"],
+      "nuance": "Bear out is close to corroborate but more conversational. It is often passive: 'be borne out by the evidence'.",
+      "ety": "bear in the old sense 'carry' — to carry a claim out to proof.",
+      "tier": 2,
+      "themes": ["knowledge"],
+      "prec": {
+        "s": "Our suspicions were ___ by the bank records, which showed regular payments to the official.",
+        "opts": ["borne in", "carried out", "brought about"],
+        "why": "'Borne out by' = confirmed by. 'Borne in on' means become clear to someone; 'carried out' means performed; 'brought about' means caused."
+      }
+    },
+    {
+      "word": "own up to",
+      "ipa": "oʊn ˈʌp tuː",
+      "pos": "phrasal verb",
+      "def": "To admit that you have done something wrong.",
+      "he": "להודות ב־, ליטול אחריות על",
+      "family": [],
+      "ex": [
+        "Nobody [owned up to] breaking the window.",
+        "It takes courage to [own up to] your mistakes.",
+        "Eventually he [owned up to] taking the money."
+      ],
+      "col": ["own up to a mistake", "own up to breaking", "refuse to own up"],
+      "reg": "informal",
+      "syn": ["confess", "admit", "come clean", "take responsibility for"],
+      "nuance": "Own up is informal and suggests voluntary admission. Confess is more formal or criminal; come clean means finally tell the whole truth.",
+      "ety": "own in the old sense 'acknowledge, admit'.",
+      "tier": 1,
+      "themes": ["character", "speech"],
+      "prec": {
+        "s": "Nobody in the class would ___ drawing on the board, so they all stayed after school.",
+        "opts": ["own to up", "make up for", "put up with"],
+        "why": "'Own up to' = admit doing something wrong. 'Own to up' is ungrammatical; 'make up for' means compensate; 'put up with' means tolerate."
+      }
+    },
+    {
+      "word": "rack up",
+      "ipa": "ræk ˈʌp",
+      "pos": "phrasal verb",
+      "def": "To accumulate or achieve a large number of something, such as points, debts or profits.",
+      "he": "לצבור",
+      "family": [],
+      "ex": [
+        "She [racked up] huge debts on her credit card.",
+        "The team has [racked up] ten wins in a row.",
+        "The video [racked up] two million views in a day."
+      ],
+      "col": ["rack up debts", "rack up points", "rack up views", "rack up losses"],
+      "reg": "informal",
+      "syn": ["accumulate", "amass", "chalk up", "notch up"],
+      "nuance": "Rack up suggests a quick build-up, of good or bad things. Amass is formal (amass a fortune); chalk up and notch up are for successes.",
+      "ety": "Like adding balls to a rack in snooker or pool.",
+      "tier": 1,
+      "themes": ["degree", "money"],
+      "prec": {
+        "s": "In just one week, the music video ___ fifty million views.",
+        "opts": ["racked off", "brought up", "made out"],
+        "why": "'Rack up' = accumulate a large number quickly. 'Rack off' is Australian slang for 'go away'; 'bring up' means raise a topic or child; 'make out' means see with difficulty or kiss."
+      }
+    },
+    {
+      "word": "shrug off",
+      "ipa": "ʃrʌɡ ˈɔːf",
+      "pos": "phrasal verb",
+      "def": "To treat something as unimportant; to get rid of something easily.",
+      "he": "לבטל בהינף כתף, להתעלם מ־",
+      "family": [],
+      "ex": [
+        "He [shrugged off] the criticism and carried on.",
+        "The market [shrugged off] the bad news and rose 2%.",
+        "She [shrugged off] a knee injury to win the final."
+      ],
+      "col": ["shrug off criticism", "shrug off an injury", "shrug off concerns"],
+      "reg": "neutral",
+      "syn": ["dismiss", "brush off", "disregard", "make light of"],
+      "nuance": "Shrug off means not letting something affect you. Brush off is more about rejecting someone or something rudely.",
+      "ety": "Shrugging the shoulders to show indifference.",
+      "tier": 1,
+      "themes": ["emotion", "character"],
+      "prec": {
+        "s": "Despite a painful ankle, the runner ___ the injury and finished third.",
+        "opts": ["shrugged on", "showed off", "shook up"],
+        "why": "'Shrug off an injury' = not let it affect you. 'Shrug on' means put on a jacket quickly; 'show off' means boast; 'shake up' means upset or reorganise."
+      }
+    },
+    {
+      "word": "weigh up",
+      "ipa": "weɪ ˈʌp",
+      "pos": "phrasal verb",
+      "def": "To consider the advantages and disadvantages of something carefully before deciding.",
+      "he": "לשקול (יתרונות וחסרונות)",
+      "family": [],
+      "ex": [
+        "You need to [weigh up] the pros and cons before you accept.",
+        "She [weighed up] her options and decided to stay.",
+        "Investors are [weighing up] the risks of the new market."
+      ],
+      "col": ["weigh up the pros and cons", "weigh up the options", "weigh up the risks"],
+      "reg": "neutral",
+      "syn": ["assess", "evaluate", "consider", "balance"],
+      "nuance": "Weigh up is mainly British; Americans more often say 'weigh' alone ('weigh the options'). Mull over is slower, more relaxed thinking.",
+      "ety": "Like putting two things on a scale.",
+      "tier": 1,
+      "themes": ["thinking", "work"],
+      "prec": {
+        "s": "Before accepting the job abroad, she sat down to ___ the pros and cons.",
+        "opts": ["weigh down", "weigh in", "look up"],
+        "why": "'Weigh up the pros and cons' = carefully compare them. 'Weigh down' means burden; 'weigh in' means join a discussion forcefully; 'look up' means search for or improve."
+      }
+    }
+  ]
+}

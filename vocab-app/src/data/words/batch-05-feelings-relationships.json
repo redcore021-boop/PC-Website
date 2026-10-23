@@ -1,0 +1,1011 @@
+{
+  "batch": "batch-05",
+  "title": "Feelings & Relationships",
+  "words": [
+    {
+      "word": "equanimity",
+      "ipa": "ˌekwəˈnɪməti",
+      "pos": "noun",
+      "def": "Mental calmness and composure, especially in a difficult situation.",
+      "he": "שלוות נפש, קור רוח",
+      "family": [],
+      "ex": [
+        "She accepted the bad news with remarkable [equanimity].",
+        "Meditation helps me keep my [equanimity] under pressure.",
+        "He faced both success and failure with the same [equanimity]."
+      ],
+      "col": ["with equanimity", "maintain one's equanimity", "remarkable equanimity", "disturb someone's equanimity"],
+      "reg": "formal",
+      "syn": ["composure", "calmness", "serenity", "poise"],
+      "nuance": "Equanimity is an inner evenness of mind that difficulties don't disturb. Composure is about outward self-control in a specific moment; serenity is peaceful calm in general.",
+      "ety": "Latin aequanimitas, from aequus 'equal' + animus 'mind'.",
+      "root": "equ",
+      "tier": 2,
+      "themes": ["emotion", "character"],
+      "prec": {
+        "s": "Whether the market rose or crashed, the old investor watched with complete ___.",
+        "opts": ["apathy", "nonchalance", "indifference"],
+        "why": "Equanimity is a calm, balanced mind in good times and bad — an admirable quality. Apathy and indifference mean not caring; nonchalance is a casual (sometimes affected) air of unconcern."
+      }
+    },
+    {
+      "word": "apathy",
+      "ipa": "ˈæpəθi",
+      "pos": "noun",
+      "def": "Lack of interest, enthusiasm or concern.",
+      "he": "אדישות, אפתיה",
+      "family": ["apathetic (adj.)", "apathetically (adv.)"],
+      "ex": [
+        "Voter [apathy] led to the lowest turnout in decades.",
+        "There's a general [apathy] among students about the issue.",
+        "He was too [apathetic] to even complain."
+      ],
+      "col": ["voter apathy", "public apathy", "widespread apathy", "apathetic about"],
+      "reg": "neutral",
+      "syn": ["indifference", "unconcern", "lethargy", "passivity"],
+      "nuance": "Apathy is a general lack of interest or motivation, often in public life. Indifference is not caring about a particular thing; lethargy is physical lack of energy.",
+      "ety": "Greek apatheia, from a- 'without' + pathos 'feeling'.",
+      "root": "path",
+      "tier": 1,
+      "themes": ["emotion", "society"],
+      "prec": {
+        "s": "Turnout was only 30%, which commentators blamed on widespread voter ___.",
+        "opts": ["antipathy", "empathy", "lethargy"],
+        "why": "'Voter apathy' is the set phrase for lack of interest in elections. Antipathy is strong dislike; empathy is understanding others' feelings; lethargy is physical tiredness."
+      }
+    },
+    {
+      "word": "ambivalent",
+      "ipa": "æmˈbɪvələnt",
+      "pos": "adjective",
+      "def": "Having mixed or contradictory feelings about something or someone.",
+      "he": "אמביוולנטי, בעל רגשות מעורבים",
+      "family": ["ambivalence (n.)", "ambivalently (adv.)"],
+      "ex": [
+        "I'm [ambivalent] about moving abroad — excited but also scared.",
+        "Many voters feel [ambivalent] towards both candidates.",
+        "Her [ambivalence] about the job was obvious."
+      ],
+      "col": ["ambivalent about", "deeply ambivalent", "ambivalent feelings", "ambivalent attitude"],
+      "reg": "formal",
+      "syn": ["conflicted", "torn", "in two minds", "equivocal"],
+      "nuance": "Ambivalent means having two opposite feelings at once — not 'indifferent'. Indifferent means having no strong feelings; undecided means not yet chosen.",
+      "ety": "German Ambivalenz, from Latin ambi- 'both' + valentia 'strength'.",
+      "root": "ambi",
+      "tier": 1,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "She was ___ about the promotion: thrilled by the salary, dreading the longer hours.",
+        "opts": ["indifferent", "ambiguous", "apathetic"],
+        "why": "Ambivalent means having conflicting feelings at the same time — thrilled and dreading. Indifferent and apathetic mean not caring; ambiguous describes statements with two meanings, not feelings."
+      }
+    },
+    {
+      "word": "disconcerting",
+      "ipa": "ˌdɪskənˈsɜːrtɪŋ",
+      "pos": "adjective",
+      "def": "Causing one to feel unsettled, uneasy or confused.",
+      "he": "מטריד, מבלבל, מערער",
+      "family": ["disconcert (v.)", "disconcerted (adj.)", "disconcertingly (adv.)"],
+      "ex": [
+        "It's [disconcerting] when someone stares at you without blinking.",
+        "The silence on the other end of the line was [disconcerting].",
+        "He was [disconcerted] to find his office door open."
+      ],
+      "col": ["slightly disconcerting", "a disconcerting habit", "disconcertingly honest"],
+      "reg": "neutral",
+      "syn": ["unsettling", "unnerving", "disturbing", "perturbing"],
+      "nuance": "Disconcerting is mild: something throws you off balance. Unnerving is stronger (loses your confidence); disturbing is stronger still, suggesting distress.",
+      "ety": "Obsolete French desconcerter, 'to upset the harmony of'.",
+      "tier": 2,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "It was slightly ___ to find that my new colleague already knew where I lived.",
+        "opts": ["harrowing", "traumatic", "agonising"],
+        "why": "Disconcerting is mild unease — fitting 'slightly'. Harrowing, traumatic and agonising describe intense suffering."
+      }
+    },
+    {
+      "word": "poignant",
+      "ipa": "ˈpɔɪnjənt",
+      "pos": "adjective",
+      "def": "Evoking a keen sense of sadness or regret; deeply touching.",
+      "he": "נוגע ללב, מכמיר לב",
+      "family": ["poignancy (n.)", "poignantly (adv.)"],
+      "ex": [
+        "The film ends with a [poignant] scene at the father's grave.",
+        "Her letters are a [poignant] reminder of the war's cost.",
+        "The song is all the more [poignant] since his death."
+      ],
+      "col": ["poignant reminder", "poignant moment", "deeply poignant", "particularly poignant"],
+      "reg": "neutral",
+      "syn": ["moving", "touching", "heart-rending", "affecting"],
+      "nuance": "Poignant combines sadness and tenderness — touching in a way that hurts a little. Moving and touching are more general; heart-rending is stronger.",
+      "ety": "Old French poindre 'to prick', from Latin pungere — a feeling that pricks the heart.",
+      "tier": 1,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "The soldier's last letter home, found unopened, is a ___ reminder of the cost of war.",
+        "opts": ["pungent", "potent", "pertinent"],
+        "why": "Poignant means sadly touching. Pungent means sharp-smelling; potent means powerful; pertinent means relevant."
+      }
+    },
+    {
+      "word": "wistful",
+      "ipa": "ˈwɪstfl",
+      "pos": "adjective",
+      "def": "Having a feeling of vague or regretful longing, especially for the past.",
+      "he": "נוסטלגי, מתגעגע בעצב",
+      "family": ["wistfully (adv.)", "wistfulness (n.)"],
+      "ex": [
+        "She gave a [wistful] smile as she looked at old photos.",
+        "He spoke [wistfully] about his childhood by the sea.",
+        "There's a [wistful] quality to her music."
+      ],
+      "col": ["wistful smile", "wistful look", "speak wistfully", "slightly wistful"],
+      "reg": "neutral",
+      "syn": ["nostalgic", "yearning", "longing", "melancholy"],
+      "nuance": "Wistful is a gentle, sad longing — often for something lost or unattainable. Nostalgic is longing specifically for the past; melancholy is a deeper, lasting sadness.",
+      "ety": "Probably from obsolete wistly 'intently', influenced by wishful.",
+      "tier": 2,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "Watching the young couple dance, the old widow gave a ___ smile.",
+        "opts": ["wry", "smug", "sardonic"],
+        "why": "A wistful smile carries gentle longing for something lost. A wry smile is dryly amused; smug is self-satisfied; sardonic is mocking."
+      }
+    },
+    {
+      "word": "melancholy",
+      "ipa": "ˈmelənkɑːli",
+      "pos": "noun / adjective",
+      "def": "A deep, lasting, often thoughtful sadness.",
+      "he": "מלנכוליה, עצבות",
+      "family": ["melancholic (adj.)"],
+      "ex": [
+        "A feeling of [melancholy] came over him as autumn began.",
+        "The cello has a [melancholy] sound.",
+        "Her paintings are beautiful but [melancholy]."
+      ],
+      "col": ["a sense of melancholy", "melancholy mood", "deep melancholy", "tinged with melancholy"],
+      "reg": "literary",
+      "syn": ["sadness", "sorrow", "gloom", "despondency"],
+      "nuance": "Melancholy is a reflective, often gentle sadness, sometimes even beautiful (melancholy music). Depression is a medical condition; gloom is darker and heavier.",
+      "ety": "Greek melankholia, from melas 'black' + kholē 'bile' — black bile was thought to cause sadness.",
+      "tier": 1,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "The old film score has a beautiful, ___ quality that fits the rainy streets.",
+        "opts": ["morose", "sullen", "depressed"],
+        "why": "Melancholy can describe art and moods as beautifully sad. Morose and sullen describe bad-tempered, gloomy people; depressed refers to a person's (often clinical) state."
+      }
+    },
+    {
+      "word": "chagrin",
+      "ipa": "ʃəˈɡrɪn",
+      "pos": "noun",
+      "def": "Annoyance or embarrassment at having failed or been humiliated.",
+      "he": "מבוכה ותסכול, עוגמת נפש",
+      "family": ["chagrined (adj.)"],
+      "ex": [
+        "Much to his [chagrin], his younger brother won the race.",
+        "To the [chagrin] of the organisers, it rained all day.",
+        "She was [chagrined] to discover she'd sent the email to everyone."
+      ],
+      "col": ["much to one's chagrin", "to the chagrin of"],
+      "reg": "formal",
+      "syn": ["annoyance", "vexation", "mortification", "embarrassment"],
+      "nuance": "Chagrin mixes disappointment and embarrassment, often after losing face. It is almost always used in 'to someone's chagrin'. Mortification is much stronger humiliation.",
+      "ety": "French chagrin 'sorrow'.",
+      "tier": 2,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "Much to my ___, my little sister beat me at chess in front of all my friends.",
+        "opts": ["remorse", "dismay", "grief"],
+        "why": "'Much to my chagrin' expresses embarrassed annoyance at a loss of face. Dismay is shocked disappointment (also possible, but lacks the embarrassment); remorse is guilt; grief is deep sorrow."
+      }
+    },
+    {
+      "word": "trepidation",
+      "ipa": "ˌtrepɪˈdeɪʃn",
+      "pos": "noun",
+      "def": "A feeling of fear or anxiety about something that may happen.",
+      "he": "חרדה, חשש",
+      "family": [],
+      "ex": [
+        "She opened the exam results with some [trepidation].",
+        "We approached the old house with [trepidation].",
+        "Despite his [trepidation], the interview went well."
+      ],
+      "col": ["with trepidation", "some trepidation", "a sense of trepidation", "fear and trepidation"],
+      "reg": "formal",
+      "syn": ["apprehension", "anxiety", "dread", "nervousness"],
+      "nuance": "Trepidation is nervous fear about something coming, usually not paralysing. Dread is stronger; apprehension is close but slightly more cognitive.",
+      "ety": "Latin trepidatio, from trepidare 'to tremble'.",
+      "tier": 2,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "With some ___, she knocked on the door of the father she had never met.",
+        "opts": ["terror", "panic", "horror"],
+        "why": "Trepidation is a nervous, uncertain fear — fitting 'with some'. Terror, panic and horror are extreme fear."
+      }
+    },
+    {
+      "word": "indignation",
+      "ipa": "ˌɪndɪɡˈneɪʃn",
+      "pos": "noun",
+      "def": "Anger caused by something that is perceived as unfair.",
+      "he": "זעם (על עוול), התמרמרות",
+      "family": ["indignant (adj.)", "indignantly (adv.)"],
+      "ex": [
+        "The new tax caused widespread [indignation].",
+        "'I'm not a liar!' she said with [indignation].",
+        "Residents were [indignant] at not being consulted."
+      ],
+      "col": ["moral indignation", "righteous indignation", "public indignation", "indignant at"],
+      "reg": "formal",
+      "syn": ["outrage", "resentment", "anger", "umbrage"],
+      "nuance": "Indignation is specifically anger at injustice or insult. Outrage is stronger and more public; resentment is lasting bitterness.",
+      "ety": "Latin indignari 'to regard as unworthy', from dignus 'worthy'.",
+      "tier": 1,
+      "themes": ["emotion", "conflict"],
+      "prec": {
+        "s": "The bank's decision to pay huge bonuses after a bailout provoked righteous ___.",
+        "opts": ["resentment", "frustration", "irritation"],
+        "why": "'Righteous indignation' is the set phrase for anger at injustice. Resentment is lingering bitterness; frustration comes from being blocked; irritation is mild annoyance."
+      }
+    },
+    {
+      "word": "rancor",
+      "ipa": "ˈræŋkər",
+      "pos": "noun",
+      "def": "Bitterness or resentment, especially when long-standing. (UK spelling: rancour)",
+      "he": "טינה, איבה",
+      "family": ["rancorous (adj.)"],
+      "ex": [
+        "The divorce was settled without [rancor].",
+        "There is still deep [rancor] between the two families.",
+        "The debate was unusually [rancorous]."
+      ],
+      "col": ["without rancor", "bitterness and rancor", "rancorous debate"],
+      "reg": "formal",
+      "syn": ["bitterness", "resentment", "animosity", "spite"],
+      "nuance": "Rancor is deep, lingering bitterness. Animosity is active hostility; spite is a desire to hurt.",
+      "ety": "Latin rancor 'rankness, rancid smell'.",
+      "tier": 3,
+      "themes": ["emotion", "relationships"],
+      "prec": {
+        "s": "Twenty years later, she could talk about her ex-husband without ___.",
+        "opts": ["remorse", "regret", "reproach"],
+        "why": "Rancor is lingering bitterness towards someone. Remorse is guilt for what you did; regret is wishing things were different; reproach is open criticism, not a feeling held inside."
+      }
+    },
+    {
+      "word": "animosity",
+      "ipa": "ˌænɪˈmɑːsəti",
+      "pos": "noun",
+      "def": "Strong hostility or dislike.",
+      "he": "עוינות, איבה",
+      "family": [],
+      "ex": [
+        "There's no [animosity] between us — we just disagree.",
+        "Years of [animosity] between the two countries ended in war.",
+        "He felt no personal [animosity] towards his rival."
+      ],
+      "col": ["personal animosity", "animosity between", "animosity towards", "deep-seated animosity"],
+      "reg": "formal",
+      "syn": ["hostility", "antagonism", "enmity", "antipathy"],
+      "nuance": "Animosity is active hostility, often between people or groups. Antipathy is a deep dislike, which may be passive; enmity is a state of being enemies.",
+      "ety": "Latin animositas 'spiritedness', from animus 'spirit, mind'.",
+      "root": "anim",
+      "tier": 1,
+      "themes": ["emotion", "relationships", "conflict"],
+      "prec": {
+        "s": "Although they competed fiercely, there was no personal ___ between the two champions.",
+        "opts": ["animation", "unanimity", "magnanimity"],
+        "why": "Animosity is hostility. Animation means liveliness; unanimity means complete agreement; magnanimity means generosity — all share the root 'anim'."
+      }
+    },
+    {
+      "word": "schadenfreude",
+      "ipa": "ˈʃɑːdnfrɔɪdə",
+      "pos": "noun",
+      "def": "Pleasure derived from another person's misfortune.",
+      "he": "שמחה לאיד",
+      "family": [],
+      "ex": [
+        "I felt a twinge of [schadenfreude] when the arrogant star lost.",
+        "Celebrity gossip feeds on [schadenfreude].",
+        "There was more than a hint of [schadenfreude] in his sympathy."
+      ],
+      "col": ["a twinge of schadenfreude", "pure schadenfreude", "a hint of schadenfreude"],
+      "reg": "neutral",
+      "syn": ["gloating", "malicious pleasure"],
+      "nuance": "Schadenfreude is the private pleasure in another's bad luck. Gloating is openly expressing that pleasure.",
+      "ety": "German Schaden 'harm' + Freude 'joy'.",
+      "tier": 2,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "When the bully slipped in the mud, I couldn't help feeling a little ___.",
+        "opts": ["empathy", "sympathy", "nostalgia"],
+        "why": "Schadenfreude is pleasure in someone else's misfortune. Empathy and sympathy are kind feelings towards their suffering; nostalgia is longing for the past."
+      }
+    },
+    {
+      "word": "ennui",
+      "ipa": "ɑːnˈwiː",
+      "pos": "noun",
+      "def": "A feeling of weariness and dissatisfaction from a lack of excitement or purpose.",
+      "he": "שעמום קיומי, עייפות נפש",
+      "family": [],
+      "ex": [
+        "The long winter filled him with [ennui].",
+        "The novel captures the [ennui] of suburban life.",
+        "Her [ennui] disappeared the moment the new project began."
+      ],
+      "col": ["a sense of ennui", "existential ennui", "suburban ennui"],
+      "reg": "literary",
+      "syn": ["boredom", "tedium", "listlessness", "world-weariness"],
+      "nuance": "Ennui is a deeper, more stylish boredom — a lack of meaning, not just of things to do. Tedium is the quality of a boring task.",
+      "ety": "French ennui, from Latin in odio 'hateful'.",
+      "tier": 3,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "Wealthy and idle, the novel's heroine drifts through Paris in a haze of ___.",
+        "opts": ["tedium", "fatigue", "lethargy"],
+        "why": "Ennui is the literary word for a weary dissatisfaction with life. Tedium describes boring tasks; fatigue is physical tiredness; lethargy is lack of energy."
+      }
+    },
+    {
+      "word": "exasperated",
+      "ipa": "ɪɡˈzæspəreɪtɪd",
+      "pos": "adjective",
+      "def": "Intensely irritated and frustrated.",
+      "he": "מתוסכל ועצבני, מוטרד עד קצה גבול",
+      "family": ["exasperate (v.)", "exasperating (adj.)", "exasperation (n.)"],
+      "ex": [
+        "'For the last time, put your shoes on!' said the [exasperated] mother.",
+        "Fans are [exasperated] by the team's poor form.",
+        "She threw up her hands in [exasperation]."
+      ],
+      "col": ["exasperated by", "in exasperation", "an exasperated sigh", "increasingly exasperated"],
+      "reg": "neutral",
+      "syn": ["infuriated", "frustrated", "fed up", "annoyed"],
+      "nuance": "Exasperated is frustration after repeated annoyance — patience has run out. Frustrated stresses being blocked; infuriated is pure anger.",
+      "ety": "Latin exasperare 'to make rough', from asper 'rough'.",
+      "tier": 1,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "After explaining the same thing five times, the teacher gave an ___ sigh.",
+        "opts": ["exhausted", "exuberant", "exhilarated"],
+        "why": "Exasperated: irritated after repeated frustration. Exhausted is tired; exuberant is full of joy; exhilarated is thrilled."
+      }
+    },
+    {
+      "word": "contrite",
+      "ipa": "kənˈtraɪt",
+      "pos": "adjective",
+      "def": "Feeling or expressing sincere remorse for wrongdoing.",
+      "he": "מתחרט, מכה על חטא",
+      "family": ["contrition (n.)", "contritely (adv.)"],
+      "ex": [
+        "He looked [contrite] and promised it wouldn't happen again.",
+        "The company issued a [contrite] apology.",
+        "She showed no [contrition] for what she had done."
+      ],
+      "col": ["contrite apology", "look contrite", "show contrition", "suitably contrite"],
+      "reg": "formal",
+      "syn": ["remorseful", "repentant", "apologetic", "penitent"],
+      "nuance": "Contrite emphasises sincere sorrow for a wrong. Apologetic is everyday; penitent and repentant have religious overtones.",
+      "ety": "Latin contritus 'ground to pieces', from conterere 'to crush'.",
+      "tier": 2,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "The boy who broke the window came to the door, red-faced and genuinely ___.",
+        "opts": ["contrived", "complacent", "conceited"],
+        "why": "Contrite means sincerely sorry for wrongdoing. Contrived means artificial; complacent means too self-satisfied; conceited means vain."
+      }
+    },
+    {
+      "word": "smug",
+      "ipa": "smʌɡ",
+      "pos": "adjective",
+      "def": "Having or showing excessive pride in oneself or one's achievements.",
+      "he": "שבע רצון מעצמו, מתנשא",
+      "family": ["smugly (adv.)", "smugness (n.)"],
+      "ex": [
+        "He had a [smug] look on his face after winning the argument.",
+        "Don't be so [smug] — you only won by luck.",
+        "She smiled [smugly] when her prediction came true."
+      ],
+      "col": ["smug smile", "smug grin", "smug satisfaction", "look smug"],
+      "reg": "informal",
+      "syn": ["self-satisfied", "complacent", "conceited", "superior"],
+      "nuance": "Smug is annoyingly self-satisfied, often after being right. Complacent stresses the danger of relaxing; conceited stresses vanity.",
+      "ety": "Low German smuk 'pretty, neat' — originally 'trim', then 'self-satisfied'.",
+      "tier": 1,
+      "themes": ["emotion", "character"],
+      "prec": {
+        "s": "'I told you it would rain,' she said with a ___ grin.",
+        "opts": ["complacent", "contented", "pompous"],
+        "why": "A smug grin shows annoying self-satisfaction at being right. Complacent is about relaxing your guard; contented is simply happy; pompous is self-important and solemn."
+      }
+    },
+    {
+      "word": "vindicate",
+      "ipa": "ˈvɪndɪkeɪt",
+      "pos": "verb",
+      "def": "To show or prove that someone is right, reasonable or not guilty.",
+      "he": "להצדיק, לטהר משם רע",
+      "family": ["vindication (n.)", "vindicated (adj.)"],
+      "ex": [
+        "The new evidence completely [vindicated] her.",
+        "His decision to invest early was [vindicated] by the results.",
+        "She felt [vindicated] when the report confirmed her warnings."
+      ],
+      "col": ["feel vindicated", "fully vindicated", "a vindication of"],
+      "reg": "formal",
+      "syn": ["justify", "exonerate", "clear", "acquit"],
+      "nuance": "Vindicate proves someone was right or innocent after doubt. Exonerate means officially free from blame; justify means show to be reasonable. Don't confuse with vindictive (wanting revenge).",
+      "ety": "Latin vindicare 'to claim, avenge'.",
+      "tier": 2,
+      "themes": ["emotion", "knowledge"],
+      "prec": {
+        "s": "Mocked for years for warning about the bubble, the economist felt ___ when the market crashed.",
+        "opts": ["vindictive", "exonerated", "validated"],
+        "why": "Vindicated means proven right after doubt. Vindictive means vengeful; exonerated means cleared of blame for wrongdoing; validated is close but more about feelings being acknowledged."
+      }
+    },
+    {
+      "word": "forlorn",
+      "ipa": "fərˈlɔːrn",
+      "pos": "adjective",
+      "def": "Pitifully sad and lonely; (of a hope) unlikely to succeed.",
+      "he": "עזוב, מסכן ובודד; (תקווה) קלושה",
+      "family": ["forlornly (adv.)"],
+      "ex": [
+        "A [forlorn] dog sat in the rain outside the shop.",
+        "The empty playground looked [forlorn] in winter.",
+        "They waited in the [forlorn] hope of a rescue."
+      ],
+      "col": ["forlorn hope", "look forlorn", "a forlorn figure", "forlornly"],
+      "reg": "literary",
+      "syn": ["desolate", "wretched", "abandoned", "woebegone"],
+      "nuance": "Forlorn suggests sad abandonment — people, animals or places. 'A forlorn hope' is a hopeless attempt.",
+      "ety": "Old English forloren 'lost', past participle of forleosan.",
+      "tier": 3,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "They kept searching the mountain in the ___ hope of finding survivors.",
+        "opts": ["futile", "vain", "faint"],
+        "why": "'A forlorn hope' is a fixed phrase: almost certainly in vain. Futile describes efforts, not hopes; 'in vain' would need different grammar; a faint hope is weak but not desperate."
+      }
+    },
+    {
+      "word": "euphoria",
+      "ipa": "juːˈfɔːriə",
+      "pos": "noun",
+      "def": "A feeling of intense excitement and happiness.",
+      "he": "אופוריה, התלהבות עזה",
+      "family": ["euphoric (adj.)"],
+      "ex": [
+        "The [euphoria] of victory soon gave way to exhaustion.",
+        "There was a mood of [euphoria] in the city after the war ended.",
+        "Investors were [euphoric] as prices kept rising."
+      ],
+      "col": ["a sense of euphoria", "initial euphoria", "market euphoria", "euphoric mood"],
+      "reg": "neutral",
+      "syn": ["elation", "ecstasy", "exhilaration", "rapture"],
+      "nuance": "Euphoria is intense, often temporary, happiness — sometimes unrealistic (market euphoria). Elation is great happiness after success.",
+      "ety": "Greek euphoria 'well-being', from eu 'well' + pherein 'to bear'.",
+      "tier": 1,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "The initial ___ of the stock-market boom blinded investors to obvious risks.",
+        "opts": ["contentment", "serenity", "satisfaction"],
+        "why": "Euphoria is intense, often irrational excitement. Contentment, serenity and satisfaction are calm, quiet states."
+      }
+    },
+    {
+      "word": "qualms",
+      "ipa": "kwɑːmz",
+      "pos": "noun (usually plural)",
+      "def": "Feelings of doubt or unease, especially about whether something is morally right.",
+      "he": "נקיפות מצפון, היסוסים",
+      "family": [],
+      "ex": [
+        "He had no [qualms] about lying to his boss.",
+        "I have some [qualms] about letting her travel alone.",
+        "She signed the contract without any [qualms]."
+      ],
+      "col": ["have no qualms about", "moral qualms", "without qualms", "have qualms about"],
+      "reg": "neutral",
+      "syn": ["misgivings", "scruples", "reservations", "doubts"],
+      "nuance": "Qualms often involve conscience — doubts about whether something is right. Misgivings are doubts about whether something is wise; scruples are moral principles that stop you acting.",
+      "ety": "Possibly from Old English cwealm 'pain'.",
+      "tier": 1,
+      "themes": ["emotion", "work"],
+      "prec": {
+        "s": "The ruthless dealer had no ___ about selling fake antiques to elderly collectors.",
+        "opts": ["regrets", "anxieties", "apprehensions"],
+        "why": "'Have no qualms about' means feel no moral unease before doing something. Regrets come after; anxieties and apprehensions are fears, not moral doubts."
+      }
+    },
+    {
+      "word": "misgivings",
+      "ipa": "mɪsˈɡɪvɪŋz",
+      "pos": "noun (usually plural)",
+      "def": "Feelings of doubt or apprehension about the outcome of something.",
+      "he": "ספקות, חששות",
+      "family": [],
+      "ex": [
+        "I had serious [misgivings] about the plan from the start.",
+        "Despite my [misgivings], I agreed to go.",
+        "Many experts voiced [misgivings] about the new drug."
+      ],
+      "col": ["serious misgivings", "have misgivings about", "voice misgivings", "despite misgivings"],
+      "reg": "neutral",
+      "syn": ["doubts", "reservations", "qualms", "apprehension"],
+      "nuance": "Misgivings are doubts about whether a plan or decision is wise. Qualms are more about conscience; reservations are polite doubts that limit your support.",
+      "ety": "mis- + give, in the old sense 'to suggest' — the mind 'mis-gives' you.",
+      "tier": 2,
+      "themes": ["emotion", "work"],
+      "prec": {
+        "s": "I agreed to invest, though I had serious ___ about the company's business plan.",
+        "opts": ["scruples", "remorse", "nostalgia"],
+        "why": "Misgivings are doubts about whether something will work out. Scruples are moral principles; remorse is guilt after acting; nostalgia is longing for the past."
+      }
+    },
+    {
+      "word": "nonchalant",
+      "ipa": "ˌnɑːnʃəˈlɑːnt",
+      "pos": "adjective",
+      "def": "Appearing casually calm and relaxed; not displaying interest or anxiety.",
+      "he": "אדיש, שלו (למראית עין), נינוח",
+      "family": ["nonchalance (n.)", "nonchalantly (adv.)"],
+      "ex": [
+        "He tried to look [nonchalant], but his hands were shaking.",
+        "She shrugged [nonchalantly] when asked about the award.",
+        "His [nonchalance] about the deadline worried his team."
+      ],
+      "col": ["try to look nonchalant", "nonchalant shrug", "with nonchalance", "nonchalantly"],
+      "reg": "neutral",
+      "syn": ["casual", "blasé", "unconcerned", "cool"],
+      "nuance": "Nonchalant is about appearing calm, often to hide feelings. Blasé suggests being unimpressed through over-familiarity; indifferent means genuinely not caring.",
+      "ety": "French nonchaloir 'to not be concerned', from Latin calere 'to be warm'.",
+      "tier": 1,
+      "themes": ["emotion", "character"],
+      "prec": {
+        "s": "Trying to look ___, he leaned against the wall as she walked past, though his heart was pounding.",
+        "opts": ["indifferent", "apathetic", "listless"],
+        "why": "Nonchalant is a casual air, often put on to hide feelings — exactly his situation. Indifferent and apathetic mean really not caring; listless means lacking energy."
+      }
+    },
+    {
+      "word": "blasé",
+      "ipa": "blɑːˈzeɪ",
+      "pos": "adjective",
+      "def": "Unimpressed or indifferent to something because one has experienced it too often.",
+      "he": "אדיש, שבע מראות",
+      "family": [],
+      "ex": [
+        "Locals are [blasé] about the famous view.",
+        "You can't be [blasé] about safety on a building site.",
+        "After his tenth award, he'd become rather [blasé]."
+      ],
+      "col": ["blasé about", "blasé attitude", "become blasé"],
+      "reg": "neutral",
+      "syn": ["unimpressed", "jaded", "nonchalant", "indifferent"],
+      "nuance": "Blasé means unimpressed because of over-familiarity, sometimes dangerously so ('blasé about security'). Jaded adds weariness and cynicism.",
+      "ety": "French blasé, past participle of blaser 'to cloy, satiate'.",
+      "tier": 2,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "Living in Paris for years, she'd become ___ about the Eiffel Tower and never looked at it.",
+        "opts": ["nonchalant", "cynical", "apathetic"],
+        "why": "Blasé means unimpressed through over-familiarity. Nonchalant is a casual manner; cynical means distrustful of motives; apathetic means generally unmotivated."
+      }
+    },
+    {
+      "word": "disillusioned",
+      "ipa": "ˌdɪsɪˈluːʒnd",
+      "pos": "adjective",
+      "def": "Disappointed after discovering that something is not as good as one believed.",
+      "he": "מאוכזב, מפוכח מאשליות",
+      "family": ["disillusion (v./n.)", "disillusionment (n.)"],
+      "ex": [
+        "Many voters are [disillusioned] with politics.",
+        "She became [disillusioned] with the charity after seeing how it spent money.",
+        "His [disillusionment] with the job grew every year."
+      ],
+      "col": ["disillusioned with", "become disillusioned", "growing disillusionment"],
+      "reg": "neutral",
+      "syn": ["disenchanted", "disappointed", "let down", "jaded"],
+      "nuance": "Disillusioned means losing a positive belief or ideal. Disenchanted is very close; disappointed is general and can be about a single event.",
+      "ety": "dis- + illusion, from Latin illudere 'to mock', from ludere 'to play'.",
+      "root": "lud",
+      "tier": 1,
+      "themes": ["emotion", "society"],
+      "prec": {
+        "s": "She joined the party full of idealism but left five years later, ___ with its compromises.",
+        "opts": ["delusional", "disoriented", "dismissive"],
+        "why": "Disillusioned means having lost a belief or ideal. Delusional means believing false things; disoriented means confused about where you are; dismissive means treating something as unimportant."
+      }
+    },
+    {
+      "word": "rapport",
+      "ipa": "ræˈpɔːr",
+      "pos": "noun",
+      "def": "A close and harmonious relationship of mutual understanding.",
+      "he": "קשר טוב, הבנה הדדית",
+      "family": [],
+      "ex": [
+        "A good teacher builds [rapport] with students.",
+        "The two leaders quickly developed a warm [rapport].",
+        "There was an instant [rapport] between them."
+      ],
+      "col": ["build rapport", "establish a rapport", "instant rapport", "a good rapport with"],
+      "reg": "neutral",
+      "syn": ["understanding", "connection", "affinity", "bond"],
+      "nuance": "Rapport is a relationship of easy communication and trust, often professional. Affinity is a natural liking or similarity; a bond is a deeper, lasting connection.",
+      "ety": "French rapporter 'to bring back'.",
+      "tier": 1,
+      "themes": ["relationships", "work"],
+      "prec": {
+        "s": "Good salespeople spend the first few minutes building ___ with customers before mentioning prices.",
+        "opts": ["intimacy", "kinship", "allegiance"],
+        "why": "Rapport is professional or social harmony and trust. Intimacy is personal closeness; kinship is family relationship or deep similarity; allegiance is loyalty to a leader or cause."
+      }
+    },
+    {
+      "word": "camaraderie",
+      "ipa": "ˌkɑːməˈrɑːdəri",
+      "pos": "noun",
+      "def": "Mutual trust and friendship among people who spend time or work together.",
+      "he": "רעות, אחווה",
+      "family": ["comrade (n., related)"],
+      "ex": [
+        "Soldiers often miss the [camaraderie] of army life.",
+        "There's a real [camaraderie] among the night-shift nurses.",
+        "The team's [camaraderie] helped them through a difficult season."
+      ],
+      "col": ["a sense of camaraderie", "the camaraderie of", "team camaraderie"],
+      "reg": "neutral",
+      "syn": ["fellowship", "companionship", "solidarity", "esprit de corps"],
+      "nuance": "Camaraderie grows from shared experience, often hardship. Solidarity is unity in support of a shared cause; companionship is simply being together.",
+      "ety": "French camarade 'comrade', from Spanish camarada 'roommate'.",
+      "tier": 1,
+      "themes": ["relationships"],
+      "prec": {
+        "s": "Years later, the veterans still missed the ___ of the trenches more than anything else.",
+        "opts": ["solidarity", "hospitality", "affiliation"],
+        "why": "Camaraderie is friendship built from shared experience. Solidarity is unity for a cause; hospitality is welcoming guests; affiliation is an official connection to a group."
+      }
+    },
+    {
+      "word": "estranged",
+      "ipa": "ɪˈstreɪndʒd",
+      "pos": "adjective",
+      "def": "No longer close or in contact with someone, especially a family member.",
+      "he": "מנוכר, שהקשר עמו נותק",
+      "family": ["estrangement (n.)", "estrange (v.)"],
+      "ex": [
+        "He hasn't spoken to his [estranged] brother in ten years.",
+        "She lives apart from her [estranged] husband.",
+        "Many young people feel [estranged] from the political system."
+      ],
+      "col": ["estranged wife/husband", "estranged from", "estranged son/daughter", "long estrangement"],
+      "reg": "formal",
+      "syn": ["alienated", "separated", "distant", "cut off"],
+      "nuance": "Estranged is most often used for family members who no longer speak. Alienated is a broader feeling of isolation from a group or society.",
+      "ety": "Old French estranger, from Latin extraneus 'foreign'.",
+      "tier": 2,
+      "themes": ["relationships"],
+      "prec": {
+        "s": "At the funeral, she saw her ___ father for the first time in twenty years.",
+        "opts": ["alienated", "aloof", "absent"],
+        "why": "Estranged is the standard word for family members who have stopped speaking. Alienated describes feeling isolated from a group; aloof is a cold manner; absent just means not there."
+      }
+    },
+    {
+      "word": "acrimonious",
+      "ipa": "ˌækrɪˈmoʊniəs",
+      "pos": "adjective",
+      "def": "(Of speech, a debate or a separation) angry and bitter.",
+      "he": "מר, חריף, רווי טינה",
+      "family": ["acrimony (n.)", "acrimoniously (adv.)"],
+      "ex": [
+        "After an [acrimonious] divorce, they never spoke again.",
+        "The meeting ended in [acrimony].",
+        "The band split up [acrimoniously] in 1998."
+      ],
+      "col": ["acrimonious divorce", "acrimonious dispute", "acrimonious split", "end in acrimony"],
+      "reg": "formal",
+      "syn": ["bitter", "hostile", "rancorous", "vitriolic"],
+      "nuance": "Acrimonious is used for relationships and disputes full of bitterness. Vitriolic is about extremely cruel language.",
+      "ety": "Latin acrimonia 'sharpness', from acer 'sharp'.",
+      "tier": 2,
+      "themes": ["relationships", "conflict"],
+      "prec": {
+        "s": "The band's ___ split led to years of lawsuits over who owned the songs.",
+        "opts": ["amicable", "acrid", "ambiguous"],
+        "why": "Acrimonious means full of bitterness and anger. Amicable is the opposite (friendly); acrid describes a bitter smell or taste; ambiguous means unclear."
+      }
+    },
+    {
+      "word": "amicable",
+      "ipa": "ˈæmɪkəbl",
+      "pos": "adjective",
+      "def": "(Of relations or an agreement) friendly and without serious disagreement.",
+      "he": "ידידותי, בהסכמה",
+      "family": ["amicably (adv.)"],
+      "ex": [
+        "They reached an [amicable] settlement out of court.",
+        "The divorce was surprisingly [amicable].",
+        "The two companies parted [amicably]."
+      ],
+      "col": ["amicable settlement", "amicable divorce", "part amicably", "amicable relationship"],
+      "reg": "formal",
+      "syn": ["friendly", "cordial", "harmonious", "civil"],
+      "nuance": "Amicable describes agreements, separations and relations conducted without hostility. Amiable describes a person's friendly nature.",
+      "ety": "Late Latin amicabilis, from amicus 'friend'.",
+      "tier": 1,
+      "themes": ["relationships"],
+      "prec": {
+        "s": "Unlike most celebrity break-ups, their divorce was ___, and they still go on holiday together.",
+        "opts": ["amiable", "amorous", "amenable"],
+        "why": "Amicable describes a friendly agreement or separation. Amiable describes a person's friendly character; amorous means showing sexual desire; amenable means open to persuasion."
+      }
+    },
+    {
+      "word": "reconcile",
+      "ipa": "ˈrekənsaɪl",
+      "pos": "verb",
+      "def": "To restore friendly relations; to make two apparently conflicting things compatible; to accept something unpleasant.",
+      "he": "להשלים, ליישב, לפייס",
+      "family": ["reconciliation (n.)", "irreconcilable (adj.)"],
+      "ex": [
+        "After years apart, the brothers were finally [reconciled].",
+        "It's hard to [reconcile] his kindness at home with his ruthlessness at work.",
+        "She has [reconciled] herself to never having children."
+      ],
+      "col": ["be reconciled with", "reconcile X with Y", "reconcile oneself to", "irreconcilable differences"],
+      "reg": "formal",
+      "syn": ["make peace", "harmonise", "accept", "square"],
+      "nuance": "Reconcile has three uses: people making peace, ideas being made compatible, and accepting something unwelcome ('reconcile oneself to').",
+      "ety": "Latin reconciliare 'to bring together again', from concilium 'meeting'.",
+      "tier": 1,
+      "themes": ["relationships", "thinking"],
+      "prec": {
+        "s": "I find it hard to ___ her public charity work with the way she treats her staff.",
+        "opts": ["compare", "conciliate", "combine"],
+        "why": "'Reconcile X with Y' means make two conflicting facts fit together. Compare means look at similarities and differences; conciliate means calm someone; combine means join together."
+      }
+    },
+    {
+      "word": "reproach",
+      "ipa": "rɪˈproʊtʃ",
+      "pos": "verb / noun",
+      "def": "To express disapproval or disappointment to someone; (n.) such an expression.",
+      "he": "לנזוף, להוכיח; נזיפה, תוכחה",
+      "family": ["reproachful (adj.)", "irreproachable (adj.)", "reproachfully (adv.)"],
+      "ex": [
+        "Her mother [reproached] her for not calling more often.",
+        "He gave me a [reproachful] look.",
+        "Her conduct has been [irreproachable]."
+      ],
+      "col": ["reproach someone for", "a look of reproach", "above/beyond reproach", "irreproachable conduct"],
+      "reg": "formal",
+      "syn": ["rebuke", "reprimand", "admonish", "chide"],
+      "nuance": "Reproach carries disappointment more than anger — often personal. 'Above reproach' means so good no one could criticise it.",
+      "ety": "Old French reprochier, from Latin prope 'near' — to bring near, to confront.",
+      "tier": 2,
+      "themes": ["relationships", "speech"],
+      "prec": {
+        "s": "The judge's conduct throughout the trial was beyond ___.",
+        "opts": ["reproof", "rebuke", "criticism"],
+        "why": "'Above/beyond reproach' is the fixed phrase for faultless conduct. The other nouns don't form this idiom."
+      }
+    },
+    {
+      "word": "begrudge",
+      "ipa": "bɪˈɡrʌdʒ",
+      "pos": "verb",
+      "def": "To envy someone the possession or enjoyment of something; to give something reluctantly.",
+      "he": "לפרגן בקושי, לקנא ב־",
+      "family": ["begrudgingly (adv.)"],
+      "ex": [
+        "I don't [begrudge] her success — she worked hard for it.",
+        "He [begrudged] every penny he spent on taxes.",
+        "She [begrudgingly] admitted that he was right."
+      ],
+      "col": ["not begrudge someone something", "begrudge every penny", "begrudgingly accept"],
+      "reg": "neutral",
+      "syn": ["resent", "envy", "grudge", "mind"],
+      "nuance": "Begrudge is very common in the negative: 'I don't begrudge him his success' = I'm happy for him. Resent is stronger and more lasting.",
+      "ety": "be- + grudge, from Old French grouchier 'to grumble'.",
+      "tier": 2,
+      "themes": ["emotion", "relationships"],
+      "prec": {
+        "s": "She worked eighty-hour weeks for years, so I don't ___ her the huge bonus.",
+        "opts": ["resent", "envy", "covet"],
+        "why": "Only begrudge works in the pattern 'begrudge someone something' (I don't begrudge her the bonus). Resent and envy take one object; covet means desire what belongs to someone else."
+      }
+    },
+    {
+      "word": "commiserate",
+      "ipa": "kəˈmɪzəreɪt",
+      "pos": "verb",
+      "def": "To express sympathy or pity; to share someone's disappointment.",
+      "he": "להשתתף בצער, לנחם",
+      "family": ["commiseration (n.)", "commiserations (interj.)"],
+      "ex": [
+        "We met after the exam to [commiserate] about the impossible questions.",
+        "I [commiserated] with her on losing the match.",
+        "'[Commiserations] on not getting the job.'"
+      ],
+      "col": ["commiserate with someone on/about", "offer commiserations"],
+      "reg": "formal",
+      "syn": ["sympathise", "console", "comfort", "condole"],
+      "nuance": "Commiserate is sharing disappointment, often over small setbacks, and often mutually. 'Commiserations!' is the opposite of 'Congratulations!'. Condolences are for a death.",
+      "ety": "Latin commiserari, from miserari 'to lament', from miser 'wretched'.",
+      "tier": 2,
+      "themes": ["relationships", "emotion"],
+      "prec": {
+        "s": "After both failing the driving test, the two friends went for coffee to ___.",
+        "opts": ["condole", "console", "congratulate"],
+        "why": "Commiserate means share disappointment, often mutually. Condole is used for death and is rare; console needs an object (console someone); congratulate is for success."
+      }
+    },
+    {
+      "word": "solicitous",
+      "ipa": "səˈlɪsɪtəs",
+      "pos": "adjective",
+      "def": "Showing interest or concern for someone's well-being, sometimes excessively.",
+      "he": "מודאג, דואג, קשוב (לפעמים יתר על המידה)",
+      "family": ["solicitude (n.)", "solicitously (adv.)"],
+      "ex": [
+        "The nurses were kind and [solicitous].",
+        "He was [solicitous] of his elderly mother's comfort.",
+        "Her [solicitous] questions about my health began to irritate me."
+      ],
+      "col": ["solicitous of/about", "solicitous attention", "overly solicitous"],
+      "reg": "formal",
+      "syn": ["attentive", "caring", "considerate", "concerned"],
+      "nuance": "Solicitous describes anxious, attentive care for someone — can be warm or slightly too much. Don't confuse with soliciting (asking for money, business, or illegally for sex).",
+      "ety": "Latin sollicitus 'anxious, agitated'.",
+      "tier": 3,
+      "themes": ["relationships", "character"],
+      "prec": {
+        "s": "The waiter was almost too ___, asking every two minutes whether we needed anything.",
+        "opts": ["obsequious", "servile", "solitary"],
+        "why": "Solicitous is anxious attentiveness to someone's comfort — 'almost too' fits. Obsequious and servile imply grovelling to please authority; solitary means alone."
+      }
+    },
+    {
+      "word": "infatuation",
+      "ipa": "ɪnˌfætʃuˈeɪʃn",
+      "pos": "noun",
+      "def": "An intense but short-lived passion or admiration for someone or something.",
+      "he": "התאהבות עיוורת, שיגעון חולף",
+      "family": ["infatuated (adj.)"],
+      "ex": [
+        "It wasn't love, just a teenage [infatuation].",
+        "He's [infatuated] with a colleague he barely knows.",
+        "The public's [infatuation] with the new gadget faded within months."
+      ],
+      "col": ["brief infatuation", "teenage infatuation", "infatuated with"],
+      "reg": "neutral",
+      "syn": ["crush", "obsession", "passion", "fixation"],
+      "nuance": "Infatuation is intense but shallow and usually temporary — unlike love. A crush is the informal equivalent; obsession is stronger and unhealthy.",
+      "ety": "Latin infatuare 'to make foolish', from fatuus 'foolish'.",
+      "tier": 2,
+      "themes": ["emotion", "relationships"],
+      "prec": {
+        "s": "Her parents insisted it was just a summer ___ and that she'd forget him by autumn.",
+        "opts": ["devotion", "affection", "attachment"],
+        "why": "Infatuation is intense but short-lived passion — 'she'd forget him by autumn'. Devotion, affection and attachment suggest lasting love."
+      }
+    },
+    {
+      "word": "unrequited",
+      "ipa": "ˌʌnrɪˈkwaɪtɪd",
+      "pos": "adjective",
+      "def": "(Of love) not returned or rewarded.",
+      "he": "(אהבה) נכזבת, חד־צדדית",
+      "family": ["requite (v.)"],
+      "ex": [
+        "The novel is a story of [unrequited] love.",
+        "He spent years nursing an [unrequited] passion for his best friend.",
+        "Her feelings went [unrequited]."
+      ],
+      "col": ["unrequited love", "unrequited passion", "go unrequited"],
+      "reg": "literary",
+      "syn": ["unreturned", "one-sided", "unanswered"],
+      "nuance": "Unrequited is almost always used with love or passion. One-sided is the everyday equivalent.",
+      "ety": "un- + requite 'to repay', from quite (an old form of quit).",
+      "tier": 2,
+      "themes": ["emotion", "relationships"],
+      "prec": {
+        "s": "For three years, he suffered from ___ love for a woman who barely knew his name.",
+        "opts": ["unreciprocal", "unrequested", "unrelenting"],
+        "why": "'Unrequited love' is the fixed phrase for love that is not returned. 'Unreciprocal' isn't a standard word (it's 'unreciprocated'); unrequested means not asked for; unrelenting means never easing."
+      }
+    },
+    {
+      "word": "beleaguered",
+      "ipa": "bɪˈliːɡərd",
+      "pos": "adjective",
+      "def": "In a very difficult situation; under constant pressure or criticism.",
+      "he": "נצור, נתון ללחץ קשה",
+      "family": ["beleaguer (v.)"],
+      "ex": [
+        "The [beleaguered] minister faced fresh calls to resign.",
+        "Doctors at the [beleaguered] hospital worked 18-hour shifts.",
+        "The [beleaguered] city held out for months."
+      ],
+      "col": ["beleaguered government", "beleaguered minister", "beleaguered company"],
+      "reg": "formal",
+      "syn": ["embattled", "besieged", "harassed", "troubled"],
+      "nuance": "Beleaguered and embattled are both journalism favourites for leaders or institutions under attack. Besieged is often literal (a city surrounded by an army).",
+      "ety": "Dutch belegeren 'to camp round', from leger 'camp'.",
+      "tier": 2,
+      "themes": ["society", "conflict"],
+      "prec": {
+        "s": "The ___ CEO faced a shareholder revolt, a fraud investigation and a collapsing share price in the same week.",
+        "opts": ["belligerent", "bellicose", "berated"],
+        "why": "Beleaguered means under heavy pressure from many sides. Belligerent and bellicose mean aggressive; berated means scolded angrily (once), not under sustained pressure."
+      }
+    },
+    {
+      "word": "harrowing",
+      "ipa": "ˈhæroʊɪŋ",
+      "pos": "adjective",
+      "def": "Acutely distressing.",
+      "he": "מזעזע, קורע לב",
+      "family": ["harrow (v.)", "harrowed (adj.)"],
+      "ex": [
+        "Survivors gave [harrowing] accounts of the earthquake.",
+        "It was a [harrowing] experience for the whole family.",
+        "The documentary is [harrowing] but essential viewing."
+      ],
+      "col": ["harrowing account", "harrowing experience", "harrowing ordeal", "harrowing images"],
+      "reg": "neutral",
+      "syn": ["distressing", "traumatic", "agonising", "heart-rending"],
+      "nuance": "Harrowing describes experiences or accounts that cause deep distress. Disturbing is milder; traumatic suggests lasting psychological damage.",
+      "ety": "From harrow, a farm tool that breaks up soil — to tear the feelings.",
+      "tier": 2,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "Survivors gave ___ accounts of being trapped under the rubble for three days.",
+        "opts": ["disconcerting", "poignant", "vexing"],
+        "why": "Harrowing means deeply distressing — fitting accounts of terrible suffering. Disconcerting is mild unease; poignant is gently sad; vexing means annoying."
+      }
+    },
+    {
+      "word": "cathartic",
+      "ipa": "kəˈθɑːrtɪk",
+      "pos": "adjective",
+      "def": "Providing psychological relief through the open expression of strong emotions.",
+      "he": "מטהר, משחרר רגשית, קתרטי",
+      "family": ["catharsis (n.)"],
+      "ex": [
+        "Writing about the divorce was [cathartic] for her.",
+        "A good cry can be [cathartic].",
+        "The final scene offers the audience a moment of [catharsis]."
+      ],
+      "col": ["a cathartic experience", "deeply cathartic", "a sense of catharsis"],
+      "reg": "formal",
+      "syn": ["purifying", "releasing", "therapeutic", "liberating"],
+      "nuance": "Cathartic means emotionally cleansing — releasing feelings that were held in. Therapeutic means helping healing in general.",
+      "ety": "Greek katharsis 'cleansing', from katharos 'pure'.",
+      "tier": 1,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "Screaming into a pillow after the awful meeting was strangely ___.",
+        "opts": ["catatonic", "cautionary", "categorical"],
+        "why": "Cathartic means releasing pent-up emotion. Catatonic means unmoving and unresponsive; cautionary means giving a warning; categorical means absolute."
+      }
+    }
+  ]
+}
