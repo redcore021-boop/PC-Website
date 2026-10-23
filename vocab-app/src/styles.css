@@ -610,3 +610,55 @@ a.btn { text-decoration: none; }
 @media (prefers-color-scheme: light) {
   :root[data-theme='system'] .time-input { color-scheme: light; }
 }
+
+/* ---------- Tests & games ---------- */
+.games { display: grid; gap: 12px; }
+.game-tile { width: 100%; text-align: start; color: inherit; font: inherit; }
+.game-tile.clickable { cursor: pointer; }
+.game-tile.clickable:active { transform: scale(0.99); }
+.game-head { display: flex; align-items: flex-start; gap: 14px; }
+.game-head h2 { font-size: 18px; margin: 2px 0 2px; }
+.game-head p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.45; }
+.game-head .chev { align-self: center; }
+.game-tile > .row { margin-top: 14px; }
+.game-emoji {
+  flex: none; width: 46px; height: 46px; border-radius: 14px;
+  display: grid; place-items: center; font-size: 24px; background: var(--accent-soft);
+}
+.game-best { font-size: 13px; color: var(--accent); font-weight: 650; margin-top: 6px; }
+.game-tile > .game-best { margin: 10px 0 0; }
+.he-prompt { font-size: 26px; font-weight: 700; text-align: center; }
+.listen-btn {
+  width: 84px; height: 84px; border-radius: 50%; font-size: 36px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--accent-soft);
+}
+.listen-btn:active { transform: scale(0.96); }
+.listen-word { font-size: 22px; font-weight: 700; color: var(--ink); }
+.options[lang='he'] .option { text-align: start; font-family: var(--f-he); font-weight: 600; }
+
+.pairs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; }
+.pair-col { display: grid; gap: 10px; align-content: start; }
+.pair {
+  min-height: 58px; padding: 8px 10px; border-radius: 14px; font: inherit; font-size: 16px; font-weight: 600;
+  color: var(--ink); background: var(--surface); border: 1.5px solid var(--line); cursor: pointer;
+  transition: opacity 0.25s, background 0.15s, border-color 0.15s;
+}
+.pair.sel { border-color: var(--accent); background: var(--accent-soft); }
+.pair.bad { border-color: var(--bad); background: var(--bad-soft); animation: shake 0.3s; }
+.pair.done { border-color: var(--good); background: var(--good-soft); color: var(--good); opacity: 0.35; cursor: default; }
+@keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+
+.tf-card { text-align: center; padding: 30px 20px; min-height: 200px; display: flex; flex-direction: column; justify-content: center; transition: background 0.15s, border-color 0.15s; }
+.tf-card.good { background: var(--good-soft); border-color: var(--good); }
+.tf-card.bad { background: var(--bad-soft); border-color: var(--bad); }
+.tf-word { text-align: center; font-family: var(--f-word); font-size: 32px; font-weight: 700; }
+.pair[lang="en"] { font-family: var(--f-word); font-size: 17px; }
+.tf-eq { color: var(--muted); font-size: 20px; margin: 6px 0; }
+.tf-he { font-size: 24px; font-weight: 650; }
+.tf-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.tf-buttons .btn { min-height: 64px; font-size: 18px; }
+.tf-yes { border-color: var(--good); color: var(--good); }
+.tf-no { border-color: var(--bad); color: var(--bad); }
+
+.result-big { font-size: 64px; font-weight: 800; line-height: 1.05; color: var(--ink); margin-top: 6px; }
+.record { font-size: 15px; padding: 6px 14px; margin-bottom: 10px; }
