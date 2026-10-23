@@ -81,7 +81,13 @@ export function WordEntryView({ word, brief = false, open = false }: { word: Wor
 function MoreAboutWord({ word, open }: { word: WordEntry; open: boolean }) {
   const root = word.root ? rootByKey.get(word.root) : undefined;
   const others = allExamples(word).filter((e) => e !== mainExample(word));
-  const fullHe = word.he && word.he !== shortHe(word) ? word.he : '';
+  // other Hebrew renderings, without repeating the one already shown
+  const main = shortHe(word);
+  const fullHe = word.he
+    .split(/[,;]/)
+    .map((x) => x.trim())
+    .filter((x) => x && x !== main && !main.includes(x.replace(/\(.*?\)/g, '').trim()))
+    .join(', ');
   return (
     <details className="more" open={open}>
       <summary dir="rtl">עוד על המילה</summary>

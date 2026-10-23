@@ -10,7 +10,7 @@ const out = process.argv[2] ?? 'e2e-shots';
 mkdirSync(out, { recursive: true });
 const words = readdirSync('src/data/words').flatMap((f) => JSON.parse(readFileSync('src/data/words/' + f, 'utf8')).words);
 const plain = (s) => s.replace(/\[([^\]]+)\]/g, '$1');
-const byDef = new Map(words.map((w) => [w.def, w]));
+const byDef = new Map(words.map((w) => [w.simple ?? w.def, w]));
 const norm = (x) => x.replace(/\s+/g, ' ').trim();
 const fail = (m) => { console.error('FAIL:', m); process.exitCode = 1; };
 const ok = (m) => console.log('ok -', m);
@@ -50,9 +50,9 @@ async function runSession(tag) {
     if (await page.getByRole('button', { name: 'הבנתי, אפשר להמשיך' }).isVisible()) {
       if (intros === 0 && tag === 'day1') {
         await page.screenshot({ path: `${out}/02-intro.png`, fullPage: true });
-        const he = page.locator('.he-reveal');
-        await he.click();
-        (await page.locator('.he-reveal.shown .he').count()) && !(await he.textContent()).includes('הצגת תרגום') ? ok('Hebrew revealed on tap: ' + (await he.textContent())) : fail('Hebrew not revealed');
+        const he = (await page.locator('.he-main').textContent()) ?? '';
+        const simple = (await page.locator('.simple').first().textContent()) ?? '';
+        he.match(/[\u0590-\u05FF]/) && simple.length > 5 ? ok(`intro shows Hebrew and Simple English: ${he} — ${simple}`) : fail('intro card missing Hebrew or Simple English');
       }
       intros++;
       await page.getByRole('button', { name: 'הבנתי, אפשר להמשיך' }).click();
@@ -99,7 +99,7 @@ async function runSession(tag) {
     }
     if (!target) {
       const shown = norm(promptText.replace(/\u00a0/g, ''));
-      target = words.find((w) => w.ex.some((e) => norm(plain(e.replace(/\[[^\]]+\]/, ''))) === shown));
+      target = words.find((w) => [w.easy, ...w.ex].filter(Boolean).some((e) => norm(plain(e.replace(/\[[^\]]+\]/, ''))) === shown));
     }
     if (!target) { fail('could not identify question: ' + promptText); await page.screenshot({ path: `${out}/fail.png` }); break; }
 
@@ -233,7 +233,7 @@ await page.getByText('רגשות ועמדות').click();
 await page.getByText('equanimity').waitFor();
 ok('theme page works');
 await page.locator('.list-item').filter({ hasText: 'equanimity' }).click();
-await page.getByText('צירופים נפוצים').waitFor();
+await page.locator('.he-main').waitFor();
 if (await page.evaluate(() => 'speechSynthesis' in window)) {
   (await page.getByRole('button', { name: /הגייה בריטית/ }).count()) ? ok('US/UK audio buttons present') : fail('audio buttons missing');
   await page.getByRole('button', { name: /הגייה אמריקאית/ }).click();
@@ -245,7 +245,9 @@ if (await page.evaluate(() => 'speechSynthesis' in window)) {
 await page.getByRole('button', { name: 'מילים', exact: true }).click();
 await page.locator('.search').fill('mitig');
 await page.locator('.list-item').first().click();
-await page.getByText('צירופים נפוצים').waitFor();
+await page.locator('.he-main').waitFor();
+await page.locator('.more summary').click();
+await page.getByText('Common phrases').waitFor();
 await page.screenshot({ path: `${out}/08-word.png`, fullPage: true });
 ok('word page renders');
 
@@ -283,8 +285,9 @@ ok('offline fallback lets you type your own definition');
 await page.getByRole('button', { name: 'מילים', exact: true }).click();
 await page.locator('.search').fill('predicate');
 await page.locator('.list-item').first().click();
+await page.locator('.more summary').click();
 await page.getByText('הוספת בעצמך').waitFor();
-(await page.locator('.examples mark').first().textContent()) === 'predicated' ? ok('example sentence from the text is kept, with the target marked') : fail('example not bracketed');
+(await page.locator('.example-main mark').first().textContent()) === 'predicated' ? ok('example sentence from the text is kept, with the target marked') : fail('example not bracketed');
 
 // backup export + import
 await page.getByRole('button', { name: 'הגדרות', exact: true }).click();
