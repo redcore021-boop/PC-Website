@@ -64,7 +64,7 @@ async function runSession(tag) {
       if (!sawTypes.has('explained:' + t)) { sawTypes.add('explained:' + t); console.log('info - explained ' + t); }
     }
     const KINDS = {
-      'איזו מילה מתאימה להגדרה?': 'Choose the word',
+      'איזו מילה מתאימה להסבר?': 'Choose the word',
       'איזו מילה משלימה את המשפט?': 'Fill the gap',
       'הקלידו את המילה': 'Type the word',
       'איזו מילה מדויקת יותר כאן?': 'Precision',
