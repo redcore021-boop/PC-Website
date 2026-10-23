@@ -37,21 +37,24 @@ export function Browse({ tab }: { tab?: string }) {
       .sort((a, b) => a.word.replace(/^(a|an|the) /i, '').localeCompare(b.word.replace(/^(a|an|the) /i, '')));
   }, [words, q, filter, byId, themeKey, rootKey]);
 
-  const title = themeKey
-    ? (themeByKey.get(themeKey)?.label ?? themeKey)
-    : rootKey
-      ? `Root ${rootByKey.get(rootKey)?.form ?? rootKey}`
-      : 'Words';
+  const title = themeKey ? (themeByKey.get(themeKey)?.he ?? themeKey) : rootKey ? 'שורש' : 'המילים שלי';
 
   return (
     <>
       <header className="topbar">
         {(themeKey || rootKey) && (
-          <button className="icon-btn" aria-label="Back" onClick={() => go('browse', themeKey ? 'themes' : 'roots')}>
-            ‹
+          <button className="icon-btn" aria-label="חזרה" onClick={() => go('browse', themeKey ? 'themes' : 'roots')}>
+            <span className="chev">›</span>
           </button>
         )}
-        <h1>{title}</h1>
+        <h1>
+          {title}
+          {rootKey && (
+            <bdi className="en" lang="en" style={{ marginInlineStart: 8 }}>
+              {rootByKey.get(rootKey)?.form ?? rootKey}
+            </bdi>
+          )}
+        </h1>
         <span className="faint small">{list.length}</span>
       </header>
 
@@ -59,7 +62,7 @@ export function Browse({ tab }: { tab?: string }) {
         <div className="segmented" style={{ marginBottom: 12 }}>
           {(['all', 'themes', 'roots'] as const).map((v) => (
             <button key={v} aria-pressed={view === v} onClick={() => go('browse', v === 'all' ? '' : v)}>
-              {v === 'all' ? 'All words' : v === 'themes' ? 'Themes' : 'Roots'}
+              {v === 'all' ? 'כל המילים' : v === 'themes' ? 'לפי נושא' : 'לפי שורש'}
             </button>
           ))}
         </div>
@@ -67,18 +70,18 @@ export function Browse({ tab }: { tab?: string }) {
 
       {rootKey && rootByKey.get(rootKey) && (
         <p className="muted" style={{ marginTop: 0 }}>
-          “{rootByKey.get(rootKey)!.meaning}” — from {rootByKey.get(rootKey)!.origin}
+          פירוש: {rootByKey.get(rootKey)!.he} · מקור: <bdi lang="en">{rootByKey.get(rootKey)!.origin}</bdi>
         </p>
       )}
 
       {view === 'themes' ? (
         <Groups
-          items={themes.map((t) => ({ key: t.key, label: t.label, sub: '', words: words.filter((w) => w.themes.includes(t.key)) }))}
+          items={themes.map((t) => ({ key: t.key, label: t.he, sub: '', words: words.filter((w) => w.themes.includes(t.key)) }))}
           prefix="theme-"
         />
       ) : view === 'roots' ? (
         <Groups
-          items={roots.map((r) => ({ key: r.key, label: r.form, sub: r.meaning, words: words.filter((w) => w.root === r.key) }))}
+          items={roots.map((r) => ({ key: r.key, label: r.form, sub: r.he, words: words.filter((w) => w.root === r.key), en: true }))}
           prefix="root-"
         />
       ) : (
@@ -86,7 +89,8 @@ export function Browse({ tab }: { tab?: string }) {
           <input
             className="search"
             type="search"
-            placeholder="Search words, meanings or Hebrew…"
+            dir="auto"
+            placeholder="חיפוש מילה, הגדרה או תרגום…"
             value={q}
             onChange={(e) => setQ(e.target.value)}
             autoCorrect="off"
@@ -96,14 +100,14 @@ export function Browse({ tab }: { tab?: string }) {
           <div className="row wrap" style={{ margin: '12px 0', gap: 6 }}>
             {FILTERS.map((f) => (
               <button key={f} className="chip" aria-pressed={filter === f} onClick={() => setFilter(f)}>
-                {f === 'all' ? 'All' : STATUS_LABEL[f]}
+                {f === 'all' ? 'הכול' : STATUS_LABEL[f]}
               </button>
             ))}
           </div>
           {list.length ? (
             <WordList words={list} statusFor={(w) => statusOf(byId.get(w.id))} />
           ) : (
-            <div className="empty">No words match.</div>
+            <div className="empty">לא נמצאו מילים מתאימות.</div>
           )}
         </>
       )}
@@ -117,15 +121,15 @@ export function WordList({ words, statusFor }: { words: WordEntry[]; statusFor: 
       {words.map((w) => {
         const s = statusFor(w);
         return (
-          <button key={w.id} className="list-item" onClick={() => go('word', w.id)}>
+          <button key={w.id} className="list-item" dir="ltr" onClick={() => go('word', w.id)}>
             <span className={'dot ' + s} title={STATUS_LABEL[s]} />
-            <span className="main">
+            <span className="main" lang="en" style={{ textAlign: 'left' }}>
               <span className="w">{w.word}</span>
               <span className="d" style={{ display: 'block' }}>
                 {w.def}
               </span>
             </span>
-            <span className="faint">›</span>
+            <span className="chev">›</span>
           </button>
         );
       })}
@@ -133,7 +137,7 @@ export function WordList({ words, statusFor }: { words: WordEntry[]; statusFor: 
   );
 }
 
-function Groups({ items, prefix }: { items: { key: string; label: string; sub: string; words: WordEntry[] }[]; prefix: string }) {
+function Groups({ items, prefix }: { items: { key: string; label: string; sub: string; words: WordEntry[]; en?: boolean }[]; prefix: string }) {
   return (
     <div className="list">
       {items
@@ -141,9 +145,17 @@ function Groups({ items, prefix }: { items: { key: string; label: string; sub: s
         .map((i) => (
           <button key={i.key} className="list-item" onClick={() => go('browse', prefix + i.key)}>
             <span className="main">
-              <span className="w">{i.label}</span>
-              <span className="d" style={{ display: 'block' }}>
-                {i.sub ? `${i.sub} · ` : ''}
+              <span className="w" style={i.en ? undefined : { fontFamily: 'var(--f-body)' }}>
+                {i.en ? (
+                  <bdi lang="en" dir="ltr">
+                    {i.label}
+                  </bdi>
+                ) : (
+                  i.label
+                )}
+                {i.sub && <span className="muted small" style={{ fontFamily: 'var(--f-body)', fontWeight: 500 }}> · {i.sub}</span>}
+              </span>
+              <span className="d" style={{ display: 'block', textAlign: 'right' }} dir="ltr" lang="en">
                 {i.words
                   .slice(0, 4)
                   .map((w) => w.word)

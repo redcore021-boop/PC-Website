@@ -29,7 +29,7 @@ export async function downloadBackup(): Promise<void> {
   const nav = navigator as Navigator & { canShare?: (d: ShareData) => boolean };
   if (nav.canShare?.({ files: [file] }) && /iPhone|iPad|Android/i.test(navigator.userAgent)) {
     try {
-      await navigator.share({ files: [file], title: 'Lexicon backup' });
+      await navigator.share({ files: [file], title: 'גיבוי Lexicon' });
       await db.kv.put({ key: 'lastBackup', value: Date.now() });
       return;
     } catch (e) {
@@ -52,14 +52,14 @@ export function parseBackup(text: string): Backup {
   try {
     data = JSON.parse(text);
   } catch {
-    throw new Error('This file is not valid JSON.');
+    throw new Error('הקובץ הזה אינו קובץ JSON תקין.');
   }
   if (data?.format !== BACKUP_FORMAT || !data.tables || typeof data.tables !== 'object') {
-    throw new Error('This is not a Lexicon backup file.');
+    throw new Error('זה לא קובץ גיבוי של Lexicon.');
   }
   for (const name of BACKUP_TABLES) {
     const rows = data.tables[name];
-    if (rows !== undefined && !Array.isArray(rows)) throw new Error(`Backup table "${name}" is damaged.`);
+    if (rows !== undefined && !Array.isArray(rows)) throw new Error(`הטבלה "${name}" בקובץ הגיבוי פגומה.`);
   }
   return data;
 }

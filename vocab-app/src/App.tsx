@@ -22,11 +22,11 @@ export function App() {
 }
 
 const TABS = [
-  { key: '', label: 'Today', Icon: HomeIcon },
-  { key: 'browse', label: 'Words', Icon: BookIcon },
-  { key: 'read', label: 'Read', Icon: ReadIcon, feature: 'reading' as const },
-  { key: 'stats', label: 'Stats', Icon: ChartIcon, feature: 'stats' as const },
-  { key: 'settings', label: 'Settings', Icon: GearIcon },
+  { key: '', label: 'היום', Icon: HomeIcon },
+  { key: 'browse', label: 'מילים', Icon: BookIcon },
+  { key: 'read', label: 'קריאה', Icon: ReadIcon, feature: 'reading' as const },
+  { key: 'stats', label: 'התקדמות', Icon: ChartIcon, feature: 'stats' as const },
+  { key: 'settings', label: 'הגדרות', Icon: GearIcon },
 ];
 
 function Shell() {
@@ -76,7 +76,7 @@ function Shell() {
   return (
     <>
       <main className="app">{screen}</main>
-      <nav className="tabbar" aria-label="Main">
+      <nav className="tabbar" aria-label="ניווט ראשי">
         <div className="tabbar-inner">
           {TABS.filter((t) => !t.feature || ENABLED_FEATURES[t.feature]).map(({ key, label, Icon }) => (
             <button key={key} className="tab" aria-current={active === key ? 'page' : undefined} onClick={() => go(key)}>

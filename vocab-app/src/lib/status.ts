@@ -11,8 +11,8 @@ export function statusOf(p?: Progress): WordStatus {
 }
 
 export const STATUS_LABEL: Record<WordStatus, string> = {
-  new: 'Not started',
-  learning: 'Learning',
-  known: 'Can produce',
-  mastered: 'Mastered',
+  new: 'חדשה',
+  learning: 'בלמידה',
+  known: 'בשלב השימוש',
+  mastered: 'בשליטה',
 };

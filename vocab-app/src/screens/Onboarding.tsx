@@ -5,9 +5,9 @@ import { WARMUP_START } from '../lib/session';
 import { StageLadder } from '../components/StageLadder';
 
 const PACES = [
-  { n: 5, label: 'Relaxed', sub: '5 new words a day · about 5–10 min' },
-  { n: 10, label: 'Regular', sub: '10 new words a day · about 10–15 min' },
-  { n: 15, label: 'Intensive', sub: '15 new words a day · about 20+ min' },
+  { n: 5, label: 'רגוע', sub: '5 מילים חדשות ביום · בערך 5–10 דקות' },
+  { n: 10, label: 'רגיל', sub: '10 מילים חדשות ביום · בערך 10–15 דקות' },
+  { n: 15, label: 'אינטנסיבי', sub: '15 מילים חדשות ביום · 20 דקות ומעלה' },
 ];
 
 /** First-launch welcome: what the app does, how words climb from easy to hard, and the daily pace. */
@@ -36,16 +36,15 @@ export function Onboarding({ onDone }: { onDone: () => void }) {
           <div className="brand" style={{ fontSize: 44, marginTop: 24 }}>
             Lexicon
           </div>
-          <h1 className="ob-title">Advanced English you can actually use.</h1>
+          <h1 className="ob-title">אנגלית מתקדמת שאפשר באמת להשתמש בה.</h1>
           <p className="ob-text">
-            Most apps teach you to <em>recognise</em> words. Lexicon takes each word further — until you can use it in your own speech and
-            writing.
+            רוב האפליקציות מלמדות <em>לזהות</em> מילים. Lexicon לוקחת כל מילה הלאה — עד שתוכלו להשתמש בה בעצמכם, בדיבור ובכתיבה.
           </p>
           <ul className="ob-list">
-            <li>A few minutes a day, scheduled by memory science (FSRS)</li>
-            <li>Real example sentences, collocations and nuance</li>
-            <li>Hebrew hints whenever you want them</li>
-            <li>Free, offline, and private — everything stays on your phone</li>
+            <li>כמה דקות ביום, בתזמון שמבוסס על חקר הזיכרון (FSRS)</li>
+            <li>משפטים אמיתיים, צירופים נפוצים והבדלי משמעות דקים</li>
+            <li>תרגום לעברית בכל פעם שצריך</li>
+            <li>חינם, עובד בלי אינטרנט, והכול נשאר בטלפון שלכם</li>
           </ul>
         </section>
       )}
@@ -53,12 +52,12 @@ export function Onboarding({ onDone }: { onDone: () => void }) {
       {step === 1 && (
         <section>
           <h1 className="ob-title" style={{ marginTop: 32 }}>
-            Every word starts easy.
+            כל מילה מתחילה בקטן.
           </h1>
-          <p className="ob-text">Words climb a ladder. They move up when you get them right and step back down if you slip — so it never gets too hard too fast.</p>
+          <p className="ob-text">המילים מטפסות בסולם: עולות שלב כשעונים נכון, ויורדות שלב אחד כשטועים — כך שזה אף פעם לא נהיה קשה מדי מהר מדי.</p>
           <StageLadder />
           <p className="ob-text small">
-            The first words are the most useful ones, and your first week warms up gently, starting with {WARMUP_START} new words a day.
+            המילים הראשונות הן הקלות והשימושיות ביותר, והשבוע הראשון מתחיל בעדינות — {WARMUP_START} מילים חדשות ביום.
           </p>
         </section>
       )}
@@ -66,15 +65,15 @@ export function Onboarding({ onDone }: { onDone: () => void }) {
       {step === 2 && (
         <section>
           <h1 className="ob-title" style={{ marginTop: 32 }}>
-            Choose your pace
+            באיזה קצב נלמד?
           </h1>
-          <p className="ob-text">You can change this any time in Settings.</p>
-          <div className="stack" role="radiogroup" aria-label="Daily pace">
+          <p className="ob-text">אפשר לשנות את זה בכל רגע בהגדרות.</p>
+          <div className="stack" role="radiogroup" aria-label="קצב יומי">
             {PACES.map((p) => (
               <button key={p.n} role="radio" aria-checked={pace === p.n} className={'pace' + (pace === p.n ? ' on' : '')} onClick={() => setPace(p.n)}>
                 <strong>
                   {p.label}
-                  {p.n === 10 && <span className="chip accent" style={{ marginLeft: 8 }}>recommended</span>}
+                  {p.n === 10 && <span className="chip accent" style={{ marginInlineStart: 8 }}>מומלץ</span>}
                 </strong>
                 <span>{p.sub}</span>
               </button>
@@ -82,11 +81,11 @@ export function Onboarding({ onDone }: { onDone: () => void }) {
           </div>
           <label className="pace" style={{ marginTop: 16, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
             <span style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
-              <strong style={{ color: 'var(--ink)', fontSize: 16 }}>Show Hebrew automatically</strong>
-              <span>Off: tap “עברית” to reveal it when you need it</span>
+              <strong style={{ color: 'var(--ink)', fontSize: 16 }}>להציג תרגום לעברית תמיד</strong>
+              <span>כשכבוי — מקישים על „הצגת תרגום” כשצריך</span>
             </span>
             <span className="switch">
-              <input type="checkbox" role="switch" checked={hebrew} onChange={(e) => setHebrew(e.target.checked)} aria-label="Show Hebrew automatically" />
+              <input type="checkbox" role="switch" checked={hebrew} onChange={(e) => setHebrew(e.target.checked)} aria-label="להציג תרגום לעברית תמיד" />
               <span />
             </span>
           </label>
@@ -96,16 +95,16 @@ export function Onboarding({ onDone }: { onDone: () => void }) {
       <div className="bottom-actions" style={{ gridTemplateColumns: step ? '1fr 2fr' : '1fr' }}>
         {step > 0 && (
           <button className="btn" onClick={() => setStep(step - 1)}>
-            Back
+            חזרה
           </button>
         )}
         {step < 2 ? (
           <button className="btn primary" onClick={() => setStep(step + 1)}>
-            {step === 0 ? 'Get started' : 'Next'}
+            {step === 0 ? 'בואו נתחיל' : 'הבא'}
           </button>
         ) : (
           <button className="btn primary" onClick={finish}>
-            Start learning
+            להתחיל ללמוד
           </button>
         )}
       </div>

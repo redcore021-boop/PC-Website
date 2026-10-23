@@ -1,15 +1,15 @@
 [
-  { "key": "thinking", "label": "Thought & Argument" },
-  { "key": "knowledge", "label": "Knowledge & Truth" },
-  { "key": "speech", "label": "Speech & Rhetoric" },
-  { "key": "character", "label": "Character & Behaviour" },
-  { "key": "emotion", "label": "Feelings & Attitudes" },
-  { "key": "relationships", "label": "Relationships" },
-  { "key": "society", "label": "Society & Power" },
-  { "key": "conflict", "label": "Conflict & Criticism" },
-  { "key": "change", "label": "Change & Time" },
-  { "key": "degree", "label": "Amount & Degree" },
-  { "key": "quality", "label": "Judging Quality" },
-  { "key": "work", "label": "Work & Decisions" },
-  { "key": "money", "label": "Money" }
+  {"key": "thinking", "label": "Thought & Argument", "he": "חשיבה וטיעון"},
+  {"key": "knowledge", "label": "Knowledge & Truth", "he": "ידע ואמת"},
+  {"key": "speech", "label": "Speech & Rhetoric", "he": "דיבור ורטוריקה"},
+  {"key": "character", "label": "Character & Behaviour", "he": "אופי והתנהגות"},
+  {"key": "emotion", "label": "Feelings & Attitudes", "he": "רגשות ועמדות"},
+  {"key": "relationships", "label": "Relationships", "he": "יחסים בין אנשים"},
+  {"key": "society", "label": "Society & Power", "he": "חברה ושלטון"},
+  {"key": "conflict", "label": "Conflict & Criticism", "he": "עימות וביקורת"},
+  {"key": "change", "label": "Change & Time", "he": "שינוי וזמן"},
+  {"key": "degree", "label": "Amount & Degree", "he": "כמות ומידה"},
+  {"key": "quality", "label": "Judging Quality", "he": "שיפוט איכות"},
+  {"key": "work", "label": "Work & Decisions", "he": "עבודה והחלטות"},
+  {"key": "money", "label": "Money", "he": "כסף"}
 ]

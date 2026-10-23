@@ -9,14 +9,6 @@ export type Question =
   | { type: 4; word: WordEntry; before: string; after: string; options: string[]; answer: string; why: string }
   | { type: 5; word: WordEntry };
 
-export const CARD_TYPE_NAMES: Record<CardType, string> = {
-  1: 'Choose the word',
-  2: 'Fill the gap',
-  3: 'Type the word',
-  4: 'Precision',
-  5: 'Use it',
-};
-
 export function posGroup(pos: string): string {
   const p = pos.toLowerCase();
   if (p.includes('phrasal')) return 'phrasal';

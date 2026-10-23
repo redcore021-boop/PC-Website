@@ -30,18 +30,18 @@ export class LookupError extends Error {
 async function fetchEntries(word: string): Promise<ApiEntry[] | null> {
   const cached = await db.dictCache.get(word);
   if (cached) return cached.data as ApiEntry[] | null;
-  if (!navigator.onLine) throw new LookupError('You’re offline. Connect to look up new words, or fill in the meaning yourself.', 'offline');
+  if (!navigator.onLine) throw new LookupError('אין חיבור לאינטרנט. התחברו כדי לחפש מילים חדשות, או כתבו את הפירוש בעצמכם.', 'offline');
   let res: Response;
   try {
     res = await fetch(API + encodeURIComponent(word));
   } catch {
-    throw new LookupError('Couldn’t reach the dictionary. Check your connection or fill in the meaning yourself.', 'offline');
+    throw new LookupError('לא הצלחנו להגיע למילון. בדקו את החיבור, או כתבו את הפירוש בעצמכם.', 'offline');
   }
   if (res.status === 404) {
     await db.dictCache.put({ word, fetchedAt: Date.now(), data: null });
     return null;
   }
-  if (!res.ok) throw new LookupError('The free dictionary is busy right now. Try again in a minute.', 'busy');
+  if (!res.ok) throw new LookupError('המילון החינמי עמוס כרגע. נסו שוב בעוד דקה.', 'busy');
   const data = (await res.json()) as ApiEntry[];
   await db.dictCache.put({ word, fetchedAt: Date.now(), data });
   return data;
@@ -71,7 +71,7 @@ export function parseEntries(entries: ApiEntry[]): Lookup {
 export async function lookupWord(word: string, depth = 0): Promise<Lookup> {
   const w = word.toLowerCase();
   const entries = await fetchEntries(w);
-  if (!entries?.length) throw new LookupError(`No dictionary entry for “${word}”. You can still add it with your own definition.`, 'not-found');
+  if (!entries?.length) throw new LookupError(`לא נמצא ערך במילון עבור „${word}”. אפשר להוסיף אותה עם פירוש משלכם.`, 'not-found');
   const parsed = parseEntries(entries);
   const formOf = parsed.senses[0]?.def.match(FORM_OF)?.[1];
   if (formOf && depth === 0 && formOf.toLowerCase() !== w) {

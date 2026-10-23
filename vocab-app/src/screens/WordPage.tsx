@@ -7,6 +7,7 @@ import { retrievability } from '../lib/srs';
 import { back } from '../lib/router';
 import { BackIcon } from '../components/Icons';
 import { WordEntryView } from '../components/WordBits';
+import { formatDate } from '../strings';
 import { AccentButtons } from '../components/AudioButton';
 
 export function WordPage({ id }: { id?: string }) {
@@ -20,9 +21,9 @@ export function WordPage({ id }: { id?: string }) {
   if (!word) {
     return (
       <div className="empty">
-        Word not found.{' '}
+        המילה לא נמצאה.{' '}
         <button className="btn small" onClick={() => back('browse')}>
-          Back
+          חזרה
         </button>
       </div>
     );
@@ -33,14 +34,14 @@ export function WordPage({ id }: { id?: string }) {
     await db.edits.put({ id: word.id, he: he.trim() });
     if (word.custom) await db.customWords.update(word.id, { he: he.trim() });
     setEditing(false);
-    toast('Hebrew translation saved');
+    toast('התרגום נשמר');
   };
 
   return (
     <>
       <header className="topbar">
-        <button className="icon-btn" aria-label="Back" onClick={() => back('browse')}>
-          <BackIcon />
+        <button className="icon-btn" aria-label="חזרה" onClick={() => back('browse')}>
+          <BackIcon className="flip" />
         </button>
         <span className="spacer" />
         <span className={'chip' + (status === 'mastered' ? ' good' : status === 'new' ? '' : ' accent')}>{STATUS_LABEL[status]}</span>
@@ -55,12 +56,12 @@ export function WordPage({ id }: { id?: string }) {
 
       {sentences.length > 0 && (
         <>
-          <h3 className="section-title">Your sentences</h3>
+          <h3 className="section-title">המשפטים שכתבת</h3>
           <section className="card">
             <ul className="examples">
               {sentences.map((s) => (
-                <li key={s.id}>
-                  {s.text} <span className="tiny faint">· {new Date(s.at).toLocaleDateString()}</span>
+                <li key={s.id} dir="ltr" lang="en">
+                  {s.text} <span className="tiny faint">· {formatDate(s.at)}</span>
                 </li>
               ))}
             </ul>
@@ -68,54 +69,54 @@ export function WordPage({ id }: { id?: string }) {
         </>
       )}
 
-      <h3 className="section-title">Your progress</h3>
+      <h3 className="section-title">ההתקדמות שלך</h3>
       <section className="card small">
         {progress ? (
           <div className="stack">
             <div className="row">
-              <span className="muted spacer">Next review</span>
-              <span>{new Date(progress.card.due).toLocaleDateString(undefined, { day: 'numeric', month: 'short' })}</span>
+              <span className="muted spacer">החזרה הבאה</span>
+              <span>{formatDate(progress.card.due)}</span>
             </div>
             <div className="row">
-              <span className="muted spacer">Recall probability now</span>
+              <span className="muted spacer">סיכוי לזכור כרגע</span>
               <span>{Math.round(retrievability(progress.card) * 100)}%</span>
             </div>
             <div className="row">
-              <span className="muted spacer">Successful production answers</span>
+              <span className="muted spacer">שימושים מוצלחים במילה</span>
               <span>{progress.production}</span>
             </div>
             <div className="row">
-              <span className="muted spacer">Mistakes</span>
+              <span className="muted spacer">טעויות</span>
               <span>{progress.mistakes}</span>
             </div>
             <button
               className="btn small block"
               onClick={async () => {
                 await db.progress.update(word.id, { suspended: !progress.suspended });
-                toast(progress.suspended ? 'Back in your reviews' : 'Paused — it won’t come up in reviews');
+                toast(progress.suspended ? 'המילה חזרה לחזרות' : 'המילה הושהתה — היא לא תופיע בחזרות');
               }}
             >
-              {progress.suspended ? 'Resume reviewing this word' : 'Pause this word'}
+              {progress.suspended ? 'להחזיר את המילה לחזרות' : 'להשהות את המילה'}
             </button>
           </div>
         ) : (
           <p className="muted" style={{ margin: 0 }}>
-            Not started yet — it will appear among your new words.
+            עוד לא התחלת ללמוד אותה — היא תופיע בין המילים החדשות.
           </p>
         )}
       </section>
 
-      <h3 className="section-title">Hebrew hint</h3>
+      <h3 className="section-title">התרגום לעברית</h3>
       <section className="card">
         {editing ? (
           <div className="stack">
-            <input className="answer-input he" dir="rtl" lang="he" value={he} onChange={(e) => setHe(e.target.value)} aria-label="Hebrew translation" />
+            <input className="answer-input he" dir="rtl" lang="he" value={he} onChange={(e) => setHe(e.target.value)} aria-label="תרגום לעברית" />
             <div className="row">
               <button className="btn small" onClick={() => setEditing(false)}>
-                Cancel
+                ביטול
               </button>
               <button className="btn small primary" onClick={saveHe}>
-                Save
+                שמירה
               </button>
             </div>
           </div>
@@ -127,7 +128,7 @@ export function WordPage({ id }: { id?: string }) {
               setEditing(true);
             }}
           >
-            {word.he ? 'Edit Hebrew translation' : 'Add Hebrew translation'}
+            {word.he ? 'לערוך את התרגום' : 'להוסיף תרגום'}
           </button>
         )}
       </section>

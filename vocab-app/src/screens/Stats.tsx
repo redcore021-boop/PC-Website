@@ -2,11 +2,11 @@ import { useMemo, useState } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useApp } from '../state';
 import { db } from '../lib/db';
-import { dayKey, endOfStudyDay } from '../lib/dates';
+import { endOfStudyDay } from '../lib/dates';
 import { statusOf } from '../lib/status';
 import { retrievability } from '../lib/srs';
 import { weakestProgress } from '../lib/session';
-import { CARD_TYPE_NAMES } from '../lib/cards';
+import { CARD_TYPE_LABEL, formatDate } from '../strings';
 import { go } from '../lib/router';
 import type { CardType } from '../types';
 
@@ -25,8 +25,8 @@ export function Stats() {
       const cutoff = new Date(+end + i * DAY);
       const d = new Date(+cutoff - 12 * 3600e3);
       return {
-        label: i === 0 ? 'Today' : i === 1 ? 'Tmrw' : d.toLocaleDateString(undefined, { weekday: 'short' }),
-        date: d.toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'short' }),
+        label: i === 0 ? 'היום' : i === 1 ? 'מחר' : formatDate(d, { weekday: 'short' }),
+        date: formatDate(d, { weekday: 'long', day: 'numeric', month: 'short' }),
         cutoff: +cutoff,
         count: 0,
       };
@@ -57,64 +57,64 @@ export function Stats() {
   return (
     <>
       <header className="topbar">
-        <h1>Stats</h1>
+        <h1>ההתקדמות שלי</h1>
       </header>
 
       <div className="stat-row">
         <div className="stat">
           <div className="num">{progress.length}</div>
-          <div className="lbl">started of {words.length}</div>
+          <div className="lbl">התחלת מתוך {words.length}</div>
         </div>
         <div className="stat">
           <div className="num">{known}</div>
-          <div className="lbl">can produce</div>
+          <div className="lbl">בשלב השימוש</div>
         </div>
         <div className="stat">
           <div className="num">{mastered}</div>
-          <div className="lbl">mastered</div>
+          <div className="lbl">בשליטה מלאה</div>
         </div>
       </div>
 
-      <h3 className="section-title">Retention · last 30 days</h3>
+      <h3 className="section-title">זכירה · 30 הימים האחרונים</h3>
       <section className="card">
         {retention === null ? (
           <p className="muted small" style={{ margin: 0 }}>
-            Retention appears after your first scheduled reviews (a day or two after learning new words).
+            אחוז הזכירה יופיע אחרי החזרות הראשונות — יום־יומיים אחרי שלומדים מילים חדשות.
           </p>
         ) : (
           <div className="row" style={{ alignItems: 'flex-end', gap: 16 }}>
             <div style={{ fontSize: 44, fontWeight: 750, lineHeight: 1 }}>{retention}%</div>
             <div className="small muted" style={{ paddingBottom: 4 }}>
-              of {graded.length} scheduled reviews recalled correctly
+              מתוך {graded.length} חזרות זכרת נכון
               <br />
-              <span className="faint">FSRS aims for about 90%. Studied on {activeDays} of the last 30 days.</span>
+              <span className="faint">היעד הוא בערך 90%. למדת ב־{activeDays} מתוך 30 הימים האחרונים.</span>
             </div>
           </div>
         )}
       </section>
 
-      <h3 className="section-title">Upcoming reviews · next 14 days</h3>
+      <h3 className="section-title">חזרות צפויות · 14 הימים הקרובים</h3>
       <section className="card">
         <Forecast days={forecast} />
       </section>
 
-      <h3 className="section-title">Accuracy by card type · 30 days</h3>
+      <h3 className="section-title">דיוק לפי סוג כרטיס · 30 יום</h3>
       <section className="card" style={{ paddingTop: 6, paddingBottom: 6 }}>
         {byType.map(({ t, n, pct }) => (
           <div key={t} className="setting" style={{ minHeight: 48 }}>
             <span className="label small">
-              {t}. {CARD_TYPE_NAMES[t]}
-              {t >= 3 && <small>production</small>}
+              {t}. {CARD_TYPE_LABEL[t]}
+              {t >= 3 && <small>שלב השימוש</small>}
             </span>
             <span className="small muted">{pct === null ? '—' : `${pct}%`}</span>
-            <span className="tiny faint" style={{ minWidth: 48, textAlign: 'right' }}>
-              {n} {n === 1 ? 'answer' : 'answers'}
+            <span className="tiny faint" style={{ minWidth: 56, textAlign: 'end' }}>
+              {n === 1 ? 'תשובה אחת' : `${n} תשובות`}
             </span>
           </div>
         ))}
       </section>
 
-      <h3 className="section-title">Weakest words</h3>
+      <h3 className="section-title">המילים הכי מאתגרות</h3>
       {weakest.length ? (
         <>
           <div className="list">
@@ -123,26 +123,28 @@ export function Stats() {
               return (
                 <button key={p.wordId} className="list-item" onClick={() => go('word', p.wordId)}>
                   <span className="main">
-                    <span className="w">{w.word}</span>
+                    <span className="w">
+                      <bdi lang="en">{w.word}</bdi>
+                    </span>
                     <span className="d" style={{ display: 'block' }}>
-                      {p.mistakes} {p.mistakes === 1 ? 'mistake' : 'mistakes'} · {Math.round(retrievability(p.card) * 100)}% recall now
+                      {p.mistakes === 1 ? 'טעות אחת' : `${p.mistakes} טעויות`} · סיכוי לזכור כרגע {Math.round(retrievability(p.card) * 100)}%
                     </span>
                   </span>
-                  <span className="faint">›</span>
+                  <span className="chev">‹</span>
                 </button>
               );
             })}
           </div>
           <button className="btn block" style={{ marginTop: 12 }} onClick={() => go('session', 'weak')}>
-            Practise these now
+            לתרגל אותן עכשיו
           </button>
-          <p className="tiny faint center">Extra practice doesn’t change your review schedule.</p>
+          <p className="tiny faint center">תרגול נוסף לא משנה את לוח החזרות שלך.</p>
         </>
       ) : (
-        <section className="card muted small">No weak words yet. Mistakes you make will show up here.</section>
+        <section className="card muted small">עדיין אין מילים מאתגרות. מילים שיהיו לך קשות יופיעו כאן.</section>
       )}
       <p className="tiny faint center" style={{ marginTop: 20 }}>
-        Day {dayKey()} · a study day starts at 4am
+        יום הלימוד מתחלף ב־4 לפנות בוקר
       </p>
     </>
   );
@@ -158,18 +160,18 @@ function Forecast({ days }: { days: { label: string; date: string; count: number
   const peak = days.reduce((a, d, i) => (d.count > days[a].count ? i : a), 0);
   const total = days.reduce((s, d) => s + d.count, 0);
 
-  if (!total) return <p className="muted small" style={{ margin: 0 }}>Nothing scheduled yet — start learning words to see your forecast.</p>;
+  if (!total) return <p className="muted small" style={{ margin: 0 }}>עדיין אין חזרות מתוכננות — התחילו ללמוד מילים כדי לראות תחזית.</p>;
 
   return (
     <div>
       <div className="small muted" style={{ marginBottom: 10 }}>
         {active === null ? (
           <>
-            {total} reviews in 14 days · busiest: <strong style={{ color: 'var(--ink)' }}>{days[peak].label}</strong> ({days[peak].count})
+            {total} חזרות בשבועיים · העמוס ביותר: <strong style={{ color: 'var(--ink)' }}>{days[peak].label}</strong> ({days[peak].count})
           </>
         ) : (
           <>
-            <strong style={{ color: 'var(--ink)' }}>{days[active].date}</strong>: {days[active].count} reviews
+            <strong style={{ color: 'var(--ink)' }}>{days[active].date}</strong>: {days[active].count} חזרות
           </>
         )}
       </div>
@@ -179,13 +181,13 @@ function Forecast({ days }: { days: { label: string; date: string; count: number
             {days.map((d) => (
               <tr key={d.date} style={{ borderTop: '1px solid var(--line)' }}>
                 <td style={{ padding: '6px 0' }}>{d.date}</td>
-                <td style={{ textAlign: 'right' }}>{d.count}</td>
+                <td style={{ textAlign: 'end' }}>{d.count}</td>
               </tr>
             ))}
           </tbody>
         </table>
       ) : (
-        <div className="fc" role="img" aria-label={`Reviews due per day for the next 14 days. ${days.map((d) => `${d.label}: ${d.count}`).join(', ')}`}>
+        <div className="fc" role="img" aria-label={`חזרות צפויות בכל יום בשבועיים הקרובים. ${days.map((d) => `${d.label}: ${d.count}`).join(', ')}`}>
           <div className="fc-grid" aria-hidden>
             {ticks.map((t) => (
               <div key={t} className="fc-tick" style={{ bottom: `${(t / top) * 100}%` }}>
@@ -202,7 +204,7 @@ function Forecast({ days }: { days: { label: string; date: string; count: number
                 onClick={() => setActive(active === i ? null : i)}
                 onMouseEnter={() => setActive(i)}
                 onMouseLeave={() => setActive(null)}
-                aria-label={`${d.date}: ${d.count} reviews`}
+                aria-label={`${d.date}: ${d.count} חזרות`}
               >
                 <span className="fc-bar" style={{ height: d.count ? `max(2px, ${(d.count / top) * 100}%)` : 0 }} />
               </button>
@@ -215,8 +217,8 @@ function Forecast({ days }: { days: { label: string; date: string; count: number
           </div>
         </div>
       )}
-      <button className="btn small ghost" style={{ marginTop: 8, paddingLeft: 0 }} onClick={() => setTable(!table)}>
-        {table ? 'Show chart' : 'Show as table'}
+      <button className="btn small ghost" style={{ marginTop: 8, paddingInline: 0 }} onClick={() => setTable(!table)}>
+        {table ? 'להציג כגרף' : 'להציג כטבלה'}
       </button>
     </div>
   );

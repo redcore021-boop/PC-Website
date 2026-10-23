@@ -3,6 +3,7 @@ import type { WordEntry } from '../types';
 import { useApp } from '../state';
 import { rootByKey, themeByKey } from '../lib/words';
 import { go } from '../lib/router';
+import { REGISTER_LABEL, TIER_LABEL } from '../strings';
 import { AudioButton } from './AudioButton';
 
 /** Hebrew stays hidden until tapped (unless the user turned on "always show Hebrew"). */
@@ -14,11 +15,18 @@ export function HebrewHint({ text, resetKey }: { text: string; resetKey?: string
   return (
     <button
       type="button"
+      dir="rtl"
       className={'he-reveal' + (shown ? ' shown' : '')}
       onClick={() => setShownFor(shown && !settings.showHebrew ? undefined : (resetKey ?? text))}
-      aria-label={shown ? 'Hebrew translation' : 'Show Hebrew translation'}
+      aria-label={shown ? 'תרגום לעברית' : 'הצגת התרגום לעברית'}
     >
-      {shown ? <span className="he" lang="he">{text}</span> : <>עברית · tap to reveal</>}
+      {shown ? (
+        <span className="he" lang="he">
+          {text}
+        </span>
+      ) : (
+        <>הצגת תרגום</>
+      )}
     </button>
   );
 }
@@ -35,28 +43,37 @@ export function Example({ text }: { text: string }) {
 
 export function WordHeader({ word, size }: { word: WordEntry; size?: 'sm' }) {
   return (
-    <div>
+    <div dir="ltr">
       <div className="row" style={{ alignItems: 'flex-start' }}>
-        <h2 className={'headword' + (size ? ' ' + size : '')} style={{ flex: 1 }}>
+        <h2 className={'headword' + (size ? ' ' + size : '')} style={{ flex: 1 }} lang="en">
           {word.word}
         </h2>
         <AudioButton text={word.word} />
       </div>
       <div className="row wrap" style={{ gap: 8, marginTop: 4 }}>
         {word.ipa && <span className="ipa">/{word.ipa}/</span>}
-        <span className="pos">{word.pos}</span>
+        <span className="pos" lang="en">
+          {word.pos}
+        </span>
       </div>
     </div>
   );
 }
 
-const TIER_LABEL = { 1: 'Core advanced', 2: 'Advanced', 3: 'Rare / literary' } as const;
+/** A Hebrew field label inside the English card. */
+function Label({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="field-label" dir="rtl" style={{ textAlign: 'left' }}>
+      {children}
+    </div>
+  );
+}
 
 /** The full dictionary entry. `brief` shows just enough for answer feedback. */
 export function WordEntryView({ word, brief = false }: { word: WordEntry; brief?: boolean }) {
   const root = word.root ? rootByKey.get(word.root) : undefined;
   return (
-    <div>
+    <div dir="ltr" lang="en">
       <WordHeader word={word} size={brief ? 'sm' : undefined} />
       <p className="def">{word.def}</p>
       <HebrewHint text={word.he} resetKey={word.id} />
@@ -69,30 +86,30 @@ export function WordEntryView({ word, brief = false }: { word: WordEntry; brief?
       ) : (
         <>
           <div className="row wrap" style={{ marginTop: 14, gap: 6 }}>
-            <span className="chip accent">{word.reg}</span>
+            <span className="chip accent">{REGISTER_LABEL[word.reg]}</span>
             <span className="chip">{TIER_LABEL[word.tier]}</span>
-            {word.custom && <span className="chip good">added by you</span>}
+            {word.custom && <span className="chip good">הוספת בעצמך</span>}
           </div>
           {word.family.length > 0 && (
             <>
-              <div className="field-label">Word family</div>
+              <Label>משפחת המילה</Label>
               <p className="note">{word.family.join(' · ')}</p>
             </>
           )}
-          <div className="field-label">Examples</div>
+          <Label>דוגמאות</Label>
           <ul className="examples">
             {word.ex.map((e, i) => (
               <li key={i} className="with-audio">
                 <span>
                   <Example text={e} />
                 </span>
-                <AudioButton small text={e.replace(/[[\]]/g, '')} label="Play example" />
+                <AudioButton small text={e.replace(/[[\]]/g, '')} label="השמעת המשפט" />
               </li>
             ))}
           </ul>
           {word.col.length > 0 && (
             <>
-              <div className="field-label">Collocations</div>
+              <Label>צירופים נפוצים</Label>
               <div className="colls">
                 {word.col.map((c) => (
                   <span key={c} className="chip">
@@ -104,13 +121,15 @@ export function WordEntryView({ word, brief = false }: { word: WordEntry; brief?
           )}
           {word.nuance && (
             <>
-              <div className="field-label">Nuance{word.syn.length ? ` vs. ${word.syn.slice(0, 3).join(', ')}` : ''}</div>
+              <Label>
+                ההבדל מ־<span className="en">{word.syn.slice(0, 3).join(', ')}</span>
+              </Label>
               <p className="note">{word.nuance}</p>
             </>
           )}
           {word.ety && (
             <>
-              <div className="field-label">Origin</div>
+              <Label>מקור המילה</Label>
               <p className="note">{word.ety}</p>
             </>
           )}
@@ -118,12 +137,18 @@ export function WordEntryView({ word, brief = false }: { word: WordEntry; brief?
             <div className="row wrap" style={{ marginTop: 14, gap: 6 }}>
               {root && (
                 <button className="chip" onClick={() => go('browse', 'root-' + root.key)}>
-                  root {root.form} · {root.meaning}
+                  <span dir="rtl">
+                    שורש{' '}
+                    <bdi lang="en" dir="ltr">
+                      {root.form}
+                    </bdi>{' '}
+                    · {root.he}
+                  </span>
                 </button>
               )}
               {word.themes.map((t) => (
                 <button key={t} className="chip" onClick={() => go('browse', 'theme-' + t)}>
-                  {themeByKey.get(t)?.label ?? t}
+                  {themeByKey.get(t)?.he ?? t}
                 </button>
               ))}
             </div>

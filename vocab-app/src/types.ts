@@ -36,12 +36,15 @@ export interface Root {
   key: string;
   form: string;
   meaning: string;
+  /** Meaning in Hebrew, for the interface */
+  he: string;
   origin: string;
 }
 
 export interface Theme {
   key: string;
   label: string;
+  he: string;
 }
 
 /** Card types in rising difficulty */
