@@ -1,0 +1,1423 @@
+{
+  "batch": "batch-09",
+  "title": "Everyday Advanced",
+  "words": [
+    {
+      "word": "resilient",
+      "ipa": "rɪˈzɪliənt",
+      "pos": "adjective",
+      "def": "Able to recover quickly from difficult conditions or setbacks.",
+      "simple": "Able to get better fast after something bad happens.",
+      "hs": "חסין, עמיד",
+      "easy": "Kids are more [resilient] than we think.",
+      "he": "חסין, בעל חוסן, עמיד",
+      "family": ["resilience (n.)", "resiliently (adv.)"],
+      "ex": [
+        "The economy proved surprisingly [resilient] during the crisis.",
+        "She's a [resilient] person who never stays down for long.",
+        "Building a [resilient] team takes time and trust."
+      ],
+      "col": ["remarkably resilient", "resilient economy", "build resilience", "emotional resilience"],
+      "reg": "neutral",
+      "syn": ["tough", "hardy", "adaptable", "robust"],
+      "nuance": "Resilient is about bouncing back after a blow. Tough is about not breaking in the first place; robust describes strong, well-built systems and things.",
+      "ety": "Latin resilire 'to leap back'.",
+      "tier": 1,
+      "themes": ["character", "change"],
+      "prec": {
+        "s": "After losing her job and her home in the same year, she bounced back quickly — she's remarkably ___.",
+        "opts": ["robust", "rigid", "stubborn"],
+        "why": "Resilient means recovering quickly after hardship — 'bounced back'. Robust suits strong systems and objects; rigid means unable to bend; stubborn means refusing to change your mind."
+      }
+    },
+    {
+      "word": "coherent",
+      "ipa": "koʊˈhɪrənt",
+      "pos": "adjective",
+      "def": "Logical and consistent, forming a clear whole; (of a person) able to speak clearly.",
+      "simple": "Clear and easy to follow, with parts that fit together.",
+      "hs": "קוהרנטי, ברור",
+      "easy": "He was too tired to give a [coherent] answer.",
+      "he": "קוהרנטי, עקבי, ברור",
+      "family": ["coherence (n.)", "incoherent (adj.)", "coherently (adv.)"],
+      "ex": [
+        "The party still lacks a [coherent] plan for the economy.",
+        "Her essay is well researched and [coherent].",
+        "After the accident, he wasn't fully [coherent] for an hour."
+      ],
+      "col": ["a coherent plan", "a coherent argument", "coherent strategy", "barely coherent"],
+      "reg": "formal",
+      "syn": ["logical", "consistent", "clear", "lucid"],
+      "nuance": "Coherent means the parts hang together logically. Lucid stresses clarity of expression; consistent means not contradicting itself over time.",
+      "ety": "Latin cohaerere 'to stick together'.",
+      "tier": 1,
+      "themes": ["thinking", "speech"],
+      "prec": {
+        "s": "The government has announced dozens of measures but still has no ___ plan that ties them together.",
+        "opts": ["cohesive", "adherent", "concise"],
+        "why": "Coherent means logically connected into a clear whole. Cohesive describes groups that stick together (a cohesive team); an adherent is a follower; concise means short."
+      }
+    },
+    {
+      "word": "ambiguous",
+      "ipa": "æmˈbɪɡjuəs",
+      "pos": "adjective",
+      "def": "Open to more than one interpretation; not having one obvious meaning.",
+      "simple": "Able to be understood in more than one way.",
+      "hs": "דו־משמעי",
+      "easy": "His message was [ambiguous], so I called him.",
+      "he": "דו־משמעי, עמום",
+      "family": ["ambiguity (n.)", "ambiguously (adv.)", "unambiguous (adj.)"],
+      "ex": [
+        "The contract is [ambiguous] about who pays for repairs.",
+        "The ending of the film is deliberately [ambiguous].",
+        "Avoid [ambiguous] words in instructions."
+      ],
+      "col": ["deliberately ambiguous", "highly ambiguous", "ambiguous wording", "remove ambiguity"],
+      "reg": "neutral",
+      "syn": ["unclear", "vague", "equivocal", "cryptic"],
+      "nuance": "Ambiguous means it could mean two (or more) specific things. Vague means not detailed or exact; equivocal suggests deliberate vagueness to avoid commitment.",
+      "ety": "Latin ambiguus 'doubtful', from ambigere 'to wander about'.",
+      "root": "ambi",
+      "tier": 1,
+      "themes": ["speech", "thinking"],
+      "prec": {
+        "s": "\"I saw her duck\" is ___: it could mean her bird or her quick movement.",
+        "opts": ["ambivalent", "vague", "obscure"],
+        "why": "Ambiguous means having two possible meanings, exactly like this sentence. Ambivalent describes mixed feelings; vague means not detailed; obscure means little known or hard to understand."
+      }
+    },
+    {
+      "word": "feasible",
+      "ipa": "ˈfiːzəbl",
+      "pos": "adjective",
+      "def": "Possible to do easily or conveniently; practicable.",
+      "simple": "Possible to do in real life.",
+      "hs": "בר־ביצוע",
+      "easy": "Is it [feasible] to finish by Friday?",
+      "he": "בר־ביצוע, אפשרי",
+      "family": ["feasibility (n.)"],
+      "ex": [
+        "Building a bridge here isn't technically [feasible].",
+        "We need a [feasible] plan, not a dream.",
+        "The study will look at the [feasibility] of a new railway."
+      ],
+      "col": ["technically feasible", "economically feasible", "a feasible option", "feasibility study"],
+      "reg": "neutral",
+      "syn": ["possible", "practicable", "achievable", "viable"],
+      "nuance": "Feasible asks 'can it be done?'. Viable asks 'will it work and survive?', often about money; plausible asks 'is it believable?'.",
+      "ety": "Old French faisible, from faire 'to do', Latin facere.",
+      "root": "fac",
+      "tier": 1,
+      "themes": ["work", "thinking"],
+      "prec": {
+        "s": "With only two engineers, it isn't ___ to launch the app in all twenty countries this month.",
+        "opts": ["plausible", "probable", "eligible"],
+        "why": "Feasible means possible to actually do. Plausible means believable; probable means likely to happen; eligible means meeting the conditions for something."
+      }
+    },
+    {
+      "word": "plausible",
+      "ipa": "ˈplɔːzəbl",
+      "pos": "adjective",
+      "def": "Seeming reasonable or probable; believable.",
+      "simple": "Seeming likely to be true.",
+      "hs": "סביר, אמין",
+      "easy": "That's a [plausible] excuse, but I don't believe it.",
+      "he": "סביר, מתקבל על הדעת",
+      "family": ["plausibility (n.)", "plausibly (adv.)", "implausible (adj.)"],
+      "ex": [
+        "Scientists offered a [plausible] explanation for the strange lights.",
+        "It's [plausible] that the email was sent by mistake.",
+        "His story sounded [plausible] at first."
+      ],
+      "col": ["a plausible explanation", "perfectly plausible", "sound plausible", "highly implausible"],
+      "reg": "neutral",
+      "syn": ["believable", "credible", "likely", "reasonable"],
+      "nuance": "Plausible means it seems true, without proving it — sometimes with a hint of doubt. Credible means worthy of belief, often about people or sources.",
+      "ety": "Latin plausibilis 'deserving applause', from plaudere 'to clap'.",
+      "tier": 1,
+      "themes": ["knowledge", "thinking"],
+      "prec": {
+        "s": "Nobody knows why the ship sank, but the most ___ theory is that it hit a rock.",
+        "opts": ["feasible", "viable", "palpable"],
+        "why": "Plausible means likely to be true — right for theories and explanations. Feasible and viable are about whether a plan can work; palpable means so strong you can almost touch it."
+      }
+    },
+    {
+      "word": "prevalent",
+      "ipa": "ˈprevələnt",
+      "pos": "adjective",
+      "def": "Widespread in a particular area or at a particular time.",
+      "simple": "Common in a place or among a group of people.",
+      "hs": "נפוץ, רווח",
+      "easy": "Back pain is [prevalent] among office workers.",
+      "he": "נפוץ, רווח",
+      "family": ["prevalence (n.)", "prevail (v., related)"],
+      "ex": [
+        "The disease is more [prevalent] in warm climates.",
+        "These attitudes were [prevalent] in the 1950s.",
+        "Researchers measured the [prevalence] of smoking among teenagers."
+      ],
+      "col": ["more prevalent", "prevalent among", "widely prevalent", "the prevalence of"],
+      "reg": "formal",
+      "syn": ["common", "widespread", "pervasive", "rife"],
+      "nuance": "Prevalent is neutral and often statistical (prevalence of a disease). Rife is for bad things; pervasive stresses spreading through everything.",
+      "ety": "Latin praevalere 'to be very strong'.",
+      "tier": 1,
+      "themes": ["degree", "society"],
+      "prec": {
+        "s": "Short-sightedness is far more ___ among children who spend little time outdoors.",
+        "opts": ["prominent", "predominant", "relevant"],
+        "why": "Prevalent means common among a group — the standard word for how often a condition occurs. Prominent means easy to see or famous; predominant means the strongest or largest; relevant means connected."
+      }
+    },
+    {
+      "word": "profound",
+      "ipa": "prəˈfaʊnd",
+      "pos": "adjective",
+      "def": "Very great or intense; showing deep insight.",
+      "simple": "Very deep or very strong.",
+      "hs": "עמוק",
+      "easy": "The trip had a [profound] effect on me.",
+      "he": "עמוק, מעמיק",
+      "family": ["profoundly (adv.)", "profundity (n.)"],
+      "ex": [
+        "The internet has brought [profound] changes to how we work.",
+        "She said something simple but [profound].",
+        "He was [profoundly] grateful for their help."
+      ],
+      "col": ["a profound effect", "profound change", "profound impact", "profoundly grateful"],
+      "reg": "formal",
+      "syn": ["deep", "great", "intense", "far-reaching"],
+      "nuance": "Profound is about depth — of effects, feelings or thoughts. Significant means important; dramatic means sudden and striking.",
+      "ety": "Latin profundus 'deep', from fundus 'bottom'.",
+      "tier": 1,
+      "themes": ["degree", "quality"],
+      "prec": {
+        "s": "Losing his father at twelve had a ___ effect on the rest of his life.",
+        "opts": ["profuse", "prolific", "pompous"],
+        "why": "A profound effect is deep and lasting. Profuse means flowing in large amounts (profuse apologies); prolific means producing a lot; pompous means self-important."
+      }
+    },
+    {
+      "word": "robust",
+      "ipa": "roʊˈbʌst",
+      "pos": "adjective",
+      "def": "Strong and healthy; sturdily built; (of a system or argument) able to withstand problems.",
+      "simple": "Strong and hard to break.",
+      "hs": "חזק, איתן",
+      "easy": "We need a [robust] plan that works in any weather.",
+      "he": "חזק, איתן, יציב",
+      "family": ["robustly (adv.)", "robustness (n.)"],
+      "ex": [
+        "The new software is fast and [robust].",
+        "Despite her age, she's in [robust] health.",
+        "The minister gave a [robust] defence of the policy."
+      ],
+      "col": ["robust economy", "robust evidence", "robust health", "robust defence"],
+      "reg": "neutral",
+      "syn": ["strong", "sturdy", "resilient", "solid"],
+      "nuance": "Robust suits systems, evidence and bodies that hold up under pressure. Resilient is about recovering after a blow; sturdy is about physical solidity.",
+      "ety": "Latin robustus 'firm and hard', from robur 'oak'.",
+      "tier": 1,
+      "themes": ["quality"],
+      "prec": {
+        "s": "The bank needs a ___ computer system that won't crash when millions of people log in at once.",
+        "opts": ["resilient", "rigorous", "rugged"],
+        "why": "Robust describes systems strong enough not to fail under pressure. Resilient is recovering after failure; rigorous means thorough and strict; rugged means rough and tough, like terrain or outdoor gear."
+      }
+    },
+    {
+      "word": "tangible",
+      "ipa": "ˈtændʒəbl",
+      "pos": "adjective",
+      "def": "Perceptible by touch; clear and definite; real.",
+      "simple": "Real, so you can see or touch it.",
+      "hs": "מוחשי",
+      "easy": "We need [tangible] results, not more talk.",
+      "he": "מוחשי, ממשי",
+      "family": ["tangibly (adv.)", "intangible (adj.)"],
+      "ex": [
+        "The new policy has had no [tangible] benefits so far.",
+        "There was a [tangible] sense of relief in the room.",
+        "Trust is valuable, even though it's [intangible]."
+      ],
+      "col": ["tangible results", "tangible benefits", "tangible evidence", "tangible assets"],
+      "reg": "neutral",
+      "syn": ["real", "concrete", "palpable", "measurable"],
+      "nuance": "Tangible means real and measurable — benefits, results, evidence. Palpable is used for feelings so strong you can almost touch them.",
+      "ety": "Latin tangere 'to touch'.",
+      "tier": 1,
+      "themes": ["quality", "work"],
+      "prec": {
+        "s": "After six months of meetings, the project still hasn't produced any ___ results.",
+        "opts": ["palpable", "potential", "tentative"],
+        "why": "Tangible results are real and measurable. Palpable suits feelings (palpable tension); potential means possible in the future; tentative means not certain or final."
+      }
+    },
+    {
+      "word": "vulnerable",
+      "ipa": "ˈvʌlnərəbl",
+      "pos": "adjective",
+      "def": "Exposed to the possibility of being attacked or harmed, physically or emotionally.",
+      "simple": "Easy to hurt or harm.",
+      "hs": "פגיע",
+      "easy": "Old people are more [vulnerable] in very hot weather.",
+      "he": "פגיע, חשוף",
+      "family": ["vulnerability (n.)", "invulnerable (adj.)"],
+      "ex": [
+        "Children are especially [vulnerable] to online scams.",
+        "He felt [vulnerable] after sharing his story.",
+        "The attack showed how [vulnerable] the network was."
+      ],
+      "col": ["vulnerable to", "particularly vulnerable", "vulnerable groups", "feel vulnerable"],
+      "reg": "neutral",
+      "syn": ["exposed", "weak", "defenceless", "susceptible"],
+      "nuance": "Vulnerable means open to harm, physically or emotionally — and, in modern use, willing to show feelings. Susceptible means likely to be affected by something specific (an illness, flattery).",
+      "ety": "Late Latin vulnerabilis, from vulnus 'wound'.",
+      "tier": 1,
+      "themes": ["emotion", "society"],
+      "prec": {
+        "s": "Without a password, your account is ___ to anyone who finds your phone.",
+        "opts": ["venerable", "volatile", "valuable"],
+        "why": "Vulnerable to = open to harm from. Venerable means respected because of age; volatile means changing suddenly; valuable means worth a lot."
+      }
+    },
+    {
+      "word": "versatile",
+      "ipa": "ˈvɜːrsətl",
+      "pos": "adjective",
+      "def": "Able to adapt or be adapted to many different functions or activities.",
+      "simple": "Able to do many different things well.",
+      "hs": "רב־גוני, רב־שימושי",
+      "easy": "Eggs are a [versatile] food.",
+      "he": "רב־גוני, רב־שימושי",
+      "family": ["versatility (n.)"],
+      "ex": [
+        "She's a [versatile] actor who can play any role.",
+        "This jacket is [versatile] enough for work and weekends.",
+        "Python is a [versatile] programming language."
+      ],
+      "col": ["a versatile player", "highly versatile", "versatile tool", "versatility of"],
+      "reg": "neutral",
+      "syn": ["adaptable", "flexible", "all-round", "multi-purpose"],
+      "nuance": "Versatile praises a person or thing with many uses or skills. Flexible means able to change plans easily; adaptable means able to adjust to new situations.",
+      "ety": "Latin versatilis 'turning easily', from vertere 'to turn'.",
+      "root": "vert",
+      "tier": 1,
+      "themes": ["quality", "work"],
+      "prec": {
+        "s": "A ___ player, he can defend, attack or play in goal if needed.",
+        "opts": ["volatile", "verbose", "vertical"],
+        "why": "Versatile means skilled in many roles. Volatile means changing suddenly; verbose means using too many words; vertical means upright."
+      }
+    },
+    {
+      "word": "intricate",
+      "ipa": "ˈɪntrɪkət",
+      "pos": "adjective",
+      "def": "Very complicated or detailed.",
+      "simple": "Having many small parts or details.",
+      "hs": "מורכב, מסובך",
+      "easy": "She makes [intricate] paper designs by hand.",
+      "he": "מורכב, מסובך, מעשה תחרים",
+      "family": ["intricacy (n.)", "intricately (adv.)"],
+      "ex": [
+        "The carpet has an [intricate] pattern of flowers.",
+        "The novel's plot is [intricate] but rewarding.",
+        "He explained the [intricacies] of the tax system."
+      ],
+      "col": ["intricate pattern", "intricate design", "intricate detail", "the intricacies of"],
+      "reg": "neutral",
+      "syn": ["complex", "elaborate", "detailed", "complicated"],
+      "nuance": "Intricate stresses many small, finely connected details — often admired. Complicated is often negative; elaborate means carefully planned with lots of parts.",
+      "ety": "Latin intricare 'to entangle'.",
+      "tier": 2,
+      "themes": ["quality"],
+      "prec": {
+        "s": "The watchmaker spent weeks on the ___ mechanism, with over 300 tiny parts.",
+        "opts": ["intimate", "integral", "intrinsic"],
+        "why": "Intricate means made of many small detailed parts. Intimate means close and personal; integral means essential to a whole; intrinsic means part of something's basic nature."
+      }
+    },
+    {
+      "word": "obsolete",
+      "ipa": "ˌɑːbsəˈliːt",
+      "pos": "adjective",
+      "def": "No longer produced or used; out of date.",
+      "simple": "No longer used, because something newer exists.",
+      "hs": "מיושן",
+      "easy": "My old phone is now [obsolete].",
+      "he": "מיושן, שאבד עליו הכלח",
+      "family": ["obsolescence (n.)", "obsolescent (adj.)"],
+      "ex": [
+        "Typewriters became [obsolete] in the 1990s.",
+        "New technology could make many jobs [obsolete].",
+        "The law is [obsolete] and should be changed."
+      ],
+      "col": ["become obsolete", "render obsolete", "largely obsolete", "planned obsolescence"],
+      "reg": "neutral",
+      "syn": ["outdated", "out of date", "old-fashioned", "antiquated"],
+      "nuance": "Obsolete means replaced and no longer used. Old-fashioned means no longer in style; an anachronism belongs to a different time.",
+      "ety": "Latin obsoletus 'grown old, worn out'.",
+      "tier": 1,
+      "themes": ["change"],
+      "prec": {
+        "s": "Once digital cameras arrived, film cameras became almost ___ for most people.",
+        "opts": ["absolute", "obscure", "obstinate"],
+        "why": "Obsolete means no longer used because something better replaced it. Absolute means complete; obscure means little known; obstinate means stubborn."
+      }
+    },
+    {
+      "word": "adamant",
+      "ipa": "ˈædəmənt",
+      "pos": "adjective",
+      "def": "Refusing to be persuaded or to change one's mind.",
+      "simple": "Very sure and not willing to change your mind.",
+      "hs": "נחוש, תקיף",
+      "easy": "She was [adamant] that she had locked the door.",
+      "he": "נחוש בדעתו, עומד על שלו",
+      "family": ["adamantly (adv.)"],
+      "ex": [
+        "He's [adamant] that he didn't take the money.",
+        "The coach was [adamant] about the new rules.",
+        "They [adamantly] refused to sign."
+      ],
+      "col": ["adamant that", "remain adamant", "adamantly refuse", "adamantly opposed"],
+      "reg": "neutral",
+      "syn": ["firm", "insistent", "determined", "obstinate"],
+      "nuance": "Adamant is about firmly insisting on something you say or believe — often neutral. Obstinate is critical: stubborn without good reason.",
+      "ety": "Greek adamas 'untameable, very hard stone'.",
+      "tier": 1,
+      "themes": ["character", "speech"],
+      "prec": {
+        "s": "Despite the evidence, the witness was ___ that she had seen the driver's face.",
+        "opts": ["ambivalent", "apathetic", "amenable"],
+        "why": "Adamant means insisting firmly. Ambivalent means having mixed feelings; apathetic means not caring; amenable means open to persuasion — the opposite."
+      }
+    },
+    {
+      "word": "articulate",
+      "ipa": "ɑːrˈtɪkjələt",
+      "pos": "adjective / verb",
+      "def": "(adj.) Able to express ideas clearly; (v., /ɑːrˈtɪkjəleɪt/) to express an idea clearly in words.",
+      "simple": "Good at saying clearly what you think.",
+      "hs": "רהוט, מתבטא היטב",
+      "easy": "She's smart and very [articulate].",
+      "he": "רהוט, מתבטא בבהירות; לנסח",
+      "family": ["articulation (n.)", "articulately (adv.)", "inarticulate (adj.)"],
+      "ex": [
+        "He's an [articulate] speaker who explains complex ideas simply.",
+        "She struggled to [articulate] how she felt.",
+        "The report clearly [articulates] the problems."
+      ],
+      "col": ["highly articulate", "articulate a vision", "articulate speaker", "struggle to articulate"],
+      "reg": "neutral",
+      "syn": ["eloquent", "fluent", "clear", "well-spoken"],
+      "nuance": "Articulate stresses clarity; eloquent adds beauty and emotional power. Fluent is about speaking smoothly, especially in a language.",
+      "ety": "Latin articulare 'to divide into joints, speak distinctly'.",
+      "tier": 1,
+      "themes": ["speech"],
+      "prec": {
+        "s": "Many children know they feel sad but can't ___ why.",
+        "opts": ["accentuate", "allocate", "accumulate"],
+        "why": "Articulate (verb) means put a thought or feeling clearly into words. Accentuate means emphasise; allocate means share out; accumulate means gather over time."
+      }
+    },
+    {
+      "word": "deteriorate",
+      "ipa": "dɪˈtɪriəreɪt",
+      "pos": "verb",
+      "def": "To become progressively worse.",
+      "simple": "To slowly get worse.",
+      "hs": "להידרדר",
+      "easy": "His health began to [deteriorate] last year.",
+      "he": "להידרדר, להחמיר",
+      "family": ["deterioration (n.)"],
+      "ex": [
+        "Relations between the two countries have [deteriorated].",
+        "The weather [deteriorated] as we climbed.",
+        "Without care, old buildings [deteriorate] quickly."
+      ],
+      "col": ["deteriorate rapidly", "health deteriorates", "deteriorating conditions", "further deterioration"],
+      "reg": "formal",
+      "syn": ["worsen", "decline", "decay", "degenerate"],
+      "nuance": "Deteriorate means get worse over time, by itself. Exacerbate means make a problem worse (it needs an object); decline is more neutral.",
+      "ety": "Late Latin deteriorare, from deterior 'worse'.",
+      "tier": 1,
+      "themes": ["change"],
+      "prec": {
+        "s": "Without regular repairs, the old bridge will continue to ___.",
+        "opts": ["exacerbate", "aggravate", "decimate"],
+        "why": "Deteriorate means get worse by itself — no object needed. Exacerbate and aggravate need an object (make something worse); decimate means destroy a large part of."
+      }
+    },
+    {
+      "word": "discrepancy",
+      "ipa": "dɪˈskrepənsi",
+      "pos": "noun",
+      "def": "A lack of compatibility or similarity between two or more facts.",
+      "simple": "A difference between two things that should be the same.",
+      "hs": "פער, אי־התאמה",
+      "easy": "There's a [discrepancy] between the bill and the price on the menu.",
+      "he": "פער, אי־התאמה",
+      "family": ["discrepant (adj.)"],
+      "ex": [
+        "Auditors found a [discrepancy] of $5,000 in the accounts.",
+        "There are [discrepancies] between the two witness reports.",
+        "We need to explain the [discrepancy] in the data."
+      ],
+      "col": ["a discrepancy between", "a slight discrepancy", "explain the discrepancy", "glaring discrepancy"],
+      "reg": "formal",
+      "syn": ["difference", "inconsistency", "mismatch", "gap"],
+      "nuance": "A discrepancy is a mismatch between things that should agree — figures, accounts, records. A disparity is an unfair difference (between rich and poor).",
+      "ety": "Latin discrepare 'to sound differently'.",
+      "tier": 1,
+      "themes": ["knowledge", "work"],
+      "prec": {
+        "s": "The accountant noticed a small ___ between the bank statement and the company's records.",
+        "opts": ["disparity", "dichotomy", "disposition"],
+        "why": "A discrepancy is a mismatch between records that should agree. A disparity is an unfair gap (wage disparity); a dichotomy is a split into two opposites; a disposition is a person's nature."
+      }
+    },
+    {
+      "word": "elusive",
+      "ipa": "iˈluːsɪv",
+      "pos": "adjective",
+      "def": "Difficult to find, catch, achieve, define or remember.",
+      "simple": "Hard to find, catch or achieve.",
+      "hs": "חמקמק",
+      "easy": "For years, success remained [elusive].",
+      "he": "חמקמק, קשה להשגה",
+      "family": ["elude (v.)", "elusiveness (n.)"],
+      "ex": [
+        "The [elusive] leopard is rarely seen in the wild.",
+        "A cure for the common cold remains [elusive].",
+        "Happiness can be [elusive] if you chase it too hard."
+      ],
+      "col": ["remain elusive", "elusive goal", "prove elusive", "elusive quality"],
+      "reg": "neutral",
+      "syn": ["hard to find", "slippery", "evasive", "intangible"],
+      "nuance": "Elusive describes something hard to catch or achieve. Evasive describes a person deliberately avoiding questions.",
+      "ety": "Latin eludere 'to escape by trickery', from ludere 'to play'.",
+      "root": "lud",
+      "tier": 1,
+      "themes": ["quality"],
+      "prec": {
+        "s": "Despite decades of research, a cure for the disease remains ___.",
+        "opts": ["evasive", "illusory", "allusive"],
+        "why": "Elusive means hard to achieve or find. Evasive describes people dodging questions; illusory means not real; allusive means full of indirect references."
+      }
+    },
+    {
+      "word": "explicit",
+      "ipa": "ɪkˈsplɪsɪt",
+      "pos": "adjective",
+      "def": "Stated clearly and in detail, leaving no room for doubt; showing sex or violence openly.",
+      "simple": "Said clearly and directly, so nothing is hidden.",
+      "hs": "מפורש",
+      "easy": "The rules are [explicit]: no phones in class.",
+      "he": "מפורש, גלוי",
+      "family": ["explicitly (adv.)"],
+      "ex": [
+        "She gave [explicit] instructions not to open the box.",
+        "The law makes [explicit] reference to online abuse.",
+        "The film contains [explicit] scenes."
+      ],
+      "col": ["explicit instructions", "make explicit", "explicitly state", "sexually explicit"],
+      "reg": "neutral",
+      "syn": ["clear", "direct", "specific", "unambiguous"],
+      "nuance": "Explicit is the opposite of implicit: stated openly rather than suggested. It can also mean showing sexual content openly.",
+      "ety": "Latin explicitus 'unfolded', from plicare 'to fold'.",
+      "root": "plic",
+      "tier": 1,
+      "themes": ["speech"],
+      "prec": {
+        "s": "The manager didn't just hint; she gave ___ instructions: 'Nobody leaves before six.'",
+        "opts": ["implicit", "tacit", "elaborate"],
+        "why": "Explicit means stated clearly and directly. Implicit and tacit mean understood without being said — the opposite; elaborate means detailed and complex."
+      }
+    },
+    {
+      "word": "implicit",
+      "ipa": "ɪmˈplɪsɪt",
+      "pos": "adjective",
+      "def": "Suggested though not directly expressed; (of trust) complete and unquestioning.",
+      "simple": "Understood without being said directly.",
+      "hs": "משתמע, מרומז",
+      "easy": "There was an [implicit] threat in his voice.",
+      "he": "משתמע, מובלע; מוחלט",
+      "family": ["implicitly (adv.)", "implicit bias (n.)"],
+      "ex": [
+        "Her silence was an [implicit] criticism of the plan.",
+        "I trust her [implicitly].",
+        "Studies show we all have [implicit] biases."
+      ],
+      "col": ["implicit criticism", "implicit assumption", "implicit bias", "trust implicitly"],
+      "reg": "formal",
+      "syn": ["implied", "unspoken", "tacit", "understood"],
+      "nuance": "Implicit means contained in what is said without being stated. Tacit is specifically about unspoken agreement or approval. 'Trust implicitly' means trust completely.",
+      "ety": "Latin implicitus 'entangled', from plicare 'to fold'.",
+      "root": "plic",
+      "tier": 1,
+      "themes": ["speech", "thinking"],
+      "prec": {
+        "s": "Although no one said it, there was an ___ message in the email: work harder or leave.",
+        "opts": ["explicit", "imminent", "illicit"],
+        "why": "Implicit means suggested without being said. Explicit is the opposite; imminent means about to happen; illicit means illegal."
+      }
+    },
+    {
+      "word": "alienate",
+      "ipa": "ˈeɪliəneɪt",
+      "pos": "verb",
+      "def": "To make someone feel isolated or estranged; to cause someone to stop supporting you.",
+      "simple": "To make people stop liking or supporting you.",
+      "hs": "להרחיק, לנכר",
+      "easy": "His rude jokes [alienated] his friends.",
+      "he": "להרחיק, לנכר",
+      "family": ["alienation (n.)", "alienated (adj.)"],
+      "ex": [
+        "The new prices could [alienate] loyal customers.",
+        "Many young people feel [alienated] from politics.",
+        "She didn't want to [alienate] her colleagues by complaining."
+      ],
+      "col": ["alienate voters", "alienate customers", "feel alienated", "sense of alienation"],
+      "reg": "formal",
+      "syn": ["estrange", "push away", "antagonize", "isolate"],
+      "nuance": "Alienate means push people away so they no longer feel part of something. Antagonize means make someone hostile; ostracize means a group deliberately excludes someone.",
+      "ety": "Latin alienare 'to make another's', from alienus 'of another'.",
+      "tier": 1,
+      "themes": ["relationships", "society"],
+      "prec": {
+        "s": "The party's extreme new policies risk ___ the moderate voters it needs to win.",
+        "ans": "alienating",
+        "opts": ["ostracizing", "eliminating", "alleviating"],
+        "why": "Alienate means push people away so they stop supporting you. Ostracize is a group shutting someone out; eliminate means remove; alleviate means ease pain."
+      }
+    },
+    {
+      "word": "bolster",
+      "ipa": "ˈboʊlstər",
+      "pos": "verb",
+      "def": "To support or strengthen; to prop up.",
+      "simple": "To make something stronger or more certain.",
+      "hs": "לחזק",
+      "easy": "The win [bolstered] the team's confidence.",
+      "he": "לחזק, לתמוך",
+      "family": ["bolster (n., a long pillow)"],
+      "ex": [
+        "The new data [bolster] the case for change.",
+        "The government cut taxes to [bolster] the economy.",
+        "Good reviews [bolstered] sales."
+      ],
+      "col": ["bolster confidence", "bolster the economy", "bolster support", "bolster the case for"],
+      "reg": "neutral",
+      "syn": ["strengthen", "boost", "reinforce", "support"],
+      "nuance": "Bolster means add strength or support to something that may be weak. Boost is more informal; reinforce suggests adding extra strength.",
+      "ety": "Old English bolster 'a long pillow' — something to prop you up.",
+      "tier": 2,
+      "themes": ["change", "work"],
+      "prec": {
+        "s": "Winning the first three games has ___ the young team's confidence.",
+        "ans": "bolstered",
+        "opts": ["bloated", "boasted", "bombarded"],
+        "why": "Bolster means strengthen. Bloat means swell up; boast means brag; bombard means attack continuously."
+      }
+    },
+    {
+      "word": "curtail",
+      "ipa": "kɜːrˈteɪl",
+      "pos": "verb",
+      "def": "To reduce in extent or quantity; to impose a restriction on.",
+      "simple": "To cut or limit something.",
+      "hs": "לקצץ, להגביל",
+      "easy": "Bad weather [curtailed] our trip.",
+      "he": "לקצץ, לצמצם, להגביל",
+      "family": ["curtailment (n.)"],
+      "ex": [
+        "The new law [curtails] the power of the police.",
+        "Spending was [curtailed] after the crisis.",
+        "Her career was [curtailed] by injury."
+      ],
+      "col": ["curtail spending", "curtail freedom", "severely curtailed", "curtail the power of"],
+      "reg": "formal",
+      "syn": ["cut", "reduce", "limit", "restrict"],
+      "nuance": "Curtail means cut short or limit, often by authority or circumstances. Reduce is neutral; restrict stresses rules that limit.",
+      "ety": "From obsolete curtal 'horse with a docked tail', influenced by tail.",
+      "tier": 2,
+      "themes": ["change", "society"],
+      "prec": {
+        "s": "The government plans to ___ the use of plastic bags with a new tax.",
+        "opts": ["curate", "corroborate", "cultivate"],
+        "why": "Curtail means cut back or limit. Curate means select and organise; corroborate means confirm; cultivate means grow or develop."
+      }
+    },
+    {
+      "word": "deplete",
+      "ipa": "dɪˈpliːt",
+      "pos": "verb",
+      "def": "To use up the supply or resources of something.",
+      "simple": "To use up most of something.",
+      "hs": "לרוקן, לדלדל",
+      "easy": "The long trip [depleted] our savings.",
+      "he": "לרוקן, לדלדל",
+      "family": ["depletion (n.)", "depleted (adj.)"],
+      "ex": [
+        "Overfishing has [depleted] stocks of cod.",
+        "Stress can [deplete] your energy.",
+        "The ozone layer was [depleted] by chemicals."
+      ],
+      "col": ["deplete resources", "severely depleted", "depleted stocks", "ozone depletion"],
+      "reg": "formal",
+      "syn": ["use up", "exhaust", "drain", "reduce"],
+      "nuance": "Deplete means reduce a supply until little is left. Exhaust means use up completely; drain suggests a steady loss.",
+      "ety": "Latin deplere 'to empty out'.",
+      "tier": 2,
+      "themes": ["degree", "money"],
+      "prec": {
+        "s": "Years of drought have ___ the region's water supply.",
+        "ans": "depleted",
+        "opts": ["deplored", "deported", "deprived"],
+        "why": "Deplete means use up a supply. Deplore means strongly disapprove of; deport means send out of a country; deprive needs a person and 'of' (deprived people of water)."
+      }
+    },
+    {
+      "word": "eradicate",
+      "ipa": "ɪˈrædɪkeɪt",
+      "pos": "verb",
+      "def": "To destroy completely; to put an end to.",
+      "simple": "To remove something completely.",
+      "hs": "למגר",
+      "easy": "The goal is to [eradicate] the disease.",
+      "he": "למגר, לחסל",
+      "family": ["eradication (n.)"],
+      "ex": [
+        "Smallpox was [eradicated] in 1980.",
+        "The charity aims to [eradicate] child hunger.",
+        "Corruption is hard to [eradicate]."
+      ],
+      "col": ["eradicate poverty", "eradicate disease", "completely eradicated", "eradication programme"],
+      "reg": "formal",
+      "syn": ["eliminate", "wipe out", "abolish", "stamp out"],
+      "nuance": "Eradicate means remove completely, down to the roots — diseases, poverty, pests. Eliminate is more general; abolish is used for laws and systems.",
+      "ety": "Latin eradicare 'to tear out by the roots', from radix 'root'.",
+      "tier": 1,
+      "themes": ["society", "change"],
+      "prec": {
+        "s": "Thanks to vaccines, polio has been almost completely ___ worldwide.",
+        "ans": "eradicated",
+        "opts": ["abolished", "evacuated", "exempted"],
+        "why": "Eradicate is the standard verb for wiping out a disease. Abolish is for laws and systems; evacuate means move people out of danger; exempt means free from a rule."
+      }
+    },
+    {
+      "word": "foster",
+      "ipa": "ˈfɔːstər",
+      "pos": "verb / adjective",
+      "def": "To encourage the development of something; to bring up a child that is not one's own.",
+      "simple": "To help something grow or develop.",
+      "hs": "לטפח",
+      "easy": "Good teachers [foster] a love of reading.",
+      "he": "לטפח, לעודד; לאמנה",
+      "family": ["foster parent (n.)", "foster care (n.)"],
+      "ex": [
+        "The program aims to [foster] cooperation between schools.",
+        "Open offices are meant to [foster] creativity.",
+        "They [fostered] three children over ten years."
+      ],
+      "col": ["foster creativity", "foster cooperation", "foster a sense of", "foster parents"],
+      "reg": "formal",
+      "syn": ["encourage", "promote", "nurture", "cultivate"],
+      "nuance": "Foster means create the conditions for something to develop (a feeling, relationship, idea). Nurture adds care and protection; promote is more active publicity.",
+      "ety": "Old English fōstrian 'to feed, nourish'.",
+      "tier": 1,
+      "themes": ["relationships", "work"],
+      "prec": {
+        "s": "The new manager organised team lunches to ___ a sense of community.",
+        "opts": ["fester", "forge ahead", "falter"],
+        "why": "Foster means help a feeling or relationship grow. Fester means get worse (a wound or anger); forge ahead means move forward quickly; falter means lose strength."
+      }
+    },
+    {
+      "word": "hamper",
+      "ipa": "ˈhæmpər",
+      "pos": "verb",
+      "def": "To hinder or impede the movement or progress of.",
+      "simple": "To make it harder for something to happen or move.",
+      "hs": "להכביד, לעכב",
+      "easy": "Heavy rain [hampered] the search.",
+      "he": "להכביד, לעכב, להפריע",
+      "family": ["hamper (n., a picnic basket — unrelated)"],
+      "ex": [
+        "A lack of money has [hampered] the project.",
+        "The team was [hampered] by injuries all season.",
+        "Strict rules [hamper] small businesses."
+      ],
+      "col": ["hamper efforts", "hamper progress", "hampered by", "seriously hamper"],
+      "reg": "neutral",
+      "syn": ["hinder", "impede", "obstruct", "slow down"],
+      "nuance": "Hamper means get in the way and slow progress. Impede is more formal; obstruct suggests blocking completely or deliberately.",
+      "ety": "Possibly from Old Norse hemja 'to restrain'.",
+      "tier": 2,
+      "themes": ["work", "change"],
+      "prec": {
+        "s": "Rescue efforts were ___ by strong winds and heavy snow.",
+        "ans": "hampered",
+        "opts": ["hammered", "pampered", "tampered"],
+        "why": "Hamper means make progress harder. Hammer means hit hard; pamper means treat with too much care; tamper (with) means interfere illegally."
+      }
+    },
+    {
+      "word": "undermine",
+      "ipa": "ˌʌndərˈmaɪn",
+      "pos": "verb",
+      "def": "To weaken something gradually or secretly; to damage confidence or authority.",
+      "simple": "To slowly make someone or something weaker.",
+      "hs": "לערער, לחתור תחת",
+      "easy": "Don't [undermine] your teacher in front of the class.",
+      "he": "לערער, לחתור תחת",
+      "family": ["undermining (n.)"],
+      "ex": [
+        "The scandal [undermined] trust in the government.",
+        "Constant criticism can [undermine] a child's confidence.",
+        "Fake news [undermines] democracy."
+      ],
+      "col": ["undermine confidence", "undermine trust", "undermine authority", "seriously undermine"],
+      "reg": "neutral",
+      "syn": ["weaken", "erode", "sabotage", "subvert"],
+      "nuance": "Undermine means weaken gradually, often from below or behind. Sabotage means deliberately destroy; subvert means overturn a system or authority.",
+      "ety": "Originally 'to dig a mine under' a wall to make it collapse.",
+      "tier": 1,
+      "themes": ["conflict", "society"],
+      "prec": {
+        "s": "Every time the manager says yes, the CEO says no — he keeps ___ her authority.",
+        "ans": "undermining",
+        "opts": ["underestimating", "underlining", "undertaking"],
+        "why": "Undermine means weaken someone's authority. Underestimate means think something is smaller than it is; underline means emphasise; undertake means take on a task."
+      }
+    },
+    {
+      "word": "cumbersome",
+      "ipa": "ˈkʌmbərsəm",
+      "pos": "adjective",
+      "def": "Large or heavy and difficult to carry or use; slow and complicated.",
+      "simple": "Big, heavy or slow, so it's hard to use.",
+      "hs": "מסורבל",
+      "easy": "The old system is [cumbersome] and slow.",
+      "he": "מסורבל, מגושם",
+      "family": [],
+      "ex": [
+        "The [cumbersome] suitcase wouldn't fit in the car.",
+        "Applying for a visa is a [cumbersome] process.",
+        "Early computers were [cumbersome] machines."
+      ],
+      "col": ["cumbersome process", "cumbersome procedure", "cumbersome equipment"],
+      "reg": "neutral",
+      "syn": ["unwieldy", "awkward", "clumsy", "bulky"],
+      "nuance": "Cumbersome is used for heavy objects and for slow, complicated procedures. Bulky is only about size; unwieldy stresses difficulty of handling.",
+      "ety": "From cumber 'to hinder' + -some.",
+      "tier": 2,
+      "themes": ["quality", "work"],
+      "prec": {
+        "s": "To get a refund you must fill in five forms and wait three months — a truly ___ process.",
+        "opts": ["cumulative", "compelling", "comprehensive"],
+        "why": "Cumbersome means slow and complicated. Cumulative means increasing by adding up; compelling means convincing; comprehensive means complete."
+      }
+    },
+    {
+      "word": "daunting",
+      "ipa": "ˈdɔːntɪŋ",
+      "pos": "adjective",
+      "def": "Seeming difficult to deal with in anticipation; intimidating.",
+      "simple": "Looking so hard that it makes you a little afraid.",
+      "hs": "מרתיע, מאיים",
+      "easy": "Starting a new job can be [daunting].",
+      "he": "מרתיע, מאיים (בקושי שלו)",
+      "family": ["daunt (v.)", "undaunted (adj.)"],
+      "ex": [
+        "Writing a book is a [daunting] task.",
+        "The size of the problem is [daunting].",
+        "She faced the [daunting] climb with a smile."
+      ],
+      "col": ["a daunting task", "daunting challenge", "daunting prospect", "undaunted by"],
+      "reg": "neutral",
+      "syn": ["intimidating", "overwhelming", "formidable", "scary"],
+      "nuance": "Daunting describes a task that looks hard before you start, making you hesitate. Overwhelming means too much to handle; formidable adds respect for the difficulty.",
+      "ety": "Old French danter, from Latin domare 'to tame'.",
+      "tier": 1,
+      "themes": ["emotion", "work"],
+      "prec": {
+        "s": "Learning a new language at fifty can seem ___, but small daily steps make it possible.",
+        "opts": ["doting", "dormant", "diligent"],
+        "why": "Daunting means looking hard enough to discourage you. Doting means very loving; dormant means inactive; diligent means hard-working."
+      }
+    },
+    {
+      "word": "frivolous",
+      "ipa": "ˈfrɪvələs",
+      "pos": "adjective",
+      "def": "Not having any serious purpose or value; not serious.",
+      "simple": "Silly and not important.",
+      "hs": "קליל, לא רציני",
+      "easy": "Don't waste money on [frivolous] things.",
+      "he": "קל דעת, לא רציני, בזבזני",
+      "family": ["frivolity (n.)", "frivolously (adv.)"],
+      "ex": [
+        "The court threw out the [frivolous] lawsuit.",
+        "It's not a [frivolous] question — please take it seriously.",
+        "They spent the bonus on [frivolous] luxuries."
+      ],
+      "col": ["frivolous spending", "frivolous lawsuit", "frivolous question", "a moment of frivolity"],
+      "reg": "neutral",
+      "syn": ["silly", "trivial", "superficial", "light-hearted"],
+      "nuance": "Frivolous criticises something as not serious when it should be (or as a waste of money). Trivial means unimportant; light-hearted is positive — cheerful and fun.",
+      "ety": "Latin frivolus 'silly, trifling'.",
+      "tier": 2,
+      "themes": ["quality", "money"],
+      "prec": {
+        "s": "The judge dismissed the case as ___: the man had sued a café because his coffee was too hot.",
+        "opts": ["fervent", "furtive", "fastidious"],
+        "why": "Frivolous means not serious, without real purpose — ideal for a silly lawsuit. Fervent means passionate; furtive means secretive; fastidious means very particular."
+      }
+    },
+    {
+      "word": "gullible",
+      "ipa": "ˈɡʌləbl",
+      "pos": "adjective",
+      "def": "Easily persuaded to believe something; credulous.",
+      "simple": "Too quick to believe what people tell you.",
+      "hs": "תמים, פתי",
+      "easy": "Don't be so [gullible] — it's a scam.",
+      "he": "פתי, תמים",
+      "family": ["gullibility (n.)", "gull (v., to trick)"],
+      "ex": [
+        "[Gullible] tourists paid for fake tickets.",
+        "I was [gullible] enough to lend him money.",
+        "The ad was aimed at [gullible] buyers."
+      ],
+      "col": ["gullible enough to", "gullible tourists", "prey on the gullible"],
+      "reg": "informal",
+      "syn": ["credulous", "naive", "trusting", "easily fooled"],
+      "nuance": "Gullible is the everyday word for easily tricked; credulous is its formal equivalent. Naive means lacking experience, not necessarily tricked.",
+      "ety": "From gull 'to fool', perhaps from gull 'a young bird'.",
+      "tier": 1,
+      "themes": ["character"],
+      "prec": {
+        "s": "Only a ___ person would believe an email saying they'd won a lottery they never entered.",
+        "opts": ["genial", "garrulous", "grateful"],
+        "why": "Gullible means easily tricked. Genial means friendly; garrulous means very talkative; grateful means thankful."
+      }
+    },
+    {
+      "word": "lenient",
+      "ipa": "ˈliːniənt",
+      "pos": "adjective",
+      "def": "More merciful or tolerant than expected, especially in punishment.",
+      "simple": "Not strict when someone breaks a rule.",
+      "hs": "מקל, סלחן",
+      "easy": "My parents were [lenient] about bedtime.",
+      "he": "מקל, סלחן, מתירני",
+      "family": ["leniency (n.)", "leniently (adv.)"],
+      "ex": [
+        "The judge gave him a [lenient] sentence.",
+        "Some say the new rules are too [lenient].",
+        "She asked the court for [leniency]."
+      ],
+      "col": ["a lenient sentence", "too lenient", "lenient towards", "show leniency"],
+      "reg": "neutral",
+      "syn": ["mild", "tolerant", "permissive", "forgiving"],
+      "nuance": "Lenient is about going easy on punishment or rules. Permissive means allowing too much freedom, often critical; tolerant means accepting differences.",
+      "ety": "Latin lenire 'to soothe', from lenis 'mild'.",
+      "tier": 1,
+      "themes": ["character", "society"],
+      "prec": {
+        "s": "Critics said three months was far too ___ a sentence for such a serious crime.",
+        "opts": ["lethal", "lucid", "lavish"],
+        "why": "Lenient means not strict in punishment. Lethal means deadly; lucid means clear; lavish means extravagant."
+      }
+    },
+    {
+      "word": "tedious",
+      "ipa": "ˈtiːdiəs",
+      "pos": "adjective",
+      "def": "Too long, slow or dull; tiresome.",
+      "simple": "Boring because it takes long and is always the same.",
+      "hs": "מייגע",
+      "easy": "Filling in forms is [tedious].",
+      "he": "מייגע, משעמם",
+      "family": ["tedium (n.)", "tediously (adv.)"],
+      "ex": [
+        "The meeting was long and [tedious].",
+        "Data entry is [tedious] but necessary.",
+        "The film's second half becomes [tedious]."
+      ],
+      "col": ["tedious task", "long and tedious", "tedious process", "the tedium of"],
+      "reg": "neutral",
+      "syn": ["boring", "dull", "monotonous", "mundane"],
+      "nuance": "Tedious stresses boredom from length and repetition. Mundane means ordinary; monotonous means always the same tone or rhythm.",
+      "ety": "Late Latin taediosus, from taedium 'weariness'.",
+      "tier": 1,
+      "themes": ["quality", "work"],
+      "prec": {
+        "s": "Copying 2,000 phone numbers into a spreadsheet by hand is a ___ job.",
+        "opts": ["tenacious", "tentative", "tenuous"],
+        "why": "Tedious means boring because long and repetitive. Tenacious means determined; tentative means hesitant; tenuous means weak."
+      }
+    },
+    {
+      "word": "unprecedented",
+      "ipa": "ʌnˈpresɪdentɪd",
+      "pos": "adjective",
+      "def": "Never done or known before.",
+      "simple": "Never happened before.",
+      "hs": "חסר תקדים",
+      "easy": "The city saw [unprecedented] snow this year.",
+      "he": "חסר תקדים",
+      "family": ["precedent (n.)", "unprecedentedly (adv.)"],
+      "ex": [
+        "The pandemic caused [unprecedented] disruption.",
+        "Prices rose at an [unprecedented] rate.",
+        "It was an [unprecedented] decision by the court."
+      ],
+      "col": ["unprecedented scale", "unprecedented level", "an unprecedented move", "set a precedent"],
+      "reg": "formal",
+      "syn": ["unparalleled", "unheard of", "new", "record-breaking"],
+      "nuance": "Unprecedented means nothing like it has happened before. It's overused in news; save it for genuinely new events.",
+      "ety": "un- + precedent, from Latin praecedere 'to go before'.",
+      "root": "cede",
+      "tier": 1,
+      "themes": ["change"],
+      "prec": {
+        "s": "Nothing like it had ever happened: the stock market fell by an ___ 40% in one day.",
+        "opts": ["unwarranted", "unanimous", "uninhibited"],
+        "why": "Unprecedented means never happened before. Unwarranted means not justified; unanimous means agreed by everyone; uninhibited means free of shyness."
+      }
+    },
+    {
+      "word": "trivial",
+      "ipa": "ˈtrɪviəl",
+      "pos": "adjective",
+      "def": "Of little value or importance.",
+      "simple": "Small and not important.",
+      "hs": "שולי, טריוויאלי",
+      "easy": "They argued about something [trivial].",
+      "he": "שולי, זניח, טריוויאלי",
+      "family": ["trivia (n.)", "triviality (n.)", "trivialize (v.)"],
+      "ex": [
+        "Don't bother the boss with [trivial] questions.",
+        "The difference is [trivial].",
+        "It's not a [trivial] problem — it could cost millions."
+      ],
+      "col": ["trivial matter", "trivial detail", "far from trivial", "trivialize the problem"],
+      "reg": "neutral",
+      "syn": ["unimportant", "minor", "petty", "negligible"],
+      "nuance": "Trivial means unimportant. Negligible means too small to matter in amount; petty adds small-mindedness.",
+      "ety": "Latin trivialis 'commonplace', from trivium 'place where three roads meet'.",
+      "tier": 1,
+      "themes": ["quality"],
+      "prec": {
+        "s": "The couple divorced after twenty years of arguing over ___ things like who left the lights on.",
+        "opts": ["trivia", "traumatic", "triumphant"],
+        "why": "Trivial (adjective) means unimportant. Trivia is a noun (small facts); traumatic means deeply upsetting; triumphant means victorious."
+      }
+    },
+    {
+      "word": "boil down to",
+      "ipa": "bɔɪl ˈdaʊn tuː",
+      "pos": "phrasal verb",
+      "def": "To have something as the main or basic point.",
+      "simple": "To have one main point or reason.",
+      "hs": "מסתכם ב־",
+      "easy": "It all [boils down to] money.",
+      "he": "מסתכם ב־, העיקר הוא",
+      "family": [],
+      "ex": [
+        "The problem [boils down to] poor communication.",
+        "In the end, it [boiled down to] a choice between two jobs.",
+        "What it [boils down to] is trust."
+      ],
+      "col": ["it all boils down to", "what it boils down to", "boil down to a choice"],
+      "reg": "informal",
+      "syn": ["come down to", "amount to", "be essentially"],
+      "nuance": "Boil down to reduces a complicated issue to its core, like boiling liquid until only the essence remains. Come down to is very close.",
+      "ety": "From cooking: boiling a sauce to reduce it.",
+      "tier": 1,
+      "themes": ["thinking"],
+      "prec": {
+        "s": "We discussed the plan for hours, but in the end it all ___ one question: can we afford it?",
+        "ans": "boiled down to",
+        "opts": ["broke down", "boiled over", "backed down"],
+        "why": "Boil down to = have as its main point. Break down means stop working or lose control of emotions; boil over means (anger) explode; back down means give up a position."
+      }
+    },
+    {
+      "word": "brush up on",
+      "ipa": "brʌʃ ˈʌp ɑːn",
+      "pos": "phrasal verb",
+      "def": "To improve a skill or knowledge that has weakened.",
+      "simple": "To study something again so you get better at it.",
+      "hs": "לרענן ידע",
+      "easy": "I need to [brush up on] my French before the trip.",
+      "he": "לרענן, לחדד (ידע)",
+      "family": [],
+      "ex": [
+        "She [brushed up on] her maths before the exam.",
+        "It's worth [brushing up on] interview skills.",
+        "He's [brushing up on] his history."
+      ],
+      "col": ["brush up on a language", "brush up on skills", "need to brush up"],
+      "reg": "informal",
+      "syn": ["refresh", "revise", "polish up", "review"],
+      "nuance": "Brush up on is for refreshing skills or knowledge you already had. Learn is from scratch; revise (UK) is studying for an exam.",
+      "ety": "Like brushing dust off something old so it shines again.",
+      "tier": 1,
+      "themes": ["work", "knowledge"],
+      "prec": {
+        "s": "Before my trip to Madrid, I want to ___ the Spanish I learned at school.",
+        "opts": ["brush off", "brush aside", "touch on"],
+        "why": "Brush up on = refresh old knowledge. Brush off and brush aside mean dismiss; touch on means mention briefly."
+      }
+    },
+    {
+      "word": "catch on",
+      "ipa": "kætʃ ˈɑːn",
+      "pos": "phrasal verb",
+      "def": "To become popular; to understand something.",
+      "simple": "To become popular, or to start to understand.",
+      "hs": "להפוך לפופולרי; להבין",
+      "easy": "The new app never really [caught on].",
+      "he": "לתפוס (להיות פופולרי); להבין",
+      "family": [],
+      "ex": [
+        "The trend quickly [caught on] among teenagers.",
+        "It took me a while to [catch on] to the joke.",
+        "Electric bikes have really [caught on] in cities."
+      ],
+      "col": ["catch on quickly", "never caught on", "catch on to a joke"],
+      "reg": "informal",
+      "syn": ["become popular", "take off", "understand", "get it"],
+      "nuance": "Catch on has two meanings: become popular (a trend) and understand (catch on to a joke). Take off is used for fast success.",
+      "ety": "Like catching something thrown — the idea is caught by many people.",
+      "tier": 1,
+      "themes": ["change", "society"],
+      "prec": {
+        "s": "Video calls existed for decades but only really ___ during the pandemic.",
+        "ans": "caught on",
+        "opts": ["caught up", "caught out", "called off"],
+        "why": "Catch on = become popular. Catch up means reach the same level; be caught out means be found making a mistake; call off means cancel."
+      }
+    },
+    {
+      "word": "follow through",
+      "ipa": "ˌfɑːloʊ ˈθruː",
+      "pos": "phrasal verb",
+      "def": "To continue an action or task to its completion.",
+      "simple": "To finish what you started or do what you promised.",
+      "hs": "לבצע עד הסוף",
+      "easy": "He makes plans but never [follows through].",
+      "he": "להשלים, לבצע עד הסוף",
+      "family": ["follow-through (n.)"],
+      "ex": [
+        "The government must [follow through] on its promises.",
+        "Good managers [follow through] on what they say.",
+        "She didn't [follow through] with the complaint."
+      ],
+      "col": ["follow through on a promise", "follow through with a plan", "lack follow-through"],
+      "reg": "neutral",
+      "syn": ["carry out", "complete", "deliver on", "see through"],
+      "nuance": "Follow through stresses finishing what you committed to. Carry out means perform a task; see something through means stick with it until the end.",
+      "ety": "From sport: continuing the movement after hitting a ball.",
+      "tier": 1,
+      "themes": ["work", "character"],
+      "prec": {
+        "s": "Voters are tired of politicians who make big promises and then fail to ___.",
+        "opts": ["fall through", "follow suit", "fall back"],
+        "why": "Follow through = finish what you promised. Fall through means (a plan) fails to happen; follow suit means do the same as others; fall back means retreat."
+      }
+    },
+    {
+      "word": "get across",
+      "ipa": "ɡet əˈkrɔːs",
+      "pos": "phrasal verb",
+      "def": "To communicate an idea successfully.",
+      "simple": "To make people understand an idea.",
+      "hs": "להעביר (מסר)",
+      "easy": "I tried to [get across] how important it was.",
+      "he": "להעביר מסר, להבהיר",
+      "family": [],
+      "ex": [
+        "The ad [gets its message across] in five seconds.",
+        "Teachers use stories to [get across] hard ideas.",
+        "I couldn't [get across] what I meant."
+      ],
+      "col": ["get a message across", "get an idea across", "get across the point"],
+      "reg": "informal",
+      "syn": ["communicate", "convey", "put across", "explain"],
+      "nuance": "Get across focuses on success in making people understand. Convey is the formal word; come across (as) is about the impression you make.",
+      "ety": "Like carrying an idea across a gap to the listener.",
+      "tier": 1,
+      "themes": ["speech"],
+      "prec": {
+        "s": "Her presentation used simple charts to ___ a very complex idea.",
+        "opts": ["come across", "get over", "get around"],
+        "why": "Get across = make people understand. Come across means seem or find by chance; get over means recover from; get around means avoid a rule or travel."
+      }
+    },
+    {
+      "word": "phase out",
+      "ipa": "feɪz ˈaʊt",
+      "pos": "phrasal verb",
+      "def": "To stop using or providing something gradually, in stages.",
+      "simple": "To stop using something slowly, step by step.",
+      "hs": "להוציא בהדרגה משימוש",
+      "easy": "The city will [phase out] old buses by 2030.",
+      "he": "להוציא בהדרגה משימוש",
+      "family": ["phase-out (n.)"],
+      "ex": [
+        "The government plans to [phase out] coal power.",
+        "The old model is being [phased out].",
+        "Paper tickets were [phased out] last year."
+      ],
+      "col": ["phase out coal", "be phased out", "gradually phase out", "a phase-out of"],
+      "reg": "neutral",
+      "syn": ["gradually end", "withdraw", "discontinue", "wind down"],
+      "nuance": "Phase out means end something in planned stages. Scrap means end suddenly; wind down is for activities or businesses slowly closing.",
+      "ety": "From phase 'a stage in a process'.",
+      "tier": 1,
+      "themes": ["change", "work"],
+      "prec": {
+        "s": "The bank will ___ paper statements over the next two years, starting with younger customers.",
+        "opts": ["phase in", "pass out", "pay off"],
+        "why": "Phase out = gradually stop using. Phase in is the opposite (gradually introduce); pass out means faint; pay off means succeed or repay."
+      }
+    },
+    {
+      "word": "put off",
+      "ipa": "pʊt ˈɔːf",
+      "pos": "phrasal verb",
+      "def": "To postpone something; to make someone dislike or lose interest in something.",
+      "simple": "To move something to a later time, or to make someone not want something.",
+      "hs": "לדחות; להרתיע",
+      "easy": "Stop [putting off] your homework!",
+      "he": "לדחות; להרתיע",
+      "family": ["off-putting (adj.)"],
+      "ex": [
+        "We had to [put off] the wedding until spring.",
+        "The smell [put me off] my food.",
+        "Don't be [put off] by the long queue — it moves fast."
+      ],
+      "col": ["put off a decision", "be put off by", "keep putting it off", "off-putting"],
+      "reg": "informal",
+      "syn": ["postpone", "delay", "discourage", "deter"],
+      "nuance": "Put off has two meanings: postpone (put off a meeting) and discourage (put someone off). Postpone is the formal word for the first.",
+      "ety": "To put something away from the present moment.",
+      "tier": 1,
+      "themes": ["work", "emotion"],
+      "prec": {
+        "s": "I've been ___ calling the dentist for months because I hate injections.",
+        "ans": "putting off",
+        "opts": ["putting up", "putting out", "putting across"],
+        "why": "Put off = delay doing something. Put up means build or let someone stay; put out means extinguish; put across means communicate."
+      }
+    },
+    {
+      "word": "a long shot",
+      "ipa": "ə ˈlɔːŋ ʃɑːt",
+      "pos": "idiom",
+      "def": "An attempt or guess that is unlikely to succeed.",
+      "simple": "Something that probably won't work, but you try anyway.",
+      "hs": "סיכוי קלוש",
+      "easy": "It's [a long shot], but maybe she still has the keys.",
+      "he": "סיכוי קלוש, ניסיון נואש",
+      "family": [],
+      "ex": [
+        "Winning the league is [a long shot] this year.",
+        "Applying to Harvard was [a long shot], but she got in.",
+        "It's [a long shot], but it's worth a try."
+      ],
+      "col": ["a bit of a long shot", "it's a long shot, but", "not by a long shot"],
+      "reg": "informal",
+      "syn": ["outside chance", "slim chance", "gamble"],
+      "nuance": "A long shot is a hopeful attempt with low odds. 'Not by a long shot' means 'not at all'.",
+      "ety": "From shooting or betting: a shot from far away rarely hits.",
+      "tier": 1,
+      "themes": ["thinking"],
+      "prec": {
+        "s": "Getting tickets the day before the final is ___, but let's try the box office anyway.",
+        "opts": ["a foregone conclusion", "par for the course", "a blessing in disguise"],
+        "why": "A long shot is unlikely but worth trying. A foregone conclusion is certain; par for the course is normal and expected; a blessing in disguise turns out well."
+      }
+    },
+    {
+      "word": "back to square one",
+      "ipa": "bæk tə ˌskwer ˈwʌn",
+      "pos": "idiom",
+      "def": "Back to the starting point, with no progress made.",
+      "simple": "Back to the start, after something failed.",
+      "hs": "חזרה לנקודת ההתחלה",
+      "easy": "The deal fell through, so we're [back to square one].",
+      "he": "חזרה לנקודת ההתחלה",
+      "family": [],
+      "ex": [
+        "The test failed, and the scientists were [back to square one].",
+        "If the bank says no, we're [back to square one].",
+        "After the breakup, I felt [back to square one]."
+      ],
+      "col": ["be back to square one", "go back to square one", "send someone back to square one"],
+      "reg": "informal",
+      "syn": ["back to the drawing board", "starting over"],
+      "nuance": "Back to square one stresses lost progress. Back to the drawing board stresses the need for a new plan.",
+      "ety": "Possibly from board games, or early football radio commentary using a numbered grid.",
+      "tier": 1,
+      "themes": ["change", "work"],
+      "prec": {
+        "s": "The buyer pulled out the day before signing, so we're ___ with the sale of the house.",
+        "opts": ["on the same page", "in the same boat", "on the fence"],
+        "why": "Back to square one = back at the start, all progress lost. On the same page means in agreement; in the same boat means in the same difficult situation; on the fence means undecided."
+      }
+    },
+    {
+      "word": "call it a day",
+      "ipa": "ˌkɔːl ɪt ə ˈdeɪ",
+      "pos": "idiom",
+      "def": "To stop working on something, for now or permanently.",
+      "simple": "To stop working for today, or to stop doing something.",
+      "hs": "לסיים להיום",
+      "easy": "It's late — let's [call it a day].",
+      "he": "לסיים להיום; לפרוש",
+      "family": [],
+      "ex": [
+        "After ten hours, the team [called it a day].",
+        "The band [called it a day] after thirty years.",
+        "I'm tired; I'm going to [call it a day]."
+      ],
+      "col": ["let's call it a day", "decide to call it a day", "call it a night"],
+      "reg": "informal",
+      "syn": ["stop", "finish", "pack it in", "wrap up"],
+      "nuance": "Call it a day can mean stop for today or stop for good (a career, a relationship). 'Call it a night' is used in the evening.",
+      "ety": "From the older 'call it half a day', meaning stop working early.",
+      "tier": 1,
+      "themes": ["work"],
+      "prec": {
+        "s": "We've been painting since eight this morning — let's ___ and finish tomorrow.",
+        "opts": ["cut corners", "go the extra mile", "bite the bullet"],
+        "why": "Call it a day = stop working for now. Cut corners means do a job badly to save time; go the extra mile means make extra effort; bite the bullet means do something unpleasant."
+      }
+    },
+    {
+      "word": "in hot water",
+      "ipa": "ɪn ˌhɑːt ˈwɔːtər",
+      "pos": "idiom",
+      "def": "In trouble, especially because of something you have done.",
+      "simple": "In trouble because of something you did.",
+      "hs": "בצרות",
+      "easy": "He's [in hot water] for missing work.",
+      "he": "בצרות, בבעיה",
+      "family": [],
+      "ex": [
+        "The company is [in hot water] over its data use.",
+        "I'll be [in hot water] if I'm late again.",
+        "The minister landed [in hot water] after his comments."
+      ],
+      "col": ["be in hot water", "land in hot water", "get into hot water"],
+      "reg": "informal",
+      "syn": ["in trouble", "in a fix", "in a jam"],
+      "nuance": "In hot water means in trouble with someone in authority because of your own actions.",
+      "ety": "Hot water as a picture of an uncomfortable, dangerous situation.",
+      "tier": 1,
+      "themes": ["conflict"],
+      "prec": {
+        "s": "The football club is ___ after fans damaged the visitors' stadium.",
+        "opts": ["on cloud nine", "in the same boat", "out of the woods"],
+        "why": "In hot water = in trouble for something done. On cloud nine means very happy; in the same boat means sharing a difficulty; out of the woods means out of danger."
+      }
+    },
+    {
+      "word": "the last straw",
+      "ipa": "ðə ˌlæst ˈstrɔː",
+      "pos": "idiom",
+      "def": "The last of a series of annoyances that finally makes a situation unbearable.",
+      "simple": "The last small problem that makes you finally get too angry to go on.",
+      "hs": "הקש האחרון",
+      "easy": "When he was late again, it was [the last straw].",
+      "he": "הקש ששבר את גב הגמל",
+      "family": [],
+      "ex": [
+        "The price rise was [the last straw] for many customers.",
+        "Losing the final was [the last straw] for the coach.",
+        "His rude email was [the last straw], so I quit."
+      ],
+      "col": ["the last straw", "the final straw", "be the last straw for someone"],
+      "reg": "informal",
+      "syn": ["the final straw", "the limit"],
+      "nuance": "The last straw is a small event that, after many others, finally breaks your patience. Hebrew has the same image: הקש ששבר את גב הגמל.",
+      "ety": "From the proverb 'the straw that broke the camel's back'.",
+      "tier": 1,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "My neighbour played loud music every night for a year; the drum solo at 3 a.m. was ___.",
+        "opts": ["the tip of the iceberg", "the lion's share", "a red herring"],
+        "why": "The last straw finally ends your patience after many problems. The tip of the iceberg is a small visible part of a big problem; the lion's share is the biggest part; a red herring is a distraction."
+      }
+    },
+    {
+      "word": "the ball is in your court",
+      "ipa": "ðə ˈbɔːl ɪz ɪn jər ˈkɔːrt",
+      "pos": "idiom",
+      "def": "It is your turn to take action or make a decision.",
+      "simple": "Now it's your turn to decide or act.",
+      "hs": "הכדור אצלך",
+      "easy": "I've made my offer — [the ball is in your court].",
+      "he": "הכדור אצלך, תורך להחליט",
+      "family": [],
+      "ex": [
+        "We've sent the contract, so [the ball is in their court].",
+        "I apologised; [the ball is in her court] now.",
+        "The union says [the ball is in the company's court]."
+      ],
+      "col": ["the ball is in your court", "put the ball in someone's court"],
+      "reg": "informal",
+      "syn": ["it's up to you", "your move", "your turn"],
+      "nuance": "Used when you've done your part and the next step belongs to the other person. The pronoun changes: in my / your / their court.",
+      "ety": "From tennis: the ball is on your side, so you must hit it.",
+      "tier": 1,
+      "themes": ["relationships", "work"],
+      "prec": {
+        "s": "I've told him I'm sorry and invited him for dinner. Now ___.",
+        "opts": ["it's a moot point", "it's touch and go", "it's par for the course"],
+        "ans": "the ball is in his court",
+        "why": "The ball is in his court = it's his turn to act. A moot point no longer matters; touch and go means very uncertain; par for the course means normal and expected."
+      }
+    },
+    {
+      "word": "on the same page",
+      "ipa": "ɑːn ðə ˌseɪm ˈpeɪdʒ",
+      "pos": "idiom",
+      "def": "In agreement; sharing the same understanding.",
+      "simple": "Agreeing and understanding things the same way.",
+      "hs": "באותו ראש",
+      "easy": "Before we start, let's make sure we're [on the same page].",
+      "he": "באותו ראש, מתואמים",
+      "family": [],
+      "ex": [
+        "The two managers aren't [on the same page] about the budget.",
+        "We talked for an hour until everyone was [on the same page].",
+        "Good couples stay [on the same page] about money."
+      ],
+      "col": ["be on the same page", "get everyone on the same page", "not on the same page"],
+      "reg": "informal",
+      "syn": ["in agreement", "aligned", "of one mind"],
+      "nuance": "On the same page is about shared understanding of a plan or goal. In the same boat is about sharing a difficult situation.",
+      "ety": "Like readers all looking at the same page of a book.",
+      "tier": 1,
+      "themes": ["relationships", "work"],
+      "prec": {
+        "s": "Before the client meeting, let's check that the whole team is ___ about the price.",
+        "opts": ["in the same boat", "on the fence", "in hot water"],
+        "why": "On the same page = in agreement and shared understanding. In the same boat means sharing a problem; on the fence means undecided; in hot water means in trouble."
+      }
+    }
+  ]
+}
