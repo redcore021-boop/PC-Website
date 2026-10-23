@@ -7,6 +7,9 @@
       "ipa": "ˌekwəˈnɪməti",
       "pos": "noun",
       "def": "Mental calmness and composure, especially in a difficult situation.",
+      "simple": "Staying calm, even in hard times.",
+      "hs": "שלוות נפש",
+      "easy": "She took the bad news with [equanimity].",
       "he": "שלוות נפש, קור רוח",
       "family": [],
       "ex": [
@@ -50,6 +53,9 @@
       "ipa": "ˈæpəθi",
       "pos": "noun",
       "def": "Lack of interest, enthusiasm or concern.",
+      "simple": "Not caring about something or not being interested in it.",
+      "hs": "אדישות",
+      "easy": "He showed [apathy] toward his studies.",
       "he": "אדישות, אפתיה",
       "family": [
         "apathetic (adj.)",
@@ -96,6 +102,9 @@
       "ipa": "æmˈbɪvələnt",
       "pos": "adjective",
       "def": "Having mixed or contradictory feelings about something or someone.",
+      "simple": "Having mixed feelings about something.",
+      "hs": "רגשות מעורבים",
+      "easy": "I'm [ambivalent] about moving.",
       "he": "אמביוולנטי, בעל רגשות מעורבים",
       "family": [
         "ambivalence (n.)",
@@ -141,6 +150,9 @@
       "ipa": "ˌdɪskənˈsɜːrtɪŋ",
       "pos": "adjective",
       "def": "Causing one to feel unsettled, uneasy or confused.",
+      "simple": "Making you feel strange and a bit worried.",
+      "hs": "מטריד",
+      "easy": "His long silence was [disconcerting].",
       "he": "מטריד, מבלבל, מערער",
       "family": [
         "disconcert (v.)",
@@ -185,6 +197,9 @@
       "ipa": "ˈpɔɪnjənt",
       "pos": "adjective",
       "def": "Evoking a keen sense of sadness or regret; deeply touching.",
+      "simple": "Making you feel sad in a touching way.",
+      "hs": "נוגע ללב",
+      "easy": "It was a [poignant] goodbye.",
       "he": "נוגע ללב, מכמיר לב",
       "family": [
         "poignancy (n.)",
@@ -229,6 +244,9 @@
       "ipa": "ˈwɪstfl",
       "pos": "adjective",
       "def": "Having a feeling of vague or regretful longing, especially for the past.",
+      "simple": "Sad and missing something from the past.",
+      "hs": "מתגעגע בעצב",
+      "easy": "She gave a [wistful] smile.",
       "he": "נוסטלגי, מתגעגע בעצב",
       "family": [
         "wistfully (adv.)",
@@ -273,6 +291,9 @@
       "ipa": "ˈmelənkɑːli",
       "pos": "noun / adjective",
       "def": "A deep, lasting, often thoughtful sadness.",
+      "simple": "A deep, quiet sadness.",
+      "hs": "עצבות",
+      "easy": "A feeling of [melancholy] came over him.",
       "he": "מלנכוליה, עצבות",
       "family": [
         "melancholic (adj.)"
@@ -316,6 +337,9 @@
       "ipa": "ʃəˈɡrɪn",
       "pos": "noun",
       "def": "Annoyance or embarrassment at having failed or been humiliated.",
+      "simple": "Feeling upset because you failed or looked silly.",
+      "hs": "מבוכה ותסכול",
+      "easy": "To my [chagrin], my little brother won.",
       "he": "מבוכה ותסכול, עוגמת נפש",
       "family": [
         "chagrined (adj.)"
@@ -357,6 +381,9 @@
       "ipa": "ˌtrepɪˈdeɪʃn",
       "pos": "noun",
       "def": "A feeling of fear or anxiety about something that may happen.",
+      "simple": "Fear about what might happen.",
+      "hs": "חשש",
+      "easy": "I opened the letter with [trepidation].",
       "he": "חרדה, חשש",
       "family": [],
       "ex": [
@@ -398,6 +425,9 @@
       "ipa": "ˌɪndɪɡˈneɪʃn",
       "pos": "noun",
       "def": "Anger caused by something that is perceived as unfair.",
+      "simple": "Anger about something unfair.",
+      "hs": "זעם על עוול",
+      "easy": "The new tax caused [indignation].",
       "he": "זעם (על עוול), התמרמרות",
       "family": [
         "indignant (adj.)",
@@ -443,6 +473,9 @@
       "ipa": "ˈræŋkər",
       "pos": "noun",
       "def": "Bitterness or resentment, especially when long-standing. (UK spelling: rancour)",
+      "simple": "Bitter anger that lasts a long time.",
+      "hs": "טינה",
+      "easy": "They split up without [rancor].",
       "he": "טינה, איבה",
       "family": [
         "rancorous (adj.)"
@@ -486,6 +519,9 @@
       "ipa": "ˌænɪˈmɑːsəti",
       "pos": "noun",
       "def": "Strong hostility or dislike.",
+      "simple": "Strong dislike between people.",
+      "hs": "עוינות",
+      "easy": "There's no [animosity] between us.",
       "he": "עוינות, איבה",
       "family": [],
       "ex": [
@@ -530,6 +566,9 @@
       "ipa": "ˈʃɑːdnfrɔɪdə",
       "pos": "noun",
       "def": "Pleasure derived from another person's misfortune.",
+      "simple": "Feeling happy when bad things happen to others.",
+      "hs": "שמחה לאיד",
+      "easy": "I felt a little [schadenfreude] when he lost.",
       "he": "שמחה לאיד",
       "family": [],
       "ex": [
@@ -568,6 +607,9 @@
       "ipa": "ɑːnˈwiː",
       "pos": "noun",
       "def": "A feeling of weariness and dissatisfaction from a lack of excitement or purpose.",
+      "simple": "A tired, bored feeling about life.",
+      "hs": "שעמום עמוק",
+      "easy": "The long winter filled him with [ennui].",
       "he": "שעמום קיומי, עייפות נפש",
       "family": [],
       "ex": [
@@ -608,6 +650,9 @@
       "ipa": "ɪɡˈzæspəreɪtɪd",
       "pos": "adjective",
       "def": "Intensely irritated and frustrated.",
+      "simple": "Very annoyed after a lot of trouble.",
+      "hs": "מתוסכל",
+      "easy": "\"Not again!\" said the [exasperated] teacher.",
       "he": "מתוסכל ועצבני, מוטרד עד קצה גבול",
       "family": [
         "exasperate (v.)",
@@ -653,6 +698,9 @@
       "ipa": "kənˈtraɪt",
       "pos": "adjective",
       "def": "Feeling or expressing sincere remorse for wrongdoing.",
+      "simple": "Truly sorry for what you did.",
+      "hs": "מתחרט",
+      "easy": "He looked [contrite] and said sorry.",
       "he": "מתחרט, מכה על חטא",
       "family": [
         "contrition (n.)",
@@ -697,6 +745,9 @@
       "ipa": "smʌɡ",
       "pos": "adjective",
       "def": "Having or showing excessive pride in oneself or one's achievements.",
+      "simple": "Too pleased with yourself.",
+      "hs": "מרוצה מעצמו",
+      "easy": "He had a [smug] smile after winning.",
       "he": "שבע רצון מעצמו, מתנשא",
       "family": [
         "smugly (adv.)",
@@ -742,6 +793,9 @@
       "ipa": "ˈvɪndɪkeɪt",
       "pos": "verb",
       "def": "To show or prove that someone is right, reasonable or not guilty.",
+      "simple": "To show that someone was right.",
+      "hs": "להוכיח צדקה",
+      "easy": "The results [vindicated] her choice.",
       "he": "להצדיק, לטהר משם רע",
       "family": [
         "vindication (n.)",
@@ -786,6 +840,9 @@
       "ipa": "fərˈlɔːrn",
       "pos": "adjective",
       "def": "Pitifully sad and lonely; (of a hope) unlikely to succeed.",
+      "simple": "Sad and alone.",
+      "hs": "עזוב ועצוב",
+      "easy": "A [forlorn] dog sat in the rain.",
       "he": "עזוב, מסכן ובודד; (תקווה) קלושה",
       "family": [
         "forlornly (adv.)"
@@ -829,6 +886,9 @@
       "ipa": "juːˈfɔːriə",
       "pos": "noun",
       "def": "A feeling of intense excitement and happiness.",
+      "simple": "A feeling of great happiness and excitement.",
+      "hs": "אופוריה",
+      "easy": "There was [euphoria] after the win.",
       "he": "אופוריה, התלהבות עזה",
       "family": [
         "euphoric (adj.)"
@@ -872,6 +932,9 @@
       "ipa": "kwɑːmz",
       "pos": "noun (usually plural)",
       "def": "Feelings of doubt or unease, especially about whether something is morally right.",
+      "simple": "Worries that something is wrong.",
+      "hs": "נקיפות מצפון",
+      "easy": "He had no [qualms] about lying.",
       "he": "נקיפות מצפון, היסוסים",
       "family": [],
       "ex": [
@@ -914,6 +977,9 @@
       "ipa": "mɪsˈɡɪvɪŋz",
       "pos": "noun (usually plural)",
       "def": "Feelings of doubt or apprehension about the outcome of something.",
+      "simple": "Worries about whether something is a good idea.",
+      "hs": "ספקות",
+      "easy": "I had [misgivings] about the plan.",
       "he": "ספקות, חששות",
       "family": [],
       "ex": [
@@ -956,6 +1022,9 @@
       "ipa": "ˌnɑːnʃəˈlɑːnt",
       "pos": "adjective",
       "def": "Appearing casually calm and relaxed; not displaying interest or anxiety.",
+      "simple": "Calm and acting like you don't care.",
+      "hs": "נינוח, אדיש",
+      "easy": "He tried to look [nonchalant].",
       "he": "אדיש, שלו (למראית עין), נינוח",
       "family": [
         "nonchalance (n.)",
@@ -1001,6 +1070,9 @@
       "ipa": "blɑːˈzeɪ",
       "pos": "adjective",
       "def": "Unimpressed or indifferent to something because one has experienced it too often.",
+      "simple": "Not excited because you've seen it many times.",
+      "hs": "אדיש, שבע",
+      "easy": "Locals are [blasé] about the view.",
       "he": "אדיש, שבע מראות",
       "family": [],
       "ex": [
@@ -1041,6 +1113,9 @@
       "ipa": "ˌdɪsɪˈluːʒnd",
       "pos": "adjective",
       "def": "Disappointed after discovering that something is not as good as one believed.",
+      "simple": "Disappointed because something is not as good as you thought.",
+      "hs": "מאוכזב",
+      "easy": "Many voters feel [disillusioned].",
       "he": "מאוכזב, מפוכח מאשליות",
       "family": [
         "disillusion (v./n.)",
@@ -1086,6 +1161,9 @@
       "ipa": "ræˈpɔːr",
       "pos": "noun",
       "def": "A close and harmonious relationship of mutual understanding.",
+      "simple": "A good, easy relationship.",
+      "hs": "קשר טוב",
+      "easy": "She has a great [rapport] with her students.",
       "he": "קשר טוב, הבנה הדדית",
       "family": [],
       "ex": [
@@ -1128,6 +1206,9 @@
       "ipa": "ˌkɑːməˈrɑːdəri",
       "pos": "noun",
       "def": "Mutual trust and friendship among people who spend time or work together.",
+      "simple": "A friendly feeling between people who spend time together.",
+      "hs": "רעות",
+      "easy": "I miss the [camaraderie] of my old team.",
       "he": "רעות, אחווה",
       "family": [
         "comrade (n., related)"
@@ -1170,6 +1251,9 @@
       "ipa": "ɪˈstreɪndʒd",
       "pos": "adjective",
       "def": "No longer close or in contact with someone, especially a family member.",
+      "simple": "No longer close to a family member.",
+      "hs": "מנוכר",
+      "easy": "He rarely sees his [estranged] brother.",
       "he": "מנוכר, שהקשר עמו נותק",
       "family": [
         "estrangement (n.)",
@@ -1214,6 +1298,9 @@
       "ipa": "ˌækrɪˈmoʊniəs",
       "pos": "adjective",
       "def": "(Of speech, a debate or a separation) angry and bitter.",
+      "simple": "Full of anger and bitter words.",
+      "hs": "מר, רווי טינה",
+      "easy": "They had an [acrimonious] divorce.",
       "he": "מר, חריף, רווי טינה",
       "family": [
         "acrimony (n.)",
@@ -1259,6 +1346,9 @@
       "ipa": "ˈæmɪkəbl",
       "pos": "adjective",
       "def": "(Of relations or an agreement) friendly and without serious disagreement.",
+      "simple": "Friendly, without fighting.",
+      "hs": "בהסכמה",
+      "easy": "Their divorce was [amicable].",
       "he": "ידידותי, בהסכמה",
       "family": [
         "amicably (adv.)"
@@ -1302,6 +1392,9 @@
       "ipa": "ˈrekənsaɪl",
       "pos": "verb",
       "def": "To restore friendly relations; to make two apparently conflicting things compatible; to accept something unpleasant.",
+      "simple": "To become friends again after a fight.",
+      "hs": "להשלים",
+      "easy": "The brothers finally [reconciled].",
       "he": "להשלים, ליישב, לפייס",
       "family": [
         "reconciliation (n.)",
@@ -1347,6 +1440,9 @@
       "ipa": "rɪˈproʊtʃ",
       "pos": "verb / noun",
       "def": "To express disapproval or disappointment to someone; (n.) such an expression.",
+      "simple": "To show someone you are disappointed in them.",
+      "hs": "לנזוף",
+      "easy": "Her mother [reproached] her for not calling.",
       "he": "לנזוף, להוכיח; נזיפה, תוכחה",
       "family": [
         "reproachful (adj.)",
@@ -1393,6 +1489,9 @@
       "ipa": "bɪˈɡrʌdʒ",
       "pos": "verb",
       "def": "To envy someone the possession or enjoyment of something; to give something reluctantly.",
+      "simple": "To feel upset that someone has something.",
+      "hs": "לא לפרגן",
+      "easy": "I don't [begrudge] her success.",
       "he": "לפרגן בקושי, לקנא ב־",
       "family": [
         "begrudgingly (adv.)"
@@ -1436,6 +1535,9 @@
       "ipa": "kəˈmɪzəreɪt",
       "pos": "verb",
       "def": "To express sympathy or pity; to share someone's disappointment.",
+      "simple": "To share someone's sadness or bad luck.",
+      "hs": "להשתתף בצער",
+      "easy": "We met to [commiserate] after the exam.",
       "he": "להשתתף בצער, לנחם",
       "family": [
         "commiseration (n.)",
@@ -1479,6 +1581,9 @@
       "ipa": "səˈlɪsɪtəs",
       "pos": "adjective",
       "def": "Showing interest or concern for someone's well-being, sometimes excessively.",
+      "simple": "Showing care for someone's comfort.",
+      "hs": "דואג",
+      "easy": "The nurse was kind and [solicitous].",
       "he": "מודאג, דואג, קשוב (לפעמים יתר על המידה)",
       "family": [
         "solicitude (n.)",
@@ -1523,6 +1628,9 @@
       "ipa": "ɪnˌfætʃuˈeɪʃn",
       "pos": "noun",
       "def": "An intense but short-lived passion or admiration for someone or something.",
+      "simple": "A strong but short love for someone.",
+      "hs": "התאהבות עזה",
+      "easy": "It was just a teenage [infatuation].",
       "he": "התאהבות עיוורת, שיגעון חולף",
       "family": [
         "infatuated (adj.)"
@@ -1566,6 +1674,9 @@
       "ipa": "ˌʌnrɪˈkwaɪtɪd",
       "pos": "adjective",
       "def": "(Of love) not returned or rewarded.",
+      "simple": "Of love: not felt back by the other person.",
+      "hs": "נכזב",
+      "easy": "It's a story of [unrequited] love.",
       "he": "(אהבה) נכזבת, חד־צדדית",
       "family": [
         "requite (v.)"
@@ -1608,6 +1719,9 @@
       "ipa": "bɪˈliːɡərd",
       "pos": "adjective",
       "def": "In a very difficult situation; under constant pressure or criticism.",
+      "simple": "Under a lot of pressure or attack.",
+      "hs": "נתון ללחץ",
+      "easy": "The [beleaguered] minister faced more questions.",
       "he": "נצור, נתון ללחץ קשה",
       "family": [
         "beleaguer (v.)"
@@ -1651,6 +1765,9 @@
       "ipa": "ˈhæroʊɪŋ",
       "pos": "adjective",
       "def": "Acutely distressing.",
+      "simple": "Very upsetting and frightening.",
+      "hs": "מזעזע",
+      "easy": "Survivors told [harrowing] stories.",
       "he": "מזעזע, קורע לב",
       "family": [
         "harrow (v.)",
@@ -1695,6 +1812,9 @@
       "ipa": "kəˈθɑːrtɪk",
       "pos": "adjective",
       "def": "Providing psychological relief through the open expression of strong emotions.",
+      "simple": "Making you feel better by letting strong feelings out.",
+      "hs": "משחרר רגשית",
+      "easy": "Crying can be [cathartic].",
       "he": "מטהר, משחרר רגשית, קתרטי",
       "family": [
         "catharsis (n.)"

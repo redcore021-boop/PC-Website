@@ -93,13 +93,6 @@ export function SettingsPage() {
       <h3 className="section-title">תצוגה</h3>
       <section className="card" style={{ paddingTop: 6, paddingBottom: 6 }}>
         <div className="setting">
-          <div className="label">
-            להציג תרגום לעברית תמיד
-            <small>כשכבוי — מקישים על „הצגת תרגום” כשצריך</small>
-          </div>
-          <Switch label="להציג תרגום לעברית תמיד" checked={settings.showHebrew} onChange={(v) => set({ showHebrew: v })} />
-        </div>
-        <div className="setting">
           <div className="label">ערכת צבעים</div>
           <div className="segmented">
             {(

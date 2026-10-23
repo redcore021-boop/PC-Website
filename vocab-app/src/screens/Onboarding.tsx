@@ -15,10 +15,9 @@ export function Onboarding({ onDone }: { onDone: () => void }) {
   const { settings, updateSettings } = useApp();
   const [step, setStep] = useState(0);
   const [pace, setPace] = useState(settings.newPerDay);
-  const [hebrew, setHebrew] = useState(settings.showHebrew);
 
   const finish = async () => {
-    await updateSettings({ newPerDay: pace, showHebrew: hebrew });
+    await updateSettings({ newPerDay: pace });
     await db.kv.put({ key: 'onboarded', value: Date.now() });
     onDone();
   };
@@ -43,7 +42,7 @@ export function Onboarding({ onDone }: { onDone: () => void }) {
           <ul className="ob-list">
             <li>כמה דקות ביום, בתזמון שמבוסס על חקר הזיכרון (FSRS)</li>
             <li>משפטים אמיתיים, צירופים נפוצים והבדלי משמעות דקים</li>
-            <li>תרגום לעברית בכל פעם שצריך</li>
+            <li>כל מילה עם תרגום לעברית והסבר באנגלית פשוטה</li>
             <li>חינם, עובד בלי אינטרנט, והכול נשאר בטלפון שלכם</li>
           </ul>
         </section>
@@ -79,16 +78,6 @@ export function Onboarding({ onDone }: { onDone: () => void }) {
               </button>
             ))}
           </div>
-          <label className="pace" style={{ marginTop: 16, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
-            <span style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
-              <strong style={{ color: 'var(--ink)', fontSize: 16 }}>להציג תרגום לעברית תמיד</strong>
-              <span>כשכבוי — מקישים על „הצגת תרגום” כשצריך</span>
-            </span>
-            <span className="switch">
-              <input type="checkbox" role="switch" checked={hebrew} onChange={(e) => setHebrew(e.target.checked)} aria-label="להציג תרגום לעברית תמיד" />
-              <span />
-            </span>
-          </label>
         </section>
       )}
 

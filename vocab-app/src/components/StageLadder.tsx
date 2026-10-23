@@ -1,7 +1,7 @@
 /** The easy-to-hard path every word follows. With `counts`, shows how many of your words are at each step. */
 export function StageLadder({ counts }: { counts?: { recognise: number; recall: number; use: number; mastered: number } }) {
   const steps = [
-    { key: 'recognise', title: 'מזהים', sub: 'בוחרים את המילה לפי ההגדרה שלה' },
+    { key: 'recognise', title: 'מזהים', sub: 'בוחרים את המילה לפי הסבר פשוט' },
     { key: 'recall', title: 'נזכרים', sub: 'משלימים אותה במשפט אמיתי' },
     { key: 'use', title: 'משתמשים', sub: 'מקלידים אותה · בוחרים את המילה המדויקת · כותבים משפט משלכם' },
     { key: 'mastered', title: 'שולטים', sub: 'משתמשים בה נכון וזוכרים אותה לאורך שבועות' },

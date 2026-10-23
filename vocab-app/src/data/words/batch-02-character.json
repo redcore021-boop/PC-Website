@@ -7,6 +7,9 @@
       "ipa": "ˈfruːɡl",
       "pos": "adjective",
       "def": "Careful to spend little money and avoid waste; (of a meal) simple and cheap.",
+      "simple": "Careful not to waste money.",
+      "hs": "חסכן",
+      "easy": "My grandma was [frugal] and never wasted food.",
       "he": "חסכן, צנוע",
       "family": [
         "frugality (n.)",
@@ -53,6 +56,9 @@
       "ipa": "ˌpɑːrsɪˈmoʊniəs",
       "pos": "adjective",
       "def": "Extremely unwilling to spend money or use resources; (in science) using as few assumptions as possible.",
+      "simple": "Not wanting to spend money at all.",
+      "hs": "קמצן",
+      "easy": "Our [parsimonious] boss won't buy new chairs.",
       "he": "קמצן, חסכני עד קיצוניות",
       "family": [
         "parsimony (n.)",
@@ -99,6 +105,9 @@
       "ipa": "mæɡˈnænɪməs",
       "pos": "adjective",
       "def": "Generous and forgiving, especially towards a rival or someone less powerful.",
+      "simple": "Kind and forgiving, even to someone who lost or hurt you.",
+      "hs": "רחב לב",
+      "easy": "She was [magnanimous] after she won.",
       "he": "רחב לב, נדיב",
       "family": [
         "magnanimity (n.)",
@@ -144,6 +153,9 @@
       "ipa": "bəˈnevələnt",
       "pos": "adjective",
       "def": "Kind and well-meaning; wanting to help others.",
+      "simple": "Kind and wanting to help others.",
+      "hs": "מיטיב",
+      "easy": "He gave us a [benevolent] smile.",
       "he": "נדיב, מיטיב, רב חסד",
       "family": [
         "benevolence (n.)",
@@ -190,6 +202,9 @@
       "ipa": "məˈlevələnt",
       "pos": "adjective",
       "def": "Having or showing a wish to do evil or harm to others.",
+      "simple": "Wanting to hurt others.",
+      "hs": "זדוני",
+      "easy": "The bad guy had a [malevolent] look.",
       "he": "זדוני, רוצה ברע",
       "family": [
         "malevolence (n.)",
@@ -235,6 +250,9 @@
       "ipa": "ɡrɪˈɡeriəs",
       "pos": "adjective",
       "def": "Fond of company; sociable. (Of animals) living in groups.",
+      "simple": "Liking to be with other people.",
+      "hs": "חברותי",
+      "easy": "He's [gregarious] and loves big parties.",
       "he": "חברותי",
       "family": [
         "gregariousness (n.)",
@@ -280,6 +298,9 @@
       "ipa": "ˈretɪsnt",
       "pos": "adjective",
       "def": "Not revealing one's thoughts or feelings readily; reluctant to speak.",
+      "simple": "Not wanting to talk about your feelings or private life.",
+      "hs": "מאופק",
+      "easy": "She's [reticent] about her past.",
       "he": "מאופק, שתקן, נמנע מלשתף",
       "family": [
         "reticence (n.)"
@@ -325,6 +346,9 @@
       "ipa": "ˈtæsɪtɜːrn",
       "pos": "adjective",
       "def": "Habitually saying very little; uncommunicative.",
+      "simple": "Someone who usually says very little.",
+      "hs": "שתקן",
+      "easy": "Her [taciturn] dad rarely spoke at dinner.",
       "he": "שתקן, ממעט בדיבור",
       "family": [
         "taciturnity (n.)"
@@ -369,6 +393,9 @@
       "ipa": "ˈdɪfɪdənt",
       "pos": "adjective",
       "def": "Shy and lacking confidence in oneself.",
+      "simple": "Shy and not sure of yourself.",
+      "hs": "חסר ביטחון",
+      "easy": "He was too [diffident] to ask for more money.",
       "he": "ביישן, חסר ביטחון",
       "family": [
         "diffidence (n.)",
@@ -414,6 +441,9 @@
       "ipa": "əbˈsiːkwiəs",
       "pos": "adjective",
       "def": "Too eager to please or obey people in authority.",
+      "simple": "Too eager to please important people.",
+      "hs": "מתרפס",
+      "easy": "The [obsequious] waiter kept bowing.",
       "he": "מתרפס, חנפן",
       "family": [
         "obsequiousness (n.)",
@@ -460,6 +490,9 @@
       "ipa": "ˈsɪkəfænt",
       "pos": "noun",
       "def": "A person who flatters powerful people to gain advantage.",
+      "simple": "A person who praises powerful people to get something.",
+      "hs": "חנפן",
+      "easy": "The boss was surrounded by [sycophants].",
       "he": "חנפן, מתחנף",
       "family": [
         "sycophantic (adj.)",
@@ -505,6 +538,9 @@
       "ipa": "ˌsuːpərˈsɪliəs",
       "pos": "adjective",
       "def": "Behaving as if one is superior to others; scornfully arrogant.",
+      "simple": "Acting like you are better than others.",
+      "hs": "מתנשא",
+      "easy": "She gave me a [supercilious] look.",
       "he": "מתנשא, יהיר",
       "family": [
         "superciliously (adv.)",
@@ -548,6 +584,9 @@
       "ipa": "fæˈstɪdiəs",
       "pos": "adjective",
       "def": "Very attentive to detail and accuracy; very concerned about cleanliness, sometimes excessively.",
+      "simple": "Very careful about small details and being clean.",
+      "hs": "איסטניס",
+      "easy": "He's [fastidious] about his clothes.",
       "he": "קפדן, איסטניס",
       "family": [
         "fastidiously (adv.)",
@@ -591,6 +630,9 @@
       "ipa": "məˈtɪkjələs",
       "pos": "adjective",
       "def": "Showing great attention to detail; very careful and precise.",
+      "simple": "Very careful about every detail.",
+      "hs": "קפדני",
+      "easy": "She keeps [meticulous] notes.",
       "he": "קפדני, מדוקדק",
       "family": [
         "meticulously (adv.)",
@@ -636,6 +678,9 @@
       "ipa": "pʌŋkˈtɪliəs",
       "pos": "adjective",
       "def": "Showing great attention to details of correct behaviour, etiquette or procedure.",
+      "simple": "Careful to follow rules and good manners exactly.",
+      "hs": "מקפיד על כללים",
+      "easy": "He's [punctilious] about saying thank you.",
       "he": "מקפיד על כללים ונימוסים",
       "family": [
         "punctiliously (adv.)",
@@ -679,6 +724,9 @@
       "ipa": "kəˈprɪʃəs",
       "pos": "adjective",
       "def": "Changing mood or behaviour suddenly and without reason; unpredictable.",
+      "simple": "Changing your mind suddenly, for no reason.",
+      "hs": "גחמני",
+      "easy": "Our [capricious] boss changes plans every day.",
       "he": "הפכפך, גחמני",
       "family": [
         "caprice (n.)",
@@ -726,6 +774,9 @@
       "ipa": "mɜːrˈkjʊriəl",
       "pos": "adjective",
       "def": "Subject to sudden, unpredictable changes of mood; lively and quick.",
+      "simple": "Changing moods quickly.",
+      "hs": "הפכפך",
+      "easy": "The singer has a [mercurial] temper.",
       "he": "הפכפך במצב רוחו, תזזיתי",
       "family": [
         "mercurially (adv.)"
@@ -769,6 +820,9 @@
       "ipa": "ˈɑːbstɪnət",
       "pos": "adjective",
       "def": "Stubbornly refusing to change one's opinion or behaviour; (of a problem) hard to deal with.",
+      "simple": "Not willing to change your mind.",
+      "hs": "עקשן",
+      "easy": "He's too [obstinate] to say sorry.",
       "he": "עקשן",
       "family": [
         "obstinacy (n.)",
@@ -813,6 +867,9 @@
       "ipa": "ɪnˈtrænzɪdʒənt",
       "pos": "adjective",
       "def": "Refusing to change one's views or to agree or compromise.",
+      "simple": "Refusing to agree or give in at all.",
+      "hs": "בלתי מתפשר",
+      "easy": "Both sides stayed [intransigent], so the talks failed.",
       "he": "בלתי מתפשר, נוקשה",
       "family": [
         "intransigence (n.)"
@@ -857,6 +914,9 @@
       "ipa": "əˈmiːnəbl",
       "pos": "adjective",
       "def": "Willing to accept or be influenced by a suggestion; (of a thing) able to be treated in a particular way.",
+      "simple": "Willing to agree or listen.",
+      "hs": "פתוח, מוכן",
+      "easy": "She was [amenable] to my idea.",
       "he": "פתוח, נענה, ניתן ל־",
       "family": [
         "amenability (n.)"
@@ -901,6 +961,9 @@
       "ipa": "ˈæfəbl",
       "pos": "adjective",
       "def": "Friendly, good-natured and easy to talk to.",
+      "simple": "Friendly and easy to talk to.",
+      "hs": "חביב",
+      "easy": "Our new neighbour is very [affable].",
       "he": "נעים הליכות, חביב",
       "family": [
         "affability (n.)",
@@ -946,6 +1009,9 @@
       "ipa": "ˈkændɪd",
       "pos": "adjective",
       "def": "Truthful and straightforward, even when the truth is uncomfortable; (of photos) unposed.",
+      "simple": "Honest and open.",
+      "hs": "גלוי לב",
+      "easy": "To be [candid], I didn't like the film.",
       "he": "כן, גלוי לב",
       "family": [
         "candour (n.)",
@@ -992,6 +1058,9 @@
       "ipa": "ˌdɪsɪnˈdʒenjuəs",
       "pos": "adjective",
       "def": "Not sincere; pretending to know less or be more innocent than one really is.",
+      "simple": "Pretending to know less or to be more honest than you are.",
+      "hs": "לא כן",
+      "easy": "It's [disingenuous] to say you didn't know.",
       "he": "לא כן, מעמיד פני תמים",
       "family": [
         "disingenuously (adv.)",
@@ -1037,6 +1106,9 @@
       "ipa": "duːˈplɪsɪtəs",
       "pos": "adjective",
       "def": "Deliberately deceitful; saying one thing and doing another.",
+      "simple": "Saying one thing and doing another; lying.",
+      "hs": "דו־פרצופי",
+      "easy": "The [duplicitous] spy worked for both sides.",
       "he": "דו־פרצופי, רמאי",
       "family": [
         "duplicity (n.)"
@@ -1081,6 +1153,9 @@
       "ipa": "ˌsæŋktɪˈmoʊniəs",
       "pos": "adjective",
       "def": "Behaving as if one is morally superior to others.",
+      "simple": "Acting as if you are a better person than others.",
+      "hs": "צדקני",
+      "easy": "I'm tired of his [sanctimonious] speeches.",
       "he": "צדקני, מתחסד",
       "family": [
         "sanctimony (n.)",
@@ -1126,6 +1201,9 @@
       "ipa": "ˌself ɪˈfeɪsɪŋ",
       "pos": "adjective",
       "def": "Not wanting to draw attention to oneself or one's achievements; modest.",
+      "simple": "Not wanting attention for yourself.",
+      "hs": "צנוע",
+      "easy": "She's [self-effacing] and gives her team the credit.",
       "he": "צנוע, מצניע את עצמו",
       "family": [
         "self-effacement (n.)"
@@ -1168,6 +1246,9 @@
       "ipa": "kəmˈpleɪsnt",
       "pos": "adjective",
       "def": "Too satisfied with oneself or a situation, and therefore not careful enough about possible dangers.",
+      "simple": "Too happy with how things are, so you stop trying.",
+      "hs": "שאנן",
+      "easy": "The team got [complacent] and lost.",
       "he": "שאנן, שבע רצון מעצמו",
       "family": [
         "complacency (n.)",
@@ -1214,6 +1295,9 @@
       "ipa": "ˈɪndələnt",
       "pos": "adjective",
       "def": "Wanting to avoid activity or effort; lazy.",
+      "simple": "Lazy.",
+      "hs": "עצלן",
+      "easy": "We spent an [indolent] summer by the pool.",
       "he": "עצלן",
       "family": [
         "indolence (n.)",
@@ -1257,6 +1341,9 @@
       "ipa": "əˈsɪdʒuəs",
       "pos": "adjective",
       "def": "Showing great care, attention and persistent effort.",
+      "simple": "Working hard and carefully all the time.",
+      "hs": "שקדן",
+      "easy": "She's an [assiduous] student.",
       "he": "שקדן, חרוץ",
       "family": [
         "assiduously (adv.)",
@@ -1303,6 +1390,9 @@
       "ipa": "təˈneɪʃəs",
       "pos": "adjective",
       "def": "Holding firmly to something; very determined and persistent.",
+      "simple": "Not giving up.",
+      "hs": "עיקש",
+      "easy": "A [tenacious] reporter found the truth.",
       "he": "עיקש, נחוש",
       "family": [
         "tenacity (n.)",
@@ -1348,6 +1438,9 @@
       "ipa": "ɔːˈdeɪʃəs",
       "pos": "adjective",
       "def": "Showing a willingness to take surprisingly bold risks; (negatively) shamelessly bold.",
+      "simple": "Very brave and taking big risks.",
+      "hs": "נועז",
+      "easy": "That's an [audacious] plan.",
       "he": "נועז, חצוף",
       "family": [
         "audacity (n.)",
@@ -1392,6 +1485,9 @@
       "ipa": "ˈbreɪzn",
       "pos": "adjective / verb",
       "def": "Bold and without shame; (v. brazen it out) to face trouble shamelessly.",
+      "simple": "Doing something bad without feeling ashamed.",
+      "hs": "חסר בושה",
+      "easy": "It was a [brazen] lie.",
       "he": "חצוף, חסר בושה",
       "family": [
         "brazenly (adv.)",
@@ -1436,6 +1532,9 @@
       "ipa": "ɪmˈpetʃuəs",
       "pos": "adjective",
       "def": "Acting quickly and without thinking about the consequences.",
+      "simple": "Acting fast without thinking.",
+      "hs": "פזיז",
+      "easy": "In an [impetuous] moment, he quit his job.",
       "he": "פזיז, נמהר",
       "family": [
         "impetuously (adv.)",
@@ -1480,6 +1579,9 @@
       "ipa": "ˈpruːdnt",
       "pos": "adjective",
       "def": "Acting with care and thought for the future.",
+      "simple": "Careful and thinking about the future.",
+      "hs": "נבון, זהיר",
+      "easy": "It's [prudent] to save some money.",
       "he": "נבון, זהיר",
       "family": [
         "prudence (n.)",
@@ -1527,6 +1629,9 @@
       "ipa": "dʒuˈdɪʃəs",
       "pos": "adjective",
       "def": "Having or showing good judgement, especially in choosing or using something.",
+      "simple": "Wise and careful in choosing what to do.",
+      "hs": "שקול",
+      "easy": "A [judicious] use of colour can change a room.",
       "he": "שקול, נבון",
       "family": [
         "judiciously (adv.)",
@@ -1573,6 +1678,9 @@
       "ipa": "ʃruːd",
       "pos": "adjective",
       "def": "Having or showing sharp practical judgement, especially to gain an advantage.",
+      "simple": "Smart in a practical way; good at getting what you want.",
+      "hs": "ממולח",
+      "easy": "She's a [shrewd] businesswoman.",
       "he": "ממולח, פיקח",
       "family": [
         "shrewdly (adv.)",
@@ -1619,6 +1727,9 @@
       "ipa": "əˈstuːt",
       "pos": "adjective",
       "def": "Able to assess situations or people accurately and turn this to one's advantage.",
+      "simple": "Quick to understand people and situations.",
+      "hs": "חריף",
+      "easy": "That's an [astute] question.",
       "he": "חריף, נבון",
       "family": [
         "astutely (adv.)",
@@ -1664,6 +1775,9 @@
       "ipa": "ˈkredʒələs",
       "pos": "adjective",
       "def": "Too ready to believe things; easily deceived.",
+      "simple": "Too quick to believe things.",
+      "hs": "פתי",
+      "easy": "Scammers look for [credulous] people.",
       "he": "פתי, מאמין לכל דבר",
       "family": [
         "credulity (n.)",
@@ -1709,6 +1823,9 @@
       "ipa": "ˈdʒeɪdɪd",
       "pos": "adjective",
       "def": "Bored, tired or cynical after having too much of something.",
+      "simple": "Bored and tired of something after too much of it.",
+      "hs": "שבע, מיצה",
+      "easy": "After years in the job, he felt [jaded].",
       "he": "מיצה, משועמם, מפוכח־ציני",
       "family": [],
       "ex": [
@@ -1751,6 +1868,9 @@
       "ipa": "ˈpetʃələnt",
       "pos": "adjective",
       "def": "Childishly sulky or bad-tempered.",
+      "simple": "Angry in a childish way when you don't get what you want.",
+      "hs": "מתבכיין",
+      "easy": "Stop being so [petulant]!",
       "he": "נרגן, מתנהג כילד מפונק",
       "family": [
         "petulance (n.)",
@@ -1795,6 +1915,9 @@
       "ipa": "ɪˈræsəbl",
       "pos": "adjective",
       "def": "Having a tendency to be easily angered.",
+      "simple": "Getting angry very easily.",
+      "hs": "רגזן",
+      "easy": "My [irascible] uncle shouts at everyone.",
       "he": "רגזן, חם מזג",
       "family": [
         "irascibility (n.)"
@@ -1838,6 +1961,9 @@
       "ipa": "ˈstoʊɪk",
       "pos": "adjective / noun",
       "def": "Enduring pain or hardship calmly, without showing feelings or complaining.",
+      "simple": "Calm in pain or trouble, without complaining.",
+      "hs": "סטואי",
+      "easy": "She stayed [stoic] during her illness.",
       "he": "סטואי, מאופק בסבל",
       "family": [
         "stoical (adj.)",
@@ -1884,6 +2010,9 @@
       "ipa": "ˌæltruˈɪstɪk",
       "pos": "adjective",
       "def": "Showing selfless concern for the well-being of others.",
+      "simple": "Helping others without wanting anything back.",
+      "hs": "לא אנוכי",
+      "easy": "Her reasons were purely [altruistic].",
       "he": "אלטרואיסטי, לא אנוכי",
       "family": [
         "altruism (n.)",
@@ -1930,6 +2059,9 @@
       "ipa": "ˈviːnl",
       "pos": "adjective",
       "def": "Willing to act dishonestly in return for money; corrupt.",
+      "simple": "Willing to do wrong things for money.",
+      "hs": "מושחת",
+      "easy": "The [venal] judge took money to free the thief.",
       "he": "מושחת, מקבל שוחד",
       "family": [
         "venality (n.)"
@@ -1974,6 +2106,9 @@
       "ipa": "ˈpɑːmpəs",
       "pos": "adjective",
       "def": "Self-important and solemn; trying to seem grand.",
+      "simple": "Acting very important and serious.",
+      "hs": "מתנפח",
+      "easy": "The [pompous] speaker talked only about himself.",
       "he": "מתנפח, יומרני",
       "family": [
         "pomposity (n.)",
@@ -2019,6 +2154,9 @@
       "ipa": "ˈerədaɪt",
       "pos": "adjective",
       "def": "Having or showing great knowledge gained from study.",
+      "simple": "Knowing a lot from reading and study.",
+      "hs": "למדן",
+      "easy": "She's an [erudite] teacher who has read everything.",
       "he": "למדן, בעל השכלה רחבה",
       "family": [
         "erudition (n.)",
@@ -2063,6 +2201,9 @@
       "ipa": "pɪˈdæntɪk",
       "pos": "adjective",
       "def": "Too concerned with minor details or rules, especially in showing off knowledge.",
+      "simple": "Too worried about small rules and details.",
+      "hs": "נוקדן",
+      "easy": "Don't be [pedantic] about my spelling.",
       "he": "קטנוני, נוקדן",
       "family": [
         "pedant (n.)",
@@ -2108,6 +2249,9 @@
       "ipa": "ˌɪdiəsɪŋˈkrætɪk",
       "pos": "adjective",
       "def": "Peculiar to an individual; distinctive and unusual.",
+      "simple": "Unusual and special to one person.",
+      "hs": "ייחודי",
+      "easy": "He has an [idiosyncratic] way of dressing.",
       "he": "ייחודי, אופייני לאדם מסוים",
       "family": [
         "idiosyncrasy (n.)",
@@ -2152,6 +2296,9 @@
       "ipa": "əˈluːf",
       "pos": "adjective",
       "def": "Not friendly or forthcoming; cool and distant.",
+      "simple": "Not friendly; keeping away from others.",
+      "hs": "מרוחק",
+      "easy": "The new boss seems [aloof].",
       "he": "מרוחק, מסתגר",
       "family": [
         "aloofness (n.)"
@@ -2196,6 +2343,9 @@
       "ipa": "ɪnˈɡreɪʃieɪtɪŋ",
       "pos": "adjective",
       "def": "Trying too hard to make people like you, especially by flattery.",
+      "simple": "Trying too hard to make people like you.",
+      "hs": "מתחנף",
+      "easy": "He gave her an [ingratiating] smile.",
       "he": "מתחנף, מחניף",
       "family": [
         "ingratiate oneself (v.)",

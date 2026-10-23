@@ -3,7 +3,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useApp } from '../state';
 import { db } from '../lib/db';
 import { statusOf, STATUS_LABEL, type WordStatus } from '../lib/status';
-import { rootByKey, roots, themeByKey, themes } from '../lib/words';
+import { rootByKey, roots, shortHe, simpleDef, themeByKey, themes } from '../lib/words';
 import { go } from '../lib/router';
 import { ENABLED_FEATURES } from '../features';
 import type { WordEntry } from '../types';
@@ -31,6 +31,7 @@ export function Browse({ tab }: { tab?: string }) {
         (w) =>
           !needle ||
           w.word.toLowerCase().includes(needle) ||
+          simpleDef(w).toLowerCase().includes(needle) ||
           w.def.toLowerCase().includes(needle) ||
           w.he.includes(needle),
       )
@@ -124,9 +125,14 @@ export function WordList({ words, statusFor }: { words: WordEntry[]; statusFor: 
           <button key={w.id} className="list-item" dir="ltr" onClick={() => go('word', w.id)}>
             <span className={'dot ' + s} title={STATUS_LABEL[s]} />
             <span className="main" lang="en" style={{ textAlign: 'left' }}>
-              <span className="w">{w.word}</span>
+              <span className="w-row">
+                <span className="w">{w.word}</span>
+                <span className="w-he" dir="rtl" lang="he">
+                  {shortHe(w)}
+                </span>
+              </span>
               <span className="d" style={{ display: 'block' }}>
-                {w.def}
+                {simpleDef(w)}
               </span>
             </span>
             <span className="chev">›</span>

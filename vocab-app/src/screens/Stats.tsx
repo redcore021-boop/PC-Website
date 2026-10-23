@@ -6,6 +6,7 @@ import { endOfStudyDay } from '../lib/dates';
 import { statusOf } from '../lib/status';
 import { retrievability } from '../lib/srs';
 import { weakestProgress } from '../lib/session';
+import { shortHe } from '../lib/words';
 import { CARD_TYPE_LABEL, formatDate } from '../strings';
 import { go } from '../lib/router';
 import type { CardType } from '../types';
@@ -125,6 +126,7 @@ export function Stats() {
                   <span className="main">
                     <span className="w">
                       <bdi lang="en">{w.word}</bdi>
+                      <span className="w-he"> · {shortHe(w)}</span>
                     </span>
                     <span className="d" style={{ display: 'block' }}>
                       {p.mistakes === 1 ? 'טעות אחת' : `${p.mistakes} טעויות`} · סיכוי לזכור כרגע {Math.round(retrievability(p.card) * 100)}%

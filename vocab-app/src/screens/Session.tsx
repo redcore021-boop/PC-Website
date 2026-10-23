@@ -14,6 +14,7 @@ import { go } from '../lib/router';
 import { ENABLED_CARD_TYPES, ENABLED_FEATURES } from '../features';
 import { CloseIcon } from '../components/Icons';
 import { WordEntryView } from '../components/WordBits';
+import { shortHe, simpleDef } from '../lib/words';
 import { WriteSentence } from '../components/WriteSentence';
 
 export type Mode = SessionMode | 'extra' | 'weak';
@@ -28,16 +29,16 @@ interface Result {
 
 /** Shown the first time each card type appears, so every new step is explained. */
 const CARD_TYPE_HELP: Record<CardType, string> = {
-  1: 'קראו את ההגדרה באנגלית ובחרו את המילה שהיא מתארת.',
+  1: 'קראו את ההסבר באנגלית פשוטה ובחרו את המילה שהוא מתאר.',
   2: 'בחרו את המילה שמשלימה את המשפט האמיתי.',
-  3: 'עכשיו מפיקים לבד: הקלידו את המילה לפי ההגדרה. שגיאת כתיב קטנה זה בסדר, ו„רמז” חושף אות.',
+  3: 'עכשיו מפיקים לבד: הקלידו את המילה לפי ההסבר. שגיאת כתיב קטנה זה בסדר, ו„רמז” חושף אות.',
   4: 'בחרו את המילה המדויקת ביותר מבין מילים קרובות — ואז קראו למה. שם מסתתר הניואנס.',
   5: 'כתבו משפט משלכם, השוו לדוגמאות של דוברי אנגלית ודרגו את עצמכם בכנות.',
 };
 
 /** The question each card asks, shown in Hebrew above the English card. */
 const CARD_QUESTION: Record<CardType, string> = {
-  1: 'איזו מילה מתאימה להגדרה?',
+  1: 'איזו מילה מתאימה להסבר?',
   2: 'איזו מילה משלימה את המשפט?',
   3: 'הקלידו את המילה',
   4: 'איזו מילה מדויקת יותר כאן?',
@@ -296,7 +297,7 @@ function QuestionView({
         <div>
           {kind}
           <section className="card prompt-card" dir="ltr" lang="en">
-            <p className="prompt-text">{q.word.def}</p>
+            <p className="prompt-text">{simpleDef(q.word)}</p>
             <p className="pos" style={{ margin: '8px 0 0' }}>
               {q.word.pos}
             </p>
@@ -402,7 +403,7 @@ function TypeAnswer({
     <form onSubmit={submit}>
       {kind}
       <section className="card prompt-card" dir="ltr" lang="en">
-        <p className="prompt-text">{q.word.def}</p>
+        <p className="prompt-text">{simpleDef(q.word)}</p>
         <p className="pos" style={{ margin: '8px 0 0' }}>
           {q.word.pos}
         </p>
@@ -482,7 +483,10 @@ function Feedback({ q, word, result }: { q: Question; word: WordEntry; result: R
       )}
       {chosen && chosen.id !== word.id && (
         <p className="note small" style={{ marginTop: 8 }}>
-          המילה שבחרת, <En>{chosen.word}</En>, פירושה: <span dir="ltr" lang="en" style={{ display: 'block' }}>{chosen.def}</span>
+          המילה שבחרת, <En>{chosen.word}</En>, פירושה {shortHe(chosen)}:{' '}
+          <span dir="ltr" lang="en" style={{ display: 'block' }}>
+            {simpleDef(chosen)}
+          </span>
         </p>
       )}
       {q.type !== 5 && (

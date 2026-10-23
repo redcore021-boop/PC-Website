@@ -7,6 +7,9 @@
       "ipa": "ˈmɪtɪɡeɪt",
       "pos": "verb",
       "def": "To make something bad less severe, serious or painful.",
+      "simple": "To make something bad less bad.",
+      "hs": "למתן",
+      "easy": "Good planning can [mitigate] the risk.",
       "he": "למתן, להקל",
       "family": [
         "mitigation (n.)",
@@ -53,6 +56,9 @@
       "ipa": "juːˈbɪkwɪtəs",
       "pos": "adjective",
       "def": "Seeming to be everywhere at the same time; very common.",
+      "simple": "Found everywhere.",
+      "hs": "נמצא בכל מקום",
+      "easy": "Phones are [ubiquitous] these days.",
       "he": "נמצא בכל מקום",
       "family": [
         "ubiquity (n.)",
@@ -98,6 +104,9 @@
       "ipa": "ˈkɜːrsəri",
       "pos": "adjective",
       "def": "Done quickly and without attention to detail.",
+      "simple": "Quick and not careful.",
+      "hs": "חטוף, שטחי",
+      "easy": "I only gave the report a [cursory] look.",
       "he": "שטחי, חטוף",
       "family": [
         "cursorily (adv.)"
@@ -142,6 +151,9 @@
       "ipa": "ˈseɪliənt",
       "pos": "adjective",
       "def": "Most noticeable or important.",
+      "simple": "Most important or easy to notice.",
+      "hs": "בולט, עיקרי",
+      "easy": "Here are the [salient] points of the plan.",
       "he": "בולט, עיקרי",
       "family": [
         "salience (n.)"
@@ -186,6 +198,9 @@
       "ipa": "ˈtenjuəs",
       "pos": "adjective",
       "def": "Very weak, slight or uncertain (of a connection, argument or position).",
+      "simple": "Very weak; not strong or sure.",
+      "hs": "קלוש",
+      "easy": "The link between the two events is [tenuous].",
       "he": "קלוש, רופף",
       "family": [
         "tenuously (adv.)",
@@ -231,6 +246,9 @@
       "ipa": "kəˈrɑːbəreɪt",
       "pos": "verb",
       "def": "To confirm or support a statement, theory or finding with additional evidence.",
+      "simple": "To show that what someone said is true.",
+      "hs": "לאשש",
+      "easy": "A second witness [corroborated] her story.",
       "he": "לאשש, לחזק (בראיות)",
       "family": [
         "corroboration (n.)",
@@ -277,6 +295,9 @@
       "ipa": "səbˈstænʃieɪt",
       "pos": "verb",
       "def": "To provide evidence that proves a claim or accusation is true.",
+      "simple": "To prove that something is true.",
+      "hs": "לבסס בראיות",
+      "easy": "Can you [substantiate] that claim?",
       "he": "לבסס, להוכיח",
       "family": [
         "substantiation (n.)",
@@ -322,6 +343,9 @@
       "ipa": "ˈkoʊdʒənt",
       "pos": "adjective",
       "def": "Clear, logical and convincing (of an argument or case).",
+      "simple": "Clear and making good sense, so people agree.",
+      "hs": "משכנע",
+      "easy": "She gave a [cogent] reason for the change.",
       "he": "משכנע, מבוסס",
       "family": [
         "cogency (n.)",
@@ -367,6 +391,9 @@
       "ipa": "ˈspjʊriəs",
       "pos": "adjective",
       "def": "False or fake, though made to look genuine; based on faulty reasoning.",
+      "simple": "False, even if it looks real.",
+      "hs": "מופרך",
+      "easy": "He was fired for [spurious] reasons.",
       "he": "מופרך, מזויף",
       "family": [
         "spuriously (adv.)"
@@ -411,6 +438,9 @@
       "ipa": "ˈspiːʃəs",
       "pos": "adjective",
       "def": "Seeming reasonable or true at first, but actually wrong or misleading.",
+      "simple": "Seems true at first, but is really wrong.",
+      "hs": "נשמע נכון אך שגוי",
+      "easy": "His idea sounds good, but it's [specious].",
       "he": "נראה נכון אך מטעה",
       "family": [
         "speciously (adv.)",
@@ -457,6 +487,9 @@
       "ipa": "kənˈdʒektʃər",
       "pos": "noun / verb",
       "def": "An opinion or conclusion formed from incomplete information; to guess in this way.",
+      "simple": "A guess made without all the facts.",
+      "hs": "השערה",
+      "easy": "That's just [conjecture]; we don't know yet.",
       "he": "השערה, ניחוש",
       "family": [
         "conjectural (adj.)",
@@ -503,6 +536,9 @@
       "ipa": "ɪkˈstræpəleɪt",
       "pos": "verb",
       "def": "To estimate or conclude something unknown by extending known facts or trends.",
+      "simple": "To guess what will happen from what you know now.",
+      "hs": "להסיק מתוך מגמה",
+      "easy": "We can't [extrapolate] from one small test.",
       "he": "להסיק בהרחבה, לחזות על סמך מגמה",
       "family": [
         "extrapolation (n.)"
@@ -547,6 +583,9 @@
       "ipa": "dɪˈsɜːrn",
       "pos": "verb",
       "def": "To notice, recognise or understand something that is not obvious.",
+      "simple": "To notice or understand something that is not clear.",
+      "hs": "להבחין",
+      "easy": "I could hardly [discern] his face in the dark.",
       "he": "להבחין, לזהות",
       "family": [
         "discerning (adj.)",
@@ -593,6 +632,9 @@
       "ipa": "ˈnuːɑːnst",
       "pos": "adjective",
       "def": "Showing an awareness of subtle differences in meaning, feeling or value.",
+      "simple": "Showing small differences, not just black and white.",
+      "hs": "מלא ניואנסים",
+      "easy": "She has a [nuanced] view of the problem.",
       "he": "מורכב, רב־גוני, מעודן",
       "family": [
         "nuance (n.)",
@@ -637,6 +679,9 @@
       "ipa": "ˈpærədaɪm",
       "pos": "noun",
       "def": "A typical model or pattern; a set of assumptions and ideas that shape how a field thinks.",
+      "simple": "A way of thinking that most people accept.",
+      "hs": "תפיסה, מודל",
+      "easy": "The internet changed the whole [paradigm] of shopping.",
       "he": "פרדיגמה, מודל",
       "family": [
         "paradigmatic (adj.)"
@@ -681,6 +726,9 @@
       "ipa": "ˈpremɪs",
       "pos": "noun",
       "def": "A statement or idea taken as true and used as the basis of an argument or theory.",
+      "simple": "An idea you start from and believe is true.",
+      "hs": "הנחת יסוד",
+      "easy": "The plan is built on a false [premise].",
       "he": "הנחת יסוד",
       "family": [
         "premised on (v.)"
@@ -725,6 +773,9 @@
       "ipa": "daɪˈkɑːtəmi",
       "pos": "noun",
       "def": "A sharp division or contrast between two things that are opposed or entirely different.",
+      "simple": "A split into two opposite things.",
+      "hs": "ניגוד חד",
+      "easy": "There's a false [dichotomy] between work and fun.",
       "he": "דיכוטומיה, חלוקה לשני ניגודים",
       "family": [
         "dichotomous (adj.)"
@@ -768,6 +819,9 @@
       "ipa": "ˈkæviæt",
       "pos": "noun",
       "def": "A warning or condition that limits what has just been said.",
+      "simple": "A warning that adds a limit to what you said.",
+      "hs": "הסתייגות",
+      "easy": "I'll help, with one [caveat]: I can't stay late.",
       "he": "הסתייגות, אזהרה",
       "family": [],
       "ex": [
@@ -810,6 +864,9 @@
       "ipa": "ɪmˈpɪrɪkl",
       "pos": "adjective",
       "def": "Based on observation or experiment rather than theory or pure logic.",
+      "simple": "Based on what you see and test, not on ideas.",
+      "hs": "מבוסס ניסוי",
+      "easy": "We need [empirical] proof, not opinions.",
       "he": "אמפירי, מבוסס תצפית",
       "family": [
         "empirically (adv.)",
@@ -854,6 +911,9 @@
       "ipa": "ˈtæsɪt",
       "pos": "adjective",
       "def": "Understood or implied without being stated directly.",
+      "simple": "Understood without being said.",
+      "hs": "שבשתיקה",
+      "easy": "They had a [tacit] agreement not to talk about it.",
       "he": "שבשתיקה, משתמע",
       "family": [
         "tacitly (adv.)",
@@ -900,6 +960,9 @@
       "ipa": "ɪnˈhɪrənt",
       "pos": "adjective",
       "def": "Existing as a natural, permanent and inseparable part of something.",
+      "simple": "Part of something; it can't be taken away.",
+      "hs": "טבוע, מובנה",
+      "easy": "Every sport has some [inherent] risk.",
       "he": "מובנה, טבוע",
       "family": [
         "inherently (adv.)",
@@ -945,6 +1008,9 @@
       "ipa": "ɪnˈtrɪnzɪk",
       "pos": "adjective",
       "def": "Belonging to the basic nature of something, rather than coming from outside it.",
+      "simple": "Part of what something really is.",
+      "hs": "מהותי",
+      "easy": "The old ring has little [intrinsic] value.",
       "he": "מהותי, פנימי",
       "family": [
         "intrinsically (adv.)"
@@ -989,6 +1055,9 @@
       "ipa": "kənˈtɪndʒənt",
       "pos": "adjective / noun",
       "def": "Depending on something that may or may not happen; (n.) a group of people forming part of a larger group.",
+      "simple": "Depending on something else happening.",
+      "hs": "מותנה",
+      "easy": "The job offer is [contingent] on a health check.",
       "he": "מותנה; משלחת, קבוצה",
       "family": [
         "contingency (n.)",
@@ -1033,6 +1102,9 @@
       "ipa": "ɔːlˈbiːɪt",
       "pos": "conjunction",
       "def": "Although; even though (used to add a limiting fact).",
+      "simple": "Although; even if.",
+      "hs": "אם כי",
+      "easy": "He agreed, [albeit] slowly.",
       "he": "אם כי",
       "family": [],
       "ex": [
@@ -1074,6 +1146,9 @@
       "ipa": "ˌnɑːtwɪθˈstændɪŋ",
       "pos": "preposition / adverb",
       "def": "In spite of; nevertheless.",
+      "simple": "In spite of.",
+      "hs": "למרות",
+      "easy": "The trip was fun, the rain [notwithstanding].",
       "he": "למרות, על אף",
       "family": [],
       "ex": [
@@ -1115,6 +1190,9 @@
       "ipa": "ɑːˈstensəbli",
       "pos": "adverb",
       "def": "Apparently or according to what is claimed, but perhaps not actually.",
+      "simple": "It seems so, but maybe it is not true.",
+      "hs": "לכאורה",
+      "easy": "He came, [ostensibly] to help, but he just ate.",
       "he": "לכאורה, כביכול",
       "family": [
         "ostensible (adj.)"
@@ -1159,6 +1237,9 @@
       "ipa": "ɪnˈeksərəbl",
       "pos": "adjective",
       "def": "Impossible to stop or prevent; continuing relentlessly.",
+      "simple": "Impossible to stop.",
+      "hs": "בלתי ניתן לעצירה",
+      "easy": "The [inexorable] rise of prices worries everyone.",
       "he": "בלתי נמנע, בלתי ניתן לעצירה",
       "family": [
         "inexorably (adv.)",
@@ -1203,6 +1284,9 @@
       "ipa": "ɪˈluːsɪdeɪt",
       "pos": "verb",
       "def": "To make something clear by explaining it in more detail.",
+      "simple": "To explain so it is clear.",
+      "hs": "להבהיר",
+      "easy": "Can you [elucidate] what you mean?",
       "he": "להבהיר, לפרש",
       "family": [
         "elucidation (n.)"
@@ -1247,6 +1331,9 @@
       "ipa": "ˈɑːbfʌskeɪt",
       "pos": "verb",
       "def": "To deliberately make something unclear or harder to understand.",
+      "simple": "To make something hard to understand on purpose.",
+      "hs": "לטשטש",
+      "easy": "He used big words to [obfuscate] the problem.",
       "he": "לטשטש, לערפל",
       "family": [
         "obfuscation (n.)"
@@ -1291,6 +1378,9 @@
       "ipa": "ˈdʒʌkstəpoʊz",
       "pos": "verb",
       "def": "To place two things side by side, especially to highlight the contrast.",
+      "simple": "To put two things next to each other to show the difference.",
+      "hs": "להציב זה לצד זה",
+      "easy": "The photo [juxtaposes] old and new buildings.",
       "he": "להציב זה לצד זה (לשם ניגוד)",
       "family": [
         "juxtaposition (n.)"
@@ -1336,6 +1426,9 @@
       "ipa": "kənˈfleɪt",
       "pos": "verb",
       "def": "To combine two or more separate ideas or things into one, often wrongly.",
+      "simple": "To mix up two different ideas as if they were one.",
+      "hs": "לבלבל בין",
+      "easy": "Don't [conflate] being busy with being useful.",
       "he": "לערבב, לבלבל בין (שני מושגים)",
       "family": [
         "conflation (n.)"
@@ -1378,6 +1471,9 @@
       "ipa": "dɪˈlɪnieɪt",
       "pos": "verb",
       "def": "To describe, mark or explain something precisely, especially its boundaries.",
+      "simple": "To show or describe something clearly and exactly.",
+      "hs": "להגדיר במדויק",
+      "easy": "The contract [delineates] who does what.",
       "he": "לתחום, לשרטט במדויק",
       "family": [
         "delineation (n.)"
@@ -1422,6 +1518,9 @@
       "ipa": "ˈpɑːzɪt",
       "pos": "verb",
       "def": "To put forward something as a fact or basis for argument.",
+      "simple": "To suggest an idea as true, as a start for thinking.",
+      "hs": "להניח",
+      "easy": "Some scientists [posit] that life began in the sea.",
       "he": "להניח, להציע (כהנחה)",
       "family": [
         "position (n., related)"
@@ -1466,6 +1565,9 @@
       "ipa": "rɪˈfjuːt",
       "pos": "verb",
       "def": "To prove that a statement, theory or accusation is wrong.",
+      "simple": "To prove that something is wrong.",
+      "hs": "להפריך",
+      "easy": "She [refuted] every claim with facts.",
       "he": "להפריך",
       "family": [
         "refutation (n.)",
@@ -1512,6 +1614,9 @@
       "ipa": "ʌnˈtenəbl",
       "pos": "adjective",
       "def": "(Of a position or argument) impossible to defend or maintain.",
+      "simple": "Not possible to keep or defend.",
+      "hs": "בלתי אפשרי להמשיך",
+      "easy": "After the scandal, his job became [untenable].",
       "he": "בלתי סביר, שאין להחזיק בו",
       "family": [
         "tenable (adj.)"
@@ -1557,6 +1662,9 @@
       "ipa": "ˌæksiəˈmætɪk",
       "pos": "adjective",
       "def": "Self-evident; accepted as true without needing proof.",
+      "simple": "So clearly true that it needs no proof.",
+      "hs": "מובן מאליו",
+      "easy": "It's [axiomatic] that kids need sleep.",
       "he": "מובן מאליו, אקסיומטי",
       "family": [
         "axiom (n.)",
@@ -1601,6 +1709,9 @@
       "ipa": "ˌesəˈterɪk",
       "pos": "adjective",
       "def": "Understood by or meant for only a small number of people with special knowledge.",
+      "simple": "Known or understood by only a few people.",
+      "hs": "מובן למעטים",
+      "easy": "The book is full of [esoteric] jokes.",
       "he": "אזוטרי, מובן ליודעי ח\"ן",
       "family": [
         "esoterically (adv.)",
@@ -1645,6 +1756,9 @@
       "ipa": "præɡˈmætɪk",
       "pos": "adjective",
       "def": "Dealing with problems in a practical, realistic way rather than following theory or ideals.",
+      "simple": "Thinking about what works in real life.",
+      "hs": "מעשי",
+      "easy": "Let's find a [pragmatic] solution.",
       "he": "פרגמטי, מעשי",
       "family": [
         "pragmatism (n.)",
@@ -1691,6 +1805,9 @@
       "ipa": "dɔːɡˈmætɪk",
       "pos": "adjective",
       "def": "Insisting that one's beliefs are certainly right, without considering evidence or other opinions.",
+      "simple": "Sure you are right and not willing to listen.",
+      "hs": "נוקשה בדעותיו",
+      "easy": "Don't be so [dogmatic] — listen to other ideas.",
       "he": "דוגמטי, נוקשה בדעותיו",
       "family": [
         "dogma (n.)",
@@ -1738,6 +1855,9 @@
       "ipa": "hjʊˈrɪstɪk",
       "pos": "noun / adjective",
       "def": "A simple rule of thumb or method that helps you solve problems or make decisions quickly.",
+      "simple": "A simple rule that helps you decide fast.",
+      "hs": "כלל אצבע",
+      "easy": "A good [heuristic]: if in doubt, wait a day.",
       "he": "כלל אצבע, היוריסטיקה",
       "family": [
         "heuristically (adv.)",
@@ -1783,6 +1903,9 @@
       "ipa": "əˈnɑːməli",
       "pos": "noun",
       "def": "Something that differs from what is normal, expected or standard.",
+      "simple": "Something that is different from what is normal.",
+      "hs": "חריגה",
+      "easy": "One strange result was an [anomaly].",
       "he": "חריגה, אנומליה",
       "family": [
         "anomalous (adj.)"
@@ -1827,6 +1950,9 @@
       "ipa": "ˈkɔːrəleri",
       "pos": "noun",
       "def": "A natural result or consequence that follows from something else.",
+      "simple": "Something that follows naturally from something else.",
+      "hs": "תוצאה טבעית",
+      "easy": "Higher prices are a [corollary] of the new tax.",
       "he": "תוצאה ישירה, מסקנה נגזרת",
       "family": [],
       "ex": [
@@ -1868,6 +1994,9 @@
       "ipa": "tænˈdʒenʃl",
       "pos": "adjective",
       "def": "Only slightly connected to the main subject; going off topic.",
+      "simple": "Only a little connected to the main topic.",
+      "hs": "צדדי",
+      "easy": "His comment was [tangential] to the question.",
       "he": "שולי, צדדי, סוטה מהנושא",
       "family": [
         "tangent (n.)",
@@ -1913,6 +2042,9 @@
       "ipa": "ɪˈkwɪvəkl",
       "pos": "adjective",
       "def": "Open to more than one interpretation; deliberately vague or uncertain.",
+      "simple": "Not clear; it could mean more than one thing.",
+      "hs": "דו־משמעי",
+      "easy": "Her answer was [equivocal], so we're still not sure.",
       "he": "דו־משמעי, מתחמק",
       "family": [
         "equivocate (v.)",
@@ -1960,6 +2092,9 @@
       "ipa": "ˈsɜːrkəmspekt",
       "pos": "adjective",
       "def": "Careful to consider all possible risks before acting or speaking.",
+      "simple": "Careful; thinking before you act or speak.",
+      "hs": "זהיר",
+      "easy": "Be [circumspect] about what you post online.",
       "he": "זהיר, שוקל צעדיו",
       "family": [
         "circumspection (n.)",
@@ -2005,6 +2140,9 @@
       "ipa": "ˌpɜːrspɪˈkeɪʃəs",
       "pos": "adjective",
       "def": "Having a quick, sharp ability to notice and understand things.",
+      "simple": "Quick to notice and understand things.",
+      "hs": "חד־אבחנה",
+      "easy": "A [perspicacious] reader will guess the ending.",
       "he": "חד־אבחנה, נבון",
       "family": [
         "perspicacity (n.)"
@@ -2049,6 +2187,9 @@
       "ipa": "vəˈræsəti",
       "pos": "noun",
       "def": "Truthfulness; conformity to facts.",
+      "simple": "How true something is.",
+      "hs": "אמיתות",
+      "easy": "We doubt the [veracity] of his story.",
       "he": "אמיתות, מהימנות",
       "family": [
         "veracious (adj.)",
@@ -2094,6 +2235,9 @@
       "ipa": "ˈkriːdns",
       "pos": "noun",
       "def": "Belief in or acceptance of something as true.",
+      "simple": "Belief that something is true.",
+      "hs": "אמינות",
+      "easy": "The new facts give [credence] to her story.",
       "he": "אמון, אמינות",
       "family": [
         "credible (adj., related)",
@@ -2139,6 +2283,9 @@
       "ipa": "ˈduːbiəs",
       "pos": "adjective",
       "def": "Not to be relied on; probably dishonest or false; (of a person) doubtful.",
+      "simple": "Probably not true, honest or good.",
+      "hs": "מפוקפק",
+      "easy": "That website looks [dubious].",
       "he": "מפוקפק; מסופק",
       "family": [
         "dubiously (adv.)",
@@ -2184,6 +2331,9 @@
       "ipa": "ˈfæsl",
       "pos": "adjective",
       "def": "Too simple; achieved or said easily without careful thought.",
+      "simple": "Too simple; not thought through.",
+      "hs": "פשטני",
+      "easy": "That's a [facile] answer to a hard question.",
       "he": "שטחי, פשטני",
       "family": [
         "facilely (adv.)",

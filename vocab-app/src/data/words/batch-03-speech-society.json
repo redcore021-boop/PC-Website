@@ -7,6 +7,9 @@
       "ipa": "loʊˈkweɪʃəs",
       "pos": "adjective",
       "def": "Tending to talk a great deal.",
+      "simple": "Talking a lot.",
+      "hs": "דברן",
+      "easy": "After some wine, he got [loquacious].",
       "he": "פטפטן, דברן",
       "family": [
         "loquacity (n.)",
@@ -52,6 +55,9 @@
       "ipa": "ˈeləkwənt",
       "pos": "adjective",
       "def": "Fluent and persuasive in speaking or writing; clearly expressing a feeling.",
+      "simple": "Speaking or writing in a clear and moving way.",
+      "hs": "רהוט",
+      "easy": "She gave an [eloquent] speech.",
       "he": "רהוט, מליצי",
       "family": [
         "eloquence (n.)",
@@ -97,6 +103,9 @@
       "ipa": "ləˈkɑːnɪk",
       "pos": "adjective",
       "def": "Using very few words.",
+      "simple": "Using very few words.",
+      "hs": "לקוני",
+      "easy": "His [laconic] reply was just \"No.\"",
       "he": "לקוני, תמציתי",
       "family": [
         "laconically (adv.)"
@@ -141,6 +150,9 @@
       "ipa": "vɜːrˈboʊs",
       "pos": "adjective",
       "def": "Using more words than are needed.",
+      "simple": "Using more words than needed.",
+      "hs": "ארכני",
+      "easy": "The report is far too [verbose].",
       "he": "מילולי מדי, ארכני",
       "family": [
         "verbosity (n.)",
@@ -185,6 +197,9 @@
       "ipa": "ˌsɜːrkəmloʊˈkjuːʃn",
       "pos": "noun",
       "def": "Using many words to say something that could be said simply, especially to be vague or evasive.",
+      "simple": "Using many words to avoid saying something simply.",
+      "hs": "גלגול מילים",
+      "easy": "After a lot of [circumlocution], he finally said sorry.",
       "he": "דיבור עקיף, גלגול מילים",
       "family": [
         "circumlocutory (adj.)"
@@ -228,6 +243,9 @@
       "ipa": "kəˈloʊkwiəl",
       "pos": "adjective",
       "def": "(Of language) used in ordinary, informal conversation rather than formal speech or writing.",
+      "simple": "Used in everyday talk, not in formal writing.",
+      "hs": "מדובר",
+      "easy": "\"Gonna\" is a [colloquial] word.",
       "he": "מדובר, עממי",
       "family": [
         "colloquialism (n.)",
@@ -274,6 +292,9 @@
       "ipa": "haɪˈpɜːrbəli",
       "pos": "noun",
       "def": "Deliberate exaggeration, not meant to be taken literally.",
+      "simple": "Saying something is much bigger or worse than it is.",
+      "hs": "הגזמה",
+      "easy": "\"I'm starving\" is often [hyperbole].",
       "he": "הגזמה, הפרזה",
       "family": [
         "hyperbolic (adj.)"
@@ -316,6 +337,9 @@
       "ipa": "ˈjuːfəmɪzəm",
       "pos": "noun",
       "def": "A mild or indirect word used instead of one that is harsh, blunt or embarrassing.",
+      "simple": "A soft word used instead of an unpleasant one.",
+      "hs": "לשון נקייה",
+      "easy": "\"Passed away\" is a [euphemism] for \"died.\"",
       "he": "לשון נקייה",
       "family": [
         "euphemistic (adj.)",
@@ -359,6 +383,9 @@
       "ipa": "ˈplætɪtuːd",
       "pos": "noun",
       "def": "A remark that has been used too often to be interesting, especially one presented as wise.",
+      "simple": "A boring thing people say too often.",
+      "hs": "קלישאה",
+      "easy": "His speech was full of [platitudes].",
       "he": "קלישאה, אמירה נדושה",
       "family": [
         "platitudinous (adj.)"
@@ -402,6 +429,9 @@
       "ipa": "voʊˈsɪfərəs",
       "pos": "adjective",
       "def": "Expressing opinions or feelings loudly and forcefully.",
+      "simple": "Loud and strong when giving your opinion.",
+      "hs": "קולני",
+      "easy": "She's a [vociferous] critic of the plan.",
       "he": "קולני, נמרץ במחאתו",
       "family": [
         "vociferously (adv.)"
@@ -447,6 +477,9 @@
       "ipa": "ˈdaɪətraɪb",
       "pos": "noun",
       "def": "A forceful and bitter verbal attack against someone or something.",
+      "simple": "A long, angry attack in words.",
+      "hs": "התקפה מילולית",
+      "easy": "He went on a [diatribe] about taxes.",
       "he": "התקפה מילולית חריפה",
       "family": [],
       "ex": [
@@ -488,6 +521,9 @@
       "ipa": "ˌɪnjuˈendoʊ",
       "pos": "noun",
       "def": "An indirect remark that suggests something bad or sexual about someone.",
+      "simple": "A hint that suggests something bad or sexual.",
+      "hs": "רמז עוקצני",
+      "easy": "The article was full of [innuendo].",
       "he": "רמז עקיף (לרוב שלילי או מיני)",
       "family": [],
       "ex": [
@@ -528,6 +564,9 @@
       "ipa": "ɪnˈsɪnjueɪt",
       "pos": "verb",
       "def": "To suggest something unpleasant indirectly; to work oneself gradually into a position.",
+      "simple": "To suggest something bad without saying it directly.",
+      "hs": "לרמוז לרעה",
+      "easy": "Are you [insinuating] that I lied?",
       "he": "לרמוז (בעקיפין, לרעה)",
       "family": [
         "insinuation (n.)"
@@ -572,6 +611,9 @@
       "ipa": "əˈluːd",
       "pos": "verb",
       "def": "To mention something indirectly.",
+      "simple": "To talk about something without naming it.",
+      "hs": "לרמוז",
+      "easy": "She [alluded] to problems at home.",
       "he": "לרמוז, להתייחס בעקיפין",
       "family": [
         "allusion (n.)",
@@ -618,6 +660,9 @@
       "ipa": "əˈvɜːr",
       "pos": "verb",
       "def": "To state or assert something firmly as a fact.",
+      "simple": "To say firmly that something is true.",
+      "hs": "להצהיר בתוקף",
+      "easy": "The witness [averred] that she saw him.",
       "he": "לטעון בתוקף, להצהיר",
       "family": [],
       "ex": [
@@ -660,6 +705,9 @@
       "ipa": "kənˈsiːd",
       "pos": "verb",
       "def": "To admit that something is true, often reluctantly; to surrender or give up.",
+      "simple": "To agree that something is true, even if you don't want to.",
+      "hs": "להודות",
+      "easy": "He finally [conceded] that I was right.",
       "he": "להודות (בעל כורחו); לוותר",
       "family": [
         "concession (n.)",
@@ -708,6 +756,9 @@
       "ipa": "ədˈmɑːnɪʃ",
       "pos": "verb",
       "def": "To warn or reprimand someone firmly but mildly.",
+      "simple": "To tell someone firmly that they did something wrong.",
+      "hs": "לנזוף",
+      "easy": "The teacher [admonished] him for being late.",
       "he": "לנזוף, להתרות",
       "family": [
         "admonition (n.)",
@@ -755,6 +806,9 @@
       "ipa": "ˈkæstɪɡeɪt",
       "pos": "verb",
       "def": "To criticise or reprimand someone severely.",
+      "simple": "To say very strongly that someone did wrong.",
+      "hs": "להוקיע",
+      "easy": "The report [castigates] the government.",
       "he": "להוקיע, לבקר בחריפות",
       "family": [
         "castigation (n.)"
@@ -799,6 +853,9 @@
       "ipa": "læmˈbeɪst",
       "pos": "verb",
       "def": "To criticise someone or something very harshly.",
+      "simple": "To attack someone with very harsh words in public.",
+      "hs": "לקטול",
+      "easy": "Critics [lambasted] the new film.",
       "he": "לקטול, לתקוף בחריפות",
       "family": [],
       "ex": [
@@ -841,6 +898,9 @@
       "ipa": "dɪˈspærɪdʒ",
       "pos": "verb",
       "def": "To speak about someone or something as having little value or importance.",
+      "simple": "To talk about someone as if they are not good or important.",
+      "hs": "לזלזל",
+      "easy": "He never [disparages] other players.",
       "he": "לזלזל, להמעיט בערך",
       "family": [
         "disparaging (adj.)",
@@ -886,6 +946,9 @@
       "ipa": "ɪkˈstoʊl",
       "pos": "verb",
       "def": "To praise someone or something enthusiastically.",
+      "simple": "To praise something a lot.",
+      "hs": "להלל",
+      "easy": "Doctors [extol] the value of exercise.",
       "he": "להלל, לשבח",
       "family": [],
       "ex": [
@@ -926,6 +989,9 @@
       "ipa": "kəˈdʒoʊl",
       "pos": "verb",
       "def": "To persuade someone to do something by flattery or gentle, persistent urging.",
+      "simple": "To get someone to do something by being nice to them.",
+      "hs": "לשדל",
+      "easy": "She [cajoled] me into coming.",
       "he": "לשדל, לפתות בחנופה",
       "family": [
         "cajolery (n.)"
@@ -970,6 +1036,9 @@
       "ipa": "ˈpleɪkeɪt",
       "pos": "verb",
       "def": "To make someone less angry or hostile, often by giving them something.",
+      "simple": "To make someone less angry.",
+      "hs": "לפייס",
+      "easy": "He gave a refund to [placate] the customer.",
       "he": "לפייס, להרגיע",
       "family": [
         "placatory (adj.)",
@@ -1015,6 +1084,9 @@
       "ipa": "ˈmɑːlɪfaɪ",
       "pos": "verb",
       "def": "To calm someone's anger or anxiety; to soften.",
+      "simple": "To calm someone who is angry or upset.",
+      "hs": "להרגיע",
+      "easy": "Nothing could [mollify] her.",
       "he": "לרכך, להרגיע",
       "family": [
         "mollification (n.)"
@@ -1059,6 +1131,9 @@
       "ipa": "ɪɡˈzɔːrt",
       "pos": "verb",
       "def": "To strongly encourage or urge someone to do something.",
+      "simple": "To strongly tell people to do something.",
+      "hs": "לדרבן",
+      "easy": "The coach [exhorted] the team to keep going.",
       "he": "להמריץ, לדרבן, להפציר",
       "family": [
         "exhortation (n.)"
@@ -1103,6 +1178,9 @@
       "ipa": "ˌɪntərˈlɑːkjətər",
       "pos": "noun",
       "def": "A person who takes part in a conversation or dialogue, especially an official one.",
+      "simple": "The person you are talking with.",
+      "hs": "בן שיח",
+      "easy": "She smiled at her [interlocutor].",
       "he": "בן שיח",
       "family": [],
       "ex": [
@@ -1144,6 +1222,9 @@
       "ipa": "ˈɡælvənaɪz",
       "pos": "verb",
       "def": "To shock or excite someone into taking action.",
+      "simple": "To shock or excite people so they act.",
+      "hs": "לעורר לפעולה",
+      "easy": "The fire [galvanized] the town into action.",
       "he": "לעורר לפעולה, להמריץ",
       "family": [
         "galvanization (n.)",
@@ -1189,6 +1270,9 @@
       "ipa": "ˈdeməɡɑːɡ",
       "pos": "noun",
       "def": "A political leader who gains support by exploiting people's emotions and prejudices rather than using reason.",
+      "simple": "A leader who wins support with fear and anger, not facts.",
+      "hs": "דמגוג",
+      "easy": "The [demagogue] blamed everything on foreigners.",
       "he": "דמגוג",
       "family": [
         "demagogic (adj.)",
@@ -1233,6 +1317,9 @@
       "ipa": "ˈpɑːrtəzn",
       "pos": "adjective / noun",
       "def": "Strongly and often blindly supporting one party or cause; (n.) a committed supporter; a member of an armed resistance group.",
+      "simple": "Strongly supporting one side or party.",
+      "hs": "מפלגתי, מוטה",
+      "easy": "The debate became very [partisan].",
       "he": "מפלגתי, מוטה; פרטיזן",
       "family": [
         "partisanship (n.)",
@@ -1278,6 +1365,9 @@
       "ipa": "hɪˈdʒeməni",
       "pos": "noun",
       "def": "Leadership or dominance, especially by one state or social group over others.",
+      "simple": "When one country or group has power over others.",
+      "hs": "הגמוניה",
+      "easy": "The empire kept its [hegemony] for years.",
       "he": "הגמוניה, שליטה",
       "family": [
         "hegemonic (adj.)",
@@ -1322,6 +1412,9 @@
       "ipa": "ˌdɪsɪnˈfræntʃaɪz",
       "pos": "verb",
       "def": "To deprive someone of the right to vote or of other rights; to make someone feel powerless.",
+      "simple": "To take away someone's right to vote or to have a say.",
+      "hs": "לשלול זכות",
+      "easy": "The new rule could [disenfranchise] poor voters.",
       "he": "לשלול זכות הצבעה; לדחוק לשוליים",
       "family": [
         "disenfranchisement (n.)",
@@ -1366,6 +1459,9 @@
       "ipa": "iˌɡælɪˈteriən",
       "pos": "adjective / noun",
       "def": "Believing in or based on the principle that all people are equal and deserve equal rights.",
+      "simple": "Believing that all people are equal.",
+      "hs": "שוויוני",
+      "easy": "It's an [egalitarian] company with no private offices.",
       "he": "שוויוני",
       "family": [
         "egalitarianism (n.)"
@@ -1409,6 +1505,9 @@
       "ipa": "ˌmerɪˈtɑːkrəsi",
       "pos": "noun",
       "def": "A system in which people are chosen and rewarded based on ability and achievement rather than wealth or class.",
+      "simple": "A system where people move up because of skill, not money or family.",
+      "hs": "מריטוקרטיה",
+      "easy": "The firm says it's a [meritocracy].",
       "he": "מריטוקרטיה, שלטון הכישרון",
       "family": [
         "meritocratic (adj.)"
@@ -1449,6 +1548,9 @@
       "ipa": "ˈnepətɪzəm",
       "pos": "noun",
       "def": "The practice of people in power giving jobs or favours to relatives or friends.",
+      "simple": "Giving jobs to your family members.",
+      "hs": "פרוטקציה",
+      "easy": "Hiring his son was pure [nepotism].",
       "he": "נפוטיזם, פרוטקציה",
       "family": [
         "nepotistic (adj.)"
@@ -1492,6 +1594,9 @@
       "ipa": "klænˈdestɪn",
       "pos": "adjective",
       "def": "Kept secret or done secretly, especially because it is illegal or not approved.",
+      "simple": "Secret, often because it is not allowed.",
+      "hs": "חשאי",
+      "easy": "They held [clandestine] meetings at night.",
       "he": "חשאי, מחתרתי",
       "family": [
         "clandestinely (adv.)"
@@ -1535,6 +1640,9 @@
       "ipa": "ˌsɜːrəpˈtɪʃəs",
       "pos": "adjective",
       "def": "Done secretly or quietly so that others won't notice.",
+      "simple": "Done quietly so no one sees.",
+      "hs": "בגנבה",
+      "easy": "She took a [surreptitious] look at her phone.",
       "he": "בגנבה, חשאי",
       "family": [
         "surreptitiously (adv.)"
@@ -1577,6 +1685,9 @@
       "ipa": "səbˈvɜːrsɪv",
       "pos": "adjective / noun",
       "def": "Trying to undermine an established system or authority.",
+      "simple": "Trying to weaken the people in power.",
+      "hs": "חתרני",
+      "easy": "The book was banned as [subversive].",
       "he": "חתרני",
       "family": [
         "subvert (v.)",
@@ -1623,6 +1734,9 @@
       "ipa": "ɪnˈsɪdiəs",
       "pos": "adjective",
       "def": "Proceeding gradually and subtly, but with harmful effects.",
+      "simple": "Harmful and growing slowly without people noticing.",
+      "hs": "זוחל, מזיק בסתר",
+      "easy": "Stress can be [insidious].",
       "he": "ערמומי, חותר בסתר, זוחל",
       "family": [
         "insidiously (adv.)"
@@ -1668,6 +1782,9 @@
       "ipa": "pərˈnɪʃəs",
       "pos": "adjective",
       "def": "Having a harmful effect, especially gradually or in a way that is not obvious.",
+      "simple": "Very harmful, often in a hidden way.",
+      "hs": "הרסני",
+      "easy": "It's a [pernicious] myth.",
       "he": "מזיק, הרסני",
       "family": [
         "perniciously (adv.)"
@@ -1712,6 +1829,9 @@
       "ipa": "ˈɑːstrəsaɪz",
       "pos": "verb",
       "def": "To exclude someone from a group or society.",
+      "simple": "To push someone out of a group.",
+      "hs": "להחרים",
+      "easy": "She was [ostracized] for telling the truth.",
       "he": "להחרים, לנדות",
       "family": [
         "ostracism (n.)"
@@ -1756,6 +1876,9 @@
       "ipa": "ˈmɑːrdʒɪnəlaɪz",
       "pos": "verb",
       "def": "To treat a person, group or idea as unimportant or push them to the edge of society.",
+      "simple": "To treat a person or group as not important.",
+      "hs": "לדחוק לשוליים",
+      "easy": "Women's work was often [marginalized].",
       "he": "לדחוק לשוליים",
       "family": [
         "marginalization (n.)",
@@ -1802,6 +1925,9 @@
       "ipa": "ˈskeɪpɡoʊt",
       "pos": "noun / verb",
       "def": "A person or group blamed for the faults or failures of others.",
+      "simple": "Someone blamed for what others did.",
+      "hs": "שעיר לעזאזל",
+      "easy": "They made him the [scapegoat] for the failure.",
       "he": "שעיר לעזאזל",
       "family": [
         "scapegoating (n.)"
@@ -1844,6 +1970,9 @@
       "ipa": "ˈhjuːbrɪs",
       "pos": "noun",
       "def": "Excessive pride or self-confidence, often leading to downfall.",
+      "simple": "Too much pride that leads to failure.",
+      "hs": "יוהרה",
+      "easy": "His [hubris] cost him the election.",
       "he": "יוהרה, שחצנות (המובילה לנפילה)",
       "family": [
         "hubristic (adj.)"
@@ -1888,6 +2017,9 @@
       "ipa": "ˈzaɪtɡaɪst",
       "pos": "noun",
       "def": "The general mood, ideas and beliefs typical of a particular period of history.",
+      "simple": "The mood and ideas of a time.",
+      "hs": "רוח התקופה",
+      "easy": "The song caught the [zeitgeist] of its time.",
       "he": "רוח התקופה",
       "family": [],
       "ex": [
@@ -1929,6 +2061,9 @@
       "ipa": "prɪˈkeriəs",
       "pos": "adjective",
       "def": "Not securely held or in position; dangerously uncertain.",
+      "simple": "Not safe or stable; it could fall or fail.",
+      "hs": "רעוע",
+      "easy": "Many workers have [precarious] jobs.",
       "he": "רעוע, לא יציב, מסוכן",
       "family": [
         "precariously (adv.)",
@@ -1975,6 +2110,9 @@
       "ipa": "enˈdemɪk",
       "pos": "adjective",
       "def": "Regularly found in a particular place, group or situation; (of plants and animals) native to one area.",
+      "simple": "Always found in a place or group.",
+      "hs": "נפוץ באופן קבוע",
+      "easy": "Crime is [endemic] in that area.",
       "he": "אנדמי, נפוץ באופן קבוע",
       "family": [],
       "ex": [
@@ -2017,6 +2155,9 @@
       "ipa": "sɪˈstemɪk",
       "pos": "adjective",
       "def": "Relating to or affecting an entire system rather than just individual parts.",
+      "simple": "Affecting the whole organization, not just one part.",
+      "hs": "מערכתי",
+      "easy": "The problem is [systemic], not one bad person.",
       "he": "מערכתי",
       "family": [
         "systemically (adv.)"
@@ -2060,6 +2201,9 @@
       "ipa": "drəˈkoʊniən",
       "pos": "adjective",
       "def": "(Of laws or measures) excessively harsh and severe.",
+      "simple": "Much too harsh.",
+      "hs": "דרקוני",
+      "easy": "The new laws are [draconian].",
       "he": "דרקוני, חמור ביותר",
       "family": [],
       "ex": [
@@ -2101,6 +2245,9 @@
       "ipa": "ɪmˈpjuːnəti",
       "pos": "noun",
       "def": "Freedom from punishment or harmful consequences.",
+      "simple": "Without being punished.",
+      "hs": "בלי להיענש",
+      "easy": "They broke the law with [impunity].",
       "he": "חסינות מעונש, בלי להיענש",
       "family": [],
       "ex": [
@@ -2140,6 +2287,9 @@
       "ipa": "kəmˈplɪsɪt",
       "pos": "adjective",
       "def": "Involved with others in wrongdoing, actively or by silence.",
+      "simple": "Helping something bad happen, even by staying quiet.",
+      "hs": "שותף לעבירה",
+      "easy": "By saying nothing, he was [complicit].",
       "he": "שותף לדבר עבירה",
       "family": [
         "complicity (n.)",
@@ -2185,6 +2335,9 @@
       "ipa": "ˌækwiˈes",
       "pos": "verb",
       "def": "To accept something reluctantly but without protest.",
+      "simple": "To agree quietly, even if you don't want to.",
+      "hs": "להשלים, להסכים",
+      "easy": "She finally [acquiesced] to his request.",
       "he": "להשלים, להסכים בשתיקה",
       "family": [
         "acquiescence (n.)",

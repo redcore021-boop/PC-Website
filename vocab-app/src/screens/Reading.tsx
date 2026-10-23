@@ -7,7 +7,8 @@ import { bracketWord, lookupWord, LookupError, makeCustomWord, type Lookup } fro
 import { familyForms } from '../lib/words';
 import { go } from '../lib/router';
 import { CloseIcon } from '../components/Icons';
-import { HebrewHint } from '../components/WordBits';
+import { HebrewMeaning } from '../components/WordBits';
+import { simpleDef } from '../lib/words';
 import commonJson from '../data/common-words.json';
 
 const COMMON = new Set((commonJson as { words: string[] }).words);
@@ -247,10 +248,12 @@ function WordSheet({ token, sentence, onClose }: { token: Token; sentence: strin
 
         {knownWord ? (
           <>
-            <p className="def" dir="ltr" lang="en">
-              {knownWord.def}
-            </p>
-            <HebrewHint text={knownWord.he} resetKey={knownWord.id} />
+            <div dir="ltr" lang="en">
+              <HebrewMeaning word={knownWord} />
+              <p className="simple" style={{ marginTop: 8 }}>
+                {simpleDef(knownWord)}
+              </p>
+            </div>
             <p className="small muted">המילה כבר ברשימה שלך.</p>
             <button className="btn block" onClick={() => go('word', knownWord.id)}>
               לכל הפרטים
@@ -258,8 +261,8 @@ function WordSheet({ token, sentence, onClose }: { token: Token; sentence: strin
           </>
         ) : already ? (
           <>
-            <p className="def" dir="ltr" lang="en">
-              {already.def}
+            <p className="simple" dir="ltr" lang="en">
+              {simpleDef(already)}
             </p>
             <p className="small muted">המילה כבר ברשימה שלך.</p>
             <button className="btn block" onClick={() => go('word', already.id)}>

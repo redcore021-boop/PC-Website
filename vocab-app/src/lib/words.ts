@@ -79,6 +79,27 @@ export function introOrder(words: WordEntry[]): WordEntry[] {
   return out;
 }
 
+/** Plain-English definition, falling back to the dictionary one (e.g. for words the learner added). */
+export function simpleDef(w: WordEntry): string {
+  return w.simple ?? w.def;
+}
+
+/** The short Hebrew translation shown first. */
+export function shortHe(w: WordEntry): string {
+  if (w.hs) return w.hs;
+  return w.he.split(/[,;]/)[0].replace(/\(.*?\)/g, '').trim();
+}
+
+/** The one example shown first: short and everyday. */
+export function mainExample(w: WordEntry): string | undefined {
+  return w.easy ?? w.ex[0];
+}
+
+/** Every example, the everyday one first. */
+export function allExamples(w: WordEntry): string[] {
+  return [...new Set([w.easy, ...w.ex].filter((x): x is string => !!x))];
+}
+
 /** Strip [brackets] from an example for display. */
 export function plain(sentence: string): string {
   return sentence.replace(/\[([^\]]+)\]/g, '$1');

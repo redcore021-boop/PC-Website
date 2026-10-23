@@ -117,6 +117,7 @@ export function Home() {
         )}
       </section>
 
+      {progress.length > 0 && (
       <div className="stat-row" style={{ marginTop: 12 }}>
         <div className="stat">
           <div className="num">{progress.length}</div>
@@ -131,6 +132,7 @@ export function Home() {
           <div className="lbl">שיא רצף ימים</div>
         </div>
       </div>
+      )}
 
       {!whatsNewSeen && progress.length > 0 && (
         <section className="card" style={{ marginTop: 12 }}>

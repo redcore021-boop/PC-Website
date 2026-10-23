@@ -9,9 +9,16 @@ export interface WordEntry {
   /** IPA without slashes, US pronunciation */
   ipa: string;
   pos: string;
+  /** Dictionary-style definition (shown under "more about this word") */
   def: string;
-  /** Short Hebrew translation (hint layer) */
+  /** Plain, everyday English definition — simpler than the word itself */
+  simple?: string;
+  /** Hebrew translation, possibly with alternatives */
   he: string;
+  /** 1–3 word Hebrew translation shown first */
+  hs?: string;
+  /** Short, natural example with the target in [brackets] — the one shown first */
+  easy?: string;
   family: string[];
   /** Example sentences; the target form is wrapped in [brackets] */
   ex: string[];

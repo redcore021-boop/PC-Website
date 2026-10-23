@@ -1,6 +1,6 @@
 import type { CardType, WordEntry } from '../types';
 import { shuffle } from './random';
-import { splitGap } from './words';
+import { allExamples, splitGap } from './words';
 
 export type Question =
   | { type: 1; word: WordEntry; options: string[] }
@@ -98,7 +98,9 @@ export function buildQuestion(word: WordEntry, type: CardType, all: WordEntry[],
       return { type, word, options };
     }
     case 2: {
-      const examples = word.ex.map(splitGap).filter((x): x is [string, string, string] => !!x);
+      // first quizzes use the short everyday example; later ones any example
+      const pool = easy && word.easy ? [word.easy] : allExamples(word);
+      const examples = pool.map(splitGap).filter((x): x is [string, string, string] => !!x);
       if (!examples.length) return buildQuestion(word, 1, all, rnd, easy);
       const [before, form, after] = examples[Math.floor(rnd() * examples.length)];
       const distractors = pickDistractors(word, all, 3, rnd, { themeBonus: false, easy });

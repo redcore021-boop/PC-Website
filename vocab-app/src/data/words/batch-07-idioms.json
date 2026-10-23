@@ -7,6 +7,9 @@
       "ipa": "ə ˌdʌbl ˈedʒd ˈsɔːrd",
       "pos": "idiom",
       "def": "Something that has both advantages and disadvantages.",
+      "simple": "Something that has both good and bad sides.",
+      "hs": "חרב פיפיות",
+      "easy": "Fame is [a double-edged sword].",
       "he": "חרב פיפיות",
       "family": [],
       "ex": [
@@ -44,6 +47,9 @@
       "ipa": "ə ˈmuːt ˌpɔɪnt",
       "pos": "idiom",
       "def": "A question that is no longer relevant because the situation has changed; (UK) an issue open to debate.",
+      "simple": "Something that doesn't matter anymore.",
+      "hs": "כבר לא רלוונטי",
+      "easy": "Who would have won is [a moot point] now.",
       "he": "שאלה שאיבדה רלוונטיות; עניין שנוי במחלוקת",
       "family": [
         "moot (adj./v.)"
@@ -85,6 +91,9 @@
       "ipa": "ði ˈelɪfənt ɪn ðə ˈruːm",
       "pos": "idiom",
       "def": "An obvious problem that everyone is aware of but nobody wants to talk about.",
+      "simple": "A big problem everyone sees but no one talks about.",
+      "hs": "הפיל שבחדר",
+      "easy": "Money was [the elephant in the room].",
       "he": "הפיל שבחדר",
       "family": [],
       "ex": [
@@ -123,6 +132,9 @@
       "ipa": "biːt əˈraʊnd ðə ˈbʊʃ",
       "pos": "idiom",
       "def": "To avoid talking about what is important; to not get to the point.",
+      "simple": "To avoid saying what you really mean.",
+      "hs": "לעשות סיבובים",
+      "easy": "Stop [beating around the bush] and tell me.",
       "he": "לעשות סיבובים, לא לדבר לעניין",
       "family": [],
       "ex": [
@@ -162,6 +174,9 @@
       "ipa": "baɪt ðə ˈbʊlɪt",
       "pos": "idiom",
       "def": "To force yourself to do something unpleasant or difficult that you have been avoiding.",
+      "simple": "To do something hard that you have been avoiding.",
+      "hs": "לעשות את הלא נעים",
+      "easy": "I finally [bit the bullet] and called the dentist.",
       "he": "לשנס מותניים ולעשות את הלא נעים",
       "family": [],
       "ex": [
@@ -201,6 +216,9 @@
       "ipa": "kʌt ˈkɔːrnərz",
       "pos": "idiom",
       "def": "To do something in the easiest, cheapest or fastest way, often ignoring rules or quality.",
+      "simple": "To do something cheaply or badly to save time.",
+      "hs": "לקצר תהליכים",
+      "easy": "The builders [cut corners], and now the roof leaks.",
       "he": "לקצר תהליכים (על חשבון האיכות)",
       "family": [
         "corner-cutting (n.)"
@@ -243,6 +261,9 @@
       "ipa": "er ɑːn ðə saɪd əv ˈkɔːʃn",
       "pos": "idiom",
       "def": "To be extra careful rather than take a risk.",
+      "simple": "To be extra careful, just in case.",
+      "hs": "להחמיר ליתר ביטחון",
+      "easy": "I [erred on the side of caution] and took a coat.",
       "he": "להחמיר מטעמי זהירות",
       "family": [],
       "ex": [
@@ -281,6 +302,9 @@
       "ipa": "ɡet ðə ˈdʒɪst",
       "pos": "idiom",
       "def": "To understand the general meaning of something without all the details.",
+      "simple": "To understand the main idea.",
+      "hs": "לתפוס את העיקר",
+      "easy": "I didn't get every word, but I [got the gist].",
       "he": "לתפוס את העיקר",
       "family": [
         "gist (n.)"
@@ -323,6 +347,9 @@
       "ipa": "hɪt ðə ˈneɪl ɑːn ðə ˈhed",
       "pos": "idiom",
       "def": "To describe exactly what is causing a situation or problem; to be exactly right.",
+      "simple": "To say exactly the right thing.",
+      "hs": "לקלוע בדיוק",
+      "easy": "You [hit the nail on the head] with that comment.",
       "he": "לקלוע בדיוק, לשים את האצבע על הנקודה",
       "family": [],
       "ex": [
@@ -362,6 +389,9 @@
       "ipa": "dʒʌmp ɑːn ðə ˈbændwæɡən",
       "pos": "idiom",
       "def": "To join an activity or support something because it is popular or fashionable.",
+      "simple": "To do something because it is popular now.",
+      "hs": "לקפוץ על העגלה",
+      "easy": "Every company is [jumping on the bandwagon].",
       "he": "לקפוץ על העגלה, להצטרף לאופנה",
       "family": [],
       "ex": [
@@ -401,6 +431,9 @@
       "ipa": "ə ˈblesɪŋ ɪn dɪsˈɡaɪz",
       "pos": "idiom",
       "def": "Something that seems bad at first but turns out to have good results.",
+      "simple": "Something that seems bad but turns out good.",
+      "hs": "ברכה במסווה",
+      "easy": "Losing that job was [a blessing in disguise].",
       "he": "ברכה במסווה, \"גם זו לטובה\"",
       "family": [],
       "ex": [
@@ -439,6 +472,9 @@
       "ipa": "pleɪ ˌdevlz ˈædvəkət",
       "pos": "idiom",
       "def": "To argue against an idea, not because you disagree, but to test it or provoke discussion.",
+      "simple": "To argue the other side, just to test an idea.",
+      "hs": "פרקליט השטן",
+      "easy": "Let me [play devil's advocate] for a minute.",
       "he": "לשחק את פרקליט השטן",
       "family": [
         "devil's advocate (n.)"
@@ -480,6 +516,9 @@
       "ipa": "ə ˌred ˈherɪŋ",
       "pos": "idiom",
       "def": "Something that misleads or distracts from the real issue.",
+      "simple": "Something that takes attention away from what matters.",
+      "hs": "הסחת דעת",
+      "easy": "The missing key was [a red herring].",
       "he": "הסחת דעת, מטעה מכוון",
       "family": [],
       "ex": [
@@ -521,6 +560,9 @@
       "ipa": "ðə ˈtɪp əv ði ˈaɪsbɜːrɡ",
       "pos": "idiom",
       "def": "A small, visible part of a much larger problem.",
+      "simple": "A small part of a much bigger problem.",
+      "hs": "קצה הקרחון",
+      "easy": "These cases are just [the tip of the iceberg].",
       "he": "קצה הקרחון",
       "family": [],
       "ex": [
@@ -557,6 +599,9 @@
       "ipa": "ə ˌkætʃ ˌtwenti ˈtuː",
       "pos": "idiom",
       "def": "A situation in which you cannot succeed because each option depends on the other.",
+      "simple": "A problem with no way out, because each step needs the other first.",
+      "hs": "מלכוד 22",
+      "easy": "No job without experience, no experience without a job: [a catch-22].",
       "he": "מלכוד 22",
       "family": [],
       "ex": [
@@ -597,6 +642,9 @@
       "ipa": "kiːp ˈsʌmwʌn ət ˈɑːrmz ˈleŋθ",
       "pos": "idiom",
       "def": "To avoid becoming close or friendly with someone.",
+      "simple": "To avoid getting close to someone.",
+      "hs": "לשמור מרחק",
+      "easy": "She [keeps everyone at arm's length].",
       "he": "לשמור מרחק ממישהו",
       "family": [],
       "ex": [
@@ -636,6 +684,9 @@
       "ipa": "ɑːn ðə ˈfens",
       "pos": "idiom",
       "def": "Undecided, or unwilling to commit to one side.",
+      "simple": "Not able to decide.",
+      "hs": "מתלבט",
+      "easy": "I'm still [on the fence] about it.",
       "he": "על הגדר, מתלבט",
       "family": [
         "sit on the fence (v. phr.)",
@@ -679,6 +730,9 @@
       "ipa": "krɔːs ðæt ˈbrɪdʒ wen wi kʌm tə ɪt",
       "pos": "idiom",
       "def": "To deal with a possible problem only if and when it happens, not worry about it now.",
+      "simple": "To deal with a problem only when it happens.",
+      "hs": "נתמודד כשנגיע",
+      "easy": "We'll [cross that bridge when we come to it].",
       "he": "נתמודד עם זה כשנגיע לשם",
       "family": [],
       "ex": [
@@ -717,6 +771,9 @@
       "ipa": "æd ˈɪnsʌlt tu ˈɪndʒəri",
       "pos": "idiom",
       "def": "To make a bad situation even worse.",
+      "simple": "To make a bad situation even worse.",
+      "hs": "להוסיף חטא על פשע",
+      "easy": "To [add insult to injury], it started to rain.",
       "he": "להוסיף חטא על פשע",
       "family": [],
       "ex": [
@@ -754,6 +811,9 @@
       "ipa": "ə ˈfɑːr kraɪ frʌm",
       "pos": "idiom",
       "def": "Very different from something.",
+      "simple": "Very different from.",
+      "hs": "רחוק מאוד מ־",
+      "easy": "This flat is [a far cry from] my old room.",
       "he": "רחוק מאוד מ־, שונה בתכלית",
       "family": [],
       "ex": [
@@ -793,6 +853,9 @@
       "ipa": "ˌbaɪ ən ˈlɑːrdʒ",
       "pos": "idiom",
       "def": "On the whole; generally, all things considered.",
+      "simple": "Mostly; in general.",
+      "hs": "בסך הכול",
+      "easy": "[By and large], the trip was great.",
       "he": "בסך הכול, באופן כללי",
       "family": [],
       "ex": [
@@ -833,6 +896,9 @@
       "ipa": "kʌt tə ðə ˈtʃeɪs",
       "pos": "idiom",
       "def": "To get to the most important point without wasting time.",
+      "simple": "To get to the main point quickly.",
+      "hs": "ישר לעניין",
+      "easy": "Let's [cut to the chase]: how much is it?",
       "he": "לגשת ישר לעניין",
       "family": [],
       "ex": [
@@ -871,6 +937,9 @@
       "ipa": "ə ˌfɔːrɡɔːn kənˈkluːʒn",
       "pos": "idiom",
       "def": "A result that is certain before it happens.",
+      "simple": "A result everyone knows before it happens.",
+      "hs": "ידוע מראש",
+      "easy": "The result was [a foregone conclusion].",
       "he": "דבר ידוע מראש, מסקנה ידועה מראש",
       "family": [],
       "ex": [
@@ -911,6 +980,9 @@
       "ipa": "ðə ˈlaɪənz ˈʃer",
       "pos": "idiom",
       "def": "The largest part of something.",
+      "simple": "The biggest part.",
+      "hs": "חלק הארי",
+      "easy": "He took [the lion's share] of the money.",
       "he": "חלק הארי",
       "family": [],
       "ex": [
@@ -951,6 +1023,9 @@
       "ipa": "peɪ ˈlɪp ˌsɜːrvɪs tuː",
       "pos": "idiom",
       "def": "To say you support something without doing anything to help it.",
+      "simple": "To say you support something, but do nothing.",
+      "hs": "מס שפתיים",
+      "easy": "They only [pay lip service to] equality.",
       "he": "מס שפתיים",
       "family": [],
       "ex": [
@@ -991,6 +1066,9 @@
       "ipa": "ə ˈstiːp ˈlɜːrnɪŋ ˌkɜːrv",
       "pos": "idiom",
       "def": "A situation where you have to learn a lot very quickly.",
+      "simple": "A lot to learn very fast.",
+      "hs": "עקומת למידה תלולה",
+      "easy": "My new job is [a steep learning curve].",
       "he": "עקומת למידה תלולה",
       "family": [
         "learning curve (n.)"
@@ -1032,6 +1110,9 @@
       "ipa": "teɪk wɪð ə ˈɡreɪn əv ˈsɔːlt",
       "pos": "idiom",
       "def": "To be sceptical about something; not to believe it completely.",
+      "simple": "To not fully believe something.",
+      "hs": "בעירבון מוגבל",
+      "easy": "I [take what he says with a grain of salt].",
       "he": "להתייחס בספקנות, בעירבון מוגבל",
       "family": [],
       "ex": [
@@ -1072,6 +1153,9 @@
       "ipa": "θroʊ ˈkɔːʃn tə ðə ˈwɪnd",
       "pos": "idiom",
       "def": "To act in a very risky way, without worrying about the consequences.",
+      "simple": "To do something risky without worrying.",
+      "hs": "לקחת סיכון",
+      "easy": "We [threw caution to the wind] and quit our jobs.",
       "he": "לזנוח כל זהירות, לקחת סיכון",
       "family": [],
       "ex": [
@@ -1111,6 +1195,9 @@
       "ipa": "ˌtʌtʃ ən ˈɡoʊ",
       "pos": "idiom",
       "def": "(Of a situation) very uncertain; risky, with a real chance of a bad result.",
+      "simple": "Not sure how it will end; it could go badly.",
+      "hs": "על חוט השערה",
+      "easy": "It was [touch and go] for a while.",
       "he": "על חוט השערה, לא ודאי",
       "family": [],
       "ex": [
@@ -1150,6 +1237,9 @@
       "ipa": "tə ˌnoʊ əˈveɪl",
       "pos": "idiom",
       "def": "Without success; with no result.",
+      "simple": "Without success.",
+      "hs": "לשווא",
+      "easy": "We tried to help, but [to no avail].",
       "he": "ללא הועיל, לשווא",
       "family": [
         "avail (n./v.)",
@@ -1193,6 +1283,9 @@
       "ipa": "ɡoʊ ði ˈekstrə ˈmaɪl",
       "pos": "idiom",
       "def": "To make more effort than is expected.",
+      "simple": "To do more than people expect.",
+      "hs": "להתאמץ במיוחד",
+      "easy": "Our staff always [go the extra mile].",
       "he": "להתאמץ מעבר למצופה",
       "family": [],
       "ex": [
@@ -1233,6 +1326,9 @@
       "ipa": "ə ˌvɪʃəs ˈsɜːrkl",
       "pos": "idiom",
       "def": "A situation in which one problem causes another, which then makes the first problem worse.",
+      "simple": "When one problem causes another, which makes the first one worse.",
+      "hs": "מעגל קסמים",
+      "easy": "Less sleep, more stress, less sleep: [a vicious circle].",
       "he": "מעגל קסמים (שלילי)",
       "family": [],
       "ex": [
@@ -1272,6 +1368,9 @@
       "ipa": "ˌpɑːr fər ðə ˈkɔːrs",
       "pos": "idiom",
       "def": "Normal or expected, especially of something bad.",
+      "simple": "Normal and expected, often in a bad way.",
+      "hs": "הדבר הרגיל",
+      "easy": "Delays are [par for the course] here.",
       "he": "עניין שבשגרה, הדבר הצפוי",
       "family": [],
       "ex": [
@@ -1311,6 +1410,9 @@
       "ipa": "ˈberi ðə ˈhætʃɪt",
       "pos": "idiom",
       "def": "To end a quarrel and become friendly again.",
+      "simple": "To stop fighting and be friends again.",
+      "hs": "להשלים",
+      "easy": "The two brothers finally [buried the hatchet].",
       "he": "לקבור את הגרזן, להשלים",
       "family": [],
       "ex": [
@@ -1352,6 +1454,9 @@
       "ipa": "ə ˌpɪrɪk ˈvɪktəri",
       "pos": "idiom",
       "def": "A victory that costs the winner so much that it is hardly worth winning.",
+      "simple": "A win that costs too much.",
+      "hs": "ניצחון פירוס",
+      "easy": "Winning the case was [a Pyrrhic victory].",
       "he": "ניצחון פירוס",
       "family": [
         "Pyrrhic (adj.)"
