@@ -250,3 +250,41 @@ describe('streak week and daily reminder', () => {
     expect(g.searchParams.get('recur')).toBe('RRULE:FREQ=DAILY');
   });
 });
+
+describe('tests and games', () => {
+  it('builds a mixed quiz from learned words with one right answer each', async () => {
+    const { buildQuiz, gamePool, quizQuestion, pickPairs, trueFalseItem, isBetter } = await import('../src/lib/games');
+    const { builtInWords } = await import('../src/lib/words');
+    const { newProgress } = await import('../src/lib/srs');
+    const { shortHe } = await import('../src/lib/words');
+    const all = builtInWords;
+    const learned = all.slice(0, 12);
+    const progress = learned.map((w) => newProgress(w.id));
+    progress[0].suspended = true;
+    const pool = gamePool(all, progress);
+    expect(pool).toHaveLength(11);
+    const rnd = seeded(7);
+    const quiz = buildQuiz(pool, all, 10, rnd);
+    expect(quiz).toHaveLength(10);
+    expect(new Set(quiz.map((q) => q.word.id)).size).toBe(10);
+    expect(new Set(quiz.map((q) => q.kind)).size).toBeGreaterThanOrEqual(3);
+    for (const q of quiz) {
+      expect(q.options).toHaveLength(4);
+      expect(new Set(q.options).size).toBe(4);
+      expect(q.options.filter((o) => o === q.answer)).toHaveLength(1);
+    }
+    for (const w of pool) {
+      const m = quizQuestion(w, 'meaning', all, rnd);
+      expect(m.answer).toBe(shortHe(w));
+      expect(new Set(m.options).size).toBe(4);
+    }
+    const pairs = pickPairs(pool, 6, rnd);
+    expect(new Set(pairs.map((w) => shortHe(w))).size).toBe(pairs.length);
+    for (let i = 0; i < 40; i++) {
+      const t = trueFalseItem(pool, all, rnd);
+      expect(t.isMatch).toBe(t.shown === shortHe(t.word));
+    }
+    expect(isBetter('match', 30, 40)).toBe(true);
+    expect(isBetter('quiz', 70, 80)).toBe(false);
+  });
+});

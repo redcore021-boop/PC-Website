@@ -1,6 +1,8 @@
 import { AppProvider, useApp } from './state';
 import { go, useRoute } from './lib/router';
-import { BookIcon, ChartIcon, GearIcon, HomeIcon, ReadIcon } from './components/Icons';
+import { BookIcon, ChartIcon, GearIcon, HomeIcon, ReadIcon, TrophyIcon } from './components/Icons';
+import { Game, PlayHub } from './screens/Play';
+import type { GameKey } from './lib/games';
 import { Home } from './screens/Home';
 import { Session } from './screens/Session';
 import { Browse } from './screens/Browse';
@@ -24,6 +26,7 @@ export function App() {
 const TABS = [
   { key: '', label: 'היום', Icon: HomeIcon },
   { key: 'browse', label: 'מילים', Icon: BookIcon },
+  { key: 'play', label: 'מבחנים', Icon: TrophyIcon },
   { key: 'read', label: 'קריאה', Icon: ReadIcon, feature: 'reading' as const },
   { key: 'stats', label: 'התקדמות', Icon: ChartIcon, feature: 'stats' as const },
   { key: 'settings', label: 'הגדרות', Icon: GearIcon },
@@ -32,7 +35,7 @@ const TABS = [
 function Shell() {
   const { ready } = useApp();
   const route = useRoute();
-  const [page = '', param] = route;
+  const [page = '', param, param2] = route;
   const [onboard, setOnboard] = useState<boolean | null>(null);
 
   // show the welcome once, to people who haven't started learning yet
@@ -51,8 +54,19 @@ function Shell() {
     );
   }
 
+  if (page === 'play' && (param === 'quiz' || param === 'match' || param === 'speed' || param === 'listen')) {
+    return (
+      <div className="app fullscreen">
+        <Game game={param as GameKey} size={param2} />
+      </div>
+    );
+  }
+
   let screen;
   switch (page) {
+    case 'play':
+      screen = <PlayHub />;
+      break;
     case 'browse':
       screen = <Browse tab={param} />;
       break;

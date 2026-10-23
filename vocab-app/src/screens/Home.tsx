@@ -120,6 +120,11 @@ export function Home() {
                 ללמוד עוד 5 מילים
               </button>
             )}
+            {progress.length >= 4 && (
+              <button className="btn block" style={{ marginTop: 10 }} onClick={() => go('play')}>
+                למבחנים ולמשחקים
+              </button>
+            )}
           </div>
         )}
       </section>
