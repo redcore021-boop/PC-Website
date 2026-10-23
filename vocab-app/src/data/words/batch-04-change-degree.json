@@ -434,7 +434,8 @@
           "lapsed",
           "wilted"
         ],
-        "why": "Languish means remain neglected and stuck. Linger means stay longer than expected (by choice); lapse means expire; wilt means droop (plants)."
+        "why": "Languish means remain neglected and stuck. Linger means stay longer than expected (by choice); lapse means expire; wilt means droop (plants).",
+        "ans": "languished"
       }
     },
     {
@@ -449,7 +450,7 @@
       ],
       "ex": [
         "Public interest in the scandal began to [wane].",
-        "The moon [waxes] and [wanes] every month.",
+        "The moon waxes and [wanes] every month.",
         "His influence is on the [wane]."
       ],
       "col": [
@@ -523,7 +524,8 @@
           "abated",
           "subsided"
         ],
-        "why": "Dwindle is ideal for numbers and supplies getting smaller. Wane is for strength, influence or interest; abate and subside are for storms, pain or anger."
+        "why": "Dwindle is ideal for numbers and supplies getting smaller. Wane is for strength, influence or interest; abate and subside are for storms, pain or anger.",
+        "ans": "dwindled"
       }
     },
     {
@@ -566,7 +568,8 @@
           "accumulated",
           "escalated"
         ],
-        "why": "Proliferate means multiply rapidly in number. Prosper means succeed financially; accumulate means pile up gradually; escalate means become more intense or serious."
+        "why": "Proliferate means multiply rapidly in number. Prosper means succeed financially; accumulate means pile up gradually; escalate means become more intense or serious.",
+        "ans": "proliferated"
       }
     },
     {
@@ -738,7 +741,8 @@
           "preceded",
           "presaged"
         ],
-        "why": "Precipitate means cause something to happen suddenly. Preclude means make impossible; precede means come before; presage means be a warning sign of."
+        "why": "Precipitate means cause something to happen suddenly. Preclude means make impossible; precede means come before; presage means be a warning sign of.",
+        "ans": "precipitated"
       }
     },
     {

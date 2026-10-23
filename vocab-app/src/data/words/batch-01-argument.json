@@ -1327,7 +1327,8 @@
           "combines",
           "merges"
         ],
-        "why": "Juxtapose means physically placing two things side by side so the viewer sees the contrast. Contrast is the analysis, not the placing; combine and merge mean make into one."
+        "why": "Juxtapose means physically placing two things side by side so the viewer sees the contrast. Contrast is the analysis, not the placing; combine and merge mean make into one.",
+        "ans": "juxtaposes"
       }
     },
     {
@@ -1502,7 +1503,8 @@
           "rejected",
           "disputed"
         ],
-        "why": "Refute means disproving with evidence, which the CCTV footage does. Deny, reject and dispute only express disagreement without proof."
+        "why": "Refute means disproving with evidence, which the CCTV footage does. Deny, reject and dispute only express disagreement without proof.",
+        "ans": "refuted"
       }
     },
     {
@@ -1772,7 +1774,8 @@
           "axioms",
           "paradigms"
         ],
-        "why": "Heuristics are rough mental shortcuts. Algorithms are exact step-by-step procedures; axioms are basic truths; paradigms are whole frameworks of thought."
+        "why": "Heuristics are rough mental shortcuts. Algorithms are exact step-by-step procedures; axioms are basic truths; paradigms are whole frameworks of thought.",
+        "ans": "heuristics"
       }
     },
     {

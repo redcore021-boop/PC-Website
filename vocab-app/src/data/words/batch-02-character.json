@@ -496,7 +496,8 @@
           "acolytes",
           "confidants"
         ],
-        "why": "Sycophants flatter the powerful for advantage, which the sentence describes. Allies support you; acolytes are devoted followers; confidants are people you trust with secrets."
+        "why": "Sycophants flatter the powerful for advantage, which the sentence describes. Allies support you; acolytes are devoted followers; confidants are people you trust with secrets.",
+        "ans": "sycophants"
       }
     },
     {
@@ -1293,7 +1294,8 @@
           "industriously",
           "zealously"
         ],
-        "why": "'Assiduously avoid' is a fixed collocation for persistent, deliberate avoidance. Diligently and industriously suggest productive work; zealously suggests passionate enthusiasm."
+        "why": "'Assiduously avoid' is a fixed collocation for persistent, deliberate avoidance. Diligently and industriously suggest productive work; zealously suggests passionate enthusiasm.",
+        "ans": "assiduously"
       }
     },
     {

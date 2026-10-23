@@ -6,7 +6,7 @@ export type Question =
   | { type: 1; word: WordEntry; options: string[] }
   | { type: 2; word: WordEntry; before: string; after: string; form: string; options: string[] }
   | { type: 3; word: WordEntry; hint: string }
-  | { type: 4; word: WordEntry; before: string; after: string; options: string[]; why: string }
+  | { type: 4; word: WordEntry; before: string; after: string; options: string[]; answer: string; why: string }
   | { type: 5; word: WordEntry };
 
 export const CARD_TYPE_NAMES: Record<CardType, string> = {
@@ -84,8 +84,10 @@ export function buildQuestion(word: WordEntry, type: CardType, all: WordEntry[],
     case 4: {
       if (!word.prec) return buildQuestion(word, 3, all, rnd);
       const parts = word.prec.s.split(/_{2,}/);
-      const options = shuffle([word.word, ...word.prec.opts], rnd);
-      return { type, word, before: parts[0] ?? '', after: parts.slice(1).join('___'), options, why: word.prec.why };
+      // the blank may need an inflected form ("juxtaposes"), so the right option is shown as written
+      const answer = word.prec.ans ?? word.word;
+      const options = shuffle([answer, ...word.prec.opts], rnd);
+      return { type, word, before: parts[0] ?? '', after: parts.slice(1).join('___'), options, answer, why: word.prec.why };
     }
     case 5:
       return { type, word };

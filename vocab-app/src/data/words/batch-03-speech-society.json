@@ -265,7 +265,8 @@
           "verbally",
           "eloquently"
         ],
-        "why": "'Colloquially known as' is the standard phrase for a popular, everyday name. Vulgarly means coarsely (or, in old usage, 'commonly'); verbally means in spoken words; eloquently means expressively."
+        "why": "'Colloquially known as' is the standard phrase for a popular, everyday name. Vulgarly means coarsely (or, in old usage, 'commonly'); verbally means in spoken words; eloquently means expressively.",
+        "ans": "colloquially"
       }
     },
     {
@@ -392,7 +393,8 @@
           "truisms",
           "slogans"
         ],
-        "why": "'Empty platitudes' is the classic phrase for hollow, moralising statements. Clichés are overused expressions in general; truisms are obviously true statements; slogans are short campaign phrases."
+        "why": "'Empty platitudes' is the classic phrase for hollow, moralising statements. Clichés are overused expressions in general; truisms are obviously true statements; slogans are short campaign phrases.",
+        "ans": "platitudes"
       }
     },
     {
@@ -561,7 +563,8 @@
           "alluding",
           "intimating"
         ],
-        "why": "Insinuate is the natural verb for an indirect accusation, and 'Are you insinuating…?' is a typical angry response. Infer means conclude (the listener infers, not the speaker); allude needs 'to'; intimate is a formal neutral hint."
+        "why": "Insinuate is the natural verb for an indirect accusation, and 'Are you insinuating…?' is a typical angry response. Infer means conclude (the listener infers, not the speaker); allude needs 'to'; intimate is a formal neutral hint.",
+        "ans": "insinuating"
       }
     },
     {
@@ -606,7 +609,8 @@
           "elicits",
           "eludes"
         ],
-        "why": "Allude means refer indirectly, which is why 'few viewers notice'. Refers is direct; elicit means draw out a response; elude means escape."
+        "why": "Allude means refer indirectly, which is why 'few viewers notice'. Refers is direct; elicit means draw out a response; elude means escape.",
+        "ans": "alludes"
       }
     },
     {
@@ -647,7 +651,8 @@
           "conjectured",
           "implied"
         ],
-        "why": "Aver means declare firmly as true — suitable for sworn testimony. Allege is to accuse without proof; conjecture is to guess; imply is to suggest indirectly."
+        "why": "Aver means declare firmly as true — suitable for sworn testimony. Allege is to accuse without proof; conjecture is to guess; imply is to suggest indirectly.",
+        "ans": "averred"
       }
     },
     {
@@ -694,7 +699,8 @@
           "surrendered",
           "relented"
         ],
-        "why": "'Concede defeat' is the fixed collocation in elections. Confess suggests guilt; surrender suggests war; relent means soften a harsh position and doesn't take an object."
+        "why": "'Concede defeat' is the fixed collocation in elections. Confess suggests guilt; surrender suggests war; relent means soften a harsh position and doesn't take an object.",
+        "ans": "conceded"
       }
     },
     {
@@ -740,7 +746,8 @@
           "castigated",
           "berated"
         ],
-        "why": "Admonish fits a mild, firm warning — 'gently' signals it. Lambaste, castigate and berate all mean harsh, angry criticism."
+        "why": "Admonish fits a mild, firm warning — 'gently' signals it. Lambaste, castigate and berate all mean harsh, angry criticism.",
+        "ans": "admonished"
       }
     },
     {
@@ -783,7 +790,8 @@
           "teased",
           "nagged"
         ],
-        "why": "Castigate means severely criticise, fitting an official inquiry's damning verdict. Admonish is too mild; tease and nag are informal and personal."
+        "why": "Castigate means severely criticise, fitting an official inquiry's damning verdict. Admonish is too mild; tease and nag are informal and personal.",
+        "ans": "castigated"
       }
     },
     {
@@ -824,7 +832,8 @@
           "chided",
           "discouraged"
         ],
-        "why": "Lambaste means attack very harshly — suitable for a furious public outburst. Admonish and chide are mild; discourage means reduce someone's confidence or prevent."
+        "why": "Lambaste means attack very harshly — suitable for a furious public outburst. Admonish and chide are mild; discourage means reduce someone's confidence or prevent.",
+        "ans": "lambasted"
       }
     },
     {
@@ -868,7 +877,8 @@
           "desperate",
           "discerning"
         ],
-        "why": "'Disparaging remarks' are belittling ones — a phrase common in legal agreements. Disparate means very different; desperate means hopeless; discerning means showing good judgement."
+        "why": "'Disparaging remarks' are belittling ones — a phrase common in legal agreements. Disparate means very different; desperate means hopeless; discerning means showing good judgement.",
+        "ans": "disparaging"
       }
     },
     {
@@ -951,7 +961,8 @@
           "compelled",
           "forced"
         ],
-        "why": "Cajole means persuade through flattery and charm. Coerce, compel and force all involve pressure or threats."
+        "why": "Cajole means persuade through flattery and charm. Coerce, compel and force all involve pressure or threats.",
+        "ans": "cajoled"
       }
     },
     {
@@ -1039,7 +1050,8 @@
           "subsided",
           "alleviated"
         ],
-        "why": "Mollified (calmed, less angry) describes a person's feelings. Mitigated and alleviated apply to problems or pain, not people; subside is intransitive and describes things dying down."
+        "why": "Mollified (calmed, less angry) describes a person's feelings. Mitigated and alleviated apply to problems or pain, not people; subside is intransitive and describes things dying down.",
+        "ans": "mollified"
       }
     },
     {
@@ -1082,7 +1094,8 @@
           "beseeched",
           "extorted"
         ],
-        "why": "Exhort is a leader's strong public encouragement. Implore and beseech mean begging desperately; extort means obtaining money by threats."
+        "why": "Exhort is a leader's strong public encouragement. Implore and beseech mean begging desperately; extort means obtaining money by threats.",
+        "ans": "exhorted"
       }
     },
     {
@@ -1167,7 +1180,8 @@
           "induced",
           "provoked"
         ],
-        "why": "Galvanize into action describes a sudden surge of energy and motivation. Persuade is reasoned; induce is formal and neutral; provoke suggests anger or a reaction, often negative."
+        "why": "Galvanize into action describes a sudden surge of energy and motivation. Persuade is reasoned; induce is formal and neutral; provoke suggests anger or a reaction, often negative.",
+        "ans": "galvanized"
       }
     },
     {
@@ -1733,7 +1747,8 @@
           "persecuted",
           "banished"
         ],
-        "why": "Ostracize means social exclusion by a group. Marginalize means reduce someone's importance or influence; persecute means harass or punish; banish means send away officially."
+        "why": "Ostracize means social exclusion by a group. Marginalize means reduce someone's importance or influence; persecute means harass or punish; banish means send away officially.",
+        "ans": "ostracized"
       }
     },
     {
@@ -1778,7 +1793,8 @@
           "excommunicated",
           "evicted"
         ],
-        "why": "Marginalize means treat as unimportant — fitting for contributions or roles. Ostracize is social exclusion of people; excommunicate is expulsion from a church; evict is removal from a home."
+        "why": "Marginalize means treat as unimportant — fitting for contributions or roles. Ostracize is social exclusion of people; excommunicate is expulsion from a church; evict is removal from a home.",
+        "ans": "marginalized"
       }
     },
     {
@@ -2205,7 +2221,8 @@
           "conceded",
           "concurred"
         ],
-        "why": "Acquiesce means give in quietly and reluctantly, and takes 'to/in'. Accord means give or agree; concede usually takes an object (concede defeat); concur means agree in opinion."
+        "why": "Acquiesce means give in quietly and reluctantly, and takes 'to/in'. Accord means give or agree; concede usually takes an object (concede defeat); concur means agree in opinion.",
+        "ans": "acquiesced"
       }
     }
   ]

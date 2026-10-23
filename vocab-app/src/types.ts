@@ -26,7 +26,7 @@ export interface WordEntry {
   tier: 1 | 2 | 3;
   themes: string[];
   /** Precision card: a sentence where this word is the best fit among near-synonyms */
-  prec?: { s: string; opts: string[]; why: string };
+  prec?: { s: string; opts: string[]; why: string; ans?: string };
   /** Present on words the user added themselves */
   custom?: boolean;
   batch?: string;

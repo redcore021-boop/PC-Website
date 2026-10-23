@@ -1,0 +1,1390 @@
+{
+  "batch": "batch-07",
+  "title": "Idioms",
+  "words": [
+    {
+      "word": "a double-edged sword",
+      "ipa": "ə ˌdʌbl ˈedʒd ˈsɔːrd",
+      "pos": "idiom",
+      "def": "Something that has both advantages and disadvantages.",
+      "he": "חרב פיפיות",
+      "family": [],
+      "ex": [
+        "Fame is [a double-edged sword]: you get attention, but you lose your privacy.",
+        "Working from home can be [a double-edged sword].",
+        "Low interest rates are [a double-edged sword] for savers and borrowers."
+      ],
+      "col": [
+        "prove a double-edged sword",
+        "something of a double-edged sword"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "mixed blessing",
+        "two-sided coin"
+      ],
+      "nuance": "A double-edged sword stresses that the same feature that helps can also hurt. A mixed blessing is milder: good overall but with drawbacks.",
+      "ety": "A sword sharpened on both edges can cut the person holding it.",
+      "tier": 1,
+      "themes": [
+        "thinking"
+      ],
+      "prec": {
+        "s": "Social media is ___: it connects people but also spreads hatred faster than ever.",
+        "opts": [
+          "a blessing in disguise",
+          "a red herring",
+          "a vicious circle"
+        ],
+        "why": "A double-edged sword has both good and bad effects. A blessing in disguise is something bad that turns out good; a red herring distracts; a vicious circle is a self-reinforcing problem."
+      }
+    },
+    {
+      "word": "a moot point",
+      "ipa": "ə ˈmuːt ˌpɔɪnt",
+      "pos": "idiom",
+      "def": "A question that is no longer relevant because the situation has changed; (UK) an issue open to debate.",
+      "he": "שאלה שאיבדה רלוונטיות; עניין שנוי במחלוקת",
+      "family": [
+        "moot (adj./v.)"
+      ],
+      "ex": [
+        "Whether we should have hired him is [a moot point] — he's already resigned.",
+        "Since the match was cancelled, who would have won is [a moot point].",
+        "Whether the policy actually reduced crime remains [a moot point]."
+      ],
+      "col": [
+        "it's a moot point",
+        "now a moot point",
+        "remain a moot point"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "irrelevant question",
+        "academic question",
+        "open question"
+      ],
+      "nuance": "In US English, 'moot' mostly means irrelevant now; in UK English, it can also mean still debatable. Note the spelling: moot, not 'mute'.",
+      "ety": "Old English mōt 'meeting' — a 'moot case' was a hypothetical one argued by law students.",
+      "tier": 2,
+      "themes": [
+        "thinking"
+      ],
+      "prec": {
+        "s": "Whether we should have bought the cheaper tickets is ___ now — the concert has been cancelled.",
+        "opts": [
+          "a foregone conclusion",
+          "a catch-22",
+          "the tip of the iceberg"
+        ],
+        "why": "A moot point no longer matters because circumstances changed. A foregone conclusion is a certain outcome; a catch-22 is an impossible situation; the tip of the iceberg is a small visible part of a bigger problem."
+      }
+    },
+    {
+      "word": "the elephant in the room",
+      "ipa": "ði ˈelɪfənt ɪn ðə ˈruːm",
+      "pos": "idiom",
+      "def": "An obvious problem that everyone is aware of but nobody wants to talk about.",
+      "he": "הפיל שבחדר",
+      "family": [],
+      "ex": [
+        "The cost of the project is [the elephant in the room].",
+        "Nobody mentioned his drinking — it was [the elephant in the room] at every family dinner.",
+        "Let's address [the elephant in the room]: we're losing money."
+      ],
+      "col": [
+        "address the elephant in the room",
+        "ignore the elephant in the room"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "taboo subject",
+        "unspoken problem"
+      ],
+      "nuance": "The elephant in the room is about collective avoidance of an obvious issue. A red herring, by contrast, is a distraction from the real issue.",
+      "ety": "An image of something enormous that everyone pretends not to see; popular since the 1950s.",
+      "tier": 1,
+      "themes": [
+        "relationships",
+        "speech"
+      ],
+      "prec": {
+        "s": "At the meeting everyone discussed new logos, but nobody mentioned ___: the company was nearly bankrupt.",
+        "opts": [
+          "the lion's share",
+          "a red herring",
+          "a moot point"
+        ],
+        "why": "The elephant in the room is the obvious problem everyone avoids. The lion's share is the biggest part; a red herring misleads; a moot point is no longer relevant."
+      }
+    },
+    {
+      "word": "beat around the bush",
+      "ipa": "biːt əˈraʊnd ðə ˈbʊʃ",
+      "pos": "idiom",
+      "def": "To avoid talking about what is important; to not get to the point.",
+      "he": "לעשות סיבובים, לא לדבר לעניין",
+      "family": [],
+      "ex": [
+        "Stop [beating around the bush] and tell me what happened.",
+        "I won't [beat around the bush] — we have to let you go.",
+        "He [beat around the bush] for ten minutes before asking for a loan."
+      ],
+      "col": [
+        "stop beating around the bush",
+        "not beat around the bush"
+      ],
+      "reg": "informal",
+      "syn": [
+        "prevaricate",
+        "hedge",
+        "equivocate",
+        "circumlocution"
+      ],
+      "nuance": "British English often says 'beat about the bush'. The opposite is 'cut to the chase' or 'get to the point'.",
+      "ety": "In bird hunting, beaters hit bushes to scare birds out instead of going straight for them.",
+      "tier": 1,
+      "themes": [
+        "speech"
+      ],
+      "prec": {
+        "s": "I won't ___: your work this month hasn't been good enough.",
+        "opts": [
+          "cut to the chase",
+          "bite the bullet",
+          "play devil's advocate"
+        ],
+        "why": "'I won't beat around the bush' = I'll say it directly. 'Cut to the chase' means get to the point (so 'I won't cut to the chase' says the opposite); bite the bullet means face something unpleasant; play devil's advocate means argue the other side."
+      }
+    },
+    {
+      "word": "bite the bullet",
+      "ipa": "baɪt ðə ˈbʊlɪt",
+      "pos": "idiom",
+      "def": "To force yourself to do something unpleasant or difficult that you have been avoiding.",
+      "he": "לשנס מותניים ולעשות את הלא נעים",
+      "family": [],
+      "ex": [
+        "I finally [bit the bullet] and booked a dentist appointment.",
+        "The company had to [bite the bullet] and cut costs.",
+        "Just [bite the bullet] and tell her the truth."
+      ],
+      "col": [
+        "finally bite the bullet",
+        "decide to bite the bullet"
+      ],
+      "reg": "informal",
+      "syn": [
+        "grasp the nettle",
+        "face the music",
+        "take the plunge"
+      ],
+      "nuance": "Bite the bullet is accepting something painful but necessary. Face the music is accepting punishment for your own actions; take the plunge is committing to something risky (often positive, like marriage).",
+      "ety": "Possibly from soldiers biting a bullet during surgery without anaesthetic.",
+      "tier": 1,
+      "themes": [
+        "work",
+        "character"
+      ],
+      "prec": {
+        "s": "After years of renting, we decided to ___ and take out a huge mortgage.",
+        "opts": [
+          "face the music",
+          "bury the hatchet",
+          "cut corners"
+        ],
+        "why": "Bite the bullet = finally do something difficult you've delayed. Face the music means accept punishment; bury the hatchet means make peace; cut corners means do something badly to save time or money. (Take the plunge would also be natural here, which is why it isn't an option.)"
+      }
+    },
+    {
+      "word": "cut corners",
+      "ipa": "kʌt ˈkɔːrnərz",
+      "pos": "idiom",
+      "def": "To do something in the easiest, cheapest or fastest way, often ignoring rules or quality.",
+      "he": "לקצר תהליכים (על חשבון האיכות)",
+      "family": [
+        "corner-cutting (n.)"
+      ],
+      "ex": [
+        "The builders [cut corners] and the roof started leaking within a year.",
+        "Never [cut corners] on safety.",
+        "We'll have to [cut corners] to meet the deadline."
+      ],
+      "col": [
+        "cut corners on safety",
+        "never cut corners",
+        "corner-cutting"
+      ],
+      "reg": "informal",
+      "syn": [
+        "skimp",
+        "take shortcuts",
+        "scrimp"
+      ],
+      "nuance": "Cut corners is always about reducing quality or ignoring proper procedure. A shortcut can be neutral (a quicker route).",
+      "ety": "Like a driver cutting across a corner instead of following the road.",
+      "tier": 1,
+      "themes": [
+        "work",
+        "quality"
+      ],
+      "prec": {
+        "s": "The bridge collapsed because the contractor had ___ to save money on steel.",
+        "opts": [
+          "gone the extra mile",
+          "erred on the side of caution",
+          "bitten the bullet"
+        ],
+        "why": "Cut corners = reduce quality to save time or money. Go the extra mile means make extra effort; err on the side of caution means be extra careful; bite the bullet means face something unpleasant."
+      }
+    },
+    {
+      "word": "err on the side of caution",
+      "ipa": "er ɑːn ðə saɪd əv ˈkɔːʃn",
+      "pos": "idiom",
+      "def": "To be extra careful rather than take a risk.",
+      "he": "להחמיר מטעמי זהירות",
+      "family": [],
+      "ex": [
+        "I [erred on the side of caution] and brought an umbrella.",
+        "When it comes to children's safety, we [err on the side of caution].",
+        "Doctors usually [err on the side of caution] with head injuries."
+      ],
+      "col": [
+        "better to err on the side of caution",
+        "err on the side of caution and"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "play it safe",
+        "be on the safe side"
+      ],
+      "nuance": "Err on the side of caution accepts that being too careful is a smaller mistake than being reckless. 'Err' is pronounced like 'air' or 'ur'.",
+      "ety": "err 'make a mistake', from Latin errare 'to wander'.",
+      "tier": 1,
+      "themes": [
+        "work",
+        "thinking"
+      ],
+      "prec": {
+        "s": "We weren't sure if the ice was thick enough, so we decided to ___ and stay off the lake.",
+        "opts": [
+          "throw caution to the wind",
+          "jump on the bandwagon",
+          "cut to the chase"
+        ],
+        "why": "Err on the side of caution = choose the safer option. Throw caution to the wind is the opposite; jump on the bandwagon means follow a trend; cut to the chase means get to the point."
+      }
+    },
+    {
+      "word": "get the gist",
+      "ipa": "ɡet ðə ˈdʒɪst",
+      "pos": "idiom",
+      "def": "To understand the general meaning of something without all the details.",
+      "he": "לתפוס את העיקר",
+      "family": [
+        "gist (n.)"
+      ],
+      "ex": [
+        "I didn't understand every word, but I [got the gist].",
+        "Can you give me the [gist] of the report?",
+        "From her tone, I [got the gist] — she wasn't happy."
+      ],
+      "col": [
+        "get the gist",
+        "the gist of it",
+        "the general gist"
+      ],
+      "reg": "informal",
+      "syn": [
+        "get the idea",
+        "grasp the essence",
+        "get the drift"
+      ],
+      "nuance": "The gist is the core meaning. 'Get the drift' is very close and informal; 'the crux' is the most important or difficult point, not the overall meaning.",
+      "ety": "Anglo-French gist 'it lies' — from the legal phrase 'cest action gist' (this action lies), the basis of a case.",
+      "tier": 1,
+      "themes": [
+        "knowledge",
+        "speech"
+      ],
+      "prec": {
+        "s": "My Spanish isn't perfect, but I usually ___ of what people are saying.",
+        "opts": [
+          "hit the nail on the head",
+          "beat around the bush",
+          "pay lip service to"
+        ],
+        "why": "Get the gist = understand the main idea. Hit the nail on the head means say exactly the right thing; beat around the bush means avoid the point; pay lip service to means support in words only."
+      }
+    },
+    {
+      "word": "hit the nail on the head",
+      "ipa": "hɪt ðə ˈneɪl ɑːn ðə ˈhed",
+      "pos": "idiom",
+      "def": "To describe exactly what is causing a situation or problem; to be exactly right.",
+      "he": "לקלוע בדיוק, לשים את האצבע על הנקודה",
+      "family": [],
+      "ex": [
+        "You've [hit the nail on the head] — the problem is the price, not the product.",
+        "Her review [hit the nail on the head].",
+        "I think Sarah [hit the nail on the head] when she said we need more time."
+      ],
+      "col": [
+        "you've hit the nail on the head",
+        "really hit the nail on the head"
+      ],
+      "reg": "informal",
+      "syn": [
+        "be spot on",
+        "put one's finger on it",
+        "be bang on"
+      ],
+      "nuance": "Hit the nail on the head praises a precise diagnosis or statement. 'Put your finger on it' is similar but stresses identifying something hard to name.",
+      "ety": "Hitting a nail squarely with a hammer, rather than bending it.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "speech"
+      ],
+      "prec": {
+        "s": "'You've ___,' said the doctor. 'The headaches are caused by your new glasses.'",
+        "opts": [
+          "cut corners",
+          "jumped the gun",
+          "added insult to injury"
+        ],
+        "why": "Hit the nail on the head = identify exactly the right cause. Cut corners means do a poor job to save time; jump the gun means act too early; add insult to injury means make a bad situation worse."
+      }
+    },
+    {
+      "word": "jump on the bandwagon",
+      "ipa": "dʒʌmp ɑːn ðə ˈbændwæɡən",
+      "pos": "idiom",
+      "def": "To join an activity or support something because it is popular or fashionable.",
+      "he": "לקפוץ על העגלה, להצטרף לאופנה",
+      "family": [],
+      "ex": [
+        "Every company is [jumping on the AI bandwagon].",
+        "When the team started winning, everyone [jumped on the bandwagon].",
+        "Don't just [jump on the bandwagon] — do your own research."
+      ],
+      "col": [
+        "jump on the bandwagon",
+        "climb on the bandwagon",
+        "the bandwagon effect"
+      ],
+      "reg": "informal",
+      "syn": [
+        "follow the crowd",
+        "go with the flow",
+        "follow the trend"
+      ],
+      "nuance": "Jump on the bandwagon is usually critical: joining for popularity or profit, not conviction. 'The bandwagon effect' is a term in psychology and economics.",
+      "ety": "In 19th-century US politics, a band played on a wagon in parades; politicians climbed on to share its popularity.",
+      "tier": 1,
+      "themes": [
+        "society"
+      ],
+      "prec": {
+        "s": "As soon as plant-based burgers became popular, every fast-food chain decided to ___.",
+        "opts": [
+          "go the extra mile",
+          "bury the hatchet",
+          "play devil's advocate"
+        ],
+        "why": "Jump on the bandwagon = join a popular trend. Go the extra mile means make extra effort; bury the hatchet means make peace; play devil's advocate means argue the opposite side."
+      }
+    },
+    {
+      "word": "a blessing in disguise",
+      "ipa": "ə ˈblesɪŋ ɪn dɪsˈɡaɪz",
+      "pos": "idiom",
+      "def": "Something that seems bad at first but turns out to have good results.",
+      "he": "ברכה במסווה, \"גם זו לטובה\"",
+      "family": [],
+      "ex": [
+        "Losing that job was [a blessing in disguise] — I started my own business.",
+        "The rain turned out to be [a blessing in disguise]: the crowds stayed home.",
+        "Missing the flight was [a blessing in disguise]."
+      ],
+      "col": [
+        "turn out to be a blessing in disguise",
+        "prove a blessing in disguise"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "silver lining",
+        "happy accident"
+      ],
+      "nuance": "A blessing in disguise is an event that looks bad but is good. A silver lining is a good aspect of an event that stays bad overall.",
+      "ety": "Popularised by an 18th-century hymn by James Hervey.",
+      "tier": 1,
+      "themes": [
+        "change",
+        "emotion"
+      ],
+      "prec": {
+        "s": "Breaking my leg turned out to be ___: during the recovery I wrote my first novel.",
+        "opts": [
+          "a double-edged sword",
+          "par for the course",
+          "a Pyrrhic victory"
+        ],
+        "why": "A blessing in disguise is a misfortune that turns out well. A double-edged sword has good and bad sides at once; par for the course is normal and expected; a Pyrrhic victory is a win that costs too much."
+      }
+    },
+    {
+      "word": "play devil's advocate",
+      "ipa": "pleɪ ˌdevlz ˈædvəkət",
+      "pos": "idiom",
+      "def": "To argue against an idea, not because you disagree, but to test it or provoke discussion.",
+      "he": "לשחק את פרקליט השטן",
+      "family": [
+        "devil's advocate (n.)"
+      ],
+      "ex": [
+        "Let me [play devil's advocate] for a moment: what if customers don't want this?",
+        "She often [plays devil's advocate] to make the team think harder.",
+        "I agree with you, but just to [play devil's advocate]…"
+      ],
+      "col": [
+        "play devil's advocate",
+        "just to play devil's advocate",
+        "act as devil's advocate"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "argue the other side",
+        "take the opposing view"
+      ],
+      "nuance": "Playing devil's advocate signals that the objection is for argument's sake — a polite way to raise a challenge without seeming hostile.",
+      "ety": "The Catholic Church once appointed an official 'devil's advocate' to argue against making someone a saint.",
+      "tier": 1,
+      "themes": [
+        "speech",
+        "thinking"
+      ],
+      "prec": {
+        "s": "I actually like your plan, but let me ___ and list everything that could go wrong.",
+        "opts": [
+          "sit on the fence",
+          "beat around the bush",
+          "pay lip service"
+        ],
+        "why": "Play devil's advocate = argue against an idea to test it. Sit on the fence means avoid taking sides; beat around the bush means avoid the point; pay lip service means support only in words."
+      }
+    },
+    {
+      "word": "a red herring",
+      "ipa": "ə ˌred ˈherɪŋ",
+      "pos": "idiom",
+      "def": "Something that misleads or distracts from the real issue.",
+      "he": "הסחת דעת, מטעה מכוון",
+      "family": [],
+      "ex": [
+        "The butler's missing key turned out to be [a red herring].",
+        "The debate about the logo is [a red herring]; the real problem is quality.",
+        "Detective novels are full of [red herrings]."
+      ],
+      "col": [
+        "prove to be a red herring",
+        "throw in a red herring",
+        "a complete red herring"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "distraction",
+        "diversion",
+        "false trail",
+        "decoy"
+      ],
+      "nuance": "A red herring distracts attention from what matters, deliberately or not. In fiction it's a false clue; in debate it's an irrelevant argument.",
+      "ety": "Strong-smelling smoked (red) herrings were supposedly used to train dogs or throw them off a scent.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "The argument about immigration was ___; the real cause of the housing crisis was decades of under-building.",
+        "opts": [
+          "the tip of the iceberg",
+          "a foregone conclusion",
+          "a steep learning curve"
+        ],
+        "why": "A red herring distracts from the real issue. The tip of the iceberg is a small visible part of a bigger problem; a foregone conclusion is a certain outcome; a steep learning curve is fast, hard learning."
+      }
+    },
+    {
+      "word": "the tip of the iceberg",
+      "ipa": "ðə ˈtɪp əv ði ˈaɪsbɜːrɡ",
+      "pos": "idiom",
+      "def": "A small, visible part of a much larger problem.",
+      "he": "קצה הקרחון",
+      "family": [],
+      "ex": [
+        "The reported cases are just [the tip of the iceberg].",
+        "These few complaints may be [the tip of the iceberg].",
+        "The fraud they found was only [the tip of the iceberg]."
+      ],
+      "col": [
+        "just/only the tip of the iceberg",
+        "merely the tip of the iceberg"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "a fraction of the problem"
+      ],
+      "nuance": "The tip of the iceberg implies that the hidden part is much larger and usually worse.",
+      "ety": "About 90% of an iceberg's mass is below the surface.",
+      "tier": 1,
+      "themes": [
+        "degree"
+      ],
+      "prec": {
+        "s": "Police found three fake bank accounts, but they suspect that's only ___.",
+        "opts": [
+          "the lion's share",
+          "the elephant in the room",
+          "a far cry from it"
+        ],
+        "why": "The tip of the iceberg is a small visible part of a much bigger problem. The lion's share is the largest part; the elephant in the room is an ignored obvious issue; 'a far cry from' means very different from."
+      }
+    },
+    {
+      "word": "a catch-22",
+      "ipa": "ə ˌkætʃ ˌtwenti ˈtuː",
+      "pos": "idiom",
+      "def": "A situation in which you cannot succeed because each option depends on the other.",
+      "he": "מלכוד 22",
+      "family": [],
+      "ex": [
+        "It's [a catch-22]: you need experience to get a job, but you need a job to get experience.",
+        "Many refugees face [a catch-22] with documents and work permits.",
+        "We're in [a catch-22] situation."
+      ],
+      "col": [
+        "a catch-22 situation",
+        "a classic catch-22",
+        "caught in a catch-22"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "dilemma",
+        "no-win situation",
+        "vicious circle"
+      ],
+      "nuance": "A catch-22 has contradictory rules that block every way out. A dilemma is a hard choice between two options; a vicious circle is a problem that keeps making itself worse.",
+      "ety": "From Joseph Heller's novel 'Catch-22' (1961): a pilot who asks to be excused for insanity proves he is sane.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "work"
+      ],
+      "prec": {
+        "s": "It's ___: the bank won't open an account without an address, and the landlord won't rent without a bank account.",
+        "opts": [
+          "a moot point",
+          "a double-edged sword",
+          "a blessing in disguise"
+        ],
+        "why": "A catch-22 is a trap where each requirement depends on the other. A moot point is irrelevant now; a double-edged sword has pros and cons; a blessing in disguise turns out well."
+      }
+    },
+    {
+      "word": "keep someone at arm's length",
+      "ipa": "kiːp ˈsʌmwʌn ət ˈɑːrmz ˈleŋθ",
+      "pos": "idiom",
+      "def": "To avoid becoming close or friendly with someone.",
+      "he": "לשמור מרחק ממישהו",
+      "family": [],
+      "ex": [
+        "She [keeps her colleagues at arm's length].",
+        "The party tried to [keep the controversial donor at arm's length].",
+        "After the betrayal, he [kept everyone at arm's length]."
+      ],
+      "col": [
+        "keep someone at arm's length",
+        "an arm's-length relationship"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "keep one's distance",
+        "hold at bay",
+        "stand aloof"
+      ],
+      "nuance": "Keep at arm's length is deliberate emotional or professional distance. 'An arm's-length transaction' is a business term for a deal between independent parties.",
+      "ety": "Holding someone away at the full length of your arm.",
+      "tier": 2,
+      "themes": [
+        "relationships"
+      ],
+      "prec": {
+        "s": "Since her divorce, she has ___, refusing every invitation to get close.",
+        "opts": [
+          "buried the hatchet",
+          "gone the extra mile",
+          "been on the fence"
+        ],
+        "why": "Keeping people at arm's length means avoiding closeness. Bury the hatchet means make peace; go the extra mile means make extra effort; be on the fence means be undecided.",
+        "ans": "kept everyone at arm's length"
+      }
+    },
+    {
+      "word": "on the fence",
+      "ipa": "ɑːn ðə ˈfens",
+      "pos": "idiom",
+      "def": "Undecided, or unwilling to commit to one side.",
+      "he": "על הגדר, מתלבט",
+      "family": [
+        "sit on the fence (v. phr.)",
+        "fence-sitter (n.)"
+      ],
+      "ex": [
+        "I'm still [on the fence] about buying a new car.",
+        "Many voters remain [on the fence].",
+        "You can't [sit on the fence] forever — choose!"
+      ],
+      "col": [
+        "be on the fence",
+        "sit on the fence",
+        "still on the fence"
+      ],
+      "reg": "informal",
+      "syn": [
+        "undecided",
+        "ambivalent",
+        "uncommitted",
+        "torn"
+      ],
+      "nuance": "Being on the fence is neutral (undecided). 'Sitting on the fence' is often critical: avoiding a decision to stay safe.",
+      "ety": "Sitting on a fence between two fields, not in either.",
+      "tier": 1,
+      "themes": [
+        "thinking"
+      ],
+      "prec": {
+        "s": "Two weeks before the election, a third of voters are still ___.",
+        "opts": [
+          "in the same boat",
+          "touch and go",
+          "by and large"
+        ],
+        "why": "On the fence = undecided. In the same boat means sharing a difficult situation; touch and go means uncertain to succeed; by and large means generally."
+      }
+    },
+    {
+      "word": "cross that bridge when we come to it",
+      "ipa": "krɔːs ðæt ˈbrɪdʒ wen wi kʌm tə ɪt",
+      "pos": "idiom",
+      "def": "To deal with a possible problem only if and when it happens, not worry about it now.",
+      "he": "נתמודד עם זה כשנגיע לשם",
+      "family": [],
+      "ex": [
+        "What if it rains? — We'll [cross that bridge when we come to it].",
+        "Funding for next year? Let's [cross that bridge when we come to it].",
+        "I'd rather [cross that bridge when I come to it]."
+      ],
+      "col": [
+        "we'll cross that bridge when we come to it",
+        "cross that bridge later"
+      ],
+      "reg": "informal",
+      "syn": [
+        "take it one step at a time",
+        "wait and see"
+      ],
+      "nuance": "Used to calmly postpone worrying about hypothetical problems. The pronoun changes: I'll / we'll / you can cross that bridge…",
+      "ety": "A traveller doesn't need to worry about a bridge still miles ahead.",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "work"
+      ],
+      "prec": {
+        "s": "'What if the buyer pulls out?' — 'Let's not worry yet. We'll ___.'",
+        "opts": [
+          "bite the bullet",
+          "cut to the chase",
+          "throw caution to the wind"
+        ],
+        "why": "'Cross that bridge when we come to it' = deal with it only if it happens. Bite the bullet means face something unpleasant now; cut to the chase means get to the point; throw caution to the wind means act recklessly."
+      }
+    },
+    {
+      "word": "add insult to injury",
+      "ipa": "æd ˈɪnsʌlt tu ˈɪndʒəri",
+      "pos": "idiom",
+      "def": "To make a bad situation even worse.",
+      "he": "להוסיף חטא על פשע",
+      "family": [],
+      "ex": [
+        "My flight was cancelled, and to [add insult to injury], they lost my luggage.",
+        "They fired him, then [added insult to injury] by asking him to train his replacement.",
+        "To [add insult to injury], it started to rain."
+      ],
+      "col": [
+        "to add insult to injury",
+        "add insult to injury by"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "make matters worse",
+        "rub salt in the wound"
+      ],
+      "nuance": "Add insult to injury usually introduces a second, humiliating misfortune. 'Rub salt in the wound' is about deliberately making someone feel worse.",
+      "ety": "From Aesop's fable of a bald man who, trying to swat a fly on his head, hits himself.",
+      "tier": 1,
+      "themes": [
+        "emotion"
+      ],
+      "prec": {
+        "s": "We lost 5–0, and to ___, our best player was injured.",
+        "opts": [
+          "hit the nail on the head",
+          "go the extra mile",
+          "bury the hatchet"
+        ],
+        "why": "'To add insult to injury' introduces something that makes a bad situation worse. The others mean be exactly right, make extra effort, and make peace."
+      }
+    },
+    {
+      "word": "a far cry from",
+      "ipa": "ə ˈfɑːr kraɪ frʌm",
+      "pos": "idiom",
+      "def": "Very different from something.",
+      "he": "רחוק מאוד מ־, שונה בתכלית",
+      "family": [],
+      "ex": [
+        "Her new flat is [a far cry from] the tiny room she rented as a student.",
+        "The final result was [a far cry from] what we'd promised.",
+        "Today's smartphones are [a far cry from] the first mobile phones."
+      ],
+      "col": [
+        "a far cry from",
+        "quite a far cry from"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "very different from",
+        "nothing like",
+        "a world away from"
+      ],
+      "nuance": "A far cry from stresses a large difference, often in quality or standard — improvement or decline.",
+      "ety": "Originally 'a long way', as far as a shout could carry.",
+      "tier": 1,
+      "themes": [
+        "degree",
+        "quality"
+      ],
+      "prec": {
+        "s": "The five-star resort was ___ the cheap campsites we stayed in as kids.",
+        "opts": [
+          "par for the course",
+          "the tip of the iceberg",
+          "by and large"
+        ],
+        "why": "'A far cry from' means very different from. Par for the course means typical; the tip of the iceberg is a small part of a bigger problem; by and large means generally."
+      }
+    },
+    {
+      "word": "by and large",
+      "ipa": "ˌbaɪ ən ˈlɑːrdʒ",
+      "pos": "idiom",
+      "def": "On the whole; generally, all things considered.",
+      "he": "בסך הכול, באופן כללי",
+      "family": [],
+      "ex": [
+        "[By and large], the trip was a success.",
+        "Students were, [by and large], happy with the course.",
+        "[By and large], the reviews have been positive."
+      ],
+      "col": [
+        "by and large, …",
+        "was, by and large, …"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "on the whole",
+        "generally",
+        "overall",
+        "for the most part"
+      ],
+      "nuance": "By and large allows for exceptions while giving an overall judgement. It's slightly more idiomatic than 'generally'.",
+      "ety": "A sailing term: sailing 'by' (into the wind) and 'large' (with the wind) — handling a ship well in all conditions.",
+      "tier": 1,
+      "themes": [
+        "degree",
+        "speech"
+      ],
+      "prec": {
+        "s": "There were a few problems with the hotel, but ___, we enjoyed our stay.",
+        "opts": [
+          "to no avail",
+          "touch and go",
+          "on the fence"
+        ],
+        "why": "'By and large' = overall, generally. To no avail means without success; touch and go means uncertain; on the fence means undecided."
+      }
+    },
+    {
+      "word": "cut to the chase",
+      "ipa": "kʌt tə ðə ˈtʃeɪs",
+      "pos": "idiom",
+      "def": "To get to the most important point without wasting time.",
+      "he": "לגשת ישר לעניין",
+      "family": [],
+      "ex": [
+        "Let's [cut to the chase]: how much will it cost?",
+        "I'll [cut to the chase] — we need more money.",
+        "He [cut to the chase] and asked her to marry him."
+      ],
+      "col": [
+        "let's cut to the chase",
+        "I'll cut to the chase"
+      ],
+      "reg": "informal",
+      "syn": [
+        "get to the point",
+        "get down to business"
+      ],
+      "nuance": "Cut to the chase is a request or decision to skip details. Opposite: beat around the bush.",
+      "ety": "From early Hollywood: editors would 'cut to the chase scene' to skip boring dialogue.",
+      "tier": 1,
+      "themes": [
+        "speech",
+        "work"
+      ],
+      "prec": {
+        "s": "We've only got five minutes, so let me ___: we need your signature today.",
+        "opts": [
+          "beat around the bush",
+          "pay lip service",
+          "play devil's advocate"
+        ],
+        "why": "Cut to the chase = go straight to the main point. Beat around the bush is the opposite; pay lip service means support only in words; play devil's advocate means argue the opposite."
+      }
+    },
+    {
+      "word": "a foregone conclusion",
+      "ipa": "ə ˌfɔːrɡɔːn kənˈkluːʒn",
+      "pos": "idiom",
+      "def": "A result that is certain before it happens.",
+      "he": "דבר ידוע מראש, מסקנה ידועה מראש",
+      "family": [],
+      "ex": [
+        "With the champion injured, the result was [a foregone conclusion].",
+        "Her promotion is not [a foregone conclusion].",
+        "The election was seen as [a foregone conclusion]."
+      ],
+      "col": [
+        "a foregone conclusion",
+        "far from a foregone conclusion",
+        "by no means a foregone conclusion"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "certainty",
+        "inevitability",
+        "sure thing"
+      ],
+      "nuance": "Often used in the negative: 'it's by no means a foregone conclusion' = it's not certain. Note the spelling foregone (gone before).",
+      "ety": "From Shakespeare's 'Othello' (1604).",
+      "tier": 1,
+      "themes": [
+        "thinking",
+        "change"
+      ],
+      "prec": {
+        "s": "With the opposition leader in prison, the election result was ___.",
+        "opts": [
+          "a moot point",
+          "a red herring",
+          "a vicious circle"
+        ],
+        "why": "A foregone conclusion is a certain result. A moot point is no longer relevant; a red herring is a distraction; a vicious circle is a self-reinforcing problem."
+      }
+    },
+    {
+      "word": "the lion's share",
+      "ipa": "ðə ˈlaɪənz ˈʃer",
+      "pos": "idiom",
+      "def": "The largest part of something.",
+      "he": "חלק הארי",
+      "family": [],
+      "ex": [
+        "The CEO took [the lion's share] of the profits.",
+        "Exports account for [the lion's share] of the company's revenue.",
+        "She did [the lion's share] of the work but got none of the credit."
+      ],
+      "col": [
+        "the lion's share of",
+        "take the lion's share",
+        "get the lion's share"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "the majority",
+        "the bulk",
+        "most"
+      ],
+      "nuance": "The lion's share often suggests an unfair amount taken by the most powerful. The bulk is neutral.",
+      "ety": "From Aesop's fable in which a lion takes all the prey after hunting with other animals.",
+      "tier": 1,
+      "themes": [
+        "degree",
+        "money"
+      ],
+      "prec": {
+        "s": "Although five people worked on the project, the manager took ___ of the bonus.",
+        "opts": [
+          "the tip of the iceberg",
+          "a far cry",
+          "the elephant in the room"
+        ],
+        "why": "The lion's share is the largest part, often unfairly taken. The tip of the iceberg is a small visible part; 'a far cry' means very different; the elephant in the room is an avoided problem."
+      }
+    },
+    {
+      "word": "pay lip service to",
+      "ipa": "peɪ ˈlɪp ˌsɜːrvɪs tuː",
+      "pos": "idiom",
+      "def": "To say you support something without doing anything to help it.",
+      "he": "מס שפתיים",
+      "family": [],
+      "ex": [
+        "The company [pays lip service to] diversity, but the board is all men.",
+        "Politicians [pay lip service to] the environment and then approve new airports.",
+        "It's not enough to [pay lip service to] equality."
+      ],
+      "col": [
+        "pay lip service to",
+        "mere lip service",
+        "more than lip service"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "give token support",
+        "talk the talk"
+      ],
+      "nuance": "Pay lip service is about hypocrisy — support in words only. Hebrew has the exact equivalent 'מס שפתיים'.",
+      "ety": "From the Bible (Isaiah 29:13): 'this people honour me with their lips, but have removed their heart far from me'.",
+      "tier": 1,
+      "themes": [
+        "speech",
+        "society"
+      ],
+      "prec": {
+        "s": "The government claims to care about mental health, but it only ___ the issue — funding has been cut.",
+        "opts": [
+          "plays devil's advocate on",
+          "cuts to the chase on",
+          "jumps on the bandwagon of"
+        ],
+        "why": "Paying lip service to something means supporting it in words only. The others mean argue the other side, get straight to the point, and follow a trend.",
+        "ans": "pays lip service to"
+      }
+    },
+    {
+      "word": "a steep learning curve",
+      "ipa": "ə ˈstiːp ˈlɜːrnɪŋ ˌkɜːrv",
+      "pos": "idiom",
+      "def": "A situation where you have to learn a lot very quickly.",
+      "he": "עקומת למידה תלולה",
+      "family": [
+        "learning curve (n.)"
+      ],
+      "ex": [
+        "Moving to a new country was [a steep learning curve].",
+        "The software has [a steep learning curve], but it's powerful.",
+        "Becoming a parent is [a steep learning curve]."
+      ],
+      "col": [
+        "a steep learning curve",
+        "be on a learning curve",
+        "face a steep learning curve"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "a big challenge",
+        "a crash course"
+      ],
+      "nuance": "In everyday use, 'steep learning curve' means difficult and intense learning. (Technically a steep curve means fast progress, but the everyday meaning has won.)",
+      "ety": "From psychology graphs plotting learning progress against time.",
+      "tier": 1,
+      "themes": [
+        "work",
+        "knowledge"
+      ],
+      "prec": {
+        "s": "My first month as a junior doctor was ___: I had to learn a hundred procedures at once.",
+        "opts": [
+          "par for the course",
+          "a catch-22",
+          "a blessing in disguise"
+        ],
+        "why": "A steep learning curve = having to learn a lot quickly. Par for the course is normal and expected; a catch-22 is a no-win trap; a blessing in disguise turns out well."
+      }
+    },
+    {
+      "word": "take with a grain of salt",
+      "ipa": "teɪk wɪð ə ˈɡreɪn əv ˈsɔːlt",
+      "pos": "idiom",
+      "def": "To be sceptical about something; not to believe it completely.",
+      "he": "להתייחס בספקנות, בעירבון מוגבל",
+      "family": [],
+      "ex": [
+        "Online reviews should be [taken with a grain of salt].",
+        "I [take what he says with a grain of salt] — he exaggerates everything.",
+        "The figures should be [taken with a grain of salt]."
+      ],
+      "col": [
+        "take something with a grain of salt",
+        "(UK) take something with a pinch of salt"
+      ],
+      "reg": "informal",
+      "syn": [
+        "be sceptical of",
+        "not take at face value",
+        "have reservations about"
+      ],
+      "nuance": "US English says 'grain of salt'; UK English usually says 'pinch of salt'. Opposite: take at face value.",
+      "ety": "From Latin 'cum grano salis' — Pliny's remedy against poison included a grain of salt.",
+      "tier": 1,
+      "themes": [
+        "knowledge",
+        "thinking"
+      ],
+      "prec": {
+        "s": "His stories about meeting celebrities are fun, but I'd take them ___.",
+        "opts": [
+          "at face value",
+          "to heart",
+          "for granted"
+        ],
+        "ans": "with a grain of salt",
+        "why": "Take something with a grain of salt = don't fully believe it. Take at face value means believe completely; take to heart means be deeply affected; take for granted means fail to appreciate."
+      }
+    },
+    {
+      "word": "throw caution to the wind",
+      "ipa": "θroʊ ˈkɔːʃn tə ðə ˈwɪnd",
+      "pos": "idiom",
+      "def": "To act in a very risky way, without worrying about the consequences.",
+      "he": "לזנוח כל זהירות, לקחת סיכון",
+      "family": [],
+      "ex": [
+        "We [threw caution to the wind] and spent all our savings on a trip around the world.",
+        "For once, she [threw caution to the wind] and said yes.",
+        "Investors [threw caution to the wind] during the boom."
+      ],
+      "col": [
+        "throw caution to the wind(s)",
+        "decide to throw caution to the wind"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "take a risk",
+        "take the plunge",
+        "go for broke"
+      ],
+      "nuance": "Throw caution to the wind can be admiring (bold) or critical (reckless). Opposite: err on the side of caution.",
+      "ety": "As if tossing your caution into the wind to be blown away.",
+      "tier": 1,
+      "themes": [
+        "character"
+      ],
+      "prec": {
+        "s": "For once in her careful life, she ___ and bought a one-way ticket to Brazil.",
+        "opts": [
+          "erred on the side of caution",
+          "bit the bullet",
+          "cut corners"
+        ],
+        "why": "Threw caution to the wind = acted boldly without worrying about risks. Err on the side of caution is the opposite; bite the bullet is forcing yourself to do something unpleasant; cut corners is doing a poor job to save effort.",
+        "ans": "threw caution to the wind"
+      }
+    },
+    {
+      "word": "touch and go",
+      "ipa": "ˌtʌtʃ ən ˈɡoʊ",
+      "pos": "idiom",
+      "def": "(Of a situation) very uncertain; risky, with a real chance of a bad result.",
+      "he": "על חוט השערה, לא ודאי",
+      "family": [],
+      "ex": [
+        "It was [touch and go] whether we'd catch the last train.",
+        "After the operation, it was [touch and go] for a few days.",
+        "The final was [touch and go] until the last minute."
+      ],
+      "col": [
+        "it was touch and go",
+        "touch and go whether"
+      ],
+      "reg": "informal",
+      "syn": [
+        "uncertain",
+        "precarious",
+        "on a knife-edge",
+        "close-run"
+      ],
+      "nuance": "Touch and go is used mostly about outcomes (survival, success, timing) that could easily have gone badly.",
+      "ety": "Possibly from a ship or carriage that touches an obstacle briefly and keeps going.",
+      "tier": 2,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "After the accident, it was ___ for a while, but the doctors say he'll make a full recovery.",
+        "opts": [
+          "by and large",
+          "on the fence",
+          "par for the course"
+        ],
+        "why": "Touch and go = very uncertain, could go either way. By and large means generally; on the fence means undecided; par for the course means normal and expected."
+      }
+    },
+    {
+      "word": "to no avail",
+      "ipa": "tə ˌnoʊ əˈveɪl",
+      "pos": "idiom",
+      "def": "Without success; with no result.",
+      "he": "ללא הועיל, לשווא",
+      "family": [
+        "avail (n./v.)",
+        "available (adj., related)"
+      ],
+      "ex": [
+        "We searched everywhere for the keys, but [to no avail].",
+        "She tried to persuade him, [to no avail].",
+        "Doctors tried everything, but [to no avail]."
+      ],
+      "col": [
+        "to no avail",
+        "but to no avail",
+        "of no avail"
+      ],
+      "reg": "formal",
+      "syn": [
+        "in vain",
+        "unsuccessfully",
+        "fruitlessly",
+        "futilely"
+      ],
+      "nuance": "To no avail usually follows an effort described in the sentence. 'In vain' is very close and slightly more literary.",
+      "ety": "avail 'help, benefit', from Old French valoir 'to be worth'.",
+      "tier": 1,
+      "themes": [
+        "work"
+      ],
+      "prec": {
+        "s": "Firefighters battled the blaze all night, but ___; the building was destroyed.",
+        "opts": [
+          "by and large",
+          "touch and go",
+          "on the fence"
+        ],
+        "why": "'To no avail' = without success, which matches the destroyed building. By and large means generally; touch and go means uncertain; on the fence means undecided."
+      }
+    },
+    {
+      "word": "go the extra mile",
+      "ipa": "ɡoʊ ði ˈekstrə ˈmaɪl",
+      "pos": "idiom",
+      "def": "To make more effort than is expected.",
+      "he": "להתאמץ מעבר למצופה",
+      "family": [],
+      "ex": [
+        "Our staff always [go the extra mile] for customers.",
+        "She [went the extra mile] and drove me to the airport.",
+        "Employers value people who [go the extra mile]."
+      ],
+      "col": [
+        "go the extra mile for someone",
+        "willing to go the extra mile"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "go above and beyond",
+        "bend over backwards",
+        "make an extra effort"
+      ],
+      "nuance": "Go the extra mile is praise for effort beyond duty. Bend over backwards suggests trying extremely hard to please.",
+      "ety": "From the Bible (Matthew 5:41): 'whoever compels you to go one mile, go with him two'.",
+      "tier": 1,
+      "themes": [
+        "work",
+        "character"
+      ],
+      "prec": {
+        "s": "The hotel manager really ___: when my luggage was lost, she lent me clothes and found a pharmacy open at midnight.",
+        "opts": [
+          "cut corners",
+          "jumped on the bandwagon",
+          "beat around the bush"
+        ],
+        "why": "Went the extra mile = made more effort than expected. Cut corners is doing the minimum badly; jumped on the bandwagon means followed a trend; beat around the bush means avoided the point.",
+        "ans": "went the extra mile"
+      }
+    },
+    {
+      "word": "a vicious circle",
+      "ipa": "ə ˌvɪʃəs ˈsɜːrkl",
+      "pos": "idiom",
+      "def": "A situation in which one problem causes another, which then makes the first problem worse.",
+      "he": "מעגל קסמים (שלילי)",
+      "family": [],
+      "ex": [
+        "Poverty and poor health form [a vicious circle].",
+        "I can't sleep because I'm stressed, and I'm stressed because I can't sleep — it's [a vicious circle].",
+        "Debt can trap families in [a vicious circle]."
+      ],
+      "col": [
+        "break the vicious circle",
+        "trapped in a vicious circle",
+        "(US) a vicious cycle"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "vicious cycle",
+        "downward spiral",
+        "catch-22"
+      ],
+      "nuance": "A vicious circle keeps making itself worse. A catch-22 is a trap of contradictory rules. The opposite is a virtuous circle.",
+      "ety": "From logic: a 'vicious' (faulty) circular argument.",
+      "tier": 1,
+      "themes": [
+        "change"
+      ],
+      "prec": {
+        "s": "Poor sleep makes you anxious, and anxiety ruins your sleep — ___.",
+        "opts": [
+          "a double-edged sword",
+          "a moot point",
+          "a foregone conclusion"
+        ],
+        "why": "A vicious circle: each problem makes the other worse. A double-edged sword has both pros and cons; a moot point is irrelevant now; a foregone conclusion is certain."
+      }
+    },
+    {
+      "word": "par for the course",
+      "ipa": "ˌpɑːr fər ðə ˈkɔːrs",
+      "pos": "idiom",
+      "def": "Normal or expected, especially of something bad.",
+      "he": "עניין שבשגרה, הדבר הצפוי",
+      "family": [],
+      "ex": [
+        "Long hours are [par for the course] in this job.",
+        "The train was late again — that's [par for the course].",
+        "Criticism is [par for the course] for a politician."
+      ],
+      "col": [
+        "that's par for the course",
+        "par for the course in"
+      ],
+      "reg": "neutral",
+      "syn": [
+        "typical",
+        "normal",
+        "to be expected",
+        "standard"
+      ],
+      "nuance": "Par for the course usually describes something annoying but typical — expressing resignation.",
+      "ety": "From golf: 'par' is the expected number of strokes for a course.",
+      "tier": 1,
+      "themes": [
+        "quality"
+      ],
+      "prec": {
+        "s": "Sleepless nights are ___ when you have a newborn baby.",
+        "opts": [
+          "a far cry",
+          "touch and go",
+          "a red herring"
+        ],
+        "why": "Par for the course = typical, to be expected. 'A far cry' means very different; touch and go means uncertain; a red herring is a distraction."
+      }
+    },
+    {
+      "word": "bury the hatchet",
+      "ipa": "ˈberi ðə ˈhætʃɪt",
+      "pos": "idiom",
+      "def": "To end a quarrel and become friendly again.",
+      "he": "לקבור את הגרזן, להשלים",
+      "family": [],
+      "ex": [
+        "After years of not speaking, the two brothers finally [buried the hatchet].",
+        "It's time to [bury the hatchet] and work together.",
+        "The rival companies have [buried the hatchet]."
+      ],
+      "col": [
+        "finally bury the hatchet",
+        "time to bury the hatchet"
+      ],
+      "reg": "informal",
+      "syn": [
+        "make peace",
+        "reconcile",
+        "make up",
+        "let bygones be bygones"
+      ],
+      "nuance": "Bury the hatchet is ending a long-running conflict. Make up is for smaller fights, often between friends or couples.",
+      "ety": "From a Native American ceremony of burying weapons to mark peace.",
+      "tier": 1,
+      "themes": [
+        "relationships",
+        "conflict"
+      ],
+      "prec": {
+        "s": "After a ten-year feud, the two old bandmates ___ and went on tour together.",
+        "opts": [
+          "kept each other at arm's length",
+          "added insult to injury",
+          "jumped the gun"
+        ],
+        "why": "Buried the hatchet = ended the quarrel. Keeping someone at arm's length is avoiding closeness; adding insult to injury makes things worse; jumping the gun is acting too early.",
+        "ans": "buried the hatchet"
+      }
+    },
+    {
+      "word": "a Pyrrhic victory",
+      "ipa": "ə ˌpɪrɪk ˈvɪktəri",
+      "pos": "idiom",
+      "def": "A victory that costs the winner so much that it is hardly worth winning.",
+      "he": "ניצחון פירוס",
+      "family": [
+        "Pyrrhic (adj.)"
+      ],
+      "ex": [
+        "Winning the lawsuit was [a Pyrrhic victory] — the legal fees bankrupted the company.",
+        "The party won the vote, but it may prove [a Pyrrhic victory].",
+        "They took the hill, but it was [a Pyrrhic victory]."
+      ],
+      "col": [
+        "a Pyrrhic victory",
+        "prove a Pyrrhic victory"
+      ],
+      "reg": "literary",
+      "syn": [
+        "hollow victory",
+        "empty victory"
+      ],
+      "nuance": "A Pyrrhic victory costs more than it gains. A hollow victory feels meaningless, but not necessarily because of its cost.",
+      "ety": "After King Pyrrhus of Epirus, whose victories over Rome in 279 BC destroyed most of his army.",
+      "tier": 2,
+      "themes": [
+        "conflict"
+      ],
+      "prec": {
+        "s": "He won custody of the house, but after three years of legal fees it was ___.",
+        "opts": [
+          "a blessing in disguise",
+          "par for the course",
+          "a steep learning curve"
+        ],
+        "why": "A Pyrrhic victory is a win that costs so much it's hardly worth it. A blessing in disguise is a misfortune that turns out well; par for the course is typical; a steep learning curve is intense learning."
+      }
+    }
+  ]
+}

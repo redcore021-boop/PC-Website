@@ -32,9 +32,9 @@ export function normalize(s: string): string {
 
 export type MatchResult = 'exact' | 'typo' | 'wrong';
 
-/** Allowed edits scale with length: 0 for very short words, 1 up to 7 letters, 2 beyond. */
+/** Allowed edits scale with length: 0 up to 4 letters, 1 up to 7 letters, 2 beyond. */
 export function allowedTypos(len: number): number {
-  if (len <= 3) return 0;
+  if (len <= 4) return 0;
   if (len <= 7) return 1;
   return 2;
 }
