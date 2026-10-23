@@ -175,6 +175,18 @@ for (let d = 1; d <= 60; d++) {
       tx.oncomplete = res;
     };
   }), DAY);
+  if (d === 3) {
+    // the sentence card is the last step of a long path; place one word there directly to exercise it
+    await page.evaluate(() => new Promise((res) => {
+      const r = indexedDB.open('lexicon');
+      r.onsuccess = () => {
+        const tx = r.result.transaction('progress', 'readwrite');
+        tx.objectStore('progress').put({ wordId: 'salient', level: 3, production: 2, mistakes: 0, introducedAt: Date.now() - 30 * 864e5, mastered: false,
+          card: { due: new Date(Date.now() - 1000), stability: 20, difficulty: 5, elapsed_days: 0, scheduled_days: 20, learning_steps: 0, reps: 4, lapses: 0, state: 2, last_review: new Date(Date.now() - 20 * 864e5) } });
+        tx.oncomplete = res;
+      };
+    }));
+  }
   await page.reload();
   try {
     await page.getByText('words started').waitFor({ timeout: 8000 });

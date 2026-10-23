@@ -81,8 +81,8 @@ export function Onboarding({ onDone }: { onDone: () => void }) {
             ))}
           </div>
           <label className="pace" style={{ marginTop: 16, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
-            <span style={{ flex: 1 }}>
-              <strong>Show Hebrew automatically</strong>
+            <span style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
+              <strong style={{ color: 'var(--ink)', fontSize: 16 }}>Show Hebrew automatically</strong>
               <span>Off: tap “עברית” to reveal it when you need it</span>
             </span>
             <span className="switch">
