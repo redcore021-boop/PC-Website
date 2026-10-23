@@ -10,6 +10,7 @@ export const DEFAULT_SETTINGS: Settings = {
   showHebrew: false,
   theme: 'dark',
   autoplayAudio: false,
+  reminderTime: '20:00',
 };
 
 export async function loadSettings(): Promise<Settings> {
@@ -112,4 +113,14 @@ export function computeStreak(days: DayLog[], now = new Date()): { current: numb
     prev = d;
   }
   return { current, best, todayDone };
+}
+
+/** The last `n` study days, oldest first, with whether the daily goal was met on each. */
+export function recentDays(days: DayLog[], n = 7, now = new Date()): { day: string; met: boolean; today: boolean }[] {
+  const met = new Set(days.filter((d) => d.goalMet).map((d) => d.day));
+  const today = dayKey(now);
+  return Array.from({ length: n }, (_, i) => {
+    const day = addDays(today, i - n + 1);
+    return { day, met: met.has(day), today: day === today };
+  });
 }

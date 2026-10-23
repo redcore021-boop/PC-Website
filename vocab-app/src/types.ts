@@ -92,6 +92,8 @@ export interface Settings {
   showHebrew: boolean;
   theme: 'dark' | 'light' | 'system';
   autoplayAudio: boolean;
+  /** Daily reminder time, HH:MM (used for the calendar event) */
+  reminderTime: string;
 }
 
 export interface UserSentence {
