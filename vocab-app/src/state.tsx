@@ -57,7 +57,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     const all = [...builtInWords, ...custom.filter((w) => !builtInIds.has(w.id)).map((w) => ({ ...w, custom: true }))];
     return all.map((w) => {
       const e = editById.get(w.id);
-      return e?.he !== undefined ? { ...w, he: e.he } : w;
+      return e?.he !== undefined ? { ...w, he: e.he, hs: e.he } : w;
     });
   }, [custom, edits]);
 

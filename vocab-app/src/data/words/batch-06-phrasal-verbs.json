@@ -7,6 +7,9 @@
       "ipa": "kʌm əˈkrɔːs æz",
       "pos": "phrasal verb",
       "def": "To give a particular impression to other people.",
+      "simple": "To seem like a certain kind of person.",
+      "hs": "להיראות כ־",
+      "easy": "He can [come across as] rude, but he's just shy.",
       "he": "להיראות כ־, ליצור רושם של",
       "family": [],
       "ex": [
@@ -47,6 +50,9 @@
       "ipa": "ɡlɑːs ˈoʊvər",
       "pos": "phrasal verb",
       "def": "To deal with a problem or mistake quickly so that people don't notice it or think about it.",
+      "simple": "To talk about a problem quickly so people don't notice it.",
+      "hs": "לטשטש",
+      "easy": "The report [glosses over] the mistakes.",
       "he": "לטשטש, לעבור על משהו בחטף",
       "family": [],
       "ex": [
@@ -89,6 +95,9 @@
       "ipa": "brʌʃ ˈɔːf",
       "pos": "phrasal verb",
       "def": "To refuse to listen to or consider someone or something; to dismiss rudely.",
+      "simple": "To ignore something or someone in a rude way.",
+      "hs": "לבטל בזלזול",
+      "easy": "She [brushed off] my question.",
       "he": "לבטל, לדחות בזלזול",
       "family": [
         "brush-off (n.)"
@@ -133,6 +142,9 @@
       "ipa": "ˈbæŋk ɑːn",
       "pos": "phrasal verb",
       "def": "To rely on something happening or someone doing something.",
+      "simple": "To count on something happening.",
+      "hs": "לסמוך על",
+      "easy": "Don't [bank on] getting a bonus.",
       "he": "לסמוך על, להמר על",
       "family": [],
       "ex": [
@@ -175,6 +187,9 @@
       "ipa": "ˈaɪərn aʊt",
       "pos": "phrasal verb",
       "def": "To resolve small problems or differences.",
+      "simple": "To solve small problems.",
+      "hs": "ליישב",
+      "easy": "We still need to [iron out] a few details.",
       "he": "ליישב, להחליק (בעיות)",
       "family": [],
       "ex": [
@@ -215,6 +230,9 @@
       "ipa": "pleɪ ˈdaʊn",
       "pos": "phrasal verb",
       "def": "To make something seem less important or serious than it really is.",
+      "simple": "To make something seem less important.",
+      "hs": "להמעיט בחשיבות",
+      "easy": "He [played down] his part in the win.",
       "he": "להמעיט בחשיבות, להצניע",
       "family": [
         "downplay (v.)"
@@ -257,6 +275,9 @@
       "ipa": "mʌl ˈoʊvər",
       "pos": "phrasal verb",
       "def": "To think carefully about something over a period of time.",
+      "simple": "To think about something slowly and carefully.",
+      "hs": "להרהר",
+      "easy": "Let me [mull it over] tonight.",
       "he": "לשקול, להרהר ב־",
       "family": [],
       "ex": [
@@ -299,6 +320,9 @@
       "ipa": "ˈstem frʌm",
       "pos": "phrasal verb",
       "def": "To originate in or be caused by.",
+      "simple": "To be caused by.",
+      "hs": "לנבוע מ־",
+      "easy": "Her fear [stems from] a bad childhood.",
       "he": "לנבוע מ־",
       "family": [],
       "ex": [
@@ -340,6 +364,9 @@
       "ipa": "fɔːl ˈθruː",
       "pos": "phrasal verb",
       "def": "(Of a plan or deal) to fail to happen.",
+      "simple": "To fail to happen.",
+      "hs": "להתבטל",
+      "easy": "Our holiday plans [fell through].",
       "he": "לא לצאת לפועל, להתבטל",
       "family": [],
       "ex": [
@@ -382,6 +409,9 @@
       "ipa": "bæk ˈdaʊn",
       "pos": "phrasal verb",
       "def": "To withdraw a claim or position; to concede defeat in an argument.",
+      "simple": "To stop arguing and give up your position.",
+      "hs": "לסגת",
+      "easy": "He refused to [back down].",
       "he": "לסגת, להתקפל",
       "family": [
         "climbdown (n., related)"
@@ -425,6 +455,9 @@
       "ipa": "ˈbʌtər ʌp",
       "pos": "phrasal verb",
       "def": "To flatter someone in order to get something.",
+      "simple": "To be extra nice to someone to get something.",
+      "hs": "לחנף",
+      "easy": "He's [buttering up] the boss for a day off.",
       "he": "לחנף, ללקק",
       "family": [],
       "ex": [
@@ -465,6 +498,9 @@
       "ipa": "kræk ˈdaʊn ɑːn",
       "pos": "phrasal verb",
       "def": "To take severe measures against something illegal or undesirable.",
+      "simple": "To deal very strongly with something bad.",
+      "hs": "לפעול ביד קשה",
+      "easy": "Police are [cracking down on] speeding.",
       "he": "לפעול ביד קשה נגד",
       "family": [
         "crackdown (n.)"
@@ -508,6 +544,9 @@
       "ipa": "dræɡ ˈɑːn",
       "pos": "phrasal verb",
       "def": "To continue for longer than is necessary or wanted.",
+      "simple": "To go on for too long.",
+      "hs": "להימשך",
+      "easy": "The meeting [dragged on] for hours.",
       "he": "להימשך עוד ועוד, להתמשך",
       "family": [],
       "ex": [
@@ -549,6 +588,9 @@
       "ipa": "ˈdwel ɑːn",
       "pos": "phrasal verb",
       "def": "To think or talk about something, especially something unpleasant, for too long.",
+      "simple": "To keep thinking about something bad.",
+      "hs": "להתעכב על",
+      "easy": "Don't [dwell on] your mistakes.",
       "he": "להתעכב על, לשקוע במחשבות על",
       "family": [],
       "ex": [
@@ -591,6 +633,9 @@
       "ipa": "eɡ ˈɑːn",
       "pos": "phrasal verb",
       "def": "To urge or encourage someone to do something, usually something foolish or risky.",
+      "simple": "To push someone to do something silly or risky.",
+      "hs": "לדרבן",
+      "easy": "His friends [egged him on] to jump.",
       "he": "לדרבן, להסית",
       "family": [],
       "ex": [
@@ -632,6 +677,9 @@
       "ipa": "fend ˈɔːf",
       "pos": "phrasal verb",
       "def": "To defend yourself against an attack, criticism or unwanted questions.",
+      "simple": "To push away an attack or questions.",
+      "hs": "להדוף",
+      "easy": "She [fended off] questions about her job.",
       "he": "להדוף, לגונן מפני",
       "family": [],
       "ex": [
@@ -674,6 +722,9 @@
       "ipa": "ˈhɪndʒ ɑːn",
       "pos": "phrasal verb",
       "def": "To depend entirely on something.",
+      "simple": "To depend completely on.",
+      "hs": "להיות תלוי ב־",
+      "easy": "Everything [hinges on] the next game.",
       "he": "להיות תלוי לחלוטין ב־",
       "family": [],
       "ex": [
@@ -716,6 +767,9 @@
       "ipa": "hoʊm ˈɪn ɑːn",
       "pos": "phrasal verb",
       "def": "To focus attention on something; to move directly towards a target.",
+      "simple": "To focus on one exact thing.",
+      "hs": "להתמקד ב־",
+      "easy": "The doctor [homed in on] the real problem.",
       "he": "להתמקד ב־, לכוון אל",
       "family": [],
       "ex": [
@@ -758,6 +812,9 @@
       "ipa": "læʃ ˈaʊt",
       "pos": "phrasal verb",
       "def": "To suddenly attack someone physically or verbally.",
+      "simple": "To suddenly attack someone with words or blows.",
+      "hs": "להתפרץ",
+      "easy": "When he's tired, he [lashes out] at people.",
       "he": "להתפרץ, לתקוף לפתע",
       "family": [],
       "ex": [
@@ -800,6 +857,9 @@
       "ipa": "lɪv ˈʌp tuː",
       "pos": "phrasal verb",
       "def": "To be as good as what was expected or promised.",
+      "simple": "To be as good as people expected.",
+      "hs": "לעמוד בציפיות",
+      "easy": "The hotel [lived up to] its great reviews.",
       "he": "לעמוד בציפיות",
       "family": [],
       "ex": [
@@ -841,6 +901,9 @@
       "ipa": "pæn ˈaʊt",
       "pos": "phrasal verb",
       "def": "To develop or turn out in a particular way, especially successfully.",
+      "simple": "To turn out in a certain way.",
+      "hs": "להסתדר",
+      "easy": "Let's see how things [pan out].",
       "he": "להתפתח, להסתדר",
       "family": [],
       "ex": [
@@ -883,6 +946,9 @@
       "ipa": "pɪn ˈdaʊn",
       "pos": "phrasal verb",
       "def": "To identify something exactly; to force someone to be specific about a decision or opinion.",
+      "simple": "To find out or say exactly what something is.",
+      "hs": "להגדיר במדויק",
+      "easy": "It's hard to [pin down] why I like it.",
       "he": "לזהות במדויק; לחייב להתחייב",
       "family": [],
       "ex": [
@@ -924,6 +990,9 @@
       "ipa": "reɪn ˈɪn",
       "pos": "phrasal verb",
       "def": "To restrict or control something or someone more tightly.",
+      "simple": "To control something more tightly.",
+      "hs": "לרסן",
+      "easy": "We need to [rein in] spending.",
       "he": "לרסן",
       "family": [],
       "ex": [
@@ -966,6 +1035,9 @@
       "ipa": "ruːl ˈaʊt",
       "pos": "phrasal verb",
       "def": "To exclude a possibility or option.",
+      "simple": "To decide something is not possible.",
+      "hs": "לשלול",
+      "easy": "Police haven't [ruled out] murder.",
       "he": "לשלול, לפסול",
       "family": [],
       "ex": [
@@ -1008,6 +1080,9 @@
       "ipa": "ˈsɪŋɡl aʊt",
       "pos": "phrasal verb",
       "def": "To choose one person or thing from a group for special attention, praise or criticism.",
+      "simple": "To choose one person from a group.",
+      "hs": "לייחד",
+      "easy": "The teacher [singled her out] for praise.",
       "he": "לייחד, לבחור במיוחד",
       "family": [],
       "ex": [
@@ -1050,6 +1125,9 @@
       "ipa": "saʊnd ˈaʊt",
       "pos": "phrasal verb",
       "def": "To talk to someone informally to find out their opinion before making a decision.",
+      "simple": "To ask someone's opinion quietly before deciding.",
+      "hs": "לגשש",
+      "easy": "I'll [sound out] my boss first.",
       "he": "לגשש, לבדוק את דעתו של",
       "family": [],
       "ex": [
@@ -1092,6 +1170,9 @@
       "ipa": "steɪv ˈɔːf",
       "pos": "phrasal verb",
       "def": "To prevent something bad from happening, or delay it.",
+      "simple": "To stop something bad from happening for a while.",
+      "hs": "למנוע, לדחות",
+      "easy": "We ate fruit to [stave off] hunger.",
       "he": "למנוע, לדחות (סכנה)",
       "family": [],
       "ex": [
@@ -1134,6 +1215,9 @@
       "ipa": "step ˈdaʊn",
       "pos": "phrasal verb",
       "def": "To resign from an important position.",
+      "simple": "To leave an important job.",
+      "hs": "להתפטר",
+      "easy": "The CEO will [step down] next year.",
       "he": "להתפטר, לפנות את מקומו",
       "family": [],
       "ex": [
@@ -1175,6 +1259,9 @@
       "ipa": "ˈrɪɡl aʊt əv",
       "pos": "phrasal verb",
       "def": "To avoid doing something you should do, especially by making clever excuses.",
+      "simple": "To avoid doing something by making excuses.",
+      "hs": "להתחמק מ־",
+      "easy": "He always [wriggles out of] the dishes.",
       "he": "להתחמק מ־",
       "family": [],
       "ex": [
@@ -1216,6 +1303,9 @@
       "ipa": "tʃɪp ˈɪn",
       "pos": "phrasal verb",
       "def": "To contribute money or help to something shared; to interrupt a conversation with a comment.",
+      "simple": "To give money or help together with others.",
+      "hs": "להשתתף, לתרום",
+      "easy": "We all [chipped in] for her gift.",
       "he": "להשתתף (בכסף), לתרום; להתערב בשיחה",
       "family": [],
       "ex": [
@@ -1258,6 +1348,9 @@
       "ipa": "ber ˈaʊt",
       "pos": "phrasal verb",
       "def": "To support or confirm that something is true.",
+      "simple": "To show that something is true.",
+      "hs": "לאשש",
+      "easy": "The facts [bear out] her story.",
       "he": "לאשש, לאשר",
       "family": [],
       "ex": [
@@ -1299,6 +1392,9 @@
       "ipa": "oʊn ˈʌp tuː",
       "pos": "phrasal verb",
       "def": "To admit that you have done something wrong.",
+      "simple": "To admit you did something wrong.",
+      "hs": "להודות ב־",
+      "easy": "Nobody [owned up to] breaking the window.",
       "he": "להודות ב־, ליטול אחריות על",
       "family": [],
       "ex": [
@@ -1340,6 +1436,9 @@
       "ipa": "ræk ˈʌp",
       "pos": "phrasal verb",
       "def": "To accumulate or achieve a large number of something, such as points, debts or profits.",
+      "simple": "To collect a lot of something.",
+      "hs": "לצבור",
+      "easy": "The video [racked up] a million views.",
       "he": "לצבור",
       "family": [],
       "ex": [
@@ -1383,6 +1482,9 @@
       "ipa": "ʃrʌɡ ˈɔːf",
       "pos": "phrasal verb",
       "def": "To treat something as unimportant; to get rid of something easily.",
+      "simple": "To not let something bother you.",
+      "hs": "להתעלם מ־",
+      "easy": "He [shrugged off] the bad reviews.",
       "he": "לבטל בהינף כתף, להתעלם מ־",
       "family": [],
       "ex": [
@@ -1425,6 +1527,9 @@
       "ipa": "weɪ ˈʌp",
       "pos": "phrasal verb",
       "def": "To consider the advantages and disadvantages of something carefully before deciding.",
+      "simple": "To think about the good and bad sides before you decide.",
+      "hs": "לשקול",
+      "easy": "[Weigh up] the pros and cons first.",
       "he": "לשקול (יתרונות וחסרונות)",
       "family": [],
       "ex": [

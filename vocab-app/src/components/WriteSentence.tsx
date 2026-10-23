@@ -3,7 +3,8 @@ import type { WordEntry } from '../types';
 import { Rating, type AnswerOutcome } from '../lib/srs';
 import { db } from '../lib/db';
 import { usesWord } from '../lib/usage';
-import { Example, HebrewHint, WordHeader } from './WordBits';
+import { Example, HebrewMeaning, WordHeader } from './WordBits';
+import { allExamples, simpleDef } from '../lib/words';
 
 const RATINGS = [
   { r: Rating.Again, label: 'לא הצלחתי', sub: 'שוב' },
@@ -41,10 +42,10 @@ export function WriteSentence({
       {kind}
       <section className="card prompt-card" dir="ltr" lang="en">
         <WordHeader word={word} size="sm" />
-        <p className="def" style={{ fontSize: 16 }}>
-          {word.def}
+        <HebrewMeaning word={word} />
+        <p className="simple" style={{ marginTop: 10, fontSize: 17 }}>
+          {simpleDef(word)}
         </p>
-        <HebrewHint text={word.he} resetKey={word.id} />
       </section>
       <p className="small muted" style={{ margin: '12px 2px 0' }}>
         כתבו משפט משלכם באנגלית שמשתמש במילה באופן טבעי — הכי טוב על החיים או העבודה שלכם.
@@ -83,7 +84,7 @@ export function WriteSentence({
             <div className="field-label">ככה דוברי אנגלית משתמשים בה</div>
             <section className="card" dir="ltr" lang="en">
               <ul className="examples">
-                {word.ex.map((e, i) => (
+                {allExamples(word).map((e, i) => (
                   <li key={i}>
                     <Example text={e} />
                   </li>

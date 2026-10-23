@@ -7,6 +7,9 @@
       "ipa": "ɪˈfemərəl",
       "pos": "adjective",
       "def": "Lasting for a very short time.",
+      "simple": "Lasting a very short time.",
+      "hs": "חולף",
+      "easy": "Internet fame is often [ephemeral].",
       "he": "חולף, בן חלוף",
       "family": [
         "ephemerality (n.)",
@@ -51,6 +54,9 @@
       "ipa": "ˈtrænziənt",
       "pos": "adjective / noun",
       "def": "Lasting only for a short time; staying in a place only briefly. (n.) A person who stays only briefly.",
+      "simple": "Lasting only for a short time.",
+      "hs": "זמני",
+      "easy": "The pain is [transient] and goes away fast.",
       "he": "ארעי, חולף, זמני",
       "family": [
         "transience (n.)",
@@ -96,6 +102,9 @@
       "ipa": "pəˈreniəl",
       "pos": "adjective / noun",
       "def": "Lasting or recurring for a very long time or forever; (of plants) living for several years.",
+      "simple": "Happening again and again for years.",
+      "hs": "חוזר ונשנה",
+      "easy": "Traffic is a [perennial] problem here.",
       "he": "נצחי, חוזר שוב ושוב; רב־שנתי",
       "family": [
         "perennially (adv.)"
@@ -139,6 +148,9 @@
       "ipa": "əˈnækrənɪzəm",
       "pos": "noun",
       "def": "Something that belongs to a different period of time, especially one that seems old-fashioned now; a chronological error.",
+      "simple": "Something that belongs to another time.",
+      "hs": "אנכרוניזם",
+      "easy": "A fax machine is an [anachronism] today.",
       "he": "אנכרוניזם, דבר שאבד עליו הכלח",
       "family": [
         "anachronistic (adj.)"
@@ -181,6 +193,9 @@
       "ipa": "ˈkrɑːnɪk",
       "pos": "adjective",
       "def": "(Of an illness or problem) lasting for a long time or constantly recurring; (of a person) having a habit that is hard to break.",
+      "simple": "Lasting a long time or coming back often.",
+      "hs": "כרוני",
+      "easy": "She has [chronic] back pain.",
       "he": "כרוני, מתמשך",
       "family": [
         "chronically (adv.)"
@@ -227,6 +242,9 @@
       "ipa": "ɪnˈsɪpiənt",
       "pos": "adjective",
       "def": "In an early stage; beginning to happen or develop.",
+      "simple": "Just starting to happen.",
+      "hs": "מתחיל",
+      "easy": "Doctors caught the [incipient] infection early.",
       "he": "מתחיל, בראשיתו",
       "family": [
         "incipience (n.)"
@@ -270,6 +288,9 @@
       "ipa": "ˈnæsnt",
       "pos": "adjective",
       "def": "Just coming into existence and beginning to show signs of future potential.",
+      "simple": "New and just starting to grow.",
+      "hs": "מתהווה",
+      "easy": "The country's [nascent] tech industry is growing.",
       "he": "מתהווה, בחיתוליו",
       "family": [
         "nascency (n.)"
@@ -314,6 +335,9 @@
       "ipa": "ˈbɜːrdʒənɪŋ",
       "pos": "adjective",
       "def": "Growing or developing quickly.",
+      "simple": "Growing fast.",
+      "hs": "משגשג",
+      "easy": "The city has a [burgeoning] food scene.",
       "he": "מתפתח במהירות, משגשג",
       "family": [
         "burgeon (v.)"
@@ -358,6 +382,9 @@
       "ipa": "ˈmɔːrɪbʌnd",
       "pos": "adjective",
       "def": "(Of an organisation, industry or custom) in decline and no longer active or effective; (of a person) near death.",
+      "simple": "Dying or close to the end.",
+      "hs": "גוסס",
+      "easy": "The old factory town is [moribund].",
       "he": "גוסס, בדעיכה",
       "family": [],
       "ex": [
@@ -399,6 +426,9 @@
       "ipa": "ˈlæŋɡwɪʃ",
       "pos": "verb",
       "def": "To be forced to stay in an unpleasant situation for a long time; to fail to make progress.",
+      "simple": "To stay stuck in a bad situation for a long time.",
+      "hs": "לנמק",
+      "easy": "He [languished] in prison for years.",
       "he": "לנמק, לדשדש",
       "family": [
         "languid (adj., related)",
@@ -443,6 +473,9 @@
       "ipa": "weɪn",
       "pos": "verb / noun",
       "def": "To decrease gradually in size, strength or importance.",
+      "simple": "To slowly get weaker or smaller.",
+      "hs": "לדעוך",
+      "easy": "Interest in the show began to [wane].",
       "he": "לדעוך, להיחלש",
       "family": [
         "waning (adj.)",
@@ -488,6 +521,9 @@
       "ipa": "ˈdwɪndl",
       "pos": "verb",
       "def": "To become gradually smaller in number or amount until little remains.",
+      "simple": "To slowly become less and less.",
+      "hs": "להתמעט",
+      "easy": "Our savings [dwindled] to nothing.",
       "he": "להצטמק, להתמעט",
       "family": [
         "dwindling (adj.)"
@@ -533,6 +569,9 @@
       "ipa": "prəˈlɪfəreɪt",
       "pos": "verb",
       "def": "To increase rapidly in number; to spread.",
+      "simple": "To grow fast in number.",
+      "hs": "להתרבות",
+      "easy": "Fake news sites [proliferated] online.",
       "he": "להתרבות במהירות, להתפשט",
       "family": [
         "proliferation (n.)"
@@ -577,6 +616,9 @@
       "ipa": "ɪɡˈzæsərbeɪt",
       "pos": "verb",
       "def": "To make a problem, bad situation or negative feeling worse.",
+      "simple": "To make a bad problem worse.",
+      "hs": "להחמיר",
+      "easy": "Shouting will only [exacerbate] the problem.",
       "he": "להחמיר",
       "family": [
         "exacerbation (n.)"
@@ -620,6 +662,9 @@
       "ipa": "əˈmiːliəreɪt",
       "pos": "verb",
       "def": "To make something bad or unsatisfactory better.",
+      "simple": "To make a bad situation better.",
+      "hs": "לשפר",
+      "easy": "The new law aims to [ameliorate] working conditions.",
       "he": "לשפר, להיטיב",
       "family": [
         "amelioration (n.)"
@@ -662,6 +707,9 @@
       "ipa": "əˈliːvieɪt",
       "pos": "verb",
       "def": "To make suffering, pain or a problem less severe.",
+      "simple": "To make pain or a problem less bad.",
+      "hs": "להקל",
+      "easy": "This pill will [alleviate] the pain.",
       "he": "להקל, לשכך",
       "family": [
         "alleviation (n.)"
@@ -705,6 +753,9 @@
       "ipa": "prɪˈsɪpɪteɪt",
       "pos": "verb / adjective",
       "def": "(v.) To cause something bad to happen suddenly or sooner than expected. (adj.) Done too quickly, without enough thought.",
+      "simple": "To make something bad happen suddenly.",
+      "hs": "לזרז (משהו רע)",
+      "easy": "The scandal [precipitated] his fall.",
       "he": "לזרז, להחיש (משהו רע); נמהר",
       "family": [
         "precipitation (n.)",
@@ -750,6 +801,9 @@
       "ipa": "ˈkætəlɪst",
       "pos": "noun",
       "def": "A person or event that causes an important change; (chemistry) a substance that speeds up a reaction.",
+      "simple": "Something that makes a change happen faster.",
+      "hs": "זרז",
+      "easy": "The crisis was a [catalyst] for change.",
       "he": "זרז, גורם מאיץ",
       "family": [
         "catalyse / catalyze (v.)",
@@ -794,6 +848,9 @@
       "ipa": "ˈwɔːtərʃed",
       "pos": "noun",
       "def": "An event or period marking a turning point; (geography) a ridge dividing two river systems.",
+      "simple": "A moment when things change in a big way.",
+      "hs": "נקודת מפנה",
+      "easy": "The first iPhone was a [watershed] moment.",
       "he": "נקודת מפנה, קו פרשת מים",
       "family": [],
       "ex": [
@@ -835,6 +892,9 @@
       "ipa": "vɪˈsɪsɪtuːdz",
       "pos": "noun (plural)",
       "def": "Unwelcome changes of circumstance or fortune; ups and downs.",
+      "simple": "The ups and downs of life.",
+      "hs": "תהפוכות",
+      "easy": "They stayed together through the [vicissitudes] of life.",
       "he": "תהפוכות, תמורות הגורל",
       "family": [],
       "ex": [
@@ -874,6 +934,9 @@
       "ipa": "ʌpˈhiːvl",
       "pos": "noun",
       "def": "A violent or sudden change or disruption.",
+      "simple": "A big, sudden change that causes trouble.",
+      "hs": "טלטלה",
+      "easy": "Moving countries is a big [upheaval].",
       "he": "טלטלה, מהפך",
       "family": [
         "upheave (v.)"
@@ -918,6 +981,9 @@
       "ipa": "ɪnˈtrentʃt",
       "pos": "adjective",
       "def": "(Of an attitude, habit or belief) so firmly established that it is difficult to change.",
+      "simple": "So fixed that it is hard to change.",
+      "hs": "מושרש",
+      "easy": "Old habits are deeply [entrenched].",
       "he": "מושרש, מבוצר",
       "family": [
         "entrench (v.)",
@@ -963,6 +1029,9 @@
       "ipa": "ɪˈmjuːtəbl",
       "pos": "adjective",
       "def": "Unchanging over time; unable to be changed.",
+      "simple": "Never changing; it can't be changed.",
+      "hs": "בלתי משתנה",
+      "easy": "The laws of nature are [immutable].",
       "he": "בלתי משתנה, קבוע",
       "family": [
         "immutability (n.)",
@@ -1008,6 +1077,9 @@
       "ipa": "ˈvɑːlətl",
       "pos": "adjective",
       "def": "Liable to change rapidly and unpredictably, especially for the worse; (of a person) quick to become angry.",
+      "simple": "Able to change suddenly, often for the worse.",
+      "hs": "הפכפך, תנודתי",
+      "easy": "Oil prices are [volatile].",
       "he": "הפכפך, נפיץ, תנודתי",
       "family": [
         "volatility (n.)"
@@ -1054,6 +1126,9 @@
       "ipa": "ˈɑːrbɪtreri",
       "pos": "adjective",
       "def": "Based on random choice or personal whim rather than reason or a system.",
+      "simple": "Chosen for no good reason.",
+      "hs": "שרירותי",
+      "easy": "The rule seems [arbitrary].",
       "he": "שרירותי",
       "family": [
         "arbitrarily (adv.)",
@@ -1099,6 +1174,9 @@
       "ipa": "kəˈmenʃərət",
       "pos": "adjective",
       "def": "Corresponding in size, amount or degree; in proportion.",
+      "simple": "Matching in size or level.",
+      "hs": "תואם",
+      "easy": "Pay will be [commensurate] with experience.",
       "he": "תואם, הולם, ביחס ל־",
       "family": [
         "commensurately (adv.)",
@@ -1143,6 +1221,9 @@
       "ipa": "ˈdɪspərət",
       "pos": "adjective",
       "def": "Essentially different in kind; not able to be compared.",
+      "simple": "Very different from each other.",
+      "hs": "שונים מאוד",
+      "easy": "The group brings together [disparate] people.",
       "he": "שונה, נבדל, משולל קשר",
       "family": [
         "disparity (n.)",
@@ -1188,6 +1269,9 @@
       "ipa": "ˈneɡlɪdʒəbl",
       "pos": "adjective",
       "def": "So small or unimportant that it is not worth considering.",
+      "simple": "So small it doesn't matter.",
+      "hs": "זניח",
+      "easy": "The cost is [negligible].",
       "he": "זניח",
       "family": [
         "negligibly (adv.)"
@@ -1231,6 +1315,9 @@
       "ipa": "ˈpærəmaʊnt",
       "pos": "adjective",
       "def": "More important than anything else; supreme.",
+      "simple": "More important than anything else.",
+      "hs": "חשוב מכול",
+      "easy": "Safety is [paramount].",
       "he": "עליון, בעל חשיבות עליונה",
       "family": [],
       "ex": [
@@ -1272,6 +1359,9 @@
       "ipa": "pərˈveɪsɪv",
       "pos": "adjective",
       "def": "Spreading widely through an area, group or thing, and affecting every part of it.",
+      "simple": "Spreading into every part of a place or group.",
+      "hs": "חודר לכל מקום",
+      "easy": "There was a [pervasive] feeling of fear.",
       "he": "חודר לכל מקום, נפוץ",
       "family": [
         "pervade (v.)",
@@ -1317,6 +1407,9 @@
       "ipa": "raɪf",
       "pos": "adjective",
       "def": "(Of something bad) widespread; (rife with) full of something bad.",
+      "simple": "Full of something bad.",
+      "hs": "נפוץ (לרעה)",
+      "easy": "The essay is [rife] with mistakes.",
       "he": "נפוץ (לרעה), שורץ",
       "family": [],
       "ex": [
@@ -1358,6 +1451,9 @@
       "ipa": "ˈmɪriəd",
       "pos": "adjective / noun",
       "def": "A countless or extremely great number; countless.",
+      "simple": "A very large number.",
+      "hs": "אינספור",
+      "easy": "There are [myriad] ways to learn English.",
       "he": "אינספור, רבבות",
       "family": [],
       "ex": [
@@ -1399,6 +1495,9 @@
       "ipa": "ˈpleθərə",
       "pos": "noun",
       "def": "A large or excessive amount of something.",
+      "simple": "A lot of something, often too much.",
+      "hs": "שפע",
+      "easy": "There's a [plethora] of apps to choose from.",
       "he": "שפע, עודף",
       "family": [],
       "ex": [
@@ -1439,6 +1538,9 @@
       "ipa": "dɜːrθ",
       "pos": "noun",
       "def": "A scarcity or lack of something.",
+      "simple": "Not having enough of something.",
+      "hs": "מחסור",
+      "easy": "There's a [dearth] of good jobs here.",
       "he": "מחסור",
       "family": [],
       "ex": [
@@ -1479,6 +1581,9 @@
       "ipa": "ˈpɔːsəti",
       "pos": "noun",
       "def": "The presence of something in only small or insufficient quantities.",
+      "simple": "Very little of something.",
+      "hs": "מיעוט",
+      "easy": "The [paucity] of data makes it hard to know.",
       "he": "מיעוט, דלות",
       "family": [],
       "ex": [
@@ -1520,6 +1625,9 @@
       "ipa": "ˈkoʊpiəs",
       "pos": "adjective",
       "def": "Abundant in supply or quantity.",
+      "simple": "Large in amount; a lot.",
+      "hs": "שופע",
+      "easy": "She took [copious] notes.",
       "he": "שופע, רב",
       "family": [
         "copiously (adv.)"
@@ -1563,6 +1671,9 @@
       "ipa": "ɪɡˈzɔːrbɪtənt",
       "pos": "adjective",
       "def": "(Of a price or amount) unreasonably high.",
+      "simple": "Much too expensive.",
+      "hs": "מופקע",
+      "easy": "The hotel charges [exorbitant] prices.",
       "he": "מופרז, מופקע",
       "family": [
         "exorbitantly (adv.)"
@@ -1607,6 +1718,9 @@
       "ipa": "ˈmiːɡər",
       "pos": "adjective",
       "def": "Lacking in quantity or quality; too small. (UK spelling: meagre)",
+      "simple": "Too small in amount.",
+      "hs": "זעום",
+      "easy": "They lived on a [meager] salary.",
       "he": "דל, זעום",
       "family": [
         "meagerly (adv.)",
@@ -1652,6 +1766,9 @@
       "ipa": "suːˈpɜːrfluəs",
       "pos": "adjective",
       "def": "Unnecessary, especially through being more than enough.",
+      "simple": "More than is needed.",
+      "hs": "מיותר",
+      "easy": "Cut any [superfluous] words.",
       "he": "מיותר",
       "family": [
         "superfluity (n.)",
@@ -1698,6 +1815,9 @@
       "ipa": "ɡrəˈtuːɪtəs",
       "pos": "adjective",
       "def": "Done without good reason; unjustified; (formal) free of charge.",
+      "simple": "Done for no good reason, often to shock.",
+      "hs": "מיותר, לא מוצדק",
+      "easy": "The film has a lot of [gratuitous] violence.",
       "he": "מיותר, ללא הצדקה; חינמי",
       "family": [
         "gratuitously (adv.)",
@@ -1742,6 +1862,9 @@
       "ipa": "ɪˈɡriːdʒəs",
       "pos": "adjective",
       "def": "Outstandingly bad; shocking.",
+      "simple": "Extremely bad and easy to see.",
+      "hs": "מחפיר",
+      "easy": "It was an [egregious] mistake.",
       "he": "מחפיר, בוטה, חמור",
       "family": [
         "egregiously (adv.)"
@@ -1786,6 +1909,9 @@
       "ipa": "ˈfleɪɡrənt",
       "pos": "adjective",
       "def": "(Of a wrong action) conspicuous and shameless.",
+      "simple": "Very bad and done openly.",
+      "hs": "בוטה",
+      "easy": "He showed [flagrant] disrespect for the law.",
       "he": "בוטה, גלוי",
       "family": [
         "flagrantly (adv.)"
@@ -1830,6 +1956,9 @@
       "ipa": "ɪˈnɑːkjuəs",
       "pos": "adjective",
       "def": "Not harmful or offensive.",
+      "simple": "Harmless and not meant to upset anyone.",
+      "hs": "תמים, לא מזיק",
+      "easy": "It was an [innocuous] question.",
       "he": "תמים, בלתי מזיק",
       "family": [
         "innocuously (adv.)"
@@ -1873,6 +2002,9 @@
       "ipa": "bɪˈnaɪn",
       "pos": "adjective",
       "def": "Gentle and kind; not harmful; (of a tumour) not cancerous.",
+      "simple": "Gentle and not harmful.",
+      "hs": "שפיר",
+      "easy": "The doctor said it was [benign], not cancer.",
       "he": "שפיר, נעים, לא מזיק",
       "family": [
         "benignly (adv.)",
@@ -1918,6 +2050,9 @@
       "ipa": "ɔːˈspɪʃəs",
       "pos": "adjective",
       "def": "Showing signs of future success; favourable.",
+      "simple": "Showing that things will go well.",
+      "hs": "מבשר טובות",
+      "easy": "It was an [auspicious] start to the year.",
       "he": "מבשר טובות",
       "family": [
         "inauspicious (adj.)",
@@ -1964,6 +2099,9 @@
       "ipa": "ˈɑːmɪnəs",
       "pos": "adjective",
       "def": "Giving the impression that something bad is going to happen.",
+      "simple": "Making you feel something bad will happen.",
+      "hs": "מאיים",
+      "easy": "Dark, [ominous] clouds filled the sky.",
       "he": "מאיים, מבשר רעות",
       "family": [
         "ominously (adv.)",
@@ -2009,6 +2147,9 @@
       "ipa": "ˌserənˈdɪpəti",
       "pos": "noun",
       "def": "The occurrence of happy or useful events by chance.",
+      "simple": "Finding something good by luck.",
+      "hs": "צירוף מקרים משמח",
+      "easy": "We met by pure [serendipity].",
       "he": "צירוף מקרים משמח, מזל מבורך",
       "family": [
         "serendipitous (adj.)",
@@ -2052,6 +2193,9 @@
       "ipa": "ˌkwɪntɪˈsenʃl",
       "pos": "adjective",
       "def": "Representing the most perfect or typical example of something.",
+      "simple": "The best or most typical example of something.",
+      "hs": "מובהק",
+      "easy": "Fish and chips is the [quintessential] British meal.",
       "he": "מובהק, טיפוסי ביותר",
       "family": [
         "quintessence (n.)",
@@ -2095,6 +2239,9 @@
       "ipa": "ˈsemɪnl",
       "pos": "adjective",
       "def": "(Of a work, event or idea) strongly influencing later developments.",
+      "simple": "Very important and changing what came after it.",
+      "hs": "מכונן",
+      "easy": "It's a [seminal] book on psychology.",
       "he": "פורץ דרך, מכונן",
       "family": [],
       "ex": [
@@ -2137,6 +2284,9 @@
       "ipa": "ˈkɑːnsəmət",
       "pos": "adjective / verb",
       "def": "(adj.) Showing great skill; complete or perfect. (v., /ˈkɑːnsəmeɪt/) To complete; to make a marriage complete by having sex.",
+      "simple": "Very skilled; perfect.",
+      "hs": "מושלם",
+      "easy": "She's a [consummate] professional.",
       "he": "מושלם, מיומן ביותר",
       "family": [
         "consummation (n.)",
@@ -2182,6 +2332,9 @@
       "ipa": "proʊˈtræktɪd",
       "pos": "adjective",
       "def": "Lasting for a long time or longer than expected or usual.",
+      "simple": "Lasting longer than expected.",
+      "hs": "ממושך",
+      "easy": "After [protracted] talks, they agreed.",
       "he": "ממושך, מתמשך",
       "family": [
         "protract (v.)"
@@ -2227,6 +2380,9 @@
       "ipa": "əˈbeɪt",
       "pos": "verb",
       "def": "(Of something unpleasant or intense) to become less strong or widespread.",
+      "simple": "To become less strong.",
+      "hs": "לשכוך",
+      "easy": "We waited for the storm to [abate].",
       "he": "לשכוך, להיחלש",
       "family": [
         "unabated (adj.)",
