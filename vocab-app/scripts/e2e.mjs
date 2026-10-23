@@ -140,7 +140,7 @@ async function runSession(tag) {
   }
   if (tag === 'day1') await page.screenshot({ path: `${out}/06-summary.png`, fullPage: true });
   (await page.getByText('סיימת את האימון!').isVisible()) ? ok(`${tag}: session complete (${intros} intros, ${answered} answers)`) : fail(`${tag}: session did not complete`);
-  await page.getByRole('button', { name: 'סיום' }).click();
+  await page.getByRole('button', { name: 'סיום', exact: true }).click();
 }
 
 await runSession('day1');
