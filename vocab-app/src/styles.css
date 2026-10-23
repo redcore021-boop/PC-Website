@@ -434,3 +434,25 @@ textarea.answer-input { font-family: var(--f-body); font-size: 17px; min-height:
 .icon-btn.sm svg { width: 18px; height: 18px; }
 .examples li.with-audio { display: flex; gap: 6px; align-items: flex-start; }
 .examples li.with-audio > span { flex: 1; }
+
+/* ---------- reading ---------- */
+.reading { font-family: var(--f-word); font-size: 19px; line-height: 1.75; white-space: pre-wrap; overflow-wrap: anywhere; }
+.tok { font: inherit; border: 0; background: none; padding: 0; margin: 0; color: inherit; border-radius: 4px; }
+.tok.new { background: var(--accent-soft); color: var(--accent); font-weight: 600; box-shadow: 0 0 0 2px var(--accent-soft); }
+.tok.known { text-decoration: underline; text-decoration-color: var(--good); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.tok.legend { font-family: var(--f-body); font-size: 13px; padding: 2px 6px; }
+.sheet-backdrop { position: fixed; inset: 0; z-index: 20; background: rgba(0, 0, 0, 0.45); display: flex; align-items: flex-end; justify-content: center; }
+.sheet {
+  width: 100%;
+  max-width: 560px;
+  max-height: 82vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 22px 22px 0 0;
+  padding: 18px 18px calc(var(--safe-bottom) + 18px);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.35);
+}
+.sense { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; font-size: 15px; line-height: 1.45; cursor: pointer; }
+.sense.on { border-color: var(--accent); background: var(--accent-soft); }
+.sense input { margin-top: 4px; accent-color: var(--accent); width: 18px; height: 18px; flex: none; }

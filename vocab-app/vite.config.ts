@@ -31,14 +31,6 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,json,woff2}'],
         navigateFallback: 'index.html',
-        // dictionary lookups (Add from reading) are also cached in IndexedDB; this just makes repeats instant
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/api\.dictionaryapi\.dev\//,
-            handler: 'CacheFirst',
-            options: { cacheName: 'dictionary-api', expiration: { maxEntries: 2000, maxAgeSeconds: 60 * 60 * 24 * 365 } },
-          },
-        ],
       },
     }),
   ],

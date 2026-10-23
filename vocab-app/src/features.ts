@@ -3,7 +3,7 @@ import type { CardType } from './types';
 /** Features switched on per build phase. */
 export const ENABLED_FEATURES = {
   stats: true,
-  reading: false,
+  reading: true,
   audio: true,
   themes: true,
 };

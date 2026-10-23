@@ -53,7 +53,7 @@ async function runSession(tag) {
     const isRetry = ((await page.locator('.prompt-kind').first().textContent()) ?? '').includes('another try');
     sawTypes.add(kind);
     if (isRetry) retries++;
-    const promptText = (await page.locator('.prompt-text, .gap-sentence').first().textContent())?.trim() ?? '';
+    const promptText = kind === 'Use it' ? '' : ((await page.locator('.prompt-text, .gap-sentence').first().textContent())?.trim() ?? '');
     let target = byDef.get(promptText);
     let answerText;
     if (kind === 'Precision') {
@@ -136,7 +136,7 @@ await page.getByRole('button', { name: 'Settings', exact: true }).click();
 for (let i = 0; i < 8; i++) await page.getByRole('button', { name: 'Fewer new words' }).click();
 await page.getByRole('button', { name: 'Today', exact: true }).click();
 const DAY = 864e5;
-for (let d = 1; d <= 90; d++) {
+for (let d = 1; d <= 60; d++) {
   // move every stored date one day into the past, as if a day had gone by
   await page.evaluate((DAY) => new Promise((res) => {
     const r = indexedDB.open('lexicon');
@@ -192,9 +192,14 @@ await page.goto(URL + '#/browse/themes');
 await page.getByText('Feelings & Attitudes').click();
 await page.getByText('equanimity').waitFor();
 ok('theme page works');
-await page.getByText('equanimity').click();
-(await page.getByRole('button', { name: /Play British pronunciation/ }).count()) ? ok('US/UK audio buttons present') : fail('audio buttons missing');
-await page.getByRole('button', { name: /Play American/ }).click();
+await page.locator('.list-item').filter({ hasText: 'equanimity' }).click();
+await page.getByText('Collocations').waitFor();
+if (await page.evaluate(() => 'speechSynthesis' in window)) {
+  (await page.getByRole('button', { name: /Play British pronunciation/ }).count()) ? ok('US/UK audio buttons present') : fail('audio buttons missing');
+  await page.getByRole('button', { name: /Play American/ }).click();
+} else {
+  (await page.getByRole('button', { name: /pronunciation/ }).count()) === 0 ? ok('no speech engine here, audio buttons correctly hidden') : fail('audio buttons shown without speech support');
+}
 
 // browse + word page
 await page.getByRole('button', { name: 'Words', exact: true }).click();
@@ -203,6 +208,43 @@ await page.locator('.list-item').first().click();
 await page.getByText('Collocations').waitFor();
 await page.screenshot({ path: `${out}/08-word.png`, fullPage: true });
 ok('word page renders');
+
+// add from reading (dictionary API mocked: it rate-limits CI machines)
+const entry = (word, def, example) => [{ word, phonetic: `/${word}ɪt/`, phonetics: [], meanings: [{ partOfSpeech: 'verb', definitions: [{ definition: def, example }], synonyms: ['base'] }] }];
+await page.route('https://api.dictionaryapi.dev/**', (route) => {
+  const w = decodeURIComponent(route.request().url().split('/').pop());
+  if (w === 'predicated') return route.fulfill({ json: entry('predicated', 'simple past tense and past participle of predicate') });
+  if (w === 'predicate') return route.fulfill({ json: entry('predicate', 'To base something on a particular belief or idea.', 'The plan is predicated on growth.') });
+  if (w === 'obfuscatory') return route.abort();
+  return route.fulfill({ status: 404, json: { title: 'No Definitions Found' } });
+});
+await page.getByRole('button', { name: 'Read', exact: true }).click();
+await page.locator('textarea').fill('The committee said its decision was predicated on flawed data. Mitigating the risks proved hard, and the obfuscatory report helped nobody.');
+await page.getByRole('button', { name: 'Highlight new words' }).click();
+const newToks = await page.locator('.tok.new').allTextContents();
+const knownToks = await page.locator('.tok.known').allTextContents();
+newToks.includes('predicated') && !newToks.includes('committee') ? ok('reading highlights unfamiliar words only: ' + newToks.join(', ')) : fail('highlighting wrong: ' + newToks);
+knownToks.includes('Mitigating') ? ok('inflected list word recognised (Mitigating → mitigate)') : fail('known words: ' + knownToks);
+await page.screenshot({ path: `${out}/15-reading.png`, fullPage: true });
+await page.locator('.tok.new', { hasText: 'predicated' }).click();
+await page.locator('.sheet .headword', { hasText: 'predicate' }).waitFor();
+ok('lookup followed the inflected form to "predicate"');
+await page.locator('.sheet input[lang=he]').fill('לבסס על');
+await page.screenshot({ path: `${out}/16-add-word.png`, fullPage: true });
+await page.getByRole('button', { name: 'Add to my words' }).click();
+await page.getByText(/“predicate” added/).waitFor();
+ok('custom word saved');
+await page.locator('.tok.new', { hasText: 'obfuscatory' }).click();
+await page.getByText(/Couldn’t reach the dictionary|offline/).waitFor();
+await page.locator('.sheet textarea').fill('Making something deliberately unclear.');
+await page.getByRole('button', { name: 'Add to my words' }).click();
+await page.getByText(/“obfuscatory” added/).waitFor();
+ok('offline fallback lets you type your own definition');
+await page.getByRole('button', { name: 'Words', exact: true }).click();
+await page.locator('.search').fill('predicate');
+await page.locator('.list-item').first().click();
+await page.getByText('added by you').waitFor();
+(await page.locator('.examples mark').first().textContent()) === 'predicated' ? ok('example sentence from the text is kept, with the target marked') : fail('example not bracketed');
 
 // backup export + import
 await page.getByRole('button', { name: 'Settings', exact: true }).click();

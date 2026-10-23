@@ -47,17 +47,21 @@ export function availableTypes(enabled: CardType[], hasPrecision: boolean): Card
 }
 
 /**
- * Pick the card type for a scheduled review. Words climb one type per success;
- * once they reach production, rotate among the production types, favouring the
- * one asked least recently (approximated by a seeded pick).
+ * Pick the card type for a scheduled review. Words climb one type per success.
+ * Once in production, most reviews ask the frontier type (so words keep climbing
+ * towards writing a sentence); the rest rotate among the production types already reached.
  */
+export const FRONTIER_SHARE = 0.6;
+
 export function chooseCardType(p: Progress, available: CardType[], seed = Math.random()): CardType {
   const sorted = [...available].sort((a, b) => a - b);
   const top = sorted[sorted.length - 1];
   const level = Math.min(p.level, top) as CardType;
   const production = sorted.filter((t) => t >= 3 && t <= level);
   if (level >= 3 && production.length > 1) {
-    return production[Math.floor(seed * production.length) % production.length];
+    if (seed < FRONTIER_SHARE) return production[production.length - 1];
+    const rest = (seed - FRONTIER_SHARE) / (1 - FRONTIER_SHARE);
+    return production[Math.floor(rest * production.length) % production.length];
   }
   // fall back to the nearest available type at or below the level
   const atOrBelow = sorted.filter((t) => t <= level);

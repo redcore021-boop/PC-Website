@@ -3,6 +3,19 @@
 A free, offline-first vocabulary trainer for C1–C2 English: FSRS spaced repetition,
 active-recall cards, Hebrew hints, local-only storage. No server, no account, $0 to run.
 
+## Features
+
+- **Daily session** with FSRS spaced repetition, new-word intros, and missed cards repeated in-session
+- **Five card types**, rising difficulty: choose the word · fill the gap · type the word (typo-tolerant) ·
+  precision among near-synonyms · write your own sentence and compare with model sentences
+- A word counts as *mastered* only after production successes (types 3–5) and a stable memory
+- Quick 10-minute mode, daily goal and streak, word of the day
+- Stats: retention, 14-day review forecast, accuracy by card type, weakest words (with extra practice)
+- Browse by theme and by Latin/Greek root; US/UK pronunciation via the browser's speech engine
+- **Add from reading:** paste text, unfamiliar words are highlighted, tap to look them up in the free
+  Dictionary API (cached locally) and add them with your own Hebrew translation
+- Everything stored on-device in IndexedDB; JSON export/import backup
+
 ## Develop
 
 ```sh
@@ -48,3 +61,10 @@ Any other static host works too, because all paths are relative:
 - **Android:** open in Chrome → ⋮ → *Install app*.
 
 All progress is stored in IndexedDB on the device. Use **Settings → Export backup** regularly.
+
+## Credits
+
+- Definitions for added words: [Free Dictionary API](https://dictionaryapi.dev/) (Wiktionary data).
+- Everyday-word filter in reading mode: top 6,000 of
+  [google-10000-english](https://github.com/first20hours/google-10000-english) (derived from Peter Norvig's
+  Google Web Trillion Word Corpus counts; personal/educational use).

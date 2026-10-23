@@ -1,0 +1,1023 @@
+{
+  "batch": "batch-08",
+  "title": "Academic & Professional II",
+  "words": [
+    {
+      "word": "obviate",
+      "ipa": "ˈɑːbvieɪt",
+      "pos": "verb",
+      "def": "To remove a need or difficulty, or to prevent a problem before it arises.",
+      "he": "לייתר, למנוע מראש",
+      "family": ["obviation (n.)"],
+      "ex": [
+        "Online check-in [obviates] the need to queue at the airport.",
+        "A clear contract would have [obviated] most of these disputes.",
+        "The new bridge [obviates] a two-hour detour."
+      ],
+      "col": ["obviate the need for", "obviate the necessity of", "largely obviate"],
+      "reg": "formal",
+      "syn": ["preclude", "prevent", "avert", "forestall"],
+      "nuance": "Obviate almost always takes 'the need (for)': it makes something unnecessary. Preclude makes something impossible; avert turns away a danger that is coming.",
+      "ety": "Late Latin obviare 'to meet in the way, prevent', from ob viam 'in the way'.",
+      "tier": 2,
+      "themes": ["work"],
+      "prec": {
+        "s": "Automatic backups ___ the need to save your work every five minutes.",
+        "ans": "obviate",
+        "opts": ["preclude", "avert", "alleviate"],
+        "why": "'Obviate the need for' is the classic collocation: make something unnecessary. Preclude means make impossible; avert means turn away a danger; alleviate means ease suffering."
+      }
+    },
+    {
+      "word": "preclude",
+      "ipa": "prɪˈkluːd",
+      "pos": "verb",
+      "def": "To prevent something from happening or make it impossible.",
+      "he": "למנוע, לשלול אפשרות",
+      "family": ["preclusion (n.)"],
+      "ex": [
+        "His injury [precludes] him from playing in the final.",
+        "Lack of funding [precluded] any further research.",
+        "Being busy doesn't [preclude] being kind."
+      ],
+      "col": ["preclude someone from doing", "preclude the possibility of", "does not preclude"],
+      "reg": "formal",
+      "syn": ["prevent", "rule out", "prohibit", "obviate"],
+      "nuance": "Preclude means circumstances make something impossible. Prohibit is an explicit ban by authority; rule out is deciding something is not an option.",
+      "ety": "Latin praecludere 'to shut off', from claudere 'to close'.",
+      "root": "clud",
+      "tier": 2,
+      "themes": ["thinking", "work"],
+      "prec": {
+        "s": "A full-time job doesn't ___ studying for a degree in the evenings.",
+        "opts": ["prohibit", "obviate", "forbid"],
+        "why": "Preclude: make impossible by circumstances — and 'doesn't preclude' is very common. Prohibit and forbid are bans by authority; obviate means make unnecessary."
+      }
+    },
+    {
+      "word": "ascertain",
+      "ipa": "ˌæsərˈteɪn",
+      "pos": "verb",
+      "def": "To find out something for certain, usually by investigating.",
+      "he": "לברר, לוודא",
+      "family": ["ascertainable (adj.)"],
+      "ex": [
+        "Police are trying to [ascertain] the cause of the fire.",
+        "It's difficult to [ascertain] how many people were affected.",
+        "We need to [ascertain] whether the data are accurate."
+      ],
+      "col": ["ascertain the cause", "ascertain whether", "ascertain the facts", "difficult to ascertain"],
+      "reg": "formal",
+      "syn": ["establish", "determine", "find out", "verify"],
+      "nuance": "Ascertain is formal 'find out for sure', common in official reports. Verify checks something already claimed; determine can also mean decide or cause.",
+      "ety": "Old French acertener 'make certain', from certain.",
+      "tier": 2,
+      "themes": ["knowledge", "work"],
+      "prec": {
+        "s": "Investigators have not yet been able to ___ the cause of the crash.",
+        "opts": ["assert", "assure", "assume"],
+        "why": "Ascertain means find out for certain. Assert means state firmly; assure means promise someone; assume means suppose without proof."
+      }
+    },
+    {
+      "word": "cognizant",
+      "ipa": "ˈkɑːɡnɪzənt",
+      "pos": "adjective",
+      "def": "Having knowledge or awareness of something.",
+      "he": "מודע ל־",
+      "family": ["cognizance (n.)"],
+      "ex": [
+        "We are [cognizant] of the risks involved.",
+        "Managers must be [cognizant] of their legal obligations.",
+        "She was fully [cognizant] that the decision would be unpopular."
+      ],
+      "col": ["cognizant of", "fully cognizant", "take cognizance of"],
+      "reg": "formal",
+      "syn": ["aware", "conscious", "mindful", "informed"],
+      "nuance": "Cognizant is a formal 'aware', typical of official or legal language. Mindful adds care and attention; conscious is everyday.",
+      "ety": "Old French conoisance 'knowledge', from Latin cognoscere 'to get to know'.",
+      "root": "gno",
+      "tier": 3,
+      "themes": ["knowledge"],
+      "prec": {
+        "s": "The board is fully ___ of its legal obligations to shareholders.",
+        "opts": ["cognitive", "conscientious", "conversant"],
+        "why": "Cognizant of = aware of. Cognitive relates to thinking processes; conscientious means diligent; conversant with means familiar with a subject through study."
+      }
+    },
+    {
+      "word": "conducive",
+      "ipa": "kənˈduːsɪv",
+      "pos": "adjective",
+      "def": "Making a certain situation or outcome likely or possible.",
+      "he": "תורם ל־, מסייע ל־",
+      "family": ["conduce (v.)"],
+      "ex": [
+        "A noisy office is not [conducive] to concentration.",
+        "The warm climate is [conducive] to growing grapes.",
+        "We want an atmosphere [conducive] to open discussion."
+      ],
+      "col": ["conducive to", "not conducive to", "conducive environment"],
+      "reg": "formal",
+      "syn": ["favourable", "helpful", "beneficial", "propitious"],
+      "nuance": "Conducive always takes 'to' and describes conditions that help something happen. It's often negative: 'not conducive to sleep'.",
+      "ety": "Latin conducere 'to bring together', from ducere 'to lead'.",
+      "root": "duc",
+      "tier": 2,
+      "themes": ["quality", "work"],
+      "prec": {
+        "s": "Loud music and bright screens are not ___ to a good night's sleep.",
+        "opts": ["conductive", "contingent", "consistent"],
+        "why": "Conducive to = helping something happen. Conductive describes metals conducting electricity; contingent on means depending on; consistent with means in agreement with."
+      }
+    },
+    {
+      "word": "detrimental",
+      "ipa": "ˌdetrɪˈmentl",
+      "pos": "adjective",
+      "def": "Tending to cause harm.",
+      "he": "מזיק",
+      "family": ["detriment (n.)", "detrimentally (adv.)"],
+      "ex": [
+        "Lack of sleep is [detrimental] to your health.",
+        "The new rules could have a [detrimental] effect on small businesses.",
+        "He worked long hours to the [detriment] of his family life."
+      ],
+      "col": ["detrimental to", "detrimental effect", "to the detriment of"],
+      "reg": "formal",
+      "syn": ["harmful", "damaging", "deleterious", "adverse"],
+      "nuance": "Detrimental is a neutral formal word for harmful; 'to the detriment of' means at the cost of. Pernicious is stronger and more moral.",
+      "ety": "Latin detrimentum 'wearing away', from deterere 'to wear away'.",
+      "tier": 1,
+      "themes": ["quality"],
+      "prec": {
+        "s": "Excessive screen time can be ___ to children's sleep and concentration.",
+        "opts": ["deterrent", "determinant", "detached"],
+        "why": "Detrimental to = harmful to. A deterrent discourages; a determinant decides an outcome; detached means separate or emotionally distant."
+      }
+    },
+    {
+      "word": "expedite",
+      "ipa": "ˈekspədaɪt",
+      "pos": "verb",
+      "def": "To make an action or process happen faster.",
+      "he": "לזרז",
+      "family": ["expedition (n.)", "expeditious (adj.)", "expedient (adj., related)"],
+      "ex": [
+        "Paying extra will [expedite] your passport application.",
+        "The new software has [expedited] the approval process.",
+        "We'll do what we can to [expedite] delivery."
+      ],
+      "col": ["expedite the process", "expedite delivery", "expedite an application"],
+      "reg": "formal",
+      "syn": ["speed up", "accelerate", "hasten", "fast-track"],
+      "nuance": "Expedite is bureaucratic and business language for speeding up a process or order. Hasten is literary; accelerate is general.",
+      "ety": "Latin expedire 'to free the feet', from pes, pedis 'foot'.",
+      "root": "ped",
+      "tier": 2,
+      "themes": ["work"],
+      "prec": {
+        "s": "For an extra fee, the embassy can ___ your visa application.",
+        "opts": ["expend", "expound", "expunge"],
+        "why": "Expedite means speed up a process. Expend means spend; expound means explain in detail; expunge means erase."
+      }
+    },
+    {
+      "word": "impede",
+      "ipa": "ɪmˈpiːd",
+      "pos": "verb",
+      "def": "To delay or prevent progress by obstructing.",
+      "he": "לעכב, להפריע",
+      "family": ["impediment (n.)"],
+      "ex": [
+        "Fallen trees [impeded] the rescue teams.",
+        "High taxes may [impede] economic growth.",
+        "His stammer was never an [impediment] to his career."
+      ],
+      "col": ["impede progress", "impede growth", "impede the investigation", "speech impediment"],
+      "reg": "formal",
+      "syn": ["hinder", "obstruct", "hamper", "hold back"],
+      "nuance": "Impede means slow down or block movement or progress. Hamper suggests getting in the way; obstruct is more physical or deliberate (obstruct justice).",
+      "ety": "Latin impedire 'to shackle the feet', from pes, pedis 'foot'.",
+      "root": "ped",
+      "tier": 2,
+      "themes": ["work", "change"],
+      "prec": {
+        "s": "Heavy snow ___ the rescue teams as they climbed towards the stranded hikers.",
+        "ans": "impeded",
+        "opts": ["impelled", "imposed", "implied"],
+        "why": "Impede means slow down by obstruction. Impel means drive someone to act; impose means force on someone; imply means suggest."
+      }
+    },
+    {
+      "word": "incumbent",
+      "ipa": "ɪnˈkʌmbənt",
+      "pos": "adjective / noun",
+      "def": "(adj., incumbent on) Necessary as a duty; (n.) the current holder of an office.",
+      "he": "מוטל על (כחובה); מכהן",
+      "family": ["incumbency (n.)"],
+      "ex": [
+        "It is [incumbent] on parents to keep their children safe.",
+        "The [incumbent] lost the election by just 300 votes.",
+        "She is the [incumbent] mayor and is running again."
+      ],
+      "col": ["incumbent on/upon", "the incumbent president", "defeat the incumbent"],
+      "reg": "formal",
+      "syn": ["obligatory", "binding", "mandatory", "current holder"],
+      "nuance": "'It is incumbent on someone to…' is a formal way to say they have a duty. As a noun, the incumbent is whoever currently holds the job, especially in elections.",
+      "ety": "Latin incumbere 'to lie upon'.",
+      "tier": 2,
+      "themes": ["society", "work"],
+      "prec": {
+        "s": "In local elections, the ___ usually has an advantage because voters already know her.",
+        "opts": ["candidate", "nominee", "predecessor"],
+        "why": "The incumbent is the person currently in office. A candidate or nominee is anyone running; a predecessor held the office before."
+      }
+    },
+    {
+      "word": "juncture",
+      "ipa": "ˈdʒʌŋktʃər",
+      "pos": "noun",
+      "def": "A particular point in events or time, especially an important one.",
+      "he": "צומת, נקודת זמן",
+      "family": ["junction (n., related)"],
+      "ex": [
+        "At this [juncture], it would be unwise to sell.",
+        "The talks have reached a critical [juncture].",
+        "At that [juncture], nobody knew the war would last five years."
+      ],
+      "col": ["at this juncture", "a critical juncture", "a crucial juncture", "at a later juncture"],
+      "reg": "formal",
+      "syn": ["point", "stage", "moment", "crossroads"],
+      "nuance": "Juncture is a formal word for a point in time, often a critical one. 'At this juncture' can sound pompous in casual speech.",
+      "ety": "Latin iunctura 'joint', from iungere 'to join'.",
+      "tier": 2,
+      "themes": ["change", "work"],
+      "prec": {
+        "s": "Negotiations have reached a critical ___; one wrong move could end them.",
+        "opts": ["junction", "conjecture", "conjunction"],
+        "why": "A critical juncture is an important moment. A junction is where roads meet; a conjecture is a guess; a conjunction is a joining word or co-occurrence."
+      }
+    },
+    {
+      "word": "lucid",
+      "ipa": "ˈluːsɪd",
+      "pos": "adjective",
+      "def": "Expressed clearly and easy to understand; (of a person) able to think clearly.",
+      "he": "צלול, בהיר",
+      "family": ["lucidity (n.)", "lucidly (adv.)"],
+      "ex": [
+        "She gave a [lucid] explanation of a very complex topic.",
+        "The patient was weak but [lucid].",
+        "His writing is [lucid] and elegant."
+      ],
+      "col": ["lucid explanation", "lucid account", "lucid moments", "lucid dream"],
+      "reg": "formal",
+      "syn": ["clear", "coherent", "articulate", "transparent"],
+      "nuance": "Lucid praises clarity of thought or expression; for a person, it means mentally clear (often after confusion). Coherent means logically connected.",
+      "ety": "Latin lucidus 'bright', from lux 'light'.",
+      "tier": 2,
+      "themes": ["speech", "thinking"],
+      "prec": {
+        "s": "Despite his high fever, he remained ___ and answered the doctor's questions clearly.",
+        "opts": ["lurid", "lucrative", "ludicrous"],
+        "why": "Lucid means mentally clear. Lurid means shockingly vivid; lucrative means profitable; ludicrous means absurd."
+      }
+    },
+    {
+      "word": "nebulous",
+      "ipa": "ˈnebjələs",
+      "pos": "adjective",
+      "def": "Vague, unclear or ill-defined.",
+      "he": "מעורפל",
+      "family": ["nebula (n.)"],
+      "ex": [
+        "The plan is still rather [nebulous].",
+        "'Synergy' is a [nebulous] concept that means different things to different people.",
+        "He had only a [nebulous] idea of what the job involved."
+      ],
+      "col": ["nebulous concept", "nebulous idea", "remain nebulous"],
+      "reg": "formal",
+      "syn": ["vague", "hazy", "ill-defined", "amorphous"],
+      "nuance": "Nebulous criticises ideas or plans that lack a clear shape. Ambiguous means having two possible meanings; vague is the everyday word.",
+      "ety": "Latin nebulosus 'cloudy', from nebula 'mist'.",
+      "tier": 2,
+      "themes": ["thinking"],
+      "prec": {
+        "s": "The CEO's ___ promise of 'transformation' left employees unsure what would actually change.",
+        "opts": ["ambiguous", "ambivalent", "obscure"],
+        "why": "Nebulous means vague and shapeless. Ambiguous means it could mean two specific things; ambivalent describes mixed feelings; obscure means little known or hard to understand."
+      }
+    },
+    {
+      "word": "propensity",
+      "ipa": "prəˈpensəti",
+      "pos": "noun",
+      "def": "A natural tendency to behave in a particular way.",
+      "he": "נטייה",
+      "family": [],
+      "ex": [
+        "He has a [propensity] to exaggerate.",
+        "Teenagers have a higher [propensity] for risk-taking.",
+        "The [propensity] to save falls when interest rates are low."
+      ],
+      "col": ["a propensity for/to", "a high propensity", "propensity to save"],
+      "reg": "formal",
+      "syn": ["tendency", "inclination", "proclivity", "penchant"],
+      "nuance": "Propensity is a formal, often negative or neutral tendency. A penchant is a liking (often charming); a proclivity is usually a tendency towards something bad.",
+      "ety": "Latin propendere 'to hang forward, incline', from pendere 'to hang'.",
+      "root": "pend",
+      "tier": 2,
+      "themes": ["character"],
+      "prec": {
+        "s": "Economists study households' ___ to save rather than spend extra income.",
+        "opts": ["penchant", "predicament", "prospect"],
+        "why": "'Propensity to save/consume' is a standard term in economics. A penchant is a fondness (a penchant for jazz); a predicament is a difficult situation; a prospect is a possibility."
+      }
+    },
+    {
+      "word": "prerogative",
+      "ipa": "prɪˈrɑːɡətɪv",
+      "pos": "noun",
+      "def": "A right or privilege that belongs to a particular person or group.",
+      "he": "זכות (בלעדית), פררוגטיבה",
+      "family": [],
+      "ex": [
+        "It's your [prerogative] to change your mind.",
+        "Granting pardons is the president's [prerogative].",
+        "Choosing the team is the coach's [prerogative]."
+      ],
+      "col": ["it's your prerogative", "royal prerogative", "exercise one's prerogative"],
+      "reg": "formal",
+      "syn": ["right", "privilege", "entitlement", "choice"],
+      "nuance": "A prerogative is a right that comes with a role or position — or, informally, a personal choice nobody can dispute.",
+      "ety": "Latin praerogativa 'the tribe voting first', from praerogare 'to ask first'.",
+      "tier": 2,
+      "themes": ["society", "work"],
+      "prec": {
+        "s": "'You don't have to come to the party — it's your ___,' she said.",
+        "opts": ["prerequisite", "precedent", "pretext"],
+        "why": "'It's your prerogative' = it's your right to choose. A prerequisite is a requirement; a precedent is an earlier example; a pretext is a false reason."
+      }
+    },
+    {
+      "word": "proponent",
+      "ipa": "prəˈpoʊnənt",
+      "pos": "noun",
+      "def": "A person who argues in favour of an idea or plan.",
+      "he": "תומך, מצדד",
+      "family": ["propose (v., related)"],
+      "ex": [
+        "She is a leading [proponent] of renewable energy.",
+        "[Proponents] of the plan say it will create jobs.",
+        "He was an early [proponent] of remote work."
+      ],
+      "col": ["a leading proponent", "a strong proponent", "proponents of the plan"],
+      "reg": "formal",
+      "syn": ["advocate", "supporter", "champion", "exponent"],
+      "nuance": "A proponent argues for an idea in public debate. An advocate can also act for a person; an exponent is someone who promotes or skilfully performs something.",
+      "ety": "Latin proponere 'to put forward', from ponere 'to place'.",
+      "root": "pon",
+      "tier": 1,
+      "themes": ["society", "speech"],
+      "prec": {
+        "s": "___ of the four-day week argue that it boosts productivity.",
+        "ans": "Proponents",
+        "opts": ["Opponents", "Components", "Exponents"],
+        "why": "Proponents argue for an idea. Opponents argue against it; components are parts; exponents are mathematical powers or skilled performers of a style."
+      }
+    },
+    {
+      "word": "quandary",
+      "ipa": "ˈkwɑːndəri",
+      "pos": "noun",
+      "def": "A state of uncertainty about what to do in a difficult situation.",
+      "he": "דילמה, מבוכה",
+      "family": [],
+      "ex": [
+        "I'm in a [quandary] about whether to accept the job.",
+        "The judge faced a moral [quandary].",
+        "The new rules have left many parents in a [quandary]."
+      ],
+      "col": ["in a quandary", "moral quandary", "face a quandary"],
+      "reg": "formal",
+      "syn": ["dilemma", "predicament", "plight", "catch-22"],
+      "nuance": "A quandary is uncertainty about what to do. A dilemma involves a choice between two (often bad) options; a predicament is a difficult situation, not necessarily a choice.",
+      "ety": "Uncertain; perhaps from Latin quando 'when'.",
+      "tier": 2,
+      "themes": ["thinking", "emotion"],
+      "prec": {
+        "s": "Offered two jobs on the same day, she found herself in a happy ___.",
+        "opts": ["plight", "quarrel", "quarry"],
+        "why": "In a quandary = unsure what to do. A plight is a bad situation (no 'happy plight'); a quarrel is an argument; a quarry is a place for digging stone or a hunted animal."
+      }
+    },
+    {
+      "word": "recalcitrant",
+      "ipa": "rɪˈkælsɪtrənt",
+      "pos": "adjective",
+      "def": "Stubbornly uncooperative towards authority or discipline.",
+      "he": "סרבן, ממרה",
+      "family": ["recalcitrance (n.)"],
+      "ex": [
+        "The teacher struggled with a few [recalcitrant] pupils.",
+        "[Recalcitrant] member states refused to sign the treaty.",
+        "Even the most [recalcitrant] stains came out."
+      ],
+      "col": ["recalcitrant pupils", "recalcitrant member", "recalcitrant child"],
+      "reg": "formal",
+      "syn": ["uncooperative", "intractable", "defiant", "obstinate"],
+      "nuance": "Recalcitrant specifically resists authority or control. Obstinate is general stubbornness; intransigent refuses compromise in negotiations.",
+      "ety": "Latin recalcitrare 'to kick back', from calx 'heel' — like a mule.",
+      "tier": 3,
+      "themes": ["character", "conflict"],
+      "prec": {
+        "s": "The new head teacher was determined to deal firmly with ___ pupils who ignored every rule.",
+        "opts": ["intransigent", "tenacious", "resolute"],
+        "why": "Recalcitrant means defying authority — fitting pupils who ignore rules. Intransigent refuses compromise in negotiations; tenacious and resolute are positive."
+      }
+    },
+    {
+      "word": "reprieve",
+      "ipa": "rɪˈpriːv",
+      "pos": "noun / verb",
+      "def": "A cancellation or postponement of a punishment; a temporary relief from something bad.",
+      "he": "דחייה, הקלה זמנית; חנינה",
+      "family": [],
+      "ex": [
+        "The factory won a [reprieve] when a buyer was found.",
+        "The rain gave us a brief [reprieve] from the heat.",
+        "The prisoner was [reprieved] hours before the execution."
+      ],
+      "col": ["a last-minute reprieve", "a temporary reprieve", "win a reprieve", "a brief reprieve from"],
+      "reg": "neutral",
+      "syn": ["respite", "stay", "postponement", "pardon"],
+      "nuance": "A reprieve is relief from something bad that was going to happen (closure, punishment). A respite is a short rest from something ongoing.",
+      "ety": "Anglo-French repris 'taken back'.",
+      "tier": 2,
+      "themes": ["change"],
+      "prec": {
+        "s": "The library, due to close next month, won a last-minute ___ when a local firm offered funding.",
+        "opts": ["respite", "remission", "refund"],
+        "why": "A reprieve cancels or postpones a threatened bad outcome. A respite is a short rest from something unpleasant that continues; remission is a period when a disease improves; a refund returns money."
+      }
+    },
+    {
+      "word": "sporadic",
+      "ipa": "spəˈrædɪk",
+      "pos": "adjective",
+      "def": "Happening occasionally and irregularly, not continuously.",
+      "he": "ספורדי, לסירוגין",
+      "family": ["sporadically (adv.)"],
+      "ex": [
+        "There has been [sporadic] fighting in the north.",
+        "Her attendance was [sporadic] at best.",
+        "We heard [sporadic] gunfire during the night."
+      ],
+      "col": ["sporadic fighting", "sporadic outbreaks", "sporadic attendance", "only sporadically"],
+      "reg": "neutral",
+      "syn": ["intermittent", "occasional", "irregular", "scattered"],
+      "nuance": "Sporadic stresses unpredictable, scattered occurrences. Intermittent means stopping and starting, often more regularly (intermittent rain).",
+      "ety": "Greek sporadikos 'scattered', from speirein 'to sow'.",
+      "tier": 1,
+      "themes": ["change", "degree"],
+      "prec": {
+        "s": "Despite the ceasefire, there were ___ reports of shooting in remote villages.",
+        "opts": ["chronic", "incessant", "perennial"],
+        "why": "Sporadic means scattered and occasional. Chronic means long-lasting; incessant means non-stop; perennial means recurring year after year."
+      }
+    },
+    {
+      "word": "stringent",
+      "ipa": "ˈstrɪndʒənt",
+      "pos": "adjective",
+      "def": "(Of rules or conditions) strict, precise and demanding.",
+      "he": "מחמיר, נוקשה",
+      "family": ["stringency (n.)", "stringently (adv.)"],
+      "ex": [
+        "Food producers must meet [stringent] safety standards.",
+        "The loan comes with [stringent] conditions.",
+        "Security checks have become more [stringent]."
+      ],
+      "col": ["stringent standards", "stringent regulations", "stringent conditions", "stringent requirements"],
+      "reg": "formal",
+      "syn": ["strict", "rigorous", "exacting", "tough"],
+      "nuance": "Stringent is neutral or approving: demanding rules that are rigorously applied. Draconian criticises rules as excessively harsh.",
+      "ety": "Latin stringere 'to draw tight'.",
+      "tier": 2,
+      "themes": ["work", "society"],
+      "prec": {
+        "s": "Baby food must meet ___ safety standards, with tests on every batch.",
+        "opts": ["draconian", "austere", "strident"],
+        "why": "Stringent standards are strict and demanding — appropriately so here. Draconian criticises rules as cruel; austere means plain and severe; strident means harsh and loud."
+      }
+    },
+    {
+      "word": "tantamount",
+      "ipa": "ˈtæntəmaʊnt",
+      "pos": "adjective",
+      "def": "(tantamount to) Equivalent in seriousness or effect to.",
+      "he": "שקול ל־, כמוהו כ־",
+      "family": [],
+      "ex": [
+        "Refusing to answer is [tantamount] to admitting guilt.",
+        "The new tax is [tantamount] to theft, critics say.",
+        "His silence was [tantamount] to approval."
+      ],
+      "col": ["tantamount to", "tantamount to an admission", "tantamount to theft"],
+      "reg": "formal",
+      "syn": ["equivalent to", "as good as", "amounting to", "synonymous with"],
+      "nuance": "Tantamount to is used to say something is as bad as something else, usually a strong accusation. Don't confuse with paramount (most important).",
+      "ety": "Anglo-French tant amunter 'amount to as much'.",
+      "tier": 2,
+      "themes": ["thinking"],
+      "prec": {
+        "s": "Refusing to release the documents is ___ to admitting there is something to hide.",
+        "opts": ["paramount", "commensurate", "conducive"],
+        "why": "Tantamount to = as good as, equivalent to. Paramount means most important; commensurate with means proportionate to; conducive to means helping something happen."
+      }
+    },
+    {
+      "word": "viable",
+      "ipa": "ˈvaɪəbl",
+      "pos": "adjective",
+      "def": "Capable of working successfully; feasible.",
+      "he": "בר־ביצוע, בר־קיימא",
+      "family": ["viability (n.)"],
+      "ex": [
+        "Solar power is now a [viable] alternative to coal.",
+        "The business is no longer financially [viable].",
+        "Is there a [viable] way to cut costs without layoffs?"
+      ],
+      "col": ["viable alternative", "viable option", "commercially viable", "financially viable"],
+      "reg": "neutral",
+      "syn": ["feasible", "workable", "practicable", "sustainable"],
+      "nuance": "Viable means able to survive or work in practice, often economically. Feasible means possible to do; plausible means seeming true.",
+      "ety": "French viable, from vie 'life' — capable of living.",
+      "tier": 1,
+      "themes": ["work", "money"],
+      "prec": {
+        "s": "Without government subsidies, the small airline is no longer financially ___.",
+        "opts": ["plausible", "valid", "vital"],
+        "why": "'Financially viable' = able to survive economically. Plausible means believable; valid means legally or logically acceptable; vital means essential."
+      }
+    },
+    {
+      "word": "culminate",
+      "ipa": "ˈkʌlmɪneɪt",
+      "pos": "verb",
+      "def": "To reach a climax or final point after a gradual development.",
+      "he": "להגיע לשיא, להסתיים ב־",
+      "family": ["culmination (n.)"],
+      "ex": [
+        "Years of protest [culminated] in a change of government.",
+        "The festival [culminates] with fireworks on Saturday night.",
+        "The award was the [culmination] of a long career."
+      ],
+      "col": ["culminate in", "culminate with", "the culmination of"],
+      "reg": "formal",
+      "syn": ["climax", "end", "conclude", "come to a head"],
+      "nuance": "Culminate in/with is about a build-up reaching its high point. Result in is neutral cause and effect; come to a head is informal, for a crisis.",
+      "ety": "Late Latin culminare, from culmen 'summit'.",
+      "tier": 2,
+      "themes": ["change"],
+      "prec": {
+        "s": "Months of rising tension ___ in a general strike that shut down the country.",
+        "ans": "culminated",
+        "opts": ["accumulated", "calculated", "cultivated"],
+        "why": "Culminate in = reach a climax in. Accumulate means build up gradually (and doesn't take 'in'); calculate means work out; cultivate means grow or develop."
+      }
+    },
+    {
+      "word": "deference",
+      "ipa": "ˈdefərəns",
+      "pos": "noun",
+      "def": "Polite submission and respect towards someone's opinion, age or authority.",
+      "he": "כבוד, התחשבות, הכנעה מתוך כבוד",
+      "family": ["defer (v.)", "deferential (adj.)"],
+      "ex": [
+        "In [deference] to his wishes, the funeral was private.",
+        "The young doctors treated the professor with great [deference].",
+        "Out of [deference] to her grandmother, she wore a skirt."
+      ],
+      "col": ["in deference to", "out of deference to", "with deference", "show deference"],
+      "reg": "formal",
+      "syn": ["respect", "regard", "submission", "consideration"],
+      "nuance": "Deference is respect that makes you yield to someone else's wishes or authority. Reverence is deep admiration, often religious.",
+      "ety": "French déférence, from déférer 'to refer, yield'.",
+      "tier": 2,
+      "themes": ["relationships", "society"],
+      "prec": {
+        "s": "In ___ to the family's wishes, the funeral was kept private.",
+        "opts": ["difference", "defiance", "reference"],
+        "why": "'In deference to' someone's wishes = out of respect for them. Difference is dissimilarity; defiance is open resistance; 'in reference to' means regarding."
+      }
+    },
+    {
+      "word": "dissonance",
+      "ipa": "ˈdɪsənəns",
+      "pos": "noun",
+      "def": "A lack of agreement or harmony; an unpleasant clash of sounds or ideas.",
+      "he": "דיסוננס, סתירה, חוסר הרמוניה",
+      "family": ["dissonant (adj.)"],
+      "ex": [
+        "Smokers who know the risks experience cognitive [dissonance].",
+        "There's a [dissonance] between the company's values and its behaviour.",
+        "The composer uses [dissonance] to create tension."
+      ],
+      "col": ["cognitive dissonance", "a dissonance between", "jarring dissonance"],
+      "reg": "academic",
+      "syn": ["discord", "conflict", "incongruity", "clash"],
+      "nuance": "Cognitive dissonance is the discomfort of holding contradictory beliefs or acting against them. Discord is disagreement between people.",
+      "ety": "Latin dissonare 'to disagree in sound', from sonare 'to sound'.",
+      "tier": 2,
+      "themes": ["thinking", "emotion"],
+      "prec": {
+        "s": "Eating meat while loving animals creates what psychologists call cognitive ___.",
+        "opts": ["discord", "dissent", "distortion"],
+        "why": "'Cognitive dissonance' is the fixed term. Discord is conflict between people; dissent is disagreement with authority; distortion is a twisting of facts."
+      }
+    },
+    {
+      "word": "epitome",
+      "ipa": "ɪˈpɪtəmi",
+      "pos": "noun",
+      "def": "A perfect example of a quality or type.",
+      "he": "התגלמות",
+      "family": ["epitomize (v.)"],
+      "ex": [
+        "She is the [epitome] of elegance.",
+        "The hotel is the [epitome] of luxury.",
+        "His behaviour [epitomized] everything that was wrong with the company."
+      ],
+      "col": ["the epitome of", "the very epitome of", "epitomize"],
+      "reg": "formal",
+      "syn": ["embodiment", "personification", "quintessence", "archetype"],
+      "nuance": "Epitome is used in 'the epitome of + quality'. Note the pronunciation: four syllables, ih-PIT-uh-mee.",
+      "ety": "Greek epitomē 'abridgement', from epitemnein 'to cut short'.",
+      "tier": 1,
+      "themes": ["quality"],
+      "prec": {
+        "s": "With its marble halls and gold taps, the hotel is the ___ of luxury.",
+        "opts": ["epitaph", "epicentre", "episode"],
+        "why": "The epitome of = the perfect example of. An epitaph is a gravestone inscription; an epicentre is the centre of an earthquake or crisis; an episode is one part of a series."
+      }
+    },
+    {
+      "word": "impetus",
+      "ipa": "ˈɪmpɪtəs",
+      "pos": "noun",
+      "def": "Something that makes a process happen or happen more quickly; driving force.",
+      "he": "דחף, תנופה",
+      "family": ["impetuous (adj., related)"],
+      "ex": [
+        "The scandal gave new [impetus] to the reform movement.",
+        "The [impetus] for change came from employees.",
+        "The talks have lost their [impetus]."
+      ],
+      "col": ["give impetus to", "provide the impetus for", "lose impetus", "fresh impetus"],
+      "reg": "formal",
+      "syn": ["momentum", "stimulus", "catalyst", "incentive"],
+      "nuance": "Impetus is the push that starts or speeds something. Momentum is the force something has once moving; an incentive is a reward that motivates.",
+      "ety": "Latin impetus 'assault, force', from impetere 'to attack'.",
+      "tier": 2,
+      "themes": ["change"],
+      "prec": {
+        "s": "The disaster provided the ___ for long-overdue safety reforms.",
+        "opts": ["impetuous", "imprint", "impasse"],
+        "why": "The impetus for = the driving force behind. Impetuous is an adjective meaning rash; an imprint is a mark; an impasse is a deadlock."
+      }
+    },
+    {
+      "word": "inadvertent",
+      "ipa": "ˌɪnədˈvɜːrtənt",
+      "pos": "adjective",
+      "def": "Not resulting from or achieved through deliberate planning; unintentional.",
+      "he": "בשוגג, לא מכוון",
+      "family": ["inadvertently (adv.)"],
+      "ex": [
+        "I [inadvertently] deleted the whole file.",
+        "The leak was [inadvertent], the company insists.",
+        "She made an [inadvertent] error in the calculations."
+      ],
+      "col": ["inadvertently delete", "inadvertent error", "inadvertently reveal"],
+      "reg": "formal",
+      "syn": ["unintentional", "accidental", "unwitting", "careless"],
+      "nuance": "Inadvertent stresses lack of intention, often from not paying attention. Unwitting means not knowing what you were doing or part of.",
+      "ety": "in- 'not' + Latin advertere 'to turn towards', from vertere 'to turn'.",
+      "root": "vert",
+      "tier": 2,
+      "themes": ["work"],
+      "prec": {
+        "s": "I ___ replied to everyone in the company instead of just my manager.",
+        "ans": "inadvertently",
+        "opts": ["inadequately", "indefinitely", "invariably"],
+        "why": "Inadvertently = by accident. Inadequately means not well enough; indefinitely means with no fixed end; invariably means always."
+      }
+    },
+    {
+      "word": "innate",
+      "ipa": "ɪˈneɪt",
+      "pos": "adjective",
+      "def": "Present from birth; natural rather than learned.",
+      "he": "מולד, טבעי",
+      "family": ["innately (adv.)"],
+      "ex": [
+        "Children have an [innate] ability to learn languages.",
+        "She has an [innate] sense of rhythm.",
+        "Is aggression [innate] or learned?"
+      ],
+      "col": ["innate ability", "innate talent", "innate sense of", "innate curiosity"],
+      "reg": "formal",
+      "syn": ["inborn", "inherent", "natural", "intrinsic"],
+      "nuance": "Innate is for qualities of people and animals present from birth. Inherent is for qualities of things and systems (inherent risk).",
+      "ety": "Latin innatus 'inborn', from nasci 'to be born'.",
+      "root": "nasc",
+      "tier": 1,
+      "themes": ["character"],
+      "prec": {
+        "s": "Some researchers believe humans have an ___ capacity for language that needs no teaching.",
+        "opts": ["inherent", "intrinsic", "endemic"],
+        "why": "Innate describes abilities present from birth in living beings. Inherent and intrinsic are mostly about the nature of things or ideas; endemic means regularly found in a place."
+      }
+    },
+    {
+      "word": "mundane",
+      "ipa": "mʌnˈdeɪn",
+      "pos": "adjective",
+      "def": "Lacking interest or excitement; ordinary and everyday.",
+      "he": "שגרתי, יומיומי, משמים",
+      "family": ["mundanity (n.)"],
+      "ex": [
+        "She was tired of [mundane] tasks like filing and photocopying.",
+        "Even the most [mundane] objects can be beautiful in a photograph.",
+        "The conversation drifted to [mundane] matters like parking."
+      ],
+      "col": ["mundane tasks", "mundane details", "the mundane realities of"],
+      "reg": "neutral",
+      "syn": ["ordinary", "humdrum", "routine", "banal"],
+      "nuance": "Mundane means everyday and unexciting — not necessarily bad. Banal suggests something unoriginal and boring; humdrum is informal and monotonous.",
+      "ety": "Latin mundanus 'worldly', from mundus 'world'.",
+      "tier": 1,
+      "themes": ["quality"],
+      "prec": {
+        "s": "Astronauts say that even in space, much of their time is spent on ___ chores like cleaning.",
+        "opts": ["profane", "mundial", "lucid"],
+        "why": "Mundane means ordinary and everyday. Profane means irreverent; 'mundial' isn't an English word (Spanish for 'world'); lucid means clear."
+      }
+    },
+    {
+      "word": "onerous",
+      "ipa": "ˈoʊnərəs",
+      "pos": "adjective",
+      "def": "Involving a great deal of effort, trouble or difficulty; burdensome.",
+      "he": "מכביד, מעיק",
+      "family": ["onus (n., related)"],
+      "ex": [
+        "Small firms complain about [onerous] paperwork.",
+        "The loan came with [onerous] conditions.",
+        "Caring for him alone was an [onerous] task."
+      ],
+      "col": ["onerous task", "onerous conditions", "onerous obligations", "onerous burden"],
+      "reg": "formal",
+      "syn": ["burdensome", "arduous", "taxing", "demanding"],
+      "nuance": "Onerous is about burdens and obligations that weigh on you, often legal or administrative. Arduous is about physically or mentally exhausting effort.",
+      "ety": "Latin onerosus, from onus 'burden'.",
+      "tier": 2,
+      "themes": ["work"],
+      "prec": {
+        "s": "Small businesses say the new reporting rules are ___, requiring hours of paperwork every week.",
+        "opts": ["arduous", "ominous", "odious"],
+        "why": "Onerous fits obligations and rules that are a burden. Arduous suits hard physical or mental effort (an arduous climb); ominous means threatening; odious means hateful."
+      }
+    },
+    {
+      "word": "ostentatious",
+      "ipa": "ˌɑːstenˈteɪʃəs",
+      "pos": "adjective",
+      "def": "Designed to impress or attract attention, especially by showing wealth.",
+      "he": "ראוותני",
+      "family": ["ostentation (n.)", "ostentatiously (adv.)"],
+      "ex": [
+        "They live in an [ostentatious] mansion with gold taps.",
+        "He wore an [ostentatious] watch to the meeting.",
+        "Despite her wealth, she avoided [ostentatious] displays."
+      ],
+      "col": ["ostentatious display", "ostentatious wealth", "ostentatiously rich"],
+      "reg": "formal",
+      "syn": ["showy", "flashy", "pretentious", "flamboyant"],
+      "nuance": "Ostentatious criticises showing off wealth or importance. Flamboyant is about a bold, colourful style or personality, often admired.",
+      "ety": "Latin ostentare 'to display', from ostendere 'to show'.",
+      "tier": 2,
+      "themes": ["character", "money"],
+      "prec": {
+        "s": "The billionaire's ___ yacht, with its own helicopter pad, drew criticism during the recession.",
+        "opts": ["ostensible", "obsequious", "ominous"],
+        "why": "Ostentatious = showy, flaunting wealth. Ostensible means apparent; obsequious means servile; ominous means threatening."
+      }
+    },
+    {
+      "word": "palpable",
+      "ipa": "ˈpælpəbl",
+      "pos": "adjective",
+      "def": "So intense or obvious that it can almost be touched or felt.",
+      "he": "מוחשי, מורגש",
+      "family": ["palpably (adv.)"],
+      "ex": [
+        "The tension in the room was [palpable].",
+        "There was a [palpable] sense of relief when the results came in.",
+        "His fear was [palpable]."
+      ],
+      "col": ["palpable tension", "palpable sense of", "palpable excitement", "almost palpable"],
+      "reg": "formal",
+      "syn": ["tangible", "perceptible", "evident", "manifest"],
+      "nuance": "Palpable is used for atmospheres and feelings so strong you can almost touch them. Tangible is for real, concrete benefits or evidence.",
+      "ety": "Late Latin palpabilis, from palpare 'to touch gently'.",
+      "tier": 2,
+      "themes": ["emotion", "degree"],
+      "prec": {
+        "s": "As the jury returned, the tension in the courtroom was ___.",
+        "opts": ["tangible", "palatable", "pliable"],
+        "why": "'The tension was palpable' is the classic collocation. Tangible suits concrete benefits or evidence; palatable means tasty or acceptable; pliable means easily bent."
+      }
+    },
+    {
+      "word": "sanguine",
+      "ipa": "ˈsæŋɡwɪn",
+      "pos": "adjective",
+      "def": "Optimistic or positive, especially in a difficult situation.",
+      "he": "אופטימי, בטוח",
+      "family": [],
+      "ex": [
+        "The minister was [sanguine] about the economy's prospects.",
+        "I'm not as [sanguine] as you are about our chances.",
+        "Investors remain surprisingly [sanguine] despite the warnings."
+      ],
+      "col": ["sanguine about", "remain sanguine", "a sanguine view"],
+      "reg": "formal",
+      "syn": ["optimistic", "hopeful", "confident", "upbeat"],
+      "nuance": "Sanguine often implies optimism others may think unjustified; it's common in the negative ('less sanguine'). Upbeat is informal.",
+      "ety": "Latin sanguineus 'of blood' — a blood-dominated temperament was thought cheerful.",
+      "tier": 3,
+      "themes": ["emotion"],
+      "prec": {
+        "s": "Analysts are less ___ than the government about the chances of avoiding a recession.",
+        "opts": ["sanguinary", "sanctimonious", "sardonic"],
+        "why": "Sanguine = optimistic. Sanguinary means bloody (a sanguinary battle); sanctimonious means self-righteous; sardonic means mocking."
+      }
+    },
+    {
+      "word": "scrutinize",
+      "ipa": "ˈskruːtənaɪz",
+      "pos": "verb",
+      "def": "To examine or inspect closely and thoroughly.",
+      "he": "לבחון בקפידה",
+      "family": ["scrutiny (n.)"],
+      "ex": [
+        "Auditors will [scrutinize] every expense claim.",
+        "She [scrutinized] his face for any sign of lying.",
+        "The deal is now under close [scrutiny]."
+      ],
+      "col": ["scrutinize closely", "come under scrutiny", "public scrutiny", "close scrutiny"],
+      "reg": "formal",
+      "syn": ["examine", "inspect", "analyse", "pore over"],
+      "nuance": "Scrutinize means examine critically, looking for faults. Peruse traditionally means read carefully, but is often used to mean skim.",
+      "ety": "Late Latin scrutinium 'search', from scrutari 'to search through rubbish'.",
+      "tier": 1,
+      "themes": ["work", "knowledge"],
+      "prec": {
+        "s": "Before signing, the lawyer ___ every clause of the contract.",
+        "ans": "scrutinized",
+        "opts": ["skimmed", "glanced at", "browsed"],
+        "why": "Scrutinize means examine closely and critically. Skim, glance at and browse are all quick and superficial."
+      }
+    },
+    {
+      "word": "stipulate",
+      "ipa": "ˈstɪpjuleɪt",
+      "pos": "verb",
+      "def": "To demand or specify something as part of an agreement or rule.",
+      "he": "להתנות, לקבוע (בתנאי)",
+      "family": ["stipulation (n.)"],
+      "ex": [
+        "The contract [stipulates] that payment must be made within 30 days.",
+        "Her will [stipulated] that the house could not be sold.",
+        "One [stipulation] of the loan is that you keep the property insured."
+      ],
+      "col": ["stipulate that", "clearly stipulate", "as stipulated in", "on the stipulation that"],
+      "reg": "formal",
+      "syn": ["specify", "require", "lay down", "set out"],
+      "nuance": "Stipulate is used for conditions in contracts, laws and wills. Specify is more general (specify the size).",
+      "ety": "Latin stipulari 'to demand as a formal promise'.",
+      "tier": 2,
+      "themes": ["work", "money"],
+      "prec": {
+        "s": "The lease ___ that tenants may not keep pets.",
+        "ans": "stipulates",
+        "opts": ["stimulates", "speculates", "simulates"],
+        "why": "Stipulate = set as a condition in an agreement. Stimulate means encourage; speculate means guess; simulate means imitate."
+      }
+    },
+    {
+      "word": "verbatim",
+      "ipa": "vɜːrˈbeɪtɪm",
+      "pos": "adverb / adjective",
+      "def": "In exactly the same words as were used originally.",
+      "he": "מילה במילה",
+      "family": [],
+      "ex": [
+        "He repeated her instructions [verbatim].",
+        "The newspaper printed the letter [verbatim].",
+        "We need a [verbatim] record of the meeting."
+      ],
+      "col": ["quote verbatim", "repeat verbatim", "verbatim record", "verbatim transcript"],
+      "reg": "formal",
+      "syn": ["word for word", "exactly", "literally"],
+      "nuance": "Verbatim is about copying exact words. Literally means in the literal sense — often misused as an intensifier.",
+      "ety": "Medieval Latin, from verbum 'word'.",
+      "root": "verb",
+      "tier": 2,
+      "themes": ["speech"],
+      "prec": {
+        "s": "The student was caught copying whole paragraphs ___ from Wikipedia.",
+        "opts": ["verbosely", "vicariously", "virtually"],
+        "why": "Verbatim = word for word. Verbosely means using too many words; vicariously means through someone else's experience; virtually means almost."
+      }
+    },
+    {
+      "word": "zealous",
+      "ipa": "ˈzeləs",
+      "pos": "adjective",
+      "def": "Having or showing great energy and enthusiasm for a cause or objective, sometimes excessively.",
+      "he": "נלהב, קנאי (לרעיון)",
+      "family": ["zeal (n.)", "zealot (n.)", "zealously (adv.)"],
+      "ex": [
+        "The [zealous] new manager rewrote every procedure.",
+        "Police were accused of being over-[zealous] in enforcing the curfew.",
+        "She is a [zealous] defender of free speech."
+      ],
+      "col": ["zealous supporter", "over-zealous", "zealous defender", "with great zeal"],
+      "reg": "formal",
+      "syn": ["fervent", "ardent", "passionate", "fanatical"],
+      "nuance": "Zealous can be admiring or warn of excess; 'over-zealous' is clearly critical. A zealot is a fanatic.",
+      "ety": "Greek zēlos 'eagerness, jealousy' (the same source as 'jealous').",
+      "tier": 2,
+      "themes": ["character"],
+      "prec": {
+        "s": "An over-___ security guard refused to let the CEO into her own building without ID.",
+        "opts": ["jealous", "pious", "candid"],
+        "why": "Over-zealous means too enthusiastic in applying rules. Jealous shares the origin but means envious; pious means religious; candid means honest."
+      }
+    },
+    {
+      "word": "vindictive",
+      "ipa": "vɪnˈdɪktɪv",
+      "pos": "adjective",
+      "def": "Having or showing a strong wish for revenge.",
+      "he": "נקמני",
+      "family": ["vindictiveness (n.)", "vindictively (adv.)"],
+      "ex": [
+        "Her ex-husband was [vindictive] and tried to ruin her business.",
+        "The sacking looked like a [vindictive] act.",
+        "Don't be [vindictive] — let it go."
+      ],
+      "col": ["vindictive streak", "vindictive behaviour", "petty and vindictive"],
+      "reg": "neutral",
+      "syn": ["vengeful", "spiteful", "malicious", "unforgiving"],
+      "nuance": "Vindictive is about wanting revenge. Spiteful is small-scale meanness; malicious is intent to harm, not necessarily revenge. Don't confuse with vindicated (proved right).",
+      "ety": "Latin vindicta 'vengeance'.",
+      "tier": 2,
+      "themes": ["character", "conflict"],
+      "prec": {
+        "s": "After she left the company, her ___ former boss tried to stop her getting any job in the industry.",
+        "opts": ["vindicated", "vigilant", "venerable"],
+        "why": "Vindictive = seeking revenge. Vindicated means proved right; vigilant means watchful; venerable means respected for age."
+      }
+    },
+    {
+      "word": "wary",
+      "ipa": "ˈweri",
+      "pos": "adjective",
+      "def": "Feeling or showing caution about possible dangers or problems.",
+      "he": "זהיר, חשדן",
+      "family": ["warily (adv.)", "wariness (n.)", "unwary (adj.)"],
+      "ex": [
+        "Be [wary] of emails asking for your password.",
+        "Investors are [wary] of the new market.",
+        "The cat watched the dog [warily]."
+      ],
+      "col": ["wary of", "be wary of strangers", "keep a wary eye on", "increasingly wary"],
+      "reg": "neutral",
+      "syn": ["cautious", "suspicious", "guarded", "circumspect"],
+      "nuance": "Wary adds a hint of suspicion to caution. Weary means tired — a frequent confusion.",
+      "ety": "Old English wær 'aware, careful' (same root as 'beware').",
+      "tier": 1,
+      "themes": ["emotion", "character"],
+      "prec": {
+        "s": "After being scammed once, she was ___ of any email that asked for her bank details.",
+        "opts": ["weary", "wry", "wan"],
+        "why": "Wary of = cautious and suspicious about. Weary means tired; wry means drily amused; wan means pale."
+      }
+    }
+  ]
+}

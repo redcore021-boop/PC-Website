@@ -39,5 +39,11 @@
   {"key": "mit", "form": "-mit-, -miss-", "meaning": "send, let go", "origin": "Latin mittere"},
   {"key": "tac", "form": "-tac-, -tic-", "meaning": "silent", "origin": "Latin tacere"},
   {"key": "trans", "form": "trans-", "meaning": "across, beyond", "origin": "Latin trans"},
-  {"key": "sid", "form": "-sid-, -sed-", "meaning": "sit, settle", "origin": "Latin sedere"}
+  {"key": "sid", "form": "-sid-, -sed-", "meaning": "sit, settle", "origin": "Latin sedere"},
+  {"key": "duc", "form": "-duc-, -duct-", "meaning": "lead", "origin": "Latin ducere"},
+  {"key": "clud", "form": "-clud-, -clus-", "meaning": "shut, close", "origin": "Latin claudere"},
+  {"key": "gno", "form": "-gno-, -cogn-", "meaning": "know", "origin": "Latin (co)gnoscere, Greek gnōsis"},
+  {"key": "verb", "form": "verb-", "meaning": "word", "origin": "Latin verbum"},
+  {"key": "pend", "form": "-pend-, -pens-", "meaning": "hang, weigh", "origin": "Latin pendere"},
+  {"key": "ped", "form": "-ped-", "meaning": "foot", "origin": "Latin pes, pedis"}
 ]

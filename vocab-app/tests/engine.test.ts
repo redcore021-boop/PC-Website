@@ -92,8 +92,10 @@ describe('scheduling and levels', () => {
     const p = { ...newProgress('x'), level: 5 as CardType };
     expect(chooseCardType({ ...p, level: 2 }, [1, 2, 3])).toBe(2);
     expect(chooseCardType(p, [1, 2, 3])).toBe(3);
-    const seen = new Set([0.1, 0.5, 0.9].map((s) => chooseCardType(p, [1, 2, 3, 4, 5], s)));
+    expect(chooseCardType(p, [1, 2, 3, 4, 5], 0.1)).toBe(5); // the frontier most of the time
+    const seen = new Set([0.65, 0.8, 0.95].map((s) => chooseCardType(p, [1, 2, 3, 4, 5], s)));
     expect(seen).toEqual(new Set([3, 4, 5]));
+    expect(chooseCardType({ ...p, level: 4 }, [1, 2, 3, 4, 5], 0.3)).toBe(4);
   });
 });
 
