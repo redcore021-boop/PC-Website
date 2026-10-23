@@ -662,3 +662,18 @@ a.btn { text-decoration: none; }
 
 .result-big { font-size: 64px; font-weight: 800; line-height: 1.05; color: var(--ink); margin-top: 6px; }
 .record { font-size: 15px; padding: 6px 14px; margin-bottom: 10px; }
+
+.mic-btn {
+  width: 92px; height: 92px; border-radius: 50%; cursor: pointer;
+  display: inline-grid; place-items: center;
+  background: var(--accent); color: var(--accent-ink); border: 0;
+  box-shadow: 0 0 0 0 var(--accent-soft);
+}
+.mic-btn:active { transform: scale(0.96); }
+.mic-btn.on { background: var(--bad); color: #fff; animation: pulse 1.2s infinite; }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--bad-soft); }
+  70% { box-shadow: 0 0 0 22px rgba(0, 0, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+}
+.game-tile.off { opacity: 0.6; }

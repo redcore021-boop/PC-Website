@@ -4,6 +4,7 @@ import { useApp } from '../state';
 import { db } from '../lib/db';
 import { go } from '../lib/router';
 import { speak, speechSupported } from '../lib/speech';
+import { heardCorrectly, listenOnce, recognitionSupported, RECOGNITION_ERROR_TEXT, type Listening, type RecognitionError } from '../lib/recognition';
 import { shortHe, simpleDef } from '../lib/words';
 import { shuffle } from '../lib/random';
 import {
@@ -23,12 +24,14 @@ import {
   type TrueFalseItem,
 } from '../lib/games';
 import type { WordEntry } from '../types';
-import { CloseIcon } from '../components/Icons';
+import { CloseIcon, MicIcon } from '../components/Icons';
 import { AudioButton } from '../components/AudioButton';
 
 const SPEED_SECONDS = 60;
 const MATCH_PAIRS = 6;
 const MISTAKE_PENALTY = 3;
+const SPEAK_WORDS = 8;
+const SPEAK_TRIES = 3;
 
 const fmtTime = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
 
@@ -116,6 +119,27 @@ export function PlayHub() {
             best={best.speed !== undefined ? `השיא שלך: ${best.speed} נכונות` : undefined}
             onPlay={() => go('play', 'speed')}
           />
+          {recognitionSupported() ? (
+            <GameTile
+              emoji="🎤"
+              title="הגייה"
+              text="אומרים את המילה בקול, והטלפון בודק אם הבין אתכם."
+              best={best.speak !== undefined ? `השיא שלך: ${best.speak}%` : undefined}
+              onPlay={() => go('play', 'speak')}
+            />
+          ) : (
+            <section className="card game-tile off">
+              <div className="game-head">
+                <span className="game-emoji" aria-hidden>
+                  🎤
+                </span>
+                <div style={{ flex: 1 }}>
+                  <h2>הגייה</h2>
+                  <p>הדפדפן הזה לא תומך בזיהוי דיבור. זה עובד בכרום באנדרואיד ובספארי באייפון.</p>
+                </div>
+              </div>
+            </section>
+          )}
           {speechSupported() && (
             <GameTile
               emoji="🎧"
@@ -174,6 +198,8 @@ export function Game({ game, size }: { game: GameKey; size?: string }) {
         return <MatchGame key={round} pairs={pickPairs(pool, MATCH_PAIRS)} onAgain={again} />;
       case 'speed':
         return <SpeedGame key={round} pool={pool} all={words} onAgain={again} />;
+      case 'speak':
+        return <SpeakGame key={round} words={shuffle(pool).slice(0, SPEAK_WORDS)} onAgain={again} />;
     }
   }, [round, ready, game, size]);
   return screen;
@@ -530,6 +556,157 @@ function SpeedGame({ pool, all, onAgain }: { pool: WordEntry[]; all: WordEntry[]
           ✗ לא נכון
         </button>
       </div>
+    </>
+  );
+}
+
+/* ---------- Pronunciation ---------- */
+
+type SpeakState =
+  | { s: 'idle' }
+  | { s: 'listening' }
+  | { s: 'good'; heard: string }
+  | { s: 'bad'; heard: string }
+  | { s: 'error'; error: RecognitionError };
+
+function SpeakGame({ words, onAgain }: { words: WordEntry[]; onAgain: () => void }) {
+  const { settings } = useApp();
+  const [index, setIndex] = useState(0);
+  const [state, setState] = useState<SpeakState>({ s: 'idle' });
+  const [tries, setTries] = useState(0);
+  const [missed, setMissed] = useState<WordEntry[]>([]);
+  const [done, setDone] = useState<{ pct: number; record: boolean } | null>(null);
+  const active = useRef<Listening | null>(null);
+  const w = words[index];
+
+  useEffect(() => () => active.current?.stop(), []);
+
+  const next = async (missedNow: WordEntry[]) => {
+    setState({ s: 'idle' });
+    setTries(0);
+    if (index + 1 < words.length) {
+      setIndex(index + 1);
+      return;
+    }
+    const pct = Math.round(((words.length - missedNow.length) / words.length) * 100);
+    setDone({ pct, record: await saveBest('speak', pct) });
+  };
+
+  const listen = async () => {
+    if (state.s === 'listening') {
+      active.current?.stop();
+      return;
+    }
+    setState({ s: 'listening' });
+    const l = listenOnce(settings.accent);
+    active.current = l;
+    try {
+      const heard = await l.result;
+      if (heardCorrectly(heard, w.word)) {
+        setState({ s: 'good', heard: heard[0] });
+        setTimeout(() => void next(missed), 1300);
+      } else {
+        setTries(tries + 1);
+        setState({ s: 'bad', heard: heard[0] });
+      }
+    } catch (e) {
+      setState({ s: 'error', error: (typeof e === 'string' ? e : 'other') as RecognitionError });
+    } finally {
+      active.current = null;
+    }
+  };
+
+  const giveUp = () => {
+    const m = missed.some((x) => x.id === w.id) ? missed : [...missed, w];
+    setMissed(m);
+    void next(m);
+  };
+
+  if (done) {
+    return (
+      <GameResult
+        big={`${done.pct}%`}
+        line={`${words.length - missed.length} מתוך ${words.length} מילים נאמרו נכון`}
+        verdict={done.pct >= 90 ? 'הגייה מצוינת!' : done.pct >= 60 ? 'יפה מאוד!' : 'תרגול טוב. כדאי להקשיב ולנסות שוב.'}
+        record={done.record}
+        missed={missed}
+        onAgain={onAgain}
+      />
+    );
+  }
+
+  const outOfTries = state.s === 'bad' && tries >= SPEAK_TRIES;
+  return (
+    <>
+      <TopBar fraction={(index + (state.s === 'good' ? 1 : 0)) / words.length} right={`${index + 1}/${words.length}`} />
+      <div className="q-head">
+        <span className="prompt-kind">אמרו את המילה בקול</span>
+        {tries > 0 && state.s !== 'good' && <span className="chip">ניסיון {Math.min(tries + 1, SPEAK_TRIES)} מתוך {SPEAK_TRIES}</span>}
+      </div>
+      <section className="card prompt-card center">
+        <div className="row" style={{ justifyContent: 'center' }} dir="ltr">
+          <h2 className="headword" lang="en" style={{ margin: 0 }}>
+            {w.word}
+          </h2>
+          <AudioButton text={w.word} label="להקשיב להגייה" />
+        </div>
+        {w.ipa && (
+          <div className="ipa" dir="ltr" style={{ marginTop: 4, textAlign: 'center' }}>
+            /{w.ipa}/
+          </div>
+        )}
+        <div className="muted" style={{ marginTop: 6 }}>
+          {shortHe(w)}
+        </div>
+      </section>
+
+      {state.s !== 'good' && !outOfTries && (
+        <div className="center" style={{ marginTop: 20 }}>
+          <button
+            className={'mic-btn' + (state.s === 'listening' ? ' on' : '')}
+            onClick={() => void listen()}
+            aria-label={state.s === 'listening' ? 'עצירה' : 'להקליט'}
+          >
+            <MicIcon width={34} height={34} />
+          </button>
+          <div className="small muted" style={{ marginTop: 10 }}>
+            {state.s === 'listening' ? 'מקשיב… אמרו את המילה' : 'לחצו ואמרו את המילה'}
+          </div>
+        </div>
+      )}
+
+      {state.s === 'good' && (
+        <div className="feedback good">
+          <div className="verdict">מצוין! הבנתי אתכם</div>
+          <p className="small" style={{ margin: '4px 0 0' }}>
+            זוהה: <bdi lang="en">{state.heard}</bdi>
+          </p>
+        </div>
+      )}
+      {state.s === 'bad' && (
+        <div className="feedback bad">
+          <div className="verdict">{outOfTries ? 'לא הפעם' : 'עוד לא מדויק'}</div>
+          <p className="small" style={{ margin: '4px 0 0' }}>
+            שמעתי: <bdi lang="en">{state.heard}</bdi>
+          </p>
+          <p className="small muted" style={{ margin: '4px 0 0' }}>
+            {outOfTries ? 'נמשיך הלאה, והמילה תופיע ברשימה לחזרה.' : 'הקשיבו להגייה ונסו שוב.'}
+          </p>
+        </div>
+      )}
+      {state.s === 'error' && (
+        <div className="feedback typo">
+          <p className="small" style={{ margin: 0 }}>
+            {RECOGNITION_ERROR_TEXT[state.error]}
+          </p>
+        </div>
+      )}
+
+      {state.s !== 'good' && state.s !== 'listening' && (
+        <button className={'btn block' + (outOfTries ? ' primary' : ' ghost small')} style={{ marginTop: 12 }} onClick={giveUp}>
+          {outOfTries ? (index + 1 < words.length ? 'הבא' : 'לתוצאה') : 'לדלג על המילה'}
+        </button>
+      )}
     </>
   );
 }

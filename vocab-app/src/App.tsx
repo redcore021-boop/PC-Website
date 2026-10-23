@@ -54,7 +54,7 @@ function Shell() {
     );
   }
 
-  if (page === 'play' && (param === 'quiz' || param === 'match' || param === 'speed' || param === 'listen')) {
+  if (page === 'play' && (param === 'quiz' || param === 'match' || param === 'speed' || param === 'listen' || param === 'speak')) {
     return (
       <div className="app fullscreen">
         <Game game={param as GameKey} size={param2} />

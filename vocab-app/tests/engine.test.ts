@@ -288,3 +288,20 @@ describe('tests and games', () => {
     expect(isBetter('quiz', 70, 80)).toBe(false);
   });
 });
+
+describe('pronunciation check', () => {
+  it('accepts the word, near misses and the word inside a phrase', async () => {
+    const { heardCorrectly } = await import('../src/lib/recognition');
+    expect(heardCorrectly(['Mitigate'], 'mitigate')).toBe(true);
+    expect(heardCorrectly(['I said mitigate.'], 'mitigate')).toBe(true);
+    expect(heardCorrectly(['miss a gate', 'mitigate'], 'mitigate')).toBe(true);
+    expect(heardCorrectly(["the ball's in your court", 'the ball is in your court'], 'the ball is in your court')).toBe(true);
+    expect(heardCorrectly(['call it a day'], 'call it a day')).toBe(true);
+    expect(heardCorrectly(['litigate'], 'mitigate')).toBe(false);
+    expect(heardCorrectly(['ubiquitus'], 'ubiquitous')).toBe(true);
+    expect(heardCorrectly(['emphasise'], 'emphasize')).toBe(true);
+    expect(heardCorrectly(['investigate'], 'mitigate')).toBe(false);
+    expect(heardCorrectly(['cat'], 'cot')).toBe(false);
+    expect(heardCorrectly([], 'mitigate')).toBe(false);
+  });
+});
