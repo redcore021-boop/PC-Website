@@ -11,6 +11,8 @@ export interface QueueItem {
   /** First attempt of the day for this word: updates FSRS. Repeats after a mistake do not. */
   graded: boolean;
   isNew: boolean;
+  /** First quizzes of a word use clearly different wrong options */
+  easy: boolean;
   repeat: number;
 }
 
@@ -24,6 +26,14 @@ export type SessionMode = 'daily' | 'quick';
 export const QUICK_SESSION_MS = 10 * 60 * 1000;
 export const MAX_REPEATS = 3;
 const QUICK_NEW_CAP = 5;
+
+/** Warm-up: the first study days introduce fewer new words, building up to the chosen pace. */
+export const WARMUP_START = 5;
+export const WARMUP_STEP = 2;
+
+export function effectiveNewPerDay(newPerDay: number, daysStudied: number): number {
+  return Math.min(newPerDay, WARMUP_START + WARMUP_STEP * daysStudied);
+}
 
 let counter = 0;
 const key = () => `q${Date.now().toString(36)}${(counter++).toString(36)}`;
@@ -72,6 +82,7 @@ export function buildQueue({ words, progress, settings, today, enabled, mode, no
         cardType: chooseCardType(p, availableTypes(enabled, !!w.prec)),
         graded: true,
         isNew: false,
+        easy: p.card.reps < 2,
         repeat: 0,
       };
     });
@@ -99,9 +110,9 @@ export function buildQueue({ words, progress, settings, today, enabled, mode, no
     }
     if (n < fresh.length) {
       const w = fresh[n++];
-      out.push({ key: key(), wordId: w.id, kind: 'intro', cardType: 1, graded: false, isNew: true, repeat: 0 });
+      out.push({ key: key(), wordId: w.id, kind: 'intro', cardType: 1, graded: false, isNew: true, easy: true, repeat: 0 });
       pending.push({
-        item: { key: key(), wordId: w.id, kind: 'quiz', cardType: 1, graded: true, isNew: true, repeat: 0 },
+        item: { key: key(), wordId: w.id, kind: 'quiz', cardType: 1, graded: true, isNew: true, easy: true, repeat: 0 },
         readyAt: out.length + 3,
       });
       flushReady();
@@ -147,6 +158,7 @@ export function buildWeakQueue(words: WordEntry[], progress: Progress[], enabled
       cardType: chooseCardType(p, availableTypes(enabled, !!byId.get(p.wordId)!.prec)),
       graded: false,
       isNew: false,
+      easy: false,
       repeat: 0,
     }));
 }

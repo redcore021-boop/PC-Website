@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import type { WordEntry } from '../types';
+import type { CardType, WordEntry } from '../types';
 import { useApp } from '../state';
 import { db } from '../lib/db';
-import { buildQueue, buildWeakQueue, QUICK_SESSION_MS, requeueAfterMistake, type QueueItem, type SessionMode } from '../lib/session';
+import { buildQueue, buildWeakQueue, effectiveNewPerDay, MAX_REPEATS, QUICK_SESSION_MS, requeueAfterMistake, type QueueItem, type SessionMode } from '../lib/session';
 import { speak } from '../lib/speech';
-import { buildQuestion, CARD_TYPE_NAMES, type Question } from '../lib/cards';
-import { introduceWord, markGoalMet, recordAnswer, todayCounts } from '../lib/store';
+import { buildQuestion, CARD_TYPE_NAMES, maxHints, typingHint, type Question } from '../lib/cards';
+import { daysStudiedBefore, introduceWord, markGoalMet, recordAnswer, todayCounts } from '../lib/store';
 import type { AnswerOutcome } from '../lib/srs';
 import { matchAnswer } from '../lib/fuzzy';
 import { alternativeSpellings } from '../lib/spelling';
@@ -21,7 +21,20 @@ interface Result {
   outcome: AnswerOutcome;
   /** What the learner chose or typed */
   given?: string;
+  /** The card will come back later in this session */
+  again?: boolean;
 }
+
+/** Shown the first time each card type appears, so every new step is explained. */
+const CARD_TYPE_HELP: Record<CardType, string> = {
+  1: 'Read the definition and tap the word it describes.',
+  2: 'Pick the word that completes this real sentence.',
+  3: 'Now produce it yourself: type the word from its definition. Small typos are fine, and “Hint” reveals a letter.',
+  4: 'Choose the most precise word among close synonyms — then read why. That’s where the nuance lives.',
+  5: 'Write a sentence of your own, compare it with native examples, and rate yourself honestly.',
+};
+
+const PRAISE = ['Correct!', 'Nice one!', 'Exactly right.', 'Spot on!', 'Well done!'];
 
 export function Session({ mode }: { mode: Mode }) {
   const { words, wordById, settings } = useApp();
@@ -29,7 +42,8 @@ export function Session({ mode }: { mode: Mode }) {
   const [index, setIndex] = useState(0);
   const [result, setResult] = useState<Result | null>(null);
   const [finished, setFinished] = useState(false);
-  const [tally, setTally] = useState({ answered: 0, correct: 0, introduced: 0 });
+  const [tally, setTally] = useState({ answered: 0, correct: 0, introduced: 0, movedUp: 0 });
+  const [seenTypes, setSeenTypes] = useState<CardType[] | null>(null);
   const startedAt = useRef(Date.now());
   const autoplay = ENABLED_FEATURES.audio && settings.autoplayAudio;
   const [now, setNow] = useState(Date.now());
@@ -38,12 +52,21 @@ export function Session({ mode }: { mode: Mode }) {
   useEffect(() => {
     let alive = true;
     (async () => {
-      const [progress, today] = await Promise.all([db.progress.toArray(), todayCounts()]);
+      const [progress, today, studied, seen] = await Promise.all([
+        db.progress.toArray(),
+        todayCounts(),
+        daysStudiedBefore(),
+        db.kv.get('seenCardTypes'),
+      ]);
+      if (alive) setSeenTypes((seen?.value as CardType[] | undefined) ?? []);
       if (mode === 'weak') {
         if (alive) setQueue(buildWeakQueue(words, progress, ENABLED_CARD_TYPES));
         return;
       }
-      const s = mode === 'extra' ? { ...settings, newPerDay: today.newWords + 5 } : settings;
+      const s =
+        mode === 'extra'
+          ? { ...settings, newPerDay: today.newWords + 5 }
+          : { ...settings, newPerDay: effectiveNewPerDay(settings.newPerDay, studied) };
       const q = buildQueue({
         words,
         progress,
@@ -69,7 +92,7 @@ export function Session({ mode }: { mode: Mode }) {
   const item = queue?.[index];
   const word = item ? wordById.get(item.wordId) : undefined;
   const question = useMemo<Question | null>(
-    () => (item && word && item.kind === 'quiz' ? buildQuestion(word, item.cardType, words) : null),
+    () => (item && word && item.kind === 'quiz' ? buildQuestion(word, item.cardType, words, Math.random, item.easy) : null),
     // a question is built once per queue item so options don't reshuffle on re-render
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [item?.key],
@@ -99,13 +122,21 @@ export function Session({ mode }: { mode: Mode }) {
   const answer = useCallback(
     (outcome: AnswerOutcome, given?: string) => {
       if (!item || result) return;
-      setResult({ outcome, given });
+      const again = !outcome.correct && item.repeat < MAX_REPEATS;
+      setResult({ outcome, given, again });
       if (autoplay && item.cardType !== 5 && word) speak(word.word, settings.accent);
       setTally((t) => ({ ...t, answered: t.answered + 1, correct: t.correct + (outcome.correct ? 1 : 0) }));
-      void recordAnswer(item.wordId, item.cardType, outcome, item.graded, ENABLED_CARD_TYPES);
+      void recordAnswer(item.wordId, item.cardType, outcome, item.graded, ENABLED_CARD_TYPES).then(({ levelUp }) => {
+        if (levelUp) setTally((t) => ({ ...t, movedUp: t.movedUp + 1 }));
+      });
       if (!outcome.correct && queue) setQueue(requeueAfterMistake(queue, index));
+      if (seenTypes && !seenTypes.includes(item.cardType)) {
+        const updated = [...seenTypes, item.cardType];
+        setSeenTypes(updated);
+        void db.kv.put({ key: 'seenCardTypes', value: updated });
+      }
     },
-    [item, result, queue, index, autoplay, word, settings.accent],
+    [item, result, queue, index, autoplay, word, settings.accent, seenTypes],
   );
 
   // Enter continues after an answer (handy on a keyboard)
@@ -202,6 +233,12 @@ export function Session({ mode }: { mode: Mode }) {
   return (
     <>
       {header}
+      {question && seenTypes && !seenTypes.includes(question.type) && (
+        <div className="explainer" role="note">
+          <strong>New card type · {CARD_TYPE_NAMES[question.type]}</strong>
+          <span>{CARD_TYPE_HELP[question.type]}</span>
+        </div>
+      )}
       {question && <QuestionView key={item.key} q={question} result={result} onAnswer={answer} repeat={item.repeat > 0} />}
       {result && (
         <>
@@ -299,6 +336,7 @@ function Choices({
   onAnswer: (o: AnswerOutcome, given?: string) => void;
 }) {
   return (
+    <>
     <div className="options" role="group" aria-label="Options">
       {options.map((o) => {
         let cls = 'option';
@@ -314,6 +352,12 @@ function Choices({
         );
       })}
     </div>
+    {!result && (
+      <button type="button" className="btn ghost block small" style={{ marginTop: 6 }} onClick={() => onAnswer({ correct: false }, '')}>
+        Not sure — show me
+      </button>
+    )}
+    </>
   );
 }
 
@@ -329,11 +373,14 @@ function TypeAnswer({
   kind: React.ReactNode;
 }) {
   const [value, setValue] = useState('');
+  const [hints, setHints] = useState(0);
+  const canHint = hints < maxHints(q.word.word);
   const submit = (e?: React.FormEvent) => {
     e?.preventDefault();
     if (result || !value.trim()) return;
     const m = matchAnswer(value, q.word.word, alternativeSpellings(q.word.word));
-    onAnswer({ correct: m !== 'wrong', hard: m === 'typo' }, value.trim());
+    // a correct answer after hints still counts, but is scheduled a little sooner
+    onAnswer({ correct: m !== 'wrong', hard: m === 'typo' || hints > 0 }, value.trim());
   };
   const state = result ? (result.outcome.correct ? ' correct' : ' wrong') : '';
   return (
@@ -344,8 +391,15 @@ function TypeAnswer({
         <p className="pos" style={{ margin: '8px 0 0' }}>
           {q.word.pos}
         </p>
-        <div className="hint" aria-label="Hint: first letters">
-          {q.hint}
+        <div className="row" style={{ marginTop: 12, alignItems: 'center' }}>
+          <div className="hint" style={{ marginTop: 0, flex: 1 }} aria-label="Hint: letters shown so far">
+            {hints ? typingHint(q.word.word, hints) : q.hint}
+          </div>
+          {!result && canHint && (
+            <button type="button" className="btn small" onClick={() => setHints(hints + 1)}>
+              Hint
+            </button>
+          )}
         </div>
       </section>
       <div style={{ marginTop: 14 }}>
@@ -386,15 +440,16 @@ function Feedback({ q, word, result }: { q: Question; word: WordEntry; result: R
   // when a wrong option is itself a word in the list, show what it actually means
   const chosen = !outcome.correct && given ? [...wordById.values()].find((w) => w.word === given) : undefined;
   let verdict: string;
-  if (q.type === 5) verdict = outcome.correct ? 'Saved — keep using it' : 'Saved — this one needs more practice';
+  if (q.type === 5) verdict = outcome.correct ? 'Saved — great, keep using it in real life' : 'Saved — it’ll come back for more practice';
   else if (typo) verdict = `Almost! Check the spelling: ${word.word}`;
-  else if (outcome.correct) verdict = 'Correct';
-  else if (q.type === 3 && !given) verdict = `The word is “${word.word}”`;
+  else if (outcome.correct) verdict = outcome.hard ? 'Got it — with a little help.' : PRAISE[word.id.length % PRAISE.length];
+  else if (!given) verdict = q.type === 4 ? `The best fit is “${q.answer}”` : `Here it is: “${word.word}”`;
   else verdict = q.type === 4 ? `Best fit: “${q.answer}”` : `Not quite — it's “${word.word}”`;
 
   return (
     <section className={'feedback ' + cls} aria-live="polite">
       <div className="verdict">{verdict}</div>
+      {result.again && <div className="small muted">No worries — you’ll see it again in a few cards.</div>}
       {q.type === 3 && given && !outcome.correct && (
         <div className="small muted">
           You wrote: <s>{given}</s>
@@ -419,7 +474,7 @@ function Feedback({ q, word, result }: { q: Question; word: WordEntry; result: R
   );
 }
 
-function Summary({ empty, tally, weak }: { empty: boolean; tally: { answered: number; correct: number; introduced: number }; weak: boolean }) {
+function Summary({ empty, tally, weak }: { empty: boolean; tally: { answered: number; correct: number; introduced: number; movedUp: number }; weak: boolean }) {
   if (empty) {
     return (
       <div className="empty">
@@ -437,7 +492,17 @@ function Summary({ empty, tally, weak }: { empty: boolean; tally: { answered: nu
     <div className="empty">
       <div className="big-emoji">✓</div>
       <h2 style={{ marginBottom: 4 }}>Session complete</h2>
-      <p className="muted">Nice work. Spaced repetition does the rest.</p>
+      <p className="muted">
+        {pct >= 90 ? 'Excellent session!' : pct >= 70 ? 'Nice work.' : 'Good effort — tricky words come back until they stick.'}
+        {tally.movedUp > 0 && (
+          <>
+            <br />
+            <strong style={{ color: 'var(--ink)' }}>
+              {tally.movedUp} {tally.movedUp === 1 ? 'word' : 'words'} moved up a step.
+            </strong>
+          </>
+        )}
+      </p>
       <div className="stat-row" style={{ margin: '20px 0' }}>
         <div className="stat">
           <div className="num">{tally.answered}</div>

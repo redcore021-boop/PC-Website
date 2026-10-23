@@ -23,15 +23,25 @@ page.on('pageerror', (e) => errors.push(e.message));
 page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
 
 await page.goto(URL);
-await page.getByText("Today's session", { exact: true }).waitFor();
+// first launch: welcome, how it works, pace
+await page.getByRole('button', { name: 'Get started' }).click();
+await page.getByText('Every word starts easy.').waitFor();
+await page.screenshot({ path: `${out}/00-onboarding-ladder.png`, fullPage: true });
+await page.getByRole('button', { name: 'Next' }).click();
+await page.getByRole('radio', { name: /Regular/ }).click();
+await page.screenshot({ path: `${out}/00-onboarding-pace.png`, fullPage: true });
+await page.getByRole('button', { name: 'Start learning' }).click();
+ok('onboarding completes');
+await page.getByText(/here's today's session/).waitFor();
 await page.screenshot({ path: `${out}/01-home.png`, fullPage: true });
 const newWords = Number(await page.getByText('new words', { exact: true }).locator('xpath=preceding-sibling::div').textContent());
-newWords === 10 ? ok('home shows 10 new words') : fail(`expected 10 new words, got ${newWords}`);
+newWords === 5 ? ok('warm-up: 5 new words on day one') : fail(`expected 5 new words, got ${newWords}`);
+(await page.getByText(/Warm-up week: 5 new words today, building up to 10/).count()) ? ok('warm-up explained on home') : fail('warm-up note missing');
 
 let typed = 0, retries = 0, wrongOnPurpose = 0;
 const sawTypes = new Set();
 async function runSession(tag) {
-  await page.getByRole('button', { name: /today's session/ }).click();
+  await page.getByRole('button', { name: /(Start|Continue) today's session/ }).click();
   await page.locator('.session-top').waitFor();
   await page.locator('.prompt-kind, .empty').first().waitFor();
   let steps = 0, intros = 0, answered = 0;
@@ -48,6 +58,10 @@ async function runSession(tag) {
       await page.getByRole('button', { name: /Got it/ }).click();
       await page.waitForTimeout(120);
       continue;
+    }
+    if (await page.locator('.explainer').count()) {
+      const t = await page.locator('.explainer strong').textContent();
+      if (!sawTypes.has('explained:' + t)) { sawTypes.add('explained:' + t); console.log('info - explained ' + t); }
     }
     const kind = ((await page.locator('.prompt-kind').first().textContent()) ?? '').replace(/ ·.*/, '');
     const isRetry = ((await page.locator('.prompt-kind').first().textContent()) ?? '').includes('another try');
@@ -84,6 +98,12 @@ async function runSession(tag) {
 
     if (await page.locator('.answer-input').count()) {
       typed++;
+      if (typed === 1) {
+        const before = await page.locator('.hint').textContent();
+        await page.getByRole('button', { name: 'Hint' }).click();
+        const after = await page.locator('.hint').textContent();
+        after !== before && after.replace(/_/g, '').length > before.replace(/_/g, '').length ? ok(`hint reveals a letter: ${before} → ${after}`) : fail('hint did nothing');
+      }
       const answer = typed === 1 ? target.word.slice(0, -1) + (target.word.endsWith('e') ? 'a' : 'e') : target.word;
       await page.locator('.answer-input').fill(answer);
       if (typed === 1) await page.screenshot({ path: `${out}/04-typing.png`, fullPage: true });
@@ -122,14 +142,15 @@ retries >= 1 ? ok('missed word came back for another try') : fail('missed word w
 await page.getByText('words started').waitFor();
 await page.waitForTimeout(200);
 const started = await page.locator('.stat .num').first().textContent();
-started === '10' ? ok('home shows 10 words started') : fail(`words started = ${started}`);
+started === '5' ? ok('home shows 5 words started') : fail(`words started = ${started}`);
+(await page.locator('.ladder-count').count()) === 4 ? ok('stage ladder shows counts') : fail('stage ladder missing');
 (await page.getByText('All done for today').isVisible()) ? ok('daily goal shows as done') : fail('expected all-done state');
 await page.screenshot({ path: `${out}/07-home-done.png`, fullPage: true });
 
 // persistence across reload
 await page.reload();
 await page.getByText('words started').waitFor();
-(await page.locator('.stat .num').first().textContent()) === '10' ? ok('progress persists after reload') : fail('progress lost on reload');
+(await page.locator('.stat .num').first().textContent()) === '5' ? ok('progress persists after reload') : fail('progress lost on reload');
 
 // later days: reviews climb through all card types. Fewer new words keeps sessions short.
 await page.getByRole('button', { name: 'Settings', exact: true }).click();
@@ -161,7 +182,7 @@ for (let d = 1; d <= 60; d++) {
     console.log('BODY:', (await page.locator('body').innerText()).slice(0, 300), 'ERRORS:', errors.join(' | '));
     throw e;
   }
-  if (await page.getByRole('button', { name: /today's session/ }).isVisible()) await runSession('day' + (d + 1));
+  if (await page.getByRole('button', { name: /(Start|Continue) today's session/ }).isVisible()) await runSession('day' + (d + 1));
   if (['Fill the gap', 'Type the word', 'Precision', 'Use it'].every((t) => sawTypes.has(t)) && d > 20) break;
 }
 for (const t of ['Choose the word', 'Fill the gap', 'Type the word', 'Precision', 'Use it']) sawTypes.has(t) ? ok(`card type seen: ${t}`) : fail(`never saw card type: ${t}`);

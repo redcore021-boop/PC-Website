@@ -9,6 +9,9 @@ import { SettingsPage } from './screens/SettingsPage';
 import { Stats } from './screens/Stats';
 import { Reading } from './screens/Reading';
 import { ENABLED_FEATURES } from './features';
+import { Onboarding } from './screens/Onboarding';
+import { useEffect, useState } from 'react';
+import { db } from './lib/db';
 
 export function App() {
   return (
@@ -30,7 +33,15 @@ function Shell() {
   const { ready } = useApp();
   const route = useRoute();
   const [page = '', param] = route;
-  if (!ready) return null;
+  const [onboard, setOnboard] = useState<boolean | null>(null);
+
+  // show the welcome once, to people who haven't started learning yet
+  useEffect(() => {
+    Promise.all([db.kv.get('onboarded'), db.progress.count()]).then(([done, n]) => setOnboard(!done && n === 0));
+  }, []);
+
+  if (!ready || onboard === null) return null;
+  if (onboard) return <Onboarding onDone={() => setOnboard(false)} />;
 
   if (page === 'session') {
     return (

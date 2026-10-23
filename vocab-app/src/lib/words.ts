@@ -42,13 +42,41 @@ export function hashUnit(s: string): number {
   return ((h >>> 0) % 100000) / 100000;
 }
 
-/** Order in which unseen words are introduced: user-added first, then by tier, mixed across themes. */
+const REGISTER_EFFORT: Record<string, number> = { informal: 0, neutral: 0, formal: 1, academic: 1.5, literary: 2.5 };
+
+/**
+ * How hard a word is to start with (lower = easier): rarer tier, literary or academic
+ * register and long words come later; everyday phrasal verbs and idioms come early.
+ */
+export function wordEffort(w: WordEntry): number {
+  let e = w.tier * 4 + (REGISTER_EFFORT[w.reg] ?? 1);
+  const len = w.word.replace(/^(a|an|the) /i, '').length;
+  if (!w.word.includes(' ')) e += len > 11 ? 1.5 : len > 8 ? 0.75 : 0;
+  return e;
+}
+
+const kindOf = (w: WordEntry) => (/phrasal/i.test(w.pos) ? 'phrasal' : /idiom/i.test(w.pos) ? 'idiom' : 'word');
+// two single words, a phrasal verb, a single word, an idiom — so each day has some variety
+const PATTERN = ['word', 'word', 'phrasal', 'word', 'idiom'] as const;
+
+/**
+ * Order in which unseen words are introduced: user-added first, then easiest first,
+ * interleaving single words, phrasal verbs and idioms.
+ */
 export function introOrder(words: WordEntry[]): WordEntry[] {
-  return [...words].sort((a, b) => {
-    if (!!a.custom !== !!b.custom) return a.custom ? -1 : 1;
-    if (a.tier !== b.tier) return a.tier - b.tier;
-    return hashUnit(a.id) - hashUnit(b.id);
-  });
+  // a little stable jitter so consecutive days mix themes
+  const score = (w: WordEntry) => wordEffort(w) + hashUnit(w.id) * 1.5;
+  const sorted = [...words].sort((a, b) => score(a) - score(b));
+  const custom = sorted.filter((w) => w.custom);
+  const buckets = { word: [] as WordEntry[], phrasal: [] as WordEntry[], idiom: [] as WordEntry[] };
+  for (const w of sorted) if (!w.custom) buckets[kindOf(w)].push(w);
+  const out = [...custom];
+  for (let i = 0; out.length < words.length; i++) {
+    const want = PATTERN[i % PATTERN.length];
+    const from = buckets[want].length ? buckets[want] : [buckets.word, buckets.phrasal, buckets.idiom].find((b) => b.length)!;
+    out.push(from.shift()!);
+  }
+  return out;
 }
 
 /** Strip [brackets] from an example for display. */

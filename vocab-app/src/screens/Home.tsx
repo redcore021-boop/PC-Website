@@ -3,8 +3,9 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useApp } from '../state';
 import { db } from '../lib/db';
 import { dayKey } from '../lib/dates';
-import { computeStreak, todayCounts } from '../lib/store';
-import { dueProgress } from '../lib/session';
+import { computeStreak, daysStudiedBefore, todayCounts } from '../lib/store';
+import { dueProgress, effectiveNewPerDay } from '../lib/session';
+import { StageLadder } from '../components/StageLadder';
 import { hashUnit } from '../lib/words';
 import { go } from '../lib/router';
 import { WordEntryView } from '../components/WordBits';
@@ -16,6 +17,8 @@ export function Home() {
   const days = useLiveQuery(() => db.days.toArray(), [], []);
   const today = useLiveQuery(() => todayCounts(), [], undefined);
   const lastBackup = useLiveQuery(() => db.kv.get('lastBackup').then((r) => r?.value as number | undefined), [], undefined);
+  const studied = useLiveQuery(() => daysStudiedBefore(), [], undefined);
+  const whatsNewSeen = useLiveQuery(() => db.kv.get('whatsnew-gentle').then((r) => !!r), [], true);
 
   const wordOfDay = useMemo(() => {
     if (!words.length) return undefined;
@@ -24,16 +27,27 @@ export function Home() {
     return list[Math.floor(hashUnit('wotd-' + dayKey()) * list.length)];
   }, [words]);
 
-  if (!progress || !today) return null;
+  if (!progress || !today || studied === undefined) return null;
 
   const seen = new Set(progress.map((p) => p.wordId));
   const unseen = words.filter((w) => !seen.has(w.id)).length;
   const due = Math.min(dueProgress(progress).length, Math.max(0, settings.reviewsPerDay - today.reviews));
-  const newLeft = Math.min(unseen, Math.max(0, settings.newPerDay - today.newWords));
+  const todaysPace = effectiveNewPerDay(settings.newPerDay, studied);
+  const warmingUp = todaysPace < settings.newPerDay;
+  const newLeft = Math.min(unseen, Math.max(0, todaysPace - today.newWords));
   const planned = due + newLeft;
   const doneToday = today.answered;
   const streak = computeStreak(days);
   const mastered = progress.filter((p) => p.mastered).length;
+  const active = progress.filter((p) => !p.mastered);
+  const stageCounts = {
+    recognise: active.filter((p) => p.level <= 1).length,
+    recall: active.filter((p) => p.level === 2).length,
+    use: active.filter((p) => p.level >= 3).length,
+    mastered,
+  };
+  const hour = new Date().getHours();
+  const greeting = hour < 5 ? 'Still up?' : hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
   const needsBackup = progress.length >= 20 && (!lastBackup || Date.now() - lastBackup > 7 * 864e5);
 
   return (
@@ -50,7 +64,7 @@ export function Home() {
       <section className="card hero">
         {planned > 0 ? (
           <>
-            <div className="label">Today's session</div>
+            <div className="label">{greeting} — here's today's session</div>
             <div className="row" style={{ margin: '6px 0 14px', gap: 18 }}>
               <div>
                 <div style={{ fontSize: 30, fontWeight: 750 }}>{due}</div>
@@ -61,6 +75,11 @@ export function Home() {
                 <div className="muted small">new words</div>
               </div>
             </div>
+            {warmingUp && today.newWords === 0 && (
+              <p className="small muted" style={{ marginTop: -6 }}>
+                Warm-up week: {todaysPace} new words today, building up to {settings.newPerDay}.
+              </p>
+            )}
             {doneToday > 0 && (
               <div style={{ marginBottom: 14 }}>
                 <div className="progress" aria-label="Today's progress">
@@ -112,6 +131,30 @@ export function Home() {
           <div className="lbl">best streak</div>
         </div>
       </div>
+
+      {!whatsNewSeen && progress.length > 0 && (
+        <section className="card" style={{ marginTop: 12 }}>
+          <strong>What's new: a gentler path</strong>
+          <ul className="ob-list small" style={{ margin: '8px 0 12px' }}>
+            <li>New words now come easiest and most useful first.</li>
+            <li>The first quizzes of a word use clearly different options.</li>
+            <li>Typing cards have a Hint button, and choice cards a “Not sure” button.</li>
+            <li>Each new card type explains itself the first time.</li>
+          </ul>
+          <button className="btn small" onClick={() => db.kv.put({ key: 'whatsnew-gentle', value: Date.now() })}>
+            Got it
+          </button>
+        </section>
+      )}
+
+      {progress.length > 0 && (
+        <>
+          <h3 className="section-title">Your words, from easy to hard</h3>
+          <section className="card" style={{ paddingTop: 4, paddingBottom: 4 }}>
+            <StageLadder counts={stageCounts} />
+          </section>
+        </>
+      )}
 
       {needsBackup && (
         <button className="card row" style={{ width: '100%', marginTop: 12, textAlign: 'left' }} onClick={() => go('settings')}>
