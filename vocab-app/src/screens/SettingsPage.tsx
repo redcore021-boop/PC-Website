@@ -7,6 +7,7 @@ import { hasVoice, speak, speechSupported } from '../lib/speech';
 import { ENABLED_FEATURES } from '../features';
 import { formatDate } from '../strings';
 import type { Settings } from '../types';
+import { ReminderSetup } from '../components/Reminder';
 
 function Stepper({ value, min, max, step, onChange, label }: { value: number; min: number; max: number; step: number; onChange: (n: number) => void; label: string }) {
   return (
@@ -88,6 +89,11 @@ export function SettingsPage() {
           </div>
           <Stepper label="חזרות" value={settings.reviewsPerDay} min={20} max={500} step={10} onChange={(n) => set({ reviewsPerDay: n })} />
         </div>
+      </section>
+
+      <h3 className="section-title">תזכורת יומית</h3>
+      <section className="card">
+        <ReminderSetup />
       </section>
 
       <h3 className="section-title">תצוגה</h3>

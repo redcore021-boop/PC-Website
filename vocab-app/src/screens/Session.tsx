@@ -6,13 +6,14 @@ import { buildQueue, buildWeakQueue, effectiveNewPerDay, MAX_REPEATS, QUICK_SESS
 import { speak } from '../lib/speech';
 import { buildQuestion, maxHints, typingHint, type Question } from '../lib/cards';
 import { CARD_TYPE_LABEL } from '../strings';
-import { daysStudiedBefore, introduceWord, markGoalMet, recordAnswer, todayCounts } from '../lib/store';
+import { computeStreak, daysStudiedBefore, introduceWord, markGoalMet, recordAnswer, todayCounts } from '../lib/store';
 import type { AnswerOutcome } from '../lib/srs';
 import { matchAnswer } from '../lib/fuzzy';
 import { alternativeSpellings } from '../lib/spelling';
 import { go } from '../lib/router';
 import { ENABLED_CARD_TYPES, ENABLED_FEATURES } from '../features';
-import { CloseIcon } from '../components/Icons';
+import { CloseIcon, FlameIcon } from '../components/Icons';
+import { useLiveQuery } from 'dexie-react-hooks';
 import { WordEntryView } from '../components/WordBits';
 import { shortHe, simpleDef } from '../lib/words';
 import { WriteSentence } from '../components/WriteSentence';
@@ -527,6 +528,7 @@ function Summary({ empty, tally, weak }: { empty: boolean; tally: { answered: nu
           </>
         )}
       </p>
+      {!weak && <StreakLine />}
       <div className="stat-row" style={{ margin: '20px 0' }}>
         <div className="stat">
           <div className="num">{tally.answered}</div>
@@ -545,5 +547,18 @@ function Summary({ empty, tally, weak }: { empty: boolean; tally: { answered: nu
         סיום
       </button>
     </div>
+  );
+}
+
+/** After a finished daily session: the streak it kept alive. */
+function StreakLine() {
+  const days = useLiveQuery(() => db.days.toArray(), [], undefined);
+  if (!days) return null;
+  const { current, todayDone } = computeStreak(days);
+  if (!todayDone) return null;
+  return (
+    <p className="chip accent" style={{ fontSize: 15, padding: '6px 14px', marginTop: 4 }}>
+      <FlameIcon width={16} height={16} /> {current === 1 ? 'היום הראשון ברצף!' : `${current} ימים ברצף!`}
+    </p>
   );
 }

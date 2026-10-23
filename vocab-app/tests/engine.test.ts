@@ -222,3 +222,31 @@ describe('dates and streaks', () => {
     expect(computeStreak([d('2026-05-07')], now).current).toBe(0);
   });
 });
+
+describe('streak week and daily reminder', () => {
+  it('lists the last 7 days, oldest first, marking met days and today', async () => {
+    const { recentDays } = await import('../src/lib/store');
+    const now = new Date(2026, 4, 10, 12);
+    const d = (day: string) => ({ day, answered: 5, newWords: 1, goalMet: true });
+    const week = recentDays([d('2026-05-10'), d('2026-05-08'), d('2026-05-01')], 7, now);
+    expect(week.map((w) => w.day)).toEqual(['2026-05-04', '2026-05-05', '2026-05-06', '2026-05-07', '2026-05-08', '2026-05-09', '2026-05-10']);
+    expect(week.filter((w) => w.met).map((w) => w.day)).toEqual(['2026-05-08', '2026-05-10']);
+    expect(week[6].today).toBe(true);
+  });
+
+  it('builds a repeating daily calendar event at the chosen time', async () => {
+    const { icsText, googleCalendarUrl, firstOccurrence } = await import('../src/lib/reminder');
+    const before = new Date(2026, 4, 10, 18, 0);
+    const after = new Date(2026, 4, 10, 21, 0);
+    expect(firstOccurrence('20:00', before).getDate()).toBe(10);
+    expect(firstOccurrence('20:00', after).getDate()).toBe(11);
+    const ics = icsText('20:00', 'https://example.com/vocab/', before);
+    expect(ics).toContain('DTSTART:20260510T200000');
+    expect(ics).toContain('RRULE:FREQ=DAILY');
+    expect(ics).toContain('BEGIN:VALARM');
+    expect(ics.split('\r\n').length).toBeGreaterThan(10);
+    const g = new URL(googleCalendarUrl('07:30', 'https://example.com/vocab/', after));
+    expect(g.searchParams.get('dates')).toBe('20260511T073000/20260511T074000');
+    expect(g.searchParams.get('recur')).toBe('RRULE:FREQ=DAILY');
+  });
+});

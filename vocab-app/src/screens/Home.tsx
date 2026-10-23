@@ -9,7 +9,9 @@ import { StageLadder } from '../components/StageLadder';
 import { hashUnit } from '../lib/words';
 import { go } from '../lib/router';
 import { WordEntryView } from '../components/WordBits';
-import { BoltIcon, FlameIcon } from '../components/Icons';
+import { BellIcon, BoltIcon, FlameIcon } from '../components/Icons';
+import { StreakCard } from '../components/Streak';
+import { ReminderSetup } from '../components/Reminder';
 
 export function Home() {
   const { words, settings } = useApp();
@@ -18,6 +20,11 @@ export function Home() {
   const today = useLiveQuery(() => todayCounts(), [], undefined);
   const lastBackup = useLiveQuery(() => db.kv.get('lastBackup').then((r) => r?.value as number | undefined), [], undefined);
   const studied = useLiveQuery(() => daysStudiedBefore(), [], undefined);
+  const reminderAsked = useLiveQuery(
+    () => Promise.all([db.kv.get('reminderSet'), db.kv.get('reminderDismissed')]).then(([a, b]) => !!(a || b)),
+    [],
+    true,
+  );
   const whatsNewSeen = useLiveQuery(() => db.kv.get('whatsnew-gentle').then((r) => !!r), [], true);
 
   const wordOfDay = useMemo(() => {
@@ -117,6 +124,24 @@ export function Home() {
         )}
       </section>
 
+      {progress.length > 0 && <StreakCard days={days} />}
+
+      {!reminderAsked && progress.length > 0 && (
+        <section className="card" style={{ marginTop: 12 }}>
+          <div className="row" style={{ gap: 10, marginBottom: 6 }}>
+            <BellIcon width={20} height={20} />
+            <strong style={{ flex: 1 }}>רוצים תזכורת כל יום?</strong>
+          </div>
+          <p className="small muted" style={{ marginTop: 0 }}>
+            כמה דקות ביום עובדות הכי טוב. התזכורת נכנסת ליומן של הטלפון ומקפיצה התראה בשעה שבחרתם.
+          </p>
+          <ReminderSetup />
+          <button className="btn small ghost block" style={{ marginTop: 8 }} onClick={() => db.kv.put({ key: 'reminderDismissed', value: Date.now() })}>
+            לא עכשיו
+          </button>
+        </section>
+      )}
+
       {progress.length > 0 && (
       <div className="stat-row" style={{ marginTop: 12 }}>
         <div className="stat">
@@ -128,8 +153,8 @@ export function Home() {
           <div className="lbl">בשליטה מלאה</div>
         </div>
         <div className="stat">
-          <div className="num">{streak.best}</div>
-          <div className="lbl">שיא רצף ימים</div>
+          <div className="num">{stageCounts.use}</div>
+          <div className="lbl">בשלב השימוש</div>
         </div>
       </div>
       )}
